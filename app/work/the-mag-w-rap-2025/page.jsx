@@ -71,56 +71,56 @@ export default function MagWrap2025Page() {
                 <div id="w-node-_4c251230-b2e3-f3ee-ddae-2d99f3c573c3-db1fcd0c" className="wrapper _2 wrap-inj">
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8d9d8623fff8a4ff06_w25_injektaz.jpg"
-                    srcH265="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/695284b2a1ff503c03dc3cc3_w25_injektaz-web.mp4"
-                    srcAv1="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/69527861a6f696603dc42323_w25_injektaz.webm"
-                    srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/69526e94b76d18b41321ba89_w25_injektaz-fallback.mp4"
+                    srcH265="/videos/h265/w25_injektaz-web.mp4"
+                    srcAv1="/videos/av1/w25_injektaz.webm"
+                    srcMp4="/videos/h264/w25_injektaz-fallback.mp4"
                   /></div>
                 </div>
                 <div className="wrapper _2 wrap-bcgloop">
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8d1373e44dbeac5d95_w25_loop_bcg.jpg"
-                    srcH265="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/695284c1beafadabb2a152c1_w25_loop_bcg-web.mp4"
-                    srcAv1="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/6952786eba1a2dd901173b1c_w25_loop_bcg.webm"
-                    srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/69526ea315a932f35e1f0832_w25_loop_bcg-fallback.mp4"
+                    srcH265="/videos/h265/w25_loop_bcg-web.mp4"
+                    srcAv1="/videos/av1/w25_loop_bcg.webm"
+                    srcMp4="/videos/h264/w25_loop_bcg-fallback.mp4"
                   /></div>
                 </div>
                 <div id="w-node-_5584234e-0489-bfe9-d57b-ba83bde0ba51-db1fcd0c" className="wrapper _2 wrap-led1">
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8d1f07ca758723afce_w25_ledka.jpg"
-                    srcH265="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/695284bb5274ffb6de3edf2c_w25_ledka-web.mp4"
-                    srcAv1="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/69527867b580ff3acdfc0832_w25_ledka.webm"
-                    srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/69526e9bca8f5be879a1227c_w25_ledka-fallback.mp4"
+                    srcH265="/videos/h265/w25_ledka-web.mp4"
+                    srcAv1="/videos/av1/w25_ledka.webm"
+                    srcMp4="/videos/h264/w25_ledka-fallback.mp4"
                   /></div>
                 </div>
                 <div id="w-node-_3d743965-0237-63a8-4ffb-3a3c5da996b1-db1fcd0c" className="wrapper _2 wrap-porotci">
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8ea8be54918253a014_w25_rytmus.jpg"
-                    srcH265="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/695284d7c7678cf979731ec3_w25_rytmus-web.mp4"
-                    srcAv1="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/695278aa73213aeeea218a08_w25_rytmus.webm"
-                    srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/69526ecd16ea93315ad9ebe6_w25_rytmus-fallback.mp4"
+                    srcH265="/videos/h265/w25_rytmus-web.mp4"
+                    srcAv1="/videos/av1/w25_rytmus.webm"
+                    srcMp4="/videos/h264/w25_rytmus-fallback.mp4"
                   /></div>
                 </div>
                 <div id="w-node-_2ae65b4e-b1c3-b187-f0ff-5cdc6e4a01d2-db1fcd0c" className="wrapper _2 wrap-aneta">
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8e6d7eeb2f87ade799_w25_aneta_greenscreen.jpg"
-                    srcH265="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/695284ad508d234b24a48970_w25_aneta_greenscreen-web.mp4"
-                    srcAv1="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/6952785c64d80285e271f179_w25_aneta_greenscreen.webm"
-                    srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/69526e8871326b3449f1df17_w25_aneta_greenscreen-fallback.mp4"
+                    srcH265="/videos/h265/w25_aneta_greenscreen-web.mp4"
+                    srcAv1="/videos/av1/w25_aneta_greenscreen.webm"
+                    srcMp4="/videos/h264/w25_aneta_greenscreen-fallback.mp4"
                   /></div>
                 </div>
                 <div id="w-node-f5d293d0-dcfd-35bf-7f48-20e63cc3518b-db1fcd0c" className="wrapper _2 wrap-jmenovka">
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8d0c51fd1bf3925325_w25_nametag.jpg"
-                    srcH265="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/695284c7dff2b1dd8af50681_w25_nametag-web.mp4"
-                    srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/69526eab5aa4e76b5728e7b8_w25_nametag-fallback.mp4"
+                    srcH265="/videos/h265/w25_nametag-web.mp4"
+                    srcMp4="/videos/h264/w25_nametag-fallback.mp4"
                   /></div>
                 </div>
                 <div id="w-node-_99824595-c3f1-4207-c418-28701641ea34-db1fcd0c" className="wrapper _2 wrap-postup">
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8de29eb99a746d4ecb_w25_postupujici.jpg"
-                    srcH265="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/695284cd486e9092fc755a40_w25_postupujici-web.mp4"
-                    srcAv1="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/695278a5eec162c476d62202_w25_postupujici.webm"
-                    srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/69526ec79e4fc1a3e902f403_w25_postupujici-fallback.mp4"
+                    srcH265="/videos/h265/w25_postupujici-web.mp4"
+                    srcAv1="/videos/av1/w25_postupujici.webm"
+                    srcMp4="/videos/h264/w25_postupujici-fallback.mp4"
                   /></div>
                 </div>
                 <div id="w-node-aa1cd08d-7967-db46-3e54-dbcc5425c446-db1fcd0c" className="wrapper _15px">
