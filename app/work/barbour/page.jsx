@@ -13,7 +13,7 @@ export default function BarbourPage() {
             <WorkPageHeader label="Barbour" title="Icons in Quilting">
               <div className="div-block-55">
                 <p className="paragraph header">
-                  <a href="https://monopo.london/" target="_blank" className="link green">Monopo London</a> invited Krystof to work on a CGI/VFX campaign for British fashion designer <a href="https://www.barbour.com/" target="_blank" className="link green">Barbour</a>. The main idea was to show Barbour&#x27;s iconic quilt spreading across the world, focusing on four cities: London, New York, Shanghai, and Seoul. Each quilted piece was followed by a trail of nature, carefully crafted to resemble the British countryside.<br />
+                  <a href="https://monopo.london/" target="_blank" className="link green" data-cursor="Visit">Monopo London</a> invited Krystof to work on a CGI/VFX campaign for British fashion designer <a href="https://www.barbour.com/" target="_blank" className="link green" data-cursor="Visit">Barbour</a>. The main idea was to show Barbour&#x27;s iconic quilt spreading across the world, focusing on four cities: London, New York, Shanghai, and Seoul. Each quilted piece was followed by a trail of nature, carefully crafted to resemble the British countryside.<br />
                 </p>
               </div>
               <div className="cv-container">

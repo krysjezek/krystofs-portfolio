@@ -1,4 +1,5 @@
 import Script from 'next/script'
+import CustomCursor from '@/components/CustomCursor'
 
 export const metadata = {
   title: 'Krystof Jezek, CGI Designer & Software Engineer',
@@ -27,8 +28,10 @@ export default function RootLayout({ children }) {
 
         <link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/webclip.jpg" />
+        <style>{`*, *::before, *::after { cursor: none !important; }`}</style>
       </head>
       <body>
+        <CustomCursor />
         {children}
       </body>
     </html>

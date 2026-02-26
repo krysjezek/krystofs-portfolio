@@ -26,7 +26,7 @@ export default function ChainerPage() {
                     <div className="text-18">Web Design</div>
                   </div>
                 </div>
-                <a href="https://www.chainer.store/" target="_blank" className="button inverted-border w-button">Visit Live Website</a>
+                <a href="https://www.chainer.store/" target="_blank" className="button inverted-border w-button" data-cursor="Visit">Visit Live Website</a>
               </div>
             </WorkPageHeader>
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-408b32ff" className="work-main-wrap first">

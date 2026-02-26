@@ -12,7 +12,7 @@ export default function VSXSportsBraPage() {
           <div className="w-layout-blockcontainer container-3 w-container">
             <WorkPageHeader label="Victoria&#x27;s Secret, VSX" title="The VSX Sports Bra">
               <p className="paragraph header">
-                <a href="https://tmrzv.com/" className="link green">TMRZV Studio</a> brought us in to craft a quick-turn social launch asset for the VSX Sports Bra. Over a one-week sprint we built photoreal fabric and knit simulations in Blender and Houdini, delivering a 15-second Instagram Reel that showcases the bra&#x27;s stretch and support—now the hero piece of the product&#x27;s digital rollout.
+                <a href="https://tmrzv.com/" className="link green" data-cursor="Visit">TMRZV Studio</a> brought us in to craft a quick-turn social launch asset for the VSX Sports Bra. Over a one-week sprint we built photoreal fabric and knit simulations in Blender and Houdini, delivering a 15-second Instagram Reel that showcases the bra&#x27;s stretch and support—now the hero piece of the product&#x27;s digital rollout.
               </p>
               <div className="div-block-55">
                 <div className="cv-container">
@@ -55,7 +55,7 @@ export default function VSXSportsBraPage() {
                     <div className="text-18">Look Development</div>
                   </div>
                 </div>
-                <a href="https://www.instagram.com/p/DITzF45OsiA/" target="_blank" className="button inverted-border w-button">Watch on Instagram</a>
+                <a href="https://www.instagram.com/p/DITzF45OsiA/" target="_blank" className="button inverted-border w-button" data-cursor="Visit">Watch on Instagram</a>
               </div>
             </WorkPageHeader>
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-b76f347e" className="work-main-wrap first">

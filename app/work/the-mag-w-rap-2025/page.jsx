@@ -56,7 +56,7 @@ export default function MagWrap2025Page() {
                     <div className="text-18">Motion Graphics</div>
                   </div>
                 </div>
-                <a href="https://www.youtube.com/watch?v=bCpYQCTLIRs&list=PLliYVMXsykctE6utri9G6VWL-VOGaCOlo" target="_blank" className="button inverted-border w-button">Watch on Youtube</a>
+                <a href="https://www.youtube.com/watch?v=bCpYQCTLIRs&list=PLliYVMXsykctE6utri9G6VWL-VOGaCOlo" target="_blank" className="button inverted-border w-button" data-cursor="Visit">Watch on Youtube</a>
               </div>
             </WorkPageHeader>
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-db1fcd0c" className="work-main-wrap first">
