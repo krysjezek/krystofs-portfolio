@@ -116,35 +116,6 @@ export default function HomePage() {
     }, 10)
   }, [])
 
-  // Script 4: 3D tilt on #targetDiv
-  useEffect(() => {
-    const targetDiv = document.getElementById('targetDiv')
-    if (!targetDiv) return
-
-    const handleMouseMove = function (event) {
-      const rect = targetDiv.getBoundingClientRect()
-      const x = event.clientX - rect.left
-      const y = event.clientY - rect.top
-      const centerX = rect.width / 2
-      const centerY = rect.height / 2
-      const deltaX = x - centerX
-      const deltaY = y - centerY
-      const rotateX = deltaY / 200
-      const rotateY = -deltaX / 200
-      targetDiv.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
-    }
-    const handleMouseLeave = function () {
-      targetDiv.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)'
-    }
-
-    targetDiv.addEventListener('mousemove', handleMouseMove)
-    targetDiv.addEventListener('mouseleave', handleMouseLeave)
-
-    return () => {
-      targetDiv.removeEventListener('mousemove', handleMouseMove)
-      targetDiv.removeEventListener('mouseleave', handleMouseLeave)
-    }
-  }, [])
 
   return (
     <>
@@ -152,14 +123,7 @@ export default function HomePage() {
         .changer-move {
           transition: transform 0.5s ease-in-out;
         }
-        #targetDiv {
-          transition: transform 0.3s ease-out;
-          transform-style: preserve-3d;
-          perspective: 1000px;
-        }
-        #targetDiv:hover {
-          transform: perspective(1000px);
-        }
+
         #serv1, #serv2, #serv3, #serv4 {
           display: none;
           opacity: 0;
@@ -235,7 +199,7 @@ export default function HomePage() {
             </div>
             <div className="footer-wrap">
               <div className="div-block-148">
-                <a style={{ backgroundColor: 'rgba(38,38,38,0.25)' }} href="https://www.motionmockups.com/" target="_blank" className="div-block-149 w-inline-block">
+                <a style={{ backgroundColor: 'rgba(38,38,38,0.25)' }} href="https://www.motionmockups.com/" target="_blank" className="div-block-149 w-inline-block" data-cursor="Visit">
                   <div id="w-node-_42e1a6b1-60e7-89d0-2ef5-bd4cb01f0209-a7256e91" className="div-block-151">
                     <div className="div-block-154">
                       <div className="div-block-150">
@@ -266,7 +230,7 @@ export default function HomePage() {
           </div>
           <div className="w-layout-blockcontainer container-3 header w-container">
             <div className="w-layout-grid main-proj-grid head">
-              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91" href="/services/3d-environments" className="proj-item w-inline-block">
+              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91" href="/services/3d-environments" className="proj-item w-inline-block" data-cursor="Explore">
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
                     <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', backgroundColor: 'rgb(255,255,255)' }} className="button case">
@@ -282,7 +246,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4eae-a7256e91" href="/services/mixed-reality" className="proj-item w-inline-block">
+              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4eae-a7256e91" href="/services/mixed-reality" className="proj-item w-inline-block" data-cursor="Explore">
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
                     <div style={{ backgroundColor: 'rgb(255,255,255)', transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button case">
@@ -322,29 +286,14 @@ export default function HomePage() {
             <div className="featured-block"></div>
           </div>
         </div>
-        <div className="main-animated none">
-          <div className="w-layout-blockcontainer container-3 w-container">
-            <div id="targetDiv" className="div-block-101">
-              <a id="w-node-_0922472a-8b42-2f1d-7fbf-9cb935b9512f-a7256e91" style={{ backgroundColor: 'rgb(0,0,0)' }} href="#" className="animated-mocks-div jewelry w-inline-block">
-                <div className="proj-img-wrap main"></div>
-                <div className="div-block-92 center">
-                  <div className="div-block-94">
-                    <p className="label">SPECIALIZED SERVICE</p>
-                    <h1 className="heading-2 nomargin smaller margin">Jewelry Rendering</h1>
-                    <p className="paragraph smaller">We specialize in high-quality 3D renderings and animations for jewelry brands. With extensive research and attention to detail, we develop hyper-realistic creatives that highlight your pieces and captivate your customers.</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
+
         <div className="main-services">
           <h1 className="heading-3">Benefits of 3D and Motion</h1>
           <div className="div-block-100">
             <div className="div-block-96">
               <ul role="list" className="list-3 w-list-unstyled">
                 <li className="list-item-5">
-                  <a id="b1" href="#" className="services-link selected w-inline-block">
+                  <a id="b1" href="#" className="services-link selected w-inline-block" data-cursor="Explore">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Engage audiences</div>
@@ -354,7 +303,7 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li className="list-item-2">
-                  <a id="b2" href="#" className="services-link w-inline-block">
+                  <a id="b2" href="#" className="services-link w-inline-block" data-cursor="Explore">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Showcase products</div>
@@ -364,7 +313,7 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li className="list-item-3">
-                  <a id="b3" href="#" className="services-link w-inline-block">
+                  <a id="b3" href="#" className="services-link w-inline-block" data-cursor="Explore">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Streamline Iterations</div>
@@ -374,7 +323,7 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li className="list-item-4">
-                  <a id="b4" href="#" className="services-link w-inline-block">
+                  <a id="b4" href="#" className="services-link w-inline-block" data-cursor="Explore">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Educate Customers</div>
@@ -419,7 +368,7 @@ export default function HomePage() {
           <div className="w-layout-blockcontainer container-3 w-container">
             <h1 className="heading-2">Recent Case Studies</h1>
             <div className="w-layout-grid main-proj-grid">
-              <a id="w-node-_0a0f2415-0cbe-189d-07e1-6388208cf7e6-a7256e91" href="/work/the-mag-w-rap-2025" className="proj-item w-inline-block">
+              <a id="w-node-_0a0f2415-0cbe-189d-07e1-6388208cf7e6-a7256e91" href="/work/the-mag-w-rap-2025" className="proj-item w-inline-block" data-cursor="Explore">
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -454,7 +403,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a id="w-node-_3c9fd363-924c-9b72-f486-2437327d7019-a7256e91" href="/work/barbour" className="proj-item w-inline-block">
+              <a id="w-node-_3c9fd363-924c-9b72-f486-2437327d7019-a7256e91" href="/work/barbour" className="proj-item w-inline-block" data-cursor="Explore">
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -483,7 +432,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a href="/work/the-vsx-sports-bra" className="proj-item w-inline-block">
+              <a href="/work/the-vsx-sports-bra" className="proj-item w-inline-block" data-cursor="Explore">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="background-video-18 w-embed"><video autoPlay loop muted playsInline style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 'auto', height: '100%', display: 'block', objectFit: 'cover' }}>
@@ -518,104 +467,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a href="/work/old-projects/onitsuka-tiger-covent-garden" className="proj-item hide w-inline-block">
-                <div className="proj-img-wrap">
-                  <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
-                      poster="/videos/posters/thumb.jpg"
-                      srcMp4="/videos/h264/thumb.mp4"
-                      srcWebm="/videos/other/thumb.webm"
-                    />
-                    <div className="proj-img onitsuykja"></div>
-                  </div>
-                  <div className="div-block-99">
-                    <div className="wrappedtext">
-                      <div className="div-block-134">
-                        <div className="mini-label">
-                          <div className="label mini">3D</div>
-                        </div>
-                        <div className="mini-label">
-                          <div className="label mini">VFX</div>
-                        </div>
-                        <div className="mini-label">
-                          <div className="label mini">Edit</div>
-                        </div>
-                      </div>
-                      <div className="div-block-67"><img src="/images/arrow.svg" loading="lazy" alt="" className="image-19" />
-                        <h2 className="proj-heading">Onitsuka Tiger Store Opening</h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="/work/old-projects/yonex-s-d-campaign" className="proj-item hide w-inline-block">
-                <div className="proj-img-wrap">
-                  <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
-                      poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-poster-00001.jpg"
-                      srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-transcode.mp4"
-                      srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-transcode.webm"
-                    />
-                    <div className="proj-img yonex"></div>
-                  </div>
-                  <div className="div-block-99">
-                    <div className="wrappedtext">
-                      <div className="div-block-134">
-                        <div className="mini-label">
-                          <div className="label mini">3D</div>
-                        </div>
-                        <div className="mini-label">
-                          <div className="label mini">Motion Graphics</div>
-                        </div>
-                      </div>
-                      <div className="div-block-67"><img src="/images/arrow.svg" loading="lazy" alt="" className="image-19" />
-                        <h2 className="proj-heading">Yonex S&amp;D Campaign</h2>
-                      </div>
-                    </div>
-                    <div className="div-block-127">
-                      <div className="div-block-128"><img src="/images/kj-icon.png" loading="lazy" alt="" className="image-31" />
-                        <div className="tag-work">+100% engagement</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="/work/old-projects/the-mag-w-rap-2024" className="proj-item hide w-inline-block">
-                <div className="proj-img-wrap">
-                  <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
-                      poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-poster-00001.jpg"
-                      srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-transcode.mp4"
-                      srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-transcode.webm"
-                    />
-                    <div className="proj-img wrap-24"></div>
-                  </div>
-                  <div className="div-block-99">
-                    <div className="wrappedtext">
-                      <div className="div-block-134">
-                        <div className="mini-label">
-                          <div className="label mini">Art Direction</div>
-                        </div>
-                        <div className="mini-label">
-                          <div className="label mini">3D</div>
-                        </div>
-                        <div className="mini-label">
-                          <div className="label mini">Motion Graphics</div>
-                        </div>
-                      </div>
-                      <div className="div-block-67"><img src="/images/arrow.svg" loading="lazy" alt="" className="image-19" />
-                        <h2 className="proj-heading">The Mag W/Rap 2024</h2>
-                      </div>
-                    </div>
-                    <div className="div-block-127">
-                      <div className="div-block-128"><img src="/images/kj-stats.png" loading="lazy" alt="" className="image-31" />
-                        <div className="tag-work">4 milion total views</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a id="w-node-ca5842f0-12ea-bba6-91ec-c62ab4bb5501-a7256e91" href="/work/chainer" className="proj-item w-inline-block">
+              <a id="w-node-ca5842f0-12ea-bba6-91ec-c62ab4bb5501-a7256e91" href="/work/chainer" className="proj-item w-inline-block" data-cursor="Explore">
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -644,24 +496,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a href="/work/old-projects/lepshee" className="proj-item hide w-inline-block">
-                <div className="proj-img-wrap">
-                  <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div className="proj-img lepshee"></div>
-                    <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
-                      poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-poster-00001.jpg"
-                      srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-transcode.mp4"
-                      srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-transcode.webm"
-                    />
-                  </div>
-                  <div className="div-block-99">
-                    <div className="label gray">3D • MOTION GRAPHICS</div>
-                    <div className="div-block-67"><img src="/images/arrow.svg" loading="lazy" alt="" className="image-19" />
-                      <h2 className="proj-heading">Lepshee</h2>
-                    </div>
-                  </div>
-                </div>
-              </a>
+
             </div>
           </div>
         </section>
