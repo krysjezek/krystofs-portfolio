@@ -7,24 +7,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Google Fonts preconnect */}
+        {/* Google Fonts — direct link, no JS loader */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-
-        {/* Google WebFont loader */}
-        <Script
-          src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
-          strategy="beforeInteractive"
-        />
-        <Script id="webfont-load" strategy="beforeInteractive">{`
-          WebFont.load({ google: { families: ["IBM Plex Mono:300,400,500,600,700","Inter:300,400,500,600,700"] } });
-        `}</Script>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
         {/* Adobe Typekit */}
-        <Script src="https://use.typekit.net/drn7car.js" strategy="beforeInteractive" />
-        <Script id="typekit-load" strategy="beforeInteractive">{`
+        <Script src="https://use.typekit.net/drn7car.js" strategy="afterInteractive" />
+        <Script id="typekit-load" strategy="afterInteractive">{`
           try { Typekit.load(); } catch(e) {}
         `}</Script>
 
