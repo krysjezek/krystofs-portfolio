@@ -16,7 +16,7 @@ export default function BarbourInternationalPufferFoohPage() {
                     <h1 className="heading-h1">Barbour International, Frasers Collaboration</h1>
                   </div>
                   <div className="back-block">
-                    <a data-w-id="aa8feba7-8b91-a01c-2318-a71715a5e6ef" href="/" className="button inverted-border w-button">Back to home</a>
+                    <a href="/" className="button inverted-border w-button">Back to home</a>
                   </div>
                 </div>
                 <p className="paragraph">
@@ -35,19 +35,19 @@ export default function BarbourInternationalPufferFoohPage() {
                       <div className="text-18">Look Development</div>
                     </div>
                   </div>
-                  <a data-w-id="e7512f6d-5261-c022-f1ad-a9a888f95b69" style={{ backgroundColor: 'rgba(30,39,59,0.5)', transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} href="https://www.instagram.com/p/DD1eFc5NjSR/?hl=cs" target="_blank" className="button inverted-border w-button">Watch on Instagram</a>
+                  <a style={{ backgroundColor: 'rgba(30,39,59,0.5)', transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} href="https://www.instagram.com/p/DD1eFc5NjSR/?hl=cs" target="_blank" className="button inverted-border w-button">Watch on Instagram</a>
                 </div>
               </div>
             </div>
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-1899c96e" className="work-main-wrap first">
               <div className="w-layout-grid cs-grid _6">
-                <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417ae-1899c96e" data-w-id="de55dabe-6ebf-d626-b3ad-26ee516417ae" className="wrapper _2 barb-main">
+                <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417ae-1899c96e" className="wrapper _2 barb-main">
                   <div className="html-embed _2span w-embed w-iframe"><iframe src="https://player.vimeo.com/video/1098482953?background=1" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} allowFullScreen title="Barbour Puffer FOOH"></iframe></div>
                 </div>
-                <div id="w-node-_98b02823-e7f4-f360-d89c-058bc6ec37c1-1899c96e" data-w-id="98b02823-e7f4-f360-d89c-058bc6ec37c1" className="wrapper _2 square barb-1">
+                <div id="w-node-_98b02823-e7f4-f360-d89c-058bc6ec37c1-1899c96e" className="wrapper _2 square barb-1">
                   <div className="html-embed _2span w-embed w-iframe"><iframe src="https://player.vimeo.com/video/1098488205?background=1" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} allowFullScreen title="Barbour Puffer FOOH - Scene 01"></iframe></div>
                 </div>
-                <div id="w-node-ce94a738-e03f-aa46-c617-eb231e995922-1899c96e" data-w-id="ce94a738-e03f-aa46-c617-eb231e995922" className="wrapper _2 square barb-2">
+                <div id="w-node-ce94a738-e03f-aa46-c617-eb231e995922-1899c96e" className="wrapper _2 square barb-2">
                   <div className="html-embed _2span w-embed w-iframe"><iframe src="https://player.vimeo.com/video/1098488233?background=1" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} allowFullScreen title="Barbour Puffer FOOH - Scene 2"></iframe></div>
                 </div>
                 <div id="w-node-_12f471cd-eb16-8399-e545-5d7b1e9fd03b-1899c96e" className="project-specs-wrap">

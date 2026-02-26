@@ -1,5 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import WorkPageHeader from '@/components/WorkPageHeader'
+import BackgroundVideo from '@/components/BackgroundVideo'
 
 export default function BarbourPage() {
   return (
@@ -8,65 +10,54 @@ export default function BarbourPage() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <div className="work-header-wrap">
-              <div className="work-header-container">
-                <div className="work-h1-wrap">
-                  <div className="div-block-112">
-                    <div className="label green">Barbour</div>
-                    <h1 className="heading-h1">Icons in Quilting</h1>
-                  </div>
-                  <div className="back-block">
-                    <a data-w-id="aa8feba7-8b91-a01c-2318-a71715a5e6ef" href="/" className="button inverted-border w-button">Back to home</a>
-                  </div>
-                </div>
-                <div className="div-block-55">
-                  <p className="paragraph header">
-                    <a href="https://monopo.london/" target="_blank" className="link green">Monopo London</a> invited Krystof to work on a CGI/VFX campaign for British fashion designer <a href="https://www.barbour.com/" target="_blank" className="link green">Barbour</a>. The main idea was to show Barbour&#x27;s iconic quilt spreading across the world, focusing on four cities: London, New York, Shanghai, and Seoul. Each quilted piece was followed by a trail of nature, carefully crafted to resemble the British countryside.<br />
-                  </p>
-                </div>
-                <div className="cv-container">
-                  <div className="label">Project Specs</div>
-                  <div className="project-specs-wrap">
-                    <div className="specs-item">
-                      <div className="label">TOTAL IMPACT</div>
-                      <div className="specs-inner-block">
-                        <p className="paragraph"><span className="green">100k+ </span>average organic IG views<br /></p>
-                        <p className="paragraph"><span className="green">30% </span>more engagement than on other<br />Barbour&#x27;s posts<br /></p>
-                      </div>
-                    </div>
-                    <div className="specs-item">
-                      <div className="label">Deliverables</div>
-                      <div className="specs-inner-block">
-                        <p className="paragraph"><span className="green">4x</span> cities (London, NYC, Seoul, Shanghai)<br /></p>
-                        <p className="paragraph"><span className="green">3x </span>scenes per city (one city = one post)<br /></p>
-                        <p className="paragraph"><span className="green">2x </span>additional videos (La Rinescante, Gatwick)<br /></p>
-                      </div>
-                    </div>
-                    <div className="specs-item">
-                      <div className="label">PRODUCTION</div>
-                      <div className="specs-inner-block">
-                        <p className="paragraph"><span className="green">8-week</span> sprint for the entire project<br /></p>
-                        <p className="paragraph"><span className="green">50 </span>days of work on all assets<br /></p>
-                        <p className="paragraph">Software: <span className="green">Blender, Houdini, Syntheyes<br />Davinci Resolve, Adobe After Effects</span><br /></p>
-                      </div>
+            <WorkPageHeader label="Barbour" title="Icons in Quilting">
+              <div className="div-block-55">
+                <p className="paragraph header">
+                  <a href="https://monopo.london/" target="_blank" className="link green">Monopo London</a> invited Krystof to work on a CGI/VFX campaign for British fashion designer <a href="https://www.barbour.com/" target="_blank" className="link green">Barbour</a>. The main idea was to show Barbour&#x27;s iconic quilt spreading across the world, focusing on four cities: London, New York, Shanghai, and Seoul. Each quilted piece was followed by a trail of nature, carefully crafted to resemble the British countryside.<br />
+                </p>
+              </div>
+              <div className="cv-container">
+                <div className="label">Project Specs</div>
+                <div className="project-specs-wrap">
+                  <div className="specs-item">
+                    <div className="label">TOTAL IMPACT</div>
+                    <div className="specs-inner-block">
+                      <p className="paragraph"><span className="green">100k+ </span>average organic IG views<br /></p>
+                      <p className="paragraph"><span className="green">30% </span>more engagement than on other<br />Barbour&#x27;s posts<br /></p>
                     </div>
                   </div>
-                </div>
-                <div className="wotk-tags-links">
-                  <div className="work-tags">
-                    <div className="tag">
-                      <div className="text-18">3D</div>
+                  <div className="specs-item">
+                    <div className="label">Deliverables</div>
+                    <div className="specs-inner-block">
+                      <p className="paragraph"><span className="green">4x</span> cities (London, NYC, Seoul, Shanghai)<br /></p>
+                      <p className="paragraph"><span className="green">3x </span>scenes per city (one city = one post)<br /></p>
+                      <p className="paragraph"><span className="green">2x </span>additional videos (La Rinescante, Gatwick)<br /></p>
                     </div>
-                    <div className="tag">
-                      <div className="text-18">Motion Graphics</div>
-                    </div>
-                    <div className="tag">
-                      <div className="text-18">VFX</div>
+                  </div>
+                  <div className="specs-item">
+                    <div className="label">PRODUCTION</div>
+                    <div className="specs-inner-block">
+                      <p className="paragraph"><span className="green">8-week</span> sprint for the entire project<br /></p>
+                      <p className="paragraph"><span className="green">50 </span>days of work on all assets<br /></p>
+                      <p className="paragraph">Software: <span className="green">Blender, Houdini, Syntheyes<br />Davinci Resolve, Adobe After Effects</span><br /></p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+              <div className="wotk-tags-links">
+                <div className="work-tags">
+                  <div className="tag">
+                    <div className="text-18">3D</div>
+                  </div>
+                  <div className="tag">
+                    <div className="text-18">Motion Graphics</div>
+                  </div>
+                  <div className="tag">
+                    <div className="text-18">VFX</div>
+                  </div>
+                </div>
+              </div>
+            </WorkPageHeader>
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-b6236407" className="work-main-wrap first">
               <div className="w-layout-grid cs-grid">
                 <div id="w-node-_0870a03f-5ebe-95fe-6c14-ca2a77e8140e-b6236407" className="wrapper _15px">
@@ -103,30 +94,42 @@ export default function BarbourPage() {
                 </div>
                 <div id="w-node-_007f63ac-8c7a-7c68-0c4d-826252aa111d-b6236407" className="wrapper _15px">
                   <div className="bts-grid">
-                    <div data-poster-url="/videos/Barbour---IiQ---Reconstruction-2---BTS---4x5-poster-00001.jpg" data-video-urls="/videos/Barbour---IiQ---Reconstruction-2---BTS---4x5-transcode.mp4,/videos/Barbour---IiQ---Reconstruction-2---BTS---4x5-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" className="background-video-16 barb w-background-video w-background-video-atom"><video id="86b19295-bd5c-4d23-6287-8d3e72fc7e9d-video" autoPlay loop style={{ backgroundImage: 'url("/videos/Barbour---IiQ---Reconstruction-2---BTS---4x5-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-                        <source src="/videos/Barbour---IiQ---Reconstruction-2---BTS---4x5-transcode.mp4" data-wf-ignore="true" />
-                        <source src="/videos/Barbour---IiQ---Reconstruction-2---BTS---4x5-transcode.webm" data-wf-ignore="true" />
-                      </video></div>
-                    <div data-poster-url="/videos/Barbour---IiQ---Fern-03--BTS----4x5-poster-00001.jpg" data-video-urls="/videos/Barbour---IiQ---Fern-03--BTS----4x5-transcode.mp4,/videos/Barbour---IiQ---Fern-03--BTS----4x5-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" className="background-video-16 barb w-background-video w-background-video-atom"><video id="efa97774-bcb7-b184-6200-e79cfa187076-video" autoPlay loop style={{ backgroundImage: 'url("/videos/Barbour---IiQ---Fern-03--BTS----4x5-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-                        <source src="/videos/Barbour---IiQ---Fern-03--BTS----4x5-transcode.mp4" data-wf-ignore="true" />
-                        <source src="/videos/Barbour---IiQ---Fern-03--BTS----4x5-transcode.webm" data-wf-ignore="true" />
-                      </video></div>
-                    <div data-poster-url="/videos/Barbour---IiQ---Instant-Render-2---BTS----4x5-poster-00001.jpg" data-video-urls="/videos/Barbour---IiQ---Instant-Render-2---BTS----4x5-transcode.mp4,/videos/Barbour---IiQ---Instant-Render-2---BTS----4x5-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" className="background-video-16 barb w-background-video w-background-video-atom"><video id="8e6f847f-1e9d-ee26-4019-74d9d37f37af-video" autoPlay loop style={{ backgroundImage: 'url("/videos/Barbour---IiQ---Instant-Render-2---BTS----4x5-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-                        <source src="/videos/Barbour---IiQ---Instant-Render-2---BTS----4x5-transcode.mp4" data-wf-ignore="true" />
-                        <source src="/videos/Barbour---IiQ---Instant-Render-2---BTS----4x5-transcode.webm" data-wf-ignore="true" />
-                      </video></div>
-                    <div data-poster-url="/videos/Barbour---IiQ---Nodes---BTS----4x5-poster-00001.jpg" data-video-urls="/videos/Barbour---IiQ---Nodes---BTS----4x5-transcode.mp4,/videos/Barbour---IiQ---Nodes---BTS----4x5-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" className="background-video-16 barb w-background-video w-background-video-atom"><video id="a5228e0e-b6c9-e159-50ba-a2f7b0316d22-video" autoPlay loop style={{ backgroundImage: 'url("/videos/Barbour---IiQ---Nodes---BTS----4x5-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-                        <source src="/videos/Barbour---IiQ---Nodes---BTS----4x5-transcode.mp4" data-wf-ignore="true" />
-                        <source src="/videos/Barbour---IiQ---Nodes---BTS----4x5-transcode.webm" data-wf-ignore="true" />
-                      </video></div>
-                    <div data-poster-url="/videos/Barbour---IiQ---Bus---BTS----4x5_1-poster-00001.jpg" data-video-urls="/videos/Barbour---IiQ---Bus---BTS----4x5_1-transcode.mp4,/videos/Barbour---IiQ---Bus---BTS----4x5_1-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" className="background-video-16 barb w-background-video w-background-video-atom"><video id="1782d126-fd3c-6274-0f01-94bbfc37cbaa-video" autoPlay loop style={{ backgroundImage: 'url("/videos/Barbour---IiQ---Bus---BTS----4x5_1-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-                        <source src="/videos/Barbour---IiQ---Bus---BTS----4x5_1-transcode.mp4" data-wf-ignore="true" />
-                        <source src="/videos/Barbour---IiQ---Bus---BTS----4x5_1-transcode.webm" data-wf-ignore="true" />
-                      </video></div>
-                    <div data-poster-url="/videos/Barbour---IiQ---Fern-02--BTS----4x5-poster-00001.jpg" data-video-urls="/videos/Barbour---IiQ---Fern-02--BTS----4x5-transcode.mp4,/videos/Barbour---IiQ---Fern-02--BTS----4x5-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" className="background-video-16 barb w-background-video w-background-video-atom"><video id="7b2cce6b-dea3-c640-5a73-475a424e239d-video" autoPlay loop style={{ backgroundImage: 'url("/videos/Barbour---IiQ---Fern-02--BTS----4x5-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-                        <source src="/videos/Barbour---IiQ---Fern-02--BTS----4x5-transcode.mp4" data-wf-ignore="true" />
-                        <source src="/videos/Barbour---IiQ---Fern-02--BTS----4x5-transcode.webm" data-wf-ignore="true" />
-                      </video></div>
+                    <BackgroundVideo
+                      className="background-video-16 barb"
+                      poster="/videos/posters/Barbour---IiQ---Reconstruction-2---BTS---4x5.jpg"
+                      srcMp4="/videos/h264/Barbour---IiQ---Reconstruction-2---BTS---4x5.mp4"
+                      srcWebm="/videos/other/Barbour---IiQ---Reconstruction-2---BTS---4x5.webm"
+                    />
+                    <BackgroundVideo
+                      className="background-video-16 barb"
+                      poster="/videos/posters/Barbour---IiQ---Fern-03--BTS----4x5.jpg"
+                      srcMp4="/videos/h264/Barbour---IiQ---Fern-03--BTS----4x5.mp4"
+                      srcWebm="/videos/other/Barbour---IiQ---Fern-03--BTS----4x5.webm"
+                    />
+                    <BackgroundVideo
+                      className="background-video-16 barb"
+                      poster="/videos/posters/Barbour---IiQ---Instant-Render-2---BTS----4x5.jpg"
+                      srcMp4="/videos/h264/Barbour---IiQ---Instant-Render-2---BTS----4x5.mp4"
+                      srcWebm="/videos/other/Barbour---IiQ---Instant-Render-2---BTS----4x5.webm"
+                    />
+                    <BackgroundVideo
+                      className="background-video-16 barb"
+                      poster="/videos/posters/Barbour---IiQ---Nodes---BTS----4x5.jpg"
+                      srcMp4="/videos/h264/Barbour---IiQ---Nodes---BTS----4x5.mp4"
+                      srcWebm="/videos/other/Barbour---IiQ---Nodes---BTS----4x5.webm"
+                    />
+                    <BackgroundVideo
+                      className="background-video-16 barb"
+                      poster="/videos/posters/Barbour---IiQ---Bus---BTS----4x5_1.jpg"
+                      srcMp4="/videos/h264/Barbour---IiQ---Bus---BTS----4x5_1.mp4"
+                      srcWebm="/videos/other/Barbour---IiQ---Bus---BTS----4x5_1.webm"
+                    />
+                    <BackgroundVideo
+                      className="background-video-16 barb"
+                      poster="/videos/posters/Barbour---IiQ---Fern-02--BTS----4x5.jpg"
+                      srcMp4="/videos/h264/Barbour---IiQ---Fern-02--BTS----4x5.mp4"
+                      srcWebm="/videos/other/Barbour---IiQ---Fern-02--BTS----4x5.webm"
+                    />
                   </div>
                 </div>
               </div>

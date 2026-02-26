@@ -41,7 +41,7 @@ export default function JoinPage() {
                       </li>
                     </ul>
                   </div>
-                  <a href="#apply" data-w-id="78e373c2-92c2-94f3-bd5f-e6415123a877" style={{ backgroundColor: 'rgba(30,39,59,0.5)', transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button inverted-border w-button">Apply</a>
+                  <a href="#apply" style={{ backgroundColor: 'rgba(30,39,59,0.5)', transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button inverted-border w-button">Apply</a>
                 </div>
                 <div className="div-block-62">
                   <div className="div-block-69"></div>
@@ -61,7 +61,7 @@ export default function JoinPage() {
                       </li>
                     </ul>
                   </div>
-                  <a href="#apply" data-w-id="f5c968c0-9262-db83-d1c3-4261867cefbe" style={{ backgroundColor: 'rgba(30,39,59,0.5)', transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button inverted-border w-button">Apply</a>
+                  <a href="#apply" style={{ backgroundColor: 'rgba(30,39,59,0.5)', transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button inverted-border w-button">Apply</a>
                 </div>
                 <div className="div-block-62">
                   <div className="div-block-69"></div>
@@ -84,12 +84,12 @@ export default function JoinPage() {
                       </li>
                     </ul>
                   </div>
-                  <a href="#apply" data-w-id="52a9290c-5fc2-7f63-11f8-3e8d9332d294" style={{ backgroundColor: 'rgba(30,39,59,0.5)', transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button inverted-border w-button">Apply</a>
+                  <a href="#apply" style={{ backgroundColor: 'rgba(30,39,59,0.5)', transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button inverted-border w-button">Apply</a>
                 </div>
                 <div id="w-node-_5e270193-317e-b1cd-ee55-14a315fbae82-6df14036" className="div-block-62 center">
                   <h4 className="heading-4">Didn&#x27;t find your fit?</h4>
                   <p className="paragraph center">No worries, I am always looking to connect with talented people from various fields. Do not hesitate to reach out anyway :)</p>
-                  <a href="#apply" data-w-id="5e270193-317e-b1cd-ee55-14a315fbae88" style={{ backgroundColor: 'rgb(20,25,0)' }} className="button _2x w-button">Reach out</a>
+                  <a href="#apply" style={{ backgroundColor: 'rgb(20,25,0)' }} className="button _2x w-button">Reach out</a>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function JoinPage() {
                           <label htmlFor="field" className="label">Your message</label>
                           <textarea placeholder="Tell me more about yourself." maxLength={5000} id="field" name="field" data-name="Field" className="text-field w-input"></textarea>
                         </div>
-                        <input type="submit" data-wait="Please wait..." data-w-id="1169b079-101b-d504-8d26-dc2279fed799" style={{ backgroundColor: 'rgba(30,39,59,0.5)', transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button inverted-border fill w-button" value="Submit" />
+                        <input type="submit" data-wait="Please wait..." style={{ backgroundColor: 'rgba(30,39,59,0.5)', transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button inverted-border fill w-button" value="Submit" />
                       </form>
                       <div className="w-form-done">
                         <div>Thank you! Your submission has been received!</div>

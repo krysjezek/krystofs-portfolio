@@ -57,28 +57,17 @@
 :root {
   --black: #05070a;
   --white: white;
-  --teal-blue\<deleted\|variable-8b240e83-d6c9-1e18-603e-925b177cb33b\>: #a3c6ff;
   --blue2: #3d87ff;
-  --radius\<deleted\|variable-3f5cfe74-8124-2595-5b79-c0e4be705046\>: 5px;
   --default-space: 35px;
   --gray-0-08-opacity: #262626;
-  --lime\<deleted\|variable-c92cf5ed\>: #a4f683;
-  --gray2\<deleted\|variable-f130f2a7-a2b5-9c30-3ba8-095f5047258d\>: #0a0a0a;
-  --transparentos\<deleted\|variable-35b3cee5-08dc-8d0e-d9aa-389e09fc7ba5\>: #fff0;
-  --grey-50o\<deleted\|variable-7c60eb65-1f30-3f25-bc93-a076d491fcb2\>: #ffffffbf;
   --gray-050o: #ffffffa6;
-  --black50\<deleted\|variable-61b5a6be-6683-6e26-ed9e-86ce2701574d\>: #00000080;
   --green-new: #a4f683;
   --half-space: 17.5px;
   --small-space: 12.5px;
-  --gray-light\<deleted\|variable-e283207c-8ca8-d25d-1e76-1e6278e7ab13\>: #1e273b80;
   --gray-light: #2f3949;
   --black-lighter: #13171e;
   --big-space: 70px;
-  --dark-lime\<deleted\|variable-bde76e14-9bc6-ac15-6b52-36a178c15f4b\>: #141900;
-  --accessible-components--dark-grey\<deleted\|variable-c4d8099c\>: #9b9b9b;
   --white-blue: #abcbff;
-  --black25\<deleted\|variable-17c3f1e8-d3f7-7cdc-dcf8-fc907ac2da71\>: #0000001a;
   --gray-0-85: #ffffffd9;
   --gray-0-35: #595959;
 }

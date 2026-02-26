@@ -1,5 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import WorkPageHeader from '@/components/WorkPageHeader'
+import BackgroundVideo from '@/components/BackgroundVideo'
 
 export default function ChainerPage() {
   return (
@@ -8,36 +10,25 @@ export default function ChainerPage() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <div className="work-header-wrap">
-              <div className="work-header-container">
-                <div className="work-h1-wrap">
-                  <div className="div-block-112">
-                    <div className="label green">Chainer</div>
-                    <h1 className="heading-h1">Men&#x27;s apparel</h1>
-                  </div>
-                  <div className="back-block">
-                    <a data-w-id="aa8feba7-8b91-a01c-2318-a71715a5e6ef" href="/" className="button inverted-border w-button">Back to home</a>
-                  </div>
-                </div>
-                <div className="div-block-55">
-                  <p className="paragraph header">Chainer, an online store for men&#x27;s accessories, brought me on board to lead their Art Direction. My role was a mix of art direction, 3D animation, and web design, all aimed at giving their brand a fresh, standout vibe. The heart of this project was about creating immersive 3D worlds to showcase Chainer&#x27;s jewelry. This case study will show you how we made Chainer shine in the competitive online market.</p>
-                </div>
-                <div className="wotk-tags-links">
-                  <div className="work-tags">
-                    <div className="tag">
-                      <div className="text-18">Art Direction</div>
-                    </div>
-                    <div className="tag">
-                      <div className="text-18">3D</div>
-                    </div>
-                    <div className="tag">
-                      <div className="text-18">Web Design</div>
-                    </div>
-                  </div>
-                  <a data-w-id="621895a5-6f71-baa2-804e-bd5ccf98dc1a" href="https://www.chainer.store/" target="_blank" className="button inverted-border w-button">Visit Live Website</a>
-                </div>
+            <WorkPageHeader label="Chainer" title="Men&#x27;s apparel">
+              <div className="div-block-55">
+                <p className="paragraph header">Chainer, an online store for men&#x27;s accessories, brought me on board to lead their Art Direction. My role was a mix of art direction, 3D animation, and web design, all aimed at giving their brand a fresh, standout vibe. The heart of this project was about creating immersive 3D worlds to showcase Chainer&#x27;s jewelry. This case study will show you how we made Chainer shine in the competitive online market.</p>
               </div>
-            </div>
+              <div className="wotk-tags-links">
+                <div className="work-tags">
+                  <div className="tag">
+                    <div className="text-18">Art Direction</div>
+                  </div>
+                  <div className="tag">
+                    <div className="text-18">3D</div>
+                  </div>
+                  <div className="tag">
+                    <div className="text-18">Web Design</div>
+                  </div>
+                </div>
+                <a href="https://www.chainer.store/" target="_blank" className="button inverted-border w-button">Visit Live Website</a>
+              </div>
+            </WorkPageHeader>
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-408b32ff" className="work-main-wrap first">
               <div className="w-layout-grid cs-grid">
                 <div id="w-node-d145010a-49fc-1f3d-3116-e279f7b14105-408b32ff" className="wrapper _15px">
@@ -53,22 +44,24 @@ export default function ChainerPage() {
                     <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe src="https://player.vimeo.com/video/881397523?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Chainer Launch (2023)"></iframe></div>
                   </div>
                 </div>
-                <div id="w-node-e91308e9-5de3-e650-87d5-29a902701986-408b32ff" data-w-id="e91308e9-5de3-e650-87d5-29a902701986" className="wrapper _15px"><img src="/images/chainer-case-0.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-0-p-500.webp 500w, /images/chainer-case-0-p-800.webp 800w, /images/chainer-case-0-p-1080.webp 1080w, /images/chainer-case-0-p-1600.webp 1600w, /images/chainer-case-0-p-2000.webp 2000w, /images/chainer-case-0-p-2600.webp 2600w, /images/chainer-case-0-p-3200.webp 3200w, /images/chainer-case-0.webp 3840w" alt="" className="image-21" /></div>
-                <div id="w-node-_9ecdf88a-464c-281d-0c30-4a797506c473-408b32ff" data-w-id="9ecdf88a-464c-281d-0c30-4a797506c473" className="wrapper _15px"><img src="/images/chainer-case-1.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-1-p-500.webp 500w, /images/chainer-case-1-p-800.webp 800w, /images/chainer-case-1-p-1080.webp 1080w, /images/chainer-case-1-p-1600.webp 1600w, /images/chainer-case-1-p-2000.webp 2000w, /images/chainer-case-1-p-2600.webp 2600w, /images/chainer-case-1-p-3200.webp 3200w, /images/chainer-case-1.webp 3840w" alt="" className="image-21" /></div>
-                <div id="w-node-_71ac86c2-4e52-72c7-c2c2-84f37b830a25-408b32ff" data-w-id="71ac86c2-4e52-72c7-c2c2-84f37b830a25" className="wrapper _15px"><img src="/images/chainer-case-2.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-2-p-500.webp 500w, /images/chainer-case-2-p-800.webp 800w, /images/chainer-case-2-p-1080.webp 1080w, /images/chainer-case-2-p-1600.webp 1600w, /images/chainer-case-2-p-2000.webp 2000w, /images/chainer-case-2-p-2600.webp 2600w, /images/chainer-case-2-p-3200.webp 3200w, /images/chainer-case-2.webp 3840w" alt="" className="image-21" /></div>
-                <div id="w-node-_2727c3f7-6ba6-1380-b114-d7ed898bc73e-408b32ff" data-w-id="2727c3f7-6ba6-1380-b114-d7ed898bc73e" className="wrapper _15px"><img src="/images/chainer-case-3-2.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-3-2-p-500.webp 500w, /images/chainer-case-3-2-p-800.webp 800w, /images/chainer-case-3-2-p-1080.webp 1080w, /images/chainer-case-3-2-p-1600.webp 1600w, /images/chainer-case-3-2-p-2000.webp 2000w, /images/chainer-case-3-2-p-2600.webp 2600w, /images/chainer-case-3-2-p-3200.webp 3200w, /images/chainer-case-3-2.webp 3840w" alt="" className="image-21" /></div>
-                <div id="w-node-_4c251230-b2e3-f3ee-ddae-2d99f3c573c3-408b32ff" data-w-id="4c251230-b2e3-f3ee-ddae-2d99f3c573c3" className="wrapper">
-                  <div data-poster-url="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-transcode.mp4,https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" className="background-video-16 w-background-video w-background-video-atom"><video id="d49d5730-5ada-ae68-0772-ccaecc69b712-video" autoPlay loop style={{ backgroundImage: 'url("https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-                      <source src="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-transcode.mp4" data-wf-ignore="true" />
-                      <source src="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-transcode.webm" data-wf-ignore="true" />
-                    </video></div>
+                <div id="w-node-e91308e9-5de3-e650-87d5-29a902701986-408b32ff" className="wrapper _15px"><img src="/images/chainer-case-0.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-0-p-500.webp 500w, /images/chainer-case-0-p-800.webp 800w, /images/chainer-case-0-p-1080.webp 1080w, /images/chainer-case-0-p-1600.webp 1600w, /images/chainer-case-0-p-2000.webp 2000w, /images/chainer-case-0-p-2600.webp 2600w, /images/chainer-case-0-p-3200.webp 3200w, /images/chainer-case-0.webp 3840w" alt="" className="image-21" /></div>
+                <div id="w-node-_9ecdf88a-464c-281d-0c30-4a797506c473-408b32ff" className="wrapper _15px"><img src="/images/chainer-case-1.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-1-p-500.webp 500w, /images/chainer-case-1-p-800.webp 800w, /images/chainer-case-1-p-1080.webp 1080w, /images/chainer-case-1-p-1600.webp 1600w, /images/chainer-case-1-p-2000.webp 2000w, /images/chainer-case-1-p-2600.webp 2600w, /images/chainer-case-1-p-3200.webp 3200w, /images/chainer-case-1.webp 3840w" alt="" className="image-21" /></div>
+                <div id="w-node-_71ac86c2-4e52-72c7-c2c2-84f37b830a25-408b32ff" className="wrapper _15px"><img src="/images/chainer-case-2.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-2-p-500.webp 500w, /images/chainer-case-2-p-800.webp 800w, /images/chainer-case-2-p-1080.webp 1080w, /images/chainer-case-2-p-1600.webp 1600w, /images/chainer-case-2-p-2000.webp 2000w, /images/chainer-case-2-p-2600.webp 2600w, /images/chainer-case-2-p-3200.webp 3200w, /images/chainer-case-2.webp 3840w" alt="" className="image-21" /></div>
+                <div id="w-node-_2727c3f7-6ba6-1380-b114-d7ed898bc73e-408b32ff" className="wrapper _15px"><img src="/images/chainer-case-3-2.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-3-2-p-500.webp 500w, /images/chainer-case-3-2-p-800.webp 800w, /images/chainer-case-3-2-p-1080.webp 1080w, /images/chainer-case-3-2-p-1600.webp 1600w, /images/chainer-case-3-2-p-2000.webp 2000w, /images/chainer-case-3-2-p-2600.webp 2600w, /images/chainer-case-3-2-p-3200.webp 3200w, /images/chainer-case-3-2.webp 3840w" alt="" className="image-21" /></div>
+                <div id="w-node-_4c251230-b2e3-f3ee-ddae-2d99f3c573c3-408b32ff" className="wrapper">
+                  <BackgroundVideo
+                    className="background-video-16"
+                    poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-poster-00001.jpg"
+                    srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-transcode.mp4"
+                    srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-transcode.webm"
+                  />
                   <div style={{ transform: 'translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-70">
                     <div className="text-18">Chainer Announcement</div>
                   </div>
                 </div>
-                <div id="w-node-_08c0a28a-3d0b-126c-c0c2-d6a5f01134b9-408b32ff" data-w-id="08c0a28a-3d0b-126c-c0c2-d6a5f01134b9" className="wrapper"><img src="/images/chainer-case-3.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-3-p-500.webp 500w, /images/chainer-case-3-p-800.webp 800w, /images/chainer-case-3-p-1080.webp 1080w, /images/chainer-case-3-p-1600.webp 1600w, /images/chainer-case-3-p-2000.webp 2000w, /images/chainer-case-3.webp 2160w" alt="" className="image-21" /></div>
-                <div id="w-node-_178cae50-2153-96a2-59c8-1e45d308aea9-408b32ff" data-w-id="178cae50-2153-96a2-59c8-1e45d308aea9" className="wrapper"><img src="/images/chainer-case-4.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-4-p-500.webp 500w, /images/chainer-case-4-p-800.webp 800w, /images/chainer-case-4-p-1080.webp 1080w, /images/chainer-case-4-p-1600.webp 1600w, /images/chainer-case-4-p-2000.webp 2000w, /images/chainer-case-4.webp 2160w" alt="" className="image-21" /></div>
-                <div id="w-node-f28259de-0a08-34c9-16bf-1922c353cd72-408b32ff" data-w-id="f28259de-0a08-34c9-16bf-1922c353cd72" className="wrapper"><img src="/images/chainer-case-5.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-5-p-500.webp 500w, /images/chainer-case-5-p-800.webp 800w, /images/chainer-case-5-p-1080.webp 1080w, /images/chainer-case-5-p-1600.webp 1600w, /images/chainer-case-5-p-2000.webp 2000w, /images/chainer-case-5.webp 2160w" alt="" className="image-21" /></div>
+                <div id="w-node-_08c0a28a-3d0b-126c-c0c2-d6a5f01134b9-408b32ff" className="wrapper"><img src="/images/chainer-case-3.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-3-p-500.webp 500w, /images/chainer-case-3-p-800.webp 800w, /images/chainer-case-3-p-1080.webp 1080w, /images/chainer-case-3-p-1600.webp 1600w, /images/chainer-case-3-p-2000.webp 2000w, /images/chainer-case-3.webp 2160w" alt="" className="image-21" /></div>
+                <div id="w-node-_178cae50-2153-96a2-59c8-1e45d308aea9-408b32ff" className="wrapper"><img src="/images/chainer-case-4.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-4-p-500.webp 500w, /images/chainer-case-4-p-800.webp 800w, /images/chainer-case-4-p-1080.webp 1080w, /images/chainer-case-4-p-1600.webp 1600w, /images/chainer-case-4-p-2000.webp 2000w, /images/chainer-case-4.webp 2160w" alt="" className="image-21" /></div>
+                <div id="w-node-f28259de-0a08-34c9-16bf-1922c353cd72-408b32ff" className="wrapper"><img src="/images/chainer-case-5.webp" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/chainer-case-5-p-500.webp 500w, /images/chainer-case-5-p-800.webp 800w, /images/chainer-case-5-p-1080.webp 1080w, /images/chainer-case-5-p-1600.webp 1600w, /images/chainer-case-5-p-2000.webp 2000w, /images/chainer-case-5.webp 2160w" alt="" className="image-21" /></div>
               </div>
             </div>
           </div>

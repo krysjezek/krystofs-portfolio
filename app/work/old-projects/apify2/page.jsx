@@ -14,7 +14,7 @@ export default function Apify2Page() {
                 <h1 className="heading-h1">Web scraping platform</h1>
               </div>
               <div className="back-block">
-                <a data-w-id="aa8feba7-8b91-a01c-2318-a71715a5e6ef" href="/" className="button inverted-border w-button">Back to home</a>
+                <a href="/" className="button inverted-border w-button">Back to home</a>
               </div>
             </div>
             <div className="div-block-55">

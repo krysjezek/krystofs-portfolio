@@ -1,20 +1,22 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import BackgroundVideo from '@/components/BackgroundVideo'
 
 export default function ApifyPage() {
   return (
     <>
       <Navbar />
       <div className="work-main-video-wrap">
-        <div data-poster-url="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-transcode.mp4,https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" data-beta-bgvideo-upgrade="false" className="work-main-video w-background-video w-background-video-atom"><video id="96a5b621-29c8-2a6e-c718-ad367fd6f867-video" autoPlay loop style={{ backgroundImage: 'url("https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-            <source src="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-transcode.mp4" data-wf-ignore="true" />
-            <source src="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-transcode.webm" data-wf-ignore="true" />
-          </video></div>
+        <BackgroundVideo className="work-main-video"
+          poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-poster-00001.jpg"
+          srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-transcode.mp4"
+          srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-transcode.webm"
+        />
       </div>
       <div>
         <div className="work-header-wrap">
           <div className="back-block">
-            <a data-w-id="aa8feba7-8b91-a01c-2318-a71715a5e6ef" href="/" className="button inverted-border w-button">Back to home</a>
+            <a href="/" className="button inverted-border w-button">Back to home</a>
           </div>
           <div>
             <div className="subheadline">Apify</div>
@@ -36,7 +38,7 @@ export default function ApifyPage() {
         </div>
         <div className="work-header-wrap">
           <div className="back-block">
-            <a data-w-id="aa8feba7-8b91-a01c-2318-a71715a5e6ef" href="/" className="button inverted-border w-button">Back to home</a>
+            <a href="/" className="button inverted-border w-button">Back to home</a>
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@
 import { useEffect } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import BackgroundVideo from '@/components/BackgroundVideo'
 
 export default function HomePage() {
   // Script 1: Text carousel
@@ -196,19 +197,19 @@ export default function HomePage() {
                   <div className="footer--text">
                     <div className="label">Menu</div>
                     <div className="div-block-119">
-                      <div data-w-id="b83b1921-bc4d-1a56-1b33-65a76eb8dfba" className="div-block-65">
+                      <div className="div-block-65">
                         <a href="/services/3d-environments" className="link">3D Environments</a>
                         <div className="line-mask">
                           <div className="line"></div>
                         </div>
                       </div>
-                      <div data-w-id="b83b1921-bc4d-1a56-1b33-65a76eb8dfbf" className="div-block-65">
+                      <div className="div-block-65">
                         <a href="/services/mixed-reality" className="link">Mixed Reality</a>
                         <div className="line-mask">
                           <div className="line"></div>
                         </div>
                       </div>
-                      <div data-w-id="b83b1921-bc4d-1a56-1b33-65a76eb8dfc4" className="div-block-65">
+                      <div className="div-block-65">
                         <a href="#tech-projects" className="link">Tech Projects</a>
                         <div className="line-mask">
                           <div className="line"></div>
@@ -224,7 +225,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfce-a7256e91" className="div-block-138">
-                  <a data-w-id="b83b1921-bc4d-1a56-1b33-65a76eb8dfcf" style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} href="https://calendly.com/krystofjezek/15min" target="_blank" className="button w-inline-block">
+                  <a style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} href="https://calendly.com/krystofjezek/15min" target="_blank" className="button w-inline-block">
                     <div className="text-block-18">Schedule a call</div>
                   </a>
                   <a href="mailto:krystof@jezek.me?subject=I%20want%20to%20work%20with%20Krystof" className="button inverted-border w-button">Get in touch</a>
@@ -234,7 +235,7 @@ export default function HomePage() {
             </div>
             <div className="footer-wrap">
               <div className="div-block-148">
-                <a data-w-id="e52e7df0-2110-6781-a923-908ffca990d6" style={{ backgroundColor: 'rgba(38,38,38,0.25)' }} href="https://www.motionmockups.com/" target="_blank" className="div-block-149 w-inline-block">
+                <a style={{ backgroundColor: 'rgba(38,38,38,0.25)' }} href="https://www.motionmockups.com/" target="_blank" className="div-block-149 w-inline-block">
                   <div id="w-node-_42e1a6b1-60e7-89d0-2ef5-bd4cb01f0209-a7256e91" className="div-block-151">
                     <div className="div-block-154">
                       <div className="div-block-150">
@@ -265,7 +266,7 @@ export default function HomePage() {
           </div>
           <div className="w-layout-blockcontainer container-3 header w-container">
             <div className="w-layout-grid main-proj-grid head">
-              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91" data-w-id="eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c" href="/services/3d-environments" className="proj-item w-inline-block">
+              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91" href="/services/3d-environments" className="proj-item w-inline-block">
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
                     <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', backgroundColor: 'rgb(255,255,255)' }} className="button case">
@@ -281,7 +282,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4eae-a7256e91" data-w-id="eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4eae" href="/services/mixed-reality" className="proj-item w-inline-block">
+              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4eae-a7256e91" href="/services/mixed-reality" className="proj-item w-inline-block">
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
                     <div style={{ backgroundColor: 'rgb(255,255,255)', transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button case">
@@ -307,13 +308,14 @@ export default function HomePage() {
           </div>
         </section>
         <div className="main-featured">
-          <div data-w-id="904fbc8b-ac0d-96c5-14c3-cbef6d8f1f02" className="featured-carousel">
+          <div className="featured-carousel">
             <div className="featured-block archviz"></div>
             <div className="featured-block maison">
-              <div data-poster-url="/videos/davinci-render2-poster-00001.jpg" data-video-urls="/videos/davinci-render2-transcode.mp4,/videos/davinci-render2-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" className="background-video-22 w-background-video w-background-video-atom"><video id="5d81a28f-e535-b59f-a29a-f428243f9c6c-video" autoPlay loop style={{ backgroundImage: 'url("/videos/davinci-render2-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-                  <source src="/videos/davinci-render2-transcode.mp4" data-wf-ignore="true" />
-                  <source src="/videos/davinci-render2-transcode.webm" data-wf-ignore="true" />
-                </video></div>
+              <BackgroundVideo className="background-video-22"
+                poster="/videos/posters/davinci-render2.jpg"
+                srcMp4="/videos/h264/davinci-render2.mp4"
+                srcWebm="/videos/other/davinci-render2.webm"
+              />
             </div>
             <div className="featured-block ashfall"></div>
             <div className="featured-block archviz2"></div>
@@ -323,7 +325,7 @@ export default function HomePage() {
         <div className="main-animated none">
           <div className="w-layout-blockcontainer container-3 w-container">
             <div id="targetDiv" className="div-block-101">
-              <a id="w-node-_0922472a-8b42-2f1d-7fbf-9cb935b9512f-a7256e91" data-w-id="0922472a-8b42-2f1d-7fbf-9cb935b9512f" style={{ backgroundColor: 'rgb(0,0,0)' }} href="#" className="animated-mocks-div jewelry w-inline-block">
+              <a id="w-node-_0922472a-8b42-2f1d-7fbf-9cb935b9512f-a7256e91" style={{ backgroundColor: 'rgb(0,0,0)' }} href="#" className="animated-mocks-div jewelry w-inline-block">
                 <div className="proj-img-wrap main"></div>
                 <div className="div-block-92 center">
                   <div className="div-block-94">
@@ -342,7 +344,7 @@ export default function HomePage() {
             <div className="div-block-96">
               <ul role="list" className="list-3 w-list-unstyled">
                 <li className="list-item-5">
-                  <a id="b1" data-w-id="48517e4d-6dc9-b73e-fbe1-e9c78c908da1" href="#" className="services-link selected w-inline-block">
+                  <a id="b1" href="#" className="services-link selected w-inline-block">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Engage audiences</div>
@@ -352,7 +354,7 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li className="list-item-2">
-                  <a id="b2" data-w-id="2e2a33a2-e6a9-601a-7aec-e53ac47be4ee" href="#" className="services-link w-inline-block">
+                  <a id="b2" href="#" className="services-link w-inline-block">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Showcase products</div>
@@ -362,7 +364,7 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li className="list-item-3">
-                  <a id="b3" data-w-id="42980220-fa7b-6752-6347-82db5bd2c086" href="#" className="services-link w-inline-block">
+                  <a id="b3" href="#" className="services-link w-inline-block">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Streamline Iterations</div>
@@ -372,7 +374,7 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li className="list-item-4">
-                  <a id="b4" data-w-id="76d3972d-f4d8-50bb-1f97-e1a26a48eb96" href="#" className="services-link w-inline-block">
+                  <a id="b4" href="#" className="services-link w-inline-block">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Educate Customers</div>
@@ -417,7 +419,7 @@ export default function HomePage() {
           <div className="w-layout-blockcontainer container-3 w-container">
             <h1 className="heading-2">Recent Case Studies</h1>
             <div className="w-layout-grid main-proj-grid">
-              <a id="w-node-_0a0f2415-0cbe-189d-07e1-6388208cf7e6-a7256e91" data-w-id="0a0f2415-0cbe-189d-07e1-6388208cf7e6" href="/work/the-mag-w-rap-2025" className="proj-item w-inline-block">
+              <a id="w-node-_0a0f2415-0cbe-189d-07e1-6388208cf7e6-a7256e91" href="/work/the-mag-w-rap-2025" className="proj-item w-inline-block">
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -452,7 +454,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a id="w-node-_3c9fd363-924c-9b72-f486-2437327d7019-a7256e91" data-w-id="3c9fd363-924c-9b72-f486-2437327d7019" href="/work/barbour" className="proj-item w-inline-block">
+              <a id="w-node-_3c9fd363-924c-9b72-f486-2437327d7019-a7256e91" href="/work/barbour" className="proj-item w-inline-block">
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -481,7 +483,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a data-w-id="4ea25938-b659-b714-d2b1-29b2bf03e4ad" href="/work/the-vsx-sports-bra" className="proj-item w-inline-block">
+              <a href="/work/the-vsx-sports-bra" className="proj-item w-inline-block">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="background-video-18 w-embed"><video autoPlay loop muted playsInline style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 'auto', height: '100%', display: 'block', objectFit: 'cover' }}>
@@ -516,13 +518,14 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a data-w-id="e57ea6ba-80b1-7650-626d-35445c6566c2" href="/work/old-projects/onitsuka-tiger-covent-garden" className="proj-item hide w-inline-block">
+              <a href="/work/old-projects/onitsuka-tiger-covent-garden" className="proj-item hide w-inline-block">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div data-poster-url="/videos/thumb-poster-00001.jpg" data-video-urls="/videos/thumb-transcode.mp4,/videos/thumb-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" style={{ display: 'none' }} className="background-video-18 w-background-video w-background-video-atom"><video id="e57ea6ba-80b1-7650-626d-35445c6566c5-video" autoPlay loop style={{ backgroundImage: 'url("/videos/thumb-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-                        <source src="/videos/thumb-transcode.mp4" data-wf-ignore="true" />
-                        <source src="/videos/thumb-transcode.webm" data-wf-ignore="true" />
-                      </video></div>
+                    <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
+                      poster="/videos/posters/thumb.jpg"
+                      srcMp4="/videos/h264/thumb.mp4"
+                      srcWebm="/videos/other/thumb.webm"
+                    />
                     <div className="proj-img onitsuykja"></div>
                   </div>
                   <div className="div-block-99">
@@ -545,13 +548,14 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a data-w-id="beda2a35-ec7b-a2d7-ff1d-a58bd6c4d332" href="/work/old-projects/yonex-s-d-campaign" className="proj-item hide w-inline-block">
+              <a href="/work/old-projects/yonex-s-d-campaign" className="proj-item hide w-inline-block">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div data-poster-url="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-transcode.mp4,https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" style={{ display: 'none' }} className="background-video-18 w-background-video w-background-video-atom"><video id="beda2a35-ec7b-a2d7-ff1d-a58bd6c4d335-video" autoPlay loop style={{ backgroundImage: 'url("https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-                        <source src="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-transcode.mp4" data-wf-ignore="true" />
-                        <source src="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-transcode.webm" data-wf-ignore="true" />
-                      </video></div>
+                    <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
+                      poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-poster-00001.jpg"
+                      srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-transcode.mp4"
+                      srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-transcode.webm"
+                    />
                     <div className="proj-img yonex"></div>
                   </div>
                   <div className="div-block-99">
@@ -576,13 +580,14 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a data-w-id="54a607ca-508e-faa0-2092-3af7255d1dbd" href="/work/old-projects/the-mag-w-rap-2024" className="proj-item hide w-inline-block">
+              <a href="/work/old-projects/the-mag-w-rap-2024" className="proj-item hide w-inline-block">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div data-poster-url="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-transcode.mp4,https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" style={{ display: 'none' }} className="background-video-18 w-background-video w-background-video-atom"><video id="efac925b-8df2-a65c-6fea-0f0500b21582-video" autoPlay loop style={{ backgroundImage: 'url("https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-                        <source src="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-transcode.mp4" data-wf-ignore="true" />
-                        <source src="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-transcode.webm" data-wf-ignore="true" />
-                      </video></div>
+                    <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
+                      poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-poster-00001.jpg"
+                      srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-transcode.mp4"
+                      srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-transcode.webm"
+                    />
                     <div className="proj-img wrap-24"></div>
                   </div>
                   <div className="div-block-99">
@@ -610,7 +615,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a id="w-node-ca5842f0-12ea-bba6-91ec-c62ab4bb5501-a7256e91" data-w-id="ca5842f0-12ea-bba6-91ec-c62ab4bb5501" href="/work/chainer" className="proj-item w-inline-block">
+              <a id="w-node-ca5842f0-12ea-bba6-91ec-c62ab4bb5501-a7256e91" href="/work/chainer" className="proj-item w-inline-block">
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -639,14 +644,15 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a data-w-id="4411092d-bab4-1c17-b643-f1bc750275ee" href="/work/old-projects/lepshee" className="proj-item hide w-inline-block">
+              <a href="/work/old-projects/lepshee" className="proj-item hide w-inline-block">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="proj-img lepshee"></div>
-                    <div data-poster-url="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-poster-00001.jpg" data-video-urls="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-transcode.mp4,https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-transcode.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" data-beta-bgvideo-upgrade="false" style={{ display: 'none' }} className="background-video-18 w-background-video w-background-video-atom"><video id="4411092d-bab4-1c17-b643-f1bc750275f2-video" autoPlay loop style={{ backgroundImage: 'url("https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-poster-00001.jpg")' }} muted playsInline data-wf-ignore="true" data-object-fit="cover">
-                        <source src="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-transcode.mp4" data-wf-ignore="true" />
-                        <source src="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-transcode.webm" data-wf-ignore="true" />
-                      </video></div>
+                    <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
+                      poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-poster-00001.jpg"
+                      srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-transcode.mp4"
+                      srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-transcode.webm"
+                    />
                   </div>
                   <div className="div-block-99">
                     <div className="label gray">3D • MOTION GRAPHICS</div>
@@ -663,27 +669,27 @@ export default function HomePage() {
           <div className="snapshots-wrap">
             <h1 className="heading-2">R&amp;D</h1>
             <div className="w-layout-grid snapshots-grid">
-              <div id="w-node-a99893c8-7a95-570f-74fb-4a4430edba87-a7256e91" data-w-id="a99893c8-7a95-570f-74fb-4a4430edba87" className="snapshot-cover">
+              <div id="w-node-a99893c8-7a95-570f-74fb-4a4430edba87-a7256e91" className="snapshot-cover">
                 <div className="snapshot-img _2"></div>
               </div>
-              <div id="w-node-f6c05c63-8807-5c35-fd3d-79967d9a78b5-a7256e91" data-w-id="f6c05c63-8807-5c35-fd3d-79967d9a78b5" className="snapshot-cover">
+              <div id="w-node-f6c05c63-8807-5c35-fd3d-79967d9a78b5-a7256e91" className="snapshot-cover">
                 <div className="snapshot-img _3"></div>
               </div>
-              <div id="w-node-dad5dac9-b366-df48-a450-723abb21c63e-a7256e91" data-w-id="dad5dac9-b366-df48-a450-723abb21c63e" className="snapshot-cover">
+              <div id="w-node-dad5dac9-b366-df48-a450-723abb21c63e-a7256e91" className="snapshot-cover">
                 <div className="snapshot-img _6"></div>
               </div>
-              <div id="w-node-b575eaa3-7424-2bce-75f7-6d5fa1bbc967-a7256e91" data-w-id="b575eaa3-7424-2bce-75f7-6d5fa1bbc967" className="snapshot-cover">
+              <div id="w-node-b575eaa3-7424-2bce-75f7-6d5fa1bbc967-a7256e91" className="snapshot-cover">
                 <div className="snapshot-img _1"></div>
               </div>
-              <div id="w-node-aa034c7d-cfea-c763-d292-2857be8f653b-a7256e91" data-w-id="aa034c7d-cfea-c763-d292-2857be8f653b" className="snapshot-cover">
+              <div id="w-node-aa034c7d-cfea-c763-d292-2857be8f653b-a7256e91" className="snapshot-cover">
                 <div className="snapshot-img _4"></div>
               </div>
-              <div id="w-node-c81a9b1c-2467-5bfd-bc49-b29a607d269e-a7256e91" data-w-id="c81a9b1c-2467-5bfd-bc49-b29a607d269e" className="snapshot-cover hori">
+              <div id="w-node-c81a9b1c-2467-5bfd-bc49-b29a607d269e-a7256e91" className="snapshot-cover hori">
                 <div className="snapshot-img _5"></div>
               </div>
             </div>
             <div className="div-block-58">
-              <a href="https://www.instagram.com/krystof.jezek/" data-w-id="a2992b72-3a93-973f-8c0f-930a1e057771" style={{ color: 'rgba(255,255,255,0.5)' }} target="_blank" className="nav-button">See more work on Instagram</a>
+              <a href="https://www.instagram.com/krystof.jezek/" style={{ color: 'rgba(255,255,255,0.5)' }} target="_blank" className="nav-button">See more work on Instagram</a>
             </div>
           </div>
         </section>

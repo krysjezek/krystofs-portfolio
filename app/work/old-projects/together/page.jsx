@@ -16,7 +16,7 @@ export default function Together() {
                     <h1 className="heading-h1">Full-service Branding Agency</h1>
                   </div>
                   <div className="back-block">
-                    <a data-w-id="aa8feba7-8b91-a01c-2318-a71715a5e6ef" href="/" className="button inverted-border w-button">Back to home</a>
+                    <a href="/" className="button inverted-border w-button">Back to home</a>
                   </div>
                 </div>
                 <div className="div-block-55">
@@ -28,7 +28,7 @@ export default function Together() {
                       <div className="text-18">Motion Graphics</div>
                     </div>
                   </div>
-                  <a data-w-id="621895a5-6f71-baa2-804e-bd5ccf98dc1a" href="https://together.agency/" target="_blank" className="button inverted-border w-button">Visit Together</a>
+                  <a href="https://together.agency/" target="_blank" className="button inverted-border w-button">Visit Together</a>
                 </div>
               </div>
             </div>

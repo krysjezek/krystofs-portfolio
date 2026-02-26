@@ -16,7 +16,7 @@ export default function AshfallPage() {
                     <h1 className="heading-h1">Custom Animated Mockups</h1>
                   </div>
                   <div className="back-block">
-                    <a data-w-id="aa8feba7-8b91-a01c-2318-a71715a5e6ef" href="/" className="button inverted-border w-button">Back to home</a>
+                    <a href="/" className="button inverted-border w-button">Back to home</a>
                   </div>
                 </div>
                 <div className="div-block-55">
@@ -31,7 +31,7 @@ export default function AshfallPage() {
                       <div className="text-18">Sound Design</div>
                     </div>
                   </div>
-                  <a data-w-id="3744e18d-b47a-366a-50d4-70df9399d37b" style={{ backgroundColor: 'rgba(30,39,59,0.5)', transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} href="https://ashfall.studio/" target="_blank" className="button inverted-border w-button">Visit Ashfall</a>
+                  <a style={{ backgroundColor: 'rgba(30,39,59,0.5)', transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} href="https://ashfall.studio/" target="_blank" className="button inverted-border w-button">Visit Ashfall</a>
                 </div>
               </div>
             </div>
