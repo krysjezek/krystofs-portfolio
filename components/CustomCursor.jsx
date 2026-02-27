@@ -2,6 +2,8 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 
+const CURSOR_URL = 'https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/images/cursor.svg'
+
 export default function CustomCursor() {
   const cursorRef = useRef(null)
   const pillRef = useRef(null)
@@ -23,16 +25,11 @@ export default function CustomCursor() {
 
     const expand = (text) => {
       label.textContent = text
-      // Measure required width after text is set
-      const labelWidth = label.scrollWidth
-      const targetWidth = labelWidth + 28
-      gsap.to(pill, { width: targetWidth, height: 28, duration: 0.35, ease: 'power3.out' })
-      gsap.to(label, { opacity: 1, duration: 0.2, delay: 0.15 })
+      gsap.to(pill, { opacity: 1, scale: 1, duration: 0.35, ease: 'back.out(1.4)' })
     }
 
     const collapse = () => {
-      gsap.to(pill, { width: 16, height: 16, duration: 0.35, ease: 'power3.out' })
-      gsap.to(label, { opacity: 0, duration: 0.1 })
+      gsap.to(pill, { opacity: 0, scale: 0, duration: 0.2, ease: 'power2.in' })
     }
 
     const onOver = (e) => {
@@ -42,15 +39,15 @@ export default function CustomCursor() {
 
     const onOut = (e) => {
       const el = e.target.closest('[data-cursor]')
-      if (el) collapse()
+      if (el && !el.contains(e.relatedTarget)) collapse()
     }
 
     const onMouseDown = () => {
-      gsap.to(pill, { scale: 0.7, duration: 0.1, ease: 'power2.out' })
+      gsap.to(cursor, { scale: 0.85, duration: 0.1, ease: 'power2.out' })
     }
 
     const onMouseUp = () => {
-      gsap.to(pill, { scale: 1, duration: 0.2, ease: 'power2.out' })
+      gsap.to(cursor, { scale: 1, duration: 0.2, ease: 'power2.out' })
     }
 
     window.addEventListener('mousemove', onMove)
@@ -80,34 +77,46 @@ export default function CustomCursor() {
         willChange: 'transform',
       }}
     >
+      {/* SVG arrow — tip aligns with wrapper origin (mouse position) */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={CURSOR_URL}
+        alt=""
+        style={{ display: 'block', width: 16 }}
+      />
+
+      {/* Pill label — appears offset below-right of arrow tip */}
       <div
         ref={pillRef}
         style={{
-          transform: 'translate(-50%, -50%)',
-          backgroundColor: '#a4f683',
+          position: 'absolute',
+          top: 16,
+          left: 16,
+          opacity: 0,
+          scale: 0,
+          height: 32,
           borderRadius: 99,
-          width: 16,
-          height: 16,
+          backgroundColor: '#a4f683',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center',
+          whiteSpace: 'nowrap',
           overflow: 'hidden',
-          willChange: 'width, height',
+          transformOrigin: 'top left',
+          pointerEvents: 'none',
         }}
       >
         <span
           ref={labelRef}
           style={{
-            opacity: 0,
-            whiteSpace: 'nowrap',
-            fontSize: 11,
+            fontSize: 13,
             fontFamily: 'IBM Plex Mono, monospace',
-            letterSpacing: '0.08em',
+            letterSpacing: '0.06em',
             textTransform: 'uppercase',
             color: '#000',
-            paddingLeft: 14,
-            paddingRight: 14,
+            paddingLeft: 16,
+            paddingRight: 16,
             userSelect: 'none',
+            whiteSpace: 'nowrap',
           }}
         />
       </div>

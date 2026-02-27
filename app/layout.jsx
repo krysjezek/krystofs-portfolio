@@ -1,5 +1,7 @@
 import Script from 'next/script'
 import CustomCursor from '@/components/CustomCursor'
+import '@/styles/normalize.css'
+import '@/styles/webflow.css'
 import '@/styles/krystofs-portfolio.webflow.scss'
 
 export const metadata = {
@@ -21,10 +23,6 @@ export default function RootLayout({ children }) {
         <Script id="typekit-load" strategy="afterInteractive">{`
           try { Typekit.load(); } catch(e) {}
         `}</Script>
-
-        {/* Webflow CSS */}
-        <link rel="stylesheet" href="/css/normalize.css" />
-        <link rel="stylesheet" href="/css/webflow.css" />
 
         <link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/webclip.jpg" />
