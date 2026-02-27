@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <CustomCursor />
-        {children}
+{children}
       </body>
     </html>
   )

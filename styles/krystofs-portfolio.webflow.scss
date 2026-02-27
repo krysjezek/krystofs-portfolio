@@ -72,6 +72,11 @@
   --gray-0-35: #595959;
 }
 
+::selection {
+  color: var(--green-new);
+  background: rgba(164, 246, 131, 0.15);
+}
+
 .w-layout-blockcontainer {
   max-width: 940px;
   margin-left: auto;
@@ -126,6 +131,7 @@ body {
   color: #fff;
   font-family: Roobert, Arial, sans-serif;
   font-size: 14px;
+  font-weight: 300;
   line-height: 20px;
 }
 
@@ -1929,6 +1935,8 @@ body {
   font-weight: 400;
   line-height: 20px;
   text-decoration: none;
+  text-box-trim: both;
+  text-box-edge: cap alphabetic;
 }
 
 .label.gray {
@@ -2279,6 +2287,13 @@ body {
   display: flex;
   position: relative;
   overflow: hidden;
+  text-box-trim: both;
+  text-box-edge: cap alphabetic;
+}
+
+.button .text-block-18 {
+  text-box-trim: both;
+  text-box-edge: cap alphabetic;
 }
 
 .button.fill {
@@ -4476,6 +4491,8 @@ body {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 400;
+  text-box-trim: both;
+  text-box-edge: cap alphabetic;
 }
 
 .label-2.gray {
@@ -4497,6 +4514,8 @@ body {
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 400;
+  text-box-trim: both;
+  text-box-edge: cap alphabetic;
 }
 
 .label-3.gray {
@@ -4611,6 +4630,8 @@ body {
   font-size: 12px;
   font-weight: 500;
   line-height: 25px;
+  text-box-trim: both;
+  text-box-edge: cap alphabetic;
 }
 
 .mini-label.green {
