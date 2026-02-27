@@ -98,37 +98,37 @@ export default function BarbourPage() {
                   <div className="bts-grid">
                     <BackgroundVideo
                       className="background-video-16 barb"
-                      poster={CDN + '/videos/posters/Barbour---IiQ---Reconstruction-2---BTS---4x5.jpg'}
+                      poster="/videos/posters/Barbour---IiQ---Reconstruction-2---BTS---4x5.jpg"
                       srcMp4="/videos/h264/Barbour---IiQ---Reconstruction-2---BTS---4x5.mp4"
                       srcWebm="/videos/other/Barbour---IiQ---Reconstruction-2---BTS---4x5.webm"
                     />
                     <BackgroundVideo
                       className="background-video-16 barb"
-                      poster={CDN + '/videos/posters/Barbour---IiQ---Fern-03--BTS----4x5.jpg'}
+                      poster="/videos/posters/Barbour---IiQ---Fern-03--BTS----4x5.jpg"
                       srcMp4="/videos/h264/Barbour---IiQ---Fern-03--BTS----4x5.mp4"
                       srcWebm="/videos/other/Barbour---IiQ---Fern-03--BTS----4x5.webm"
                     />
                     <BackgroundVideo
                       className="background-video-16 barb"
-                      poster={CDN + '/videos/posters/Barbour---IiQ---Instant-Render-2---BTS----4x5.jpg'}
+                      poster="/videos/posters/Barbour---IiQ---Instant-Render-2---BTS----4x5.jpg"
                       srcMp4="/videos/h264/Barbour---IiQ---Instant-Render-2---BTS----4x5.mp4"
                       srcWebm="/videos/other/Barbour---IiQ---Instant-Render-2---BTS----4x5.webm"
                     />
                     <BackgroundVideo
                       className="background-video-16 barb"
-                      poster={CDN + '/videos/posters/Barbour---IiQ---Nodes---BTS----4x5.jpg'}
+                      poster="/videos/posters/Barbour---IiQ---Nodes---BTS----4x5.jpg"
                       srcMp4="/videos/h264/Barbour---IiQ---Nodes---BTS----4x5.mp4"
                       srcWebm="/videos/other/Barbour---IiQ---Nodes---BTS----4x5.webm"
                     />
                     <BackgroundVideo
                       className="background-video-16 barb"
-                      poster={CDN + '/videos/posters/Barbour---IiQ---Bus---BTS----4x5_1.jpg'}
+                      poster="/videos/posters/Barbour---IiQ---Bus---BTS----4x5_1.jpg"
                       srcMp4="/videos/h264/Barbour---IiQ---Bus---BTS----4x5_1.mp4"
                       srcWebm="/videos/other/Barbour---IiQ---Bus---BTS----4x5_1.webm"
                     />
                     <BackgroundVideo
                       className="background-video-16 barb"
-                      poster={CDN + '/videos/posters/Barbour---IiQ---Fern-02--BTS----4x5.jpg'}
+                      poster="/videos/posters/Barbour---IiQ---Fern-02--BTS----4x5.jpg"
                       srcMp4="/videos/h264/Barbour---IiQ---Fern-02--BTS----4x5.mp4"
                       srcWebm="/videos/other/Barbour---IiQ---Fern-02--BTS----4x5.webm"
                     />

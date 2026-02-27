@@ -26,7 +26,7 @@ export default function WorkPage() {
                   </div>
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
-                      poster={CDN + '/videos/posters/wrap25_injektaz_preview.jpg'}
+                      poster="/videos/posters/wrap25_injektaz_preview.jpg"
                       srcMp4="/videos/h264/wrap25_injektaz_preview.mp4"
                       srcWebm="/videos/other/wrap25_injektaz_preview.webm"
                     />
@@ -48,7 +48,7 @@ export default function WorkPage() {
                   </div>
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
-                      poster={CDN + '/videos/posters/Barbour-London---16x9_3_prob4.jpg'}
+                      poster="/videos/posters/Barbour-London---16x9_3_prob4.jpg"
                       srcMp4="/videos/h264/Barbour-London---16x9_3_prob4.mp4"
                       srcWebm="/videos/other/Barbour-London---16x9_3_prob4.webm"
                     />
@@ -61,7 +61,7 @@ export default function WorkPage() {
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
-                      poster={CDN + '/videos/posters/vsx_16x9.jpg'}
+                      poster="/videos/posters/vsx_16x9.jpg"
                       srcMp4="/videos/h264/vsx_16x9.mp4"
                       srcWebm="/videos/other/vsx_16x9.webm"
                     />
@@ -84,7 +84,7 @@ export default function WorkPage() {
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="proj-img frasers"></div>
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
-                      poster={CDN + '/videos/posters/barbour_frasers-16x9---15s_1.jpg'}
+                      poster="/videos/posters/barbour_frasers-16x9---15s_1.jpg"
                       srcMp4="/videos/h264/barbour_frasers-16x9---15s_1.mp4"
                       srcWebm="/videos/other/barbour_frasers-16x9---15s_1.webm"
                     />
@@ -105,7 +105,7 @@ export default function WorkPage() {
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
-                      poster={CDN + '/videos/posters/thumb.jpg'}
+                      poster="/videos/posters/thumb.jpg"
                       srcMp4="/videos/h264/thumb.mp4"
                       srcWebm="/videos/other/thumb.webm"
                     />
@@ -202,7 +202,7 @@ export default function WorkPage() {
                   </div>
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
-                      poster={CDN + '/videos/posters/reels-bts-tweezers-1.jpg'}
+                      poster="/videos/posters/reels-bts-tweezers-1.jpg"
                       srcMp4="/videos/h264/reels-bts-tweezers-1.mp4"
                       srcWebm="/videos/other/reels-bts-tweezers-1.webm"
                     />
@@ -268,7 +268,7 @@ export default function WorkPage() {
                   </div>
                   <div className="div-block-66">
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
-                      poster={CDN + '/videos/posters/tournament-mp4-2.jpg'}
+                      poster="/videos/posters/tournament-mp4-2.jpg"
                       srcMp4="/videos/h264/tournament-mp4-2.mp4"
                       srcWebm="/videos/other/tournament-mp4-2.webm"
                     />
@@ -347,7 +347,7 @@ export default function WorkPage() {
                 <div className="proj-img-wrap">
                   <div className="div-block-66">
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
-                      poster={CDN + '/videos/posters/together-2.jpg'}
+                      poster="/videos/posters/together-2.jpg"
                       srcMp4="/videos/h264/together-2.mp4"
                       srcWebm="/videos/other/together-2.webm"
                     />

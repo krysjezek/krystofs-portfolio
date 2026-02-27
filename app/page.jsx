@@ -278,7 +278,7 @@ export default function HomePage() {
             <div className="featured-block archviz"></div>
             <div className="featured-block maison">
               <BackgroundVideo className="background-video-22"
-                poster={CDN + '/videos/posters/davinci-render2.jpg'}
+                poster="/videos/posters/davinci-render2.jpg"
                 srcMp4="/videos/h264/davinci-render2.mp4"
                 srcWebm="/videos/other/davinci-render2.webm"
               />
