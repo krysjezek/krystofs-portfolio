@@ -1,6 +1,8 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+
 export default function AshfallPage() {
   return (
     <>
@@ -61,7 +63,7 @@ export default function AshfallPage() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Martin Ehrlich</p>
                           <a href="https://hhttps://ashfall.studio/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(ASHFALL)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(ASHFALL)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>
@@ -70,7 +72,7 @@ export default function AshfallPage() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Martin Egrt</p>
                           <a href="https://ashfall.studio/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(ASHFALL)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(ASHFALL)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>

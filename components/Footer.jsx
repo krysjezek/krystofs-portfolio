@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+
 export default function Footer() {
   return (
     <>
@@ -22,21 +24,21 @@ export default function Footer() {
                   <div className="div-block-119">
                     <div data-w-id="1cc26f6b-2051-9734-6fdd-09e78fee6e21" className="div-block-65">
                       <a href="https://www.instagram.com/krystof.jezek/" target="_blank" rel="noopener noreferrer" className="link" data-cursor="Follow">Instagram</a>
-                      <img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-20" />
+                      <img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20" />
                       <div className="line-mask">
                         <div className="line"></div>
                       </div>
                     </div>
                     <div data-w-id="1cc26f6b-2051-9734-6fdd-09e78fee6e27" className="div-block-65">
                       <a href="https://krystofjezek.gumroad.com/" target="_blank" rel="noopener noreferrer" className="link" data-cursor="Follow">Gumroad</a>
-                      <img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-20" />
+                      <img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20" />
                       <div className="line-mask">
                         <div className="line"></div>
                       </div>
                     </div>
                     <div data-w-id="1cc26f6b-2051-9734-6fdd-09e78fee6e2d" className="div-block-65">
                       <a href="https://www.linkedin.com/in/krystofjezek/" target="_blank" rel="noopener noreferrer" className="link" data-cursor="Follow">LinkedIn</a>
-                      <img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-20" />
+                      <img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20" />
                       <div className="line-mask">
                         <div className="line"></div>
                       </div>
@@ -75,14 +77,14 @@ export default function Footer() {
                   <div className="div-block-119">
                     <div data-w-id="6565ca43-4312-11b1-fa85-94235efea807" className="div-block-65">
                       <a href="mailto:krystof@jezek.me?subject=Let&#x27;s%20work%20tohether!" className="link" data-cursor="Reach out">krystof@jezek.me</a>
-                      <img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-20" />
+                      <img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20" />
                       <div className="line-mask">
                         <div className="line"></div>
                       </div>
                     </div>
                     <div data-w-id="6565ca43-4312-11b1-fa85-94235efea80d" className="div-block-65">
                       <a href="https://wa.me/420774066745" className="link" data-cursor="Reach out">WhatsApp</a>
-                      <img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-20" />
+                      <img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20" />
                       <div className="line-mask">
                         <div className="line"></div>
                       </div>

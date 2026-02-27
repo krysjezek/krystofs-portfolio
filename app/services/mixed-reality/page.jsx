@@ -1,6 +1,8 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+
 export default function MixedRealityPage() {
   return (
     <>
@@ -32,7 +34,7 @@ export default function MixedRealityPage() {
                     <source src="/videos/av1/cgi_barbour_london%20updated.webm" type="video/webm; codecs=av01" />
                     <source src="/videos/h264/cgi_barbour_london%20updated-fallback.mp4" type="video/mp4" />
                   </video></div>
-                  <div className="div-block-146"><img loading="lazy" src="/images/barbour.png" alt="" className="logo-service" />
+                  <div className="div-block-146"><img loading="lazy" src={CDN + '/images/barbour.png'} alt="" className="logo-service" />
                     <h2 className="service-heading">Icons in Quiliting London</h2>
                   </div>
                 </div>
@@ -86,7 +88,7 @@ export default function MixedRealityPage() {
                     <source src="/videos/av1/cgi_frasers%20updated.webm" type="video/webm; codecs=av01" />
                     <source src="/videos/h264/cgi_frasers%20updated-fallback.mp4" type="video/mp4" />
                   </video></div>
-                  <div className="div-block-146"><img loading="lazy" src="/images/barbour.png" alt="" className="logo-service" />
+                  <div className="div-block-146"><img loading="lazy" src={CDN + '/images/barbour.png'} alt="" className="logo-service" />
                     <h2 className="service-heading">Frasers Collab</h2>
                   </div>
                 </div>
@@ -110,7 +112,7 @@ export default function MixedRealityPage() {
                     <source src="/videos/av1/cgi_barbour_ny%20updated.webm" type="video/webm; codecs=av01" />
                     <source src="/videos/h264/cgi_barbour_ny%20updated-fallback.mp4" type="video/mp4" />
                   </video></div>
-                  <div className="div-block-146"><img loading="lazy" src="/images/barbour.png" alt="" className="logo-service" />
+                  <div className="div-block-146"><img loading="lazy" src={CDN + '/images/barbour.png'} alt="" className="logo-service" />
                     <h2 className="service-heading">Icons in Quiliting NYC</h2>
                   </div>
                 </div>
@@ -120,7 +122,7 @@ export default function MixedRealityPage() {
                     <source src="/videos/av1/cgi_onitsuka.webm" type="video/webm; codecs=av01" />
                     <source src="/videos/h264/cgi_onitsuka-fallback.mp4" type="video/mp4" />
                   </video></div>
-                  <div className="div-block-146"><img loading="lazy" src="/images/onitsuka-tiger-logo.svg" alt="" className="logo-service" />
+                  <div className="div-block-146"><img loading="lazy" src={CDN + '/images/onitsuka-tiger-logo.svg'} alt="" className="logo-service" />
                     <h2 className="service-heading">New Store Opening</h2>
                   </div>
                 </div>
@@ -130,7 +132,7 @@ export default function MixedRealityPage() {
                     <source src="/videos/av1/cgi_barbour_seoul%20updated.webm" type="video/webm; codecs=av01" />
                     <source src="/videos/h264/cgi_barbour_seoul%20updated-fallback.mp4" type="video/mp4" />
                   </video></div>
-                  <div className="div-block-146"><img loading="lazy" src="/images/barbour.png" alt="" className="logo-service" />
+                  <div className="div-block-146"><img loading="lazy" src={CDN + '/images/barbour.png'} alt="" className="logo-service" />
                     <h2 className="service-heading">Icons in Quiliting Seoul</h2>
                   </div>
                 </div>
@@ -151,7 +153,7 @@ export default function MixedRealityPage() {
                     <source src="/videos/av1/cgi_barbour_shanghai%20updated.webm" type="video/webm; codecs=av01" />
                     <source src="/videos/h264/cgi_barbour_shanghai%20updated-fallback.mp4" type="video/mp4" />
                   </video></div>
-                  <div className="div-block-146"><img loading="lazy" src="/images/barbour.png" alt="" className="logo-service" />
+                  <div className="div-block-146"><img loading="lazy" src={CDN + '/images/barbour.png'} alt="" className="logo-service" />
                     <h2 className="service-heading">Icons in Quiliting Shanghai</h2>
                   </div>
                 </div>
@@ -161,7 +163,7 @@ export default function MixedRealityPage() {
                     <source src="/videos/av1/cgi_chainer%20updated.webm" type="video/webm; codecs=av01" />
                     <source src="/videos/h264/cgi_chainer%20updated-fallback.mp4" type="video/mp4" />
                   </video></div>
-                  <div className="div-block-146"><img loading="lazy" src="/images/chainer-logo.png" alt="" className="logo-service" />
+                  <div className="div-block-146"><img loading="lazy" src={CDN + '/images/chainer-logo.png'} alt="" className="logo-service" />
                     <h2 className="service-heading">Launch Video</h2>
                   </div>
                 </div>
@@ -171,7 +173,7 @@ export default function MixedRealityPage() {
                     <source src="/videos/av1/cgi_yonex.webm" type="video/webm; codecs=av01" />
                     <source src="/videos/h264/cgi_yonex-fallback.mp4" type="video/mp4" />
                   </video></div>
-                  <div className="div-block-146"><img loading="lazy" src="/images/yonex-logo-1.png" alt="" className="logo-service" />
+                  <div className="div-block-146"><img loading="lazy" src={CDN + '/images/yonex-logo-1.png'} alt="" className="logo-service" />
                     <h2 className="service-heading">S&amp;D Campaign </h2>
                   </div>
                 </div>
@@ -190,17 +192,17 @@ export default function MixedRealityPage() {
               <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a58-0405f909" className="div-block-142">
                 <div className="div-block-143"><p className="paragraph">Aptos Foundation</p></div>
                 <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a5c-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src="/images/themaglogo.jpg" loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Ashfall Studio</p></div>
+                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Ashfall Studio</p></div>
                   <div className="div-block-143"><p className="paragraph">Jan Strach</p></div>
                 </div>
                 <div className="div-block-143"><p className="paragraph">Shelby Network</p></div>
                 <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a67-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /><img src="/images/themaglogo.jpg" loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Ashfall Studio</p></div>
+                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Ashfall Studio</p></div>
                   <div className="div-block-143"><p className="paragraph">Petr Žižka</p></div>
                 </div>
                 <div className="div-block-143"><p className="paragraph">Heidelberg CCUS</p></div>
                 <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a73-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src="/images/themaglogo.jpg" loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Ashfall Studio</p></div>
+                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Ashfall Studio</p></div>
                   <div className="div-block-143"><p className="paragraph">Matěj Marášek</p></div>
                 </div>
                 <div className="div-block-143"><p className="paragraph">Fifthrow</p></div>
@@ -220,32 +222,32 @@ export default function MixedRealityPage() {
                 </div>
                 <div className="div-block-143"><p className="paragraph">Outpost 2025 Showreel</p></div>
                 <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a7f-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src="/images/relive.png" loading="lazy" width="15" alt="" className="image-32" /><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Outpost Studio</p></div>
+                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/relive.png'} loading="lazy" width="15" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Outpost Studio</p></div>
                   <div className="div-block-143"><p className="paragraph">Tomáš Gnosis Snop</p></div>
                 </div>
                 <div className="div-block-143"><p className="paragraph">Veha Logo Reveal</p></div>
                 <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272aa3-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src="/images/glami-logo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
+                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
                   <div className="div-block-143"><p className="paragraph">Jáchym Vogl</p></div>
                 </div>
                 <div className="div-block-143"><p className="paragraph">Jimu</p></div>
                 <div id="w-node-f0dfac3b-0807-0793-6000-02f68fc91fda-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src="/images/glami-logo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
+                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
                   <div className="div-block-143"><p className="paragraph">Jáchym Vogl</p></div>
                 </div>
                 <div className="div-block-143"><p className="paragraph">Veha</p></div>
                 <div id="w-node-df60c450-15cf-97f1-8ef4-2ba22b554a52-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src="/images/glami-logo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
+                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
                   <div className="div-block-143"><p className="paragraph">Jáchym Vogl</p></div>
                 </div>
                 <div className="div-block-143"><p className="paragraph">Veha</p></div>
                 <div id="w-node-_3f86cc21-c5fb-70a4-3a3e-aa4e98e40d4b-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src="/images/glami-logo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
+                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
                   <div className="div-block-143"><p className="paragraph">Jáchym Vogl</p></div>
                 </div>
                 <div className="div-block-143"><p className="paragraph">Veha</p></div>
                 <div id="w-node-_00c565a9-9961-fef4-cdbc-b613074480ae-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src="/images/glami-logo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
+                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
                   <div className="div-block-143"><p className="paragraph">Jáchym Vogl</p></div>
                 </div>
               </div>

@@ -2,6 +2,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
 
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+
 export default function ApifyPage() {
   return (
     <>
@@ -45,7 +47,7 @@ export default function ApifyPage() {
       <div className="footer-copyright">
         <div className="text-small">© KRYSTOF JEZEK 2023<br /></div>
       </div>
-      <div className="main-hero-logos"><img src="/images/logo-1.svg" loading="lazy" alt="" className="client-logo ultra" /><img src="/images/coinbase-logo.svg" loading="lazy" alt="" className="client-logo slightly" /><img src="/images/yonex-logo.svg" loading="lazy" alt="" className="client-logo" /><img src="/images/monopoly-logo.svg" loading="lazy" alt="" className="client-logo larger" /><img src="/images/orum-logo.png" loading="lazy" alt="" className="client-logo orum" /><img src="/images/relive-logo.png" loading="lazy" alt="" className="client-logo slightly" /><img src="/images/hubpay-logo.png" loading="lazy" alt="" className="client-logo _26" /><img src="/images/lepshee-logo-1.png" loading="lazy" alt="" className="client-logo slightly" /><img src="/images/anna-logo.png" loading="lazy" alt="" className="client-logo larger" /><img src="/images/chainer-logo.png" loading="lazy" alt="" className="client-logo" /></div>
+      <div className="main-hero-logos"><img src={CDN + '/images/logo-1.svg'} loading="lazy" alt="" className="client-logo ultra" /><img src={CDN + '/images/coinbase-logo.svg'} loading="lazy" alt="" className="client-logo slightly" /><img src={CDN + '/images/yonex-logo.svg'} loading="lazy" alt="" className="client-logo" /><img src={CDN + '/images/monopoly-logo.svg'} loading="lazy" alt="" className="client-logo larger" /><img src={CDN + '/images/orum-logo.png'} loading="lazy" alt="" className="client-logo orum" /><img src={CDN + '/images/relive-logo.png'} loading="lazy" alt="" className="client-logo slightly" /><img src={CDN + '/images/hubpay-logo.png'} loading="lazy" alt="" className="client-logo _26" /><img src={CDN + '/images/lepshee-logo-1.png'} loading="lazy" alt="" className="client-logo slightly" /><img src={CDN + '/images/anna-logo.png'} loading="lazy" alt="" className="client-logo larger" /><img src={CDN + '/images/chainer-logo.png'} loading="lazy" alt="" className="client-logo" /></div>
       <Footer />
     </>
   )

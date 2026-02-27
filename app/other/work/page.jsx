@@ -2,6 +2,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
 
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+
 export default function WorkPage() {
   return (
     <>
@@ -17,7 +19,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">ART DIRECTION • 3D • CGI</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">The Mag Wrap 2025</h2>
                       </div>
                     </div>
@@ -39,7 +41,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • VFX • MOTION GRAPHICS</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Barbour Quilt FOOH</h2>
                       </div>
                     </div>
@@ -69,7 +71,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • Simulation • Look dev</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">The VSX Sports Bra</h2>
                       </div>
                     </div>
@@ -91,7 +93,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • VFx • SIMULATION</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Barbour International</h2>
                       </div>
                     </div>
@@ -113,7 +115,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • VFX • EDIT</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Onitsuka Tiger Store Opening</h2>
                       </div>
                     </div>
@@ -135,7 +137,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • MOTION GRAPHICS</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Yonex S&amp;D Campaign</h2>
                       </div>
                     </div>
@@ -149,7 +151,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • SOUND DESIGN </div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Ashfall</h2>
                       </div>
                     </div>
@@ -179,7 +181,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">VFX LEAD • 3D • MOTION GRAPHICS</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">The Mag W/Rap 2024</h2>
                       </div>
                     </div>
@@ -193,7 +195,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">SPECIALIZED SERVICE</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Jewelry Rendering</h2>
                       </div>
                     </div>
@@ -215,7 +217,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">ART DIRECTION • 3D • WEB DESIGN  • SOUND DESIGN</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Chainer</h2>
                       </div>
                     </div>
@@ -245,7 +247,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • MOTION GRAPHICS</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Lepshee</h2>
                       </div>
                     </div>
@@ -259,7 +261,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • MOTION GRAPHICS • SOUND DESIGN </div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Yonex Giving Tournament</h2>
                       </div>
                     </div>
@@ -289,7 +291,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • MOTION GRAPHICS • SoUND DESIGN</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Bezdeno</h2>
                       </div>
                     </div>
@@ -311,7 +313,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">Art DIRECTION • 3D • MOTION GRAPHICS</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Dorian - Drop II</h2>
                       </div>
                     </div>
@@ -333,7 +335,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">Art DIRECTION • MOTION GRAPHICS • SOUND DESIGN</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Yonex Precision Challenge</h2>
                       </div>
                     </div>
@@ -355,7 +357,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">MOTION GRAPHICS</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Together</h2>
                       </div>
                     </div>
@@ -377,7 +379,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">VFX LEAD • 3D • MOTION GRAPHICS • SOUND DESIGN</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">The Mag W/RAP 2023</h2>
                       </div>
                     </div>
@@ -399,7 +401,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">MOTION GRAPHICS • SOUND DESIGN</div>
                       <div className="div-block-67">
-                        <img src="/images/arrow.svg" loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Erem</h2>
                       </div>
                     </div>

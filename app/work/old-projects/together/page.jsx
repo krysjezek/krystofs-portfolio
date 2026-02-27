@@ -1,6 +1,8 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+
 export default function Together() {
   return (
     <>
@@ -58,7 +60,7 @@ export default function Together() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Will Beeching</p>
                           <a href="https://together.agency/about/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(Together)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(Together)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>
@@ -67,7 +69,7 @@ export default function Together() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Ben Wynn-Owen</p>
                           <a href="https://together.agency/about/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(TOGETHER)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(TOGETHER)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>
@@ -76,7 +78,7 @@ export default function Together() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Diana Telvak</p>
                           <a href="https://together.agency/about/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(TOGETHER)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(TOGETHER)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>
@@ -85,7 +87,7 @@ export default function Together() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Shameel Batavia</p>
                           <a href="https://together.agency/about/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(TOGETHER)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(TOGETHER)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>
@@ -94,7 +96,7 @@ export default function Together() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Reiss Hussain</p>
                           <a href="https://together.agency/about/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(TOGETHER)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(TOGETHER)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>
@@ -103,7 +105,7 @@ export default function Together() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Plamen Kyosovski</p>
                           <a href="https://together.agency/about/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(TOGETHER)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(TOGETHER)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>
@@ -112,7 +114,7 @@ export default function Together() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Joseph Collis</p>
                           <a href="https://together.agency/about/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(TOGETHER)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(TOGETHER)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>

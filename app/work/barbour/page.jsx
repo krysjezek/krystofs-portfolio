@@ -3,6 +3,8 @@ import Footer from '@/components/Footer'
 import WorkPageHeader from '@/components/WorkPageHeader'
 import BackgroundVideo from '@/components/BackgroundVideo'
 
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+
 export default function BarbourPage() {
   return (
     <>
@@ -152,7 +154,7 @@ export default function BarbourPage() {
                     <p className="paragraph">Mary Wu</p>
                   </div>
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src="/images/monopologo4.jpg" loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><img src={CDN + '/images/monopologo4.jpg'} loading="lazy" alt="" className="image-32" /></div>
                     <p className="paragraph">Monopo London</p>
                   </div>
                 </div>
@@ -164,7 +166,7 @@ export default function BarbourPage() {
                     <p className="paragraph">Maud Dedrecked</p>
                   </div>
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src="/images/tmrzvlogo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/monopo-logo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/monopologo4.jpg" loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><img src={CDN + '/images/tmrzvlogo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/monopo-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/monopologo4.jpg'} loading="lazy" alt="" className="image-32" /></div>
                     <p className="paragraph">Monopo London</p>
                   </div>
                 </div>
@@ -176,7 +178,7 @@ export default function BarbourPage() {
                     <p className="paragraph">Stella Grotti</p>
                   </div>
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src="/images/tmrzvlogo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/monopo-logo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/monopologo4.jpg" loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><img src={CDN + '/images/tmrzvlogo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/monopo-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/monopologo4.jpg'} loading="lazy" alt="" className="image-32" /></div>
                     <p className="paragraph">Monopo London</p>
                   </div>
                 </div>
@@ -188,7 +190,7 @@ export default function BarbourPage() {
                     <p className="paragraph">Luna Gooriah</p>
                   </div>
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src="/images/tmrzvlogo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/monopo-logo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/monopologo4.jpg" loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><img src={CDN + '/images/tmrzvlogo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/monopo-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/monopologo4.jpg'} loading="lazy" alt="" className="image-32" /></div>
                     <p className="paragraph">Monopo London</p>
                   </div>
                 </div>

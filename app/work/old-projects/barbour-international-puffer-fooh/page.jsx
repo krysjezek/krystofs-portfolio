@@ -1,6 +1,8 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+
 export default function BarbourInternationalPufferFoohPage() {
   return (
     <>
@@ -59,7 +61,7 @@ export default function BarbourInternationalPufferFoohPage() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Maud Dedecker, Paige Collins</p>
                           <a href="https://monopo.london/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(MONOPO)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(MONOPO)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>
@@ -68,7 +70,7 @@ export default function BarbourInternationalPufferFoohPage() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Stella Grotti</p>
                           <a href="https://monopo.london/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(MONOPO)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(MONOPO)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>
@@ -77,7 +79,7 @@ export default function BarbourInternationalPufferFoohPage() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Keeo Lu</p>
                           <a href="https://monopo.london/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(MONOPO)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(MONOPO)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>

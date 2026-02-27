@@ -1,3 +1,5 @@
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+
 export default function CVPrintPage() {
   return (
     <div className="w-layout-blockcontainer container-2 w-container">
@@ -6,7 +8,7 @@ export default function CVPrintPage() {
           <div className="work-header-wrap">
             <div className="work-header-container">
               <div className="div-block-122">
-                <img src="/images/profilovka-maruska.png" loading="lazy" sizes="(max-width: 676px) 100vw, 676px" srcSet="/images/profilovka-maruska-p-500.png 500w, /images/profilovka-maruska.png 676w" alt="" className="image-30" />
+                <img src={CDN + '/images/profilovka-maruska.png'} loading="lazy" sizes="(max-width: 676px) 100vw, 676px" srcSet={`${CDN}/images/profilovka-maruska-p-500.png 500w, ${CDN}/images/profilovka-maruska.png 676w`} alt="" className="image-30" />
                 <div className="div-block-121">
                   <div className="work-h1-wrap">
                     <div className="div-block-112">
@@ -37,7 +39,7 @@ export default function CVPrintPage() {
                   <div className="cv-item">
                     <div className="div-block-123">
                       <div className="cv-label-cont">
-                        <img src="/images/webclip.png" loading="lazy" alt="" className="cv-favi" />
+                        <img src={CDN + '/images/webclip.png'} loading="lazy" alt="" className="cv-favi" />
                         <div className="label cv invert">Self-employed</div>
                       </div>
                       <p className="cv-header">Freelance 3D Motion Designer<br /></p>
@@ -49,7 +51,7 @@ export default function CVPrintPage() {
                   <div className="cv-item">
                     <div className="div-block-123">
                       <div className="cv-label-cont">
-                        <img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="cv-favi" />
+                        <img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="cv-favi" />
                         <div className="label cv invert">YISKRA STUDIO</div>
                       </div>
                       <p className="cv-header">Lead 3D Artist<br /></p>
@@ -61,7 +63,7 @@ export default function CVPrintPage() {
                   <div className="cv-item">
                     <div className="div-block-123">
                       <div className="cv-label-cont">
-                        <img src="/images/1631366714918.jpeg" loading="lazy" alt="" className="cv-favi" />
+                        <img src={CDN + '/images/1631366714918.jpeg'} loading="lazy" alt="" className="cv-favi" />
                         <div className="label cv invert">Growthcurve</div>
                       </div>
                       <p className="cv-header">Motion Designer<br /></p>
@@ -73,7 +75,7 @@ export default function CVPrintPage() {
                   <div className="cv-item">
                     <div className="div-block-123">
                       <div className="cv-label-cont">
-                        <img src="/images/apify_logo.jpeg" loading="lazy" alt="" className="cv-favi" />
+                        <img src={CDN + '/images/apify_logo.jpeg'} loading="lazy" alt="" className="cv-favi" />
                         <div className="label cv invert">APIFY</div>
                       </div>
                       <p className="cv-header">Visual Designer<br /></p>
@@ -89,7 +91,7 @@ export default function CVPrintPage() {
                   <div className="cv-item">
                     <div className="div-block-123">
                       <div className="cv-label-cont">
-                        <img src="/images/cvutlogo-2.png" loading="lazy" sizes="(max-width: 704px) 100vw, 704px" srcSet="/images/cvutlogo-2-p-500.png 500w, /images/cvutlogo-2.png 704w" alt="" className="cv-favi" />
+                        <img src={CDN + '/images/cvutlogo-2.png'} loading="lazy" sizes="(max-width: 704px) 100vw, 704px" srcSet={`${CDN}/images/cvutlogo-2-p-500.png 500w, ${CDN}/images/cvutlogo-2.png 704w`} alt="" className="cv-favi" />
                         <div className="label cv invert">Czech technical university</div>
                       </div>
                       <p className="cv-header">Bachelor in Software Engineering<br /></p>
@@ -101,7 +103,7 @@ export default function CVPrintPage() {
                   <div className="cv-item">
                     <div className="div-block-123">
                       <div className="cv-label-cont">
-                        <img src="/images/unnamed.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 900px" srcSet="/images/unnamed-p-500.jpg 500w, /images/unnamed-p-800.jpg 800w, /images/unnamed.jpg 900w" alt="" className="cv-favi" />
+                        <img src={CDN + '/images/unnamed.jpg'} loading="lazy" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 900px" srcSet={`${CDN}/images/unnamed-p-500.jpg 500w, ${CDN}/images/unnamed-p-800.jpg 800w, ${CDN}/images/unnamed.jpg 900w`} alt="" className="cv-favi" />
                         <div className="label cv invert">freecodecamp</div>
                       </div>
                       <p className="cv-header">JavaScript Algorithms and Data Structures<br /></p>
@@ -127,7 +129,7 @@ export default function CVPrintPage() {
                     </div>
                     <div className="div-block-124">
                       <div className="cv-label-cont">
-                        <img src="/images/relive.png" loading="lazy" alt="" className="cv-favi" />
+                        <img src={CDN + '/images/relive.png'} loading="lazy" alt="" className="cv-favi" />
                         <div className="label cv gray invert">RELIVE AR - CUSTOM CRAFTED AR SOLUTIONS</div>
                       </div>
                       <p className="paragraph cv">Co-founded a platform that develops custom augmented reality (AR) solutions for brands using Three.js. Gained expertise in web-based AR development and 3D graphics integration with JavaScript.<br /></p>
@@ -142,7 +144,7 @@ export default function CVPrintPage() {
                     </div>
                     <div className="div-block-124">
                       <div className="cv-label-cont">
-                        <img src="/images/udemy-business.png" loading="lazy" alt="" className="cv-favi" />
+                        <img src={CDN + '/images/udemy-business.png'} loading="lazy" alt="" className="cv-favi" />
                         <div className="label cv gray invert">3D VISUAL ART IN C4D - UDEMY COURSE</div>
                       </div>
                       <p className="paragraph cv">Created and published an 8-hour Udemy course teaching the basics of 3D visual art in Cinema 4D and Octane. Curriculum included creating scenes, texturing, lighting, rendering, post-processing and art theory.<br /></p>
@@ -153,22 +155,22 @@ export default function CVPrintPage() {
               <div id="w-node-cded8d01-e391-f82f-9538-cfacde43d22a-99815170" className="cv-container worked">
                 <div className="label gray invert">/ BRANDS I WORKED WITH</div>
                 <div className="main-hero-logos cv">
-                  <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/Victoria's_Secret_logo_2021.svg-p-500.png 500w, /images/Victoria's_Secret_logo_2021.svg-p-800.png 800w, /images/Victoria's_Secret_logo_2021.svg-p-1080.png 1080w, /images/Victoria's_Secret_logo_2021.svg-p-1600.png 1600w, /images/Victoria's_Secret_logo_2021.svg-p-2000.png 2000w, /images/Victoria's_Secret_logo_2021.svg.png 2560w" alt="" src="/images/Victoria's_Secret_logo_2021.svg.png" loading="lazy" className="client-logo anna invert" />
-                  <img loading="lazy" src="/images/cb.svg" alt="" className="client-logo slightly invert" />
-                  <img loading="lazy" src="/images/yone.svg" alt="" className="client-logo invert" />
-                  <img loading="lazy" src="/images/barb.png" alt="" className="client-logo barbout invert" />
-                  <img loading="lazy" src="/images/onit.svg" alt="" className="client-logo tiger invert" />
-                  <img loading="lazy" src="/images/monop.svg" alt="" className="client-logo larger invert" />
-                  <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/voda-p-500.png 500w, /images/voda-p-800.png 800w, /images/voda-p-1080.png 1080w, /images/voda-p-1600.png 1600w, /images/voda.png 2000w" alt="" src="/images/voda.png" loading="lazy" className="client-logo voda invert" />
+                  <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet={`${CDN}/images/Victoria's_Secret_logo_2021.svg-p-500.png 500w, ${CDN}/images/Victoria's_Secret_logo_2021.svg-p-800.png 800w, ${CDN}/images/Victoria's_Secret_logo_2021.svg-p-1080.png 1080w, ${CDN}/images/Victoria's_Secret_logo_2021.svg-p-1600.png 1600w, ${CDN}/images/Victoria's_Secret_logo_2021.svg-p-2000.png 2000w, ${CDN}/images/Victoria's_Secret_logo_2021.svg.png 2560w`} alt="" src={CDN + "/images/Victoria's_Secret_logo_2021.svg.png"} loading="lazy" className="client-logo anna invert" />
+                  <img loading="lazy" src={CDN + '/images/cb.svg'} alt="" className="client-logo slightly invert" />
+                  <img loading="lazy" src={CDN + '/images/yone.svg'} alt="" className="client-logo invert" />
+                  <img loading="lazy" src={CDN + '/images/barb.png'} alt="" className="client-logo barbout invert" />
+                  <img loading="lazy" src={CDN + '/images/onit.svg'} alt="" className="client-logo tiger invert" />
+                  <img loading="lazy" src={CDN + '/images/monop.svg'} alt="" className="client-logo larger invert" />
+                  <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet={`${CDN}/images/voda-p-500.png 500w, ${CDN}/images/voda-p-800.png 800w, ${CDN}/images/voda-p-1080.png 1080w, ${CDN}/images/voda-p-1600.png 1600w, ${CDN}/images/voda.png 2000w`} alt="" src={CDN + '/images/voda.png'} loading="lazy" className="client-logo voda invert" />
                 </div>
                 <div className="main-hero-logos cv">
-                  <img loading="lazy" src="/images/kfc.svg" alt="" className="client-logo _26-copy invert" />
-                  <img loading="lazy" src="/images/themag.png" alt="" className="client-logo themag invert" />
-                  <img loading="lazy" src="/images/vsx.svg" alt="" className="client-logo vsx invert" />
-                  <img loading="lazy" src="/images/badlod.png" alt="" className="client-logo badlod invert" />
-                  <img loading="lazy" src="/images/vs.svg" alt="" className="client-logo orum invert" />
-                  <img sizes="(max-width: 512px) 100vw, 512px" srcSet="/images/jn-p-500.png 500w, /images/jn.png 512w" alt="" src="/images/jn.png" loading="lazy" className="client-logo jnt invert" />
-                  <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet="/images/fini_1-p-500.png 500w, /images/fini_1-p-800.png 800w, /images/fini_1-p-1080.png 1080w, /images/fini_1.png 1280w" alt="" src="/images/fini_1.png" loading="lazy" className="client-logo fini invert" />
+                  <img loading="lazy" src={CDN + '/images/kfc.svg'} alt="" className="client-logo _26-copy invert" />
+                  <img loading="lazy" src={CDN + '/images/themag.png'} alt="" className="client-logo themag invert" />
+                  <img loading="lazy" src={CDN + '/images/vsx.svg'} alt="" className="client-logo vsx invert" />
+                  <img loading="lazy" src={CDN + '/images/badlod.png'} alt="" className="client-logo badlod invert" />
+                  <img loading="lazy" src={CDN + '/images/vs.svg'} alt="" className="client-logo orum invert" />
+                  <img sizes="(max-width: 512px) 100vw, 512px" srcSet={`${CDN}/images/jn-p-500.png 500w, ${CDN}/images/jn.png 512w`} alt="" src={CDN + '/images/jn.png'} loading="lazy" className="client-logo jnt invert" />
+                  <img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet={`${CDN}/images/fini_1-p-500.png 500w, ${CDN}/images/fini_1-p-800.png 800w, ${CDN}/images/fini_1-p-1080.png 1080w, ${CDN}/images/fini_1.png 1280w`} alt="" src={CDN + '/images/fini_1.png'} loading="lazy" className="client-logo fini invert" />
                 </div>
               </div>
             </div>

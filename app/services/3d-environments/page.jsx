@@ -1,6 +1,8 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+
 export default function ThreeDEnvironments() {
 
   return (
@@ -49,7 +51,7 @@ export default function ThreeDEnvironments() {
                     </video></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
-                      <div className="div-block-144"><img src="/images/ashfall-logo.jpg" loading="lazy" alt="" className="image-32" /></div>
+                      <div className="div-block-144"><img src={CDN + '/images/ashfall-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
                       <p className="services-name">Ashfall Studio</p>
                     </div>
                     <h2 className="service-heading">Aptos Foundation</h2>
@@ -63,7 +65,7 @@ export default function ThreeDEnvironments() {
                     </video></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
-                      <div className="div-block-144"><img src="/images/outpost-logo.jpg" loading="lazy" alt="" className="image-32" /></div>
+                      <div className="div-block-144"><img src={CDN + '/images/outpost-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
                       <p className="services-name">Outpøst®</p>
                     </div>
                     <h2 className="service-heading">Primland Explore</h2>
@@ -77,7 +79,7 @@ export default function ThreeDEnvironments() {
                     </video></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
-                      <div className="div-block-144 lubos"><img src="/images/creative_nights_superatelier_logo.jpg" loading="lazy" alt="" className="image-32" /></div>
+                      <div className="div-block-144 lubos"><img src={CDN + '/images/creative_nights_superatelier_logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
                       <p className="services-name">Creative Nights</p>
                     </div>
                     <h2 className="service-heading">Skyll</h2>
@@ -91,7 +93,7 @@ export default function ThreeDEnvironments() {
                     </video></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
-                      <div className="div-block-144"><img src="/images/outpost-logo.jpg" loading="lazy" alt="" className="image-32" /></div>
+                      <div className="div-block-144"><img src={CDN + '/images/outpost-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
                       <p className="services-name">Outpøst®</p>
                     </div>
                     <h2 className="service-heading">Primland Resort</h2>
@@ -119,7 +121,7 @@ export default function ThreeDEnvironments() {
                     </video></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
-                      <div className="div-block-144"><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /></div>
+                      <div className="div-block-144"><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
                       <p className="services-name">Yiskra Studio</p>
                     </div>
                     <h2 className="service-heading">Veha Architects</h2>
@@ -133,7 +135,7 @@ export default function ThreeDEnvironments() {
                     </video></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
-                      <div className="div-block-144"><img src="/images/ashfall-logo.jpg" loading="lazy" alt="" className="image-32" /></div>
+                      <div className="div-block-144"><img src={CDN + '/images/ashfall-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
                       <p className="services-name">Ashfall Studio</p>
                     </div>
                     <h2 className="service-heading">Heidelberg CCUS</h2>
@@ -147,7 +149,7 @@ export default function ThreeDEnvironments() {
                     </video></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
-                      <div className="div-block-144"><img src="/images/ashfall-logo.jpg" loading="lazy" alt="" className="image-32" /></div>
+                      <div className="div-block-144"><img src={CDN + '/images/ashfall-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
                       <p className="services-name">Ashfall Studio</p>
                     </div>
                     <h2 className="service-heading">Ashfall Launch Video</h2>
@@ -161,7 +163,7 @@ export default function ThreeDEnvironments() {
                     </video></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
-                      <div className="div-block-144"><img src="/images/ashfall-logo.jpg" loading="lazy" alt="" className="image-32" /></div>
+                      <div className="div-block-144"><img src={CDN + '/images/ashfall-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
                       <p className="services-name">Ashfall Studio</p>
                     </div>
                     <h2 className="service-heading">Fifthrow</h2>
@@ -189,7 +191,7 @@ export default function ThreeDEnvironments() {
                     </video></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
-                      <div className="div-block-144"><img src="/images/ashfall-logo.jpg" loading="lazy" alt="" className="image-32" /></div>
+                      <div className="div-block-144"><img src={CDN + '/images/ashfall-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
                       <p className="services-name">Ashfall Studio</p>
                     </div>
                     <h2 className="service-heading">Hyperframe</h2>
@@ -227,7 +229,7 @@ export default function ThreeDEnvironments() {
                 </div>
                 <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a5c-033eedbd" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src="/images/themaglogo.jpg" loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div>
                     <p className="paragraph">Ashfall Studio</p>
                   </div>
                   <div className="div-block-143">
@@ -239,7 +241,7 @@ export default function ThreeDEnvironments() {
                 </div>
                 <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a67-033eedbd" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /><img src="/images/themaglogo.jpg" loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div>
                     <p className="paragraph">Ashfall Studio</p>
                   </div>
                   <div className="div-block-143">
@@ -251,7 +253,7 @@ export default function ThreeDEnvironments() {
                 </div>
                 <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a73-033eedbd" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src="/images/themaglogo.jpg" loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div>
                     <p className="paragraph">Ashfall Studio</p>
                   </div>
                   <div className="div-block-143">
@@ -299,7 +301,7 @@ export default function ThreeDEnvironments() {
                 </div>
                 <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a7f-033eedbd" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src="/images/relive.png" loading="lazy" width="15" alt="" className="image-32" /><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><img src={CDN + '/images/relive.png'} loading="lazy" width="15" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
                     <p className="paragraph">Outpost Studio</p>
                   </div>
                   <div className="div-block-143">
@@ -311,7 +313,7 @@ export default function ThreeDEnvironments() {
                 </div>
                 <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272aa3-033eedbd" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src="/images/glami-logo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
                     <p className="paragraph">Yiskra Studio</p>
                   </div>
                   <div className="div-block-143">
@@ -323,7 +325,7 @@ export default function ThreeDEnvironments() {
                 </div>
                 <div id="w-node-f0dfac3b-0807-0793-6000-02f68fc91fda-033eedbd" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src="/images/glami-logo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
                     <p className="paragraph">Yiskra Studio</p>
                   </div>
                   <div className="div-block-143">
@@ -335,7 +337,7 @@ export default function ThreeDEnvironments() {
                 </div>
                 <div id="w-node-df60c450-15cf-97f1-8ef4-2ba22b554a52-033eedbd" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src="/images/glami-logo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
                     <p className="paragraph">Yiskra Studio</p>
                   </div>
                   <div className="div-block-143">
@@ -347,7 +349,7 @@ export default function ThreeDEnvironments() {
                 </div>
                 <div id="w-node-_3f86cc21-c5fb-70a4-3a3e-aa4e98e40d4b-033eedbd" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src="/images/glami-logo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
                     <p className="paragraph">Yiskra Studio</p>
                   </div>
                   <div className="div-block-143">
@@ -359,7 +361,7 @@ export default function ThreeDEnvironments() {
                 </div>
                 <div id="w-node-_00c565a9-9961-fef4-cdbc-b613074480ae-033eedbd" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src="/images/glami-logo.jpg" loading="lazy" alt="" className="image-32" /><img src="/images/yiskra_studio_logo.jpeg" loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
                     <p className="paragraph">Yiskra Studio</p>
                   </div>
                   <div className="div-block-143">

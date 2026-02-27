@@ -1,6 +1,8 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+
 export default function BezdenoPage() {
   return (
     <>
@@ -55,7 +57,7 @@ export default function BezdenoPage() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Zdeno Boureanu</p>
                           <a href="https://monopo.london/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(BEZDENO)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(BEZDENO)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>
@@ -64,7 +66,7 @@ export default function BezdenoPage() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Tomáš Gnosis Snop</p>
                           <a href="https://www.yiskra.studio/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(YISKRA)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(YISKRA)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>
@@ -73,7 +75,7 @@ export default function BezdenoPage() {
                         <div className="div-block-106">
                           <p className="paragraph credits">Tomáš Gnosis Snop</p>
                           <a href="https://www.yiskra.studio/" target="_blank" className="div-block-107 w-inline-block">
-                            <p className="label credits">(YISKRA)<br /></p><img src="/images/arrow-leftup.svg" loading="lazy" alt="" className="image-27" />
+                            <p className="label credits">(YISKRA)<br /></p><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-27" />
                           </a>
                         </div>
                       </li>
