@@ -46,7 +46,7 @@ export default function CustomCursor() {
       gsap.fromTo(
         chars,
         { y: 10, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.15, stagger: 0.012, ease: 'power3.out', delay: 0.03 }
+        { y: 0, opacity: 1, duration: 0.3, stagger: 0.025, ease: 'power3.out', delay: 0.03 }
       )
 
       // Icon
@@ -165,7 +165,7 @@ export default function CustomCursor() {
         ref={imgRef}
         src={CURSOR_URL}
         alt=""
-        style={{ display: 'block', width: 16 }}
+        style={{ display: 'none', width: 16 }}
       />
 
       {/* Pill label — appears offset below-right of arrow tip */}

@@ -1,5 +1,6 @@
 import Script from 'next/script'
 import CustomCursor from '@/components/CustomCursor'
+import LinkLines from '@/components/LinkLines'
 import '@/styles/normalize.css'
 import '@/styles/webflow.css'
 import '@/styles/krystofs-portfolio.webflow.scss'
@@ -26,10 +27,10 @@ export default function RootLayout({ children }) {
 
         <link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/webclip.jpg" />
-        <style>{`*, *::before, *::after { cursor: none !important; }`}</style>
       </head>
       <body>
         <CustomCursor />
+        <LinkLines />
 {children}
       </body>
     </html>

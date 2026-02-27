@@ -173,12 +173,15 @@ export default function HomePage() {
                     <div className="div-block-119">
                       <div className="div-block-65">
                         <a href="/services/3d-environments" className="link">3D Environments</a>
+                        <div className="line-mask"><div className="line"></div></div>
                       </div>
                       <div className="div-block-65">
                         <a href="/services/mixed-reality" className="link">Mixed Reality</a>
+                        <div className="line-mask"><div className="line"></div></div>
                       </div>
                       <div className="div-block-65">
                         <a href="#tech-projects" className="link">Tech Projects</a>
+                        <div className="line-mask"><div className="line"></div></div>
                       </div>
                     </div>
                   </div>

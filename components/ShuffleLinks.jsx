@@ -9,6 +9,14 @@ export default function ShuffleLinks() {
     function onMouseOver(e) {
       const el = e.target.closest('.link')
       if (!el) return
+
+      // Set circle origin to cursor position on initial entry
+      if (!e.relatedTarget || !el.contains(e.relatedTarget)) {
+        const rect = el.getBoundingClientRect()
+        el.style.setProperty('--link-cx', ((e.clientX - rect.left) / rect.width * 100) + '%')
+        el.style.setProperty('--link-cy', ((e.clientY - rect.top) / rect.height * 100) + '%')
+      }
+
       if (!active.has(el) && el.children.length > 0) return
       if (active.has(el)) return
 
