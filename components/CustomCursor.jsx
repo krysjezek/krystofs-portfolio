@@ -6,62 +6,91 @@ const CURSOR_URL = 'https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/imag
 
 export default function CustomCursor() {
   const cursorRef = useRef(null)
+  const imgRef = useRef(null)
   const pillRef = useRef(null)
   const labelRef = useRef(null)
 
   useEffect(() => {
     const cursor = cursorRef.current
+    const img = imgRef.current
     const pill = pillRef.current
     const label = labelRef.current
-    if (!cursor || !pill || !label) return
+    if (!cursor || !img || !pill || !label) return
 
-    const xTo = gsap.quickTo(cursor, 'x', { duration: 0.25, ease: 'power3.out' })
-    const yTo = gsap.quickTo(cursor, 'y', { duration: 0.25, ease: 'power3.out' })
+    const xTo = gsap.quickTo(cursor, 'x', { duration: 0.5, ease: 'power2.out' })
+    const yTo = gsap.quickTo(cursor, 'y', { duration: 0.5, ease: 'power2.out' })
+
+    let activeEl = null
+    let activeLinkEl = null
+    let collapseTimer = null
+    let lastX = null
+    let lastY = null
+
+    const expand = (text) => {
+      label.textContent = text
+      gsap.to(pill, { opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.2)' })
+    }
+
+    const collapse = () => {
+      gsap.to(pill, { opacity: 0, scale: 0, duration: 0.4, ease: 'power1.inOut' })
+    }
 
     const onMove = (e) => {
       xTo(e.clientX)
       yTo(e.clientY)
-    }
 
-    const expand = (text) => {
-      label.textContent = text
-      gsap.to(pill, { opacity: 1, scale: 1, duration: 0.35, ease: 'back.out(1.4)' })
-    }
+      // Skip synthetic events fired by the browser on DOM changes (e.g. rAF marquee)
+      // — real movement always changes clientX/Y
+      if (e.clientX === lastX && e.clientY === lastY) return
+      lastX = e.clientX
+      lastY = e.clientY
 
-    const collapse = () => {
-      gsap.to(pill, { opacity: 0, scale: 0, duration: 0.2, ease: 'power2.in' })
-    }
+      const target = document.elementFromPoint(e.clientX, e.clientY)
+      const el = target?.closest('[data-cursor]')
 
-    const onOver = (e) => {
-      const el = e.target.closest('[data-cursor]')
-      if (el) expand(el.dataset.cursor)
-    }
+      // Link hover (no data-cursor): slightly bigger + 90% opacity
+      const linkEl = !el ? target?.closest('a, button, [role="button"]') : null
+      if (linkEl !== activeLinkEl) {
+        activeLinkEl = linkEl
+        if (linkEl) {
+          gsap.to(img, { scale: 1.4, opacity: 0.9, duration: 0.35, ease: 'power1.inOut' })
+        } else {
+          gsap.to(img, { scale: 1, opacity: 1, duration: 0.35, ease: 'power1.inOut' })
+        }
+      }
 
-    const onOut = (e) => {
-      const el = e.target.closest('[data-cursor]')
-      if (el && !el.contains(e.relatedTarget)) collapse()
+      if (el === activeEl) return
+
+      if (el) {
+        clearTimeout(collapseTimer)
+        activeEl = el
+        expand(el.dataset.cursor)
+      } else {
+        clearTimeout(collapseTimer)
+        collapseTimer = setTimeout(() => {
+          activeEl = null
+          collapse()
+        }, 30)
+      }
     }
 
     const onMouseDown = () => {
-      gsap.to(cursor, { scale: 0.85, duration: 0.1, ease: 'power2.out' })
+      gsap.to(cursor, { scale: 0.85, duration: 0.2, ease: 'power1.inOut' })
     }
 
     const onMouseUp = () => {
-      gsap.to(cursor, { scale: 1, duration: 0.2, ease: 'power2.out' })
+      gsap.to(cursor, { scale: 1, duration: 0.4, ease: 'power1.inOut' })
     }
 
     window.addEventListener('mousemove', onMove)
     window.addEventListener('mousedown', onMouseDown)
     window.addEventListener('mouseup', onMouseUp)
-    document.addEventListener('mouseover', onOver)
-    document.addEventListener('mouseout', onOut)
 
     return () => {
       window.removeEventListener('mousemove', onMove)
       window.removeEventListener('mousedown', onMouseDown)
       window.removeEventListener('mouseup', onMouseUp)
-      document.removeEventListener('mouseover', onOver)
-      document.removeEventListener('mouseout', onOut)
+      clearTimeout(collapseTimer)
     }
   }, [])
 
@@ -80,6 +109,7 @@ export default function CustomCursor() {
       {/* SVG arrow — tip aligns with wrapper origin (mouse position) */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
+        ref={imgRef}
         src={CURSOR_URL}
         alt=""
         style={{ display: 'block', width: 16 }}
