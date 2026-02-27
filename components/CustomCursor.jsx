@@ -24,15 +24,32 @@ export default function CustomCursor() {
     let collapseTimer = null
     let lastX = null
     let lastY = null
+    let rafId = null
 
     const expand = (text) => {
       label.textContent = text
-      gsap.to(pill, { opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.2)' })
+      gsap.to(pill, { opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.2)', overwrite: true })
     }
 
     const collapse = () => {
-      gsap.to(pill, { opacity: 0, scale: 0, duration: 0.4, ease: 'power1.inOut' })
+      gsap.to(pill, { opacity: 0, scale: 0, duration: 0.4, ease: 'power1.inOut', overwrite: true })
     }
+
+    // rAF loop — validates hover state every frame so the pill collapses
+    // even when the mouse is stationary and no mousemove events fire.
+    const tick = () => {
+      if (activeEl !== null && lastX !== null) {
+        const target = document.elementFromPoint(lastX, lastY)
+        const el = target?.closest('[data-cursor]')
+        if (!el) {
+          clearTimeout(collapseTimer)
+          activeEl = null
+          collapse()
+        }
+      }
+      rafId = requestAnimationFrame(tick)
+    }
+    rafId = requestAnimationFrame(tick)
 
     const onMove = (e) => {
       moveCursor(e.clientX, e.clientY)
@@ -89,6 +106,7 @@ export default function CustomCursor() {
       window.removeEventListener('mousedown', onMouseDown)
       window.removeEventListener('mouseup', onMouseUp)
       clearTimeout(collapseTimer)
+      cancelAnimationFrame(rafId)
     }
   }, [])
 
