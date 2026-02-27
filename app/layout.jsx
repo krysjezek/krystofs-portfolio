@@ -1,5 +1,6 @@
 import Script from 'next/script'
 import CustomCursor from '@/components/CustomCursor'
+import '@/styles/krystofs-portfolio.webflow.scss'
 
 export const metadata = {
   title: 'Krystof Jezek, CGI Designer & Software Engineer',
@@ -24,7 +25,6 @@ export default function RootLayout({ children }) {
         {/* Webflow CSS */}
         <link rel="stylesheet" href="/css/normalize.css" />
         <link rel="stylesheet" href="/css/webflow.css" />
-        <link rel="stylesheet" href="/css/krystofs-portfolio.webflow.css" />
 
         <link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/webclip.jpg" />

@@ -1,6 +1,6 @@
 @font-face {
   font-family: Clashgrotesk;
-  src: url('../fonts/ClashGrotesk-Regular.woff') format("woff");
+  src: url('/fonts/ClashGrotesk-Regular.woff') format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: Clashgrotesk;
-  src: url('../fonts/ClashGrotesk-Bold.woff') format("woff");
+  src: url('/fonts/ClashGrotesk-Bold.woff') format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: Clashgrotesk;
-  src: url('../fonts/ClashGrotesk-Medium.woff') format("woff");
+  src: url('/fonts/ClashGrotesk-Medium.woff') format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: Roobert;
-  src: url('../fonts/RoobertPRO-Light.woff') format("woff");
+  src: url('/fonts/RoobertPRO-Light.woff') format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: Roobert;
-  src: url('../fonts/RoobertPRO-Medium.woff') format("woff");
+  src: url('/fonts/RoobertPRO-Medium.woff') format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: Roobert;
-  src: url('../fonts/Roobert-Regular.ttf') format("truetype");
+  src: url('/fonts/Roobert-Regular.ttf') format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,7 @@
 
 @font-face {
   font-family: Roobert;
-  src: url('../fonts/Roobert-Bold.otf') format("opentype");
+  src: url('/fonts/Roobert-Bold.otf') format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -710,7 +710,7 @@ body {
 }
 
 .div-block-37 {
-  background-image: url('../images/96083211_2305295353106059_6014108428870843819_n.jpg');
+  background-image: url('#{$cdn}/images/96083211_2305295353106059_6014108428870843819_n.jpg');
   background-position: 50%;
   background-size: cover;
   width: 100%;
@@ -719,7 +719,7 @@ body {
 }
 
 .div-block-37.mist {
-  background-image: url('../images/119213490_340250750506883_7878986000222452245_n.jpg');
+  background-image: url('#{$cdn}/images/119213490_340250750506883_7878986000222452245_n.jpg');
   background-position: 50%;
   background-size: cover;
   height: 60vh;
@@ -731,32 +731,32 @@ body {
 }
 
 .div-block-37.shower {
-  background-image: url('../images/100966072_625778771344489_2288294208672262474_n.jpg');
+  background-image: url('#{$cdn}/images/100966072_625778771344489_2288294208672262474_n.jpg');
   background-position: 50%;
   background-size: cover;
 }
 
 .div-block-37.dark {
-  background-image: url('../images/95397093_565476874367461_3337143817775669193_n.jpg');
+  background-image: url('#{$cdn}/images/95397093_565476874367461_3337143817775669193_n.jpg');
   background-position: 50%;
   background-size: cover;
 }
 
 .div-block-37.drift {
-  background-image: url('../images/96763281_2638816886374609_1196589082135317297_n.jpg');
+  background-image: url('#{$cdn}/images/96763281_2638816886374609_1196589082135317297_n.jpg');
   background-position: 50%;
   background-size: cover;
   margin-bottom: 0%;
 }
 
 .div-block-37._16x9 {
-  background-image: url('../images/montreal-subway-station-Krystof-Jezek.jpg');
+  background-image: url('#{$cdn}/images/montreal-subway-station-Krystof-Jezek.jpg');
   background-position: 50%;
   background-size: cover;
 }
 
 .div-block-37.backrooms {
-  background-image: url('../images/output-v2.webp');
+  background-image: url('#{$cdn}/images/output-v2.webp');
 }
 
 .div-block-38 {
@@ -806,7 +806,7 @@ body {
 .div-block-40 {
   cursor: pointer;
   background-color: #ee902100;
-  background-image: url('../images/arrows.svg');
+  background-image: url('#{$cdn}/images/arrows.svg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: auto;
@@ -819,7 +819,7 @@ body {
 }
 
 .div-block-40.white {
-  background-image: url('../images/menywhite.svg');
+  background-image: url('#{$cdn}/images/menywhite.svg');
   background-position: 50%;
   background-size: auto;
 }
@@ -1231,20 +1231,20 @@ body {
 }
 
 .wrapper._2.wrap-inj {
-  background-image: url('../images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
   padding-bottom: 56.25%;
 }
 
 .wrapper._2.wrap-bcgloop {
-  background-image: url('../images/wrap25-loop-bcg1-00-02-13-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/wrap25-loop-bcg1-00-02-13-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
 }
 
 .wrapper._2.wrap-led1 {
-  background-image: url('../images/led-v11-00-01-04-min-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/led-v11-00-01-04-min-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
   border-radius: 0;
@@ -1252,71 +1252,71 @@ body {
 }
 
 .wrapper._2.wrap-jmenovka {
-  background-image: url('../images/Final0-00-05-02-ezgif.com-png-to-webp-converter-2.webp');
+  background-image: url('#{$cdn}/images/Final0-00-05-02-ezgif.com-png-to-webp-converter-2.webp');
   background-position: 50%;
   background-size: cover;
   padding-bottom: 56.25%;
 }
 
 .wrapper._2.wrap-porotci {
-  background-image: url('../images/ScreenRecording2025-03-24at16.01.310-00-01-02-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/ScreenRecording2025-03-24at16.01.310-00-01-02-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
   padding-bottom: 50%;
 }
 
 .wrapper._2.wrap-postup {
-  background-image: url('../images/w25-postupujici-praha-V30-00-10-05-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/w25-postupujici-praha-V30-00-10-05-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
   padding-bottom: 56.25%;
 }
 
 .wrapper._2.jewe-anta {
-  background-image: url('../images/tweezers-sound-4x50000011-ezgif.com-png-to-webp-converter-1.webp');
+  background-image: url('#{$cdn}/images/tweezers-sound-4x50000011-ezgif.com-png-to-webp-converter-1.webp');
   background-position: 50%;
   background-size: cover;
   padding-bottom: 125.25%;
 }
 
 .wrapper._2.jewe-tweez {
-  background-image: url('../images/antartica-sound-4x50-00-03-19-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/antartica-sound-4x50-00-03-19-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
   padding-bottom: 125.25%;
 }
 
 .wrapper._2.wrap-aneta {
-  background-image: url('../images/moreeee-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/moreeee-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
   padding-bottom: 50%;
 }
 
 .wrapper._2.vsx-vert {
-  background-image: url('../images/vsx-upscaled30-00-04-25-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/vsx-upscaled30-00-04-25-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
   padding-bottom: 125%;
 }
 
 .wrapper._2.vsx-vert._3 {
-  background-image: url('../images/vsx-upscaled20-00-05-24-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/vsx-upscaled20-00-05-24-ezgif.com-png-to-webp-converter.webp');
 }
 
 .wrapper._2.vsx-vert._3pls {
-  background-image: url('../images/vsx-upscaled10-00-01-28-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/vsx-upscaled10-00-01-28-ezgif.com-png-to-webp-converter.webp');
 }
 
 .wrapper._2.vsx-bts {
-  background-image: url('../images/Weave0-00-03-12-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/Weave0-00-03-12-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
   padding-bottom: 100%;
 }
 
 .wrapper._2.vsx-bts._2pls {
-  background-image: url('../images/Knit0-00-04-25-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/Knit0-00-04-25-ezgif.com-png-to-webp-converter.webp');
 }
 
 .wrapper._2.square {
@@ -1324,32 +1324,32 @@ body {
 }
 
 .wrapper._2.square.barb-2 {
-  background-image: url('../images/barbour_frasers-16x9-15s_10-00-12-13-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/barbour_frasers-16x9-15s_10-00-12-13-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
 }
 
 .wrapper._2.square.barb-1 {
-  background-image: url('../images/barbour_frasers-16x9-15s_10-00-01-13-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/barbour_frasers-16x9-15s_10-00-01-13-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
 }
 
 .wrapper._2.barb-main {
-  background-image: url('../images/barbour_frasers-16x9-15s_10-00-06-26-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/barbour_frasers-16x9-15s_10-00-06-26-ezgif.com-png-to-webp-converter.webp');
   background-position: 0 0;
   background-size: cover;
 }
 
 .wrapper._2._4x5 {
-  background-image: url('../images/SCENE1-VFX0-00-00-00-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/SCENE1-VFX0-00-00-00-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
   padding-bottom: 125%;
 }
 
 .wrapper._2._4x5.oni-2 {
-  background-image: url('../images/SCENE3VFX-BCG0-00-00-00-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/SCENE3VFX-BCG0-00-00-00-ezgif.com-png-to-webp-converter.webp');
 }
 
 .wrapper._2._9x16 {
@@ -1357,25 +1357,25 @@ body {
 }
 
 .wrapper._2._9x16.oni-main {
-  background-image: url('../images/onitsuka-tiger-covent-garden_disclaimer30-00-06-06-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/onitsuka-tiger-covent-garden_disclaimer30-00-06-06-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
 }
 
 .wrapper._2._16x9.tiger3 {
-  background-image: url('../images/Untitled0-00-00-00-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/Untitled0-00-00-00-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
 }
 
 .wrapper._2._1x1 {
-  background-image: url('../images/AnimatedMockups-Devices-1x10-00-03-23-ezgif.com-resize.webp');
+  background-image: url('#{$cdn}/images/AnimatedMockups-Devices-1x10-00-03-23-ezgif.com-resize.webp');
   background-position: 50%;
   background-size: cover;
 }
 
 .wrapper._2._1x1.mock2 {
-  background-image: url('../images/PhotoStudio-Animation-1x10-00-15-17-ezgif.com-resize.webp');
+  background-image: url('#{$cdn}/images/PhotoStudio-Animation-1x10-00-15-17-ezgif.com-resize.webp');
 }
 
 .wrapper._2._1x1.mock2.hidden {
@@ -1383,7 +1383,7 @@ body {
 }
 
 .wrapper._2._1x1.mock3 {
-  background-image: url('../images/LaptopConcrete-Animation-1x10-00-02-14-ezgif.com-resize.webp');
+  background-image: url('#{$cdn}/images/LaptopConcrete-Animation-1x10-00-02-14-ezgif.com-resize.webp');
 }
 
 .wrapper._2._1x1.mock3.hidden {
@@ -1768,7 +1768,7 @@ body {
 }
 
 .proj-img {
-  background-image: url('../images/Chainer-Header-HP.webp');
+  background-image: url('#{$cdn}/images/Chainer-Header-HP.webp');
   background-position: 50%;
   background-size: cover;
   border-radius: 0;
@@ -1778,7 +1778,7 @@ body {
 
 .proj-img.relive {
   border-radius: var(--radius\<deleted\|variable-3f5cfe74-8124-2595-5b79-c0e4be705046\>);
-  background-image: url('../images/relive-ar-thumbnail.webp');
+  background-image: url('#{$cdn}/images/relive-ar-thumbnail.webp');
   background-position: 50%;
   background-size: cover;
   border-style: solid;
@@ -1786,96 +1786,96 @@ body {
 }
 
 .proj-img.wrap {
-  background-image: url('../images/INTRO-16X10-0-00-03-10.png');
+  background-image: url('#{$cdn}/images/INTRO-16X10-0-00-03-10.png');
   background-position: 0 0;
   background-size: auto;
 }
 
 .proj-img.wrap._2 {
-  background-image: url('../images/INTRO-16X10-0-00-03-10.png');
+  background-image: url('#{$cdn}/images/INTRO-16X10-0-00-03-10.png');
   background-position: 50%;
   background-size: cover;
 }
 
 .proj-img.lepshee {
-  background-image: url('../images/lepshee-photo-min.png');
+  background-image: url('#{$cdn}/images/lepshee-photo-min.png');
 }
 
 .proj-img.wrap-24 {
-  background-image: url('../images/wrap-logo-still_1.1.1-min.png');
+  background-image: url('#{$cdn}/images/wrap-logo-still_1.1.1-min.png');
 }
 
 .proj-img.yonex {
-  background-image: url('../images/yonexsd.webp');
+  background-image: url('#{$cdn}/images/yonexsd.webp');
 }
 
 .proj-img.kunaj-arch {
-  background-image: url('../images/kunaj-archviz.webp');
+  background-image: url('#{$cdn}/images/kunaj-archviz.webp');
 }
 
 .proj-img.kunaj-sklo {
-  background-image: url('../images/kunaj-sklo-preview-2-min-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/kunaj-sklo-preview-2-min-ezgif.com-png-to-webp-converter.webp');
 }
 
 .proj-img.unreal {
-  background-image: url('../images/header-combined-min-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/header-combined-min-ezgif.com-png-to-webp-converter.webp');
 }
 
 .proj-img.dorian {
-  background-image: url('../images/thumbnail-v1-min.png');
+  background-image: url('#{$cdn}/images/thumbnail-v1-min.png');
   background-position: 50%;
   background-size: cover;
 }
 
 .proj-img.ypch {
-  background-image: url('../images/header-3-0-00-03-05.png');
+  background-image: url('#{$cdn}/images/header-3-0-00-03-05.png');
   background-position: 50%;
   background-size: cover;
 }
 
 .proj-img.erem {
-  background-image: url('../images/title.webp');
+  background-image: url('#{$cdn}/images/title.webp');
 }
 
 .proj-img.gp {
-  background-image: url('../images/toge-min.png');
+  background-image: url('#{$cdn}/images/toge-min.png');
 }
 
 .proj-img.yonexgiving {
-  background-image: url('../images/toge-min-1.png');
+  background-image: url('#{$cdn}/images/toge-min-1.png');
 }
 
 .proj-img.bezdeno {
-  background-image: url('../images/gallery-2-3.webp');
+  background-image: url('#{$cdn}/images/gallery-2-3.webp');
 }
 
 .proj-img.ashfall {
-  background-image: url('../images/001-min.png');
+  background-image: url('#{$cdn}/images/001-min.png');
 }
 
 .proj-img.barbour {
-  background-image: url('../images/Barbour-Header-HP2.webp');
+  background-image: url('#{$cdn}/images/Barbour-Header-HP2.webp');
 }
 
 .proj-img.jewe {
-  background-image: url('../images/Frame-10352.png');
+  background-image: url('#{$cdn}/images/Frame-10352.png');
 }
 
 .proj-img.wrap25 {
-  background-image: url('../images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp');
   border-radius: 0;
 }
 
 .proj-img.vsx {
-  background-image: url('../images/16x9thumb-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/16x9thumb-ezgif.com-png-to-webp-converter.webp');
 }
 
 .proj-img.frasers {
-  background-image: url('../images/barbour_frasers-16x9-15s_10-00-12-13-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/barbour_frasers-16x9-15s_10-00-12-13-ezgif.com-png-to-webp-converter.webp');
 }
 
 .proj-img.onitsuykja {
-  background-image: url('../images/aa-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/aa-ezgif.com-png-to-webp-converter.webp');
 }
 
 .proj-heading {
@@ -2037,7 +2037,7 @@ body {
 
 .snapshot-img {
   border-radius: var(--radius\<deleted\|variable-3f5cfe74-8124-2595-5b79-c0e4be705046\>);
-  background-image: url('../images/2.png');
+  background-image: url('#{$cdn}/images/2.png');
   background-position: 50%;
   background-size: cover;
   position: absolute;
@@ -2045,45 +2045,45 @@ body {
 }
 
 .snapshot-img._1 {
-  background-image: url('../images/final-min-5.png');
+  background-image: url('#{$cdn}/images/final-min-5.png');
 }
 
 .snapshot-img._5 {
-  background-image: url('../images/ezgif.com-resize.webp');
+  background-image: url('#{$cdn}/images/ezgif.com-resize.webp');
   background-position: 50%;
 }
 
 .snapshot-img._3 {
-  background-image: url('../images/container3.webp');
+  background-image: url('#{$cdn}/images/container3.webp');
 }
 
 .snapshot-img._4 {
-  background-image: url('../images/maisoncrivelli.webp');
+  background-image: url('#{$cdn}/images/maisoncrivelli.webp');
   background-position: 50%;
 }
 
 .snapshot-img._6 {
-  background-image: url('../images/niacid.webp');
+  background-image: url('#{$cdn}/images/niacid.webp');
 }
 
 .snapshot-img._2 {
-  background-image: url('../images/fragrance-3.webp');
+  background-image: url('#{$cdn}/images/fragrance-3.webp');
 }
 
 .snapshot-img.mockups {
-  background-image: url('../images/cigarlounge-min1-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/cigarlounge-min1-ezgif.com-png-to-webp-converter.webp');
 }
 
 .snapshot-img.mockups._2 {
-  background-image: url('../images/cementinside-min-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/cementinside-min-ezgif.com-png-to-webp-converter.webp');
 }
 
 .snapshot-img.mockups._3 {
-  background-image: url('../images/photostudio-min1-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/photostudio-min1-ezgif.com-png-to-webp-converter.webp');
 }
 
 .snapshot-img.mockups._4 {
-  background-image: url('../images/ipadconcrete-min1-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/ipadconcrete-min1-ezgif.com-png-to-webp-converter.webp');
 }
 
 .main-footer {
@@ -3077,7 +3077,7 @@ body {
 
 .div-block-82 {
   border-radius: var(--radius\<deleted\|variable-3f5cfe74-8124-2595-5b79-c0e4be705046\>);
-  background-image: url('../images/ipadconcrete-1x1-min-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/ipadconcrete-1x1-min-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
   border: 1px #4e4e4e;
@@ -3109,7 +3109,7 @@ body {
 
 .div-block-83 {
   border-radius: var(--radius\<deleted\|variable-3f5cfe74-8124-2595-5b79-c0e4be705046\>);
-  background-image: url('../images/untitled-min-4.png');
+  background-image: url('#{$cdn}/images/untitled-min-4.png');
   background-position: 50%;
   background-size: cover;
   width: 100%;
@@ -3117,24 +3117,24 @@ body {
 }
 
 .div-block-83._2, .div-block-83._3 {
-  background-image: url('../images/untitled-min-4.png');
+  background-image: url('#{$cdn}/images/untitled-min-4.png');
 }
 
 .div-block-83._1 {
-  background-image: url('../images/untitled2-min.png');
+  background-image: url('#{$cdn}/images/untitled2-min.png');
 }
 
 .div-block-83._4 {
-  background-image: url('../images/untitled-min-3.png');
+  background-image: url('#{$cdn}/images/untitled-min-3.png');
 }
 
 .div-block-83._5 {
-  background-image: url('../images/untitled3-min-1.png');
+  background-image: url('#{$cdn}/images/untitled3-min-1.png');
 }
 
 .div-block-84 {
   border-radius: var(--radius\<deleted\|variable-3f5cfe74-8124-2595-5b79-c0e4be705046\>);
-  background-image: url('../images/ex-min-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/ex-min-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
   width: 100%;
@@ -3142,7 +3142,7 @@ body {
 }
 
 .div-block-84._2 {
-  background-image: url('../images/ex2-min.png');
+  background-image: url('#{$cdn}/images/ex2-min.png');
 }
 
 .div-block-85 {
@@ -3311,7 +3311,7 @@ body {
 }
 
 .animated-mocks-div.jewelry {
-  background-image: linear-gradient(180deg, #fff0 36%, var(--black)), url('../images/Frame-10352.png');
+  background-image: linear-gradient(180deg, #fff0 36%, var(--black)), url('#{$cdn}/images/Frame-10352.png');
   background-position: 0 0, 50% 0;
   background-size: auto, cover;
   border-style: none;
@@ -3383,7 +3383,7 @@ body {
 
 .featured-block {
   background-color: #969696;
-  background-image: url('../images/fragrance-3.webp');
+  background-image: url('#{$cdn}/images/fragrance-3.webp');
   background-position: 50%;
   background-size: cover;
   border-radius: 5px;
@@ -3399,19 +3399,19 @@ body {
 }
 
 .featured-block.archviz {
-  background-image: url('../images/niacid.webp');
+  background-image: url('#{$cdn}/images/niacid.webp');
   background-position: 50%;
   background-size: cover;
 }
 
 .featured-block.ashfall {
-  background-image: url('../images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
 }
 
 .featured-block.archviz2 {
-  background-image: url('../images/can-v3.webp');
+  background-image: url('#{$cdn}/images/can-v3.webp');
   background-position: 50%;
   background-size: cover;
 }
@@ -3514,15 +3514,15 @@ body {
 }
 
 .div-block-97._2 {
-  background-image: url('../images/untitled.2png-min.png');
+  background-image: url('#{$cdn}/images/untitled.2png-min.png');
 }
 
 .div-block-97._3 {
-  background-image: url('../images/kunaj-sklo-preview-2-min-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/kunaj-sklo-preview-2-min-ezgif.com-png-to-webp-converter.webp');
 }
 
 .div-block-97._4 {
-  background-image: url('../images/chainer-case-4.webp');
+  background-image: url('#{$cdn}/images/chainer-case-4.webp');
 }
 
 .div-block-98 {
@@ -3594,7 +3594,7 @@ body {
 }
 
 .div-block-103 {
-  background-image: url('../images/koko2t-min-1.png');
+  background-image: url('#{$cdn}/images/koko2t-min-1.png');
   background-position: 50%;
   background-size: cover;
   border: 5px #000;
@@ -3603,29 +3603,29 @@ body {
 }
 
 .div-block-103._1 {
-  background-image: url('../images/AnimatedMockups-Devices-1x10-00-03-23-ezgif.com-resize.webp');
+  background-image: url('#{$cdn}/images/AnimatedMockups-Devices-1x10-00-03-23-ezgif.com-resize.webp');
 }
 
 .div-block-103._2 {
-  background-image: url('../images/PhotoStudio-Animation-1x10-00-15-17-ezgif.com-resize.webp');
+  background-image: url('#{$cdn}/images/PhotoStudio-Animation-1x10-00-15-17-ezgif.com-resize.webp');
 }
 
 .div-block-103._3 {
-  background-image: url('../images/LaptopConcrete-Animation-1x10-00-02-14-ezgif.com-resize.webp');
+  background-image: url('#{$cdn}/images/LaptopConcrete-Animation-1x10-00-02-14-ezgif.com-resize.webp');
 }
 
 .div-block-103._4 {
-  background-image: url('../images/Frame-10350.png');
+  background-image: url('#{$cdn}/images/Frame-10350.png');
 }
 
 .div-block-103._5 {
-  background-image: url('../images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
 }
 
 .div-block-103._6 {
-  background-image: url('../images/Frame-10352.png');
+  background-image: url('#{$cdn}/images/Frame-10352.png');
 }
 
 .div-block-104 {
@@ -3919,7 +3919,7 @@ body {
 
 .jewelry-media {
   z-index: -1;
-  background-image: url('../images/Frame-10352.png');
+  background-image: url('#{$cdn}/images/Frame-10352.png');
   background-position: 50%;
   background-size: cover;
   border-radius: 10px;
@@ -4119,7 +4119,7 @@ body {
 }
 
 .div-block-116 {
-  background-image: url('../images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp');
   background-position: 50%;
   background-size: cover;
   position: absolute;
@@ -4127,7 +4127,7 @@ body {
 }
 
 .div-block-116.placeholder {
-  background-image: url('../images/maisoncrivelli.webp');
+  background-image: url('#{$cdn}/images/maisoncrivelli.webp');
 }
 
 .body-13 {
@@ -4737,7 +4737,7 @@ body {
 }
 
 .div-block-139 {
-  background-image: url('../images/profilovka-new-edit-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/profilovka-new-edit-ezgif.com-png-to-webp-converter.webp');
   background-position: 50% 30%;
   background-size: cover;
   flex: 1;
@@ -4746,7 +4746,7 @@ body {
 }
 
 .div-block-139.half {
-  background-image: url('../images/gif-ahoj2-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/gif-ahoj2-ezgif.com-png-to-webp-converter.webp');
   padding-bottom: 50%;
   position: relative;
 }
@@ -5057,7 +5057,7 @@ body {
 }
 
 .slide {
-  background-image: url('../images/fotka3.webp');
+  background-image: url('#{$cdn}/images/fotka3.webp');
   background-position: 50%;
   background-size: cover;
   height: 100%;
@@ -5072,13 +5072,13 @@ body {
 }
 
 .slide-2 {
-  background-image: url('../images/gif-ahoj2-ezgif.com-png-to-webp-converter.webp');
+  background-image: url('#{$cdn}/images/gif-ahoj2-ezgif.com-png-to-webp-converter.webp');
   background-position: 0 0;
   background-size: cover;
 }
 
 .slide-3 {
-  background-image: url('../images/sliderpohoto2.webp');
+  background-image: url('#{$cdn}/images/sliderpohoto2.webp');
   background-position: 0 0;
   background-size: cover;
 }
@@ -5147,7 +5147,7 @@ body {
 
 .div-block-152 {
   background-color: var(--white);
-  background-image: url('../images/Comp-1-0-00-00-00.png');
+  background-image: url('#{$cdn}/images/Comp-1-0-00-00-00.png');
   background-position: 0 0;
   background-size: cover;
   width: 100%;
@@ -8054,7 +8054,7 @@ body {
   }
 
   .cp-photo {
-    background-image: linear-gradient(180deg, #090d1300 41%, var(--black)), url('../images/cgi-poster.webp');
+    background-image: linear-gradient(180deg, #090d1300 41%, var(--black)), url('#{$cdn}/images/cgi-poster.webp');
     background-position: 0 0, 50%;
     background-size: auto, cover;
     display: none;
@@ -8215,7 +8215,7 @@ body {
   }
 
   .div-block-152 {
-    background-image: url('../images/Comp-2-0-00-00-00.png');
+    background-image: url('#{$cdn}/images/Comp-2-0-00-00-00.png');
     padding-bottom: 50%;
   }
 
@@ -8956,49 +8956,49 @@ body {
 
 @font-face {
   font-family: 'Clashgrotesk';
-  src: url('../fonts/ClashGrotesk-Regular.woff') format('woff');
+  src: url('/fonts/ClashGrotesk-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Clashgrotesk';
-  src: url('../fonts/ClashGrotesk-Bold.woff') format('woff');
+  src: url('/fonts/ClashGrotesk-Bold.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Clashgrotesk';
-  src: url('../fonts/ClashGrotesk-Medium.woff') format('woff');
+  src: url('/fonts/ClashGrotesk-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Roobert';
-  src: url('../fonts/RoobertPRO-Light.woff') format('woff');
+  src: url('/fonts/RoobertPRO-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Roobert';
-  src: url('../fonts/RoobertPRO-Medium.woff') format('woff');
+  src: url('/fonts/RoobertPRO-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Roobert';
-  src: url('../fonts/Roobert-Regular.ttf') format('truetype');
+  src: url('/fonts/Roobert-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Roobert';
-  src: url('../fonts/Roobert-Bold.otf') format('opentype');
+  src: url('/fonts/Roobert-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;

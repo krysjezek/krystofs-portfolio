@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  sassOptions: {
+    additionalData: `$cdn: '${process.env.NEXT_PUBLIC_CDN_URL || ''}';`,
+  },
 };
 
 export default nextConfig;
