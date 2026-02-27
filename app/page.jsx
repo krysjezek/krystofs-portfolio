@@ -138,6 +138,14 @@ export default function HomePage() {
           -webkit-mask-image: linear-gradient(to top, black 25%, transparent 30%);
           mask-image: linear-gradient(to top, black 25%, transparent 30%);
         }
+        @keyframes pulse-dot {
+          0%, 60% { transform: scale(1); }
+          80% { transform: scale(0); }
+          100% { transform: scale(1); }
+        }
+        .div-block-88 {
+          animation: pulse-dot 3s ease-in-out infinite;
+        }
       `}</style>
       <Navbar />
       <div className="w-layout-blockcontainer container-2 w-container">
