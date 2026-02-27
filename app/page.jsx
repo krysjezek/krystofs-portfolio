@@ -241,9 +241,9 @@ export default function HomePage() {
                   </div>
                   <div className="div-block-66">
                     <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8cf1ef108473b19f15_cgi-environments.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                        <source src="/videos/h265/cgi-environments-web.mp4" type="video/mp4; codecs=hvc1" />
-                        <source src="/videos/av1/cgi-environments.webm" type="video/webm; codecs=av01" />
-                        <source src="/videos/h264/cgi-environments-fallback.mp4" type="video/mp4" />
+                        <source src={CDN + '/videos/h265/cgi-environments-web.mp4'} type="video/mp4; codecs=hvc1" />
+                        <source src={CDN + '/videos/av1/cgi-environments.webm'} type="video/webm; codecs=av01" />
+                        <source src={CDN + '/videos/h264/cgi-environments-fallback.mp4'} type="video/mp4" />
                       </video></div>
                   </div>
                 </div>
@@ -257,8 +257,8 @@ export default function HomePage() {
                   </div>
                   <div className="div-block-66">
                     <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8dd36e4f0e13644d26_mixed-reality.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                        <source src="/videos/h265/mixed-reality-web.mp4" type="video/mp4; codecs=hvc1" />
-                        <source src="/videos/av1/mixed-reality.webm" type="video/webm; codecs=av01" />
+                        <source src={CDN + '/videos/h265/mixed-reality-web.mp4'} type="video/mp4; codecs=hvc1" />
+                        <source src={CDN + '/videos/av1/mixed-reality.webm'} type="video/webm; codecs=av01" />
                         <source src="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/68f072931563197bed892227_reel-1080-noaudio.mp4" type="video/mp4" />
                       </video></div>
                   </div>
@@ -278,7 +278,7 @@ export default function HomePage() {
             <div className="featured-block archviz"></div>
             <div className="featured-block maison">
               <BackgroundVideo className="background-video-22"
-                poster="/videos/posters/davinci-render2.jpg"
+                poster={CDN + '/videos/posters/davinci-render2.jpg'}
                 srcMp4="/videos/h264/davinci-render2.mp4"
                 srcWebm="/videos/other/davinci-render2.webm"
               />
@@ -397,9 +397,9 @@ export default function HomePage() {
                   </div>
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="background-video-18 w-embed"><video autoPlay loop muted playsInline style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 'auto', height: '100%', display: 'block', objectFit: 'cover' }}>
-                        <source src="/videos/h265/wrap_header-web.mp4" type="video/mp4; codecs=hvc1" />
-                        <source src="/videos/av1/wrap_header.webm" type="video/webm; codecs=av01" />
-                        <source src="/videos/h264/wrap_header-fallback.mp4" type="video/mp4" />
+                        <source src={CDN + '/videos/h265/wrap_header-web.mp4'} type="video/mp4; codecs=hvc1" />
+                        <source src={CDN + '/videos/av1/wrap_header.webm'} type="video/webm; codecs=av01" />
+                        <source src={CDN + '/videos/h264/wrap_header-fallback.mp4'} type="video/mp4" />
                       </video></div>
                     <div className="proj-img wrap25"></div>
                   </div>
@@ -427,8 +427,8 @@ export default function HomePage() {
                   </div>
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="background-video-18 w-embed"><video autoPlay loop muted playsInline style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 'auto', height: '100%', display: 'block', objectFit: 'cover' }}>
-                        <source src="/videos/h265/barbour_header-web.mp4" type="video/mp4; codecs=hvc1" />
-                        <source src="/videos/h264/barbour_header-fallback.mp4" type="video/mp4" />
+                        <source src={CDN + '/videos/h265/barbour_header-web.mp4'} type="video/mp4; codecs=hvc1" />
+                        <source src={CDN + '/videos/h264/barbour_header-fallback.mp4'} type="video/mp4" />
                       </video></div>
                     <div className="proj-img barbour"></div>
                   </div>
@@ -438,9 +438,9 @@ export default function HomePage() {
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="background-video-18 w-embed"><video autoPlay loop muted playsInline style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 'auto', height: '100%', display: 'block', objectFit: 'cover' }}>
-                        <source src="/videos/h265/vsx_header-web.mp4" type="video/mp4; codecs=hvc1" />
-                        <source src="/videos/av1/vsx_header.webm" type="video/webm; codecs=av01" />
-                        <source src="/videos/h264/vsx_header-fallback.mp4" type="video/mp4" />
+                        <source src={CDN + '/videos/h265/vsx_header-web.mp4'} type="video/mp4; codecs=hvc1" />
+                        <source src={CDN + '/videos/av1/vsx_header.webm'} type="video/webm; codecs=av01" />
+                        <source src={CDN + '/videos/h264/vsx_header-fallback.mp4'} type="video/mp4" />
                       </video></div>
                     <div className="proj-img vsx"></div>
                   </div>
@@ -491,8 +491,8 @@ export default function HomePage() {
                   </div>
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="background-video-18 w-embed"><video autoPlay loop muted playsInline style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 'auto', height: '100%', display: 'block', objectFit: 'cover' }}>
-                        <source src="/videos/h265/chainer_header-web.mp4" type="video/mp4; codecs=hvc1" />
-                        <source src="/videos/h264/chainer_header-fallback.mp4" type="video/mp4" />
+                        <source src={CDN + '/videos/h265/chainer_header-web.mp4'} type="video/mp4; codecs=hvc1" />
+                        <source src={CDN + '/videos/h264/chainer_header-fallback.mp4'} type="video/mp4" />
                       </video></div>
                     <div className="proj-img"></div>
                   </div>
@@ -557,7 +557,7 @@ export default function HomePage() {
                   <div>Github</div><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="github" />
                 </a>
                 <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8cf4215a663de37a53_coding-01.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                    <source src="/videos/h265/coding-01-web.mp4" type="video/mp4; codecs=hvc1" />
+                    <source src={CDN + '/videos/h265/coding-01-web.mp4'} type="video/mp4; codecs=hvc1" />
                     <source src="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/68f3a8823d027ddf4acf306e_coding-01-down.mp4" type="video/mp4" />
                   </video></div>
               </div>
@@ -583,9 +583,9 @@ export default function HomePage() {
                   <div>Instagram</div><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="github" />
                 </a>
                 <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8c5555eff0c077ddb3_coding-02.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                    <source src="/videos/h265/coding-02-web.mp4" type="video/mp4; codecs=hvc1" />
-                    <source src="/videos/av1/coding-02.webm" type="video/webm; codecs=av01" />
-                    <source src="/videos/h264/coding-02-fallback.mp4" type="video/mp4" />
+                    <source src={CDN + '/videos/h265/coding-02-web.mp4'} type="video/mp4; codecs=hvc1" />
+                    <source src={CDN + '/videos/av1/coding-02.webm'} type="video/webm; codecs=av01" />
+                    <source src={CDN + '/videos/h264/coding-02-fallback.mp4'} type="video/mp4" />
                   </video></div>
               </div>
               <div className="cp-wrap">
@@ -610,8 +610,8 @@ export default function HomePage() {
                   <div>Github</div><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="github" />
                 </a>
                 <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8daac8e69a98e764b2_kokos.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                    <source src="/videos/h265/kokos-web.mp4" type="video/mp4; codecs=hvc1" />
-                    <source src="/videos/av1/kokos.webm" type="video/webm; codecs=av01" />
+                    <source src={CDN + '/videos/h265/kokos-web.mp4'} type="video/mp4; codecs=hvc1" />
+                    <source src={CDN + '/videos/av1/kokos.webm'} type="video/webm; codecs=av01" />
                     <source src="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/6904bf39c739929045b96bb7_IG_feed_1080x1080%20(1).mp4" type="video/mp4" />
                   </video></div>
               </div>
