@@ -29,7 +29,22 @@ export default function CustomCursor() {
     let rafId = null
 
     const expand = (text) => {
-      label.textContent = text
+      // Split into per-character spans for stagger animation
+      label.innerHTML = text
+        .split('')
+        .map((ch) =>
+          `<span style="display:inline-block;will-change:transform">${ch === ' ' ? '&nbsp;' : ch}</span>`
+        )
+        .join('')
+
+      const chars = label.querySelectorAll('span')
+      gsap.killTweensOf(chars)
+      gsap.fromTo(
+        chars,
+        { y: 10, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.35, stagger: 0.028, ease: 'power3.out', delay: 0.12 }
+      )
+
       gsap.to(pill, { scale: 1, duration: 0.5, ease: 'circ.out', overwrite: true })
       gsap.fromTo(
         glare,
@@ -181,6 +196,8 @@ export default function CustomCursor() {
             paddingRight: 16,
             userSelect: 'none',
             whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            display: 'inline-flex',
           }}
         />
       </div>
