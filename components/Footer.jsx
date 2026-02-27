@@ -23,15 +23,15 @@ export default function Footer() {
                   <div className="label">Social</div>
                   <div className="div-block-119">
                     <div data-w-id="1cc26f6b-2051-9734-6fdd-09e78fee6e21" className="div-block-65">
-                      <a href="https://www.instagram.com/krystof.jezek/" target="_blank" rel="noopener noreferrer" className="link" data-cursor="Follow">Instagram</a>
+                      <a href="https://www.instagram.com/krystof.jezek/" target="_blank" rel="noopener noreferrer" className="link" data-cursor="Follow" data-cursor-icon="arrow">Instagram</a>
                       <img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20" />
                     </div>
                     <div data-w-id="1cc26f6b-2051-9734-6fdd-09e78fee6e27" className="div-block-65">
-                      <a href="https://krystofjezek.gumroad.com/" target="_blank" rel="noopener noreferrer" className="link" data-cursor="Follow">Gumroad</a>
+                      <a href="https://krystofjezek.gumroad.com/" target="_blank" rel="noopener noreferrer" className="link" data-cursor="Follow" data-cursor-icon="arrow">Gumroad</a>
                       <img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20" />
                     </div>
                     <div data-w-id="1cc26f6b-2051-9734-6fdd-09e78fee6e2d" className="div-block-65">
-                      <a href="https://www.linkedin.com/in/krystofjezek/" target="_blank" rel="noopener noreferrer" className="link" data-cursor="Follow">LinkedIn</a>
+                      <a href="https://www.linkedin.com/in/krystofjezek/" target="_blank" rel="noopener noreferrer" className="link" data-cursor="Follow" data-cursor-icon="arrow">LinkedIn</a>
                       <img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20" />
                     </div>
                   </div>

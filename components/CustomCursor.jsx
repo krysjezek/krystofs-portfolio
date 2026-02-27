@@ -3,18 +3,25 @@ import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 
 const CURSOR_URL = 'https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/images/cursor.svg'
+const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+
+const ICON_ALIASES = {
+  arrow: `${CDN}/images/arrow-leftup.svg`,
+}
 
 export default function CustomCursor() {
   const cursorRef = useRef(null)
   const imgRef = useRef(null)
   const pillRef = useRef(null)
   const labelRef = useRef(null)
+  const iconRef = useRef(null)
   useEffect(() => {
     const cursor = cursorRef.current
     const img = imgRef.current
     const pill = pillRef.current
     const label = labelRef.current
-    if (!cursor || !img || !pill || !label) return
+    const icon = iconRef.current
+    if (!cursor || !img || !pill || !label || !icon) return
 
     const moveCursor = (x, y) => gsap.set(cursor, { x, y })
 
@@ -25,7 +32,7 @@ export default function CustomCursor() {
     let lastY = null
     let rafId = null
 
-    const expand = (text) => {
+    const expand = (text, iconSrc) => {
       // Split into per-character spans for stagger animation
       label.innerHTML = text
         .split('')
@@ -39,8 +46,18 @@ export default function CustomCursor() {
       gsap.fromTo(
         chars,
         { y: 10, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.35, stagger: 0.028, ease: 'power3.out', delay: 0.12 }
+        { y: 0, opacity: 1, duration: 0.2, stagger: 0.018, ease: 'power3.out', delay: 0.06 }
       )
+
+      // Icon
+      if (iconSrc) {
+        icon.src = ICON_ALIASES[iconSrc] || iconSrc
+        icon.style.display = 'block'
+        label.style.paddingLeft = '8px'
+      } else {
+        icon.style.display = 'none'
+        label.style.paddingLeft = '16px'
+      }
 
       gsap.to(pill, { scale: 1, duration: 0.5, ease: 'circ.out', overwrite: true })
     }
@@ -93,7 +110,7 @@ export default function CustomCursor() {
       if (el) {
         clearTimeout(collapseTimer)
         activeEl = el
-        expand(el.dataset.cursor)
+        expand(el.dataset.cursor, el.dataset.cursorIcon)
       } else {
         clearTimeout(collapseTimer)
         collapseTimer = setTimeout(() => {
@@ -153,26 +170,42 @@ export default function CustomCursor() {
           top: 16,
           left: 16,
           scale: 0,
-          height: 32,
           borderRadius: 99,
           backgroundColor: '#a4f683',
-          display: 'flex',
+          display: 'inline-flex',
           alignItems: 'center',
           whiteSpace: 'nowrap',
           overflow: 'hidden',
           transformOrigin: 'top left',
           pointerEvents: 'none',
+          lineHeight: '28px',
         }}
       >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          ref={iconRef}
+          alt=""
+          style={{
+            display: 'none',
+            width: 10,
+            height: 10,
+            marginLeft: 12,
+            flexShrink: 0,
+            filter: 'brightness(0)',
+          }}
+        />
         <span
           ref={labelRef}
           style={{
-            fontSize: 13,
-            fontFamily: 'IBM Plex Mono, monospace',
-            letterSpacing: '0.06em',
-            textTransform: 'uppercase',
+            fontSize: 16,
+            fontFamily: 'Roobert, sans-serif',
+            letterSpacing: 0,
+            textTransform: 'none',
+            textBoxTrim: 'both',
+            textBoxEdge: 'cap alphabetic',
+            fontWeight: 500,
             color: '#000',
-            paddingLeft: 16,
+            paddingLeft: 8,
             paddingRight: 16,
             userSelect: 'none',
             whiteSpace: 'nowrap',

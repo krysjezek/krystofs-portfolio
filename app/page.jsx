@@ -192,7 +192,7 @@ export default function HomePage() {
             </div>
             <div className="footer-wrap">
               <div className="div-block-148">
-                <a style={{ backgroundColor: 'rgba(38,38,38,0.25)' }} href="https://www.motionmockups.com/" target="_blank" className="div-block-149 w-inline-block" data-cursor="Visit">
+                <a style={{ backgroundColor: 'rgba(38,38,38,0.25)' }} href="https://www.motionmockups.com/" target="_blank" className="div-block-149 w-inline-block" data-cursor="Explore Collection" data-cursor-icon="arrow">
                   <div id="w-node-_42e1a6b1-60e7-89d0-2ef5-bd4cb01f0209-a7256e91" className="div-block-151">
                     <div className="div-block-154">
                       <div className="div-block-150">
