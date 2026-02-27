@@ -17,8 +17,7 @@ export default function CustomCursor() {
     const label = labelRef.current
     if (!cursor || !img || !pill || !label) return
 
-    const xTo = gsap.quickTo(cursor, 'x', { duration: 0.5, ease: 'power2.out' })
-    const yTo = gsap.quickTo(cursor, 'y', { duration: 0.5, ease: 'power2.out' })
+    const moveCursor = (x, y) => gsap.set(cursor, { x, y })
 
     let activeEl = null
     let activeLinkEl = null
@@ -36,8 +35,7 @@ export default function CustomCursor() {
     }
 
     const onMove = (e) => {
-      xTo(e.clientX)
-      yTo(e.clientY)
+      moveCursor(e.clientX, e.clientY)
 
       // Skip synthetic events fired by the browser on DOM changes (e.g. rAF marquee)
       // — real movement always changes clientX/Y
