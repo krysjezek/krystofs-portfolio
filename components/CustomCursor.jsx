@@ -28,11 +28,11 @@ export default function CustomCursor() {
 
     const expand = (text) => {
       label.textContent = text
-      gsap.to(pill, { opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.2)', overwrite: true })
+      gsap.to(pill, { scale: 1, duration: 0.5, ease: 'circ.out', overwrite: true })
     }
 
     const collapse = () => {
-      gsap.to(pill, { opacity: 0, scale: 0, duration: 0.4, ease: 'power1.inOut', overwrite: true })
+      gsap.to(pill, { scale: 0, duration: 0.25, ease: 'power2.in', overwrite: true })
     }
 
     // rAF loop — validates hover state every frame so the pill collapses
@@ -68,9 +68,9 @@ export default function CustomCursor() {
       if (linkEl !== activeLinkEl) {
         activeLinkEl = linkEl
         if (linkEl) {
-          gsap.to(img, { scale: 1.4, opacity: 0.9, duration: 0.35, ease: 'power1.inOut' })
+          gsap.to(img, { scale: 1.4, duration: 0.35, ease: 'power1.inOut' })
         } else {
-          gsap.to(img, { scale: 1, opacity: 1, duration: 0.35, ease: 'power1.inOut' })
+          gsap.to(img, { scale: 1, duration: 0.35, ease: 'power1.inOut' })
         }
       }
 
@@ -138,7 +138,6 @@ export default function CustomCursor() {
           position: 'absolute',
           top: 16,
           left: 16,
-          opacity: 0,
           scale: 0,
           height: 32,
           borderRadius: 99,
