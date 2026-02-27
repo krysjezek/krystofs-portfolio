@@ -46,24 +46,30 @@ export default function CustomCursor() {
       gsap.fromTo(
         chars,
         { y: 10, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.2, stagger: 0.018, ease: 'power3.out', delay: 0.06 }
+        { y: 0, opacity: 1, duration: 0.15, stagger: 0.012, ease: 'power3.out', delay: 0.03 }
       )
 
       // Icon
       if (iconSrc) {
         icon.src = ICON_ALIASES[iconSrc] || iconSrc
         icon.style.display = 'block'
+        gsap.killTweensOf(icon)
+        gsap.set(icon, { opacity: 1 })
         label.style.paddingLeft = '8px'
       } else {
         icon.style.display = 'none'
         label.style.paddingLeft = '16px'
       }
 
-      gsap.to(pill, { scale: 1, duration: 0.5, ease: 'circ.out', overwrite: true })
+      gsap.set(pill, { width: 'auto', scale: 0 })
+      gsap.to(pill, { scale: 1, duration: 0.25, ease: 'circ.out', overwrite: true })
     }
 
     const collapse = () => {
-      gsap.to(pill, { scale: 0, duration: 0.25, ease: 'power2.in', overwrite: true })
+      const chars = label.querySelectorAll('span')
+      gsap.to([chars, icon], { opacity: 0, duration: 0.05, overwrite: true })
+      gsap.to(pill, { width: 28, duration: 0.15, ease: 'power2.in', overwrite: true })
+      gsap.to(pill, { scale: 0, duration: 0.12, ease: 'power2.in', delay: 0.03 })
     }
 
     // rAF loop — validates hover state every frame so the pill collapses
