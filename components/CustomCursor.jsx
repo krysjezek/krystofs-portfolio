@@ -9,15 +9,12 @@ export default function CustomCursor() {
   const imgRef = useRef(null)
   const pillRef = useRef(null)
   const labelRef = useRef(null)
-  const glareRef = useRef(null)
-
   useEffect(() => {
     const cursor = cursorRef.current
     const img = imgRef.current
     const pill = pillRef.current
     const label = labelRef.current
-    const glare = glareRef.current
-    if (!cursor || !img || !pill || !label || !glare) return
+    if (!cursor || !img || !pill || !label) return
 
     const moveCursor = (x, y) => gsap.set(cursor, { x, y })
 
@@ -46,11 +43,6 @@ export default function CustomCursor() {
       )
 
       gsap.to(pill, { scale: 1, duration: 0.5, ease: 'circ.out', overwrite: true })
-      gsap.fromTo(
-        glare,
-        { xPercent: -150 },
-        { xPercent: 150, duration: 1.0, ease: 'power2.out', delay: 0.11, overwrite: true }
-      )
     }
 
     const collapse = () => {
@@ -172,18 +164,6 @@ export default function CustomCursor() {
           pointerEvents: 'none',
         }}
       >
-        {/* Glare sweep — animated on expand, clipped by pill overflow:hidden */}
-        <div
-          ref={glareRef}
-          style={{
-            position: 'absolute',
-            inset: 0,
-            background:
-              'linear-gradient(90deg, transparent 20%, rgba(255,255,255,0.55) 50%, transparent 80%)',
-            transform: 'skewX(-12deg)',
-            pointerEvents: 'none',
-          }}
-        />
         <span
           ref={labelRef}
           style={{
