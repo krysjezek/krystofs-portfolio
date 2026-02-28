@@ -25,7 +25,6 @@ export default function HomePage() {
 
   return (
     <>
-      <link rel="preload" as="image" href={profilePicUrl} type="image/webp" />
       <Navbar />
       <div className="w-layout-blockcontainer container-2 w-container">
         <section className="main-hero">
@@ -38,6 +37,8 @@ export default function HomePage() {
                     <div className="div-block-139">
                       <ShimmerImage
                         fill
+                        priority
+                        loading="eager"
                         src={profilePicUrl}
                         alt="Kryštof Ježek"
                         imgStyle={{ objectPosition: '50% 30%' }}

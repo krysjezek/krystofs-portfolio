@@ -3,6 +3,13 @@ import Footer from '@/components/Footer'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'Together',
+  description: '3D and motion design project Together',
+}
+
+export const dynamic = 'force-static'
+
 export default function Together() {
   return (
     <>

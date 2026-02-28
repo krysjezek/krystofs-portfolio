@@ -9,32 +9,35 @@ export function useMarquee() {
     const logos = document.querySelectorAll('.main-hero-logos')
     let animationFrame
 
-    function calculateGapSize() {
+    if (!innerContainer || logos.length === 0) return
+
+    let position = 0
+    let logosWidth = 0
+    let gapSize = 0
+
+    function recalculate() {
       const totalLogosWidth = Array.from(logos).reduce((total, logo) => total + logo.offsetWidth, 0)
       const containerWidth = innerContainer.offsetWidth
-      return (containerWidth - totalLogosWidth) / (logos.length - 1)
+      gapSize = (containerWidth - totalLogosWidth) / (logos.length - 1)
+      logosWidth = logos[0].offsetWidth + gapSize
     }
+
+    recalculate()
 
     function animate() {
-      const gapSize = calculateGapSize()
-      const logosWidth = logos[0].offsetWidth + gapSize
-      const currentTransform = getComputedStyle(innerContainer).transform
-      const matrixValues = currentTransform.match(/matrix\(([^)]+)\)/)
-      const translateX = matrixValues ? parseFloat(matrixValues[1].split(', ')[4]) : 0
-      let newPosition = translateX - speed
-      if (newPosition < -logosWidth) {
-        newPosition += logosWidth
+      position -= speed
+      if (position < -logosWidth) {
+        position += logosWidth
       }
-      innerContainer.style.transform = `translateX(${newPosition}px)`
+      innerContainer.style.transform = `translateX(${position}px)`
       animationFrame = requestAnimationFrame(animate)
     }
-
-    if (!innerContainer || logos.length === 0) return
 
     animate()
 
     const handleResize = () => {
       cancelAnimationFrame(animationFrame)
+      recalculate()
       animate()
     }
     const handleVisibility = () => {

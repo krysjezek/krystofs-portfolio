@@ -4,6 +4,13 @@ import BackgroundVideo from '@/components/BackgroundVideo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'Apify',
+  description: 'Design and motion work for Apify Technologies',
+}
+
+export const dynamic = 'force-static'
+
 export default function ApifyPage() {
   return (
     <>

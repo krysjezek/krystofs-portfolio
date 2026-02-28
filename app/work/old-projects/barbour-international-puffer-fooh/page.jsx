@@ -3,6 +3,13 @@ import Footer from '@/components/Footer'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'Barbour International Puffer FOOH',
+  description: 'Fake out-of-home 3D campaign for Barbour International',
+}
+
+export const dynamic = 'force-static'
+
 export default function BarbourInternationalPufferFoohPage() {
   return (
     <>

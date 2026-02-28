@@ -6,6 +6,13 @@ import EmbedVideo from '@/components/EmbedVideo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'The Mag Wrap 2025',
+  description: 'Art direction, 3D, and motion design for The Mag Wrap 2025',
+}
+
+export const dynamic = 'force-static'
+
 export default function MagWrap2025Page() {
   return (
     <>

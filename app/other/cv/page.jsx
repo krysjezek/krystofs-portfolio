@@ -3,6 +3,13 @@ import Image from 'next/image'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'CV',
+  description: 'Curriculum vitae of Kryštof Ježek — CGI designer and software engineer',
+}
+
+export const dynamic = 'force-static'
+
 export default function CVPage() {
   return (
     <>

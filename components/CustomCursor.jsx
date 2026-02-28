@@ -68,8 +68,7 @@ export default function CustomCursor() {
     const collapse = () => {
       const chars = label.querySelectorAll('span')
       gsap.to([chars, icon], { opacity: 0, duration: 0.05, overwrite: true })
-      gsap.to(pill, { width: 28, duration: 0.15, ease: 'power2.in', overwrite: true })
-      gsap.to(pill, { scale: 0, duration: 0.12, ease: 'power2.in', delay: 0.03 })
+      gsap.to(pill, { scale: 0, duration: 0.15, ease: 'power2.in', overwrite: true })
     }
 
     // rAF loop — validates hover state every frame so the pill collapses

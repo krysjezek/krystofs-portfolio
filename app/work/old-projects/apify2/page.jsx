@@ -1,6 +1,13 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
+export const metadata = {
+  title: 'Apify Brand Video',
+  description: 'Brand video and motion design for Apify Technologies',
+}
+
+export const dynamic = 'force-static'
+
 export default function Apify2Page() {
   return (
     <>

@@ -6,6 +6,13 @@ import BackgroundVideo from '@/components/BackgroundVideo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'Chainer',
+  description: 'Art direction, 3D visualization, and web design for Chainer',
+}
+
+export const dynamic = 'force-static'
+
 export default function ChainerPage() {
   return (
     <>

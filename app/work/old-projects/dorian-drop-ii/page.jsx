@@ -4,6 +4,13 @@ import BackgroundVideo from '@/components/BackgroundVideo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'Dorian Drop II',
+  description: '3D product visualization for Dorian Drop II',
+}
+
+export const dynamic = 'force-static'
+
 export default function DorianDropII() {
   return (
     <>

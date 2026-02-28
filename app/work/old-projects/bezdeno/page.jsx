@@ -3,6 +3,13 @@ import Footer from '@/components/Footer'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'Bezdeno',
+  description: '3D visualization and design for Bezdeno',
+}
+
+export const dynamic = 'force-static'
+
 export default function BezdenoPage() {
   return (
     <>

@@ -4,6 +4,13 @@ import EmbedVideo from '@/components/EmbedVideo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'Mixed Reality',
+  description: 'Mixed reality and immersive 3D experiences for brands',
+}
+
+export const dynamic = 'force-static'
+
 export default function MixedRealityPage() {
   return (
     <>

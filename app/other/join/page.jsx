@@ -1,6 +1,13 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
+export const metadata = {
+  title: 'Join',
+  description: 'Collaborate with Kryštof Ježek on creative projects for top-tier brands',
+}
+
+export const dynamic = 'force-static'
+
 export default function JoinPage() {
   return (
     <>

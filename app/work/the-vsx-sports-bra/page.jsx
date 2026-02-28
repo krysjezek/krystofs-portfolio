@@ -6,6 +6,13 @@ import EmbedVideo from '@/components/EmbedVideo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'The VSX Sports Bra',
+  description: '3D product visualization and cloth simulation for the VSX Sports Bra',
+}
+
+export const dynamic = 'force-static'
+
 export default function VSXSportsBraPage() {
   return (
     <>

@@ -1,5 +1,12 @@
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'CV Print',
+  description: 'Printable CV of Kryštof Ježek',
+}
+
+export const dynamic = 'force-static'
+
 export default function CVPrintPage() {
   return (
     <div className="w-layout-blockcontainer container-2 w-container">

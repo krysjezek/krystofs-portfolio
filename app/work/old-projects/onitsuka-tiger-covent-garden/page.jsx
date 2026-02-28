@@ -3,6 +3,13 @@ import Footer from '@/components/Footer'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'Onitsuka Tiger Covent Garden',
+  description: 'Mixed reality experience for Onitsuka Tiger Covent Garden store',
+}
+
+export const dynamic = 'force-static'
+
 export default function OnitsukaTimerCoventGarden() {
   return (
     <>

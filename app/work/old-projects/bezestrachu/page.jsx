@@ -2,6 +2,13 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
 
+export const metadata = {
+  title: 'Bez Estrachu',
+  description: 'Design and motion work for Bez Estrachu',
+}
+
+export const dynamic = 'force-static'
+
 export default function Bezestrachu() {
   return (
     <>

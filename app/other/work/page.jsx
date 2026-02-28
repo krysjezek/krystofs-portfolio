@@ -6,6 +6,13 @@ import Image from 'next/image'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'Work',
+  description: 'Selected work and case studies by Kryštof Ježek',
+}
+
+export const dynamic = 'force-static'
+
 export default function WorkPage() {
   return (
     <>

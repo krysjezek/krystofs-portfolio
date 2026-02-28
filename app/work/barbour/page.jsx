@@ -6,6 +6,13 @@ import BackgroundVideo from '@/components/BackgroundVideo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
+export const metadata = {
+  title: 'Barbour Quilt FOOH',
+  description: 'Fake out-of-home 3D campaign with cloth simulation for Barbour',
+}
+
+export const dynamic = 'force-static'
+
 export default function BarbourPage() {
   return (
     <>
