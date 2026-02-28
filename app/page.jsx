@@ -35,13 +35,14 @@ export default function HomePage() {
               <div className="footer-left">
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfab-a7256e91" className="div-block-135">
                   <div className="footer--text">
-                    <ShimmerImage
-                      fill
-                      src={profilePicUrl}
-                      alt="Kryštof Ježek"
-                      className="div-block-139"
-                      imgStyle={{ objectPosition: '50% 30%' }}
-                    />
+                    <div className="div-block-139">
+                      <ShimmerImage
+                        fill
+                        src={profilePicUrl}
+                        alt="Kryštof Ježek"
+                        imgStyle={{ objectPosition: '50% 30%' }}
+                      />
+                    </div>
                   </div>
                 </div>
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfae-a7256e91" className="div-block-135">
