@@ -1,13 +1,18 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
+import gsap from 'gsap'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
+import EmbedVideo from '@/components/EmbedVideo'
+import ShimmerImage from '@/components/ShimmerImage'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export default function HomePage() {
+  const gridRef = useRef(null)
+
   // Script 1: Text carousel
   useEffect(() => {
     const changerMove = document.querySelector('.changer-move')
@@ -116,6 +121,127 @@ export default function HomePage() {
     setTimeout(() => {
       defaultDiv.style.opacity = '1'
     }, 10)
+  }, [])
+
+  // Script 4: 3D perspective tilt on service cards
+  useEffect(() => {
+    const grid = gridRef.current
+    if (!grid) return
+
+    const cards = grid.querySelectorAll('.proj-item')
+    if (cards.length < 2) return
+
+    const mql = window.matchMedia('(max-width: 767px)')
+    if (mql.matches) return // no tilt on mobile
+
+    // Config
+    const BASE_TILTS = [-6, 6] // concave arc — inner edges forward
+    const MOUSE_RANGE_Y = 3
+    const MOUSE_RANGE_X = 2
+    const EASE_DURATION = 0.6
+    const GAP = 35
+
+    // Wrap grid in a perspective container
+    const wrapper = document.createElement('div')
+    wrapper.style.perspective = '1300px'
+    grid.parentNode.insertBefore(wrapper, grid)
+    wrapper.appendChild(grid)
+
+    // Grid rotates as a whole; preserve-3d lets child tilts show through
+    // Origin pushed 600px behind the screen so rotation pivots from the arc center
+    grid.style.transformStyle = 'preserve-3d'
+    grid.style.transformOrigin = '50% 50% -600px'
+    grid.style.willChange = 'transform'
+    grid.style.gap = GAP + 'px'
+    gsap.set(grid, { rotationY: 0, rotationX: 0 })
+
+    // Each card gets a static tilt to form the curved arc
+    cards.forEach((card, i) => {
+      card.style.willChange = 'transform'
+      gsap.set(card, { rotationY: BASE_TILTS[i] })
+    })
+
+    // Cursor rotates the whole grid
+    const qtY = gsap.quickTo(grid, 'rotationY', { duration: EASE_DURATION, ease: 'power2.out' })
+    const qtX = gsap.quickTo(grid, 'rotationX', { duration: EASE_DURATION, ease: 'power2.out' })
+
+    const onMouseMove = (e) => {
+      const nx = (e.clientX / window.innerWidth) * 2 - 1
+      const ny = (e.clientY / window.innerHeight) * 2 - 1
+      qtY(nx * MOUSE_RANGE_Y)
+      qtX(-ny * MOUSE_RANGE_X)
+    }
+
+    window.addEventListener('mousemove', onMouseMove)
+
+    // Fix hover detection: preserve-3d breaks elementFromPoint, so we use
+    // native mouseenter/mouseleave to inject a marker attribute that the
+    // CustomCursor's elementFromPoint -> .closest('[data-cursor]') will find.
+    // We place an invisible overlay on each card that stays in the normal
+    // (non-3D) flow and forwards data-cursor to the cursor system.
+    const overlays = []
+    cards.forEach((card) => {
+      const overlay = document.createElement('div')
+      overlay.dataset.cursor = card.dataset.cursor
+      overlay.style.cssText = 'position:absolute;inset:0;z-index:1;'
+      card.style.position = 'relative'
+      card.appendChild(overlay)
+      overlays.push(overlay)
+    })
+
+    const teardown = () => {
+      window.removeEventListener('mousemove', onMouseMove)
+      gsap.set(grid, { clearProps: 'transform' })
+      grid.style.willChange = ''
+      grid.style.transformStyle = ''
+      grid.style.transformOrigin = ''
+      grid.style.gap = ''
+      cards.forEach(c => { gsap.set(c, { clearProps: 'transform' }); c.style.willChange = '' })
+      overlays.forEach(o => o.remove())
+    }
+
+    const setup = () => {
+      wrapper.style.perspective = '1300px'
+      grid.style.transformStyle = 'preserve-3d'
+      grid.style.transformOrigin = '50% 50% -600px'
+      grid.style.willChange = 'transform'
+      grid.style.gap = GAP + 'px'
+      gsap.set(grid, { rotationY: 0, rotationX: 0 })
+      cards.forEach((card, i) => {
+        card.style.willChange = 'transform'
+        gsap.set(card, { rotationY: BASE_TILTS[i] })
+        const overlay = document.createElement('div')
+        overlay.dataset.cursor = card.dataset.cursor
+        overlay.style.cssText = 'position:absolute;inset:0;z-index:1;'
+        card.style.position = 'relative'
+        card.appendChild(overlay)
+        overlays.push(overlay)
+      })
+      window.addEventListener('mousemove', onMouseMove)
+    }
+
+    const onBreakpointChange = (e) => {
+      if (e.matches) {
+        teardown()
+        wrapper.parentNode.insertBefore(grid, wrapper)
+        wrapper.remove()
+      } else {
+        const parent = grid.parentNode
+        parent.insertBefore(wrapper, grid)
+        wrapper.appendChild(grid)
+        setup()
+      }
+    }
+    mql.addEventListener('change', onBreakpointChange)
+
+    return () => {
+      teardown()
+      mql.removeEventListener('change', onBreakpointChange)
+      if (grid.parentNode === wrapper) {
+        wrapper.parentNode.insertBefore(grid, wrapper)
+        wrapper.remove()
+      }
+    }
   }, [])
 
 
@@ -233,7 +359,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="w-layout-blockcontainer container-3 header w-container">
-            <div className="w-layout-grid main-proj-grid head">
+            <div ref={gridRef} className="w-layout-grid main-proj-grid head">
               <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91" href="/services/3d-environments" className="proj-item w-inline-block" data-cursor="Explore">
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
@@ -242,11 +368,12 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="div-block-66">
-                    <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8cf1ef108473b19f15_cgi-environments.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                        <source src={CDN + '/videos/h265/cgi-environments-web.mp4'} type="video/mp4; codecs=hvc1" />
-                        <source src={CDN + '/videos/av1/cgi-environments.webm'} type="video/webm; codecs=av01" />
-                        <source src={CDN + '/videos/h264/cgi-environments-fallback.mp4'} type="video/mp4" />
-                      </video></div>
+                    <div className="cb w-embed"><EmbedVideo
+                      poster="/videos/posters/cgi-environments.jpg"
+                      srcH265="/videos/h265/cgi-environments-web.mp4"
+                      srcAv1="/videos/av1/cgi-environments.webm"
+                      srcMp4="/videos/h264/cgi-environments-fallback.mp4"
+                    /></div>
                   </div>
                 </div>
               </a>
@@ -258,11 +385,12 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="div-block-66">
-                    <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8dd36e4f0e13644d26_mixed-reality.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                        <source src={CDN + '/videos/h265/mixed-reality-web.mp4'} type="video/mp4; codecs=hvc1" />
-                        <source src={CDN + '/videos/av1/mixed-reality.webm'} type="video/webm; codecs=av01" />
-                        <source src="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/68f072931563197bed892227_reel-1080-noaudio.mp4" type="video/mp4" />
-                      </video></div>
+                    <div className="cb w-embed"><EmbedVideo
+                      poster="/videos/posters/mixed-reality.jpg"
+                      srcH265="/videos/h265/mixed-reality-web.mp4"
+                      srcAv1="/videos/av1/mixed-reality.webm"
+                      srcMp4="/videos/h264/mixed-reality-fallback.mp4"
+                    /></div>
                   </div>
                 </div>
               </a>
@@ -364,7 +492,7 @@ export default function HomePage() {
                 <div className="services-heading large">Engage audiences</div>
                 <p className="paragraph smaller">In the quick-scroll world of digital media, striking visuals are key to catching a consumer&#x27;s eye. Enhanced with 3D and motion designs, your content stands a better chance of grabbing attention.</p>
               </div>
-              <div className="div-block-97"><img src={CDN + '/images/ezgif.com-animated-gif-maker-4.gif'} loading="lazy" width="Auto" height="Auto" alt="" className="image-26" /></div>
+              <div className="div-block-97"><ShimmerImage src={CDN + '/images/ezgif.com-animated-gif-maker-4.gif'} loading="lazy" alt="" className="image-26" /></div>
             </div>
           </div>
         </div>
@@ -558,7 +686,7 @@ export default function HomePage() {
                 <a href="#" className="github-button w-inline-block">
                   <div>Github</div><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="github" />
                 </a>
-                <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8cf4215a663de37a53_coding-01.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
+                <div className="cb w-embed"><video autoPlay loop muted playsInline poster="/videos/posters/coding-01.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
                     <source src={CDN + '/videos/h265/coding-01-web.mp4'} type="video/mp4; codecs=hvc1" />
                     <source src="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/68f3a8823d027ddf4acf306e_coding-01-down.mp4" type="video/mp4" />
                   </video></div>
@@ -584,7 +712,7 @@ export default function HomePage() {
                 <a href="https://www.instagram.com/relive.ar/" target="_blank" className="github-button w-inline-block">
                   <div>Instagram</div><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="github" />
                 </a>
-                <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8c5555eff0c077ddb3_coding-02.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
+                <div className="cb w-embed"><video autoPlay loop muted playsInline poster="/videos/posters/coding-02.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
                     <source src={CDN + '/videos/h265/coding-02-web.mp4'} type="video/mp4; codecs=hvc1" />
                     <source src={CDN + '/videos/av1/coding-02.webm'} type="video/webm; codecs=av01" />
                     <source src={CDN + '/videos/h264/coding-02-fallback.mp4'} type="video/mp4" />
@@ -611,7 +739,7 @@ export default function HomePage() {
                 <a href="https://github.com/krysjezek/video-process-backend" target="_blank" className="github-button w-inline-block">
                   <div>Github</div><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="github" />
                 </a>
-                <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8daac8e69a98e764b2_kokos.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
+                <div className="cb w-embed"><video autoPlay loop muted playsInline poster="/videos/posters/kokos.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
                     <source src={CDN + '/videos/h265/kokos-web.mp4'} type="video/mp4; codecs=hvc1" />
                     <source src={CDN + '/videos/av1/kokos.webm'} type="video/webm; codecs=av01" />
                     <source src="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/6904bf39c739929045b96bb7_IG_feed_1080x1080%20(1).mp4" type="video/mp4" />

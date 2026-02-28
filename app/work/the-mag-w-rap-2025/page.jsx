@@ -72,7 +72,7 @@ export default function MagWrap2025Page() {
                 </div>
                 <div id="w-node-_4c251230-b2e3-f3ee-ddae-2d99f3c573c3-db1fcd0c" className="wrapper _2 wrap-inj">
                   <div className="html-embed _2span w-embed"><EmbedVideo
-                    poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8d9d8623fff8a4ff06_w25_injektaz.jpg"
+                    poster="/videos/posters/w25_injektaz.jpg"
                     srcH265="/videos/h265/w25_injektaz-web.mp4"
                     srcAv1="/videos/av1/w25_injektaz.webm"
                     srcMp4="/videos/h264/w25_injektaz-fallback.mp4"
@@ -80,7 +80,7 @@ export default function MagWrap2025Page() {
                 </div>
                 <div className="wrapper _2 wrap-bcgloop">
                   <div className="html-embed _2span w-embed"><EmbedVideo
-                    poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8d1373e44dbeac5d95_w25_loop_bcg.jpg"
+                    poster="/videos/posters/w25_loop_bcg.jpg"
                     srcH265="/videos/h265/w25_loop_bcg-web.mp4"
                     srcAv1="/videos/av1/w25_loop_bcg.webm"
                     srcMp4="/videos/h264/w25_loop_bcg-fallback.mp4"
@@ -88,7 +88,7 @@ export default function MagWrap2025Page() {
                 </div>
                 <div id="w-node-_5584234e-0489-bfe9-d57b-ba83bde0ba51-db1fcd0c" className="wrapper _2 wrap-led1">
                   <div className="html-embed _2span w-embed"><EmbedVideo
-                    poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8d1f07ca758723afce_w25_ledka.jpg"
+                    poster="/videos/posters/w25_ledka.jpg"
                     srcH265="/videos/h265/w25_ledka-web.mp4"
                     srcAv1="/videos/av1/w25_ledka.webm"
                     srcMp4="/videos/h264/w25_ledka-fallback.mp4"
@@ -96,7 +96,7 @@ export default function MagWrap2025Page() {
                 </div>
                 <div id="w-node-_3d743965-0237-63a8-4ffb-3a3c5da996b1-db1fcd0c" className="wrapper _2 wrap-porotci">
                   <div className="html-embed _2span w-embed"><EmbedVideo
-                    poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8ea8be54918253a014_w25_rytmus.jpg"
+                    poster="/videos/posters/w25_rytmus.jpg"
                     srcH265="/videos/h265/w25_rytmus-web.mp4"
                     srcAv1="/videos/av1/w25_rytmus.webm"
                     srcMp4="/videos/h264/w25_rytmus-fallback.mp4"
@@ -104,7 +104,7 @@ export default function MagWrap2025Page() {
                 </div>
                 <div id="w-node-_2ae65b4e-b1c3-b187-f0ff-5cdc6e4a01d2-db1fcd0c" className="wrapper _2 wrap-aneta">
                   <div className="html-embed _2span w-embed"><EmbedVideo
-                    poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8e6d7eeb2f87ade799_w25_aneta_greenscreen.jpg"
+                    poster="/videos/posters/w25_aneta_greenscreen.jpg"
                     srcH265="/videos/h265/w25_aneta_greenscreen-web.mp4"
                     srcAv1="/videos/av1/w25_aneta_greenscreen.webm"
                     srcMp4="/videos/h264/w25_aneta_greenscreen-fallback.mp4"
@@ -112,14 +112,14 @@ export default function MagWrap2025Page() {
                 </div>
                 <div id="w-node-f5d293d0-dcfd-35bf-7f48-20e63cc3518b-db1fcd0c" className="wrapper _2 wrap-jmenovka">
                   <div className="html-embed _2span w-embed"><EmbedVideo
-                    poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8d0c51fd1bf3925325_w25_nametag.jpg"
+                    poster="/videos/posters/w25_nametag.jpg"
                     srcH265="/videos/h265/w25_nametag-web.mp4"
                     srcMp4="/videos/h264/w25_nametag-fallback.mp4"
                   /></div>
                 </div>
                 <div id="w-node-_99824595-c3f1-4207-c418-28701641ea34-db1fcd0c" className="wrapper _2 wrap-postup">
                   <div className="html-embed _2span w-embed"><EmbedVideo
-                    poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8de29eb99a746d4ecb_w25_postupujici.jpg"
+                    poster="/videos/posters/w25_postupujici.jpg"
                     srcH265="/videos/h265/w25_postupujici-web.mp4"
                     srcAv1="/videos/av1/w25_postupujici.webm"
                     srcMp4="/videos/h264/w25_postupujici-fallback.mp4"

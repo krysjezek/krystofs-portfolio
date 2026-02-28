@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import EmbedVideo from '@/components/EmbedVideo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
@@ -30,11 +31,12 @@ export default function ThreeDEnvironments() {
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-033eedbd" className="work-main-wrap first">
               <div className="w-layout-grid cs-grid services">
                 <div id="w-node-_771e6bc8-f93d-6c0b-e588-52ea025093ed-033eedbd" className="wrapper services">
-                  <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8cdc0bbd02fce32305_volkov_homio.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                      <source src={CDN + '/videos/h265/volkov_homio-web2.mp4'} type="video/mp4; codecs=hvc1" />
-                      <source src={CDN + '/videos/av1/volkov_homio.webm'} type="video/webm; codecs=av01" />
-                      <source src={CDN + '/videos/h264/volkov_homio-fallback.mp4'} type="video/mp4" />
-                    </video></div>
+                  <div className="cb w-embed"><EmbedVideo
+                    poster="/videos/posters/volkov_homio.jpg"
+                    srcH265="/videos/h265/volkov_homio-web2.mp4"
+                    srcAv1="/videos/av1/volkov_homio.webm"
+                    srcMp4="/videos/h264/volkov_homio-fallback.mp4"
+                  /></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144 lubos"></div>
@@ -44,11 +46,12 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div id="w-node-_5c64c00a-c613-2787-7ad8-c803ce05fbdf-033eedbd" className="wrapper services _2x1">
-                  <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8cf4987c1aaee84a44_ashfall_aptos-2x1.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                      <source src={CDN + '/videos/h265/ashfall_aptos-2x1-web.mp4'} type="video/mp4; codecs=hvc1" />
-                      <source src={CDN + '/videos/av1/ashfall_aptos-2x1.webm'} type="video/webm; codecs=av01" />
-                      <source src={CDN + '/videos/h264/ashfall_aptos-2x1-fallback.mp4'} type="video/mp4" />
-                    </video></div>
+                  <div className="cb w-embed"><EmbedVideo
+                    poster="/videos/posters/ashfall_aptos-2x1.jpg"
+                    srcH265="/videos/h265/ashfall_aptos-2x1-web.mp4"
+                    srcAv1="/videos/av1/ashfall_aptos-2x1.webm"
+                    srcMp4="/videos/h264/ashfall_aptos-2x1-fallback.mp4"
+                  /></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144"><img src={CDN + '/images/ashfall-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
@@ -58,11 +61,12 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div id="w-node-_1c4dce6c-05d5-0083-3b7d-fd948d7d12c0-033eedbd" className="wrapper services _2x1">
-                  <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8dc1220563fe9e8587_outpost_explorer-2x1.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                      <source src={CDN + '/videos/h265/outpost_explorer-2x1-web.mp4'} type="video/mp4; codecs=hvc1" />
-                      <source src={CDN + '/videos/av1/outpost_explorer-2x1.webm'} type="video/webm; codecs=av01" />
-                      <source src={CDN + '/videos/h264/outpost_explorer-2x1-fallback.mp4'} type="video/mp4" />
-                    </video></div>
+                  <div className="cb w-embed"><EmbedVideo
+                    poster="/videos/posters/outpost_explorer-2x1.jpg"
+                    srcH265="/videos/h265/outpost_explorer-2x1-web.mp4"
+                    srcAv1="/videos/av1/outpost_explorer-2x1.webm"
+                    srcMp4="/videos/h264/outpost_explorer-2x1-fallback.mp4"
+                  /></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144"><img src={CDN + '/images/outpost-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
@@ -72,11 +76,12 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div id="w-node-a2a14c9c-f451-8f52-02aa-602a5b142f09-033eedbd" className="wrapper services">
-                  <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8d05ec0fef336241db_cn_skyll-1x1.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                      <source src={CDN + '/videos/h265/cn_skyll-1x1-web.mp4'} type="video/mp4; codecs=hvc1" />
-                      <source src={CDN + '/videos/av1/cn_skyll-1x1.webm'} type="video/webm; codecs=av01" />
-                      <source src={CDN + '/videos/h264/cn_skyll-1x1-fallback.mp4'} type="video/mp4" />
-                    </video></div>
+                  <div className="cb w-embed"><EmbedVideo
+                    poster="/videos/posters/cn_skyll-1x1.jpg"
+                    srcH265="/videos/h265/cn_skyll-1x1-web.mp4"
+                    srcAv1="/videos/av1/cn_skyll-1x1.webm"
+                    srcMp4="/videos/h264/cn_skyll-1x1-fallback.mp4"
+                  /></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144 lubos"><img src={CDN + '/images/creative_nights_superatelier_logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
@@ -86,11 +91,12 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div id="w-node-_4c251230-b2e3-f3ee-ddae-2d99f3c573c3-033eedbd" className="wrapper services _2x1">
-                  <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8da9e2df943273a9b4_outpost_resort-2x1.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                      <source src={CDN + '/videos/h265/outpost_resort-2x1-web.mp4'} type="video/mp4; codecs=hvc1" />
-                      <source src={CDN + '/videos/av1/outpost_resort-2x1.webm'} type="video/webm; codecs=av01" />
-                      <source src={CDN + '/videos/h264/outpost_resort-2x1-fallback.mp4'} type="video/mp4" />
-                    </video></div>
+                  <div className="cb w-embed"><EmbedVideo
+                    poster="/videos/posters/outpost_resort-2x1.jpg"
+                    srcH265="/videos/h265/outpost_resort-2x1-web.mp4"
+                    srcAv1="/videos/av1/outpost_resort-2x1.webm"
+                    srcMp4="/videos/h264/outpost_resort-2x1-fallback.mp4"
+                  /></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144"><img src={CDN + '/images/outpost-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
@@ -100,11 +106,12 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div id="w-node-_82a68808-56d6-fe09-94d1-0da41d33cb7a-033eedbd" className="wrapper services">
-                  <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8c73213aeeea255760_volkov_jimu.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                      <source src={CDN + '/videos/h265/volkov_jimu-web2.mp4'} type="video/mp4; codecs=hvc1" />
-                      <source src={CDN + '/videos/av1/volkov_jimu.webm'} type="video/webm; codecs=av01" />
-                      <source src={CDN + '/videos/h264/volkov_jimu-fallback.mp4'} type="video/mp4" />
-                    </video></div>
+                  <div className="cb w-embed"><EmbedVideo
+                    poster="/videos/posters/volkov_jimu.jpg"
+                    srcH265="/videos/h265/volkov_jimu-web2.mp4"
+                    srcAv1="/videos/av1/volkov_jimu.webm"
+                    srcMp4="/videos/h264/volkov_jimu-fallback.mp4"
+                  /></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144 lubos"></div>
@@ -114,11 +121,12 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div id="w-node-b7a28be6-ef33-6a27-bebf-9999f2a54f80-033eedbd" className="wrapper services _1x2">
-                  <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8d311e8cb2a4080752_yiskra_veha.jpg" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 'auto', height: '100%', display: 'block', objectFit: 'cover' }}>
-                      <source src={CDN + '/videos/h265/yiskra_veha-web2.mp4'} type="video/mp4; codecs=hvc1" />
-                      <source src={CDN + '/videos/av1/yiskra_veha.webm'} type="video/webm; codecs=av01" />
-                      <source src={CDN + '/videos/h264/yiskra_veha-fallback.mp4'} type="video/mp4" />
-                    </video></div>
+                  <div className="cb w-embed"><EmbedVideo
+                    poster="/videos/posters/yiskra_veha.jpg"
+                    srcH265="/videos/h265/yiskra_veha-web2.mp4"
+                    srcAv1="/videos/av1/yiskra_veha.webm"
+                    srcMp4="/videos/h264/yiskra_veha-fallback.mp4"
+                  /></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144"><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
@@ -128,11 +136,12 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div id="w-node-cfef4185-f5fe-f34c-a518-b6a1264ae5fa-033eedbd" className="wrapper services _2x1">
-                  <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8ca5371656086f4bfa_ashfall_ccus%20updated.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                      <source src={CDN + '/videos/h265/ashfall_ccus%20updated-web2.mp4'} type="video/mp4; codecs=hvc1" />
-                      <source src={CDN + '/videos/av1/ashfall_ccus%20updated.webm'} type="video/webm; codecs=av01" />
-                      <source src={CDN + '/videos/h264/ashfall_ccus%20updated-fallback.mp4'} type="video/mp4" />
-                    </video></div>
+                  <div className="cb w-embed"><EmbedVideo
+                    poster="/videos/posters/ashfall_ccus%20updated.jpg"
+                    srcH265="/videos/h265/ashfall_ccus%20updated-web2.mp4"
+                    srcAv1="/videos/av1/ashfall_ccus%20updated.webm"
+                    srcMp4="/videos/h264/ashfall_ccus%20updated-fallback.mp4"
+                  /></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144"><img src={CDN + '/images/ashfall-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
@@ -142,11 +151,12 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div id="w-node-_7819c8b2-ed3d-b7b3-ccd3-16b05096f26e-033eedbd" className="wrapper services _2x1">
-                  <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8cd757d6ae802f2d27_ashfall_promo.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                      <source src={CDN + '/videos/h265/ashfall_promo%20updated-web2.mp4'} type="video/mp4; codecs=hvc1" />
-                      <source src={CDN + '/videos/av1/ashfall_promo%20updated.webm'} type="video/webm; codecs=av01" />
-                      <source src={CDN + '/videos/h264/ashfall_promo%20updated-fallback.mp4'} type="video/mp4" />
-                    </video></div>
+                  <div className="cb w-embed"><EmbedVideo
+                    poster="/videos/posters/ashfall_promo%20updated.jpg"
+                    srcH265="/videos/h265/ashfall_promo%20updated-web2.mp4"
+                    srcAv1="/videos/av1/ashfall_promo%20updated.webm"
+                    srcMp4="/videos/h264/ashfall_promo%20updated-fallback.mp4"
+                  /></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144"><img src={CDN + '/images/ashfall-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
@@ -156,11 +166,12 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div id="w-node-e2f052fc-4737-93e8-4333-50074469bd4f-033eedbd" className="wrapper services _2x1">
-                  <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8c2479cf866863293f_ashfall_fifthrow%20updated.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                      <source src={CDN + '/videos/h265/ashfall_fifthrow%20updated-web.mp4'} type="video/mp4; codecs=hvc1" />
-                      <source src={CDN + '/videos/av1/ashfall_fifthrow%20updated.webm'} type="video/webm; codecs=av01" />
-                      <source src={CDN + '/videos/h264/ashfall_fifthrow%20updated-fallback.mp4'} type="video/mp4" />
-                    </video></div>
+                  <div className="cb w-embed"><EmbedVideo
+                    poster="/videos/posters/ashfall_fifthrow%20updated.jpg"
+                    srcH265="/videos/h265/ashfall_fifthrow%20updated-web.mp4"
+                    srcAv1="/videos/av1/ashfall_fifthrow%20updated.webm"
+                    srcMp4="/videos/h264/ashfall_fifthrow%20updated-fallback.mp4"
+                  /></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144"><img src={CDN + '/images/ashfall-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
@@ -170,11 +181,12 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div id="w-node-_640a85e8-b0e3-cbfe-a1b0-4c003c5bed42-033eedbd" className="wrapper services">
-                  <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8c0409176786ca56d7_volkov_sparta.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                      <source src={CDN + '/videos/h265/volkov_sparta-web2.mp4'} type="video/mp4; codecs=hvc1" />
-                      <source src={CDN + '/videos/av1/volkov_sparta.webm'} type="video/webm; codecs=av01" />
-                      <source src={CDN + '/videos/h264/volkov_sparta-fallback.mp4'} type="video/mp4" />
-                    </video></div>
+                  <div className="cb w-embed"><EmbedVideo
+                    poster="/videos/posters/volkov_sparta.jpg"
+                    srcH265="/videos/h265/volkov_sparta-web2.mp4"
+                    srcAv1="/videos/av1/volkov_sparta.webm"
+                    srcMp4="/videos/h264/volkov_sparta-fallback.mp4"
+                  /></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144 lubos"></div>
@@ -184,11 +196,12 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div id="w-node-_5028a3cc-8e67-9745-4b8d-d9f297cf48a3-033eedbd" className="wrapper services _2x1">
-                  <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8caac8e69a98e76473_ashfall_hyperframe%20updated.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                      <source src={CDN + '/videos/h265/ashfall_hyperframe%20updated-web-2.mp4'} type="video/mp4; codecs=hvc1" />
-                      <source src={CDN + '/videos/av1/ashfall_hyperframe%20updated.webm'} type="video/webm; codecs=av01" />
-                      <source src={CDN + '/videos/h264/ashfall_hyperframe%20updated-fallback.mp4'} type="video/mp4" />
-                    </video></div>
+                  <div className="cb w-embed"><EmbedVideo
+                    poster="/videos/posters/ashfall_hyperframe%20updated.jpg"
+                    srcH265="/videos/h265/ashfall_hyperframe%20updated-web-2.mp4"
+                    srcAv1="/videos/av1/ashfall_hyperframe%20updated.webm"
+                    srcMp4="/videos/h264/ashfall_hyperframe%20updated-fallback.mp4"
+                  /></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144"><img src={CDN + '/images/ashfall-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
@@ -198,11 +211,12 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div className="wrapper services hide">
-                  <div className="cb w-embed"><video autoPlay loop muted playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8df72810b6c6a7023e_volkov_netgear.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                      <source src={CDN + '/videos/h265/volkov_netgear-web2.mp4'} type="video/mp4; codecs=hvc1" />
-                      <source src={CDN + '/videos/av1/volkov_netgear.webm'} type="video/webm; codecs=av01" />
-                      <source src={CDN + '/videos/h264/volkov_netgear-fallback.mp4'} type="video/mp4" />
-                    </video></div>
+                  <div className="cb w-embed"><EmbedVideo
+                    poster="/videos/posters/volkov_netgear.jpg"
+                    srcH265="/videos/h265/volkov_netgear-web2.mp4"
+                    srcAv1="/videos/av1/volkov_netgear.webm"
+                    srcMp4="/videos/h264/volkov_netgear-fallback.mp4"
+                  /></div>
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144 lubos"></div>

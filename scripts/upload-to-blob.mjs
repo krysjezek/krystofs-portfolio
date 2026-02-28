@@ -50,6 +50,7 @@ async function upload(dirs) {
     const blob = await put(pathname, body, {
       access: 'public',
       addRandomSuffix: false,
+      allowOverwrite: true,
     })
 
     if (!baseUrl) {

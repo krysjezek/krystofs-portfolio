@@ -64,7 +64,7 @@ export default function VSXSportsBraPage() {
               <div className="w-layout-grid cs-grid _6">
                 <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417ae-b76f347e" className="wrapper _2 vsx-vert _3pls">
                   <div className="html-embed _2span w-embed"><EmbedVideo
-                    poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8de577713d255a67e0_vsx_main-01.jpg"
+                    poster="/videos/posters/vsx_main-01.jpg"
                     srcH265="/videos/h265/vsx_main-01-web.mp4"
                     srcAv1="/videos/av1/vsx_main-01.webm"
                     srcMp4="/videos/h264/vsx_main-01-fallback.mp4"
@@ -72,7 +72,7 @@ export default function VSXSportsBraPage() {
                 </div>
                 <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417b0-b76f347e" className="wrapper _2 vsx-vert">
                   <div className="html-embed _2span w-embed"><EmbedVideo
-                    poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8d8d7c1874edb0a105_vsx_main-02.jpg"
+                    poster="/videos/posters/vsx_main-02.jpg"
                     srcH265="/videos/h265/vsx_main-02-web.mp4"
                     srcAv1="/videos/av1/vsx_main-02.webm"
                     srcMp4="/videos/h264/vsx_main-02-fallback.mp4"
@@ -80,7 +80,7 @@ export default function VSXSportsBraPage() {
                 </div>
                 <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417b4-b76f347e" className="wrapper _2 vsx-vert _3">
                   <div className="html-embed _2span w-embed"><EmbedVideo
-                    poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8dc050ca8a235572f9_vsx_main-03.jpg"
+                    poster="/videos/posters/vsx_main-03.jpg"
                     srcH265="/videos/h265/vsx_main-03-web.mp4"
                     srcAv1="/videos/av1/vsx_main-03.webm"
                     srcMp4="/videos/h264/vsx_main-03-fallback.mp4"
@@ -88,7 +88,7 @@ export default function VSXSportsBraPage() {
                 </div>
                 <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417ba-b76f347e" className="wrapper _2 vsx-bts _2pls">
                   <div className="html-embed _2span w-embed"><EmbedVideo
-                    poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8d1bcebaf3704367a5_vsx_bts-01.jpg"
+                    poster="/videos/posters/vsx_bts-01.jpg"
                     srcH265="/videos/h265/vsx_bts-01-web.mp4"
                     srcAv1="/videos/av1/vsx_bts-01.webm"
                     srcMp4="/videos/h264/vsx_bts-01-fallback.mp4"
@@ -96,7 +96,7 @@ export default function VSXSportsBraPage() {
                 </div>
                 <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417b8-b76f347e" className="wrapper _2 vsx-bts">
                   <div className="html-embed _2span w-embed"><EmbedVideo
-                    poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69528b8e8dc30fb6baade1c3_vsx_bts-02.jpg"
+                    poster="/videos/posters/vsx_bts-02.jpg"
                     srcH265="/videos/h265/vsx_bts-02-web.mp4"
                     srcMp4="/videos/h264/vsx_bts-02-fallback.mp4"
                   /></div>
