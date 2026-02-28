@@ -18,6 +18,11 @@ export default function ShimmerImage({ src, alt, className, style, ...props }) {
       ease: 'power1.inOut',
       repeat: -1,
     })
+    // If image was already cached, trigger load immediately
+    const img = imgRef.current
+    if (img && img.complete && img.naturalWidth > 0) {
+      onLoad()
+    }
     return () => {
       if (tweenRef.current) tweenRef.current.kill()
     }
