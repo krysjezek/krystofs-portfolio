@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WorkPageHeader from '@/components/WorkPageHeader'
@@ -153,7 +154,7 @@ export default function MagWrap2025Page() {
                     <p className="paragraph">Jan Strach</p>
                   </div>
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/themaglogo.jpg'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">TheMag</p>
                   </div>
                 </div>
@@ -165,7 +166,7 @@ export default function MagWrap2025Page() {
                     <p className="paragraph">Petr Žižka</p>
                   </div>
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/yiskra_studio_logo.jpeg'} alt="" width={40} height={40} className="image-32" /><Image src={CDN + '/images/themaglogo.jpg'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">TheMag</p>
                   </div>
                 </div>
@@ -177,7 +178,7 @@ export default function MagWrap2025Page() {
                     <p className="paragraph">Matěj Marášek</p>
                   </div>
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/themaglogo.jpg'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">TheMag</p>
                   </div>
                 </div>
@@ -225,7 +226,7 @@ export default function MagWrap2025Page() {
                     <p className="paragraph">Tomáš Gnosis Snop</p>
                   </div>
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/relive.png'} loading="lazy" width="15" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/relive.png'} alt="" width={40} height={40} className="image-32" /><Image src={CDN + '/images/yiskra_studio_logo.jpeg'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Yiskra Studio</p>
                   </div>
                 </div>
@@ -237,7 +238,7 @@ export default function MagWrap2025Page() {
                     <p className="paragraph">Jáchym Vogl</p>
                   </div>
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/glami-logo.jpg'} alt="" width={40} height={40} className="image-32" /><Image src={CDN + '/images/yiskra_studio_logo.jpeg'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Yiskra Studio</p>
                   </div>
                 </div>

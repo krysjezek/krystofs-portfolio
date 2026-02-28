@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
 import EmbedVideo from '@/components/EmbedVideo'
 import ShimmerImage from '@/components/ShimmerImage'
+import Image from 'next/image'
 import { useTextCarousel } from '@/hooks/useTextCarousel'
 import { useMarquee } from '@/hooks/useMarquee'
 import { useServiceTabs } from '@/hooks/useServiceTabs'
@@ -35,11 +36,11 @@ export default function HomePage() {
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfab-a7256e91" className="div-block-135">
                   <div className="footer--text">
                     <ShimmerImage
+                      fill
                       src={profilePicUrl}
                       alt="Kryštof Ježek"
                       className="div-block-139"
-                      style={{ backgroundImage: 'none' }}
-                      imgStyle={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 30%' }}
+                      imgStyle={{ objectPosition: '50% 30%' }}
                     />
                   </div>
                 </div>
@@ -99,7 +100,7 @@ export default function HomePage() {
                       <h1 className="label white">Collection of 8 video mockups.<br />Easy to use AE templates. 4K, all formats.<br /></h1>
                     </div>
                     <div className="div-block-153">
-                      <h1 className="label">motionmockups.com</h1><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20 smaller" />
+                      <h1 className="label">motionmockups.com</h1><Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={10} height={10} unoptimized className="image-20 smaller" />
                     </div>
                   </div>
                   <div id="w-node-_1ced7a6b-e1d3-ec40-248f-ca4885de56d5-a7256e91" className="div-block-152">
@@ -155,15 +156,15 @@ export default function HomePage() {
             </div>
             <div className="main-hero-second">
               <div className="outer-container">
-                <div className="main-hero-logos"><img loading="lazy" src={CDN + '/images/vs-logo.svg'} alt="" className="client-logo anna" /><img loading="lazy" src={CDN + '/images/coinbase-logo.svg'} alt="" className="client-logo slightly" /><img loading="lazy" src={CDN + '/images/yonex-logo.svg'} alt="" className="client-logo" /><img loading="lazy" src={CDN + '/images/barbour.png'} alt="" className="client-logo barbout" /><img loading="lazy" src={CDN + '/images/onitsuka-tiger-logo.svg'} alt="" className="client-logo tiger" /><img loading="lazy" src={CDN + '/images/monopoly-logo.svg'} alt="" className="client-logo larger" /><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet={`${CDN}/images/vodafone-logo-horiz-rgb-white-p-500.png 500w, ${CDN}/images/vodafone-logo-horiz-rgb-white-p-800.png 800w, ${CDN}/images/vodafone-logo-horiz-rgb-white-p-1080.png 1080w, ${CDN}/images/vodafone-logo-horiz-rgb-white-p-1600.png 1600w, ${CDN}/images/vodafone-logo-horiz-rgb-white-p-2000.png 2000w, ${CDN}/images/vodafone-logo-horiz-rgb-white-p-2600.png 2600w, ${CDN}/images/vodafone-logo-horiz-rgb-white-p-3200.png 3200w, ${CDN}/images/vodafone-logo-horiz-rgb-white.png 4908w`} alt="" src={CDN + '/images/vodafone-logo-horiz-rgb-white.png'} loading="lazy" className="client-logo voda" /></div>
-                <div className="main-hero-logos"><img loading="lazy" src={CDN + '/images/kfc-logo.svg'} alt="" className="client-logo _26-copy" /><img loading="lazy" src={CDN + '/images/logo-1.svg'} alt="" className="client-logo themag" /><img loading="lazy" src={CDN + '/images/vsx-logo.svg'} alt="" className="client-logo vsx" /><img loading="lazy" src={CDN + '/images/trezor-1.svg'} alt="" className="client-logo badlod" /><img loading="lazy" src={CDN + '/images/frasers-logo-1-1.svg'} alt="" className="client-logo orum" /><img sizes="(max-width: 512px) 100vw, 512px" srcSet={`${CDN}/images/jnt-p-500.png 500w, ${CDN}/images/jnt.png 512w`} alt="" src={CDN + '/images/jnt.png'} loading="lazy" className="client-logo jnt" /><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcSet={`${CDN}/images/fini-p-500.png 500w, ${CDN}/images/fini-p-800.png 800w, ${CDN}/images/fini-p-1080.png 1080w, ${CDN}/images/fini.png 1280w`} alt="" src={CDN + '/images/fini.png'} loading="lazy" className="client-logo fini" /></div>
+                <div className="main-hero-logos"><Image src={CDN + '/images/vs-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo anna" /><Image src={CDN + '/images/coinbase-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo slightly" /><Image src={CDN + '/images/yonex-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo" /><Image src={CDN + '/images/barbour.png'} alt="" width={100} height={20} className="client-logo barbout" /><Image src={CDN + '/images/onitsuka-tiger-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo tiger" /><Image src={CDN + '/images/monopoly-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo larger" /><Image src={CDN + '/images/vodafone-logo-horiz-rgb-white.png'} alt="" width={4908} height={1224} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="client-logo voda" /></div>
+                <div className="main-hero-logos"><Image src={CDN + '/images/kfc-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo _26-copy" /><Image src={CDN + '/images/logo-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo themag" /><Image src={CDN + '/images/vsx-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo vsx" /><Image src={CDN + '/images/trezor-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo badlod" /><Image src={CDN + '/images/frasers-logo-1-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo orum" /><Image src={CDN + '/images/jnt.png'} alt="" width={512} height={512} sizes="(max-width: 512px) 100vw, 512px" className="client-logo jnt" /><Image src={CDN + '/images/fini.png'} alt="" width={1280} height={640} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="client-logo fini" /></div>
               </div>
             </div>
           </div>
         </section>
         <div className="main-featured">
           <div className="featured-carousel">
-            <div className="featured-block archviz"></div>
+            <div className="featured-block archviz"><ShimmerImage fill src={CDN + '/images/niacid.webp'} alt="" sizes="100vw" /></div>
             <div className="featured-block maison">
               <BackgroundVideo className="background-video-22"
                 poster="/videos/posters/davinci-render2.jpg"
@@ -171,9 +172,9 @@ export default function HomePage() {
                 srcWebm="/videos/other/davinci-render2.webm"
               />
             </div>
-            <div className="featured-block ashfall"></div>
-            <div className="featured-block archviz2"></div>
-            <div className="featured-block"></div>
+            <div className="featured-block ashfall"><ShimmerImage fill src={CDN + '/images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="100vw" /></div>
+            <div className="featured-block archviz2"><ShimmerImage fill src={CDN + '/images/can-v3.webp'} alt="" sizes="100vw" /></div>
+            <div className="featured-block"><ShimmerImage fill src={CDN + '/images/fragrance-3.webp'} alt="" sizes="100vw" /></div>
           </div>
         </div>
 
@@ -229,21 +230,21 @@ export default function HomePage() {
                 <div className="services-heading large">Showcase products</div>
                 <p className="paragraph smaller">Present your products in dynamic, detailed views that traditional photos and videos can&#x27;t match.</p>
               </div>
-              <div className="div-block-97 _2"></div>
+              <div className="div-block-97 _2"><ShimmerImage fill src={CDN + '/images/untitled.2png-min.png'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
             </main>
             <div id="serv4" className="div-block-95 none">
               <div className="div-block-98">
                 <div className="services-heading large">Educate Customers</div>
                 <p className="paragraph smaller">Creative animations effectively break down complex information, making learning both engaging and memorable.</p>
               </div>
-              <div className="div-block-97 _4"></div>
+              <div className="div-block-97 _4"><ShimmerImage fill src={CDN + '/images/chainer-case-4.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
             </div>
             <div id="serv3" className="div-block-95 none">
               <div className="div-block-98">
                 <div className="services-heading large">Streamline Iterations</div>
                 <p className="paragraph smaller">With your product modeled and textured, iterating becomes quick and cost-effective. Adjust angles, animations, and environment without the need for a new photo shoot.</p>
               </div>
-              <div className="div-block-97 _3"></div>
+              <div className="div-block-97 _3"><ShimmerImage fill src={CDN + '/images/kunaj-sklo-preview-2-min-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
             </div>
             <div id="serv1" className="div-block-95">
               <div className="div-block-98">
@@ -273,12 +274,12 @@ export default function HomePage() {
                           <div className="label mini">Motion Design</div>
                         </div>
                       </div>
-                      <div className="div-block-67"><img src={CDN + '/images/arrow.svg'} loading="lazy" alt="" className="image-19" />
+                      <div className="div-block-67"><Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized className="image-19" />
                         <h2 className="proj-heading">The Mag Wrap 2025</h2>
                       </div>
                     </div>
                     <div className="div-block-127">
-                      <div className="div-block-128"><img src={CDN + '/images/kj-stats.png'} loading="lazy" alt="" className="image-31" />
+                      <div className="div-block-128"><Image src={CDN + '/images/kj-stats.png'} alt="" width={32} height={16} className="image-31" />
                         <div className="tag-work">11 000+ Patreon subscribers</div>
                       </div>
                     </div>
@@ -289,7 +290,7 @@ export default function HomePage() {
                         <source src={CDN + '/videos/av1/wrap_header.webm'} type="video/webm; codecs=av01" />
                         <source src={CDN + '/videos/h264/wrap_header-fallback.mp4'} type="video/mp4" />
                       </video></div>
-                    <div className="proj-img wrap25"></div>
+                    <div className="proj-img wrap25"><ShimmerImage fill src={CDN + '/images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
@@ -308,7 +309,7 @@ export default function HomePage() {
                           <div className="label mini">Simulation</div>
                         </div>
                       </div>
-                      <div className="div-block-67"><img src={CDN + '/images/arrow.svg'} loading="lazy" alt="" className="image-19" />
+                      <div className="div-block-67"><Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized className="image-19" />
                         <h2 className="proj-heading">Barbour Quilt FOOH</h2>
                       </div>
                     </div>
@@ -318,7 +319,7 @@ export default function HomePage() {
                         <source src={CDN + '/videos/h265/barbour_header-web.mp4'} type="video/mp4; codecs=hvc1" />
                         <source src={CDN + '/videos/h264/barbour_header-fallback.mp4'} type="video/mp4" />
                       </video></div>
-                    <div className="proj-img barbour"></div>
+                    <div className="proj-img barbour"><ShimmerImage fill src={CDN + '/images/Barbour-Header-HP2.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
@@ -330,7 +331,7 @@ export default function HomePage() {
                         <source src={CDN + '/videos/av1/vsx_header.webm'} type="video/webm; codecs=av01" />
                         <source src={CDN + '/videos/h264/vsx_header-fallback.mp4'} type="video/mp4" />
                       </video></div>
-                    <div className="proj-img vsx"></div>
+                    <div className="proj-img vsx"><ShimmerImage fill src={CDN + '/images/16x9thumb-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -345,12 +346,12 @@ export default function HomePage() {
                           <div className="label mini">Look Development</div>
                         </div>
                       </div>
-                      <div className="div-block-67"><img src={CDN + '/images/arrow.svg'} loading="lazy" alt="" className="image-19" />
+                      <div className="div-block-67"><Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized className="image-19" />
                         <h2 className="proj-heading">The VSX Sports Bra</h2>
                       </div>
                     </div>
                     <div className="div-block-127">
-                      <div className="div-block-128"><img src={CDN + '/images/kj-stats.png'} loading="lazy" alt="" className="image-31" />
+                      <div className="div-block-128"><Image src={CDN + '/images/kj-stats.png'} alt="" width={32} height={16} className="image-31" />
                         <div className="tag-work">900k organic views</div>
                       </div>
                     </div>
@@ -372,7 +373,7 @@ export default function HomePage() {
                           <div className="label mini">Web Design</div>
                         </div>
                       </div>
-                      <div className="div-block-67"><img src={CDN + '/images/arrow.svg'} loading="lazy" alt="" className="image-19" />
+                      <div className="div-block-67"><Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized className="image-19" />
                         <h2 className="proj-heading">Chainer</h2>
                       </div>
                     </div>
@@ -382,7 +383,7 @@ export default function HomePage() {
                         <source src={CDN + '/videos/h265/chainer_header-web.mp4'} type="video/mp4; codecs=hvc1" />
                         <source src={CDN + '/videos/h264/chainer_header-fallback.mp4'} type="video/mp4" />
                       </video></div>
-                    <div className="proj-img"></div>
+                    <div className="proj-img"><ShimmerImage fill src={CDN + '/images/Chainer-Header-HP.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
@@ -395,22 +396,22 @@ export default function HomePage() {
             <h1 className="heading-2">R&amp;D</h1>
             <div className="w-layout-grid snapshots-grid">
               <div id="w-node-a99893c8-7a95-570f-74fb-4a4430edba87-a7256e91" className="snapshot-cover">
-                <div className="snapshot-img _2"></div>
+                <div className="snapshot-img _2"><ShimmerImage fill src={CDN + '/images/fragrance-3.webp'} alt="" sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
               <div id="w-node-f6c05c63-8807-5c35-fd3d-79967d9a78b5-a7256e91" className="snapshot-cover">
-                <div className="snapshot-img _3"></div>
+                <div className="snapshot-img _3"><ShimmerImage fill src={CDN + '/images/container3.webp'} alt="" sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
               <div id="w-node-dad5dac9-b366-df48-a450-723abb21c63e-a7256e91" className="snapshot-cover">
-                <div className="snapshot-img _6"></div>
+                <div className="snapshot-img _6"><ShimmerImage fill src={CDN + '/images/niacid.webp'} alt="" sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
               <div id="w-node-b575eaa3-7424-2bce-75f7-6d5fa1bbc967-a7256e91" className="snapshot-cover">
-                <div className="snapshot-img _1"></div>
+                <div className="snapshot-img _1"><ShimmerImage fill src={CDN + '/images/final-min-5.png'} alt="" sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
               <div id="w-node-aa034c7d-cfea-c763-d292-2857be8f653b-a7256e91" className="snapshot-cover">
-                <div className="snapshot-img _4"></div>
+                <div className="snapshot-img _4"><ShimmerImage fill src={CDN + '/images/maisoncrivelli.webp'} alt="" sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
               <div id="w-node-c81a9b1c-2467-5bfd-bc49-b29a607d269e-a7256e91" className="snapshot-cover hori">
-                <div className="snapshot-img _5"></div>
+                <div className="snapshot-img _5"><ShimmerImage fill src={CDN + '/images/ezgif.com-resize.webp'} alt="" sizes="(max-width: 991px) 100vw, 66vw" /></div>
               </div>
             </div>
             <div className="div-block-58">
@@ -442,7 +443,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <a href="#" className="github-button w-inline-block">
-                  <div>Github</div><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="github" />
+                  <div>Github</div><Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={8} height={8} unoptimized className="github" />
                 </a>
                 <div className="cb w-embed"><video autoPlay loop muted playsInline poster="/videos/posters/coding-01.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
                     <source src={CDN + '/videos/h265/coding-01-web.mp4'} type="video/mp4; codecs=hvc1" />
@@ -468,7 +469,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <a href="https://www.instagram.com/relive.ar/" target="_blank" className="github-button w-inline-block">
-                  <div>Instagram</div><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="github" />
+                  <div>Instagram</div><Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={8} height={8} unoptimized className="github" />
                 </a>
                 <div className="cb w-embed"><video autoPlay loop muted playsInline poster="/videos/posters/coding-02.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
                     <source src={CDN + '/videos/h265/coding-02-web.mp4'} type="video/mp4; codecs=hvc1" />
@@ -495,7 +496,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <a href="https://github.com/krysjezek/video-process-backend" target="_blank" className="github-button w-inline-block">
-                  <div>Github</div><img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="github" />
+                  <div>Github</div><Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={8} height={8} unoptimized className="github" />
                 </a>
                 <div className="cb w-embed"><video autoPlay loop muted playsInline poster="/videos/posters/kokos.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
                     <source src={CDN + '/videos/h265/kokos-web.mp4'} type="video/mp4; codecs=hvc1" />
@@ -536,7 +537,7 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-e92b1f06-779b-ab8e-7226-54032dc56be0-a7256e91" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/yiskra_studio_logo.jpeg'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Yiskra Studio</p>
                   </div>
                   <div className="div-block-143">
@@ -549,7 +550,7 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-_5a64a6dc-8158-3455-90ea-a07fb5ab6da6-a7256e91" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/1753950309864.jpg'} loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/1753950309864.jpg'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">ProductionBot</p>
                   </div>
                   <div className="div-block-143">
@@ -562,7 +563,7 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-cfae6f7e-0e09-b8ee-2167-a4c788945abe-a7256e91" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/relive.png'} loading="lazy" width="15" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/relive.png'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Relive AR</p>
                   </div>
                   <div className="div-block-143">
@@ -575,7 +576,7 @@ export default function HomePage() {
                 </div>
                 <div className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/1631366714918.jpeg'} loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/1631366714918.jpeg'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Growthcurve</p>
                   </div>
                   <div className="div-block-143">
@@ -588,7 +589,7 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-_6023291a-8637-8489-7555-d076ce0a4cdc-a7256e91" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/apify_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/apify_logo.jpeg'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Apify Technologies</p>
                   </div>
                   <div className="div-block-143">
@@ -601,7 +602,7 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-_1cb748ed-e5bd-0608-0052-a71053df4e13-a7256e91" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/glami-logo.jpg'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Glami</p>
                   </div>
                   <div className="div-block-143">
@@ -615,7 +616,7 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-cf7ea84b-e864-21d3-c56e-f196d3a9034d-a7256e91" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/cvutlogo-2.png'} loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/cvutlogo-2.png'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Czech Technical University</p>
                   </div>
                   <div className="div-block-143">

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WorkPageHeader from '@/components/WorkPageHeader'
@@ -121,7 +122,7 @@ export default function VSXSportsBraPage() {
                     <p className="paragraph">Artem Morozov</p>
                   </div>
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/tmrzvlogo.jpg'} loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/tmrzvlogo.jpg'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">TMRZV Studio</p>
                   </div>
                 </div>
@@ -133,7 +134,7 @@ export default function VSXSportsBraPage() {
                     <p className="paragraph">TMRZV Studio</p>
                   </div>
                   <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/tmrzvlogo.jpg'} loading="lazy" alt="" className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/tmrzvlogo.jpg'} alt="" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">TMRZV Studio</p>
                   </div>
                 </div>

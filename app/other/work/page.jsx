@@ -1,6 +1,8 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
+import ShimmerImage from '@/components/ShimmerImage'
+import Image from 'next/image'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
@@ -19,7 +21,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">ART DIRECTION • 3D • CGI</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">The Mag Wrap 2025</h2>
                       </div>
                     </div>
@@ -30,7 +32,7 @@ export default function WorkPage() {
                       srcMp4="/videos/h264/wrap25_injektaz_preview.mp4"
                       srcWebm="/videos/other/wrap25_injektaz_preview.webm"
                     />
-                    <div className="proj-img wrap25"></div>
+                    <div className="proj-img wrap25"><ShimmerImage fill src={CDN + '/images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
@@ -41,7 +43,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • VFX • MOTION GRAPHICS</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Barbour Quilt FOOH</h2>
                       </div>
                     </div>
@@ -52,7 +54,7 @@ export default function WorkPage() {
                       srcMp4="/videos/h264/Barbour-London---16x9_3_prob4.mp4"
                       srcWebm="/videos/other/Barbour-London---16x9_3_prob4.webm"
                     />
-                    <div className="proj-img barbour"></div>
+                    <div className="proj-img barbour"><ShimmerImage fill src={CDN + '/images/Barbour-Header-HP2.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
@@ -65,13 +67,13 @@ export default function WorkPage() {
                       srcMp4="/videos/h264/vsx_16x9.mp4"
                       srcWebm="/videos/other/vsx_16x9.webm"
                     />
-                    <div className="proj-img vsx"></div>
+                    <div className="proj-img vsx"><ShimmerImage fill src={CDN + '/images/16x9thumb-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                   <div className="div-block-99">
                     <div className="wrappedtext">
                       <div className="label gray">3D • Simulation • Look dev</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">The VSX Sports Bra</h2>
                       </div>
                     </div>
@@ -82,7 +84,7 @@ export default function WorkPage() {
               <a href="/work/old-projects/barbour-international-puffer-fooh" className="proj-item w-inline-block">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div className="proj-img frasers"></div>
+                    <div className="proj-img frasers"><ShimmerImage fill src={CDN + '/images/barbour_frasers-16x9-15s_10-00-12-13-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
                       poster="/videos/posters/barbour_frasers-16x9---15s_1.jpg"
                       srcMp4="/videos/h264/barbour_frasers-16x9---15s_1.mp4"
@@ -93,7 +95,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • VFx • SIMULATION</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Barbour International</h2>
                       </div>
                     </div>
@@ -109,13 +111,13 @@ export default function WorkPage() {
                       srcMp4="/videos/h264/thumb.mp4"
                       srcWebm="/videos/other/thumb.webm"
                     />
-                    <div className="proj-img onitsuykja"></div>
+                    <div className="proj-img onitsuykja"><ShimmerImage fill src={CDN + '/images/aa-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                   <div className="div-block-99">
                     <div className="wrappedtext">
                       <div className="label gray">3D • VFX • EDIT</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Onitsuka Tiger Store Opening</h2>
                       </div>
                     </div>
@@ -131,13 +133,13 @@ export default function WorkPage() {
                       srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-transcode.mp4"
                       srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/661920cab5ad155328351506_yonex-m-16-transcode.webm"
                     />
-                    <div className="proj-img yonex"></div>
+                    <div className="proj-img yonex"><ShimmerImage fill src={CDN + '/images/yonexsd.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                   <div className="div-block-99">
                     <div className="wrappedtext">
                       <div className="label gray">3D • MOTION GRAPHICS</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Yonex S&amp;D Campaign</h2>
                       </div>
                     </div>
@@ -151,7 +153,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • SOUND DESIGN </div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Ashfall</h2>
                       </div>
                     </div>
@@ -162,7 +164,7 @@ export default function WorkPage() {
                       srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90%2F66aaa1477241a95fee28372a_final-kockopes2-transcode.mp4"
                       srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90%2F66aaa1477241a95fee28372a_final-kockopes2-transcode.webm"
                     />
-                    <div className="proj-img ashfall"></div>
+                    <div className="proj-img ashfall"><ShimmerImage fill src={CDN + '/images/001-min.png'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
@@ -175,13 +177,13 @@ export default function WorkPage() {
                       srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-transcode.mp4"
                       srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/66190723b6c7e82f238da5bb_Wrap-Header-16x9-transcode.webm"
                     />
-                    <div className="proj-img wrap-24"></div>
+                    <div className="proj-img wrap-24"><ShimmerImage fill src={CDN + '/images/wrap-logo-still_1.1.1-min.png'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                   <div className="div-block-99">
                     <div className="wrappedtext">
                       <div className="label gray">VFX LEAD • 3D • MOTION GRAPHICS</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">The Mag W/Rap 2024</h2>
                       </div>
                     </div>
@@ -195,7 +197,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">SPECIALIZED SERVICE</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Jewelry Rendering</h2>
                       </div>
                     </div>
@@ -206,7 +208,7 @@ export default function WorkPage() {
                       srcMp4="/videos/h264/reels-bts-tweezers-1.mp4"
                       srcWebm="/videos/other/reels-bts-tweezers-1.webm"
                     />
-                    <div className="proj-img jewe"></div>
+                    <div className="proj-img jewe"><ShimmerImage fill src={CDN + '/images/Frame-10352.png'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
@@ -217,7 +219,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">ART DIRECTION • 3D • WEB DESIGN  • SOUND DESIGN</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Chainer</h2>
                       </div>
                     </div>
@@ -228,7 +230,7 @@ export default function WorkPage() {
                       srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/6547b0ff636d8d2153b3eefd_portofilio-transcode.mp4"
                       srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/6547b0ff636d8d2153b3eefd_portofilio-transcode.webm"
                     />
-                    <div className="proj-img"></div>
+                    <div className="proj-img"><ShimmerImage fill src={CDN + '/images/Chainer-Header-HP.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
@@ -236,7 +238,7 @@ export default function WorkPage() {
               <a href="/work/old-projects/lepshee" className="proj-item w-inline-block">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div className="proj-img lepshee"></div>
+                    <div className="proj-img lepshee"><ShimmerImage fill src={CDN + '/images/lepshee-photo-min.png'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
                       poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-poster-00001.jpg"
                       srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/644ecb4d0014984db5aa9f3d_ezxa-transcode.mp4"
@@ -247,7 +249,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • MOTION GRAPHICS</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Lepshee</h2>
                       </div>
                     </div>
@@ -261,7 +263,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • MOTION GRAPHICS • SOUND DESIGN </div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Yonex Giving Tournament</h2>
                       </div>
                     </div>
@@ -272,7 +274,7 @@ export default function WorkPage() {
                       srcMp4="/videos/h264/tournament-mp4-2.mp4"
                       srcWebm="/videos/other/tournament-mp4-2.webm"
                     />
-                    <div className="proj-img yonexgiving"></div>
+                    <div className="proj-img yonexgiving"><ShimmerImage fill src={CDN + '/images/toge-min-1.png'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
@@ -280,7 +282,7 @@ export default function WorkPage() {
               <a href="/work/old-projects/bezdeno" className="proj-item w-inline-block">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div className="proj-img bezdeno"></div>
+                    <div className="proj-img bezdeno"><ShimmerImage fill src={CDN + '/images/gallery-2-3.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
                       poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90%2F66aa9e67339addc3423f6935_Prost%C5%99ih%20-%201%2016x9%20%281%29-poster-00001.jpg"
                       srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90%2F66aa9e67339addc3423f6935_Prost%C5%99ih%20-%201%2016x9%20%281%29-transcode.mp4"
@@ -291,7 +293,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">3D • MOTION GRAPHICS • SoUND DESIGN</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Bezdeno</h2>
                       </div>
                     </div>
@@ -302,7 +304,7 @@ export default function WorkPage() {
               <a href="/work/old-projects/dorian-drop-ii" className="proj-item w-inline-block">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div className="proj-img dorian"></div>
+                    <div className="proj-img dorian"><ShimmerImage fill src={CDN + '/images/thumbnail-v1-min.png'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
                       poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90%2F6682fddaf49f85adf2f5edda_dorian-drop-ii%20%281%29-poster-00001.jpg"
                       srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90%2F6682fddaf49f85adf2f5edda_dorian-drop-ii%20%281%29-transcode.mp4"
@@ -313,7 +315,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">Art DIRECTION • 3D • MOTION GRAPHICS</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Dorian - Drop II</h2>
                       </div>
                     </div>
@@ -324,7 +326,7 @@ export default function WorkPage() {
               <a href="/work/old-projects/yonex-badminton" className="proj-item w-inline-block">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div className="proj-img ypch"></div>
+                    <div className="proj-img ypch"><ShimmerImage fill src={CDN + '/images/header-3-0-00-03-05.png'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
                       poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90%2F63c7df6091e702a62ff71160_header-poster-00001.jpg"
                       srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90%2F63c7df6091e702a62ff71160_header-transcode.mp4"
@@ -335,7 +337,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">Art DIRECTION • MOTION GRAPHICS • SOUND DESIGN</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Yonex Precision Challenge</h2>
                       </div>
                     </div>
@@ -351,13 +353,13 @@ export default function WorkPage() {
                       srcMp4="/videos/h264/together-2.mp4"
                       srcWebm="/videos/other/together-2.webm"
                     />
-                    <div className="proj-img gp"></div>
+                    <div className="proj-img gp"><ShimmerImage fill src={CDN + '/images/toge-min.png'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                   <div className="div-block-99">
                     <div className="wrappedtext">
                       <div className="label gray">MOTION GRAPHICS</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Together</h2>
                       </div>
                     </div>
@@ -368,7 +370,7 @@ export default function WorkPage() {
               <a href="/work/old-projects/the-mag-wrap23" className="proj-item w-inline-block">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div className="proj-img wrap _2"></div>
+                    <div className="proj-img wrap _2"><ShimmerImage fill src={CDN + '/images/INTRO-16X10-0-00-03-10.png'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
                       poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90%2F6682bb833a19c74240001b70_wrap-injekt-poster-00001.jpg"
                       srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90%2F6682bb833a19c74240001b70_wrap-injekt-transcode.mp4"
@@ -379,7 +381,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">VFX LEAD • 3D • MOTION GRAPHICS • SOUND DESIGN</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">The Mag W/RAP 2023</h2>
                       </div>
                     </div>
@@ -390,7 +392,7 @@ export default function WorkPage() {
               <a href="/work/old-projects/erem" className="proj-item w-inline-block">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div className="proj-img erem"></div>
+                    <div className="proj-img erem"><ShimmerImage fill src={CDN + '/images/title.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                     <BackgroundVideo className="background-video-18" style={{ display: 'none' }}
                       poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90%2F63ea05489870092f96c786a9_header-vid-poster-00001.jpg"
                       srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90%2F63ea05489870092f96c786a9_header-vid-transcode.mp4"
@@ -401,7 +403,7 @@ export default function WorkPage() {
                     <div className="wrappedtext">
                       <div className="label gray">MOTION GRAPHICS • SOUND DESIGN</div>
                       <div className="div-block-67">
-                        <img src={CDN + '/images/arrow.svg'} loading="lazy" style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} alt="" className="image-19" />
+                        <Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="image-19" />
                         <h2 style={{ transform: 'translate3d(-40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="proj-heading">Erem</h2>
                       </div>
                     </div>

@@ -1808,114 +1808,20 @@ body {
 }
 
 .proj-img {
-  background-image: url('#{$cdn}/images/Chainer-Header-HP.webp');
-  background-position: 50%;
-  background-size: cover;
   border-radius: 0;
   position: absolute;
   inset: 0%;
+  overflow: hidden;
 }
 
 .proj-img.relive {
   border-radius: var(--radius\<deleted\|variable-3f5cfe74-8124-2595-5b79-c0e4be705046\>);
-  background-image: url('#{$cdn}/images/relive-ar-thumbnail.webp');
-  background-position: 50%;
-  background-size: cover;
   border-style: solid;
   border-color: #000;
 }
 
-.proj-img.wrap {
-  background-image: url('#{$cdn}/images/INTRO-16X10-0-00-03-10.png');
-  background-position: 0 0;
-  background-size: auto;
-}
-
-.proj-img.wrap._2 {
-  background-image: url('#{$cdn}/images/INTRO-16X10-0-00-03-10.png');
-  background-position: 50%;
-  background-size: cover;
-}
-
-.proj-img.lepshee {
-  background-image: url('#{$cdn}/images/lepshee-photo-min.png');
-}
-
-.proj-img.wrap-24 {
-  background-image: url('#{$cdn}/images/wrap-logo-still_1.1.1-min.png');
-}
-
-.proj-img.yonex {
-  background-image: url('#{$cdn}/images/yonexsd.webp');
-}
-
-.proj-img.kunaj-arch {
-  background-image: url('#{$cdn}/images/kunaj-archviz.webp');
-}
-
-.proj-img.kunaj-sklo {
-  background-image: url('#{$cdn}/images/kunaj-sklo-preview-2-min-ezgif.com-png-to-webp-converter.webp');
-}
-
-.proj-img.unreal {
-  background-image: url('#{$cdn}/images/header-combined-min-ezgif.com-png-to-webp-converter.webp');
-}
-
-.proj-img.dorian {
-  background-image: url('#{$cdn}/images/thumbnail-v1-min.png');
-  background-position: 50%;
-  background-size: cover;
-}
-
-.proj-img.ypch {
-  background-image: url('#{$cdn}/images/header-3-0-00-03-05.png');
-  background-position: 50%;
-  background-size: cover;
-}
-
-.proj-img.erem {
-  background-image: url('#{$cdn}/images/title.webp');
-}
-
-.proj-img.gp {
-  background-image: url('#{$cdn}/images/toge-min.png');
-}
-
-.proj-img.yonexgiving {
-  background-image: url('#{$cdn}/images/toge-min-1.png');
-}
-
-.proj-img.bezdeno {
-  background-image: url('#{$cdn}/images/gallery-2-3.webp');
-}
-
-.proj-img.ashfall {
-  background-image: url('#{$cdn}/images/001-min.png');
-}
-
-.proj-img.barbour {
-  background-image: url('#{$cdn}/images/Barbour-Header-HP2.webp');
-}
-
-.proj-img.jewe {
-  background-image: url('#{$cdn}/images/Frame-10352.png');
-}
-
 .proj-img.wrap25 {
-  background-image: url('#{$cdn}/images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp');
   border-radius: 0;
-}
-
-.proj-img.vsx {
-  background-image: url('#{$cdn}/images/16x9thumb-ezgif.com-png-to-webp-converter.webp');
-}
-
-.proj-img.frasers {
-  background-image: url('#{$cdn}/images/barbour_frasers-16x9-15s_10-00-12-13-ezgif.com-png-to-webp-converter.webp');
-}
-
-.proj-img.onitsuykja {
-  background-image: url('#{$cdn}/images/aa-ezgif.com-png-to-webp-converter.webp');
 }
 
 .proj-heading {
@@ -2079,37 +1985,9 @@ body {
 
 .snapshot-img {
   border-radius: var(--radius\<deleted\|variable-3f5cfe74-8124-2595-5b79-c0e4be705046\>);
-  background-image: url('#{$cdn}/images/2.png');
-  background-position: 50%;
-  background-size: cover;
   position: absolute;
   inset: 0%;
-}
-
-.snapshot-img._1 {
-  background-image: url('#{$cdn}/images/final-min-5.png');
-}
-
-.snapshot-img._5 {
-  background-image: url('#{$cdn}/images/ezgif.com-resize.webp');
-  background-position: 50%;
-}
-
-.snapshot-img._3 {
-  background-image: url('#{$cdn}/images/container3.webp');
-}
-
-.snapshot-img._4 {
-  background-image: url('#{$cdn}/images/maisoncrivelli.webp');
-  background-position: 50%;
-}
-
-.snapshot-img._6 {
-  background-image: url('#{$cdn}/images/niacid.webp');
-}
-
-.snapshot-img._2 {
-  background-image: url('#{$cdn}/images/fragrance-3.webp');
+  overflow: hidden;
 }
 
 .snapshot-img.mockups {
@@ -3409,37 +3287,16 @@ body {
 
 .featured-block {
   background-color: #969696;
-  background-image: url('#{$cdn}/images/fragrance-3.webp');
-  background-position: 50%;
-  background-size: cover;
   border-radius: 5px;
   width: 100%;
   padding-bottom: 22%;
   position: relative;
   inset: 0%;
+  overflow: hidden;
 }
 
 .featured-block.maison {
   background-color: #96969600;
-  background-image: none;
-}
-
-.featured-block.archviz {
-  background-image: url('#{$cdn}/images/niacid.webp');
-  background-position: 50%;
-  background-size: cover;
-}
-
-.featured-block.ashfall {
-  background-image: url('#{$cdn}/images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp');
-  background-position: 50%;
-  background-size: cover;
-}
-
-.featured-block.archviz2 {
-  background-image: url('#{$cdn}/images/can-v3.webp');
-  background-position: 50%;
-  background-size: cover;
 }
 
 .main-services {
@@ -3543,18 +3400,7 @@ body {
   width: 100%;
   padding-top: 48.5%;
   position: relative;
-}
-
-.div-block-97._2 {
-  background-image: url('#{$cdn}/images/untitled.2png-min.png');
-}
-
-.div-block-97._3 {
-  background-image: url('#{$cdn}/images/kunaj-sklo-preview-2-min-ezgif.com-png-to-webp-converter.webp');
-}
-
-.div-block-97._4 {
-  background-image: url('#{$cdn}/images/chainer-case-4.webp');
+  overflow: hidden;
 }
 
 .div-block-98 {
@@ -4775,18 +4621,17 @@ body {
 }
 
 .div-block-139 {
-  background-image: url('#{$cdn}/images/profilovka-new-edit-ezgif.com-png-to-webp-converter.webp');
-  background-position: 50% 30%;
-  background-size: cover;
   flex: 1;
   width: 100%;
   padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .div-block-139.half {
-  background-image: url('#{$cdn}/images/gif-ahoj2-ezgif.com-png-to-webp-converter.webp');
   padding-bottom: 50%;
   position: relative;
+  overflow: hidden;
 }
 
 .div-block-140 {

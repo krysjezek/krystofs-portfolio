@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import ShimmerImage from '@/components/ShimmerImage'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
@@ -15,7 +17,7 @@ export default function Footer() {
             <div className="footer-left">
               <div id="w-node-_418f4411-9415-65e7-5c80-88c8c59ec8a3-96d29d50" className="div-block-135">
                 <div className="footer--text">
-                  <div className="div-block-139 half"></div>
+                  <div className="div-block-139 half"><ShimmerImage fill src={CDN + '/images/gif-ahoj2-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 25vw" /></div>
                 </div>
               </div>
               <div id="w-node-_1cc26f6b-2051-9734-6fdd-09e78fee6e1c-96d29d50" className="div-block-135">
@@ -24,17 +26,17 @@ export default function Footer() {
                   <div className="div-block-119">
                     <div data-w-id="1cc26f6b-2051-9734-6fdd-09e78fee6e21" className="div-block-65">
                       <a href="https://www.instagram.com/krystof.jezek/" target="_blank" rel="noopener noreferrer" className="link" data-cursor="Follow" data-cursor-icon="arrow">Instagram</a>
-                      <img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20" />
+                      <Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={10} height={10} unoptimized className="image-20" />
                       <div className="line-mask"><div className="line"></div></div>
                     </div>
                     <div data-w-id="1cc26f6b-2051-9734-6fdd-09e78fee6e27" className="div-block-65">
                       <a href="https://krystofjezek.gumroad.com/" target="_blank" rel="noopener noreferrer" className="link" data-cursor="Follow" data-cursor-icon="arrow">Gumroad</a>
-                      <img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20" />
+                      <Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={10} height={10} unoptimized className="image-20" />
                       <div className="line-mask"><div className="line"></div></div>
                     </div>
                     <div data-w-id="1cc26f6b-2051-9734-6fdd-09e78fee6e2d" className="div-block-65">
                       <a href="https://www.linkedin.com/in/krystofjezek/" target="_blank" rel="noopener noreferrer" className="link" data-cursor="Follow" data-cursor-icon="arrow">LinkedIn</a>
-                      <img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20" />
+                      <Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={10} height={10} unoptimized className="image-20" />
                       <div className="line-mask"><div className="line"></div></div>
                     </div>
                   </div>
@@ -65,12 +67,12 @@ export default function Footer() {
                   <div className="div-block-119">
                     <div data-w-id="6565ca43-4312-11b1-fa85-94235efea807" className="div-block-65">
                       <a href="mailto:krystof@jezek.me?subject=Let&#x27;s%20work%20tohether!" className="link" data-cursor="Reach out">krystof@jezek.me</a>
-                      <img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20" />
+                      <Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={10} height={10} unoptimized className="image-20" />
                       <div className="line-mask"><div className="line"></div></div>
                     </div>
                     <div data-w-id="6565ca43-4312-11b1-fa85-94235efea80d" className="div-block-65">
                       <a href="https://wa.me/420774066745" className="link" data-cursor="Reach out">WhatsApp</a>
-                      <img src={CDN + '/images/arrow-leftup.svg'} loading="lazy" alt="" className="image-20" />
+                      <Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={10} height={10} unoptimized className="image-20" />
                       <div className="line-mask"><div className="line"></div></div>
                     </div>
                   </div>
