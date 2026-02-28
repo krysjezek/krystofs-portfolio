@@ -89,57 +89,57 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 
 ## 3. Homepage Animations
 
-**File:** `app/page.jsx`
+**Page:** `app/page.jsx` (thin wrapper — hook calls only)
 
 ### 3a. Text carousel
 | | |
 |-|-|
+| **File** | `hooks/useTextCarousel.js` |
 | **What** | Vertically cycles `.changer` items inside `.changer-move` on a 2s timer |
 | **Trigger** | `setInterval` — 2000ms (page load) |
 | **Properties** | `translateY` by item height increments |
-| **Duration / Easing** | 0.5s / `ease-in-out` (inline CSS transition) |
-| **Lines** | 17–38 |
-| **Notes** | On last item → snaps back to first with `transition: none` after 500ms timeout. Also has a matching `<style>` block at line 251–253. |
+| **Duration / Easing** | 0.5s / `ease-in-out` (CSS transition on `.changer-move` in SCSS) |
+| **Notes** | On last item → snaps back to first with `transition: none` after 500ms timeout. |
 
 ### 3b. Logo marquee
 | | |
 |-|-|
+| **File** | `hooks/useMarquee.js` |
 | **What** | `.inner-container` scrolls left continuously; seamless loop by resetting position when one logo-width is consumed |
 | **Trigger** | `requestAnimationFrame` loop (page load) |
 | **Properties** | `translateX` via `style.transform` |
 | **Speed** | 2px per frame |
-| **Lines** | 42–92 |
 | **Notes** | Pauses on `visibilitychange` (hidden), resumes on visible. Recalculates gap on `resize`. |
 
 ### 3c. Service tab switcher
 | | |
 |-|-|
+| **File** | `hooks/useServiceTabs.js` |
 | **What** | Click a service button (#b1–#b4) → previous panel fades out, new panel fades in |
 | **Trigger** | Click on `#b1`, `#b2`, `#b3`, `#b4` |
 | **Properties** | `opacity` 0 ↔ 1, `display` none ↔ flex |
-| **Duration / Easing** | 0.3s / `ease` (CSS transition on `#serv1`–`#serv4`, line 255–259) |
-| **Lines** | 94–124 |
+| **Duration / Easing** | 0.3s / `ease` (CSS transition on `#serv1`–`#serv4` in SCSS) |
 | **Notes** | Uses sequential `setTimeout(300)` to wait for fade-out before showing new panel. `.selected` class toggles background color. |
 
 ### 3d. 3D perspective card tilt
 | | |
 |-|-|
+| **File** | `hooks/useCardTilt.js` |
 | **What** | Two `.proj-item` cards sit in a preserve-3d grid with static Y rotations (-6°, +6°); the whole grid additionally rotates with the mouse |
 | **Trigger** | `mousemove` on `window` |
 | **Properties** | `rotationY` (±3° range), `rotationX` (±2° range) |
 | **Duration / Easing** | 0.6s / `power2.out` via `gsap.quickTo` |
-| **Lines** | 126–245 |
 | **Config** | perspective: 1300px, transformOrigin: `50% 50% -600px`, gap: 35px |
 | **Notes** | Disabled on mobile (≤767px). Creates DOM wrapper for perspective. Invisible overlays forward `data-cursor` to fix `elementFromPoint` in preserve-3d context. Full teardown/setup on breakpoint change. See `docs/3d-tilt-service-cards.md`. |
 
 ### 3e. Pulse dot
 | | |
 |-|-|
+| **File** | `styles/krystofs-portfolio.webflow.scss` |
 | **What** | Green availability dot pulses (scale 1 → 0 → 1) |
-| **Trigger** | CSS `@keyframes` animation, infinite loop |
+| **Trigger** | CSS `@keyframes pulse-dot` animation, infinite loop |
 | **Properties** | `transform: scale()` — 1 at 0%/60%, 0 at 80%, 1 at 100% |
 | **Duration / Easing** | 3s / `ease-in-out` infinite |
-| **Lines** | 267–274 (inline `<style>` in page.jsx) |
 | **Element** | `.div-block-88` |
 
 ---
@@ -368,7 +368,7 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 
 | What | Interval | File |
 |------|----------|------|
-| Text carousel rotation | 2000ms | `page.jsx:23` |
-| Carousel snap-back timeout | 500ms | `page.jsx:29` |
-| Service tab fade-out wait | 300ms | `page.jsx:107,109` |
+| Text carousel rotation | 2000ms | `hooks/useTextCarousel.js` |
+| Carousel snap-back timeout | 500ms | `hooks/useTextCarousel.js` |
+| Service tab fade-out wait | 300ms | `hooks/useServiceTabs.js` |
 | Cursor collapse debounce | 30ms | `CustomCursor.jsx:122` |

@@ -3,7 +3,7 @@
 import { useRef, useEffect, useCallback } from 'react'
 import gsap from 'gsap'
 
-export default function ShimmerImage({ src, alt, className, style, ...props }) {
+export default function ShimmerImage({ src, alt, className, style, imgStyle, ...props }) {
   const wrapperRef = useRef(null)
   const imgRef = useRef(null)
   const sweepRef = useRef(null)
@@ -57,7 +57,7 @@ export default function ShimmerImage({ src, alt, className, style, ...props }) {
         src={src}
         alt={alt || ''}
         onLoad={onLoad}
-        style={{ opacity: 0, display: 'block', width: '100%', height: 'auto' }}
+        style={{ opacity: 0, display: 'block', width: '100%', height: 'auto', ...imgStyle }}
         {...props}
       />
       <span

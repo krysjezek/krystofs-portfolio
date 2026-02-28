@@ -1,314 +1,30 @@
 'use client'
 
-import { useEffect, useRef, useCallback } from 'react'
-import gsap from 'gsap'
+import { useRef } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
 import EmbedVideo from '@/components/EmbedVideo'
 import ShimmerImage from '@/components/ShimmerImage'
+import { useTextCarousel } from '@/hooks/useTextCarousel'
+import { useMarquee } from '@/hooks/useMarquee'
+import { useServiceTabs } from '@/hooks/useServiceTabs'
+import { useCardTilt } from '@/hooks/useCardTilt'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export default function HomePage() {
   const profilePicUrl = `${CDN}/images/profilovka-new-edit-ezgif.com-png-to-webp-converter.webp`
   const gridRef = useRef(null)
-  const profileImgRef = useRef(null)
-  const profileSweepRef = useRef(null)
-  const profileTweenRef = useRef(null)
 
-  // Script 1: Text carousel
-  useEffect(() => {
-    const changerMove = document.querySelector('.changer-move')
-    const changers = document.querySelectorAll('.changer')
-    if (changers.length <= 1) return
-    let currentIndex = 0
-    const changerHeight = changers[0].offsetHeight
-    const id = setInterval(function () {
-      currentIndex++
-      if (currentIndex > changers.length - 2) {
-        changerMove.style.transition = 'transform 0.5s ease-in-out'
-        changerMove.style.transform = 'translateY(' + (-currentIndex * changerHeight) + 'px)'
-        setTimeout(() => {
-          changerMove.style.transition = 'none'
-          changerMove.style.transform = 'translateY(0)'
-        }, 500)
-        currentIndex = 0
-      } else {
-        changerMove.style.transition = 'transform 0.5s ease-in-out'
-        changerMove.style.transform = 'translateY(' + (-currentIndex * changerHeight) + 'px)'
-      }
-    }, 2000)
-    return () => clearInterval(id)
-  }, [])
-
-  // Script 2: Marquee animation
-  useEffect(() => {
-    const speed = 2
-    const innerContainer = document.querySelector('.inner-container')
-    const logos = document.querySelectorAll('.main-hero-logos')
-    let animationFrame
-
-    function calculateGapSize() {
-      const totalLogosWidth = Array.from(logos).reduce((total, logo) => total + logo.offsetWidth, 0)
-      const containerWidth = innerContainer.offsetWidth
-      return (containerWidth - totalLogosWidth) / (logos.length - 1)
-    }
-
-    function animate() {
-      const gapSize = calculateGapSize()
-      const logosWidth = logos[0].offsetWidth + gapSize
-      const currentTransform = getComputedStyle(innerContainer).transform
-      const matrixValues = currentTransform.match(/matrix\(([^)]+)\)/)
-      const translateX = matrixValues ? parseFloat(matrixValues[1].split(', ')[4]) : 0
-      let newPosition = translateX - speed
-      if (newPosition < -logosWidth) {
-        newPosition += logosWidth
-      }
-      innerContainer.style.transform = `translateX(${newPosition}px)`
-      animationFrame = requestAnimationFrame(animate)
-    }
-
-    if (!innerContainer || logos.length === 0) return
-
-    animate()
-
-    const handleResize = () => {
-      cancelAnimationFrame(animationFrame)
-      animate()
-    }
-    const handleVisibility = () => {
-      if (document.visibilityState === 'visible') {
-        animate()
-      } else {
-        cancelAnimationFrame(animationFrame)
-      }
-    }
-
-    window.addEventListener('resize', handleResize)
-    document.addEventListener('visibilitychange', handleVisibility)
-
-    return () => {
-      cancelAnimationFrame(animationFrame)
-      window.removeEventListener('resize', handleResize)
-      document.removeEventListener('visibilitychange', handleVisibility)
-    }
-  }, [])
-
-  // Script 3: Service buttons tab switcher
-  useEffect(() => {
-    const buttons = document.querySelectorAll('#b1, #b2, #b3, #b4')
-    buttons.forEach(button => {
-      button.addEventListener('click', function () {
-        buttons.forEach(btn => btn.classList.remove('selected'))
-        this.classList.add('selected')
-        const buttonId = this.id
-        const divId = 'serv' + buttonId.substring(1)
-        document.querySelectorAll('#serv1, #serv2, #serv3, #serv4').forEach(div => {
-          div.style.opacity = '0'
-          setTimeout(() => {
-            div.style.display = 'none'
-          }, 300)
-        })
-        setTimeout(() => {
-          const activeDiv = document.getElementById(divId)
-          activeDiv.style.display = 'flex'
-          setTimeout(() => {
-            activeDiv.style.opacity = '1'
-          }, 10)
-        }, 300)
-      })
-    })
-    document.getElementById('b1').classList.add('selected')
-    const defaultDiv = document.getElementById('serv1')
-    defaultDiv.style.display = 'flex'
-    setTimeout(() => {
-      defaultDiv.style.opacity = '1'
-    }, 10)
-  }, [])
-
-  // Script 4: 3D perspective tilt on service cards
-  useEffect(() => {
-    const grid = gridRef.current
-    if (!grid) return
-
-    const cards = grid.querySelectorAll('.proj-item')
-    if (cards.length < 2) return
-
-    const mql = window.matchMedia('(max-width: 767px)')
-    if (mql.matches) return // no tilt on mobile
-
-    // Config
-    const BASE_TILTS = [-6, 6] // concave arc — inner edges forward
-    const MOUSE_RANGE_Y = 3
-    const MOUSE_RANGE_X = 2
-    const EASE_DURATION = 0.6
-    const GAP = 35
-
-    // Wrap grid in a perspective container
-    const wrapper = document.createElement('div')
-    wrapper.style.perspective = '1300px'
-    grid.parentNode.insertBefore(wrapper, grid)
-    wrapper.appendChild(grid)
-
-    // Grid rotates as a whole; preserve-3d lets child tilts show through
-    // Origin pushed 600px behind the screen so rotation pivots from the arc center
-    grid.style.transformStyle = 'preserve-3d'
-    grid.style.transformOrigin = '50% 50% -600px'
-    grid.style.willChange = 'transform'
-    grid.style.gap = GAP + 'px'
-    gsap.set(grid, { rotationY: 0, rotationX: 0 })
-
-    // Each card gets a static tilt to form the curved arc
-    cards.forEach((card, i) => {
-      card.style.willChange = 'transform'
-      gsap.set(card, { rotationY: BASE_TILTS[i] })
-    })
-
-    // Cursor rotates the whole grid
-    const qtY = gsap.quickTo(grid, 'rotationY', { duration: EASE_DURATION, ease: 'power2.out' })
-    const qtX = gsap.quickTo(grid, 'rotationX', { duration: EASE_DURATION, ease: 'power2.out' })
-
-    const onMouseMove = (e) => {
-      const nx = (e.clientX / window.innerWidth) * 2 - 1
-      const ny = (e.clientY / window.innerHeight) * 2 - 1
-      qtY(nx * MOUSE_RANGE_Y)
-      qtX(-ny * MOUSE_RANGE_X)
-    }
-
-    window.addEventListener('mousemove', onMouseMove)
-
-    // Fix hover detection: preserve-3d breaks elementFromPoint, so we use
-    // native mouseenter/mouseleave to inject a marker attribute that the
-    // CustomCursor's elementFromPoint -> .closest('[data-cursor]') will find.
-    // We place an invisible overlay on each card that stays in the normal
-    // (non-3D) flow and forwards data-cursor to the cursor system.
-    const overlays = []
-    cards.forEach((card) => {
-      const overlay = document.createElement('div')
-      overlay.dataset.cursor = card.dataset.cursor
-      overlay.style.cssText = 'position:absolute;inset:0;z-index:1;'
-      card.style.position = 'relative'
-      card.appendChild(overlay)
-      overlays.push(overlay)
-    })
-
-    const teardown = () => {
-      window.removeEventListener('mousemove', onMouseMove)
-      gsap.set(grid, { clearProps: 'transform' })
-      grid.style.willChange = ''
-      grid.style.transformStyle = ''
-      grid.style.transformOrigin = ''
-      grid.style.gap = ''
-      cards.forEach(c => { gsap.set(c, { clearProps: 'transform' }); c.style.willChange = '' })
-      overlays.forEach(o => o.remove())
-    }
-
-    const setup = () => {
-      wrapper.style.perspective = '1300px'
-      grid.style.transformStyle = 'preserve-3d'
-      grid.style.transformOrigin = '50% 50% -600px'
-      grid.style.willChange = 'transform'
-      grid.style.gap = GAP + 'px'
-      gsap.set(grid, { rotationY: 0, rotationX: 0 })
-      cards.forEach((card, i) => {
-        card.style.willChange = 'transform'
-        gsap.set(card, { rotationY: BASE_TILTS[i] })
-        const overlay = document.createElement('div')
-        overlay.dataset.cursor = card.dataset.cursor
-        overlay.style.cssText = 'position:absolute;inset:0;z-index:1;'
-        card.style.position = 'relative'
-        card.appendChild(overlay)
-        overlays.push(overlay)
-      })
-      window.addEventListener('mousemove', onMouseMove)
-    }
-
-    const onBreakpointChange = (e) => {
-      if (e.matches) {
-        teardown()
-        wrapper.parentNode.insertBefore(grid, wrapper)
-        wrapper.remove()
-      } else {
-        const parent = grid.parentNode
-        parent.insertBefore(wrapper, grid)
-        wrapper.appendChild(grid)
-        setup()
-      }
-    }
-    mql.addEventListener('change', onBreakpointChange)
-
-    return () => {
-      teardown()
-      mql.removeEventListener('change', onBreakpointChange)
-      if (grid.parentNode === wrapper) {
-        wrapper.parentNode.insertBefore(grid, wrapper)
-        wrapper.remove()
-      }
-    }
-  }, [])
-
-  // Profile picture shimmer
-  useEffect(() => {
-    const sweep = profileSweepRef.current
-    if (!sweep) return
-    profileTweenRef.current = gsap.to(sweep, {
-      x: '100%',
-      duration: 1.2,
-      ease: 'power1.inOut',
-      repeat: -1,
-    })
-    // If image was already cached (e.g. from preload), trigger load immediately
-    const img = profileImgRef.current
-    if (img && img.complete && img.naturalWidth > 0) {
-      onProfileLoad()
-    }
-    return () => {
-      if (profileTweenRef.current) profileTweenRef.current.kill()
-    }
-  }, [])
-
-  const onProfileLoad = useCallback(() => {
-    const img = profileImgRef.current
-    const sweep = profileSweepRef.current
-    if (!img) return
-    if (profileTweenRef.current) profileTweenRef.current.kill()
-    const tl = gsap.timeline()
-    if (sweep) {
-      tl.to(sweep, { opacity: 0, duration: 0.3, ease: 'power2.out' })
-    }
-    tl.to(img, { opacity: 1, duration: 0.5, ease: 'power2.out' }, sweep ? '-=0.1' : 0)
-  }, [])
+  useTextCarousel()
+  useMarquee()
+  useServiceTabs()
+  useCardTilt(gridRef)
 
   return (
     <>
       <link rel="preload" as="image" href={profilePicUrl} type="image/webp" />
-      <style>{`
-        .changer-move {
-          transition: transform 0.5s ease-in-out;
-        }
-
-        #serv1, #serv2, #serv3, #serv4 {
-          display: none;
-          opacity: 0;
-          transition: opacity 0.3s ease;
-        }
-        .selected {
-          background-color: #ddd;
-        }
-        .blur-mask-layer {
-          -webkit-mask-image: linear-gradient(to top, black 25%, transparent 30%);
-          mask-image: linear-gradient(to top, black 25%, transparent 30%);
-        }
-        @keyframes pulse-dot {
-          0%, 60% { transform: scale(1); }
-          80% { transform: scale(0); }
-          100% { transform: scale(1); }
-        }
-        .div-block-88 {
-          animation: pulse-dot 3s ease-in-out infinite;
-        }
-      `}</style>
       <Navbar />
       <div className="w-layout-blockcontainer container-2 w-container">
         <section className="main-hero">
@@ -318,28 +34,13 @@ export default function HomePage() {
               <div className="footer-left">
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfab-a7256e91" className="div-block-135">
                   <div className="footer--text">
-                    <div className="div-block-139" style={{ backgroundImage: 'none', position: 'relative', overflow: 'hidden', backgroundColor: '#1a1a2e' }}>
-                      <img
-                        ref={profileImgRef}
-                        src={profilePicUrl}
-                        alt="Kryštof Ježek"
-                        onLoad={onProfileLoad}
-                        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 30%', opacity: 0 }}
-                      />
-                      <span
-                        ref={profileSweepRef}
-                        style={{
-                          position: 'absolute',
-                          top: 0,
-                          left: 0,
-                          width: '100%',
-                          height: '100%',
-                          transform: 'translateX(-100%)',
-                          background: 'linear-gradient(90deg, transparent, #2a2a4a, transparent)',
-                          pointerEvents: 'none',
-                        }}
-                      />
-                    </div>
+                    <ShimmerImage
+                      src={profilePicUrl}
+                      alt="Kryštof Ježek"
+                      className="div-block-139"
+                      style={{ backgroundImage: 'none' }}
+                      imgStyle={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 30%' }}
+                    />
                   </div>
                 </div>
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfae-a7256e91" className="div-block-135">
