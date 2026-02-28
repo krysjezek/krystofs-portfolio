@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useCallback } from 'react'
 import gsap from 'gsap'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -11,7 +11,11 @@ import ShimmerImage from '@/components/ShimmerImage'
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export default function HomePage() {
+  const profilePicUrl = `${CDN}/images/profilovka-new-edit-ezgif.com-png-to-webp-converter.webp`
   const gridRef = useRef(null)
+  const profileImgRef = useRef(null)
+  const profileSweepRef = useRef(null)
+  const profileTweenRef = useRef(null)
 
   // Script 1: Text carousel
   useEffect(() => {
@@ -244,9 +248,41 @@ export default function HomePage() {
     }
   }, [])
 
+  // Profile picture shimmer
+  useEffect(() => {
+    const sweep = profileSweepRef.current
+    if (!sweep) return
+    profileTweenRef.current = gsap.to(sweep, {
+      x: '100%',
+      duration: 1.2,
+      ease: 'power1.inOut',
+      repeat: -1,
+    })
+    // If image was already cached (e.g. from preload), trigger load immediately
+    const img = profileImgRef.current
+    if (img && img.complete && img.naturalWidth > 0) {
+      onProfileLoad()
+    }
+    return () => {
+      if (profileTweenRef.current) profileTweenRef.current.kill()
+    }
+  }, [])
+
+  const onProfileLoad = useCallback(() => {
+    const img = profileImgRef.current
+    const sweep = profileSweepRef.current
+    if (!img) return
+    if (profileTweenRef.current) profileTweenRef.current.kill()
+    const tl = gsap.timeline()
+    if (sweep) {
+      tl.to(sweep, { opacity: 0, duration: 0.3, ease: 'power2.out' })
+    }
+    tl.to(img, { opacity: 1, duration: 0.5, ease: 'power2.out' }, sweep ? '-=0.1' : 0)
+  }, [])
 
   return (
     <>
+      <link rel="preload" as="image" href={profilePicUrl} type="image/webp" />
       <style>{`
         .changer-move {
           transition: transform 0.5s ease-in-out;
@@ -282,7 +318,28 @@ export default function HomePage() {
               <div className="footer-left">
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfab-a7256e91" className="div-block-135">
                   <div className="footer--text">
-                    <div className="div-block-139"></div>
+                    <div className="div-block-139" style={{ backgroundImage: 'none', position: 'relative', overflow: 'hidden', backgroundColor: '#1a1a2e' }}>
+                      <img
+                        ref={profileImgRef}
+                        src={profilePicUrl}
+                        alt="Kryštof Ježek"
+                        onLoad={onProfileLoad}
+                        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: '50% 30%', opacity: 0 }}
+                      />
+                      <span
+                        ref={profileSweepRef}
+                        style={{
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          width: '100%',
+                          height: '100%',
+                          transform: 'translateX(-100%)',
+                          background: 'linear-gradient(90deg, transparent, #2a2a4a, transparent)',
+                          pointerEvents: 'none',
+                        }}
+                      />
+                    </div>
                   </div>
                 </div>
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfae-a7256e91" className="div-block-135">
