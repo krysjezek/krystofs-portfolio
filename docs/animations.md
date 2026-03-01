@@ -157,7 +157,7 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | **Trigger** | `mouseenter` / `mouseleave` on `.div-block-149` |
 | **Shimmer** | `x` from `-101%` → `101%` (0.8s, `power1.inOut`); on leave `opacity` → 0 (0.3s, `power2.out`) |
 | **Scale** | `scale` 1 → 1.025 (0.4s, `power2.out`); on leave 1.025 → 1 (0.4s, `power2.out`) |
-| **Green text** | CSS transition on `.div-block-153 .label` `color` → `var(--green-new)` + `.image-20` SVG filter (0.3s, `ease`) |
+| **Green text** | CSS transition on `.div-block-153 .label` `color` → `var(--green-new)` + `.image-20` SVG filter (0.3s, `ease`) + arrow nudge `translate(2px, -2px)` |
 | **Notes** | Overlay is DOM-injected by the hook. `.div-block-149` has `overflow: hidden` + `position: relative` to clip shimmer to border-radius. |
 
 ### 3f. Pulse dot
@@ -233,13 +233,14 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | | |
 |-|-|
 | **What** | A Three.js scene renders a textured plane with depth-map vertex displacement; the camera shifts with the mouse to create a 3D parallax effect |
-| **Trigger** | `IntersectionObserver` (rootMargin 200px) lazy-inits the scene; `mousemove` on the container drives the parallax |
-| **Mouse tracking** | `gsap.to(mouseCurrent, { x, y, duration: 0.4, ease: 'power2.out' })` (line 189–194) |
-| **Mouse leave** | `gsap.to(mouseCurrent, { x: 0, y: 0, duration: 0.6, ease: 'power2.out' })` (line 197–202) |
-| **Render loop** | `gsap.ticker.add(render)` — runs every frame (line 160) |
-| **Props** | `intensity` (default 0.5) — camera movement range; `displacement` (default 0.4) — depth extrusion |
-| **Lines** | 46–162 (init), 165–179 (lazy observer), 182–210 (mouse tracking), 213–226 (resize), 229–244 (cleanup) |
+| **Trigger** | `IntersectionObserver` (rootMargin 200px) lazy-inits the scene; `mousemove` drives the parallax |
+| **Mouse tracking** | `gsap.to(mouseCurrent, { x, y, duration: 0.4, ease: 'power2.out' })` |
+| **Mouse leave** | `gsap.to(mouseCurrent, { x: 0, y: 0, duration: 0.6, ease: 'power2.out' })` (local mode only) |
+| **Render loop** | `gsap.ticker.add(render)` — runs every frame |
+| **Props** | `intensity` (default 0.5) — camera movement range; `displacement` (default 0.4) — depth extrusion; `globalMouse` (default false) — viewport-based mouse tracking |
+| **`globalMouse` mode** | When `true`, listens on `window` and normalizes to viewport: `x = (clientX / innerWidth) * 2 - 1`. No `mouseleave` reset — parallax stays wherever the mouse is. When `false` (default), listens on the container element with `mouseleave` resetting to center. |
 | **Notes** | 512×512 plane segments. Overscan factor 1.12 hides edges. PerspectiveCamera FOV 50°. Full cleanup on unmount (geometry, material, texture, renderer, ticker). Falls back to plain `<img>` if image loading fails. |
+| **Used in** | `/test/depth` (local mouse), `Footer.jsx` (global mouse) |
 
 ---
 
@@ -298,16 +299,33 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | **Hover trigger** | `.proj-item:hover .background-video-18` |
 | **Lines** | 2636–2649 |
 
-### 8e. Project image arrow slide
+### 8e. Project image arrow diagonal slide-in
 | | |
 |-|-|
 | **Selector** | `.image-19` |
-| **Property** | `transform: translate(-40px)` → `translate(0)` |
-| **Duration / Easing** | 0.3s / `ease` |
+| **Animation** | `@keyframes arrow-diagonal-in` — arrow visible by default; on hover: fades out (0→30%), jumps to `translate(-30px, 30px)` (31%), slides diagonally back to origin with fade-in (31→100%) |
+| **Duration / Easing** | 0.5s / `ease` |
 | **Hover trigger** | `.proj-item:hover .image-19` |
-| **Lines** | 2681–2690 |
 
-### 8f. Accordion content
+### 8f. Footer arrow nudge
+| | |
+|-|-|
+| **Selector** | `.image-20` |
+| **Property** | `transform: translate(2px, -2px)` (diagonal nudge up-right) |
+| **Duration / Easing** | 0.3s / `ease` |
+| **Hover trigger** | `.div-block-65:hover .image-20` |
+| **Affects** | Instagram, Gumroad, LinkedIn, Email, WhatsApp links in Footer |
+
+### 8g. Tech project arrow nudge
+| | |
+|-|-|
+| **Selector** | `.github` |
+| **Property** | `transform: translate(2px, -2px)` (diagonal nudge up-right) |
+| **Duration / Easing** | 0.3s / `ease` |
+| **Hover trigger** | `.github-button:hover .github` |
+| **Affects** | GitHub/Instagram links in tech projects section on homepage |
+
+### 8h. Accordion content
 | | |
 |-|-|
 | **Selector** | `.fs_accordion-2_content` |
@@ -315,7 +333,7 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | **Duration** | 0.2s |
 | **Lines** | 4000–4002 |
 
-### 8g. Accordion arrow rotation
+### 8i. Accordion arrow rotation
 | | |
 |-|-|
 | **Selector** | `.fs_accordion-2_arrow-wrapper` |
@@ -387,9 +405,11 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | `.line` | `transform` (scaleX) | 0.35s | `cubic-bezier(0.86, 0, 0.14, 1)` |
 | `.proj-heading` | `transform` (translateX) | 0.3s | `ease` |
 | `.background-video-18` | `opacity` | 0.3s | `ease` |
-| `.image-19` | `transform` (translateX) | 0.3s | `ease` |
+| `.image-19` | `animation: arrow-diagonal-in` | 0.5s | `ease` |
+| `.image-20` | `transform` (nudge) | 0.3s | `ease` |
+| `.github` | `transform` (nudge) | 0.3s | `ease` |
 | `.div-block-153 .label` | `color` | 0.3s | `ease` |
-| `.div-block-153 .image-20` | `filter` | 0.3s | `ease` |
+| `.div-block-153 .image-20` | `filter`, `transform` | 0.3s | `ease` |
 | `.fs_accordion-2_content` | `max-height` | 0.2s | (default) |
 | `.fs_accordion-2_arrow-wrapper` | `transform` (rotate) | 0.2s | (default) |
 | `.changer-move` | `transform` (translateY) | 0.5s | `ease-in-out` |

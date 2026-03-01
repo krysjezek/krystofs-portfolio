@@ -115,6 +115,7 @@ export default function DepthParallax({
   chromaticAberration = 0,
   vignette = 0,
   lighting = 0,
+  globalMouse = false,
   className,
   style,
   alt,
@@ -320,6 +321,16 @@ export default function DepthParallax({
 
   // Mouse tracking with GSAP smoothing
   useEffect(() => {
+    if (globalMouse) {
+      const onMove = (e) => {
+        const x = (e.clientX / window.innerWidth) * 2 - 1
+        const y = (e.clientY / window.innerHeight) * 2 - 1
+        gsap.to(mouseCurrent.current, { x, y, duration: 0.4, ease: 'power2.out', overwrite: true })
+      }
+      window.addEventListener('mousemove', onMove)
+      return () => window.removeEventListener('mousemove', onMove)
+    }
+
     const el = containerRef.current
     if (!el) return
     const onMove = (e) => {
@@ -337,7 +348,7 @@ export default function DepthParallax({
       el.removeEventListener('mousemove', onMove)
       el.removeEventListener('mouseleave', onLeave)
     }
-  }, [])
+  }, [globalMouse])
 
   // Resize
   useEffect(() => {

@@ -2578,12 +2578,10 @@ body {
 .image-19 {
   width: 25px;
   height: auto;
-  transform: translate(-40px);
-  transition: transform 0.3s ease;
 }
 
 .proj-item:hover .image-19 {
-  transform: translate(0);
+  animation: arrow-diagonal-in 0.5s ease;
 }
 
 .div-block-68 {
@@ -2769,6 +2767,11 @@ body {
   margin-bottom: 5px;
   margin-left: 8px;
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1) hue-rotate(0deg) brightness(1);
+  transition: transform 0.3s ease;
+}
+
+.div-block-65:hover .image-20 {
+  transform: translate(2px, -2px);
 }
 
 .image-20.smaller {
@@ -3144,6 +3147,25 @@ body {
   align-items: center;
   width: auto;
   display: flex;
+}
+
+@keyframes arrow-diagonal-in {
+  0% {
+    transform: translate(0);
+    opacity: 1;
+  }
+  35% {
+    transform: translate(15px, -15px);
+    opacity: 0;
+  }
+  36% {
+    transform: translate(-20px, 20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
 
 @keyframes pulse-dot {
@@ -4679,6 +4701,11 @@ body {
   margin-bottom: 0;
   margin-left: 0;
   padding-top: 1px;
+  transition: transform 0.3s ease;
+}
+
+.github-button:hover .github {
+  transform: translate(2px, -2px);
 }
 
 .main-resume {
@@ -5069,7 +5096,7 @@ body {
   display: flex;
 
   .label, .image-20 {
-    transition: color 0.3s ease, filter 0.3s ease;
+    transition: color 0.3s ease, filter 0.3s ease, transform 0.3s ease;
   }
 }
 
@@ -5080,6 +5107,7 @@ body {
 
   .image-20 {
     filter: brightness(0) saturate(100%) invert(83%) sepia(42%) saturate(462%) hue-rotate(63deg) brightness(103%) contrast(93%);
+    transform: translate(2px, -2px);
   }
 }
 
