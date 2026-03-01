@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import DepthParallax from '@/components/DepthParallax'
+import ShimmerImage from '@/components/ShimmerImage'
 import CopyEmailLink from '@/components/CopyEmailLink'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
@@ -18,16 +18,7 @@ export default function Footer() {
             <div className="footer-left">
               <div id="w-node-_418f4411-9415-65e7-5c80-88c8c59ec8a3-96d29d50" className="div-block-135">
                 <div className="footer--text">
-                  <div className="div-block-139 half">
-                    <DepthParallax
-                      src={CDN + '/images/gif-ahoj2-ezgif.com-png-to-webp-converter.webp'}
-                      depthSrc={CDN + '/images/gif-ahoj2-depth.png'}
-                      intensity={0.2}
-                      displacement={0.25}
-                      alt=""
-                      style={{ position: 'absolute', inset: '0' }}
-                    />
-                  </div>
+                  <div className="div-block-139 half"><ShimmerImage fill src={CDN + '/images/gif-ahoj2-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 25vw" /></div>
                 </div>
               </div>
               <div id="w-node-_1cc26f6b-2051-9734-6fdd-09e78fee6e1c-96d29d50" className="div-block-135">
