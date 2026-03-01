@@ -140,14 +140,22 @@ export default function CustomCursor() {
       gsap.to(cursor, { scale: 1, duration: 0.4, ease: 'power1.inOut' })
     }
 
+    const onCursorUpdate = (e) => {
+      if (e.target === activeEl || e.target.closest('[data-cursor]') === activeEl) {
+        expand(activeEl.dataset.cursor, activeEl.dataset.cursorIcon)
+      }
+    }
+
     window.addEventListener('mousemove', onMove)
     window.addEventListener('mousedown', onMouseDown)
     window.addEventListener('mouseup', onMouseUp)
+    window.addEventListener('cursorupdate', onCursorUpdate)
 
     return () => {
       window.removeEventListener('mousemove', onMove)
       window.removeEventListener('mousedown', onMouseDown)
       window.removeEventListener('mouseup', onMouseUp)
+      window.removeEventListener('cursorupdate', onCursorUpdate)
       clearTimeout(collapseTimer)
       cancelAnimationFrame(rafId)
     }
