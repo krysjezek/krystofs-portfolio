@@ -1664,6 +1664,7 @@ body {
 .client-logo {
   opacity: .5;
   height: 20px;
+  width: auto;
   display: block;
 }
 
@@ -4745,6 +4746,9 @@ body {
   display: block;
   position: absolute;
   inset: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   overflow: hidden;
 }
 
