@@ -21,7 +21,7 @@ export default function Bezestrachu() {
         />
       </div>
       <div>
-        <div className="work-header-wrap">
+        <div className="work-header-wrap" data-reveal="hero">
           <div className="back-block">
             <a href="/" className="button inverted-border w-button">Back to home</a>
           </div>
@@ -35,7 +35,7 @@ export default function Bezestrachu() {
         </div>
         <div className="w-layout-grid work-grid wrap">
           <div id="w-node-_29f6f88b-bbb8-6aef-df1d-3bc0f6e39c10-67f2d765" className="work-main-wrap first">
-            <div className="w-layout-grid cs-grid _2-col">
+            <div className="w-layout-grid cs-grid _2-col" data-reveal-group>
               <div id="w-node-cd4baa0b-1ad0-41bf-af43-f758782c6f44-67f2d765" className="html-embed w-embed w-iframe w-script">
                 <div style={{ padding: '75% 0 0 0', position: 'relative' }}><iframe src="https://player.vimeo.com/video/796936380?h=d64c69f816&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }} title="Bezestrachu &amp;ndash; Brand Reveal"></iframe></div>
               </div>

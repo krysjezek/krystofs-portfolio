@@ -20,7 +20,7 @@ export default function BarbourPage() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <WorkPageHeader label="Barbour" title="Icons in Quilting">
+            <WorkPageHeader label="Barbour" title="Icons in Quilting" data-reveal="hero">
               <div className="div-block-55">
                 <p className="paragraph header">
                   <a href="https://monopo.london/" target="_blank" className="link green" data-cursor="Visit">Monopo London</a> invited Krystof to work on a CGI/VFX campaign for British fashion designer <a href="https://www.barbour.com/" target="_blank" className="link green" data-cursor="Visit">Barbour</a>. The main idea was to show Barbour&#x27;s iconic quilt spreading across the world, focusing on four cities: London, New York, Shanghai, and Seoul. Each quilted piece was followed by a trail of nature, carefully crafted to resemble the British countryside.<br />
@@ -69,8 +69,8 @@ export default function BarbourPage() {
               </div>
             </WorkPageHeader>
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-b6236407" className="work-main-wrap first">
-              <div className="w-layout-grid cs-grid">
-                <div id="w-node-_0870a03f-5ebe-95fe-6c14-ca2a77e8140e-b6236407" className="wrapper _15px">
+              <div className="w-layout-grid cs-grid" data-reveal-group>
+                <div id="w-node-_0870a03f-5ebe-95fe-6c14-ca2a77e8140e-b6236407" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '177.78% 0 0 0', position: 'relative' }}>
                       <iframe src="https://www.youtube.com/embed/oeVS_Q1VsKU" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
@@ -78,7 +78,7 @@ export default function BarbourPage() {
                     </div>
                   </div>
                 </div>
-                <div id="w-node-_43309ad1-9455-348a-f5f3-72947d380fb6-b6236407" className="wrapper _15px">
+                <div id="w-node-_43309ad1-9455-348a-f5f3-72947d380fb6-b6236407" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '177.78% 0 0 0', position: 'relative' }}>
                       <iframe src="https://www.youtube.com/embed/12xJ6Qkvtxw" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
@@ -86,7 +86,7 @@ export default function BarbourPage() {
                     </div>
                   </div>
                 </div>
-                <div id="w-node-_44808b41-a2a6-1d69-efd0-2c223370001c-b6236407" className="wrapper _15px">
+                <div id="w-node-_44808b41-a2a6-1d69-efd0-2c223370001c-b6236407" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '177.78% 0 0 0', position: 'relative' }}>
                       <iframe src="https://www.youtube.com/embed/mzHQ8lmL7BA" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
@@ -94,7 +94,7 @@ export default function BarbourPage() {
                     </div>
                   </div>
                 </div>
-                <div id="w-node-_836c59fa-a031-cefc-6f9c-a56fb44ee565-b6236407" className="wrapper _15px">
+                <div id="w-node-_836c59fa-a031-cefc-6f9c-a56fb44ee565-b6236407" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '177.78% 0 0 0', position: 'relative' }}>
                       <iframe src="https://www.youtube.com/embed/6U9uTPf64nU" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
@@ -102,7 +102,7 @@ export default function BarbourPage() {
                     </div>
                   </div>
                 </div>
-                <div id="w-node-_007f63ac-8c7a-7c68-0c4d-826252aa111d-b6236407" className="wrapper _15px">
+                <div id="w-node-_007f63ac-8c7a-7c68-0c4d-826252aa111d-b6236407" className="wrapper _15px" data-reveal>
                   <div className="bts-grid">
                     <BackgroundVideo
                       className="background-video-16 barb"
@@ -146,7 +146,7 @@ export default function BarbourPage() {
             </div>
           </div>
         </section>
-        <section id="main-projects" className="main-resume w-node-ab61f89b-2906-3854-9eb5-67a933bce7ba-b6236407">
+        <section id="main-projects" className="main-resume w-node-ab61f89b-2906-3854-9eb5-67a933bce7ba-b6236407" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
             <div className="div-block-141 credits">
               <div className="div-block-143 top">

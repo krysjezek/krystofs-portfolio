@@ -20,7 +20,7 @@ export default function ChainerPage() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <WorkPageHeader label="Chainer" title="Men&#x27;s apparel">
+            <WorkPageHeader label="Chainer" title="Men&#x27;s apparel" data-reveal="hero">
               <div className="div-block-55">
                 <p className="paragraph header">Chainer, an online store for men&#x27;s accessories, brought me on board to lead their Art Direction. My role was a mix of art direction, 3D animation, and web design, all aimed at giving their brand a fresh, standout vibe. The heart of this project was about creating immersive 3D worlds to showcase Chainer&#x27;s jewelry. This case study will show you how we made Chainer shine in the competitive online market.</p>
               </div>
@@ -40,8 +40,8 @@ export default function ChainerPage() {
               </div>
             </WorkPageHeader>
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-408b32ff" className="work-main-wrap first">
-              <div className="w-layout-grid cs-grid">
-                <div id="w-node-d145010a-49fc-1f3d-3116-e279f7b14105-408b32ff" className="wrapper _15px">
+              <div className="w-layout-grid cs-grid" data-reveal-group>
+                <div id="w-node-d145010a-49fc-1f3d-3116-e279f7b14105-408b32ff" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
                       <iframe src="https://www.youtube.com/embed/vMFwsejYYaU" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
@@ -49,16 +49,16 @@ export default function ChainerPage() {
                     </div>
                   </div>
                 </div>
-                <div id="w-node-_0870a03f-5ebe-95fe-6c14-ca2a77e8140e-408b32ff" className="wrapper _15px">
+                <div id="w-node-_0870a03f-5ebe-95fe-6c14-ca2a77e8140e-408b32ff" className="wrapper _15px" data-reveal>
                   <div id="w-node-_36490e61-281c-99e3-82df-29faba706f21-408b32ff" className="html-embed _2span w-embed w-iframe w-script">
                     <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe src="https://player.vimeo.com/video/881397523?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Chainer Launch (2023)"></iframe></div>
                   </div>
                 </div>
-                <div id="w-node-e91308e9-5de3-e650-87d5-29a902701986-408b32ff" className="wrapper _15px"><Image src={CDN + '/images/chainer-case-0.webp'} alt="" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
-                <div id="w-node-_9ecdf88a-464c-281d-0c30-4a797506c473-408b32ff" className="wrapper _15px"><Image src={CDN + '/images/chainer-case-1.webp'} alt="" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
-                <div id="w-node-_71ac86c2-4e52-72c7-c2c2-84f37b830a25-408b32ff" className="wrapper _15px"><Image src={CDN + '/images/chainer-case-2.webp'} alt="" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
-                <div id="w-node-_2727c3f7-6ba6-1380-b114-d7ed898bc73e-408b32ff" className="wrapper _15px"><Image src={CDN + '/images/chainer-case-3-2.webp'} alt="" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
-                <div id="w-node-_4c251230-b2e3-f3ee-ddae-2d99f3c573c3-408b32ff" className="wrapper">
+                <div id="w-node-e91308e9-5de3-e650-87d5-29a902701986-408b32ff" className="wrapper _15px" data-reveal><Image src={CDN + '/images/chainer-case-0.webp'} alt="" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-_9ecdf88a-464c-281d-0c30-4a797506c473-408b32ff" className="wrapper _15px" data-reveal><Image src={CDN + '/images/chainer-case-1.webp'} alt="" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-_71ac86c2-4e52-72c7-c2c2-84f37b830a25-408b32ff" className="wrapper _15px" data-reveal><Image src={CDN + '/images/chainer-case-2.webp'} alt="" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-_2727c3f7-6ba6-1380-b114-d7ed898bc73e-408b32ff" className="wrapper _15px" data-reveal><Image src={CDN + '/images/chainer-case-3-2.webp'} alt="" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-_4c251230-b2e3-f3ee-ddae-2d99f3c573c3-408b32ff" className="wrapper" data-reveal>
                   <BackgroundVideo
                     className="background-video-16"
                     poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-poster-00001.jpg"
@@ -69,14 +69,14 @@ export default function ChainerPage() {
                     <div className="text-18">Chainer Announcement</div>
                   </div>
                 </div>
-                <div id="w-node-_08c0a28a-3d0b-126c-c0c2-d6a5f01134b9-408b32ff" className="wrapper"><Image src={CDN + '/images/chainer-case-3.webp'} alt="" width={2160} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
-                <div id="w-node-_178cae50-2153-96a2-59c8-1e45d308aea9-408b32ff" className="wrapper"><Image src={CDN + '/images/chainer-case-4.webp'} alt="" width={2160} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
-                <div id="w-node-f28259de-0a08-34c9-16bf-1922c353cd72-408b32ff" className="wrapper"><Image src={CDN + '/images/chainer-case-5.webp'} alt="" width={2160} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-_08c0a28a-3d0b-126c-c0c2-d6a5f01134b9-408b32ff" className="wrapper" data-reveal><Image src={CDN + '/images/chainer-case-3.webp'} alt="" width={2160} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-_178cae50-2153-96a2-59c8-1e45d308aea9-408b32ff" className="wrapper" data-reveal><Image src={CDN + '/images/chainer-case-4.webp'} alt="" width={2160} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-f28259de-0a08-34c9-16bf-1922c353cd72-408b32ff" className="wrapper" data-reveal><Image src={CDN + '/images/chainer-case-5.webp'} alt="" width={2160} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
               </div>
             </div>
           </div>
         </section>
-        <section id="main-projects" className="main-resume">
+        <section id="main-projects" className="main-resume" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
             <div className="div-block-141 credits">
               <div className="div-block-143 top">

@@ -14,6 +14,8 @@ Comprehensive audit of every animation, transition, and interaction in the portf
 | Timed text rotation | `setInterval` with inline `transition` style |
 | Hover / state transitions | **CSS transitions** declared in SCSS |
 | Availability-dot pulse | **CSS `@keyframes`** (only keyframe animation on the site) |
+| Scroll reveal (blur) | **GSAP** `filter: blur()` + **ScrollTrigger** |
+| Page-load entrance (lines, navbar) | **GSAP** scale/translate tweens |
 | Lazy-load triggers | **IntersectionObserver** |
 
 No Framer Motion. No CSS animations for dynamic motion (pulse-dot is the sole exception).
@@ -387,6 +389,11 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | Logo marquee scroll | `halfWidth / 50`s | `none` | — | infinite |
 | Navbar scroll hide | 1.2s | `power2.out` | — | — |
 | Navbar scroll reveal | 1.2s | `power2.out` | — | — |
+| Vertical lines grow | 1.8s | `power1.out` | 0.2s, stagger 0.15s | — |
+| Horizontal liners grow | 1.8s | `power1.out` | 0.2s, stagger 0.15s | — |
+| Navbar slide-in | 0.5s | `circ.out` | 0.7s | — |
+| Blur reveal (hero) | 0.4s | `none` (linear) | 0.05s (stagger 0.1s) | — |
+| Blur reveal (scroll) | 0.45s | `none` (linear) | stagger 0.1s | — |
 
 ### CSS transitions
 
@@ -419,3 +426,118 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | Carousel snap-back timeout | 500ms | `hooks/useTextCarousel.js` |
 | Service tab fade-out wait | 300ms | `hooks/useServiceTabs.js` |
 | Cursor collapse debounce | 30ms | `CustomCursor.jsx:122` |
+
+---
+
+## 11. Page-Load Entrance & Scroll Reveal
+
+**File:** `hooks/useScrollReveal.js`
+**CSS:** `styles/krystofs-portfolio.webflow.scss` (bottom of file — `overflow: clip` on `[data-reveal]`)
+
+The hook handles two concerns: **page-load entrance** (background lines + navbar) and **blur reveal** (content elements blur-to-sharp on load or scroll).
+
+---
+
+### Page-Load Entrance
+
+Three sequential entrance animations run on mount (before any reveal):
+
+### 11a. Vertical background lines
+| | |
+|-|-|
+| **What** | `.background .vertical-line` elements grow from top to bottom, staggering left-to-right |
+| **Trigger** | Page load (mount) |
+| **Properties** | `scaleY` 0 → 1, `transformOrigin: top center` |
+| **Duration / Easing** | 1.8s / `power1.out`, delay 0.2s |
+| **Stagger** | 0.15s, `from: 'start'` |
+| **Lines** | 15–19 |
+
+### 11b. Horizontal liners
+| | |
+|-|-|
+| **What** | `.liner` elements grow from left to right |
+| **Trigger** | Page load (mount, concurrent with vertical lines) |
+| **Properties** | `scaleX` 0 → 1, `transformOrigin: left center` |
+| **Duration / Easing** | 1.8s / `power1.out`, delay 0.2s |
+| **Stagger** | 0.15s |
+| **Lines** | 22–26 |
+
+### 11c. Navbar slide-in
+| | |
+|-|-|
+| **What** | `.navbar` slides down from above the viewport |
+| **Trigger** | Page load (mount, 0.7s delay — after lines begin) |
+| **Properties** | `y` `-100%` → `0` |
+| **Duration / Easing** | 0.5s / `circ.out`, delay 0.7s |
+| **Lines** | 29–33 |
+
+---
+
+### Blur Reveal
+
+Elements with `data-reveal` start at `filter: blur(6px)` and animate to `blur(0px)`. CSS `overflow: clip` on `[data-reveal]` contains the blur within element bounds.
+
+### Data attribute API
+
+| Attribute | Value | Behavior |
+|-----------|-------|----------|
+| `data-reveal` | (none) | Scroll-triggered blur reveal at 70% viewport |
+| `data-reveal` | `"hero"` | Page-load reveal (no scroll trigger, slightly faster) |
+| `data-reveal-group` | (none) | Scroll-triggered parent — children with `data-reveal` stagger row-by-row |
+| `data-reveal-group` | `"hero"` | Page-load parent — children stagger on mount |
+
+### 11d. Hero blur reveal (page load)
+| | |
+|-|-|
+| **What** | Content blurs to sharp on page load |
+| **Trigger** | Component mount (no scroll) |
+| **Properties** | `filter` `blur(6px)` → `blur(0px)` |
+| **Duration / Easing** | 0.4s / `none` (linear), delay 0.05s |
+| **Stagger** | 0.1s row-by-row (`grid: 'auto'`, `axis: 'y'`) when inside `data-reveal-group="hero"` |
+| **Lines** | 39–66 |
+
+### 11e. Scroll blur reveal (on-scroll)
+| | |
+|-|-|
+| **What** | Content blurs to sharp when scrolled into viewport |
+| **Trigger** | ScrollTrigger, `start: "top 70%"`, `once: true` |
+| **Properties** | `filter` `blur(6px)` → `blur(0px)` |
+| **Duration / Easing** | 0.45s / `none` (linear) |
+| **Stagger** | 0.1s row-by-row (`grid: 'auto'`, `axis: 'y'`) when inside `data-reveal-group` |
+| **Lines** | 68–112 |
+
+### 11f. Reduced motion
+| | |
+|-|-|
+| **What** | Skips all animations — entrance, blur, everything. Content appears instantly. |
+| **Trigger** | `prefers-reduced-motion: reduce` media query |
+
+### 11g. SPA navigation
+| | |
+|-|-|
+| **What** | MutationObserver re-scans for new `[data-reveal]` elements on DOM changes |
+| **Trigger** | `childList` + `subtree` mutations on `<body>` |
+| **Notes** | WeakSet tracks processed elements to prevent re-animation |
+
+### Blur containment
+
+`clip-path: inset(0px round <radius>)` is applied by `useScrollReveal.js` at animation start on elements with non-zero `border-radius`, clipping the element's own `filter: blur()` output within its rounded bounds. Removed via `onComplete` once blur reaches 0.
+
+`overflow: clip` is kept on `[data-reveal]` elements in the SCSS to clip overflowing *children* — it does NOT clip the element's own filter output.
+
+### Interactions with other animations
+
+- **ShimmerImage:** Independent — blur reveals the container, shimmer handles the image inside
+- **Video components:** Independent — blur on parent wrapper, video fade-in on `<video>` element
+- **Card tilt:** Blur and transform are different properties — no conflict
+- **Marquee:** `data-reveal` goes on the parent section, NOT on `.logo-marquee-track`
+- **Navbar:** Has its own entrance animation (11c), no `data-reveal`
+
+### Pages using scroll reveal
+
+All pages across the site use `data-reveal` attributes:
+- **Homepage** (`app/page.jsx`): hero, service grid, featured work, case studies, snapshots, tech projects, about
+- **Work pages** (chainer, barbour, vsx, mag-wrap-2025): header, cs-grid items, credits
+- **Service pages** (3d-environments, mixed-reality): header, service grid items, credits
+- **Other pages** (cv, work listing, join): headers, content grids
+- **Old project pages** (9 pages): headers, cs-grid items

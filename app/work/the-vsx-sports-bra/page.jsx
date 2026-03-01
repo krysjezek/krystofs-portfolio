@@ -20,7 +20,7 @@ export default function VSXSportsBraPage() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <WorkPageHeader label="Victoria&#x27;s Secret, VSX" title="The VSX Sports Bra">
+            <WorkPageHeader label="Victoria&#x27;s Secret, VSX" title="The VSX Sports Bra" data-reveal="hero">
               <p className="paragraph header">
                 <a href="https://tmrzv.com/" className="link green" data-cursor="Visit">TMRZV Studio</a> brought us in to craft a quick-turn social launch asset for the VSX Sports Bra. Over a one-week sprint we built photoreal fabric and knit simulations in Blender and Houdini, delivering a 15-second Instagram Reel that showcases the bra&#x27;s stretch and support—now the hero piece of the product&#x27;s digital rollout.
               </p>
@@ -69,8 +69,8 @@ export default function VSXSportsBraPage() {
               </div>
             </WorkPageHeader>
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-b76f347e" className="work-main-wrap first">
-              <div className="w-layout-grid cs-grid _6">
-                <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417ae-b76f347e" className="wrapper _2 vsx-vert _3pls">
+              <div className="w-layout-grid cs-grid _6" data-reveal-group>
+                <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417ae-b76f347e" className="wrapper _2 vsx-vert _3pls" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/vsx_main-01.jpg"
                     srcH265="/videos/h265/vsx_main-01-web.mp4"
@@ -78,7 +78,7 @@ export default function VSXSportsBraPage() {
                     srcMp4="/videos/h264/vsx_main-01-fallback.mp4"
                   /></div>
                 </div>
-                <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417b0-b76f347e" className="wrapper _2 vsx-vert">
+                <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417b0-b76f347e" className="wrapper _2 vsx-vert" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/vsx_main-02.jpg"
                     srcH265="/videos/h265/vsx_main-02-web.mp4"
@@ -86,7 +86,7 @@ export default function VSXSportsBraPage() {
                     srcMp4="/videos/h264/vsx_main-02-fallback.mp4"
                   /></div>
                 </div>
-                <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417b4-b76f347e" className="wrapper _2 vsx-vert _3">
+                <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417b4-b76f347e" className="wrapper _2 vsx-vert _3" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/vsx_main-03.jpg"
                     srcH265="/videos/h265/vsx_main-03-web.mp4"
@@ -94,7 +94,7 @@ export default function VSXSportsBraPage() {
                     srcMp4="/videos/h264/vsx_main-03-fallback.mp4"
                   /></div>
                 </div>
-                <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417ba-b76f347e" className="wrapper _2 vsx-bts _2pls">
+                <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417ba-b76f347e" className="wrapper _2 vsx-bts _2pls" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/vsx_bts-01.jpg"
                     srcH265="/videos/h265/vsx_bts-01-web.mp4"
@@ -102,7 +102,7 @@ export default function VSXSportsBraPage() {
                     srcMp4="/videos/h264/vsx_bts-01-fallback.mp4"
                   /></div>
                 </div>
-                <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417b8-b76f347e" className="wrapper _2 vsx-bts">
+                <div id="w-node-de55dabe-6ebf-d626-b3ad-26ee516417b8-b76f347e" className="wrapper _2 vsx-bts" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/vsx_bts-02.jpg"
                     srcH265="/videos/h265/vsx_bts-02-web.mp4"
@@ -113,7 +113,7 @@ export default function VSXSportsBraPage() {
             </div>
           </div>
         </section>
-        <section id="main-projects" className="main-resume">
+        <section id="main-projects" className="main-resume" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
             <div className="div-block-141 credits">
               <div className="div-block-143 top">

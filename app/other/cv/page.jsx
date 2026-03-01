@@ -17,7 +17,7 @@ export default function CVPage() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section className="cv-main">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <div className="work-header-wrap">
+            <div className="work-header-wrap" data-reveal="hero">
               <div className="work-header-container">
                 <div className="div-block-122">
                   <Image src={CDN + '/images/profilovka-maruska.png'} alt="" width={676} height={676} sizes="(max-width: 676px) 100vw, 676px" className="image-30" />
@@ -44,8 +44,8 @@ export default function CVPage() {
                   </div>
                 </div>
               </div>
-              <div className="cv-grid">
-                <div id="w-node-_698648b2-4b0c-739d-c53a-66e8bc049148-e6b4e0a7" className="cv-container">
+              <div className="cv-grid" data-reveal-group>
+                <div id="w-node-_698648b2-4b0c-739d-c53a-66e8bc049148-e6b4e0a7" className="cv-container" data-reveal>
                   <div className="label gray">/ WORK EXPERIENCE</div>
                   <div className="cv-block">
                     <div className="cv-item">
@@ -97,7 +97,7 @@ export default function CVPage() {
                     </div>
                   </div>
                 </div>
-                <div className="cv-container">
+                <div className="cv-container" data-reveal>
                   <div className="label gray">/ EDUCATION</div>
                   <div className="cv-block">
                     <div className="cv-item">
@@ -125,7 +125,7 @@ export default function CVPage() {
                     </div>
                   </div>
                 </div>
-                <div className="cv-container">
+                <div className="cv-container" data-reveal>
                   <div className="label gray">/ OTHER</div>
                   <div className="cv-block">
                     <div className="cv-item">
@@ -164,9 +164,9 @@ export default function CVPage() {
                     </div>
                   </div>
                 </div>
-                <div id="w-node-cded8d01-e391-f82f-9538-cfacde43d22a-e6b4e0a7" className="cv-container worked">
+                <div id="w-node-cded8d01-e391-f82f-9538-cfacde43d22a-e6b4e0a7" className="cv-container worked" data-reveal>
                   <div className="label gray">/ BRANDS I WORKED WITH</div>
-                  <div className="main-hero-logos cv">
+                  <div className="main-hero-logos cv" data-reveal>
                     <Image src={CDN + '/images/vs-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo anna" />
                     <Image src={CDN + '/images/coinbase-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo slightly" />
                     <Image src={CDN + '/images/yonex-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo" />
@@ -175,7 +175,7 @@ export default function CVPage() {
                     <Image src={CDN + '/images/monopoly-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo larger" />
                     <Image src={CDN + '/images/vodafone-logo-horiz-rgb-white.png'} alt="" width={4908} height={1224} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="client-logo voda" />
                   </div>
-                  <div className="main-hero-logos cv">
+                  <div className="main-hero-logos cv" data-reveal>
                     <Image src={CDN + '/images/kfc-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo _26-copy" />
                     <Image src={CDN + '/images/logo-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo themag" />
                     <Image src={CDN + '/images/vsx-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo vsx" />

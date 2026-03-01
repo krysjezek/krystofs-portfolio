@@ -8903,4 +8903,13 @@ body {
   }
 }
 
+/* Scroll reveal — blur to sharp.
+   overflow: clip clips overflowing children only, not the element's own
+   filter output. Blur bleed past border-radius is handled in
+   useScrollReveal.js via clip-path. */
+[data-reveal],
+[data-reveal-group] > [data-reveal] {
+  overflow: clip;
+}
+
 

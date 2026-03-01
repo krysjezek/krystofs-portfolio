@@ -5,7 +5,6 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
 import EmbedVideo from '@/components/EmbedVideo'
-import ShimmerImage from '@/components/ShimmerImage'
 import Image from 'next/image'
 import { useServiceTabs } from '@/hooks/useServiceTabs'
 import { useCardTilt } from '@/hooks/useCardTilt'
@@ -37,19 +36,18 @@ export default function HomePage() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section className="main-hero">
           <div className="liner bottom"></div>
-          <div className="w-layout-blockcontainer container-3 padbot nogap w-container">
+          <div className="w-layout-blockcontainer container-3 padbot nogap w-container" data-reveal="hero">
             <div className="footer-wrap">
               <div className="footer-left">
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfab-a7256e91" className="div-block-135">
                   <div className="footer--text">
                     <div className="div-block-139">
-                      <ShimmerImage
+                      <Image
                         fill
                         priority
-                        loading="eager"
                         src={profilePicUrl}
                         alt="Kryštof Ježek"
-                        imgStyle={{ objectPosition: '50% 30%' }}
+                        style={{ objectFit: 'cover', objectPosition: '50% 30%' }}
                       />
                     </div>
                   </div>
@@ -128,8 +126,8 @@ export default function HomePage() {
             </div>
           </div>
           <div className="w-layout-blockcontainer container-3 header w-container">
-            <div ref={gridRef} className="w-layout-grid main-proj-grid head">
-              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91" href="/services/3d-environments" className="proj-item w-inline-block" data-cursor="Explore">
+            <div ref={gridRef} className="w-layout-grid main-proj-grid head" data-reveal-group="hero">
+              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91" href="/services/3d-environments" className="proj-item w-inline-block" data-cursor="Explore" data-reveal>
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
                     <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', backgroundColor: 'rgb(255,255,255)' }} className="button case">
@@ -146,7 +144,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4eae-a7256e91" href="/services/mixed-reality" className="proj-item w-inline-block" data-cursor="Explore">
+              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4eae-a7256e91" href="/services/mixed-reality" className="proj-item w-inline-block" data-cursor="Explore" data-reveal>
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
                     <div style={{ backgroundColor: 'rgb(255,255,255)', transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button case">
@@ -201,9 +199,9 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <div className="main-featured">
+        <div className="main-featured" data-reveal>
           <div className="featured-carousel">
-            <div className="featured-block archviz"><ShimmerImage fill src={CDN + '/images/niacid.webp'} alt="" sizes="100vw" /></div>
+            <div className="featured-block archviz"><Image fill src={CDN + '/images/niacid.webp'} alt="" style={{ objectFit: 'cover' }} sizes="100vw" /></div>
             <div className="featured-block maison">
               <BackgroundVideo className="background-video-22"
                 poster="/videos/posters/davinci-render2.jpg"
@@ -211,13 +209,13 @@ export default function HomePage() {
                 srcWebm="/videos/other/davinci-render2.webm"
               />
             </div>
-            <div className="featured-block ashfall"><ShimmerImage fill src={CDN + '/images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="100vw" /></div>
-            <div className="featured-block archviz2"><ShimmerImage fill src={CDN + '/images/can-v3.webp'} alt="" sizes="100vw" /></div>
-            <div className="featured-block"><ShimmerImage fill src={CDN + '/images/fragrance-3.webp'} alt="" sizes="100vw" /></div>
+            <div className="featured-block ashfall"><Image fill src={CDN + '/images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp'} alt="" style={{ objectFit: 'cover' }} sizes="100vw" /></div>
+            <div className="featured-block archviz2"><Image fill src={CDN + '/images/can-v3.webp'} alt="" style={{ objectFit: 'cover' }} sizes="100vw" /></div>
+            <div className="featured-block"><Image fill src={CDN + '/images/fragrance-3.webp'} alt="" style={{ objectFit: 'cover' }} sizes="100vw" /></div>
           </div>
         </div>
 
-        <div className="main-services">
+        <div className="main-services" data-reveal>
           <h1 className="heading-3">Benefits of 3D and Motion</h1>
           <div className="div-block-100">
             <div className="div-block-96">
@@ -269,36 +267,36 @@ export default function HomePage() {
                 <div className="services-heading large">Showcase products</div>
                 <p className="paragraph smaller">Present your products in dynamic, detailed views that traditional photos and videos can&#x27;t match.</p>
               </div>
-              <div className="div-block-97 _2"><ShimmerImage fill src={CDN + '/images/untitled.2png-min.png'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
+              <div className="div-block-97 _2"><Image fill src={CDN + '/images/untitled.2png-min.png'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
             </main>
             <div id="serv4" className="div-block-95 none">
               <div className="div-block-98">
                 <div className="services-heading large">Educate Customers</div>
                 <p className="paragraph smaller">Creative animations effectively break down complex information, making learning both engaging and memorable.</p>
               </div>
-              <div className="div-block-97 _4"><ShimmerImage fill src={CDN + '/images/chainer-case-4.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
+              <div className="div-block-97 _4"><Image fill src={CDN + '/images/chainer-case-4.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
             </div>
             <div id="serv3" className="div-block-95 none">
               <div className="div-block-98">
                 <div className="services-heading large">Streamline Iterations</div>
                 <p className="paragraph smaller">With your product modeled and textured, iterating becomes quick and cost-effective. Adjust angles, animations, and environment without the need for a new photo shoot.</p>
               </div>
-              <div className="div-block-97 _3"><ShimmerImage fill src={CDN + '/images/kunaj-sklo-preview-2-min-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
+              <div className="div-block-97 _3"><Image fill src={CDN + '/images/kunaj-sklo-preview-2-min-ezgif.com-png-to-webp-converter.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
             </div>
             <div id="serv1" className="div-block-95">
               <div className="div-block-98">
                 <div className="services-heading large">Engage audiences</div>
                 <p className="paragraph smaller">In the quick-scroll world of digital media, striking visuals are key to catching a consumer&#x27;s eye. Enhanced with 3D and motion designs, your content stands a better chance of grabbing attention.</p>
               </div>
-              <div className="div-block-97"><ShimmerImage src={CDN + '/images/ezgif.com-animated-gif-maker-4.gif'} loading="lazy" alt="" className="image-26" /></div>
+              <div className="div-block-97"><Image fill unoptimized src={CDN + '/images/ezgif.com-animated-gif-maker-4.gif'} loading="lazy" alt="" className="image-26" style={{ objectFit: 'cover' }} /></div>
             </div>
           </div>
         </div>
         <section id="main-projects" className="main-projects">
           <div className="w-layout-blockcontainer container-3 w-container">
             <h1 className="heading-2">Recent Case Studies</h1>
-            <div className="w-layout-grid main-proj-grid">
-              <a id="w-node-_0a0f2415-0cbe-189d-07e1-6388208cf7e6-a7256e91" href="/work/the-mag-w-rap-2025" className="proj-item w-inline-block" data-cursor="Explore">
+            <div className="w-layout-grid main-proj-grid" data-reveal-group>
+              <a id="w-node-_0a0f2415-0cbe-189d-07e1-6388208cf7e6-a7256e91" href="/work/the-mag-w-rap-2025" className="proj-item w-inline-block" data-cursor="Explore" data-reveal>
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -330,11 +328,11 @@ export default function HomePage() {
                       srcAv1="/videos/av1/wrap_header.webm"
                       srcMp4="/videos/h264/wrap_header-fallback.mp4"
                     /></div>
-                    <div className="proj-img wrap25"><ShimmerImage fill src={CDN + '/images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
+                    <div className="proj-img wrap25"><Image fill src={CDN + '/images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
-              <a id="w-node-_3c9fd363-924c-9b72-f486-2437327d7019-a7256e91" href="/work/barbour" className="proj-item w-inline-block" data-cursor="Explore">
+              <a id="w-node-_3c9fd363-924c-9b72-f486-2437327d7019-a7256e91" href="/work/barbour" className="proj-item w-inline-block" data-cursor="Explore" data-reveal>
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -360,11 +358,11 @@ export default function HomePage() {
                       srcH265="/videos/h265/barbour_header-web.mp4"
                       srcMp4="/videos/h264/barbour_header-fallback.mp4"
                     /></div>
-                    <div className="proj-img barbour"><ShimmerImage fill src={CDN + '/images/Barbour-Header-HP2.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
+                    <div className="proj-img barbour"><Image fill src={CDN + '/images/Barbour-Header-HP2.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
-              <a href="/work/the-vsx-sports-bra" className="proj-item w-inline-block" data-cursor="Explore">
+              <a href="/work/the-vsx-sports-bra" className="proj-item w-inline-block" data-cursor="Explore" data-reveal>
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="background-video-18 w-embed"><EmbedVideo
@@ -373,7 +371,7 @@ export default function HomePage() {
                       srcAv1="/videos/av1/vsx_header.webm"
                       srcMp4="/videos/h264/vsx_header-fallback.mp4"
                     /></div>
-                    <div className="proj-img vsx"><ShimmerImage fill src={CDN + '/images/16x9thumb-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
+                    <div className="proj-img vsx"><Image fill src={CDN + '/images/16x9thumb-ezgif.com-png-to-webp-converter.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -400,7 +398,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a id="w-node-ca5842f0-12ea-bba6-91ec-c62ab4bb5501-a7256e91" href="/work/chainer" className="proj-item w-inline-block" data-cursor="Explore">
+              <a id="w-node-ca5842f0-12ea-bba6-91ec-c62ab4bb5501-a7256e91" href="/work/chainer" className="proj-item w-inline-block" data-cursor="Explore" data-reveal>
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -426,7 +424,7 @@ export default function HomePage() {
                       srcH265="/videos/h265/chainer_header-web.mp4"
                       srcMp4="/videos/h264/chainer_header-fallback.mp4"
                     /></div>
-                    <div className="proj-img"><ShimmerImage fill src={CDN + '/images/Chainer-Header-HP.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
+                    <div className="proj-img"><Image fill src={CDN + '/images/Chainer-Header-HP.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
@@ -437,24 +435,24 @@ export default function HomePage() {
         <section id="snapshots" className="main-snapshots">
           <div className="snapshots-wrap">
             <h1 className="heading-2">R&amp;D</h1>
-            <div className="w-layout-grid snapshots-grid">
-              <div id="w-node-a99893c8-7a95-570f-74fb-4a4430edba87-a7256e91" className="snapshot-cover">
-                <div className="snapshot-img _2"><ShimmerImage fill src={CDN + '/images/fragrance-3.webp'} alt="" sizes="(max-width: 991px) 50vw, 33vw" /></div>
+            <div className="w-layout-grid snapshots-grid" data-reveal-group>
+              <div id="w-node-a99893c8-7a95-570f-74fb-4a4430edba87-a7256e91" className="snapshot-cover" data-reveal>
+                <div className="snapshot-img _2"><Image fill src={CDN + '/images/fragrance-3.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
-              <div id="w-node-f6c05c63-8807-5c35-fd3d-79967d9a78b5-a7256e91" className="snapshot-cover">
-                <div className="snapshot-img _3"><ShimmerImage fill src={CDN + '/images/container3.webp'} alt="" sizes="(max-width: 991px) 50vw, 33vw" /></div>
+              <div id="w-node-f6c05c63-8807-5c35-fd3d-79967d9a78b5-a7256e91" className="snapshot-cover" data-reveal>
+                <div className="snapshot-img _3"><Image fill src={CDN + '/images/container3.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
-              <div id="w-node-dad5dac9-b366-df48-a450-723abb21c63e-a7256e91" className="snapshot-cover">
-                <div className="snapshot-img _6"><ShimmerImage fill src={CDN + '/images/niacid.webp'} alt="" sizes="(max-width: 991px) 50vw, 33vw" /></div>
+              <div id="w-node-dad5dac9-b366-df48-a450-723abb21c63e-a7256e91" className="snapshot-cover" data-reveal>
+                <div className="snapshot-img _6"><Image fill src={CDN + '/images/niacid.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
-              <div id="w-node-b575eaa3-7424-2bce-75f7-6d5fa1bbc967-a7256e91" className="snapshot-cover">
-                <div className="snapshot-img _1"><ShimmerImage fill src={CDN + '/images/final-min-5.png'} alt="" sizes="(max-width: 991px) 50vw, 33vw" /></div>
+              <div id="w-node-b575eaa3-7424-2bce-75f7-6d5fa1bbc967-a7256e91" className="snapshot-cover" data-reveal>
+                <div className="snapshot-img _1"><Image fill src={CDN + '/images/final-min-5.png'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
-              <div id="w-node-aa034c7d-cfea-c763-d292-2857be8f653b-a7256e91" className="snapshot-cover">
-                <div className="snapshot-img _4"><ShimmerImage fill src={CDN + '/images/maisoncrivelli.webp'} alt="" sizes="(max-width: 991px) 50vw, 33vw" /></div>
+              <div id="w-node-aa034c7d-cfea-c763-d292-2857be8f653b-a7256e91" className="snapshot-cover" data-reveal>
+                <div className="snapshot-img _4"><Image fill src={CDN + '/images/maisoncrivelli.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
-              <div id="w-node-c81a9b1c-2467-5bfd-bc49-b29a607d269e-a7256e91" className="snapshot-cover hori">
-                <div className="snapshot-img _5"><ShimmerImage fill src={CDN + '/images/ezgif.com-resize.webp'} alt="" sizes="(max-width: 991px) 100vw, 66vw" /></div>
+              <div id="w-node-c81a9b1c-2467-5bfd-bc49-b29a607d269e-a7256e91" className="snapshot-cover hori" data-reveal>
+                <div className="snapshot-img _5"><Image fill src={CDN + '/images/ezgif.com-resize.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 66vw" /></div>
               </div>
             </div>
             <div className="div-block-58">
@@ -469,8 +467,8 @@ export default function HomePage() {
                 <h1 className="heading-2 no-margin">Tech Projects</h1>
               </div>
             </div>
-            <div className="div-block-66 grid">
-              <div className="cp-wrap">
+            <div className="div-block-66 grid" data-reveal-group>
+              <div className="cp-wrap" data-reveal>
                 <div className="cp-photo"></div>
                 <div className="div-block-136">
                   <div className="div-block-134">
@@ -494,7 +492,7 @@ export default function HomePage() {
                   srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/68f3a8823d027ddf4acf306e_coding-01-down.mp4"
                 /></div>
               </div>
-              <div className="cp-wrap">
+              <div className="cp-wrap" data-reveal>
                 <div className="cp-photo"></div>
                 <div className="div-block-136">
                   <div className="div-block-134">
@@ -522,7 +520,7 @@ export default function HomePage() {
                   srcMp4="/videos/h264/coding-02-fallback.mp4"
                 /></div>
               </div>
-              <div className="cp-wrap">
+              <div className="cp-wrap" data-reveal>
                 <div className="cp-photo"></div>
                 <div className="div-block-136">
                   <div className="div-block-134">
@@ -553,7 +551,7 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        <section id="main-projects" className="main-resume">
+        <section id="main-projects" className="main-resume" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
             <h1 className="heading-2 pad">About me</h1>
             <div className="div-block-141">

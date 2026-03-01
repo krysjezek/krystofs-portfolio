@@ -20,7 +20,7 @@ export default function MagWrap2025Page() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <WorkPageHeader label="The Mag WRAP 2025" title="Rap Talent Show">
+            <WorkPageHeader label="The Mag WRAP 2025" title="Rap Talent Show" data-reveal="hero">
               <div className="div-block-55">
                 <p className="paragraph header">The Mag Wrap, the most-watched show on Czech/Slovak YouTube, hired us for its fourth season. We refreshed the entire visual package with advanced 2D + 3D motion design: a new intro, on-air IDs, looping backgrounds, and sponsor graphics that keep the show sharp and instantly recognisable.<br /></p>
                 <div className="cv-container">
@@ -70,15 +70,15 @@ export default function MagWrap2025Page() {
               </div>
             </WorkPageHeader>
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-db1fcd0c" className="work-main-wrap first">
-              <div className="w-layout-grid cs-grid">
-                <div id="w-node-_0870a03f-5ebe-95fe-6c14-ca2a77e8140e-db1fcd0c" className="wrapper _15px">
+              <div className="w-layout-grid cs-grid" data-reveal-group>
+                <div id="w-node-_0870a03f-5ebe-95fe-6c14-ca2a77e8140e-db1fcd0c" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
                       <iframe src="https://www.youtube.com/embed/-s2ly4Fgu5c" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
                   </div>
                 </div>
-                <div id="w-node-_4c251230-b2e3-f3ee-ddae-2d99f3c573c3-db1fcd0c" className="wrapper _2 wrap-inj">
+                <div id="w-node-_4c251230-b2e3-f3ee-ddae-2d99f3c573c3-db1fcd0c" className="wrapper _2 wrap-inj" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_injektaz.jpg"
                     srcH265="/videos/h265/w25_injektaz-web.mp4"
@@ -86,7 +86,7 @@ export default function MagWrap2025Page() {
                     srcMp4="/videos/h264/w25_injektaz-fallback.mp4"
                   /></div>
                 </div>
-                <div className="wrapper _2 wrap-bcgloop">
+                <div className="wrapper _2 wrap-bcgloop" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_loop_bcg.jpg"
                     srcH265="/videos/h265/w25_loop_bcg-web.mp4"
@@ -94,7 +94,7 @@ export default function MagWrap2025Page() {
                     srcMp4="/videos/h264/w25_loop_bcg-fallback.mp4"
                   /></div>
                 </div>
-                <div id="w-node-_5584234e-0489-bfe9-d57b-ba83bde0ba51-db1fcd0c" className="wrapper _2 wrap-led1">
+                <div id="w-node-_5584234e-0489-bfe9-d57b-ba83bde0ba51-db1fcd0c" className="wrapper _2 wrap-led1" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_ledka.jpg"
                     srcH265="/videos/h265/w25_ledka-web.mp4"
@@ -102,7 +102,7 @@ export default function MagWrap2025Page() {
                     srcMp4="/videos/h264/w25_ledka-fallback.mp4"
                   /></div>
                 </div>
-                <div id="w-node-_3d743965-0237-63a8-4ffb-3a3c5da996b1-db1fcd0c" className="wrapper _2 wrap-porotci">
+                <div id="w-node-_3d743965-0237-63a8-4ffb-3a3c5da996b1-db1fcd0c" className="wrapper _2 wrap-porotci" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_rytmus.jpg"
                     srcH265="/videos/h265/w25_rytmus-web.mp4"
@@ -110,7 +110,7 @@ export default function MagWrap2025Page() {
                     srcMp4="/videos/h264/w25_rytmus-fallback.mp4"
                   /></div>
                 </div>
-                <div id="w-node-_2ae65b4e-b1c3-b187-f0ff-5cdc6e4a01d2-db1fcd0c" className="wrapper _2 wrap-aneta">
+                <div id="w-node-_2ae65b4e-b1c3-b187-f0ff-5cdc6e4a01d2-db1fcd0c" className="wrapper _2 wrap-aneta" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_aneta_greenscreen.jpg"
                     srcH265="/videos/h265/w25_aneta_greenscreen-web.mp4"
@@ -118,14 +118,14 @@ export default function MagWrap2025Page() {
                     srcMp4="/videos/h264/w25_aneta_greenscreen-fallback.mp4"
                   /></div>
                 </div>
-                <div id="w-node-f5d293d0-dcfd-35bf-7f48-20e63cc3518b-db1fcd0c" className="wrapper _2 wrap-jmenovka">
+                <div id="w-node-f5d293d0-dcfd-35bf-7f48-20e63cc3518b-db1fcd0c" className="wrapper _2 wrap-jmenovka" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_nametag.jpg"
                     srcH265="/videos/h265/w25_nametag-web.mp4"
                     srcMp4="/videos/h264/w25_nametag-fallback.mp4"
                   /></div>
                 </div>
-                <div id="w-node-_99824595-c3f1-4207-c418-28701641ea34-db1fcd0c" className="wrapper _2 wrap-postup">
+                <div id="w-node-_99824595-c3f1-4207-c418-28701641ea34-db1fcd0c" className="wrapper _2 wrap-postup" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_postupujici.jpg"
                     srcH265="/videos/h265/w25_postupujici-web.mp4"
@@ -133,7 +133,7 @@ export default function MagWrap2025Page() {
                     srcMp4="/videos/h264/w25_postupujici-fallback.mp4"
                   /></div>
                 </div>
-                <div id="w-node-aa1cd08d-7967-db46-3e54-dbcc5425c446-db1fcd0c" className="wrapper _15px">
+                <div id="w-node-aa1cd08d-7967-db46-3e54-dbcc5425c446-db1fcd0c" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
                       <iframe src="https://www.youtube.com/embed/poEZ7qcoZXI" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -145,7 +145,7 @@ export default function MagWrap2025Page() {
           </div>
           <div className="liner bottom"></div>
         </section>
-        <section id="main-projects" className="main-resume">
+        <section id="main-projects" className="main-resume" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
             <div className="div-block-141 credits">
               <div className="div-block-143 top">

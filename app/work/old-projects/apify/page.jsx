@@ -23,7 +23,7 @@ export default function ApifyPage() {
         />
       </div>
       <div>
-        <div className="work-header-wrap">
+        <div className="work-header-wrap" data-reveal="hero">
           <div className="back-block">
             <a href="/" className="button inverted-border w-button">Back to home</a>
           </div>
@@ -35,7 +35,7 @@ export default function ApifyPage() {
         </div>
         <div className="w-layout-grid work-grid wrap">
           <div id="w-node-b805cc1a-6511-5184-3780-4dc1a1e8f64c-7b5129d6" className="work-main-wrap first">
-            <div className="w-layout-grid cs-grid">
+            <div className="w-layout-grid cs-grid" data-reveal-group>
               <div id="w-node-f4abb4df-7a40-9129-aead-dfd34f39edda-7b5129d6" className="html-embed _2span w-embed w-iframe w-script">
                 <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe src="https://player.vimeo.com/video/677387125?h=93af2f5bd5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Apify &mdash; Homepage Animation"></iframe></div>
               </div>

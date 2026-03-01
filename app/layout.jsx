@@ -2,6 +2,7 @@ import Script from 'next/script'
 import { IBM_Plex_Mono, Inter } from 'next/font/google'
 import ClientCursor from '@/components/ClientCursor'
 import LinkLines from '@/components/LinkLines'
+import ScrollReveal from '@/components/ScrollReveal'
 import '@/styles/normalize.css'
 import '@/styles/webflow.css'
 import '@/styles/krystofs-portfolio.webflow.scss'
@@ -53,6 +54,7 @@ export default function RootLayout({ children }) {
       <body>
         <ClientCursor />
         <LinkLines />
+        <ScrollReveal />
 {children}
       </body>
     </html>

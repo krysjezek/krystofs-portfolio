@@ -18,7 +18,7 @@ export default function MixedRealityPage() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <div className="work-header-wrap">
+            <div className="work-header-wrap" data-reveal="hero">
               <div className="work-header-container">
                 <div className="work-h1-wrap">
                   <div className="div-block-112">
@@ -35,8 +35,8 @@ export default function MixedRealityPage() {
               </div>
             </div>
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-0405f909" className="work-main-wrap first">
-              <div className="w-layout-grid cs-grid services">
-                <div id="w-node-_771e6bc8-f93d-6c0b-e588-52ea025093ed-0405f909" className="wrapper services _1x2">
+              <div className="w-layout-grid cs-grid services" data-reveal-group>
+                <div id="w-node-_771e6bc8-f93d-6c0b-e588-52ea025093ed-0405f909" data-reveal className="wrapper services _1x2">
                   <div className="cb w-embed"><EmbedVideo
                     poster="/videos/posters/cgi_barbour_london%20updated.jpg"
                     srcH265="/videos/h265/cgi_barbour_london%20updated-web2.mp4"
@@ -47,7 +47,7 @@ export default function MixedRealityPage() {
                     <h2 className="service-heading">Icons in Quiliting London</h2>
                   </div>
                 </div>
-                <div id="w-node-_82a68808-56d6-fe09-94d1-0da41d33cb7a-0405f909" className="wrapper services _1x1">
+                <div id="w-node-_82a68808-56d6-fe09-94d1-0da41d33cb7a-0405f909" data-reveal className="wrapper services _1x1">
                   <div className="cb w-embed"><EmbedVideo
                     poster="/videos/posters/cgi_antartcica.jpg"
                     srcH265="/videos/h265/cgi_antartcica-web2.mp4"
@@ -62,7 +62,7 @@ export default function MixedRealityPage() {
                     <h2 className="service-heading">Arctic Landscape</h2>
                   </div>
                 </div>
-                <div id="w-node-b7a28be6-ef33-6a27-bebf-9999f2a54f80-0405f909" className="wrapper services _1x2">
+                <div id="w-node-b7a28be6-ef33-6a27-bebf-9999f2a54f80-0405f909" data-reveal className="wrapper services _1x2">
                   <div className="cb w-embed"><EmbedVideo
                     poster="/videos/posters/cgi_presto%20updated.jpg"
                     srcH265="/videos/h265/cgi_presto%20updated-web2.mp4"
@@ -77,7 +77,7 @@ export default function MixedRealityPage() {
                     <h2 className="service-heading">Bouncy Greens</h2>
                   </div>
                 </div>
-                <div id="w-node-_63704fad-9a00-11de-8787-11772553c264-0405f909" className="wrapper services _1x1">
+                <div id="w-node-_63704fad-9a00-11de-8787-11772553c264-0405f909" data-reveal className="wrapper services _1x1">
                   <div className="cb w-embed"><EmbedVideo
                     poster="/videos/posters/cgi_tweezers.jpg"
                     srcH265="/videos/h265/cgi_tweezers-web2.mp4"
@@ -94,7 +94,7 @@ export default function MixedRealityPage() {
                     <h2 className="service-heading">Gemstone</h2>
                   </div>
                 </div>
-                <div id="w-node-_658bcf9b-8e4e-fd37-9d38-01f9eaf63127-0405f909" className="wrapper services _1x1">
+                <div id="w-node-_658bcf9b-8e4e-fd37-9d38-01f9eaf63127-0405f909" data-reveal className="wrapper services _1x1">
                   <div className="cb w-embed"><EmbedVideo
                     poster="/videos/posters/cgi_frasers%20updated.jpg"
                     srcH265="/videos/h265/cgi_frasers%20updated-web2.mp4"
@@ -105,7 +105,7 @@ export default function MixedRealityPage() {
                     <h2 className="service-heading">Frasers Collab</h2>
                   </div>
                 </div>
-                <div id="w-node-_48e9697f-9ff7-ea7f-41a7-abbf2ec44513-0405f909" className="wrapper services _1x2">
+                <div id="w-node-_48e9697f-9ff7-ea7f-41a7-abbf2ec44513-0405f909" data-reveal className="wrapper services _1x2">
                   <div className="cb w-embed"><EmbedVideo
                     poster="/videos/posters/cgi_spojka%20updated.jpg"
                     srcH265="/videos/h265/cgi_spojka%20updated-web2.mp4"
@@ -120,7 +120,7 @@ export default function MixedRealityPage() {
                     <h2 className="service-heading">Revitalizing Serum </h2>
                   </div>
                 </div>
-                <div id="w-node-f4bf5310-69ca-23ec-6381-b4a29f6e503f-0405f909" className="wrapper services _1x2">
+                <div id="w-node-f4bf5310-69ca-23ec-6381-b4a29f6e503f-0405f909" data-reveal className="wrapper services _1x2">
                   <div className="cb w-embed"><EmbedVideo
                     poster="/videos/posters/cgi_barbour_ny%20updated.jpg"
                     srcH265="/videos/h265/cgi_barbour_ny%20updated-web2.mp4"
@@ -131,7 +131,7 @@ export default function MixedRealityPage() {
                     <h2 className="service-heading">Icons in Quiliting NYC</h2>
                   </div>
                 </div>
-                <div id="w-node-dfa12d4c-f844-068c-6466-0c8f47a3ee86-0405f909" className="wrapper services _1x1">
+                <div id="w-node-dfa12d4c-f844-068c-6466-0c8f47a3ee86-0405f909" data-reveal className="wrapper services _1x1">
                   <div className="cb w-embed"><EmbedVideo
                     poster="/videos/posters/cgi_onitsuka.jpg"
                     srcH265="/videos/h265/cgi_onitsuka-web2.mp4"
@@ -142,7 +142,7 @@ export default function MixedRealityPage() {
                     <h2 className="service-heading">New Store Opening</h2>
                   </div>
                 </div>
-                <div id="w-node-e54e911f-14c3-d9cb-5136-c98eacbb4df1-0405f909" className="wrapper services _1x2">
+                <div id="w-node-e54e911f-14c3-d9cb-5136-c98eacbb4df1-0405f909" data-reveal className="wrapper services _1x2">
                   <div className="cb w-embed"><EmbedVideo
                     poster="/videos/posters/cgi_barbour_seoul%20updated.jpg"
                     srcH265="/videos/h265/cgi_barbour_seoul%20updated-web2.mp4"
@@ -153,7 +153,7 @@ export default function MixedRealityPage() {
                     <h2 className="service-heading">Icons in Quiliting Seoul</h2>
                   </div>
                 </div>
-                <div id="w-node-_4780d184-593d-0ec2-7732-3f701fb2249b-0405f909" className="wrapper services _1x2">
+                <div id="w-node-_4780d184-593d-0ec2-7732-3f701fb2249b-0405f909" data-reveal className="wrapper services _1x2">
                   <div className="cb w-embed"><EmbedVideo
                     poster="/videos/posters/cgi_yogrillz%20updated.jpg"
                     srcH265="/videos/h265/cgi_yogrillz%20updated-web2.mp4"
@@ -165,7 +165,7 @@ export default function MixedRealityPage() {
                     <h2 className="service-heading">Sparta Championship Ring</h2>
                   </div>
                 </div>
-                <div id="w-node-_1cf73b13-bb8c-6dda-e871-20f3a9edf90a-0405f909" className="wrapper services _1x2 mobile-square">
+                <div id="w-node-_1cf73b13-bb8c-6dda-e871-20f3a9edf90a-0405f909" data-reveal className="wrapper services _1x2 mobile-square">
                   <div className="cb w-embed"><EmbedVideo
                     poster="/videos/posters/cgi_barbour_shanghai%20updated.jpg"
                     srcH265="/videos/h265/cgi_barbour_shanghai%20updated-web2.mp4"
@@ -176,7 +176,7 @@ export default function MixedRealityPage() {
                     <h2 className="service-heading">Icons in Quiliting Shanghai</h2>
                   </div>
                 </div>
-                <div id="w-node-_601a700b-cf17-6109-2656-2c4949514c6c-0405f909" className="wrapper services _2x1">
+                <div id="w-node-_601a700b-cf17-6109-2656-2c4949514c6c-0405f909" data-reveal className="wrapper services _2x1">
                   <div className="cb w-embed"><EmbedVideo
                     poster="/videos/posters/cgi_chainer%20updated.jpg"
                     srcH265="/videos/h265/cgi_chainer%20updated-web2.mp4"
@@ -187,7 +187,7 @@ export default function MixedRealityPage() {
                     <h2 className="service-heading">Launch Video</h2>
                   </div>
                 </div>
-                <div id="w-node-ce44de3c-425e-2711-c1b3-ba896ed38c80-0405f909" className="wrapper services _1x1">
+                <div id="w-node-ce44de3c-425e-2711-c1b3-ba896ed38c80-0405f909" data-reveal className="wrapper services _1x1">
                   <div className="cb w-embed"><EmbedVideo
                     poster="/videos/posters/cgi_yonex.jpg"
                     srcH265="/videos/h265/cgi_yonex-web-2.mp4"
@@ -203,7 +203,7 @@ export default function MixedRealityPage() {
           </div>
           <div className="liner bottom"></div>
         </section>
-        <section id="main-projects" className="main-resume service">
+        <section id="main-projects" className="main-resume service" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
             <div className="div-block-141 credits">
               <div className="div-block-143 top">

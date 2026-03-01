@@ -1,6 +1,6 @@
-export default function WorkPageHeader({ label, title, children }) {
+export default function WorkPageHeader({ label, title, children, ...rest }) {
   return (
-    <div className="work-header-wrap">
+    <div className="work-header-wrap" {...rest}>
       <div className="work-header-container">
         <div className="work-h1-wrap">
           <div className="div-block-112">

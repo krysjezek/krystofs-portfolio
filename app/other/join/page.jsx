@@ -15,11 +15,11 @@ export default function JoinPage() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <div className="heading-75">
+            <div className="heading-75" data-reveal="hero">
               <h2 className="heading-h1 other">I would love to work with you.</h2>
               <p className="paragraph">I&#x27;m on the lookout for some sharp-eyed creatives to collaborate with on projects for some top-tier brands. If you&#x27;re all about fresh designs, and love sweating the small stuff as much as I do, we might just click. I&#x27;m after folks who like to make design that POP, care about their craft, and are ready to roll up their sleeves and dive into some exciting work.</p>
             </div>
-            <div className="positions">
+            <div className="positions" data-reveal>
               <h3 className="heading-3">Open roles</h3>
               <div className="positions-wrapper">
                 <div className="div-block-62">
@@ -100,7 +100,7 @@ export default function JoinPage() {
                 </div>
               </div>
             </div>
-            <section id="apply" className="section">
+            <section id="apply" className="section" data-reveal>
               <div className="positions">
                 <div className="main-contact-wrap">
                   <div className="heading-copy">
