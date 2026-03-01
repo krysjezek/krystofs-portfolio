@@ -1614,7 +1614,9 @@ body {
 .main-hero-second {
   border: 1px #000;
   margin-top: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 70px;
+  margin-left: calc(var(--default-space) * -1);
+  margin-right: calc(var(--default-space) * -1);
   padding-bottom: 0;
 }
 
@@ -2477,6 +2479,25 @@ body {
   background-color: var(--black);
   padding-top: 0;
   padding-bottom: 0;
+  overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, var(--black) 0%, transparent 10%, transparent 90%, var(--black) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+.logo-marquee-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: max-content;
+  padding: 20px 0;
 }
 
 .inner-container {

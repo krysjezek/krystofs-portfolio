@@ -9,12 +9,14 @@ import ShimmerImage from '@/components/ShimmerImage'
 import Image from 'next/image'
 import { useServiceTabs } from '@/hooks/useServiceTabs'
 import { useCardTilt } from '@/hooks/useCardTilt'
+import { useMarquee } from '@/hooks/useMarquee'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export default function HomePage() {
   const profilePicUrl = `${CDN}/images/profilovka-new-edit-ezgif.com-png-to-webp-converter.webp`
   const gridRef = useRef(null)
+  const marqueeRef = useRef(null)
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -23,6 +25,7 @@ export default function HomePage() {
 
   useServiceTabs()
   useCardTilt(gridRef)
+  useMarquee(marqueeRef)
 
   return (
     <>
@@ -159,8 +162,37 @@ export default function HomePage() {
             </div>
             <div className="main-hero-second">
               <div className="outer-container">
-                <div className="main-hero-logos"><Image src={CDN + '/images/vs-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo anna" /><Image src={CDN + '/images/coinbase-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo slightly" /><Image src={CDN + '/images/yonex-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo" /><Image src={CDN + '/images/barbour.png'} alt="" width={100} height={20} className="client-logo barbout" /><Image src={CDN + '/images/onitsuka-tiger-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo tiger" /><Image src={CDN + '/images/monopoly-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo larger" /><Image src={CDN + '/images/vodafone-logo-horiz-rgb-white.png'} alt="" width={4908} height={1224} className="client-logo voda" /></div>
-                <div className="main-hero-logos"><Image src={CDN + '/images/kfc-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo _26-copy" /><Image src={CDN + '/images/logo-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo themag" /><Image src={CDN + '/images/vsx-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo vsx" /><Image src={CDN + '/images/trezor-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo badlod" /><Image src={CDN + '/images/frasers-logo-1-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo orum" /><Image src={CDN + '/images/jnt.png'} alt="" width={512} height={512} className="client-logo jnt" /><Image src={CDN + '/images/fini.png'} alt="" width={1280} height={640} className="client-logo fini" /></div>
+                <div ref={marqueeRef} className="logo-marquee-track">
+                  <Image src={CDN + '/images/vs-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo anna" />
+                  <Image src={CDN + '/images/coinbase-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo slightly" />
+                  <Image src={CDN + '/images/yonex-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo" />
+                  <Image src={CDN + '/images/barbour.png'} alt="" width={100} height={20} className="client-logo barbout" />
+                  <Image src={CDN + '/images/onitsuka-tiger-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo tiger" />
+                  <Image src={CDN + '/images/monopoly-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo larger" />
+                  <Image src={CDN + '/images/vodafone-logo-horiz-rgb-white.png'} alt="" width={4908} height={1224} className="client-logo voda" />
+                  <Image src={CDN + '/images/kfc-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo _26-copy" />
+                  <Image src={CDN + '/images/logo-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo themag" />
+                  <Image src={CDN + '/images/vsx-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo vsx" />
+                  <Image src={CDN + '/images/trezor-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo badlod" />
+                  <Image src={CDN + '/images/frasers-logo-1-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo orum" />
+                  <Image src={CDN + '/images/jnt.png'} alt="" width={512} height={512} className="client-logo jnt" />
+                  <Image src={CDN + '/images/fini.png'} alt="" width={1280} height={640} className="client-logo fini" />
+                  {/* Duplicate set for seamless loop */}
+                  <Image src={CDN + '/images/vs-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo anna" />
+                  <Image src={CDN + '/images/coinbase-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo slightly" />
+                  <Image src={CDN + '/images/yonex-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo" />
+                  <Image src={CDN + '/images/barbour.png'} alt="" width={100} height={20} className="client-logo barbout" />
+                  <Image src={CDN + '/images/onitsuka-tiger-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo tiger" />
+                  <Image src={CDN + '/images/monopoly-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo larger" />
+                  <Image src={CDN + '/images/vodafone-logo-horiz-rgb-white.png'} alt="" width={4908} height={1224} className="client-logo voda" />
+                  <Image src={CDN + '/images/kfc-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo _26-copy" />
+                  <Image src={CDN + '/images/logo-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo themag" />
+                  <Image src={CDN + '/images/vsx-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo vsx" />
+                  <Image src={CDN + '/images/trezor-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo badlod" />
+                  <Image src={CDN + '/images/frasers-logo-1-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo orum" />
+                  <Image src={CDN + '/images/jnt.png'} alt="" width={512} height={512} className="client-logo jnt" />
+                  <Image src={CDN + '/images/fini.png'} alt="" width={1280} height={640} className="client-logo fini" />
+                </div>
               </div>
             </div>
           </div>

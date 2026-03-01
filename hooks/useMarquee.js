@@ -1,60 +1,56 @@
 'use client'
 
 import { useEffect } from 'react'
+import gsap from 'gsap'
 
-export function useMarquee() {
+export function useMarquee(trackRef, { speed = 50 } = {}) {
   useEffect(() => {
-    const speed = 2
-    const innerContainer = document.querySelector('.inner-container')
-    const logos = document.querySelectorAll('.main-hero-logos')
-    let animationFrame
+    const track = trackRef?.current
+    if (!track) return
 
-    if (!innerContainer || logos.length === 0) return
+    let tween
 
-    let position = 0
-    let logosWidth = 0
-    let gapSize = 0
+    function createTween() {
+      // Kill previous tween if resizing
+      if (tween) tween.kill()
 
-    function recalculate() {
-      const totalLogosWidth = Array.from(logos).reduce((total, logo) => total + logo.offsetWidth, 0)
-      const containerWidth = innerContainer.offsetWidth
-      gapSize = (containerWidth - totalLogosWidth) / (logos.length - 1)
-      logosWidth = logos[0].offsetWidth + gapSize
+      // Half the track width = one full set of logos
+      const halfWidth = track.scrollWidth / 2
+
+      // Reset position
+      gsap.set(track, { x: 0 })
+
+      // Duration based on speed (px/s) so it's consistent regardless of width
+      const duration = halfWidth / speed
+
+      tween = gsap.to(track, {
+        x: -halfWidth,
+        duration,
+        ease: 'none',
+        repeat: -1,
+      })
     }
 
-    recalculate()
+    createTween()
 
-    function animate() {
-      position -= speed
-      if (position < -logosWidth) {
-        position += logosWidth
-      }
-      innerContainer.style.transform = `translateX(${position}px)`
-      animationFrame = requestAnimationFrame(animate)
-    }
-
-    animate()
-
-    const handleResize = () => {
-      cancelAnimationFrame(animationFrame)
-      recalculate()
-      animate()
-    }
     const handleVisibility = () => {
-      if (document.visibilityState === 'visible') {
-        animate()
+      if (!tween) return
+      if (document.visibilityState === 'hidden') {
+        tween.pause()
       } else {
-        cancelAnimationFrame(animationFrame)
+        tween.resume()
       }
     }
 
-    window.addEventListener('resize', handleResize)
+    const handleResize = () => createTween()
+
     document.addEventListener('visibilitychange', handleVisibility)
+    window.addEventListener('resize', handleResize)
 
     return () => {
-      cancelAnimationFrame(animationFrame)
-      window.removeEventListener('resize', handleResize)
+      if (tween) tween.kill()
       document.removeEventListener('visibilitychange', handleVisibility)
+      window.removeEventListener('resize', handleResize)
     }
-  }, [])
+  }, [trackRef, speed])
 }

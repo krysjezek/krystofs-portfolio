@@ -10,7 +10,7 @@ Comprehensive audit of every animation, transition, and interaction in the portf
 |---------|------|
 | Dynamic animations (tweens, timelines, stagger) | **GSAP** — the single animation library for the project |
 | 3D depth parallax | **Three.js** scene rendered on **GSAP ticker** |
-| Continuous marquee | `requestAnimationFrame` loop (vanilla JS) |
+| Continuous marquee | **GSAP** `gsap.to()` with `repeat: -1` |
 | Timed text rotation | `setInterval` with inline `transition` style |
 | Hover / state transitions | **CSS transitions** declared in SCSS |
 | Availability-dot pulse | **CSS `@keyframes`** (only keyframe animation on the site) |
@@ -105,11 +105,12 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | | |
 |-|-|
 | **File** | `hooks/useMarquee.js` |
-| **What** | `.inner-container` scrolls left continuously; seamless loop by resetting position when one logo-width is consumed |
-| **Trigger** | `requestAnimationFrame` loop (page load) |
-| **Properties** | `translateX` via `style.transform` |
-| **Speed** | 2px per frame |
-| **Notes** | Pauses on `visibilitychange` (hidden), resumes on visible. Recalculates gap on `resize`. |
+| **What** | `.logo-marquee-track` (28 logos — 14 originals + 14 duplicates) scrolls left continuously; GSAP loops seamlessly by translating by exactly half the track width |
+| **Trigger** | `gsap.to()` with `repeat: -1`, `ease: "none"` (page load) |
+| **Properties** | `x` (GSAP transform) |
+| **Speed** | 50px/s (configurable via `speed` option) |
+| **Duration** | Computed: `halfWidth / speed` — adapts to track width |
+| **Notes** | Pauses on `visibilitychange` (hidden), resumes on visible. Recreates tween on `resize`. Ref-based — accepts a React ref to the track element. |
 
 ### 3c. Service tab switcher
 | | |
@@ -343,6 +344,7 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | 3D card tilt (quickTo) | 0.6s | `power2.out` | — | — |
 | Depth parallax mouse track | 0.4s | `power2.out` | — | — |
 | Depth parallax mouse leave | 0.6s | `power2.out` | — | — |
+| Logo marquee scroll | `halfWidth / 50`s | `none` | — | infinite |
 
 ### CSS transitions
 
