@@ -11,20 +11,36 @@ export default function ShimmerImage({ src, alt, className, style, imgStyle, fil
   const tweenRef = useRef(null)
 
   useEffect(() => {
+    const wrapper = wrapperRef.current
     const sweep = sweepRef.current
-    if (!sweep) return
-    tweenRef.current = gsap.to(sweep, {
-      x: '100%',
-      duration: 1.2,
-      ease: 'power1.inOut',
-      repeat: -1,
-    })
-    // If image was already cached, trigger load immediately
-    const img = imgRef.current
-    if (img && img.complete && img.naturalWidth > 0) {
-      onLoad()
+    if (!wrapper || !sweep) return
+
+    let started = false
+
+    const startShimmer = () => {
+      if (started) return
+      started = true
+      tweenRef.current = gsap.to(sweep, {
+        x: '100%',
+        duration: 1.2,
+        ease: 'power1.inOut',
+        repeat: -1,
+      })
+      // If image was already cached, trigger load immediately
+      const img = imgRef.current
+      if (img && img.complete && img.naturalWidth > 0) {
+        onLoad()
+      }
     }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => { if (entry.isIntersecting) { startShimmer(); observer.disconnect() } },
+      { rootMargin: '100px' }
+    )
+    observer.observe(wrapper)
+
     return () => {
+      observer.disconnect()
       if (tweenRef.current) tweenRef.current.kill()
     }
   }, [])

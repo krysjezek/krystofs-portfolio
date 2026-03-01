@@ -1,6 +1,6 @@
 import Script from 'next/script'
 import { IBM_Plex_Mono, Inter } from 'next/font/google'
-import CustomCursor from '@/components/CustomCursor'
+import ClientCursor from '@/components/ClientCursor'
 import LinkLines from '@/components/LinkLines'
 import '@/styles/normalize.css'
 import '@/styles/webflow.css'
@@ -8,14 +8,14 @@ import '@/styles/krystofs-portfolio.webflow.scss'
 
 const ibmPlexMono = IBM_Plex_Mono({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['300', '400', '500', '700'],
   display: 'swap',
   variable: '--font-ibm-plex-mono',
 })
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['300', '400', '500', '700'],
   display: 'swap',
   variable: '--font-inter',
 })
@@ -38,6 +38,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com" />
+        <link rel="preconnect" href="https://s3.amazonaws.com" />
+        <link rel="preconnect" href="https://cdn.prod.website-files.com" />
 
         {/* Adobe Typekit */}
         <Script src="https://use.typekit.net/drn7car.js" strategy="lazyOnload" />
@@ -49,7 +51,7 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="/webclip.jpg" />
       </head>
       <body>
-        <CustomCursor />
+        <ClientCursor />
         <LinkLines />
 {children}
       </body>

@@ -1,14 +1,12 @@
 'use client'
 
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
 import EmbedVideo from '@/components/EmbedVideo'
 import ShimmerImage from '@/components/ShimmerImage'
 import Image from 'next/image'
-import { useTextCarousel } from '@/hooks/useTextCarousel'
-import { useMarquee } from '@/hooks/useMarquee'
 import { useServiceTabs } from '@/hooks/useServiceTabs'
 import { useCardTilt } from '@/hooks/useCardTilt'
 
@@ -17,9 +15,12 @@ const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 export default function HomePage() {
   const profilePicUrl = `${CDN}/images/profilovka-new-edit-ezgif.com-png-to-webp-converter.webp`
   const gridRef = useRef(null)
+  const [isMobile, setIsMobile] = useState(false)
 
-  useTextCarousel()
-  useMarquee()
+  useEffect(() => {
+    setIsMobile(window.matchMedia('(max-width: 991px)').matches)
+  }, [])
+
   useServiceTabs()
   useCardTilt(gridRef)
 
@@ -106,14 +107,14 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div id="w-node-_1ced7a6b-e1d3-ec40-248f-ca4885de56d5-a7256e91" className="div-block-152">
-                    <div className="code-embed w-embed"><video width="100%" height="auto" autoPlay muted loop playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69944082d88aed7c8242c463_Comp%201%20(0-00-00-00).png" style={{ objectFit: 'cover' }}>
-                        <source src="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/6994449789efbe463813c5f2_web-video-2k.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video></div>
-                    <div className="code-embed mobile w-embed"><video width="100%" height="auto" autoPlay muted loop playsInline poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69944804e0ecbc47b70b6bea_Comp%202%20(0-00-00-00).png" style={{ objectFit: 'cover' }}>
-                        <source src="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/699447a96279cd427dd46294_web-video-mobile.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video></div>
+                    {!isMobile && <div className="code-embed w-embed"><EmbedVideo
+                      poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69944082d88aed7c8242c463_Comp%201%20(0-00-00-00).png"
+                      srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/6994449789efbe463813c5f2_web-video-2k.mp4"
+                    /></div>}
+                    {isMobile && <div className="code-embed mobile w-embed"><EmbedVideo
+                      poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69944804e0ecbc47b70b6bea_Comp%202%20(0-00-00-00).png"
+                      srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/699447a96279cd427dd46294_web-video-mobile.mp4"
+                    /></div>}
                   </div>
                 </a>
               </div>
@@ -287,11 +288,12 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div className="background-video-18 w-embed"><video autoPlay loop muted playsInline style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 'auto', height: '100%', display: 'block', objectFit: 'cover' }}>
-                        <source src={CDN + '/videos/h265/wrap_header-web.mp4'} type="video/mp4; codecs=hvc1" />
-                        <source src={CDN + '/videos/av1/wrap_header.webm'} type="video/webm; codecs=av01" />
-                        <source src={CDN + '/videos/h264/wrap_header-fallback.mp4'} type="video/mp4" />
-                      </video></div>
+                    <div className="background-video-18 w-embed"><EmbedVideo
+                      poster="/videos/posters/wrap_header.jpg"
+                      srcH265="/videos/h265/wrap_header-web.mp4"
+                      srcAv1="/videos/av1/wrap_header.webm"
+                      srcMp4="/videos/h264/wrap_header-fallback.mp4"
+                    /></div>
                     <div className="proj-img wrap25"><ShimmerImage fill src={CDN + '/images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
@@ -317,10 +319,11 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div className="background-video-18 w-embed"><video autoPlay loop muted playsInline style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 'auto', height: '100%', display: 'block', objectFit: 'cover' }}>
-                        <source src={CDN + '/videos/h265/barbour_header-web.mp4'} type="video/mp4; codecs=hvc1" />
-                        <source src={CDN + '/videos/h264/barbour_header-fallback.mp4'} type="video/mp4" />
-                      </video></div>
+                    <div className="background-video-18 w-embed"><EmbedVideo
+                      poster="/videos/posters/barbour_header.jpg"
+                      srcH265="/videos/h265/barbour_header-web.mp4"
+                      srcMp4="/videos/h264/barbour_header-fallback.mp4"
+                    /></div>
                     <div className="proj-img barbour"><ShimmerImage fill src={CDN + '/images/Barbour-Header-HP2.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
@@ -328,11 +331,12 @@ export default function HomePage() {
               <a href="/work/the-vsx-sports-bra" className="proj-item w-inline-block" data-cursor="Explore">
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div className="background-video-18 w-embed"><video autoPlay loop muted playsInline style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 'auto', height: '100%', display: 'block', objectFit: 'cover' }}>
-                        <source src={CDN + '/videos/h265/vsx_header-web.mp4'} type="video/mp4; codecs=hvc1" />
-                        <source src={CDN + '/videos/av1/vsx_header.webm'} type="video/webm; codecs=av01" />
-                        <source src={CDN + '/videos/h264/vsx_header-fallback.mp4'} type="video/mp4" />
-                      </video></div>
+                    <div className="background-video-18 w-embed"><EmbedVideo
+                      poster="/videos/posters/vsx_header.jpg"
+                      srcH265="/videos/h265/vsx_header-web.mp4"
+                      srcAv1="/videos/av1/vsx_header.webm"
+                      srcMp4="/videos/h264/vsx_header-fallback.mp4"
+                    /></div>
                     <div className="proj-img vsx"><ShimmerImage fill src={CDN + '/images/16x9thumb-ezgif.com-png-to-webp-converter.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                   <div className="div-block-99">
@@ -381,10 +385,11 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div className="background-video-18 w-embed"><video autoPlay loop muted playsInline style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: 'auto', height: '100%', display: 'block', objectFit: 'cover' }}>
-                        <source src={CDN + '/videos/h265/chainer_header-web.mp4'} type="video/mp4; codecs=hvc1" />
-                        <source src={CDN + '/videos/h264/chainer_header-fallback.mp4'} type="video/mp4" />
-                      </video></div>
+                    <div className="background-video-18 w-embed"><EmbedVideo
+                      poster="/videos/posters/chainer_header.jpg"
+                      srcH265="/videos/h265/chainer_header-web.mp4"
+                      srcMp4="/videos/h264/chainer_header-fallback.mp4"
+                    /></div>
                     <div className="proj-img"><ShimmerImage fill src={CDN + '/images/Chainer-Header-HP.webp'} alt="" sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
@@ -447,10 +452,11 @@ export default function HomePage() {
                 <a href="#" className="github-button w-inline-block">
                   <div>Github</div><Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={8} height={8} unoptimized className="github" />
                 </a>
-                <div className="cb w-embed"><video autoPlay loop muted playsInline poster="/videos/posters/coding-01.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                    <source src={CDN + '/videos/h265/coding-01-web.mp4'} type="video/mp4; codecs=hvc1" />
-                    <source src="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/68f3a8823d027ddf4acf306e_coding-01-down.mp4" type="video/mp4" />
-                  </video></div>
+                <div className="cb w-embed"><EmbedVideo
+                  poster="/videos/posters/coding-01.jpg"
+                  srcH265="/videos/h265/coding-01-web.mp4"
+                  srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/68f3a8823d027ddf4acf306e_coding-01-down.mp4"
+                /></div>
               </div>
               <div className="cp-wrap">
                 <div className="cp-photo"></div>
@@ -473,11 +479,12 @@ export default function HomePage() {
                 <a href="https://www.instagram.com/relive.ar/" target="_blank" className="github-button w-inline-block">
                   <div>Instagram</div><Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={8} height={8} unoptimized className="github" />
                 </a>
-                <div className="cb w-embed"><video autoPlay loop muted playsInline poster="/videos/posters/coding-02.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                    <source src={CDN + '/videos/h265/coding-02-web.mp4'} type="video/mp4; codecs=hvc1" />
-                    <source src={CDN + '/videos/av1/coding-02.webm'} type="video/webm; codecs=av01" />
-                    <source src={CDN + '/videos/h264/coding-02-fallback.mp4'} type="video/mp4" />
-                  </video></div>
+                <div className="cb w-embed"><EmbedVideo
+                  poster="/videos/posters/coding-02.jpg"
+                  srcH265="/videos/h265/coding-02-web.mp4"
+                  srcAv1="/videos/av1/coding-02.webm"
+                  srcMp4="/videos/h264/coding-02-fallback.mp4"
+                /></div>
               </div>
               <div className="cp-wrap">
                 <div className="cp-photo"></div>
@@ -500,11 +507,12 @@ export default function HomePage() {
                 <a href="https://github.com/krysjezek/video-process-backend" target="_blank" className="github-button w-inline-block">
                   <div>Github</div><Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={8} height={8} unoptimized className="github" />
                 </a>
-                <div className="cb w-embed"><video autoPlay loop muted playsInline poster="/videos/posters/kokos.jpg" style={{ width: '100%', height: 'auto', display: 'block', objectFit: 'cover', backgroundColor: '#000' }}>
-                    <source src={CDN + '/videos/h265/kokos-web.mp4'} type="video/mp4; codecs=hvc1" />
-                    <source src={CDN + '/videos/av1/kokos.webm'} type="video/webm; codecs=av01" />
-                    <source src="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/6904bf39c739929045b96bb7_IG_feed_1080x1080%20(1).mp4" type="video/mp4" />
-                  </video></div>
+                <div className="cb w-embed"><EmbedVideo
+                  poster="/videos/posters/kokos.jpg"
+                  srcH265="/videos/h265/kokos-web.mp4"
+                  srcAv1="/videos/av1/kokos.webm"
+                  srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/6904bf39c739929045b96bb7_IG_feed_1080x1080%20(1).mp4"
+                /></div>
               </div>
             </div>
           </div>

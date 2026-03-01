@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 
 const CURSOR_URL = 'https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/images/cursor.svg'
@@ -10,12 +10,19 @@ const ICON_ALIASES = {
 }
 
 export default function CustomCursor() {
+  const [isTouch, setIsTouch] = useState(false)
   const cursorRef = useRef(null)
   const imgRef = useRef(null)
   const pillRef = useRef(null)
   const labelRef = useRef(null)
   const iconRef = useRef(null)
+
   useEffect(() => {
+    setIsTouch(window.matchMedia('(pointer: coarse)').matches)
+  }, [])
+
+  useEffect(() => {
+    if (isTouch) return
     const cursor = cursorRef.current
     const img = imgRef.current
     const pill = pillRef.current
@@ -144,7 +151,9 @@ export default function CustomCursor() {
       clearTimeout(collapseTimer)
       cancelAnimationFrame(rafId)
     }
-  }, [])
+  }, [isTouch])
+
+  if (isTouch) return null
 
   return (
     <div
