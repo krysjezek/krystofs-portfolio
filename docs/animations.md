@@ -157,7 +157,7 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | **Trigger** | `mouseenter` / `mouseleave` on `.div-block-149` |
 | **Shimmer** | `x` from `-101%` → `101%` (0.8s, `power1.inOut`); on leave `opacity` → 0 (0.3s, `power2.out`) |
 | **Scale** | `scale` 1 → 1.025 (0.4s, `power2.out`); on leave 1.025 → 1 (0.4s, `power2.out`) |
-| **Green text** | CSS transition on `.div-block-153 .label` `color` → `var(--green-new)` + `.image-20` SVG filter (0.3s, `ease`) + arrow nudge `translate(2px, -2px)` |
+| **Green text** | CSS transition on `.div-block-153 .label` `color` → `var(--green-new)` + `.image-20` SVG filter (0.3s, `ease`) + `arrow-diagonal-in` animation (0.5s) |
 | **Notes** | Overlay is DOM-injected by the hook. `.div-block-149` has `overflow: hidden` + `position: relative` to clip shimmer to border-radius. |
 
 ### 3f. Pulse dot
@@ -299,33 +299,24 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | **Hover trigger** | `.proj-item:hover .background-video-18` |
 | **Lines** | 2636–2649 |
 
-### 8e. Project image arrow diagonal slide-in
+### 8e. Project image arrow slide
 | | |
 |-|-|
 | **Selector** | `.image-19` |
-| **Animation** | `@keyframes arrow-diagonal-in` — arrow visible by default; on hover: fades out (0→30%), jumps to `translate(-30px, 30px)` (31%), slides diagonally back to origin with fade-in (31→100%) |
-| **Duration / Easing** | 0.5s / `ease` |
+| **Property** | `transform: translate(-40px)` → `translate(0)` |
+| **Duration / Easing** | 0.3s / `ease` |
 | **Hover trigger** | `.proj-item:hover .image-19` |
 
-### 8f. Footer arrow nudge
+### 8f. Link arrow diagonal slide-in
 | | |
 |-|-|
-| **Selector** | `.image-20` |
-| **Property** | `transform: translate(2px, -2px)` (diagonal nudge up-right) |
-| **Duration / Easing** | 0.3s / `ease` |
-| **Hover trigger** | `.div-block-65:hover .image-20` |
-| **Affects** | Instagram, Gumroad, LinkedIn, Email, WhatsApp links in Footer |
+| **Selector** | `.image-20`, `.github` |
+| **Animation** | `@keyframes arrow-diagonal-in` — arrow visible by default; on hover: slides out toward top-right + fades (0–35%), jumps to bottom-left offset (36%), slides diagonally back to origin + fades in (36–100%) |
+| **Duration / Easing** | 0.5s / `ease` |
+| **Hover triggers** | `.div-block-65:hover .image-20` (footer links), `.github-button:hover .github` (tech project links), `.div-block-149:hover .div-block-153 .image-20` (MotionMockups banner) |
+| **Affects** | Footer social/contact links, tech project GitHub/Instagram links, MotionMockups banner link |
 
-### 8g. Tech project arrow nudge
-| | |
-|-|-|
-| **Selector** | `.github` |
-| **Property** | `transform: translate(2px, -2px)` (diagonal nudge up-right) |
-| **Duration / Easing** | 0.3s / `ease` |
-| **Hover trigger** | `.github-button:hover .github` |
-| **Affects** | GitHub/Instagram links in tech projects section on homepage |
-
-### 8h. Accordion content
+### 8g. Accordion content
 | | |
 |-|-|
 | **Selector** | `.fs_accordion-2_content` |
@@ -333,7 +324,7 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | **Duration** | 0.2s |
 | **Lines** | 4000–4002 |
 
-### 8i. Accordion arrow rotation
+### 8h. Accordion arrow rotation
 | | |
 |-|-|
 | **Selector** | `.fs_accordion-2_arrow-wrapper` |
@@ -405,11 +396,9 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | `.line` | `transform` (scaleX) | 0.35s | `cubic-bezier(0.86, 0, 0.14, 1)` |
 | `.proj-heading` | `transform` (translateX) | 0.3s | `ease` |
 | `.background-video-18` | `opacity` | 0.3s | `ease` |
-| `.image-19` | `animation: arrow-diagonal-in` | 0.5s | `ease` |
-| `.image-20` | `transform` (nudge) | 0.3s | `ease` |
-| `.github` | `transform` (nudge) | 0.3s | `ease` |
+| `.image-19` | `transform` (translateX) | 0.3s | `ease` |
 | `.div-block-153 .label` | `color` | 0.3s | `ease` |
-| `.div-block-153 .image-20` | `filter`, `transform` | 0.3s | `ease` |
+| `.div-block-153 .image-20` | `filter` | 0.3s | `ease` |
 | `.fs_accordion-2_content` | `max-height` | 0.2s | (default) |
 | `.fs_accordion-2_arrow-wrapper` | `transform` (rotate) | 0.2s | (default) |
 | `.changer-move` | `transform` (translateY) | 0.5s | `ease-in-out` |
@@ -419,6 +408,7 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 
 | Name | Duration | Easing | Element |
 |------|----------|--------|---------|
+| `arrow-diagonal-in` | 0.5s | `ease` | `.image-20`, `.github` (on parent hover) |
 | `pulse-dot` | 3s | `ease-in-out` infinite | `.div-block-88` |
 
 ### Intervals & timers
