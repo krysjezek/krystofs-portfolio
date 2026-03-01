@@ -1498,7 +1498,7 @@ body {
 
 .navbar {
   border-bottom: 1px none var(--gray-0-08-opacity);
-  background-color: var(--transparentos\<deleted\|variable-35b3cee5-08dc-8d0e-d9aa-389e09fc7ba5\>);
+  background: linear-gradient(to bottom, var(--black) 50%, transparent);
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;

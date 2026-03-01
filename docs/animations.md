@@ -87,6 +87,22 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 
 ---
 
+## 2h. Navbar scroll hide/reveal
+
+**File:** `hooks/useNavbarScroll.js`
+**Used by:** `components/Navbar.jsx`
+
+| | |
+|-|-|
+| **What** | Navbar slides up off-screen when scrolling down, slides back down when scrolling up |
+| **Trigger** | `scroll` event on `window` (passive) |
+| **Properties** | `y` → `-100%` (hide), `y` → `0` (reveal) |
+| **Duration / Easing** | 1.2s / `power2.out` |
+| **Threshold** | Only hides after scrolling past 50px from the top |
+| **Notes** | Tracks `lastScrollY` via ref. Compares current vs previous scroll position to determine direction. |
+
+---
+
 ## 3. Homepage Animations
 
 **Page:** `app/page.jsx` (thin wrapper — hook calls only)
@@ -345,6 +361,8 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | Depth parallax mouse track | 0.4s | `power2.out` | — | — |
 | Depth parallax mouse leave | 0.6s | `power2.out` | — | — |
 | Logo marquee scroll | `halfWidth / 50`s | `none` | — | infinite |
+| Navbar scroll hide | 1.2s | `power2.out` | — | — |
+| Navbar scroll reveal | 1.2s | `power2.out` | — | — |
 
 ### CSS transitions
 

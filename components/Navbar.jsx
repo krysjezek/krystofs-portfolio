@@ -1,8 +1,16 @@
+'use client'
+
+import { useRef } from 'react'
 import Link from 'next/link'
+import { useNavbarScroll } from '@/hooks/useNavbarScroll'
 
 export default function Navbar() {
+  const navbarRef = useRef(null)
+  useNavbarScroll(navbarRef)
+
   return (
     <div
+      ref={navbarRef}
       data-w-id="ca89d5d4-26d0-52d6-d41d-978fc24c638a"
       data-animation="default"
       data-collapse="none"
