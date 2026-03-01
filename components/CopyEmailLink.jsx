@@ -3,7 +3,7 @@ import { useRef } from 'react'
 
 const EMAIL = 'krystof@jezek.me'
 
-export default function CopyEmailLink() {
+export default function CopyEmailButton({ className, children, unstyled }) {
   const btnRef = useRef(null)
   const copiedRef = useRef(false)
 
@@ -28,19 +28,18 @@ export default function CopyEmailLink() {
     <button
       ref={btnRef}
       type="button"
-      className="link"
+      className={className}
       data-cursor="Copy Email"
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}
-      style={{
+      style={unstyled ? {
         border: 'none',
         background: 'none',
         padding: 0,
-        cursor: 'none',
         textAlign: 'left',
-      }}
+      } : undefined}
     >
-      {EMAIL}
+      {children || EMAIL}
     </button>
   )
 }

@@ -11,6 +11,7 @@ import { useServiceTabs } from '@/hooks/useServiceTabs'
 import { useCardTilt } from '@/hooks/useCardTilt'
 import { useMarquee } from '@/hooks/useMarquee'
 import { useHoverShimmer } from '@/hooks/useHoverShimmer'
+import CopyEmailButton from '@/components/CopyEmailLink'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
@@ -87,10 +88,10 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfce-a7256e91" className="div-block-138">
-                  <a style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} href="https://calendly.com/krystofjezek/15min" target="_blank" className="button w-inline-block">
+                  <a style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} href="https://calendly.com/krystofjezek/15min" target="_blank" className="button w-inline-block" data-cursor="Calendly" data-cursor-icon="arrow">
                     <div className="text-block-18">Schedule a call</div>
                   </a>
-                  <a href="mailto:krystof@jezek.me?subject=I%20want%20to%20work%20with%20Krystof" className="button inverted-border w-button">Get in touch</a>
+                  <CopyEmailButton className="button inverted-border w-button">Get in touch</CopyEmailButton>
                 </div>
               </div>
               <div className="footer-right"></div>

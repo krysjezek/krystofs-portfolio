@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ShimmerImage from '@/components/ShimmerImage'
-import CopyEmailLink from '@/components/CopyEmailLink'
+import CopyEmailButton from '@/components/CopyEmailLink'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
@@ -67,7 +67,7 @@ export default function Footer() {
                   <div className="label">Contact</div>
                   <div className="div-block-119">
                     <div data-w-id="6565ca43-4312-11b1-fa85-94235efea807" className="div-block-65">
-                      <CopyEmailLink />
+                      <CopyEmailButton className="link" unstyled />
                       <div className="line-mask"><div className="line"></div></div>
                     </div>
                     <div data-w-id="6565ca43-4312-11b1-fa85-94235efea80d" className="div-block-65">
@@ -85,17 +85,14 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="button w-inline-block"
-                  data-cursor="Connect"
+                  data-cursor="Calendly"
+                  data-cursor-icon="arrow"
                 >
                   <div className="text-block-18">Schedule a call</div>
                 </a>
-                <a
-                  href="mailto:krystof@jezek.me?subject=I%20want%20to%20work%20with%20Krystof"
-                  className="button inverted-border w-button"
-                  data-cursor="Connect"
-                >
+                <CopyEmailButton className="button inverted-border w-button">
                   Get in touch
-                </a>
+                </CopyEmailButton>
               </div>
             </div>
             <div className="footer-right"></div>
