@@ -171,7 +171,7 @@ export default function HomePage() {
                   <Image src={CDN + '/images/monopoly-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo larger" />
                   <Image src={CDN + '/images/vodafone-logo-horiz-rgb-white.png'} alt="" width={4908} height={1224} className="client-logo voda" />
                   <Image src={CDN + '/images/kfc-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo _26-copy" />
-                  <Image src={CDN + '/images/logo-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo themag" />
+
                   <Image src={CDN + '/images/vsx-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo vsx" />
                   <Image src={CDN + '/images/trezor-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo badlod" />
                   <Image src={CDN + '/images/frasers-logo-1-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo orum" />
@@ -186,7 +186,7 @@ export default function HomePage() {
                   <Image src={CDN + '/images/monopoly-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo larger" />
                   <Image src={CDN + '/images/vodafone-logo-horiz-rgb-white.png'} alt="" width={4908} height={1224} className="client-logo voda" />
                   <Image src={CDN + '/images/kfc-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo _26-copy" />
-                  <Image src={CDN + '/images/logo-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo themag" />
+
                   <Image src={CDN + '/images/vsx-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo vsx" />
                   <Image src={CDN + '/images/trezor-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo badlod" />
                   <Image src={CDN + '/images/frasers-logo-1-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo orum" />
