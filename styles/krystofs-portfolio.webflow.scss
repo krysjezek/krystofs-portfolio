@@ -5017,6 +5017,8 @@ body {
 }
 
 .div-block-149 {
+  position: relative;
+  overflow: hidden;
   padding-top: var(--small-space);
   padding-right: var(--small-space);
   padding-bottom: var(--small-space);
@@ -5065,6 +5067,20 @@ body {
   justify-content: flex-start;
   align-items: center;
   display: flex;
+
+  .label, .image-20 {
+    transition: color 0.3s ease, filter 0.3s ease;
+  }
+}
+
+.div-block-149:hover .div-block-153 {
+  .label {
+    color: var(--green-new);
+  }
+
+  .image-20 {
+    filter: brightness(0) saturate(100%) invert(83%) sepia(42%) saturate(462%) hue-rotate(63deg) brightness(103%) contrast(93%);
+  }
 }
 
 .div-block-154 {

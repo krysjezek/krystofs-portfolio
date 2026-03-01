@@ -149,7 +149,18 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | **Config** | perspective: 1300px, transformOrigin: `50% 50% -600px`, gap: 35px |
 | **Notes** | Disabled on mobile (≤767px). Creates DOM wrapper for perspective. Invisible overlays forward `data-cursor` to fix `elementFromPoint` in preserve-3d context. Full teardown/setup on breakpoint change. See `docs/3d-tilt-service-cards.md`. |
 
-### 3e. Pulse dot
+### 3e. Motion Mockups banner hover shimmer + inflate
+| | |
+|-|-|
+| **File** | `hooks/useHoverShimmer.js` |
+| **What** | On hover: (1) translucent gradient sweeps left-to-right, (2) card scales to 1.025×, (3) "motionmockups.com" label + arrow turn green |
+| **Trigger** | `mouseenter` / `mouseleave` on `.div-block-149` |
+| **Shimmer** | `x` from `-101%` → `101%` (0.8s, `power1.inOut`); on leave `opacity` → 0 (0.3s, `power2.out`) |
+| **Scale** | `scale` 1 → 1.025 (0.4s, `power2.out`); on leave 1.025 → 1 (0.4s, `power2.out`) |
+| **Green text** | CSS transition on `.div-block-153 .label` `color` → `var(--green-new)` + `.image-20` SVG filter (0.3s, `ease`) |
+| **Notes** | Overlay is DOM-injected by the hook. `.div-block-149` has `overflow: hidden` + `position: relative` to clip shimmer to border-radius. |
+
+### 3f. Pulse dot
 | | |
 |-|-|
 | **File** | `styles/krystofs-portfolio.webflow.scss` |
@@ -360,6 +371,10 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | 3D card tilt (quickTo) | 0.6s | `power2.out` | — | — |
 | Depth parallax mouse track | 0.4s | `power2.out` | — | — |
 | Depth parallax mouse leave | 0.6s | `power2.out` | — | — |
+| Banner hover shimmer sweep | 0.8s | `power1.inOut` | — | — |
+| Banner hover shimmer fade | 0.3s | `power2.out` | — | — |
+| Banner hover scale up | 0.4s | `power2.out` | — | — |
+| Banner hover scale down | 0.4s | `power2.out` | — | — |
 | Logo marquee scroll | `halfWidth / 50`s | `none` | — | infinite |
 | Navbar scroll hide | 1.2s | `power2.out` | — | — |
 | Navbar scroll reveal | 1.2s | `power2.out` | — | — |
@@ -373,6 +388,8 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | `.proj-heading` | `transform` (translateX) | 0.3s | `ease` |
 | `.background-video-18` | `opacity` | 0.3s | `ease` |
 | `.image-19` | `transform` (translateX) | 0.3s | `ease` |
+| `.div-block-153 .label` | `color` | 0.3s | `ease` |
+| `.div-block-153 .image-20` | `filter` | 0.3s | `ease` |
 | `.fs_accordion-2_content` | `max-height` | 0.2s | (default) |
 | `.fs_accordion-2_arrow-wrapper` | `transform` (rotate) | 0.2s | (default) |
 | `.changer-move` | `transform` (translateY) | 0.5s | `ease-in-out` |
