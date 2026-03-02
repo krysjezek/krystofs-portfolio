@@ -54,20 +54,57 @@ export function useCardTilt(gridRef) {
 
     window.addEventListener('mousemove', onMouseMove)
 
-    // Fix hover detection: preserve-3d breaks elementFromPoint, so we use
-    // native mouseenter/mouseleave to inject a marker attribute that the
-    // CustomCursor's elementFromPoint -> .closest('[data-cursor]') will find.
-    // We place an invisible overlay on each card that stays in the normal
-    // (non-3D) flow and forwards data-cursor to the cursor system.
-    const overlays = []
-    cards.forEach((card) => {
-      const overlay = document.createElement('div')
-      overlay.dataset.cursor = card.dataset.cursor
-      overlay.style.cssText = 'position:absolute;inset:0;z-index:1;'
-      card.style.position = 'relative'
-      card.appendChild(overlay)
-      overlays.push(overlay)
-    })
+    // Fix hover detection: preserve-3d breaks elementFromPoint hit-testing.
+    // Instead of overlay divs inside the 3D context (which inherit the broken
+    // geometry), we place flat <a> hitboxes in a position:fixed layer on
+    // document.body — completely outside the preserve-3d hierarchy.
+    // A rAF loop syncs their bounds to the visual card positions via
+    // getBoundingClientRect (which correctly returns the 2D projection).
+    let hitLayer = null
+    let hitboxes = []
+    let hitRaf = null
+
+    const createHitboxes = () => {
+      hitLayer = document.createElement('div')
+      hitLayer.style.cssText = 'position:fixed;inset:0;pointer-events:none;z-index:2;'
+      document.body.appendChild(hitLayer)
+
+      hitboxes = []
+      cards.forEach((card) => {
+        const hitbox = document.createElement('a')
+        hitbox.href = card.href
+        hitbox.dataset.cursor = card.dataset.cursor || ''
+        if (card.dataset.cursorIcon) hitbox.dataset.cursorIcon = card.dataset.cursorIcon
+        hitbox.style.cssText = 'position:absolute;pointer-events:auto;'
+        hitbox.setAttribute('aria-hidden', 'true')
+        hitbox.tabIndex = -1
+        hitLayer.appendChild(hitbox)
+        hitboxes.push(hitbox)
+      })
+
+      const syncHitboxes = () => {
+        cards.forEach((card, i) => {
+          const r = card.getBoundingClientRect()
+          const s = hitboxes[i].style
+          s.top = r.top + 'px'
+          s.left = r.left + 'px'
+          s.width = r.width + 'px'
+          s.height = r.height + 'px'
+        })
+        hitRaf = requestAnimationFrame(syncHitboxes)
+      }
+      hitRaf = requestAnimationFrame(syncHitboxes)
+    }
+
+    const removeHitboxes = () => {
+      if (hitRaf) cancelAnimationFrame(hitRaf)
+      hitRaf = null
+      if (hitLayer) hitLayer.remove()
+      hitLayer = null
+      hitboxes = []
+    }
+
+    createHitboxes()
 
     const teardown = () => {
       window.removeEventListener('mousemove', onMouseMove)
@@ -77,7 +114,7 @@ export function useCardTilt(gridRef) {
       grid.style.transformOrigin = ''
       grid.style.gap = ''
       cards.forEach(c => { gsap.set(c, { clearProps: 'transform' }); c.style.willChange = '' })
-      overlays.forEach(o => o.remove())
+      removeHitboxes()
     }
 
     const setup = () => {
@@ -90,14 +127,9 @@ export function useCardTilt(gridRef) {
       cards.forEach((card, i) => {
         card.style.willChange = 'transform'
         gsap.set(card, { rotationY: BASE_TILTS[i] })
-        const overlay = document.createElement('div')
-        overlay.dataset.cursor = card.dataset.cursor
-        overlay.style.cssText = 'position:absolute;inset:0;z-index:1;'
-        card.style.position = 'relative'
-        card.appendChild(overlay)
-        overlays.push(overlay)
       })
       window.addEventListener('mousemove', onMouseMove)
+      createHitboxes()
     }
 
     const onBreakpointChange = (e) => {

@@ -52,7 +52,7 @@ const gridRef = useRef(null)
 2. The grid gets `transform-style: preserve-3d` and `transform-origin: 50% 50% -600px` (pivot point behind the screen, center of the arc)
 3. Each `.proj-item` card gets a static `rotationY` — left card `-6deg`, right card `+6deg` — forming a concave curve
 4. `gsap.quickTo` smoothly animates the grid's `rotationY` and `rotationX` based on cursor position (anywhere on screen), giving the arc a gentle orbit
-5. Invisible overlay `<div>`s with `data-cursor` are appended inside each card to fix `elementFromPoint` hit-testing (which breaks under `preserve-3d`)
+5. A `position: fixed` hitbox layer is appended to `document.body` — completely outside the `preserve-3d` hierarchy. Flat `<a>` elements (with matching `href` and `data-cursor`) are synced to the visual card bounds via `getBoundingClientRect()` in a rAF loop, fixing `elementFromPoint` hit-testing (which breaks under `preserve-3d`)
 6. A `matchMedia` listener disables everything below 768px
 
 ### Tuning values
@@ -127,5 +127,5 @@ No SCSS changes to revert. No other files affected.
 
 ## Known issues
 
-- `preserve-3d` breaks `document.elementFromPoint()` hit-testing in some browsers — the invisible overlay divs work around this, but hover detection from extreme side angles may still be imperfect
+- `preserve-3d` breaks `document.elementFromPoint()` hit-testing — solved by placing flat `<a>` hitboxes in a `position: fixed` layer on `document.body`, outside the 3D context entirely. A rAF loop continuously syncs hitbox positions to the visual card bounds (needed because the grid's `quickTo` easing continues animating after the mouse stops). The hitboxes are `aria-hidden` with `tabindex="-1"` to avoid duplicate links in the accessibility tree.
 - The `overflow: hidden` on `.proj-item` (Webflow CSS) clips the 3D-rotated card edges by a few pixels — this looks intentional but can be overridden with `.main-proj-grid.head .proj-item { overflow: visible }` in SCSS if needed

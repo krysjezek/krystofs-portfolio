@@ -149,7 +149,7 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | **Properties** | `rotationY` (±3° range), `rotationX` (±2° range) |
 | **Duration / Easing** | 0.6s / `power2.out` via `gsap.quickTo` |
 | **Config** | perspective: 1300px, transformOrigin: `50% 50% -600px`, gap: 35px |
-| **Notes** | Disabled on mobile (≤767px). Creates DOM wrapper for perspective. Invisible overlays forward `data-cursor` to fix `elementFromPoint` in preserve-3d context. Full teardown/setup on breakpoint change. See `docs/3d-tilt-service-cards.md`. |
+| **Notes** | Disabled on mobile (≤767px). Creates DOM wrapper for perspective. External `position:fixed` hitbox layer on `document.body` (flat `<a>` elements synced via rAF + `getBoundingClientRect`) fixes `elementFromPoint` in preserve-3d context. Full teardown/setup on breakpoint change. See `docs/3d-tilt-service-cards.md`. |
 
 ### 3e. Motion Mockups banner hover shimmer + inflate
 | | |
