@@ -7,7 +7,13 @@ const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 const ICON_ALIASES = {
   arrow: `${CDN}/images/arrow-leftup.svg`,
+  eye: `${CDN}/images/cursor-eye.svg`,
+  message: `${CDN}/images/cursor-message.svg`,
+  date: `${CDN}/images/cursor-date.svg`,
 }
+
+const ICON_SIZES = { arrow: 10 }
+const DEFAULT_ICON_SIZE = 18
 
 export default function CustomCursor() {
   const [isTouch, setIsTouch] = useState(false)
@@ -58,8 +64,11 @@ export default function CustomCursor() {
 
       // Icon
       if (iconSrc) {
+        const size = ICON_SIZES[iconSrc] || DEFAULT_ICON_SIZE
         icon.src = ICON_ALIASES[iconSrc] || iconSrc
         icon.style.display = 'block'
+        icon.style.width = `${size}px`
+        icon.style.height = `${size}px`
         gsap.killTweensOf(icon)
         gsap.set(icon, { opacity: 1 })
         label.style.paddingLeft = '8px'
@@ -209,8 +218,8 @@ export default function CustomCursor() {
           alt=""
           style={{
             display: 'none',
-            width: 10,
-            height: 10,
+            width: 18,
+            height: 18,
             marginLeft: 12,
             flexShrink: 0,
             filter: 'brightness(0)',

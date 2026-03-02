@@ -23,7 +23,7 @@ export default function Navbar() {
       <div className="w-layout-blockcontainer container-3 w-container">
         <div className="mav-div">
           <div data-w-id="de2c0a77-b599-71cc-6764-3b97578d2a30" className="div-block-65">
-            <Link href="/" className="link smaller" data-cursor="Explore">Kryštof Ježek</Link>
+            <Link href="/" className="link smaller" data-cursor="Explore" data-cursor-icon="eye">Kryštof Ježek</Link>
             <div className="line-mask"><div className="line"></div></div>
           </div>
         </div>

@@ -13,6 +13,7 @@ import { useHoverShimmer } from '@/hooks/useHoverShimmer'
 import CopyEmailButton from '@/components/CopyEmailLink'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+const PROFILE_BLUR = 'data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAKAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQEG/8QAIBABAAEDAwUAAAAAAAAAAAAAAQIAAwQSEyERMkJRcv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwAe5h40ce9ruG4OqJGXMT5pXGbJjWjch2Hkeqyk1ZyV5V61KD//2Q=='
 
 export default function HomePage() {
   const profilePicUrl = `${CDN}/images/profilovka-new-edit-ezgif.com-png-to-webp-converter.webp`
@@ -47,6 +48,9 @@ export default function HomePage() {
                         priority
                         src={profilePicUrl}
                         alt="Kryštof Ježek"
+                        placeholder="blur"
+                        blurDataURL={PROFILE_BLUR}
+                        sizes="(max-width: 991px) 50vw, 25vw"
                         style={{ objectFit: 'cover', objectPosition: '50% 30%' }}
                       />
                     </div>
@@ -86,7 +90,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfce-a7256e91" className="div-block-138">
-                  <a style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} href="https://calendly.com/krystofjezek/15min" target="_blank" className="button w-inline-block" data-cursor="Calendly" data-cursor-icon="arrow">
+                  <a style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} href="https://calendly.com/krystofjezek/15min" target="_blank" className="button w-inline-block" data-cursor="Choose time.." data-cursor-icon="arrow">
                     <div className="text-block-18">Schedule a call</div>
                   </a>
                   <CopyEmailButton className="button inverted-border w-button">Get in touch</CopyEmailButton>
@@ -127,7 +131,7 @@ export default function HomePage() {
           </div>
           <div className="w-layout-blockcontainer container-3 header w-container">
             <div ref={gridRef} className="w-layout-grid main-proj-grid head" data-reveal-group="hero">
-              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91" href="/services/3d-environments" className="proj-item w-inline-block" data-cursor="Explore" data-reveal>
+              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91" href="/services/3d-environments" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
                     <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', backgroundColor: 'rgb(255,255,255)' }} className="button case">
@@ -144,7 +148,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4eae-a7256e91" href="/services/mixed-reality" className="proj-item w-inline-block" data-cursor="Explore" data-reveal>
+              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4eae-a7256e91" href="/services/mixed-reality" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
                     <div style={{ backgroundColor: 'rgb(255,255,255)', transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button case">
@@ -221,7 +225,7 @@ export default function HomePage() {
             <div className="div-block-96">
               <ul role="list" className="list-3 w-list-unstyled">
                 <li className="list-item-5">
-                  <a id="b1" href="#" className="services-link selected w-inline-block" data-cursor="Explore">
+                  <a id="b1" href="#" className="services-link selected w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Engage audiences</div>
@@ -231,7 +235,7 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li className="list-item-2">
-                  <a id="b2" href="#" className="services-link w-inline-block" data-cursor="Explore">
+                  <a id="b2" href="#" className="services-link w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Showcase products</div>
@@ -241,7 +245,7 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li className="list-item-3">
-                  <a id="b3" href="#" className="services-link w-inline-block" data-cursor="Explore">
+                  <a id="b3" href="#" className="services-link w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Streamline Iterations</div>
@@ -251,7 +255,7 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li className="list-item-4">
-                  <a id="b4" href="#" className="services-link w-inline-block" data-cursor="Explore">
+                  <a id="b4" href="#" className="services-link w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Educate Customers</div>
@@ -296,7 +300,7 @@ export default function HomePage() {
           <div className="w-layout-blockcontainer container-3 w-container">
             <h1 className="heading-2">Recent Case Studies</h1>
             <div className="w-layout-grid main-proj-grid" data-reveal-group>
-              <a id="w-node-_0a0f2415-0cbe-189d-07e1-6388208cf7e6-a7256e91" href="/work/the-mag-w-rap-2025" className="proj-item w-inline-block" data-cursor="Explore" data-reveal>
+              <a id="w-node-_0a0f2415-0cbe-189d-07e1-6388208cf7e6-a7256e91" href="/work/the-mag-w-rap-2025" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -332,7 +336,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a id="w-node-_3c9fd363-924c-9b72-f486-2437327d7019-a7256e91" href="/work/barbour" className="proj-item w-inline-block" data-cursor="Explore" data-reveal>
+              <a id="w-node-_3c9fd363-924c-9b72-f486-2437327d7019-a7256e91" href="/work/barbour" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -362,7 +366,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a href="/work/the-vsx-sports-bra" className="proj-item w-inline-block" data-cursor="Explore" data-reveal>
+              <a href="/work/the-vsx-sports-bra" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
                 <div className="proj-img-wrap">
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="background-video-18 w-embed"><EmbedVideo
@@ -398,7 +402,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a id="w-node-ca5842f0-12ea-bba6-91ec-c62ab4bb5501-a7256e91" href="/work/chainer" className="proj-item w-inline-block" data-cursor="Explore" data-reveal>
+              <a id="w-node-ca5842f0-12ea-bba6-91ec-c62ab4bb5501-a7256e91" href="/work/chainer" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
                     <div className="wrappedtext">

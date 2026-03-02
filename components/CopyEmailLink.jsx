@@ -21,6 +21,7 @@ export default function CopyEmailButton({ className, children, unstyled }) {
       copiedRef.current = false
       const btn = btnRef.current
       btn.dataset.cursor = 'Copy Email'
+      btn.dataset.cursorIcon = 'message'
     }
   }
 
@@ -30,6 +31,7 @@ export default function CopyEmailButton({ className, children, unstyled }) {
       type="button"
       className={className}
       data-cursor="Copy Email"
+      data-cursor-icon="message"
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}
       style={unstyled ? {

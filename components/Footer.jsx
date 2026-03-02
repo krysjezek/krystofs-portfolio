@@ -47,15 +47,15 @@ export default function Footer() {
                   <div className="label">Menu</div>
                   <div className="div-block-119">
                     <div data-w-id="b5a27be9-eb29-a325-9611-3bbee91fce06" className="div-block-65">
-                      <Link href="/services/3d-environments" className="link" data-cursor="Explore">3D Environments</Link>
+                      <Link href="/services/3d-environments" className="link" data-cursor="Explore" data-cursor-icon="eye">3D Environments</Link>
                       <div className="line-mask"><div className="line"></div></div>
                     </div>
                     <div data-w-id="83c84ea4-2158-f7fa-a22d-a8faeb1e691e" className="div-block-65">
-                      <Link href="/services/mixed-reality" className="link" data-cursor="Explore">Mixed Reality</Link>
+                      <Link href="/services/mixed-reality" className="link" data-cursor="Explore" data-cursor-icon="eye">Mixed Reality</Link>
                       <div className="line-mask"><div className="line"></div></div>
                     </div>
                     <div data-w-id="adb6576a-5e98-8477-410d-959810b17bcc" className="div-block-65">
-                      <Link href="/#tech-projects" className="link" data-cursor="Explore">Tech Projects</Link>
+                      <Link href="/#tech-projects" className="link" data-cursor="Explore" data-cursor-icon="eye">Tech Projects</Link>
                       <div className="line-mask"><div className="line"></div></div>
                     </div>
                   </div>
@@ -84,7 +84,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="button w-inline-block"
-                  data-cursor="Calendly"
+                  data-cursor="Choose time.."
                   data-cursor-icon="arrow"
                 >
                   <div className="text-block-18">Schedule a call</div>
