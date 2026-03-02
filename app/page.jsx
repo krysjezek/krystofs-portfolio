@@ -10,6 +10,7 @@ import { useServiceTabs } from '@/hooks/useServiceTabs'
 import { useCardTilt } from '@/hooks/useCardTilt'
 import { useMarquee } from '@/hooks/useMarquee'
 import { useHoverShimmer } from '@/hooks/useHoverShimmer'
+import gsap from 'gsap'
 import CopyEmailButton from '@/components/CopyEmailLink'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
@@ -31,6 +32,19 @@ export default function HomePage() {
   useMarquee(marqueeRef)
   useHoverShimmer(mockupsBannerRef)
 
+  // Scale-up entrance — delay per element via data-reveal-scale="<seconds>".
+  // Lives here (not in useScrollReveal) so it replays on every SPA re-navigation.
+  useEffect(() => {
+    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (prefersReduced) return
+
+    document.querySelectorAll('[data-reveal-scale]').forEach(el => {
+      const delay = parseFloat(el.dataset.revealScale) || 0
+      gsap.set(el, { scale: 0.85, transformOrigin: 'center center' })
+      gsap.to(el, { scale: 1, duration: 0.6, ease: 'circ.inOut', delay })
+    })
+  }, [])
+
   return (
     <>
       <Navbar />
@@ -42,7 +56,7 @@ export default function HomePage() {
               <div className="footer-left">
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfab-a7256e91" className="div-block-135">
                   <div className="footer--text">
-                    <div className="div-block-139">
+                    <div className="div-block-139" data-reveal-scale="0.05">
                       <Image
                         fill
                         priority
@@ -100,7 +114,7 @@ export default function HomePage() {
             </div>
             <div className="footer-wrap">
               <div className="div-block-148">
-                <a ref={mockupsBannerRef} style={{ backgroundColor: 'rgba(38,38,38,0.25)' }} href="https://www.motionmockups.com/" target="_blank" className="div-block-149 w-inline-block" data-cursor="Visit" data-cursor-icon="arrow">
+                <a ref={mockupsBannerRef} style={{ backgroundColor: 'rgba(38,38,38,0.25)' }} href="https://www.motionmockups.com/" target="_blank" className="div-block-149 w-inline-block" data-cursor="Visit" data-cursor-icon="arrow" data-reveal-scale="0.25">
                   <div id="w-node-_42e1a6b1-60e7-89d0-2ef5-bd4cb01f0209-a7256e91" className="div-block-151">
                     <div className="div-block-154">
                       <div className="div-block-150">
@@ -131,7 +145,7 @@ export default function HomePage() {
           </div>
           <div className="w-layout-blockcontainer container-3 header w-container">
             <div ref={gridRef} className="w-layout-grid main-proj-grid head" data-reveal-group="hero">
-              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91" href="/services/3d-environments" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
+              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91" href="/services/3d-environments" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal data-reveal-scale="0.5">
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
                     <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', backgroundColor: 'rgb(255,255,255)' }} className="button case">
@@ -148,7 +162,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4eae-a7256e91" href="/services/mixed-reality" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
+              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4eae-a7256e91" href="/services/mixed-reality" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal data-reveal-scale="0.75">
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
                     <div style={{ backgroundColor: 'rgb(255,255,255)', transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button case">

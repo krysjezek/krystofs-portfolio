@@ -392,6 +392,7 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | Vertical lines grow | 1.8s | `power1.out` | 0.2s, stagger 0.15s | — |
 | Horizontal liners grow | 1.8s | `power1.out` | 0.2s, stagger 0.15s | — |
 | Navbar slide-in | 0.5s | `circ.out` | 0.7s | — |
+| Scale-up entrance (`data-reveal-scale`) | 0.6s | `circ.inOut` | per-element (attribute value) | — |
 | Blur reveal (hero) | 0.4s | `none` (linear) | 0.05s (stagger 0.1s) | — |
 | Blur reveal (scroll) | 0.45s | `none` (linear) | stagger 0.1s | — |
 
@@ -483,10 +484,33 @@ Elements with `data-reveal` start at `filter: blur(6px)` and animate to `blur(0p
 |-----------|-------|----------|
 | `data-reveal` | (none) | Scroll-triggered blur reveal at 70% viewport |
 | `data-reveal` | `"hero"` | Page-load reveal (no scroll trigger, slightly faster) |
+| `data-reveal-scale` | `"<delay>"` | Scale-up entrance (0.85→1, `circ.inOut`, delay = attribute value in seconds) |
 | `data-reveal-group` | (none) | Scroll-triggered parent — children with `data-reveal` stagger row-by-row |
 | `data-reveal-group` | `"hero"` | Page-load parent — children stagger on mount |
 
-### 11d. Hero blur reveal (page load)
+### 11d. Scale-up entrance (page load)
+| | |
+|-|-|
+| **What** | Elements with `data-reveal-scale="<delay>"` scale from 0.85 → 1 on page load, each with its own delay |
+| **File** | `app/page.jsx` (dedicated `useEffect`) |
+| **Trigger** | Homepage mount (runs on every SPA re-navigation, not just hard refresh) |
+| **Target** | `[data-reveal-scale]` elements — delay read from `el.dataset.revealScale` |
+| **Properties** | `scale` 0.85 → 1, `transformOrigin: center center` |
+| **Duration / Easing** | 0.6s / `circ.inOut`, delay = attribute value (seconds) |
+| **Current targets** | |
+
+| Element | Selector | Delay |
+|---------|----------|-------|
+| Profile photo | `.div-block-139` | `0.05` |
+| Motion Mockups banner | `.div-block-149` | `0.25` |
+| 3D Environments card | `.proj-item` (hero grid, 1st) | `0.5` |
+| Mixed Reality card | `.proj-item` (hero grid, 2nd) | `0.75` |
+
+| | |
+|-|-|
+| **Notes** | Skipped when `prefers-reduced-motion: reduce`. Moved out of `useScrollReveal.js` to avoid MutationObserver timing issues on SPA navigation. To add a new scale-up target, add `data-reveal-scale="<delay>"` to the element — no JS changes needed. |
+
+### 11e. Hero blur reveal (page load)
 | | |
 |-|-|
 | **What** | Content blurs to sharp on page load |
@@ -496,7 +520,7 @@ Elements with `data-reveal` start at `filter: blur(6px)` and animate to `blur(0p
 | **Stagger** | 0.1s row-by-row (`grid: 'auto'`, `axis: 'y'`) when inside `data-reveal-group="hero"` |
 | **Lines** | 39–66 |
 
-### 11e. Scroll blur reveal (on-scroll)
+### 11f. Scroll blur reveal (on-scroll)
 | | |
 |-|-|
 | **What** | Content blurs to sharp when scrolled into viewport |
@@ -506,13 +530,13 @@ Elements with `data-reveal` start at `filter: blur(6px)` and animate to `blur(0p
 | **Stagger** | 0.1s row-by-row (`grid: 'auto'`, `axis: 'y'`) when inside `data-reveal-group` |
 | **Lines** | 68–112 |
 
-### 11f. Reduced motion
+### 11g. Reduced motion
 | | |
 |-|-|
 | **What** | Skips all animations — entrance, blur, everything. Content appears instantly. |
 | **Trigger** | `prefers-reduced-motion: reduce` media query |
 
-### 11g. SPA navigation
+### 11h. SPA navigation
 | | |
 |-|-|
 | **What** | MutationObserver re-scans for new `[data-reveal]` elements on DOM changes |
