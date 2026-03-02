@@ -3150,6 +3150,34 @@ body {
   display: flex;
 }
 
+[data-reveal] {
+  opacity: 0;
+}
+
+.background .vertical-line {
+  transform: scaleY(0);
+  transform-origin: top center;
+}
+
+.liner {
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.navbar {
+  transform: translateY(-100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal],
+  .background .vertical-line,
+  .liner,
+  .navbar {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @keyframes arrow-diagonal-in {
   0% {
     transform: translate(0);
