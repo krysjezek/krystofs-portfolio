@@ -4849,9 +4849,39 @@ body {
   position: absolute;
   inset: 0%;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity .25s ease;
 }
 
+.wrapper.services:hover .div-block-146,
+.wrapper.services:focus-within .div-block-146,
+.wrapper.services:active .div-block-146 {
+  opacity: 1;
+}
+
+.wrapper.services .label.services,
+.wrapper.services .services-name,
+.wrapper.services .service-heading,
+.wrapper.services .logo-service {
+  transform: translateY(8px);
+  transition: transform .25s ease;
+}
+
+.wrapper.services:hover .label.services,
+.wrapper.services:hover .services-name,
+.wrapper.services:hover .service-heading,
+.wrapper.services:hover .logo-service,
+.wrapper.services:focus-within .label.services,
+.wrapper.services:focus-within .services-name,
+.wrapper.services:focus-within .service-heading,
+.wrapper.services:focus-within .logo-service,
+.wrapper.services:active .label.services,
+.wrapper.services:active .services-name,
+.wrapper.services:active .service-heading,
+.wrapper.services:active .logo-service {
+  transform: translateY(0);
+}
 
 .logo-service {
   height: 15px;
