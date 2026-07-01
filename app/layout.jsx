@@ -36,7 +36,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${ibmPlexMono.variable} ${inter.variable} w-mod-js`} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com" />
         <link rel="preconnect" href="https://s3.amazonaws.com" />
@@ -47,11 +47,19 @@ export default function RootLayout({ children }) {
         <Script id="typekit-load" strategy="lazyOnload">{`
           try { Typekit.load(); } catch(e) {}
         `}</Script>
+        <Script id="webflow-touch-class" strategy="beforeInteractive">{`
+          (function(window, document) {
+            var html = document.documentElement;
+            if (('ontouchstart' in window) || (window.DocumentTouch && document instanceof window.DocumentTouch)) {
+              html.className += ' w-mod-touch';
+            }
+          })(window, document);
+        `}</Script>
 
         <link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/webclip.jpg" />
       </head>
-      <body>
+      <body className="body">
         <ClientCursor />
         <LinkLines />
         <ScrollReveal />
