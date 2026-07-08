@@ -10,7 +10,7 @@ function resolve(url) {
   return CDN + url
 }
 
-export default function EmbedVideo({ poster, srcH265, srcAv1, srcMp4, style, className }) {
+export default function EmbedVideo({ poster, posterAlt = '', srcH265, srcAv1, srcMp4, style, className, title }) {
   const { containerRef, videoRef, inView } = useVideoLazyLoad()
   const posterUrl = resolve(poster)
 
@@ -18,12 +18,13 @@ export default function EmbedVideo({ poster, srcH265, srcAv1, srcMp4, style, cla
     <div
       ref={containerRef}
       className={className}
+      aria-label={posterAlt || title || undefined}
       style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#000', width: '100%', height: '100%', ...style }}
     >
       {posterUrl && (
         <img
           src={posterUrl}
-          alt=""
+          alt={posterAlt}
           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'block', objectFit: 'cover' }}
         />
       )}

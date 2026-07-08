@@ -3380,6 +3380,7 @@ body {
 }
 
 .services-link {
+  appearance: none;
   border: 1px none var(--gray-0-08-opacity);
   background-color: var(--gray-light\<deleted\|variable-e283207c-8ca8-d25d-1e76-1e6278e7ab13\>);
   color: var(--white);
@@ -3390,7 +3391,10 @@ body {
   height: 100%;
   padding-left: 0;
   padding-right: 0;
+  font: inherit;
   text-decoration: none;
+  cursor: pointer;
+  width: 100%;
   display: flex;
 }
 

@@ -1,8 +1,11 @@
 import Script from 'next/script'
 import { IBM_Plex_Mono, Inter } from 'next/font/google'
 import ClientCursor from '@/components/ClientCursor'
+import JsonLd from '@/components/JsonLd'
 import LinkLines from '@/components/LinkLines'
 import ScrollReveal from '@/components/ScrollReveal'
+import VercelAnalytics from '@/components/VercelAnalytics'
+import { OG_IMAGE, OG_IMAGE_ALT, SITE_URL, pageSeo, siteStructuredData } from './seo'
 import '@/styles/normalize.css'
 import '@/styles/webflow.css'
 import '@/styles/krystofs-portfolio.webflow.scss'
@@ -22,15 +25,27 @@ const inter = Inter({
 })
 
 export const metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: 'Krystof Jezek, CGI Designer & Software Engineer',
     template: '%s — Krystof Jezek',
   },
-  description: 'I craft high-end 3D and motion visuals for brands and studios. When I\'m not designing, I\'m building apps and tools that bridge art and tech',
+  description: 'Krystof Jezek creates CGI advertising, 3D motion design, FOOH campaign visuals, mixed reality content, and product visualization for brands and studios.',
+  ...pageSeo('/'),
   openGraph: {
+    ...pageSeo('/').openGraph,
     type: 'website',
     siteName: 'Krystof Jezek',
     locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: [
+      {
+        url: OG_IMAGE,
+        alt: OG_IMAGE_ALT,
+      },
+    ],
   },
 }
 
@@ -61,9 +76,11 @@ export default function RootLayout({ children }) {
       </head>
       <body className="body">
         <ClientCursor />
+        <JsonLd data={siteStructuredData()} />
         <LinkLines />
         <ScrollReveal />
-{children}
+        {children}
+        <VercelAnalytics />
       </body>
     </html>
   )

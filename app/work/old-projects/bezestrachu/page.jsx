@@ -1,9 +1,12 @@
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
+import { pageSeo } from '../../../seo'
 
 export const metadata = {
   title: 'Bez Estrachu',
+  ...pageSeo('/work/old-projects/bezestrachu'),
   description: 'Design and motion work for Bez Estrachu',
 }
 
@@ -23,7 +26,7 @@ export default function Bezestrachu() {
       <div>
         <div className="work-header-wrap" data-reveal="hero">
           <div className="back-block">
-            <a href="/" className="button inverted-border w-button">Back to home</a>
+            <Link href="/" className="button inverted-border w-button">Back to home</Link>
           </div>
           <div>
             <div className="subheadline">Bezestrachu</div>
@@ -62,7 +65,7 @@ export default function Bezestrachu() {
             </p>
           </div>
           <div className="back-block">
-            <a href="/" className="button inverted-border w-button">Back to home</a>
+            <Link href="/" className="button inverted-border w-button">Back to home</Link>
           </div>
         </div>
       </div>

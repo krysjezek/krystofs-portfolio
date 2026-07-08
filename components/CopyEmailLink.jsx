@@ -1,5 +1,6 @@
 'use client'
 import { useRef } from 'react'
+import { track } from '@vercel/analytics'
 
 const EMAIL = 'krystof@jezek.me'
 
@@ -9,6 +10,7 @@ export default function CopyEmailButton({ className, children, unstyled }) {
 
   const handleClick = async () => {
     await navigator.clipboard.writeText(EMAIL)
+    track('contact_click', { method: 'email_copy', label: 'Copy Email' })
     copiedRef.current = true
 
     const btn = btnRef.current

@@ -1,11 +1,14 @@
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
+import { pageSeo } from '../../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export const metadata = {
   title: 'Dorian Drop II',
+  ...pageSeo('/work/old-projects/dorian-drop-ii'),
   description: '3D product visualization for Dorian Drop II',
 }
 
@@ -26,7 +29,7 @@ export default function DorianDropII() {
                     <h1 className="heading-h1">Official lyrics video</h1>
                   </div>
                   <div className="back-block">
-                    <a href="/" className="button inverted-border w-button">Back to home</a>
+                    <Link href="/" className="button inverted-border w-button">Back to home</Link>
                   </div>
                 </div>
                 <div className="div-block-55">

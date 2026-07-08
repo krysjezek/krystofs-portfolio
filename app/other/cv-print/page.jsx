@@ -1,7 +1,11 @@
+import { noIndex, pageSeo } from '../../seo'
+
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export const metadata = {
   title: 'CV Print',
+  ...pageSeo('/other/cv-print'),
+  ...noIndex,
   description: 'Printable CV of Kryštof Ježek',
 }
 
@@ -24,7 +28,7 @@ export default function CVPrintPage() {
                   </div>
                   <div className="div-block-125 cv">
                     <div className="div-block-90">
-                      <h1 className="label gray invert">/ 3D MOTION DESIGNER</h1>
+                      <p className="label gray invert">/ 3D MOTION DESIGNER</p>
                       <div className="div-block-59 cv">
                         <p className="paragraph cvhead">I am a 3D motion designer specializing in creating engaging 3D and 2D motion visuals, including CGI content, for brands, studios, and agencies worldwide. With a background in software engineering and design, I lead a skilled team to produce premium short-form content that generates millions of views annually.</p>
                         <a href="https://www.krystofjezek.com/" className="link invert cv">Portfolio: <span className="blue invert">krystofjezek.com</span></a>

@@ -3,12 +3,14 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WorkPageHeader from '@/components/WorkPageHeader'
 import BackgroundVideo from '@/components/BackgroundVideo'
+import { pageSeo } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export const metadata = {
   title: 'Barbour Quilt FOOH',
-  description: 'Fake out-of-home 3D campaign with cloth simulation for Barbour',
+  description: 'FOOH campaign and fake out-of-home CGI/VFX work with cloth simulation for Barbour Icons in Quilting.',
+  ...pageSeo('/work/barbour'),
 }
 
 export const dynamic = 'force-static'
@@ -107,36 +109,48 @@ export default function BarbourPage() {
                     <BackgroundVideo
                       className="background-video-16 barb"
                       poster="/videos/posters/Barbour---IiQ---Reconstruction-2---BTS---4x5.jpg"
+                      posterAlt="Barbour FOOH campaign CGI reconstruction behind-the-scenes"
+                      title="Barbour FOOH campaign CGI reconstruction breakdown"
                       srcMp4="/videos/h264/Barbour---IiQ---Reconstruction-2---BTS---4x5.mp4"
                       srcWebm="/videos/other/Barbour---IiQ---Reconstruction-2---BTS---4x5.webm"
                     />
                     <BackgroundVideo
                       className="background-video-16 barb"
                       poster="/videos/posters/Barbour---IiQ---Fern-03--BTS----4x5.jpg"
+                      posterAlt="Barbour FOOH campaign CGI nature detail behind-the-scenes"
+                      title="Barbour FOOH CGI nature detail breakdown"
                       srcMp4="/videos/h264/Barbour---IiQ---Fern-03--BTS----4x5.mp4"
                       srcWebm="/videos/other/Barbour---IiQ---Fern-03--BTS----4x5.webm"
                     />
                     <BackgroundVideo
                       className="background-video-16 barb"
                       poster="/videos/posters/Barbour---IiQ---Instant-Render-2---BTS----4x5.jpg"
+                      posterAlt="Barbour FOOH campaign instant render VFX breakdown"
+                      title="Barbour FOOH VFX render breakdown"
                       srcMp4="/videos/h264/Barbour---IiQ---Instant-Render-2---BTS----4x5.mp4"
                       srcWebm="/videos/other/Barbour---IiQ---Instant-Render-2---BTS----4x5.webm"
                     />
                     <BackgroundVideo
                       className="background-video-16 barb"
                       poster="/videos/posters/Barbour---IiQ---Nodes---BTS----4x5.jpg"
+                      posterAlt="Barbour FOOH campaign Houdini and CGI node setup"
+                      title="Barbour FOOH CGI node setup breakdown"
                       srcMp4="/videos/h264/Barbour---IiQ---Nodes---BTS----4x5.mp4"
                       srcWebm="/videos/other/Barbour---IiQ---Nodes---BTS----4x5.webm"
                     />
                     <BackgroundVideo
                       className="background-video-16 barb"
                       poster="/videos/posters/Barbour---IiQ---Bus---BTS----4x5_1.jpg"
+                      posterAlt="Barbour FOOH campaign bus scene VFX breakdown"
+                      title="Barbour FOOH bus scene CGI breakdown"
                       srcMp4="/videos/h264/Barbour---IiQ---Bus---BTS----4x5_1.mp4"
                       srcWebm="/videos/other/Barbour---IiQ---Bus---BTS----4x5_1.webm"
                     />
                     <BackgroundVideo
                       className="background-video-16 barb"
                       poster="/videos/posters/Barbour---IiQ---Fern-02--BTS----4x5.jpg"
+                      posterAlt="Barbour FOOH campaign fern simulation VFX breakdown"
+                      title="Barbour FOOH nature simulation breakdown"
                       srcMp4="/videos/h264/Barbour---IiQ---Fern-02--BTS----4x5.mp4"
                       srcWebm="/videos/other/Barbour---IiQ---Fern-02--BTS----4x5.webm"
                     />

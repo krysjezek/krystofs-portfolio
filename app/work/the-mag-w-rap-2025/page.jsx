@@ -3,12 +3,14 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WorkPageHeader from '@/components/WorkPageHeader'
 import EmbedVideo from '@/components/EmbedVideo'
+import { pageSeo } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export const metadata = {
   title: 'The Mag Wrap 2025',
-  description: 'Art direction, 3D, and motion design for The Mag Wrap 2025',
+  description: '3D motion design, art direction, broadcast graphics, and show visuals for The Mag Wrap 2025.',
+  ...pageSeo('/work/the-mag-w-rap-2025'),
 }
 
 export const dynamic = 'force-static'
@@ -81,6 +83,8 @@ export default function MagWrap2025Page() {
                 <div id="w-node-_4c251230-b2e3-f3ee-ddae-2d99f3c573c3-db1fcd0c" className="wrapper _2 wrap-inj" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_injektaz.jpg"
+                    posterAlt="The Mag Wrap 2025 3D motion design show injection graphic"
+                    title="The Mag Wrap 2025 show injection motion design"
                     srcH265="/videos/h265/w25_injektaz-web.mp4"
                     srcAv1="/videos/av1/w25_injektaz.webm"
                     srcMp4="/videos/h264/w25_injektaz-fallback.mp4"
@@ -89,6 +93,8 @@ export default function MagWrap2025Page() {
                 <div className="wrapper _2 wrap-bcgloop" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_loop_bcg.jpg"
+                    posterAlt="The Mag Wrap 2025 looping 3D motion design background"
+                    title="The Mag Wrap 2025 looping 3D background"
                     srcH265="/videos/h265/w25_loop_bcg-web.mp4"
                     srcAv1="/videos/av1/w25_loop_bcg.webm"
                     srcMp4="/videos/h264/w25_loop_bcg-fallback.mp4"
@@ -97,6 +103,8 @@ export default function MagWrap2025Page() {
                 <div id="w-node-_5584234e-0489-bfe9-d57b-ba83bde0ba51-db1fcd0c" className="wrapper _2 wrap-led1" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_ledka.jpg"
+                    posterAlt="The Mag Wrap 2025 LED screen motion graphics"
+                    title="The Mag Wrap 2025 LED show graphics"
                     srcH265="/videos/h265/w25_ledka-web.mp4"
                     srcAv1="/videos/av1/w25_ledka.webm"
                     srcMp4="/videos/h264/w25_ledka-fallback.mp4"
@@ -105,6 +113,8 @@ export default function MagWrap2025Page() {
                 <div id="w-node-_3d743965-0237-63a8-4ffb-3a3c5da996b1-db1fcd0c" className="wrapper _2 wrap-porotci" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_rytmus.jpg"
+                    posterAlt="The Mag Wrap 2025 broadcast motion graphic for judges"
+                    title="The Mag Wrap 2025 broadcast motion graphics"
                     srcH265="/videos/h265/w25_rytmus-web.mp4"
                     srcAv1="/videos/av1/w25_rytmus.webm"
                     srcMp4="/videos/h264/w25_rytmus-fallback.mp4"
@@ -113,6 +123,8 @@ export default function MagWrap2025Page() {
                 <div id="w-node-_2ae65b4e-b1c3-b187-f0ff-5cdc6e4a01d2-db1fcd0c" className="wrapper _2 wrap-aneta" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_aneta_greenscreen.jpg"
+                    posterAlt="The Mag Wrap 2025 greenscreen motion design asset"
+                    title="The Mag Wrap 2025 greenscreen show graphic"
                     srcH265="/videos/h265/w25_aneta_greenscreen-web.mp4"
                     srcAv1="/videos/av1/w25_aneta_greenscreen.webm"
                     srcMp4="/videos/h264/w25_aneta_greenscreen-fallback.mp4"
@@ -121,6 +133,8 @@ export default function MagWrap2025Page() {
                 <div id="w-node-f5d293d0-dcfd-35bf-7f48-20e63cc3518b-db1fcd0c" className="wrapper _2 wrap-jmenovka" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_nametag.jpg"
+                    posterAlt="The Mag Wrap 2025 name tag motion graphics template"
+                    title="The Mag Wrap 2025 name tag motion template"
                     srcH265="/videos/h265/w25_nametag-web.mp4"
                     srcMp4="/videos/h264/w25_nametag-fallback.mp4"
                   /></div>
@@ -128,6 +142,8 @@ export default function MagWrap2025Page() {
                 <div id="w-node-_99824595-c3f1-4207-c418-28701641ea34-db1fcd0c" className="wrapper _2 wrap-postup" data-reveal>
                   <div className="html-embed _2span w-embed"><EmbedVideo
                     poster="/videos/posters/w25_postupujici.jpg"
+                    posterAlt="The Mag Wrap 2025 standings and progression motion graphics"
+                    title="The Mag Wrap 2025 standings motion graphics"
                     srcH265="/videos/h265/w25_postupujici-web.mp4"
                     srcAv1="/videos/av1/w25_postupujici.webm"
                     srcMp4="/videos/h264/w25_postupujici-fallback.mp4"

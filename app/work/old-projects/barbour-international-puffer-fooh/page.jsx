@@ -1,11 +1,14 @@
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { pageSeo } from '../../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export const metadata = {
   title: 'Barbour International Puffer FOOH',
-  description: 'Fake out-of-home 3D campaign for Barbour International',
+  ...pageSeo('/work/old-projects/barbour-international-puffer-fooh'),
+  description: 'FOOH campaign and fake out-of-home CGI advertising visuals for Barbour International.',
 }
 
 export const dynamic = 'force-static'
@@ -25,11 +28,11 @@ export default function BarbourInternationalPufferFoohPage() {
                     <h1 className="heading-h1">Barbour International, Frasers Collaboration</h1>
                   </div>
                   <div className="back-block">
-                    <a href="/" className="button inverted-border w-button">Back to home</a>
+                    <Link href="/" className="button inverted-border w-button">Back to home</Link>
                   </div>
                 </div>
                 <p className="paragraph">
-                  <a href="https://monopo.london/" target="_blank" className="link green">Monopo London</a> invited us to work on a <a href="https://www.barbour.com/row/barbour-international-home.html" className="link green">Barbour International&#x27;s</a> launch film for its winter collaboration with <a href="https://www.houseoffraser.co.uk/" className="link green">Frasers</a>, putting the spotlight on the brand's signature black puffer jacket. Using high-fidelity cloth-simulation and full-CG look-development, we delivered a 15-second sequence in which the quilted shell inflates and wraps entire storefront façades—an eye-catching hero asset rolled out on in-store LED walls and social channels to kick-start the campaign.<br />
+                  <a href="https://monopo.london/" target="_blank" className="link green">Monopo London</a> invited us to work on a <a href="https://www.barbour.com/row/barbour-international-home.html" className="link green">Barbour International&#x27;s</a> launch film for its winter collaboration with <a href="https://www.houseoffraser.co.uk/" className="link green">Frasers</a>, putting the spotlight on the brand&apos;s signature black puffer jacket. Using high-fidelity cloth-simulation and full-CG look-development, we delivered a 15-second sequence in which the quilted shell inflates and wraps entire storefront façades—an eye-catching hero asset rolled out on in-store LED walls and social channels to kick-start the campaign.<br />
                 </p>
                 <div className="div-block-55"></div>
                 <div className="wotk-tags-links">

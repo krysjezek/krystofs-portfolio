@@ -1,8 +1,10 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { pageSeo } from '../../seo'
 
 export const metadata = {
   title: 'Join',
+  ...pageSeo('/other/join'),
   description: 'Collaborate with Kryštof Ježek on creative projects for top-tier brands',
 }
 

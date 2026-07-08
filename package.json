@@ -10,6 +10,7 @@
     "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "@vercel/blob": "^2.3.0",
     "gsap": "^3.14.2",
     "next": "16.1.6",

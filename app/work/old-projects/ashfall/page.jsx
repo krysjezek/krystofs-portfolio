@@ -1,10 +1,13 @@
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { pageSeo } from '../../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export const metadata = {
   title: 'Ashfall',
+  ...pageSeo('/work/old-projects/ashfall'),
   description: '3D and motion design project Ashfall',
 }
 
@@ -25,7 +28,7 @@ export default function AshfallPage() {
                     <h1 className="heading-h1">Custom Animated Mockups</h1>
                   </div>
                   <div className="back-block">
-                    <a href="/" className="button inverted-border w-button">Back to home</a>
+                    <Link href="/" className="button inverted-border w-button">Back to home</Link>
                   </div>
                 </div>
                 <div className="div-block-55">

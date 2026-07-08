@@ -1,8 +1,11 @@
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { pageSeo } from '../../../seo'
 
 export const metadata = {
   title: 'Apify Brand Video',
+  ...pageSeo('/work/old-projects/apify2'),
   description: 'Brand video and motion design for Apify Technologies',
 }
 
@@ -21,7 +24,7 @@ export default function Apify2Page() {
                 <h1 className="heading-h1">Web scraping platform</h1>
               </div>
               <div className="back-block">
-                <a href="/" className="button inverted-border w-button">Back to home</a>
+                <Link href="/" className="button inverted-border w-button">Back to home</Link>
               </div>
             </div>
             <div className="div-block-55">

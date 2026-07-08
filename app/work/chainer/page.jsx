@@ -3,12 +3,14 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WorkPageHeader from '@/components/WorkPageHeader'
 import BackgroundVideo from '@/components/BackgroundVideo'
+import { pageSeo } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export const metadata = {
   title: 'Chainer',
-  description: 'Art direction, 3D visualization, and web design for Chainer',
+  description: '3D product visualization, CGI product visuals, art direction, and web design for Chainer.',
+  ...pageSeo('/work/chainer'),
 }
 
 export const dynamic = 'force-static'
@@ -54,14 +56,16 @@ export default function ChainerPage() {
                     <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe src="https://player.vimeo.com/video/881397523?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Chainer Launch (2023)"></iframe></div>
                   </div>
                 </div>
-                <div id="w-node-e91308e9-5de3-e650-87d5-29a902701986-408b32ff" className="wrapper _15px" data-reveal><Image src={CDN + '/images/chainer-case-0.webp'} alt="" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
-                <div id="w-node-_9ecdf88a-464c-281d-0c30-4a797506c473-408b32ff" className="wrapper _15px" data-reveal><Image src={CDN + '/images/chainer-case-1.webp'} alt="" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
-                <div id="w-node-_71ac86c2-4e52-72c7-c2c2-84f37b830a25-408b32ff" className="wrapper _15px" data-reveal><Image src={CDN + '/images/chainer-case-2.webp'} alt="" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
-                <div id="w-node-_2727c3f7-6ba6-1380-b114-d7ed898bc73e-408b32ff" className="wrapper _15px" data-reveal><Image src={CDN + '/images/chainer-case-3-2.webp'} alt="" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-e91308e9-5de3-e650-87d5-29a902701986-408b32ff" className="wrapper _15px" data-reveal><Image src={CDN + '/images/chainer-case-0.webp'} alt="Chainer men's accessories art direction hero render" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-_9ecdf88a-464c-281d-0c30-4a797506c473-408b32ff" className="wrapper _15px" data-reveal><Image src={CDN + '/images/chainer-case-1.webp'} alt="Chainer jewelry 3D product scene" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-_71ac86c2-4e52-72c7-c2c2-84f37b830a25-408b32ff" className="wrapper _15px" data-reveal><Image src={CDN + '/images/chainer-case-2.webp'} alt="Chainer product visualization web design mockup" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-_2727c3f7-6ba6-1380-b114-d7ed898bc73e-408b32ff" className="wrapper _15px" data-reveal><Image src={CDN + '/images/chainer-case-3-2.webp'} alt="Chainer accessory campaign render" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
                 <div id="w-node-_4c251230-b2e3-f3ee-ddae-2d99f3c573c3-408b32ff" className="wrapper" data-reveal>
                   <BackgroundVideo
                     className="background-video-16"
                     poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-poster-00001.jpg"
+                    posterAlt="Chainer 3D product visualization and CGI jewelry launch visual"
+                    title="Chainer 3D product visualization launch visual"
                     srcMp4="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-transcode.mp4"
                     srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-transcode.webm"
                   />
@@ -69,9 +73,9 @@ export default function ChainerPage() {
                     <div className="text-18">Chainer Announcement</div>
                   </div>
                 </div>
-                <div id="w-node-_08c0a28a-3d0b-126c-c0c2-d6a5f01134b9-408b32ff" className="wrapper" data-reveal><Image src={CDN + '/images/chainer-case-3.webp'} alt="" width={2160} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
-                <div id="w-node-_178cae50-2153-96a2-59c8-1e45d308aea9-408b32ff" className="wrapper" data-reveal><Image src={CDN + '/images/chainer-case-4.webp'} alt="" width={2160} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
-                <div id="w-node-f28259de-0a08-34c9-16bf-1922c353cd72-408b32ff" className="wrapper" data-reveal><Image src={CDN + '/images/chainer-case-5.webp'} alt="" width={2160} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-_08c0a28a-3d0b-126c-c0c2-d6a5f01134b9-408b32ff" className="wrapper" data-reveal><Image src={CDN + '/images/chainer-case-3.webp'} alt="Chainer ring product visualization" width={2160} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-_178cae50-2153-96a2-59c8-1e45d308aea9-408b32ff" className="wrapper" data-reveal><Image src={CDN + '/images/chainer-case-4.webp'} alt="Chainer bracelet 3D product visualization" width={2160} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
+                <div id="w-node-f28259de-0a08-34c9-16bf-1922c353cd72-408b32ff" className="wrapper" data-reveal><Image src={CDN + '/images/chainer-case-5.webp'} alt="Chainer campaign visual detail" width={2160} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>
               </div>
             </div>
           </div>

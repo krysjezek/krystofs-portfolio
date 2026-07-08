@@ -16,16 +16,14 @@ const ICON_SIZES = { arrow: 10 }
 const DEFAULT_ICON_SIZE = 18
 
 export default function CustomCursor() {
-  const [isTouch, setIsTouch] = useState(false)
+  const [isTouch] = useState(() =>
+    typeof window !== 'undefined' ? window.matchMedia('(pointer: coarse)').matches : false
+  )
   const cursorRef = useRef(null)
   const imgRef = useRef(null)
   const pillRef = useRef(null)
   const labelRef = useRef(null)
   const iconRef = useRef(null)
-
-  useEffect(() => {
-    setIsTouch(window.matchMedia('(pointer: coarse)').matches)
-  }, [])
 
   useEffect(() => {
     if (isTouch) return

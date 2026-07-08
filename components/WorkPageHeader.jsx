@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function WorkPageHeader({ label, title, children, ...rest }) {
   return (
     <div className="work-header-wrap" {...rest}>
@@ -8,7 +10,7 @@ export default function WorkPageHeader({ label, title, children, ...rest }) {
             <h1 className="heading-h1">{title}</h1>
           </div>
           <div className="back-block">
-            <a href="/" className="button inverted-border w-button">Back to home</a>
+            <Link href="/" className="button inverted-border w-button">Back to home</Link>
           </div>
         </div>
         {children}

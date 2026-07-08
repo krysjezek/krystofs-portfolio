@@ -10,7 +10,7 @@ function resolve(url) {
   return CDN + url
 }
 
-export default function BackgroundVideo({ className, poster, srcH265, srcAv1, srcMp4, srcWebm, style }) {
+export default function BackgroundVideo({ className, poster, posterAlt = '', srcH265, srcAv1, srcMp4, srcWebm, style, title }) {
   const { containerRef, videoRef, inView } = useVideoLazyLoad()
   const p = resolve(poster)
   const mp4 = resolve(srcMp4)
@@ -24,9 +24,17 @@ export default function BackgroundVideo({ className, poster, srcH265, srcAv1, sr
       data-autoplay="true"
       data-loop="true"
       data-wf-ignore="true"
+      aria-label={posterAlt || title || undefined}
       className={`${className} w-background-video w-background-video-atom`}
       style={{ ...style, backgroundImage: p ? `url("${p}")` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}
     >
+      {p && posterAlt && (
+        <img
+          src={p}
+          alt={posterAlt}
+          style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0 0 0 0)', clipPath: 'inset(50%)', whiteSpace: 'nowrap' }}
+        />
+      )}
       {inView && (
         <video
           ref={videoRef}

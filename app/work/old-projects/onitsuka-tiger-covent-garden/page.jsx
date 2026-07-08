@@ -1,11 +1,14 @@
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import { pageSeo } from '../../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export const metadata = {
   title: 'Onitsuka Tiger Covent Garden',
-  description: 'Mixed reality experience for Onitsuka Tiger Covent Garden store',
+  ...pageSeo('/work/old-projects/onitsuka-tiger-covent-garden'),
+  description: 'Mixed reality CGI campaign visuals for the Onitsuka Tiger Covent Garden store opening.',
 }
 
 export const dynamic = 'force-static'
@@ -24,7 +27,7 @@ export default function OnitsukaTimerCoventGarden() {
                   <h1 className="heading-h1">Covent Garden Store Opening</h1>
                 </div>
                 <div className="back-block">
-                  <a href="/" className="button inverted-border w-button">Back to home</a>
+                  <Link href="/" className="button inverted-border w-button">Back to home</Link>
                 </div>
               </div>
               <p className="paragraph">

@@ -21,11 +21,9 @@ export default function HomePage() {
   const gridRef = useRef(null)
   const marqueeRef = useRef(null)
   const mockupsBannerRef = useRef(null)
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    setIsMobile(window.matchMedia('(max-width: 991px)').matches)
-  }, [])
+  const [isMobile] = useState(() =>
+    typeof window !== 'undefined' ? window.matchMedia('(max-width: 991px)').matches : false
+  )
 
   useServiceTabs()
   useCardTilt(gridRef)
@@ -104,7 +102,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfce-a7256e91" className="div-block-138">
-                  <a style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} href="https://calendly.com/krystofjezek/15min" target="_blank" className="button w-inline-block" data-cursor="Choose time.." data-cursor-icon="arrow">
+                  <a style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} href="https://calendly.com/krystofjezek/15min" target="_blank" rel="noopener noreferrer" className="button w-inline-block" data-cursor="Choose time.." data-cursor-icon="arrow">
                     <div className="text-block-18">Schedule a call</div>
                   </a>
                   <CopyEmailButton className="button inverted-border w-button">Get in touch</CopyEmailButton>
@@ -114,7 +112,7 @@ export default function HomePage() {
             </div>
             <div className="footer-wrap">
               <div className="div-block-148">
-                <a ref={mockupsBannerRef} style={{ backgroundColor: 'rgba(38,38,38,0.25)' }} href="https://www.motionmockups.com/" target="_blank" className="div-block-149 w-inline-block" data-cursor="Visit" data-cursor-icon="arrow" data-reveal-scale="0.25">
+                <a ref={mockupsBannerRef} style={{ backgroundColor: 'rgba(38,38,38,0.25)' }} href="https://www.motionmockups.com/" target="_blank" rel="noopener noreferrer" className="div-block-149 w-inline-block" data-cursor="Visit" data-cursor-icon="arrow" data-reveal-scale="0.25">
                   <div id="w-node-_42e1a6b1-60e7-89d0-2ef5-bd4cb01f0209-a7256e91" className="div-block-151">
                     <div className="div-block-154">
                       <div className="div-block-150">
@@ -123,19 +121,23 @@ export default function HomePage() {
                           <div className="label mini miniultra">New</div>
                         </div>
                       </div>
-                      <h1 className="label white">Collection of 8 video mockups.<br />Easy to use AE templates. 4K, all formats.<br /></h1>
+                      <h2 className="label white">Collection of 8 video mockups.<br />Easy to use AE templates. 4K, all formats.<br /></h2>
                     </div>
                     <div className="div-block-153">
-                      <h1 className="label">motionmockups.com</h1><Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={10} height={10} unoptimized className="image-20 smaller" />
+                      <h2 className="label">motionmockups.com</h2><Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={10} height={10} unoptimized className="image-20 smaller" />
                     </div>
                   </div>
                   <div id="w-node-_1ced7a6b-e1d3-ec40-248f-ca4885de56d5-a7256e91" className="div-block-152">
                     {!isMobile && <div className="code-embed w-embed"><EmbedVideo
                       poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69944082d88aed7c8242c463_Comp%201%20(0-00-00-00).png"
+                      posterAlt="Motion Mockups video template collection preview"
+                      title="Motion Mockups video mockup collection"
                       srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/6994449789efbe463813c5f2_web-video-2k.mp4"
                     /></div>}
                     {isMobile && <div className="code-embed mobile w-embed"><EmbedVideo
                       poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69944804e0ecbc47b70b6bea_Comp%202%20(0-00-00-00).png"
+                      posterAlt="Motion Mockups mobile video template preview"
+                      title="Motion Mockups mobile video mockup collection"
                       srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/699447a96279cd427dd46294_web-video-mobile.mp4"
                     /></div>}
                   </div>
@@ -155,6 +157,8 @@ export default function HomePage() {
                   <div className="div-block-66">
                     <div className="cb w-embed"><EmbedVideo
                       poster="/videos/posters/cgi-environments.jpg"
+                      posterAlt="CGI 3D environments service reel preview"
+                      title="CGI and 3D environments portfolio reel"
                       srcH265="/videos/h265/cgi-environments-web.mp4"
                       srcAv1="/videos/av1/cgi-environments.webm"
                       srcMp4="/videos/h264/cgi-environments-fallback.mp4"
@@ -172,6 +176,8 @@ export default function HomePage() {
                   <div className="div-block-66">
                     <div className="cb w-embed"><EmbedVideo
                       poster="/videos/posters/mixed-reality.jpg"
+                      posterAlt="Mixed reality and FOOH-style CGI campaign reel preview"
+                      title="Mixed reality CGI campaign reel"
                       srcH265="/videos/h265/mixed-reality-web.mp4"
                       srcAv1="/videos/av1/mixed-reality.webm"
                       srcMp4="/videos/h264/mixed-reality-fallback.mp4"
@@ -183,20 +189,20 @@ export default function HomePage() {
             <div className="main-hero-second">
               <div className="outer-container">
                 <div ref={marqueeRef} className="logo-marquee-track">
-                  <Image src={CDN + '/images/vs-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo anna" />
-                  <Image src={CDN + '/images/coinbase-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo slightly" />
-                  <Image src={CDN + '/images/yonex-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo" />
-                  <Image src={CDN + '/images/barbour.png'} alt="" width={100} height={20} className="client-logo barbout" />
-                  <Image src={CDN + '/images/onitsuka-tiger-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo tiger" />
-                  <Image src={CDN + '/images/monopoly-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo larger" />
-                  <Image src={CDN + '/images/vodafone-logo-horiz-rgb-white.png'} alt="" width={4908} height={1224} className="client-logo voda" />
-                  <Image src={CDN + '/images/kfc-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo _26-copy" />
+                  <Image src={CDN + '/images/vs-logo.svg'} alt="Victoria's Secret logo" width={100} height={20} unoptimized className="client-logo anna" />
+                  <Image src={CDN + '/images/coinbase-logo.svg'} alt="Coinbase logo" width={100} height={20} unoptimized className="client-logo slightly" />
+                  <Image src={CDN + '/images/yonex-logo.svg'} alt="Yonex logo" width={100} height={20} unoptimized className="client-logo" />
+                  <Image src={CDN + '/images/barbour.png'} alt="Barbour logo" width={100} height={20} className="client-logo barbout" />
+                  <Image src={CDN + '/images/onitsuka-tiger-logo.svg'} alt="Onitsuka Tiger logo" width={100} height={20} unoptimized className="client-logo tiger" />
+                  <Image src={CDN + '/images/monopoly-logo.svg'} alt="Monopoly logo" width={100} height={20} unoptimized className="client-logo larger" />
+                  <Image src={CDN + '/images/vodafone-logo-horiz-rgb-white.png'} alt="Vodafone logo" width={4908} height={1224} className="client-logo voda" />
+                  <Image src={CDN + '/images/kfc-logo.svg'} alt="KFC logo" width={100} height={20} unoptimized className="client-logo _26-copy" />
 
-                  <Image src={CDN + '/images/vsx-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo vsx" />
-                  <Image src={CDN + '/images/trezor-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo badlod" />
-                  <Image src={CDN + '/images/frasers-logo-1-1.svg'} alt="" width={100} height={20} unoptimized className="client-logo orum" />
-                  <Image src={CDN + '/images/jnt.png'} alt="" width={512} height={512} className="client-logo jnt" />
-                  <Image src={CDN + '/images/fini.png'} alt="" width={1280} height={640} className="client-logo fini" />
+                  <Image src={CDN + '/images/vsx-logo.svg'} alt="VSX logo" width={100} height={20} unoptimized className="client-logo vsx" />
+                  <Image src={CDN + '/images/trezor-1.svg'} alt="Trezor logo" width={100} height={20} unoptimized className="client-logo badlod" />
+                  <Image src={CDN + '/images/frasers-logo-1-1.svg'} alt="Frasers logo" width={100} height={20} unoptimized className="client-logo orum" />
+                  <Image src={CDN + '/images/jnt.png'} alt="JNT logo" width={512} height={512} className="client-logo jnt" />
+                  <Image src={CDN + '/images/fini.png'} alt="Fini logo" width={1280} height={640} className="client-logo fini" />
                   {/* Duplicate set for seamless loop */}
                   <Image src={CDN + '/images/vs-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo anna" />
                   <Image src={CDN + '/images/coinbase-logo.svg'} alt="" width={100} height={20} unoptimized className="client-logo slightly" />
@@ -219,64 +225,66 @@ export default function HomePage() {
         </section>
         <div className="main-featured" data-reveal>
           <div className="featured-carousel">
-            <div className="featured-block archviz"><Image fill src={CDN + '/images/niacid.webp'} alt="" style={{ objectFit: 'cover' }} sizes="100vw" /></div>
+            <div className="featured-block archviz"><Image fill src={CDN + '/images/niacid.webp'} alt="3D cosmetic product visualization" style={{ objectFit: 'cover' }} sizes="100vw" /></div>
             <div className="featured-block maison">
               <BackgroundVideo className="background-video-22"
                 poster="/videos/posters/davinci-render2.jpg"
+                posterAlt="CGI product visualization motion render preview"
+                title="CGI product visualization motion render"
                 srcMp4="/videos/h264/davinci-render2.mp4"
                 srcWebm="/videos/other/davinci-render2.webm"
               />
             </div>
-            <div className="featured-block ashfall"><Image fill src={CDN + '/images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp'} alt="" style={{ objectFit: 'cover' }} sizes="100vw" /></div>
-            <div className="featured-block archviz2"><Image fill src={CDN + '/images/can-v3.webp'} alt="" style={{ objectFit: 'cover' }} sizes="100vw" /></div>
-            <div className="featured-block"><Image fill src={CDN + '/images/fragrance-3.webp'} alt="" style={{ objectFit: 'cover' }} sizes="100vw" /></div>
+            <div className="featured-block ashfall"><Image fill src={CDN + '/images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp'} alt="Red abstract 3D ring render" style={{ objectFit: 'cover' }} sizes="100vw" /></div>
+            <div className="featured-block archviz2"><Image fill src={CDN + '/images/can-v3.webp'} alt="3D beverage can product render" style={{ objectFit: 'cover' }} sizes="100vw" /></div>
+            <div className="featured-block"><Image fill src={CDN + '/images/fragrance-3.webp'} alt="3D fragrance bottle render" style={{ objectFit: 'cover' }} sizes="100vw" /></div>
           </div>
         </div>
 
         <div className="main-services" data-reveal>
-          <h1 className="heading-3">Benefits of 3D and Motion</h1>
+          <h2 className="heading-3">Benefits of 3D and Motion</h2>
           <div className="div-block-100">
             <div className="div-block-96">
               <ul role="list" className="list-3 w-list-unstyled">
                 <li className="list-item-5">
-                  <a id="b1" href="#" className="services-link selected w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
+                  <button id="b1" type="button" className="services-link selected w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Engage audiences</div>
                         <div className="services-heading">Engage audiences</div>
                       </div>
                     </div>
-                  </a>
+                  </button>
                 </li>
                 <li className="list-item-2">
-                  <a id="b2" href="#" className="services-link w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
+                  <button id="b2" type="button" className="services-link w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Showcase products</div>
                         <div className="services-heading">Showcase products</div>
                       </div>
                     </div>
-                  </a>
+                  </button>
                 </li>
                 <li className="list-item-3">
-                  <a id="b3" href="#" className="services-link w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
+                  <button id="b3" type="button" className="services-link w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Streamline Iterations</div>
                         <div className="services-heading">Streamline Iterations</div>
                       </div>
                     </div>
-                  </a>
+                  </button>
                 </li>
                 <li className="list-item-4">
-                  <a id="b4" href="#" className="services-link w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
+                  <button id="b4" type="button" className="services-link w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
                         <div className="services-heading">Educate Customers</div>
                         <div className="services-heading">Educate Customers</div>
                       </div>
                     </div>
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>
@@ -285,34 +293,34 @@ export default function HomePage() {
                 <div className="services-heading large">Showcase products</div>
                 <p className="paragraph smaller">Present your products in dynamic, detailed views that traditional photos and videos can&#x27;t match.</p>
               </div>
-              <div className="div-block-97 _2"><Image fill src={CDN + '/images/untitled.2png-min.png'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
+              <div className="div-block-97 _2"><Image fill src={CDN + '/images/untitled.2png-min.png'} alt="3D product showcase visual" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
             </main>
             <div id="serv4" className="div-block-95 none">
               <div className="div-block-98">
                 <div className="services-heading large">Educate Customers</div>
                 <p className="paragraph smaller">Creative animations effectively break down complex information, making learning both engaging and memorable.</p>
               </div>
-              <div className="div-block-97 _4"><Image fill src={CDN + '/images/chainer-case-4.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
+              <div className="div-block-97 _4"><Image fill src={CDN + '/images/chainer-case-4.webp'} alt="Chainer 3D product visualization" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
             </div>
             <div id="serv3" className="div-block-95 none">
               <div className="div-block-98">
                 <div className="services-heading large">Streamline Iterations</div>
                 <p className="paragraph smaller">With your product modeled and textured, iterating becomes quick and cost-effective. Adjust angles, animations, and environment without the need for a new photo shoot.</p>
               </div>
-              <div className="div-block-97 _3"><Image fill src={CDN + '/images/kunaj-sklo-preview-2-min-ezgif.com-png-to-webp-converter.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
+              <div className="div-block-97 _3"><Image fill src={CDN + '/images/kunaj-sklo-preview-2-min-ezgif.com-png-to-webp-converter.webp'} alt="Iterative 3D glass product preview" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
             </div>
             <div id="serv1" className="div-block-95">
               <div className="div-block-98">
                 <div className="services-heading large">Engage audiences</div>
                 <p className="paragraph smaller">In the quick-scroll world of digital media, striking visuals are key to catching a consumer&#x27;s eye. Enhanced with 3D and motion designs, your content stands a better chance of grabbing attention.</p>
               </div>
-              <div className="div-block-97"><Image fill unoptimized src={CDN + '/images/ezgif.com-animated-gif-maker-4.gif'} loading="lazy" alt="" className="image-26" style={{ objectFit: 'cover' }} /></div>
+              <div className="div-block-97"><Image fill unoptimized src={CDN + '/images/ezgif.com-animated-gif-maker-4.gif'} loading="lazy" alt="Animated 3D motion design example" className="image-26" style={{ objectFit: 'cover' }} /></div>
             </div>
           </div>
         </div>
         <section id="main-projects" className="main-projects">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <h1 className="heading-2">Recent Case Studies</h1>
+            <h2 className="heading-2">Recent Case Studies</h2>
             <div className="w-layout-grid main-proj-grid" data-reveal-group>
               <a id="w-node-_0a0f2415-0cbe-189d-07e1-6388208cf7e6-a7256e91" href="/work/the-mag-w-rap-2025" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
                 <div className="proj-img-wrap">
@@ -342,11 +350,13 @@ export default function HomePage() {
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="background-video-18 w-embed"><EmbedVideo
                       poster="/videos/posters/wrap_header.jpg"
+                      posterAlt="The Mag Wrap 2025 3D motion design case study preview"
+                      title="The Mag Wrap 2025 3D motion design package"
                       srcH265="/videos/h265/wrap_header-web.mp4"
                       srcAv1="/videos/av1/wrap_header.webm"
                       srcMp4="/videos/h264/wrap_header-fallback.mp4"
                     /></div>
-                    <div className="proj-img wrap25"><Image fill src={CDN + '/images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
+                    <div className="proj-img wrap25"><Image fill src={CDN + '/images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp'} alt="The Mag Wrap 2025 case study preview" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
@@ -373,10 +383,12 @@ export default function HomePage() {
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="background-video-18 w-embed"><EmbedVideo
                       poster="/videos/posters/barbour_header.jpg"
+                      posterAlt="Barbour Icons in Quilting FOOH campaign preview"
+                      title="Barbour FOOH campaign CGI/VFX preview"
                       srcH265="/videos/h265/barbour_header-web.mp4"
                       srcMp4="/videos/h264/barbour_header-fallback.mp4"
                     /></div>
-                    <div className="proj-img barbour"><Image fill src={CDN + '/images/Barbour-Header-HP2.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
+                    <div className="proj-img barbour"><Image fill src={CDN + '/images/Barbour-Header-HP2.webp'} alt="Barbour Quilt FOOH case study preview" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
@@ -385,11 +397,13 @@ export default function HomePage() {
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="background-video-18 w-embed"><EmbedVideo
                       poster="/videos/posters/vsx_header.jpg"
+                      posterAlt="The VSX Sports Bra 3D product visualization preview"
+                      title="The VSX Sports Bra CGI product animation preview"
                       srcH265="/videos/h265/vsx_header-web.mp4"
                       srcAv1="/videos/av1/vsx_header.webm"
                       srcMp4="/videos/h264/vsx_header-fallback.mp4"
                     /></div>
-                    <div className="proj-img vsx"><Image fill src={CDN + '/images/16x9thumb-ezgif.com-png-to-webp-converter.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
+                    <div className="proj-img vsx"><Image fill src={CDN + '/images/16x9thumb-ezgif.com-png-to-webp-converter.webp'} alt="The VSX Sports Bra case study preview" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                   <div className="div-block-99">
                     <div className="wrappedtext">
@@ -439,10 +453,12 @@ export default function HomePage() {
                   <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
                     <div className="background-video-18 w-embed"><EmbedVideo
                       poster="/videos/posters/chainer_header.jpg"
+                      posterAlt="Chainer 3D product visualization and web design case study preview"
+                      title="Chainer 3D product visualization preview"
                       srcH265="/videos/h265/chainer_header-web.mp4"
                       srcMp4="/videos/h264/chainer_header-fallback.mp4"
                     /></div>
-                    <div className="proj-img"><Image fill src={CDN + '/images/Chainer-Header-HP.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
+                    <div className="proj-img"><Image fill src={CDN + '/images/Chainer-Header-HP.webp'} alt="Chainer case study preview" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
                   </div>
                 </div>
               </a>
@@ -452,29 +468,29 @@ export default function HomePage() {
         </section>
         <section id="snapshots" className="main-snapshots">
           <div className="snapshots-wrap">
-            <h1 className="heading-2">R&amp;D</h1>
+            <h2 className="heading-2">R&amp;D</h2>
             <div className="w-layout-grid snapshots-grid" data-reveal-group>
               <div id="w-node-a99893c8-7a95-570f-74fb-4a4430edba87-a7256e91" className="snapshot-cover" data-reveal>
-                <div className="snapshot-img _2"><Image fill src={CDN + '/images/fragrance-3.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
+                <div className="snapshot-img _2"><Image fill src={CDN + '/images/fragrance-3.webp'} alt="Fragrance bottle 3D research render" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
               <div id="w-node-f6c05c63-8807-5c35-fd3d-79967d9a78b5-a7256e91" className="snapshot-cover" data-reveal>
-                <div className="snapshot-img _3"><Image fill src={CDN + '/images/container3.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
+                <div className="snapshot-img _3"><Image fill src={CDN + '/images/container3.webp'} alt="Industrial 3D environment research render" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
               <div id="w-node-dad5dac9-b366-df48-a450-723abb21c63e-a7256e91" className="snapshot-cover" data-reveal>
-                <div className="snapshot-img _6"><Image fill src={CDN + '/images/niacid.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
+                <div className="snapshot-img _6"><Image fill src={CDN + '/images/niacid.webp'} alt="Skincare product 3D research render" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
               <div id="w-node-b575eaa3-7424-2bce-75f7-6d5fa1bbc967-a7256e91" className="snapshot-cover" data-reveal>
-                <div className="snapshot-img _1"><Image fill src={CDN + '/images/final-min-5.png'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
+                <div className="snapshot-img _1"><Image fill src={CDN + '/images/final-min-5.png'} alt="Abstract 3D motion research render" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
               <div id="w-node-aa034c7d-cfea-c763-d292-2857be8f653b-a7256e91" className="snapshot-cover" data-reveal>
-                <div className="snapshot-img _4"><Image fill src={CDN + '/images/maisoncrivelli.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
+                <div className="snapshot-img _4"><Image fill src={CDN + '/images/maisoncrivelli.webp'} alt="Maison Crivelli-inspired 3D product render" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 50vw, 33vw" /></div>
               </div>
               <div id="w-node-c81a9b1c-2467-5bfd-bc49-b29a607d269e-a7256e91" className="snapshot-cover hori" data-reveal>
-                <div className="snapshot-img _5"><Image fill src={CDN + '/images/ezgif.com-resize.webp'} alt="" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 66vw" /></div>
+                <div className="snapshot-img _5"><Image fill src={CDN + '/images/ezgif.com-resize.webp'} alt="Wide 3D motion research render" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 66vw" /></div>
               </div>
             </div>
             <div className="div-block-58">
-              <a href="https://www.instagram.com/krystof.jezek/" style={{ color: 'rgba(255,255,255,0.5)' }} target="_blank" className="nav-button">See more work on Instagram</a>
+              <a href="https://www.instagram.com/krystof.jezek/" style={{ color: 'rgba(255,255,255,0.5)' }} target="_blank" rel="noopener noreferrer" className="nav-button">See more work on Instagram</a>
             </div>
           </div>
         </section>
@@ -482,7 +498,7 @@ export default function HomePage() {
           <div className="w-layout-blockcontainer container-3 w-container">
             <div className="div-block-92">
               <div className="div-block-94">
-                <h1 className="heading-2 no-margin">Tech Projects</h1>
+                <h2 className="heading-2 no-margin">Tech Projects</h2>
               </div>
             </div>
             <div className="div-block-66 grid" data-reveal-group>
@@ -501,8 +517,8 @@ export default function HomePage() {
                     <h2 className="proj-heading nopos">My Own Ray Tracing Render Engine in C++</h2>
                   </div>
                 </div>
-                <a href="#" className="github-button w-inline-block">
-                  <div>Github</div><Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={8} height={8} unoptimized className="github" />
+                <a href="https://gitlab.fel.cvut.cz/jezekkr2/pcc-ray-tracing" target="_blank" rel="noopener noreferrer" className="github-button w-inline-block">
+                  <div>GitLab</div><Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={8} height={8} unoptimized className="github" />
                 </a>
                 <div className="cb w-embed"><EmbedVideo
                   poster="/videos/posters/coding-01.jpg"
@@ -528,7 +544,7 @@ export default function HomePage() {
                     <h2 className="proj-heading nopos">Relive AR - WebGL Platform for AR/VR Experiences</h2>
                   </div>
                 </div>
-                <a href="https://www.instagram.com/relive.ar/" target="_blank" className="github-button w-inline-block">
+                <a href="https://www.instagram.com/relive.ar/" target="_blank" rel="noopener noreferrer" className="github-button w-inline-block">
                   <div>Instagram</div><Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={8} height={8} unoptimized className="github" />
                 </a>
                 <div className="cb w-embed"><EmbedVideo
@@ -556,7 +572,7 @@ export default function HomePage() {
                     <h2 className="proj-heading nopos">Video Processing Backend for Mockup Templates</h2>
                   </div>
                 </div>
-                <a href="https://github.com/krysjezek/video-process-backend" target="_blank" className="github-button w-inline-block">
+                <a href="https://github.com/krysjezek/video-process-backend" target="_blank" rel="noopener noreferrer" className="github-button w-inline-block">
                   <div>Github</div><Image src={CDN + '/images/arrow-leftup.svg'} alt="" width={8} height={8} unoptimized className="github" />
                 </a>
                 <div className="cb w-embed"><EmbedVideo
@@ -571,7 +587,7 @@ export default function HomePage() {
         </section>
         <section id="main-projects" className="main-resume" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
-            <h1 className="heading-2 pad">About me</h1>
+            <h2 className="heading-2 pad">About me</h2>
             <div className="div-block-141">
               <div className="div-block-143 top">
                 <p className="paragraph">Designer, Creator, and Problem Solver.</p>
@@ -599,7 +615,7 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-e92b1f06-779b-ab8e-7226-54032dc56be0-a7256e91" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><Image src={CDN + '/images/yiskra_studio_logo.jpeg'} alt="" width={40} height={40} className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/yiskra_studio_logo.jpeg'} alt="Yiskra Studio logo" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Yiskra Studio</p>
                   </div>
                   <div className="div-block-143">
@@ -612,7 +628,7 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-_5a64a6dc-8158-3455-90ea-a07fb5ab6da6-a7256e91" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><Image src={CDN + '/images/1753950309864.jpg'} alt="" width={40} height={40} className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/1753950309864.jpg'} alt="ProductionBot logo" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">ProductionBot</p>
                   </div>
                   <div className="div-block-143">
@@ -625,7 +641,7 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-cfae6f7e-0e09-b8ee-2167-a4c788945abe-a7256e91" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><Image src={CDN + '/images/relive.png'} alt="" width={40} height={40} className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/relive.png'} alt="Relive AR logo" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Relive AR</p>
                   </div>
                   <div className="div-block-143">
@@ -638,7 +654,7 @@ export default function HomePage() {
                 </div>
                 <div className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><Image src={CDN + '/images/1631366714918.jpeg'} alt="" width={40} height={40} className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/1631366714918.jpeg'} alt="Growthcurve logo" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Growthcurve</p>
                   </div>
                   <div className="div-block-143">
@@ -651,7 +667,7 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-_6023291a-8637-8489-7555-d076ce0a4cdc-a7256e91" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><Image src={CDN + '/images/apify_logo.jpeg'} alt="" width={40} height={40} className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/apify_logo.jpeg'} alt="Apify Technologies logo" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Apify Technologies</p>
                   </div>
                   <div className="div-block-143">
@@ -664,7 +680,7 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-_1cb748ed-e5bd-0608-0052-a71053df4e13-a7256e91" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><Image src={CDN + '/images/glami-logo.jpg'} alt="" width={40} height={40} className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/glami-logo.jpg'} alt="Glami logo" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Glami</p>
                   </div>
                   <div className="div-block-143">
@@ -678,7 +694,7 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-cf7ea84b-e864-21d3-c56e-f196d3a9034d-a7256e91" className="postion">
                   <div className="div-block-143">
-                    <div className="div-block-144"><Image src={CDN + '/images/cvutlogo-2.png'} alt="" width={40} height={40} className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/cvutlogo-2.png'} alt="Czech Technical University logo" width={40} height={40} className="image-32" /></div>
                     <p className="paragraph">Czech Technical University</p>
                   </div>
                   <div className="div-block-143">

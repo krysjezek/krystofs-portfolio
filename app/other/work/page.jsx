@@ -2,11 +2,13 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
 import Image from 'next/image'
+import { pageSeo } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export const metadata = {
   title: 'Work',
+  ...pageSeo('/other/work'),
   description: 'Selected work and case studies by Kryštof Ježek',
 }
 

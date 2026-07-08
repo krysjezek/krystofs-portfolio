@@ -1,11 +1,14 @@
+import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
+import { pageSeo } from '../../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export const metadata = {
   title: 'Apify',
+  ...pageSeo('/work/old-projects/apify'),
   description: 'Design and motion work for Apify Technologies',
 }
 
@@ -25,7 +28,7 @@ export default function ApifyPage() {
       <div>
         <div className="work-header-wrap" data-reveal="hero">
           <div className="back-block">
-            <a href="/" className="button inverted-border w-button">Back to home</a>
+            <Link href="/" className="button inverted-border w-button">Back to home</Link>
           </div>
           <div>
             <div className="subheadline">Apify</div>
@@ -47,7 +50,7 @@ export default function ApifyPage() {
         </div>
         <div className="work-header-wrap">
           <div className="back-block">
-            <a href="/" className="button inverted-border w-button">Back to home</a>
+            <Link href="/" className="button inverted-border w-button">Back to home</Link>
           </div>
         </div>
       </div>
