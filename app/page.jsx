@@ -723,7 +723,7 @@ export default function HomePage() {
                     </a>
                   </div>
                   <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2026-06">06/26</time>
+                    <time className="paragraph dates" dateTime="2026-06">June 2026</time>
                   </div>
                 </div>
                 <div className="recognition-row">
@@ -737,7 +737,7 @@ export default function HomePage() {
                     </a>
                   </div>
                   <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2025-02">02/25</time>
+                    <time className="paragraph dates" dateTime="2025-02">February 2025</time>
                   </div>
                 </div>
                 <div className="recognition-row">
@@ -751,7 +751,7 @@ export default function HomePage() {
                     </a>
                   </div>
                   <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2023-09">09/23</time>
+                    <time className="paragraph dates" dateTime="2023-09">September 2023</time>
                   </div>
                 </div>
               </div>
