@@ -821,7 +821,7 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://www.linkedin.com/favicon.ico)' }} aria-hidden="true"></span>
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(/3d-art-academy-linkedin.jpg)' }} aria-hidden="true"></span>
                     <p className="paragraph">3D Art Academy</p>
                   </div>
                   <div className="div-block-143">
@@ -875,7 +875,7 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://www.linkedin.com/favicon.ico)' }} aria-hidden="true"></span>
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(/lucas-miller-linkedin.jpg)' }} aria-hidden="true"></span>
                     <p className="paragraph">Lucas Miller</p>
                   </div>
                   <div className="div-block-143">
