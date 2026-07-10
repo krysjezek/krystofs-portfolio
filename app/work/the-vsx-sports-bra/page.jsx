@@ -240,7 +240,7 @@ export default function VSXSportsBraPage() {
           <div className="w-layout-blockcontainer container-3 nopad w-container">
             <div className="div-block-141 credits case-study">
               <div className="div-block-143 top">
-                <p className="label">Case Study</p>
+                <h2 className="case-study-heading">Case Study</h2>
               </div>
               <div className="div-block-135 nomarg"></div>
               <div className="case-study-grid">
