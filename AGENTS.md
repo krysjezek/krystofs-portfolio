@@ -36,6 +36,12 @@ Route groups worth knowing:
 
 ## Local workflow
 
+For UI or visual work, start the local server early and leave it running so the user can inspect changes at `http://localhost:3000` while you work. Do not start a duplicate server if port 3000 is already in use. A compact background launch command is:
+
+```powershell
+Start-Process npm.cmd -ArgumentList 'run','dev' -WindowStyle Hidden
+```
+
 ```powershell
 npm.cmd ci
 npm.cmd run dev
