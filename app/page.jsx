@@ -319,7 +319,7 @@ export default function HomePage() {
             <div className="div-block-92">
               <div className="div-block-94">
                 <h2 className="heading-2 nomargin">Selected Work</h2>
-                <p className="paragraph header">3D environments are my main focus now, but I didn&#x27;t get there through one straight path. These projects show the mix of art direction, motion, simulation and product work that shaped how I approach them.</p>
+                <p className="paragraph header section-context">3D environments are my main focus now, but I didn&#x27;t get there through one straight path. These projects show the mix of art direction, motion, simulation and product work that shaped how I approach them.</p>
               </div>
             </div>
             <div className="w-layout-grid main-proj-grid" data-reveal-group>
@@ -500,7 +500,7 @@ export default function HomePage() {
             <div className="div-block-92">
               <div className="div-block-94">
                 <h2 className="heading-2 no-margin">Tech Projects</h2>
-                <p className="paragraph header">I also build software and creative tools. These projects explore rendering, WebGL and video automation, and often feed back into my visual work.</p>
+                <p className="paragraph header section-context">I also build software and creative tools. These projects explore rendering, WebGL and video automation, and often feed back into my visual work.</p>
               </div>
             </div>
             <div className="div-block-66 grid" data-reveal-group>
