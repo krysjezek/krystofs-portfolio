@@ -4797,6 +4797,7 @@ body {
 .case-study-grid {
   grid-column: 1 / -1;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
   padding-bottom: var(--default-space);
   display: grid;
 }
@@ -4809,6 +4810,7 @@ body {
 }
 
 .case-study-column .div-block-143 {
+  margin: 0;
   padding-right: var(--default-space);
 }
 

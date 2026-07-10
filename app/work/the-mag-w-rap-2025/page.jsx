@@ -3,14 +3,16 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WorkPageHeader from '@/components/WorkPageHeader'
 import EmbedVideo from '@/components/EmbedVideo'
-import { pageSeo } from '../../seo'
+import JsonLd from '@/components/JsonLd'
+import { pageSeo, pageStructuredData } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+const PATH = '/work/the-mag-w-rap-2025'
 
 export const metadata = {
   title: 'The Mag Wrap 2025',
   description: '3D motion design, art direction, broadcast graphics, and show visuals for The Mag Wrap 2025.',
-  ...pageSeo('/work/the-mag-w-rap-2025'),
+  ...pageSeo(PATH),
 }
 
 export const dynamic = 'force-static'
@@ -19,6 +21,7 @@ export default function MagWrap2025Page() {
   return (
     <>
       <Navbar />
+      <JsonLd data={pageStructuredData(PATH)} />
       <div className="w-layout-blockcontainer container-2 w-container">
         <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">

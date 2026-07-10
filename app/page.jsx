@@ -12,6 +12,8 @@ import { useMarquee } from '@/hooks/useMarquee'
 import { useHoverShimmer } from '@/hooks/useHoverShimmer'
 import gsap from 'gsap'
 import CopyEmailButton from '@/components/CopyEmailLink'
+import JsonLd from '@/components/JsonLd'
+import { homepageStructuredData } from './seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 const PROFILE_BLUR = 'data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAKAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQEG/8QAIBABAAEDAwUAAAAAAAAAAAAAAQIAAwQSEyERMkJRcv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwAe5h40ce9ruG4OqJGXMT5pXGbJjWjch2Hkeqyk1ZyV5V61KD//2Q=='
@@ -42,6 +44,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
+      <JsonLd data={homepageStructuredData()} />
       <div id="main-content" role="main" className="w-layout-blockcontainer container-2 w-container">
         <section className="main-hero">
           <div className="liner bottom"></div>

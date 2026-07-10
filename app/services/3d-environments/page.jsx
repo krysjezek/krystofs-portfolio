@@ -2,14 +2,16 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import EmbedVideo from '@/components/EmbedVideo'
-import { pageSeo } from '../../seo'
+import JsonLd from '@/components/JsonLd'
+import { pageSeo, pageStructuredData } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+const PATH = '/services/3d-environments'
 
 export const metadata = {
   title: '3D Environments',
   description: 'CGI environment design, 3D visualization, architectural scenes, and animated brand campaign backdrops.',
-  ...pageSeo('/services/3d-environments'),
+  ...pageSeo(PATH),
 }
 
 export const dynamic = 'force-static'
@@ -19,6 +21,7 @@ export default function ThreeDEnvironments() {
   return (
     <>
       <Navbar />
+      <JsonLd data={pageStructuredData(PATH)} />
       <div className="w-layout-blockcontainer container-2 w-container">
         <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">

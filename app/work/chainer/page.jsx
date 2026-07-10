@@ -3,14 +3,16 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import WorkPageHeader from '@/components/WorkPageHeader'
 import BackgroundVideo from '@/components/BackgroundVideo'
-import { pageSeo } from '../../seo'
+import JsonLd from '@/components/JsonLd'
+import { pageSeo, pageStructuredData } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+const PATH = '/work/chainer'
 
 export const metadata = {
   title: 'Chainer',
   description: '3D product visualization, CGI product visuals, art direction, and web design for Chainer.',
-  ...pageSeo('/work/chainer'),
+  ...pageSeo(PATH),
 }
 
 export const dynamic = 'force-static'
@@ -19,6 +21,7 @@ export default function ChainerPage() {
   return (
     <>
       <Navbar />
+      <JsonLd data={pageStructuredData(PATH)} />
       <div className="w-layout-blockcontainer container-2 w-container">
         <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">

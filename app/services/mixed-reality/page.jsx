@@ -2,14 +2,16 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import EmbedVideo from '@/components/EmbedVideo'
-import { pageSeo } from '../../seo'
+import JsonLd from '@/components/JsonLd'
+import { pageSeo, pageStructuredData } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
+const PATH = '/services/mixed-reality'
 
 export const metadata = {
   title: 'Mixed Reality',
   description: 'Mixed reality campaign visuals, FOOH-style CGI advertising, VFX, and social media content for brands.',
-  ...pageSeo('/services/mixed-reality'),
+  ...pageSeo(PATH),
 }
 
 export const dynamic = 'force-static'
@@ -18,6 +20,7 @@ export default function MixedRealityPage() {
   return (
     <>
       <Navbar />
+      <JsonLd data={pageStructuredData(PATH)} />
       <div className="w-layout-blockcontainer container-2 w-container">
         <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">

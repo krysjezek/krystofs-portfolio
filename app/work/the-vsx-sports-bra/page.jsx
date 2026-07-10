@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import WorkPageHeader from '@/components/WorkPageHeader'
 import EmbedVideo from '@/components/EmbedVideo'
 import JsonLd from '@/components/JsonLd'
-import { absoluteUrl, assetUrl, pageSeo, PERSON_ID } from '../../seo'
+import { absoluteUrl, assetUrl, creativeWorkId, pageSeo, PERSON_ID, videoObjectId } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 const PATH = '/work/the-vsx-sports-bra'
@@ -33,7 +33,7 @@ const vsxCaseStudyStructuredData = {
   '@graph': [
     {
       '@type': 'CreativeWork',
-      '@id': `${absoluteUrl(PATH)}#case-study`,
+      '@id': creativeWorkId(PATH),
       name: 'The VSX Sports Bra CGI Product Animation Case Study',
       headline: 'The VSX Sports Bra',
       description: 'A quick-turn CGI product animation and 3D product visualization case study for the VSX Sports Bra, using Blender and Houdini to create photoreal fabric, knit, stretch, and support simulations for a 15-second Instagram Reel.',
@@ -80,7 +80,7 @@ const vsxCaseStudyStructuredData = {
       hasPart: [
         {
           '@type': 'VideoObject',
-          '@id': `${absoluteUrl(PATH)}#main-product-animation`,
+          '@id': videoObjectId(PATH, 'The VSX Sports Bra 3D product visualization'),
           name: 'The VSX Sports Bra CGI product animation',
           description: 'A 15-second CGI product animation showing photoreal fabric, knit detail, stretch, support, and material performance for the VSX Sports Bra.',
           thumbnailUrl: assetUrl('/videos/posters/vsx_main-01.jpg'),
@@ -93,7 +93,7 @@ const vsxCaseStudyStructuredData = {
         },
         {
           '@type': 'VideoObject',
-          '@id': `${absoluteUrl(PATH)}#simulation-breakdown`,
+          '@id': videoObjectId(PATH, 'The VSX Sports Bra cloth simulation breakdown'),
           name: 'The VSX Sports Bra cloth simulation breakdown',
           description: 'Behind-the-scenes 3D cloth simulation and look-development breakdown for the VSX Sports Bra CGI product animation.',
           thumbnailUrl: assetUrl('/videos/posters/vsx_bts-02.jpg'),
@@ -105,20 +105,12 @@ const vsxCaseStudyStructuredData = {
           transcript: 'No spoken dialogue. Visual breakdown showing Houdini and Blender simulation work for the VSX Sports Bra launch asset.',
         },
       ],
-      mainEntity: caseStudyAnswers.map((item) => ({
-        '@type': 'Question',
-        name: item.label,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: item.answer,
-        },
-      })),
     },
   ],
 }
 
 export const metadata = {
-  title: 'The VSX Sports Bra',
+  title: 'VSX Sports Bra CGI Animation Case Study',
   description: '3D product visualization, CGI product animation, and cloth simulation for the VSX Sports Bra social launch asset.',
   ...pageSeo(PATH),
 }
@@ -236,21 +228,21 @@ export default function VSXSportsBraPage() {
             </div>
           </div>
         </section>
-        <section className="main-resume" data-reveal>
+        <section className="main-resume" aria-label="Case study summary" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
             <div className="div-block-141 credits case-study">
-              <div className="case-study-grid">
+              <dl className="case-study-grid">
                 {caseStudyAnswers.map((item) => (
                   <div className="case-study-column" key={item.label}>
-                    <div className="div-block-143">
-                      <p className="label">{item.label}</p>
-                    </div>
-                    <div className="div-block-143">
+                    <dt className="div-block-143">
+                      <span className="label">{item.label}</span>
+                    </dt>
+                    <dd className="div-block-143">
                       <p className="paragraph">{item.answer}<br /></p>
-                    </div>
+                    </dd>
                   </div>
                 ))}
-              </div>
+              </dl>
             </div>
           </div>
         </section>

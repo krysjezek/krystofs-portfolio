@@ -3,6 +3,34 @@ export const OG_IMAGE = '/og-main.jpg'
 export const OG_IMAGE_ALT = 'CGI and motion design portfolio work by Krystof Jezek'
 export const PERSON_ID = `${SITE_URL}/#person`
 export const WEBSITE_ID = `${SITE_URL}/#website`
+export const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com'
+
+const pageSocialImages = {
+  '/services/3d-environments': {
+    url: '/videos/posters/cgi-environments.jpg',
+    alt: 'CGI 3D environments and visualization work by Krystof Jezek',
+  },
+  '/services/mixed-reality': {
+    url: '/videos/posters/mixed-reality.jpg',
+    alt: 'Mixed reality and FOOH CGI campaign work by Krystof Jezek',
+  },
+  '/work/the-mag-w-rap-2025': {
+    url: '/videos/posters/w25_injektaz.jpg',
+    alt: 'The Mag Wrap 2025 3D motion design case study',
+  },
+  '/work/barbour': {
+    url: '/videos/posters/barbour_header.jpg',
+    alt: 'Barbour Icons in Quilting FOOH campaign case study',
+  },
+  '/work/the-vsx-sports-bra': {
+    url: '/videos/posters/vsx_main-01.jpg',
+    alt: 'The VSX Sports Bra CGI product animation case study',
+  },
+  '/work/chainer': {
+    url: '/videos/posters/chainer_header.jpg',
+    alt: 'Chainer 3D product visualization case study',
+  },
+}
 
 export function absoluteUrl(path) {
   if (!path) return SITE_URL
@@ -11,10 +39,17 @@ export function absoluteUrl(path) {
 }
 
 export function assetUrl(path) {
-  return encodeURI(absoluteUrl(path))
+  if (!path || path.startsWith('http')) return encodeURI(path || SITE_URL)
+
+  const baseUrl = /^\/(images|videos)\//.test(path) ? CDN_URL : SITE_URL
+  return encodeURI(`${baseUrl}${path.startsWith('/') ? path : `/${path}`}`)
 }
 
 export function pageSeo(path, imageAlt = OG_IMAGE_ALT) {
+  const socialImage = pageSocialImages[path]
+  const imageUrl = assetUrl(socialImage?.url || OG_IMAGE)
+  const resolvedImageAlt = socialImage?.alt || imageAlt
+
   return {
     alternates: {
       canonical: path,
@@ -23,16 +58,15 @@ export function pageSeo(path, imageAlt = OG_IMAGE_ALT) {
       url: path,
       images: [
         {
-          url: OG_IMAGE,
-          width: 1200,
-          height: 630,
-          alt: imageAlt,
+          url: imageUrl,
+          alt: resolvedImageAlt,
+          ...(!socialImage ? { width: 1200, height: 630 } : {}),
         },
       ],
     },
     twitter: {
       card: 'summary_large_image',
-      images: [OG_IMAGE],
+      images: [{ url: imageUrl, alt: resolvedImageAlt }],
     },
   }
 }
@@ -83,7 +117,7 @@ export const portfolioRoutes = [
     path: '/work/the-vsx-sports-bra',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-01',
+    lastModified: '2026-07-10',
   },
   {
     path: '/work/chainer',
@@ -315,14 +349,7 @@ export const imageAssets = [
   },
   ...featuredCreativeWorks.map((work) => ({
     page: work.path,
-    url:
-      work.path === '/work/barbour'
-        ? '/videos/posters/barbour_header.jpg'
-        : work.path === '/work/the-vsx-sports-bra'
-          ? '/videos/posters/vsx_main-01.jpg'
-          : work.path === '/work/the-mag-w-rap-2025'
-            ? '/videos/posters/w25_injektaz.jpg'
-            : '/videos/posters/chainer_header.jpg',
+    url: pageSocialImages[work.path].url,
     title: work.name,
   })),
   {
@@ -337,10 +364,19 @@ export const imageAssets = [
   },
 ]
 
-export function siteStructuredData() {
-  const works = featuredCreativeWorks.map((work) => ({
+export function creativeWorkId(path) {
+  return `${absoluteUrl(path)}#creative-work`
+}
+
+export function videoObjectId(page, name) {
+  const slug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')
+  return `${absoluteUrl(page)}#${slug}`
+}
+
+function creativeWorkStructuredData(work, videos = []) {
+  return {
     '@type': 'CreativeWork',
-    '@id': `${absoluteUrl(work.path)}#creative-work`,
+    '@id': creativeWorkId(work.path),
     name: work.name,
     description: work.description,
     url: absoluteUrl(work.path),
@@ -348,10 +384,14 @@ export function siteStructuredData() {
     publisher: { '@id': PERSON_ID },
     dateCreated: work.dateCreated,
     keywords: work.keywords,
-  }))
-  const videos = videoAssets.map((video) => ({
+    ...(videos.length ? { hasPart: videos.map((video) => ({ '@id': videoObjectId(video.page, video.name) })) } : {}),
+  }
+}
+
+function videoStructuredData(video) {
+  return {
     '@type': 'VideoObject',
-    '@id': `${absoluteUrl(video.page)}#${video.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '')}`,
+    '@id': videoObjectId(video.page, video.name),
     name: video.name,
     description: video.description,
     thumbnailUrl: assetUrl(video.thumbnailUrl),
@@ -365,8 +405,10 @@ export function siteStructuredData() {
     mainEntityOfPage: absoluteUrl(video.page),
     ...(video.contentUrl ? { contentUrl: assetUrl(video.contentUrl) } : {}),
     ...(video.embedUrl ? { embedUrl: video.embedUrl } : {}),
-  }))
+  }
+}
 
+export function siteStructuredData() {
   return {
     '@context': 'https://schema.org',
     '@graph': [
@@ -408,6 +450,17 @@ export function siteStructuredData() {
         publisher: { '@id': PERSON_ID },
         inLanguage: 'en',
       },
+    ],
+  }
+}
+
+export function homepageStructuredData() {
+  const works = featuredCreativeWorks.map((work) => creativeWorkStructuredData(work))
+  const videos = videoAssets.filter((video) => video.page === '/').map(videoStructuredData)
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
       {
         '@type': 'ItemList',
         '@id': `${SITE_URL}/#featured-work`,
@@ -421,6 +474,20 @@ export function siteStructuredData() {
       ...works,
       ...videos,
     ],
+  }
+}
+
+export function pageStructuredData(path) {
+  const work = featuredCreativeWorks.find((item) => item.path === path)
+  const videos = videoAssets.filter((video) => video.page === path)
+  const graph = [
+    ...(work ? [creativeWorkStructuredData(work, videos)] : []),
+    ...videos.map(videoStructuredData),
+  ]
+
+  return {
+    '@context': 'https://schema.org',
+    '@graph': graph,
   }
 }
 
