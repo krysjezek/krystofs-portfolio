@@ -813,6 +813,24 @@ export default function HomePage() {
                 <div className="recognition-row">
                   <div className="div-block-143 recognition-description">
                     <div className="div-block-65 recognition-description-link">
+                      <a href="https://www.linkedin.com/posts/3dartacademy_3drendering-blender3d-cgi-ugcPost-7388975297259413505-U6d6" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
+                        Featured by 3D Art Academy for my CGI and mixed-reality rendering
+                        <ExternalArrowIcon />
+                      </a>
+                      <div className="line-mask"><div className="line"></div></div>
+                    </div>
+                  </div>
+                  <div className="div-block-143 recognition-source">
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://www.linkedin.com/favicon.ico)' }} aria-hidden="true"></span>
+                    <p className="paragraph">3D Art Academy</p>
+                  </div>
+                  <div className="div-block-143">
+                    <time className="paragraph dates" dateTime="2025-10">October 2025</time>
+                  </div>
+                </div>
+                <div className="recognition-row">
+                  <div className="div-block-143 recognition-description">
+                    <div className="div-block-65 recognition-description-link">
                       <a href="https://www.brandsinmotion.xyz/resource/ashfallstudio-fifthrow" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
                         Credited for 3D work on the Fifth Row identity created with Ashfall Studio
                         <ExternalArrowIcon />
@@ -844,6 +862,24 @@ export default function HomePage() {
                   </div>
                   <div className="div-block-143">
                     <time className="paragraph dates" dateTime="2025-02">February 2025</time>
+                  </div>
+                </div>
+                <div className="recognition-row">
+                  <div className="div-block-143 recognition-description">
+                    <div className="div-block-65 recognition-description-link">
+                      <a href="https://www.linkedin.com/posts/lucaselijahmiller_3drendering-blender3d-jewelrydesign-ugcPost-7282809161397010433-Mj1i" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
+                        Featured by Lucas Miller for the realism and detail of my CGI rendering
+                        <ExternalArrowIcon />
+                      </a>
+                      <div className="line-mask"><div className="line"></div></div>
+                    </div>
+                  </div>
+                  <div className="div-block-143 recognition-source">
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://www.linkedin.com/favicon.ico)' }} aria-hidden="true"></span>
+                    <p className="paragraph">Lucas Miller</p>
+                  </div>
+                  <div className="div-block-143">
+                    <time className="paragraph dates" dateTime="2025-01">January 2025</time>
                   </div>
                 </div>
                 <div className="recognition-row">
