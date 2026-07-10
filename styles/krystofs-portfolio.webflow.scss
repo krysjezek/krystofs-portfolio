@@ -606,8 +606,22 @@ body {
 }
 
 .paragraph.section-context {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 0;
+}
+
+.section-heading-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: start;
+  width: 100%;
+  margin-bottom: var(--half-space);
+  display: grid;
+}
+
+.section-heading-grid .section-context {
+  grid-column: 3 / -1;
+  width: 100%;
+  padding-left: var(--half-space);
+  padding-right: var(--default-space);
 }
 
 .paragraph.dates {
@@ -9030,6 +9044,19 @@ body {
 [data-reveal],
 [data-reveal-group] > [data-reveal] {
   overflow: clip;
+}
+
+@media screen and (max-width: 767px) {
+  .section-heading-grid {
+    grid-row-gap: 15px;
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading-grid .section-context {
+    grid-column: 1;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 
