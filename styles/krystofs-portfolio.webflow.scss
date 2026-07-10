@@ -4840,29 +4840,33 @@ body {
   width: 100%;
 }
 
-.recognition-more {
-  width: 100%;
-  margin-top: 15px;
+.about-intro-copy {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
 }
 
-.recognition-summary {
-  grid-column-gap: 8px;
+.recognition-trigger {
+  appearance: none;
+  grid-column-gap: 7px;
+  color: var(--gray-050o);
+  background: none;
+  border: 0;
   align-items: center;
-  width: fit-content;
-  padding-bottom: 4px;
+  margin-top: 10px;
+  padding: 0 0 3px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 18px;
   display: inline-flex;
   position: relative;
   cursor: pointer;
-  list-style: none;
+  transition: color 0.2s ease;
 }
 
-.recognition-summary::-webkit-details-marker {
-  display: none;
-}
-
-.recognition-summary::after {
+.recognition-trigger::after {
   content: "";
-  background-color: var(--white);
+  background-color: currentColor;
   height: 1px;
   position: absolute;
   inset: auto 0 0;
@@ -4871,47 +4875,122 @@ body {
   transition: transform 0.35s cubic-bezier(0.86, 0, 0.14, 1);
 }
 
-.recognition-summary:hover::after,
-.recognition-summary:focus-visible::after {
+.recognition-trigger:hover,
+.recognition-trigger:focus-visible {
+  color: var(--white);
+}
+
+.recognition-trigger:hover::after,
+.recognition-trigger:focus-visible::after {
   transform: scaleX(1);
 }
 
-.recognition-summary:focus-visible {
+.recognition-trigger:focus-visible {
   outline: 1px solid var(--white);
   outline-offset: 4px;
 }
 
-.recognition-summary-label-open {
-  display: none;
+.recognition-trigger-icon {
+  font-size: 16px;
+  line-height: 1;
 }
 
-.recognition-summary-icon {
+.recognition-modal {
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--gray-light);
+  width: min(1200px, calc(100% - 40px));
+  max-width: none;
+  max-height: calc(100dvh - 40px);
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.recognition-modal::backdrop {
+  background-color: #05070ad9;
+  backdrop-filter: blur(8px);
+}
+
+.recognition-modal[open] {
+  animation: recognition-modal-in 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.recognition-modal-inner {
+  max-height: calc(100dvh - 42px);
+  padding-bottom: 28px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.recognition-modal-header {
+  grid-column-gap: var(--default-space);
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 28px var(--default-space) 0;
+  display: flex;
+}
+
+.recognition-modal-title {
+  max-width: 850px;
+  margin: 0;
+  font-family: Clashgrotesk, sans-serif;
+  font-size: clamp(38px, 5vw, 70px);
+  font-weight: 400;
+  line-height: 0.95;
+}
+
+.recognition-modal-description {
+  max-width: 720px;
+  margin-top: 18px;
+}
+
+.recognition-modal-close {
+  appearance: none;
+  grid-column-gap: 7px;
+  background: none;
+  border: 0;
+  align-items: center;
+  padding: 0;
+  font: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.recognition-modal-close:focus-visible {
+  outline: 1px solid var(--white);
+  outline-offset: 4px;
+}
+
+.recognition-modal-close-icon {
   font-size: 20px;
   line-height: 1;
-  transition: transform 0.25s ease;
-}
-
-.recognition-more[open] .recognition-summary-label-closed {
-  display: none;
-}
-
-.recognition-more[open] .recognition-summary-label-open {
-  display: inline;
-}
-
-.recognition-more[open] .recognition-summary-icon {
   transform: rotate(45deg);
 }
 
-.recognition-more-list {
-  width: 100%;
-  margin-top: 15px;
+.recognition-modal-list {
+  margin-top: 30px;
+}
+
+@keyframes recognition-modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .recognition-summary::after,
-  .recognition-summary-icon {
+  .recognition-trigger,
+  .recognition-trigger::after,
+  .recognition-modal[open] {
     transition: none;
+    animation: none;
   }
 }
 
@@ -9194,6 +9273,44 @@ body {
     padding-right: 0;
   }
 
+  .recognition-trigger {
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .recognition-modal {
+    width: calc(100% - 20px);
+    max-height: calc(100dvh - 20px);
+  }
+
+  .recognition-modal-inner {
+    max-height: calc(100dvh - 22px);
+    padding-bottom: 10px;
+  }
+
+  .recognition-modal-header {
+    grid-column-gap: 15px;
+    padding: 18px 18px 0;
+  }
+
+  .recognition-modal-title {
+    font-size: clamp(30px, 10vw, 44px);
+  }
+
+  .recognition-modal-description {
+    margin-top: 12px;
+  }
+
+  .recognition-modal-close {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .recognition-modal-list {
+    margin-top: 22px;
+  }
+
   .recognition-row {
     grid-row-gap: 5px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -9206,6 +9323,11 @@ body {
 
   .recognition-row .div-block-143 {
     padding-right: 0;
+  }
+
+  .recognition-modal .recognition-row .div-block-143 {
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }
 

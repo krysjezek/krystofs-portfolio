@@ -13,18 +13,11 @@ import { useHoverShimmer } from '@/hooks/useHoverShimmer'
 import gsap from 'gsap'
 import CopyEmailButton from '@/components/CopyEmailLink'
 import JsonLd from '@/components/JsonLd'
+import RecognitionModal from '@/components/RecognitionModal'
 import { homepageStructuredData } from './seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 const PROFILE_BLUR = 'data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAKAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQEG/8QAIBABAAEDAwUAAAAAAAAAAAAAAQIAAwQSEyERMkJRcv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwAe5h40ce9ruG4OqJGXMT5pXGbJjWjch2Hkeqyk1ZyV5V61KD//2Q=='
-
-function ExternalArrowIcon() {
-  return (
-    <svg className="image-20 recognition-arrow" viewBox="0 0 10 10" aria-hidden="true">
-      <path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" strokeWidth="1.25" />
-    </svg>
-  )
-}
 
 export default function HomePage() {
   const profilePicUrl = `${CDN}/images/profilovka-new-edit-ezgif.com-png-to-webp-converter.webp`
@@ -599,7 +592,10 @@ export default function HomePage() {
                 <p className="paragraph">Independent CGI designer and creative problem solver.</p>
               </div>
               <div className="div-block-135 nomarg">
-                <p className="paragraph">I&#x27;m based in Prague and work with brands and studios around the world.<br />I tend to move between art direction, visualization, motion and code.<br />A nerd with taste.</p>
+                <div className="about-intro-copy">
+                  <p className="paragraph">I&#x27;m based in Prague and work with brands and studios around the world.<br />I tend to move between art direction, visualization, motion and code.<br />A nerd with taste.</p>
+                  <RecognitionModal />
+                </div>
               </div>
               <div id="w-node-a66f41d9-e251-18b3-06ea-3875b7f7d02d-a7256e91" className="div-block-142">
                 <div className="div-block-143 date">
@@ -707,226 +703,6 @@ export default function HomePage() {
                     <p className="paragraph">Software Engineering</p>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="main-resume" aria-labelledby="recognition-heading" data-reveal>
-          <div className="w-layout-blockcontainer container-3 nopad w-container">
-            <h2 id="recognition-heading" className="heading-2 pad">Selected recognition &amp; credits</h2>
-            <div className="div-block-141">
-              <div className="div-block-143 top">
-                <p className="paragraph">Selected awards, external features and production credits for my CGI and motion work.</p>
-              </div>
-              <div className="div-block-135 nomarg"></div>
-              <div className="recognition-list">
-                <div className="recognition-row">
-                  <div className="div-block-143 recognition-description">
-                    <div className="div-block-65 recognition-description-link">
-                      <a href="https://www.awwwards.com/sites/krystof-portfolio-website" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
-                        Received an Awwwards Honorable Mention for my portfolio website
-                        <ExternalArrowIcon />
-                      </a>
-                      <div className="line-mask"><div className="line"></div></div>
-                    </div>
-                  </div>
-                  <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://www.awwwards.com/favicon.ico)' }} aria-hidden="true"></span>
-                    <p className="paragraph">Awwwards</p>
-                  </div>
-                  <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2023-12">December 2023</time>
-                  </div>
-                </div>
-                <div className="recognition-row">
-                  <div className="div-block-143 recognition-description">
-                    <div className="div-block-65 recognition-description-link">
-                      <a href="https://the-brandidentity.com/directory" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
-                        Featured as an independent CGI designer in The Brand Identity directory
-                        <ExternalArrowIcon />
-                      </a>
-                      <div className="line-mask"><div className="line"></div></div>
-                    </div>
-                  </div>
-                  <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://the-brandidentity.com/favicon.ico)' }} aria-hidden="true"></span>
-                    <p className="paragraph">The Brand Identity</p>
-                  </div>
-                  <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2026-07">July 2026</time>
-                  </div>
-                </div>
-                <div className="recognition-row">
-                  <div className="div-block-143 recognition-description">
-                    <div className="div-block-65 recognition-description-link">
-                      <a href="https://motionfolios.com/inspirations/krystof-jezek" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
-                        Featured portfolio in a curated directory of leading 3D motion work
-                        <ExternalArrowIcon />
-                      </a>
-                      <div className="line-mask"><div className="line"></div></div>
-                    </div>
-                  </div>
-                  <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://global.divhunt.com/5b25794ad4a46784aa03244df4a7a28d_5809.png)' }} aria-hidden="true"></span>
-                    <p className="paragraph">Motionfolios</p>
-                  </div>
-                  <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2026-06">June 2026</time>
-                  </div>
-                </div>
-                <details className="recognition-more">
-                  <summary className="recognition-summary">
-                    <span className="paragraph link recognition-summary-label recognition-summary-label-closed">View all features &amp; credits (8)</span>
-                    <span className="paragraph link recognition-summary-label recognition-summary-label-open">Hide additional features &amp; credits</span>
-                    <span className="recognition-summary-icon" aria-hidden="true">+</span>
-                  </summary>
-                  <div className="recognition-more-list">
-                    <div className="recognition-row">
-                  <div className="div-block-143 recognition-description">
-                    <div className="div-block-65 recognition-description-link">
-                      <a href="https://the-brandidentity.com/project/how-ashfall-built-out-shelbys-identity-from-an-extruded-hexagon?brid=YWdncwHSXqCQhlPojD_JIF5mJBjx" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
-                        Credited for 3D work on Shelby’s identity created with Ashfall Studio
-                        <ExternalArrowIcon />
-                      </a>
-                      <div className="line-mask"><div className="line"></div></div>
-                    </div>
-                  </div>
-                  <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://the-brandidentity.com/favicon.ico)' }} aria-hidden="true"></span>
-                    <p className="paragraph">The Brand Identity</p>
-                  </div>
-                  <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2026-05">May 2026</time>
-                  </div>
-                </div>
-                <div className="recognition-row">
-                  <div className="div-block-143 recognition-description">
-                    <div className="div-block-65 recognition-description-link">
-                      <a href="https://www.instagram.com/p/DWV5ftiDJhn/" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
-                        Featured in DESIGN BOD’s “The Art of the Perfect Render” spotlight
-                        <ExternalArrowIcon />
-                      </a>
-                      <div className="line-mask"><div className="line"></div></div>
-                    </div>
-                  </div>
-                  <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(/design-bod.jpg)' }} aria-hidden="true"></span>
-                    <p className="paragraph">DESIGN BOD</p>
-                  </div>
-                  <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2026-03">March 2026</time>
-                  </div>
-                </div>
-                <div className="recognition-row">
-                  <div className="div-block-143 recognition-description">
-                    <div className="div-block-65 recognition-description-link">
-                      <a href="https://www.brandsinmotion.xyz/resource/yiskra-veha" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
-                        Credited for 3D motion on VEHA’s identity created with Yiskra Studio
-                        <ExternalArrowIcon />
-                      </a>
-                      <div className="line-mask"><div className="line"></div></div>
-                    </div>
-                  </div>
-                  <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://images.squarespace-cdn.com/content/v1/663ba87248e1575777904df4/e39de4b0-db21-4e23-91f5-816b1a8a12dc/favicon.ico?format=100w)' }} aria-hidden="true"></span>
-                    <p className="paragraph">Brands in Motion</p>
-                  </div>
-                  <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2026-01">January 2026</time>
-                  </div>
-                </div>
-                <div className="recognition-row">
-                  <div className="div-block-143 recognition-description">
-                    <div className="div-block-65 recognition-description-link">
-                      <a href="https://www.linkedin.com/posts/3dartacademy_3drendering-blender3d-cgi-ugcPost-7388975297259413505-U6d6" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
-                        Featured by 3D Art Academy for my CGI and mixed-reality rendering
-                        <ExternalArrowIcon />
-                      </a>
-                      <div className="line-mask"><div className="line"></div></div>
-                    </div>
-                  </div>
-                  <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(/3d-art-academy-linkedin.jpg)' }} aria-hidden="true"></span>
-                    <p className="paragraph">3D Art Academy</p>
-                  </div>
-                  <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2025-10">October 2025</time>
-                  </div>
-                </div>
-                <div className="recognition-row">
-                  <div className="div-block-143 recognition-description">
-                    <div className="div-block-65 recognition-description-link">
-                      <a href="https://www.brandsinmotion.xyz/resource/ashfallstudio-fifthrow" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
-                        Credited for 3D work on the Fifth Row identity created with Ashfall Studio
-                        <ExternalArrowIcon />
-                      </a>
-                      <div className="line-mask"><div className="line"></div></div>
-                    </div>
-                  </div>
-                  <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://images.squarespace-cdn.com/content/v1/663ba87248e1575777904df4/e39de4b0-db21-4e23-91f5-816b1a8a12dc/favicon.ico?format=100w)' }} aria-hidden="true"></span>
-                    <p className="paragraph">Brands in Motion</p>
-                  </div>
-                  <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2025-04">April 2025</time>
-                  </div>
-                </div>
-                <div className="recognition-row">
-                  <div className="div-block-143 recognition-description">
-                    <div className="div-block-65 recognition-description-link">
-                      <a href="https://www.brandsinmotion.xyz/resource/ashfallstudio-tekuma" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
-                        Credited for the Tekuma case-study CGI created with Ashfall Studio
-                        <ExternalArrowIcon />
-                      </a>
-                      <div className="line-mask"><div className="line"></div></div>
-                    </div>
-                  </div>
-                  <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://images.squarespace-cdn.com/content/v1/663ba87248e1575777904df4/e39de4b0-db21-4e23-91f5-816b1a8a12dc/favicon.ico?format=100w)' }} aria-hidden="true"></span>
-                    <p className="paragraph">Brands in Motion</p>
-                  </div>
-                  <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2025-02">February 2025</time>
-                  </div>
-                </div>
-                <div className="recognition-row">
-                  <div className="div-block-143 recognition-description">
-                    <div className="div-block-65 recognition-description-link">
-                      <a href="https://www.linkedin.com/posts/lucaselijahmiller_3drendering-blender3d-jewelrydesign-ugcPost-7282809161397010433-Mj1i" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
-                        Featured by Lucas Miller for the realism and detail of my CGI rendering
-                        <ExternalArrowIcon />
-                      </a>
-                      <div className="line-mask"><div className="line"></div></div>
-                    </div>
-                  </div>
-                  <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(/lucas-miller-linkedin.jpg)' }} aria-hidden="true"></span>
-                    <p className="paragraph">Lucas Miller</p>
-                  </div>
-                  <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2025-01">January 2025</time>
-                  </div>
-                </div>
-                <div className="recognition-row">
-                  <div className="div-block-143 recognition-description">
-                    <div className="div-block-65 recognition-description-link">
-                      <a href="https://monopo.london/work/yonex-all-england-brand-identity/" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
-                        Credited for motion design on the Yonex All England teaser assets
-                        <ExternalArrowIcon />
-                      </a>
-                      <div className="line-mask"><div className="line"></div></div>
-                    </div>
-                  </div>
-                  <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://monopo.london/favicon/favicon-32x32.png)' }} aria-hidden="true"></span>
-                    <p className="paragraph">Monopo London</p>
-                  </div>
-                  <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2023-09">September 2023</time>
-                  </div>
-                </div>
-                  </div>
-                </details>
               </div>
             </div>
           </div>
