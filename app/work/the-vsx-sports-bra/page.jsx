@@ -21,7 +21,7 @@ const caseStudyAnswers = [
   },
   {
     label: 'Process',
-    answer: 'We built photoreal fabric, knit, stretch, and support moments in Blender and Houdini, then refined the lighting, material response, and simulation detail for a 15-second Instagram Reel.',
+    answer: 'I built photoreal fabric, knit, stretch, and support moments in Blender and Houdini, then refined the lighting, material response, and simulation detail for a 15-second Instagram Reel.',
   },
   {
     label: 'Result',
@@ -76,6 +76,7 @@ const vsxCaseStudyStructuredData = {
         'Instagram Reel',
       ],
       dateCreated: '2025',
+      datePublished: '2025-04',
       inLanguage: 'en',
       mainEntityOfPage: absoluteUrl(PATH),
       hasPart: [
@@ -111,7 +112,7 @@ const vsxCaseStudyStructuredData = {
 }
 
 export const metadata = {
-  title: 'VSX Sports Bra CGI Animation Case Study',
+  title: 'VSX Sports Bra CGI Product Animation',
   description: '3D product visualization, CGI product animation, and cloth simulation for the VSX Sports Bra social launch asset.',
   ...pageSeo(PATH),
 }
@@ -126,9 +127,9 @@ export default function VSXSportsBraPage() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <WorkPageHeader label="Victoria&#x27;s Secret, VSX" title="The VSX Sports Bra" data-reveal="hero">
+            <WorkPageHeader label="Victoria&#x27;s Secret, VSX" title="VSX Sports Bra CGI Animation" publicationDate="April 2025" data-reveal="hero">
               <p className="paragraph header">
-                <a href="https://tmrzv.com/" className="link green" data-cursor="Visit">TMRZV Studio</a> brought us in to create a quick-turn CGI product animation for the VSX Sports Bra. Over a one-week sprint, we built photoreal 3D product visualization, fabric simulations, and knit detail in Blender and Houdini, delivering a 15-second Instagram Reel that shows the bra&#x27;s stretch, support, and material performance.
+                <a href="https://tmrzv.com/" target="_blank" rel="noopener noreferrer" className="link green" data-cursor="Visit">TMRZV Studio</a> brought me in to create a quick-turn CGI product animation for the VSX Sports Bra. Over a one-week sprint, I built photoreal 3D product visualization, fabric simulations, and knit detail in Blender and Houdini, delivering a 15-second Instagram Reel that shows the bra&#x27;s stretch, support, and material performance.
               </p>
               <div className="div-block-55">
                 <div className="cv-container">
@@ -139,6 +140,7 @@ export default function VSXSportsBraPage() {
                       <div className="specs-inner-block">
                         <p className="paragraph"><span className="green">870k </span>organic Instagram views<br /></p>
                         <p className="paragraph"><span className="green">7800 </span>Instagram likes<br /></p>
+                        <p className="label gray">Figures show cumulative views and likes on the linked Instagram Reel at the time of making this case study.</p>
                       </div>
                     </div>
                     <div className="specs-item">
@@ -271,7 +273,7 @@ export default function VSXSportsBraPage() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Team Krystof</p>
+                    <p className="paragraph">Independent</p>
                   </div>
                 </div>
                 <div className="div-block-143">
@@ -283,7 +285,7 @@ export default function VSXSportsBraPage() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Team Krystof</p>
+                    <p className="paragraph">Independent</p>
                   </div>
                 </div>
               </div>

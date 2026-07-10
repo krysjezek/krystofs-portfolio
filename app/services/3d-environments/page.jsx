@@ -12,25 +12,41 @@ const PATH = '/services/3d-environments'
 const serviceOverview = [
   {
     label: 'What it is',
-    answer: 'An animated 3D mockup built custom for your case study.',
+    answer: 'A custom CGI environment designed and animated around the identity, website, or product you want to present.',
   },
   {
     label: 'Who it is for',
-    answer: 'Branding, web, and design agencies that want a custom way to present their work.',
+    answer: 'Branding, web, and design agencies that need a distinctive alternative to stock mockups for case studies, launches, and pitches.',
   },
   {
-    label: 'How it works',
-    answer: 'You send me the project and what you want to feature. I design and animate the environment around it.',
+    label: 'Best fit',
+    answer: 'Projects with a strong visual identity that deserve their own art-directed world rather than a neutral device or packaging template.',
+  },
+  {
+    label: 'Deliverables',
+    answer: 'Final motion assets in the agreed campaign formats, with loopable edits, still frames, and alternate crops included when they are part of the brief.',
+  },
+  {
+    label: 'What I need',
+    answer: 'Your final design files, brand guidelines, the key story you want to communicate, and a list of the screens or applications that matter most.',
+  },
+  {
+    label: 'Process',
+    answer: 'I define the visual concept and references, develop the CGI look, agree on cameras and motion, then animate, render, and finish the selected direction.',
   },
   {
     label: 'Production',
-    answer: 'Look development, modelling, animation, rendering, and post-production.',
+    answer: 'I handle look development, modelling, lighting, animation, rendering, and post-production, bringing in specialist collaborators only when the scope requires it.',
+  },
+  {
+    label: 'Formats',
+    answer: 'The same CGI environment can be adapted for widescreen case studies, vertical social edits, website loops, presentations, and high-resolution stills.',
   },
 ]
 
 export const metadata = {
   title: 'Custom Motion Mockups for Agencies',
-  description: 'Custom animated 3D mockups built for branding, web, and design agency case studies, from look development through post-production.',
+  description: 'Custom animated CGI and 3D mockups by independent CGI designer Krystof Jezek, built for branding, web, and design agency case studies.',
   ...pageSeo(PATH),
 }
 
@@ -57,7 +73,7 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div className="div-block-55">
-                  <p className="paragraph header">I build custom animated mockups for agencies to present their work. Each one is a 3D environment built custom for your case study. <a href="https://motionmockups.com/" target="_blank" rel="noopener noreferrer" className="link green">Motion Mockups</a> is the ready-made version I sell online. This is the custom one.<br /></p>
+                  <p className="paragraph header">I am an independent CGI designer creating custom animated mockups for agencies to present their work. Each one is an art-directed 3D environment built around the project&#x27;s own identity, story, and applications. <a href="https://motionmockups.com/" target="_blank" rel="noopener noreferrer" className="link green">Motion Mockups</a> is the ready-made version I sell online; this service is designed from scratch for a specific case study or launch.<br /></p>
                 </div>
               </div>
             </div>
@@ -291,162 +307,6 @@ export default function ThreeDEnvironments() {
             </div>
           </div>
           <div className="liner bottom"></div>
-        </section>
-        <section id="main-projects" className="main-resume service" data-reveal>
-          <div className="w-layout-blockcontainer container-3 nopad w-container">
-            <div className="div-block-141 credits">
-              <div className="div-block-143 top">
-                <p className="label">Past projects and recognition</p>
-              </div>
-              <div className="div-block-135 nomarg"></div>
-              <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a58-033eedbd" className="div-block-142">
-                <div className="div-block-143">
-                  <p className="paragraph">Aptos Foundation</p>
-                </div>
-                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a5c-033eedbd" className="postion">
-                  <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div>
-                    <p className="paragraph">Ashfall Studio</p>
-                  </div>
-                  <div className="div-block-143">
-                    <p className="paragraph">Jan Strach</p>
-                  </div>
-                </div>
-                <div className="div-block-143">
-                  <p className="paragraph">Shelby Network</p>
-                </div>
-                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a67-033eedbd" className="postion">
-                  <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div>
-                    <p className="paragraph">Ashfall Studio</p>
-                  </div>
-                  <div className="div-block-143">
-                    <p className="paragraph">Petr Žižka</p>
-                  </div>
-                </div>
-                <div className="div-block-143">
-                  <p className="paragraph">Heidelberg CCUS</p>
-                </div>
-                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a73-033eedbd" className="postion">
-                  <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div>
-                    <p className="paragraph">Ashfall Studio</p>
-                  </div>
-                  <div className="div-block-143">
-                    <p className="paragraph">Matěj Marášek</p>
-                  </div>
-                </div>
-                <div className="div-block-143">
-                  <p className="paragraph">Fifthrow</p>
-                </div>
-                <div className="postion">
-                  <div className="div-block-143">
-                    <div className="div-block-144"></div>
-                    <p className="paragraph">Ashfall Studio</p>
-                  </div>
-                  <div className="div-block-143">
-                    <p className="paragraph">Kryštof Ježek</p>
-                  </div>
-                </div>
-                <div className="div-block-143">
-                  <p className="paragraph">Ashfall Launch Video</p>
-                </div>
-                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a97-033eedbd" className="postion">
-                  <div className="div-block-143">
-                    <div className="div-block-144"></div>
-                    <p className="paragraph">Ashfall Studio</p>
-                  </div>
-                  <div className="div-block-143">
-                    <p className="paragraph">Kryštof Ježek</p>
-                  </div>
-                </div>
-                <div className="div-block-143">
-                  <p className="paragraph">Tekuma</p>
-                </div>
-                <div id="w-node-c7733b9b-5c56-2b79-1e5b-04089cccb67b-033eedbd" className="postion">
-                  <div className="div-block-143">
-                    <div className="div-block-144"></div>
-                    <p className="paragraph">Ashfall Studio</p>
-                  </div>
-                  <div className="div-block-143">
-                    <p className="paragraph">David Hájek</p>
-                  </div>
-                </div>
-                <div className="div-block-143">
-                  <p className="paragraph">Outpost 2025 Showreel</p>
-                </div>
-                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a7f-033eedbd" className="postion">
-                  <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/relive.png'} loading="lazy" width="15" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
-                    <p className="paragraph">Outpost Studio</p>
-                  </div>
-                  <div className="div-block-143">
-                    <p className="paragraph">Tomáš Gnosis Snop</p>
-                  </div>
-                </div>
-                <div className="div-block-143">
-                  <p className="paragraph">Veha Logo Reveal</p>
-                </div>
-                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272aa3-033eedbd" className="postion">
-                  <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
-                    <p className="paragraph">Yiskra Studio</p>
-                  </div>
-                  <div className="div-block-143">
-                    <p className="paragraph">Jáchym Vogl</p>
-                  </div>
-                </div>
-                <div className="div-block-143">
-                  <p className="paragraph">Jimu</p>
-                </div>
-                <div id="w-node-f0dfac3b-0807-0793-6000-02f68fc91fda-033eedbd" className="postion">
-                  <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
-                    <p className="paragraph">Yiskra Studio</p>
-                  </div>
-                  <div className="div-block-143">
-                    <p className="paragraph">Jáchym Vogl</p>
-                  </div>
-                </div>
-                <div className="div-block-143">
-                  <p className="paragraph">Veha</p>
-                </div>
-                <div id="w-node-df60c450-15cf-97f1-8ef4-2ba22b554a52-033eedbd" className="postion">
-                  <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
-                    <p className="paragraph">Yiskra Studio</p>
-                  </div>
-                  <div className="div-block-143">
-                    <p className="paragraph">Jáchym Vogl</p>
-                  </div>
-                </div>
-                <div className="div-block-143">
-                  <p className="paragraph">Veha</p>
-                </div>
-                <div id="w-node-_3f86cc21-c5fb-70a4-3a3e-aa4e98e40d4b-033eedbd" className="postion">
-                  <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
-                    <p className="paragraph">Yiskra Studio</p>
-                  </div>
-                  <div className="div-block-143">
-                    <p className="paragraph">Jáchym Vogl</p>
-                  </div>
-                </div>
-                <div className="div-block-143">
-                  <p className="paragraph">Veha</p>
-                </div>
-                <div id="w-node-_00c565a9-9961-fef4-cdbc-b613074480ae-033eedbd" className="postion">
-                  <div className="div-block-143">
-                    <div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div>
-                    <p className="paragraph">Yiskra Studio</p>
-                  </div>
-                  <div className="div-block-143">
-                    <p className="paragraph">Jáchym Vogl</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </div>
       <Footer />

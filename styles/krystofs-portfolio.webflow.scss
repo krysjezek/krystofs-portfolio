@@ -4817,6 +4817,7 @@ body {
 .case-study-grid {
   grid-column: 1 / -1;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-row-gap: var(--default-space);
   margin: 0;
   padding-bottom: var(--default-space);
   display: grid;

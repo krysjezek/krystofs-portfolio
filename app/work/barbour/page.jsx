@@ -21,7 +21,7 @@ const caseStudySummary = [
   },
   {
     label: 'Process',
-    answer: 'We reconstructed and tracked live-action city plates, animated the signature quilt, and built procedural nature trails in Blender and Houdini before compositing every scene for a convincing mixed-reality finish.',
+    answer: 'I directed the CGI production, reconstructing and tracking live-action city plates, animating the signature quilt, and building procedural nature trails in Blender and Houdini before compositing each scene for a convincing mixed-reality finish.',
   },
   {
     label: 'Result',
@@ -30,7 +30,7 @@ const caseStudySummary = [
 ]
 
 export const metadata = {
-  title: 'Barbour Quilt FOOH',
+  title: 'Barbour Icons in Quilting FOOH Case Study',
   description: 'FOOH campaign and fake out-of-home CGI/VFX work with cloth simulation for Barbour Icons in Quilting.',
   ...pageSeo(PATH),
 }
@@ -45,10 +45,10 @@ export default function BarbourPage() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <WorkPageHeader label="Barbour" title="Icons in Quilting" data-reveal="hero">
+            <WorkPageHeader label="Barbour" title="Barbour Icons in Quilting — FOOH Campaign" publicationDate="September 2024" data-reveal="hero">
               <div className="div-block-55">
                 <p className="paragraph header">
-                  <a href="https://monopo.london/" target="_blank" className="link green" data-cursor="Visit">Monopo London</a> invited Krystof to work on a CGI/VFX campaign for British fashion designer <a href="https://www.barbour.com/" target="_blank" className="link green" data-cursor="Visit">Barbour</a>. The main idea was to show Barbour&#x27;s iconic quilt spreading across the world, focusing on four cities: London, New York, Shanghai, and Seoul. Each quilted piece was followed by a trail of nature, carefully crafted to resemble the British countryside.<br />
+                  <a href="https://monopo.london/" target="_blank" rel="noopener noreferrer" className="link green" data-cursor="Visit">Monopo London</a> invited me to direct CGI and VFX production for a campaign by British fashion brand <a href="https://www.barbour.com/" target="_blank" rel="noopener noreferrer" className="link green" data-cursor="Visit">Barbour</a>. The idea was to show Barbour&#x27;s iconic quilt spreading across London, New York, Shanghai, and Seoul. I shaped each film around quilted forms followed by a trail of nature crafted to evoke the British countryside.<br />
                 </p>
               </div>
               <div className="cv-container">
@@ -59,6 +59,7 @@ export default function BarbourPage() {
                     <div className="specs-inner-block">
                       <p className="paragraph"><span className="green">100k+ </span>average organic IG views<br /></p>
                       <p className="paragraph"><span className="green">30% </span>more engagement than on other<br />Barbour&#x27;s posts<br /></p>
+                      <p className="label gray">Figures were calculated from cumulative views and likes across the Instagram campaign posts at the time of making this case study.</p>
                     </div>
                   </div>
                   <div className="specs-item">
@@ -249,7 +250,7 @@ export default function BarbourPage() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Team Krystof</p>
+                    <p className="paragraph">Independent</p>
                   </div>
                 </div>
                 <div className="div-block-143">
@@ -261,7 +262,7 @@ export default function BarbourPage() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Team Krystof</p>
+                    <p className="paragraph">Independent collaborator</p>
                   </div>
                 </div>
                 <div className="div-block-143">
@@ -273,7 +274,7 @@ export default function BarbourPage() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Team Krystof</p>
+                    <p className="paragraph">Independent collaborator</p>
                   </div>
                 </div>
               </div>

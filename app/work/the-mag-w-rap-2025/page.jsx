@@ -21,7 +21,7 @@ const caseStudySummary = [
   },
   {
     label: 'Process',
-    answer: 'We built a modular 2D and 3D motion design system: a 20-second intro, show IDs, 10 looping backgrounds, reusable templates, explainers, standings, and duel graphics across Blender, Houdini, Nuke, and After Effects.',
+    answer: 'I built a modular 2D and 3D motion design system: a 20-second intro, show IDs, 10 looping backgrounds, reusable templates, explainers, standings, and duel graphics across Blender, Houdini, Nuke, and After Effects.',
   },
   {
     label: 'Result',
@@ -30,7 +30,7 @@ const caseStudySummary = [
 ]
 
 export const metadata = {
-  title: 'The Mag Wrap 2025',
+  title: 'The Mag Wrap 2025 — 3D Motion & Broadcast Graphics',
   description: '3D motion design, art direction, broadcast graphics, and show visuals for The Mag Wrap 2025.',
   ...pageSeo(PATH),
 }
@@ -45,9 +45,9 @@ export default function MagWrap2025Page() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <WorkPageHeader label="The Mag WRAP 2025" title="Rap Talent Show" data-reveal="hero">
+            <WorkPageHeader label="The Mag WRAP 2025" title="The Mag Wrap 2025 — 3D Motion &amp; Broadcast Graphics" publicationDate="August 2025" data-reveal="hero">
               <div className="div-block-55">
-                <p className="paragraph header">The Mag Wrap, the most-watched show on Czech/Slovak YouTube, hired us for its fourth season. We refreshed the entire visual package with advanced 2D + 3D motion design: a new intro, on-air IDs, looping backgrounds, and sponsor graphics that keep the show sharp and instantly recognisable.<br /></p>
+                <p className="paragraph header">The Mag Wrap, the most-watched show on Czech and Slovak YouTube, hired me for its fourth season. I refreshed the entire visual package with advanced 2D and 3D motion design: a new intro, on-air IDs, looping backgrounds, and sponsor graphics that keep the show sharp and instantly recognisable.<br /></p>
                 <div className="cv-container">
                   <div className="label">Project Specs</div>
                   <div className="project-specs-wrap">
@@ -57,6 +57,7 @@ export default function MagWrap2025Page() {
                         <p className="paragraph"><span className="green">500k+ </span>average YT views per episode<br /></p>
                         <p className="paragraph"><span className="green">10 000+ </span>subscribers on Patreon<br /></p>
                         <p className="paragraph"><span className="green">+50% </span>watch-time vs. 2024<br /></p>
+                        <p className="label gray">Audience figures were calculated from cumulative YouTube views, plus the Patreon subscriber total, at the time of making this case study.</p>
                       </div>
                     </div>
                     <div className="specs-item">
@@ -238,7 +239,7 @@ export default function MagWrap2025Page() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Team Krystof</p>
+                    <p className="paragraph">Independent</p>
                   </div>
                 </div>
                 <div className="div-block-143">
@@ -250,7 +251,7 @@ export default function MagWrap2025Page() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Team Krystof</p>
+                    <p className="paragraph">Independent</p>
                   </div>
                 </div>
                 <div className="div-block-143">
@@ -262,7 +263,7 @@ export default function MagWrap2025Page() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Team Krystof</p>
+                    <p className="paragraph">Independent collaborator</p>
                   </div>
                 </div>
                 <div className="div-block-143">

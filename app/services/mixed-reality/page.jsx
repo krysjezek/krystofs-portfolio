@@ -3,14 +3,50 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import EmbedVideo from '@/components/EmbedVideo'
 import JsonLd from '@/components/JsonLd'
+import CaseStudySummary from '@/components/CaseStudySummary'
 import { pageSeo, pageStructuredData } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 const PATH = '/services/mixed-reality'
 
+const serviceOverview = [
+  {
+    label: 'What it is',
+    answer: 'A live-action campaign film enhanced with CGI so an impossible event feels grounded in a real location.',
+  },
+  {
+    label: 'Who it is for',
+    answer: 'Brands and agencies planning social launches, retail moments, store openings, or location-led campaign ideas that need to stop the scroll.',
+  },
+  {
+    label: 'Best fit',
+    answer: 'Concepts where the CGI is connected to the brand, product, or place—not added as a visual trick without a campaign idea behind it.',
+  },
+  {
+    label: 'Deliverables',
+    answer: 'Finished FOOH or mixed reality films in the agreed aspect ratios, with cutdowns, clean versions, stills, and platform variants when required.',
+  },
+  {
+    label: 'What I need',
+    answer: 'The campaign objective, target locations, desired launch formats, available footage or shoot plan, brand assets, and any product CAD or 3D files.',
+  },
+  {
+    label: 'Process',
+    answer: 'I develop the CGI approach around the approved concept, advise on plates and camera movement, then track, animate, simulate, light, render, and composite the final scenes.',
+  },
+  {
+    label: 'Production',
+    answer: 'I lead the CGI production directly and bring in independent specialists for filming, complex simulation, or compositing when the scope calls for them.',
+  },
+  {
+    label: 'Formats',
+    answer: 'Campaigns can be planned for Instagram, TikTok, YouTube, digital out-of-home, launch presentations, and wider horizontal or vertical edits.',
+  },
+]
+
 export const metadata = {
   title: 'FOOH & Mixed Reality',
-  description: 'FOOH and mixed reality campaign production combining live-action plates with CGI, tracking, animation, and compositing.',
+  description: 'FOOH and mixed reality campaign production by independent CGI designer Krystof Jezek, combining live-action plates with CGI, tracking, animation, and compositing.',
   ...pageSeo(PATH),
 }
 
@@ -36,10 +72,13 @@ export default function MixedRealityPage() {
                   </div>
                 </div>
                 <div className="div-block-55">
-                  <p className="paragraph header">I combine live-action plates with CGI, tracking, animation, and compositing to create FOOH and mixed reality campaign films for brands and agencies. Each production is planned around a clear visual idea, location, format, and launch context.<br /></p>
+                  <p className="paragraph header">I am an independent CGI designer combining live-action plates with tracking, animation, simulation, and compositing to create FOOH and mixed reality films for brands and agencies. I plan each production around a clear campaign idea, location, camera move, delivery format, and launch context so the CGI feels connected to the brand rather than added as a standalone effect.<br /></p>
                 </div>
               </div>
             </div>
+          </div>
+          <CaseStudySummary items={serviceOverview} ariaLabel="FOOH and mixed reality service overview" />
+          <div className="w-layout-blockcontainer container-3 w-container">
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-0405f909" className="work-main-wrap first">
               <div className="w-layout-grid cs-grid services" data-reveal-group>
                 <div id="w-node-_771e6bc8-f93d-6c0b-e588-52ea025093ed-0405f909" data-reveal className="wrapper services _1x2">
@@ -52,7 +91,7 @@ export default function MixedRealityPage() {
                     srcMp4="/videos/h264/cgi_barbour_london%20updated-fallback.mp4"
                   /></div>
                   <div className="div-block-146"><img loading="lazy" src={CDN + '/images/barbour.png'} alt="Barbour logo" className="logo-service" />
-                    <h2 className="service-heading">Icons in Quiliting London</h2>
+                    <h2 className="service-heading">Icons in Quilting London</h2>
                   </div>
                 </div>
                 <div id="w-node-_82a68808-56d6-fe09-94d1-0da41d33cb7a-0405f909" data-reveal className="wrapper services _1x1">
@@ -67,7 +106,7 @@ export default function MixedRealityPage() {
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144"></div>
-                      <p className="services-name">Team Krystof</p>
+                      <p className="services-name">Kryštof Ježek</p>
                     </div>
                     <h2 className="service-heading">Arctic Landscape</h2>
                   </div>
@@ -84,7 +123,7 @@ export default function MixedRealityPage() {
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144"></div>
-                      <p className="services-name">Team Krystof</p>
+                      <p className="services-name">Kryštof Ježek</p>
                     </div>
                     <h2 className="service-heading">Bouncy Greens</h2>
                   </div>
@@ -102,7 +141,7 @@ export default function MixedRealityPage() {
                     <div>
                       <div className="div-block-143-copy">
                         <div className="div-block-144"></div>
-                        <p className="services-name">Team Krystof</p>
+                        <p className="services-name">Kryštof Ježek</p>
                       </div>
                     </div>
                     <h2 className="service-heading">Gemstone</h2>
@@ -133,7 +172,7 @@ export default function MixedRealityPage() {
                   <div className="div-block-146">
                     <div className="div-block-143-copy">
                       <div className="div-block-144"></div>
-                      <p className="services-name">Team Krystof</p>
+                      <p className="services-name">Kryštof Ježek</p>
                     </div>
                     <h2 className="service-heading">Revitalizing Serum </h2>
                   </div>
@@ -148,7 +187,7 @@ export default function MixedRealityPage() {
                     srcMp4="/videos/h264/cgi_barbour_ny%20updated-fallback.mp4"
                   /></div>
                   <div className="div-block-146"><img loading="lazy" src={CDN + '/images/barbour.png'} alt="Barbour logo" className="logo-service" />
-                    <h2 className="service-heading">Icons in Quiliting NYC</h2>
+                    <h2 className="service-heading">Icons in Quilting NYC</h2>
                   </div>
                 </div>
                 <div id="w-node-dfa12d4c-f844-068c-6466-0c8f47a3ee86-0405f909" data-reveal className="wrapper services _1x1">
@@ -174,7 +213,7 @@ export default function MixedRealityPage() {
                     srcMp4="/videos/h264/cgi_barbour_seoul%20updated-fallback.mp4"
                   /></div>
                   <div className="div-block-146"><img loading="lazy" src={CDN + '/images/barbour.png'} alt="Barbour logo" className="logo-service" />
-                    <h2 className="service-heading">Icons in Quiliting Seoul</h2>
+                    <h2 className="service-heading">Icons in Quilting Seoul</h2>
                   </div>
                 </div>
                 <div id="w-node-_4780d184-593d-0ec2-7732-3f701fb2249b-0405f909" data-reveal className="wrapper services _1x2">
@@ -201,7 +240,7 @@ export default function MixedRealityPage() {
                     srcMp4="/videos/h264/cgi_barbour_shanghai%20updated-fallback.mp4"
                   /></div>
                   <div className="div-block-146"><img loading="lazy" src={CDN + '/images/barbour.png'} alt="Barbour logo" className="logo-service" />
-                    <h2 className="service-heading">Icons in Quiliting Shanghai</h2>
+                    <h2 className="service-heading">Icons in Quilting Shanghai</h2>
                   </div>
                 </div>
                 <div id="w-node-_601a700b-cf17-6109-2656-2c4949514c6c-0405f909" data-reveal className="wrapper services _2x1">
@@ -234,78 +273,6 @@ export default function MixedRealityPage() {
             </div>
           </div>
           <div className="liner bottom"></div>
-        </section>
-        <section id="main-projects" className="main-resume service" data-reveal>
-          <div className="w-layout-blockcontainer container-3 nopad w-container">
-            <div className="div-block-141 credits">
-              <div className="div-block-143 top">
-                <p className="label">Past projects and recognition</p>
-              </div>
-              <div className="div-block-135 nomarg"></div>
-              <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a58-0405f909" className="div-block-142">
-                <div className="div-block-143"><p className="paragraph">Aptos Foundation</p></div>
-                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a5c-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Ashfall Studio</p></div>
-                  <div className="div-block-143"><p className="paragraph">Jan Strach</p></div>
-                </div>
-                <div className="div-block-143"><p className="paragraph">Shelby Network</p></div>
-                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a67-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Ashfall Studio</p></div>
-                  <div className="div-block-143"><p className="paragraph">Petr Žižka</p></div>
-                </div>
-                <div className="div-block-143"><p className="paragraph">Heidelberg CCUS</p></div>
-                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a73-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/themaglogo.jpg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Ashfall Studio</p></div>
-                  <div className="div-block-143"><p className="paragraph">Matěj Marášek</p></div>
-                </div>
-                <div className="div-block-143"><p className="paragraph">Fifthrow</p></div>
-                <div className="postion">
-                  <div className="div-block-143"><div className="div-block-144"></div><p className="paragraph">Ashfall Studio</p></div>
-                  <div className="div-block-143"><p className="paragraph">Kryštof Ježek</p></div>
-                </div>
-                <div className="div-block-143"><p className="paragraph">Ashfall Launch Video</p></div>
-                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a97-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"></div><p className="paragraph">Ashfall Studio</p></div>
-                  <div className="div-block-143"><p className="paragraph">Kryštof Ježek</p></div>
-                </div>
-                <div className="div-block-143"><p className="paragraph">Tekuma</p></div>
-                <div id="w-node-c7733b9b-5c56-2b79-1e5b-04089cccb67b-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"></div><p className="paragraph">Ashfall Studio</p></div>
-                  <div className="div-block-143"><p className="paragraph">David Hájek</p></div>
-                </div>
-                <div className="div-block-143"><p className="paragraph">Outpost 2025 Showreel</p></div>
-                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a7f-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/relive.png'} loading="lazy" width="15" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Outpost Studio</p></div>
-                  <div className="div-block-143"><p className="paragraph">Tomáš Gnosis Snop</p></div>
-                </div>
-                <div className="div-block-143"><p className="paragraph">Veha Logo Reveal</p></div>
-                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272aa3-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
-                  <div className="div-block-143"><p className="paragraph">Jáchym Vogl</p></div>
-                </div>
-                <div className="div-block-143"><p className="paragraph">Jimu</p></div>
-                <div id="w-node-f0dfac3b-0807-0793-6000-02f68fc91fda-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
-                  <div className="div-block-143"><p className="paragraph">Jáchym Vogl</p></div>
-                </div>
-                <div className="div-block-143"><p className="paragraph">Veha</p></div>
-                <div id="w-node-df60c450-15cf-97f1-8ef4-2ba22b554a52-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
-                  <div className="div-block-143"><p className="paragraph">Jáchym Vogl</p></div>
-                </div>
-                <div className="div-block-143"><p className="paragraph">Veha</p></div>
-                <div id="w-node-_3f86cc21-c5fb-70a4-3a3e-aa4e98e40d4b-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
-                  <div className="div-block-143"><p className="paragraph">Jáchym Vogl</p></div>
-                </div>
-                <div className="div-block-143"><p className="paragraph">Veha</p></div>
-                <div id="w-node-_00c565a9-9961-fef4-cdbc-b613074480ae-0405f909" className="postion">
-                  <div className="div-block-143"><div className="div-block-144"><img src={CDN + '/images/glami-logo.jpg'} loading="lazy" alt="" className="image-32" /><img src={CDN + '/images/yiskra_studio_logo.jpeg'} loading="lazy" alt="" className="image-32" /></div><p className="paragraph">Yiskra Studio</p></div>
-                  <div className="div-block-143"><p className="paragraph">Jáchym Vogl</p></div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </div>
       <Footer />

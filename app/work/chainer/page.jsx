@@ -21,7 +21,7 @@ const caseStudySummary = [
   },
   {
     label: 'Process',
-    answer: 'We developed immersive 3D product worlds, modeled and animated the jewelry, produced launch films and campaign renders, then carried the same art direction into the ecommerce website.',
+    answer: 'I developed immersive 3D product worlds, modeled and animated the jewelry, produced launch films and campaign renders, then carried the same art direction into the ecommerce website.',
   },
   {
     label: 'Result',
@@ -30,7 +30,7 @@ const caseStudySummary = [
 ]
 
 export const metadata = {
-  title: 'Chainer',
+  title: 'Chainer 3D Product Visualization & Art Direction',
   description: '3D product visualization, CGI product visuals, art direction, and web design for Chainer.',
   ...pageSeo(PATH),
 }
@@ -45,9 +45,9 @@ export default function ChainerPage() {
       <div className="w-layout-blockcontainer container-2 w-container">
         <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <WorkPageHeader label="Chainer" title="Men&#x27;s apparel" data-reveal="hero">
+            <WorkPageHeader label="Chainer" title="Chainer — 3D Product Visualization &amp; Art Direction" publicationDate="September 2023" data-reveal="hero">
               <div className="div-block-55">
-                <p className="paragraph header">Chainer, an online store for men&#x27;s accessories, brought me on board to lead their Art Direction. My role was a mix of art direction, 3D animation, and web design, all aimed at giving their brand a fresh, standout vibe. The heart of this project was about creating immersive 3D worlds to showcase Chainer&#x27;s jewelry. This case study will show you how we made Chainer shine in the competitive online market.</p>
+                <p className="paragraph header">Chainer, an online store for men&#x27;s accessories, brought me on board to lead its art direction. I combined CGI product visualization, 3D animation, sound design, and ecommerce web design to build one cohesive visual system. The central idea was to create immersive CGI worlds that made the jewelry feel premium, contemporary, and recognisable across campaign films, product imagery, and the online store.</p>
               </div>
               <div className="wotk-tags-links">
                 <div className="work-tags">
@@ -121,7 +121,7 @@ export default function ChainerPage() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Team Krystof</p>
+                    <p className="paragraph">Independent</p>
                   </div>
                 </div>
                 <div className="div-block-143">
@@ -133,7 +133,7 @@ export default function ChainerPage() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Team Krystof</p>
+                    <p className="paragraph">Independent</p>
                   </div>
                 </div>
                 <div className="div-block-143">
@@ -145,7 +145,7 @@ export default function ChainerPage() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Team Krystof</p>
+                    <p className="paragraph">Independent collaborator</p>
                   </div>
                 </div>
                 <div className="div-block-143">
@@ -157,7 +157,7 @@ export default function ChainerPage() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Team Krystof</p>
+                    <p className="paragraph">Independent</p>
                   </div>
                 </div>
               </div>

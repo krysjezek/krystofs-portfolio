@@ -69,9 +69,9 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfae-a7256e91" className="div-block-135">
                   <div className="footer--text">
-                    <h1 className="label">CGI Designer, Software Engineer</h1>
+                    <h1 className="label">Independent CGI Designer</h1>
                     <div className="div-block-59">
-                      <p className="paragraph">I craft high-end 3D and motion visuals for brands and studios. When I&#x27;m not designing, I&#x27;m building apps and tools that bridge art and tech.</p>
+                      <p className="paragraph">I craft high-end CGI environments and motion visuals for brands and studios. In my free time, I&#x27;m building apps and creative tools that bridge art and tech.</p>
                     </div>
                   </div>
                 </div>
@@ -588,7 +588,7 @@ export default function HomePage() {
             <h2 className="heading-2 pad">About me</h2>
             <div className="div-block-141">
               <div className="div-block-143 top">
-                <p className="paragraph">Independent 3D designer and creative problem solver.</p>
+                <p className="paragraph">Independent CGI designer and creative problem solver.</p>
               </div>
               <div className="div-block-135 nomarg">
                 <p className="paragraph">I&#x27;m based in Prague and work with brands and studios around the world.<br />I tend to move between art direction, visualization, motion and code.<br />A nerd with taste.</p>
@@ -601,10 +601,10 @@ export default function HomePage() {
                 <div id="w-node-_911d34b6-530c-4860-0a92-df038baabbbf-a7256e91" className="postion">
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Freelance</p>
+                    <p className="paragraph">Independent CGI Designer</p>
                   </div>
                   <div className="div-block-143">
-                    <p className="paragraph">3D Environments, Visualization, Motion</p>
+                    <p className="paragraph">CGI Environments, Visualization, Motion</p>
                   </div>
                 </div>
                 <div className="div-block-143 date">
@@ -697,6 +697,46 @@ export default function HomePage() {
                   </div>
                   <div className="div-block-143">
                     <p className="paragraph">Software Engineering</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="main-resume" aria-labelledby="recognition-heading" data-reveal>
+          <div className="w-layout-blockcontainer container-3 nopad w-container">
+            <h2 id="recognition-heading" className="heading-2 pad">Selected recognition</h2>
+            <div className="div-block-141 credits case-study">
+              <div className="div-block-143 top">
+                <p className="paragraph">Selected external features and production credits for my CGI and motion work.</p>
+              </div>
+              <div className="div-block-135 nomarg"></div>
+              <div className="case-study-grid">
+                <div className="case-study-column">
+                  <div className="div-block-143">
+                    <span className="label">Motionfolios</span>
+                  </div>
+                  <div className="div-block-143">
+                    <a href="https://motionfolios.com/inspirations/krystof-jezek" target="_blank" rel="noopener noreferrer" className="link">Featured portfolio</a>
+                    <p className="paragraph">Curated profile in its 3D motion inspiration directory.</p>
+                  </div>
+                </div>
+                <div className="case-study-column">
+                  <div className="div-block-143">
+                    <span className="label">Brands in Motion</span>
+                  </div>
+                  <div className="div-block-143">
+                    <a href="https://www.brandsinmotion.xyz/resource/ashfallstudio-tekuma" target="_blank" rel="noopener noreferrer" className="link">Tekuma case study</a>
+                    <p className="paragraph">Credited for case-study CGI created with Ashfall Studio.</p>
+                  </div>
+                </div>
+                <div className="case-study-column">
+                  <div className="div-block-143">
+                    <span className="label">Monopo London</span>
+                  </div>
+                  <div className="div-block-143">
+                    <a href="https://monopo.london/work/yonex-all-england-brand-identity/" target="_blank" rel="noopener noreferrer" className="link">Yonex All England</a>
+                    <p className="paragraph">Credited for motion design on the campaign&#x27;s teaser assets.</p>
                   </div>
                 </div>
               </div>

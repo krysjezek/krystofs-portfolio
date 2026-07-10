@@ -6,7 +6,7 @@ export const metadata = {
   title: 'CV Print',
   ...pageSeo('/other/cv-print'),
   ...noIndex,
-  description: 'Printable CV of Kryštof Ježek, an independent 3D designer specializing in art-directed environments and visualization.',
+  description: 'Printable CV of Kryštof Ježek, an independent CGI designer specializing in art-directed environments, visualization, and motion.',
 }
 
 export const dynamic = 'force-static'
@@ -28,9 +28,9 @@ export default function CVPrintPage() {
                   </div>
                   <div className="div-block-125 cv">
                     <div className="div-block-90">
-                      <p className="label gray invert">/ INDEPENDENT 3D DESIGNER</p>
+                      <p className="label gray invert">/ INDEPENDENT CGI DESIGNER</p>
                       <div className="div-block-59 cv">
-                        <p className="paragraph cvhead">I am an independent 3D designer specializing in art-directed environments and visualization for brands and studios. I combine realistic lighting, materials, and spatial detail with a strong creative concept, supported by a background in software engineering and motion design.</p>
+                        <p className="paragraph cvhead">I am an independent CGI designer specializing in art-directed environments, visualization, and motion for brands and studios. I combine realistic lighting, materials, and spatial detail with a strong creative concept. In my free time, I build apps and creative tools that connect art and technology.</p>
                         <a href="https://www.krystofjezek.com/" className="link invert cv">Portfolio: <span className="blue invert">krystofjezek.com</span></a>
                         <div className="div-block-90 cv">
                           <a href="mailto:studio@krystofjezek.com?subject=Let&#x27;s%20work%20together!" className="link invert cv">studio@krystofjezek.com</a>
@@ -53,7 +53,7 @@ export default function CVPrintPage() {
                         <img src={CDN + '/images/webclip.png'} loading="lazy" alt="" className="cv-favi" />
                         <a href="https://www.krystofjezek.com/" className="label cv invert">Self-employed</a>
                       </div>
-                      <p className="cv-header">Independent 3D Designer<br /></p>
+                      <p className="cv-header">Independent CGI Designer<br /></p>
                     </div>
                     <p className="paragraph cv">Create art-directed 3D environments, visualizations, and motion work for brands and studios. Lead projects from concept and look development through animation, simulation, rendering, and delivery, working independently or with specialist collaborators. Selected work includes <a href="/work/the-vsx-sports-bra" className="link invert cv">Victoria&#x27;s Secret</a>, <a href="/work/barbour" className="link invert cv">Barbour</a>, and <a href="/work/the-mag-w-rap-2025" className="link invert cv">The Mag Wrap</a>.<br /></p>
                     <div className="cv-subinfo gray inver">Feb 2017 - Present  |  Worldwide</div>

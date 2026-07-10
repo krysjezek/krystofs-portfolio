@@ -19,7 +19,7 @@ export default function JoinPage() {
           <div className="w-layout-blockcontainer container-3 w-container">
             <div className="heading-75" data-reveal="hero">
               <h1 className="heading-h1 other">I would love to work with you.</h1>
-              <p className="paragraph">I&#x27;m on the lookout for some sharp-eyed creatives to collaborate with on projects for some top-tier brands. If you&#x27;re all about fresh designs, and love sweating the small stuff as much as I do, we might just click. I&#x27;m after folks who like to make design that POP, care about their craft, and are ready to roll up their sleeves and dive into some exciting work.</p>
+              <p className="paragraph">I&#x27;m on the lookout for some sharp-eyed creatives to collaborate with on projects for some top-tier brands. If you&#x27;re all about fresh designs and love sweating the small stuff as much as I do, you might be a great fit. I&#x27;m after folks who like to make design that POP, care about their craft, and are ready to roll up their sleeves and dive into some exciting work.</p>
             </div>
             <div className="positions" data-reveal>
               <h3 className="heading-3">Open roles</h3>
@@ -27,7 +27,7 @@ export default function JoinPage() {
                 <div className="div-block-62">
                   <div className="div-block-69"></div>
                   <h4 className="heading-4">3D Animator</h4>
-                  <p className="paragraph">I am seeking a skilled 3D Generalist to join my team. You will be part of a collaborative team, contributing to diverse projects and advancing our creative objectives. We offer a supportive work culture with regular feedback and opportunities for professional development.<br /></p>
+                  <p className="paragraph">I am seeking a skilled 3D Generalist to collaborate with me on diverse projects and help advance each project&#x27;s creative direction. I offer a supportive working relationship with regular feedback and opportunities for professional development.<br /></p>
                   <div className="div-block-71">
                     <p className="label">Requirements:<br /></p>
                     <ul role="list" className="list bullets">

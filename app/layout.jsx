@@ -12,10 +12,10 @@ import '@/styles/krystofs-portfolio.webflow.scss'
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Krystof Jezek, Independent 3D Designer',
+    default: 'Krystof Jezek, Independent CGI Designer',
     template: '%s | Krystof Jezek',
   },
-  description: 'Independent 3D designer creating art-directed environments and visualizations for brands and studios, supported by a background in software engineering and motion design.',
+  description: 'Independent CGI designer creating art-directed environments, motion visuals, and mixed reality campaigns for brands and studios.',
   ...pageSeo('/'),
   openGraph: {
     ...pageSeo('/').openGraph,
