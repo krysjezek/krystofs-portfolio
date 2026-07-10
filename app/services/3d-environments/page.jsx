@@ -61,7 +61,9 @@ export default function ThreeDEnvironments() {
                 </div>
               </div>
             </div>
-            <CaseStudySummary items={serviceOverview} ariaLabel="3D environments service overview" />
+          </div>
+          <CaseStudySummary items={serviceOverview} ariaLabel="3D environments service overview" />
+          <div className="w-layout-blockcontainer container-3 w-container">
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-033eedbd" className="work-main-wrap first">
               <div className="w-layout-grid cs-grid services" data-reveal-group>
                 <div id="w-node-_771e6bc8-f93d-6c0b-e588-52ea025093ed-033eedbd" className="wrapper services" data-reveal>
