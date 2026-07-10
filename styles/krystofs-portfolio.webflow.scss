@@ -4835,6 +4835,41 @@ body {
   padding-right: var(--default-space);
 }
 
+.recognition-list {
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.recognition-row {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin-bottom: 7px;
+  display: grid;
+}
+
+.recognition-row .div-block-143 {
+  padding-right: var(--default-space);
+}
+
+.recognition-description {
+  grid-column: span 2;
+}
+
+.recognition-source {
+  grid-column-gap: 10px;
+  align-items: center;
+  display: flex;
+}
+
+.recognition-favicon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
 .div-block-142 {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
@@ -9057,6 +9092,20 @@ body {
   .section-heading-grid .section-context {
     grid-column: 1;
     padding-left: 0;
+    padding-right: 0;
+  }
+
+  .recognition-row {
+    grid-row-gap: 5px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 15px;
+  }
+
+  .recognition-description {
+    grid-column: 1 / -1;
+  }
+
+  .recognition-row .div-block-143 {
     padding-right: 0;
   }
 }

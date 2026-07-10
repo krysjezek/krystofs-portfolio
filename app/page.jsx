@@ -706,37 +706,52 @@ export default function HomePage() {
         <section className="main-resume" aria-labelledby="recognition-heading" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
             <h2 id="recognition-heading" className="heading-2 pad">Selected recognition</h2>
-            <div className="div-block-141 credits case-study">
+            <div className="div-block-141">
               <div className="div-block-143 top">
                 <p className="paragraph">Selected external features and production credits for my CGI and motion work.</p>
               </div>
               <div className="div-block-135 nomarg"></div>
-              <div className="case-study-grid">
-                <div className="case-study-column">
-                  <div className="div-block-143">
-                    <span className="label">Motionfolios</span>
+              <div className="recognition-list">
+                <div className="recognition-row">
+                  <div className="div-block-143 recognition-description">
+                    <p className="paragraph">Featured portfolio in a curated directory of leading 3D motion work.</p>
                   </div>
                   <div className="div-block-143">
-                    <a href="https://motionfolios.com/inspirations/krystof-jezek" target="_blank" rel="noopener noreferrer" className="link">Featured portfolio</a>
-                    <p className="paragraph">Curated profile in its 3D motion inspiration directory.</p>
-                  </div>
-                </div>
-                <div className="case-study-column">
-                  <div className="div-block-143">
-                    <span className="label">Brands in Motion</span>
+                    <a href="https://motionfolios.com/inspirations/krystof-jezek" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-source">
+                      <span className="recognition-favicon" style={{ backgroundImage: 'url(https://global.divhunt.com/5b25794ad4a46784aa03244df4a7a28d_5809.png)' }} aria-hidden="true"></span>
+                      Motionfolios
+                    </a>
                   </div>
                   <div className="div-block-143">
-                    <a href="https://www.brandsinmotion.xyz/resource/ashfallstudio-tekuma" target="_blank" rel="noopener noreferrer" className="link">Tekuma case study</a>
-                    <p className="paragraph">Credited for case-study CGI created with Ashfall Studio.</p>
+                    <time className="paragraph dates" dateTime="2026-06">06/26</time>
                   </div>
                 </div>
-                <div className="case-study-column">
-                  <div className="div-block-143">
-                    <span className="label">Monopo London</span>
+                <div className="recognition-row">
+                  <div className="div-block-143 recognition-description">
+                    <p className="paragraph">Credited for the Tekuma case-study CGI created with Ashfall Studio.</p>
                   </div>
                   <div className="div-block-143">
-                    <a href="https://monopo.london/work/yonex-all-england-brand-identity/" target="_blank" rel="noopener noreferrer" className="link">Yonex All England</a>
-                    <p className="paragraph">Credited for motion design on the campaign&#x27;s teaser assets.</p>
+                    <a href="https://www.brandsinmotion.xyz/resource/ashfallstudio-tekuma" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-source">
+                      <span className="recognition-favicon" style={{ backgroundImage: 'url(https://images.squarespace-cdn.com/content/v1/663ba87248e1575777904df4/e39de4b0-db21-4e23-91f5-816b1a8a12dc/favicon.ico?format=100w)' }} aria-hidden="true"></span>
+                      Brands in Motion
+                    </a>
+                  </div>
+                  <div className="div-block-143">
+                    <time className="paragraph dates" dateTime="2025-02">02/25</time>
+                  </div>
+                </div>
+                <div className="recognition-row">
+                  <div className="div-block-143 recognition-description">
+                    <p className="paragraph">Credited for motion design on the Yonex All England teaser assets.</p>
+                  </div>
+                  <div className="div-block-143">
+                    <a href="https://monopo.london/work/yonex-all-england-brand-identity/" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-source">
+                      <span className="recognition-favicon" style={{ backgroundImage: 'url(https://monopo.london/favicon/favicon-32x32.png)' }} aria-hidden="true"></span>
+                      Monopo London
+                    </a>
+                  </div>
+                  <div className="div-block-143">
+                    <time className="paragraph dates" dateTime="2023-09">09/23</time>
                   </div>
                 </div>
               </div>
