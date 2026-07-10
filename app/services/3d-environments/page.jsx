@@ -3,14 +3,34 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import EmbedVideo from '@/components/EmbedVideo'
 import JsonLd from '@/components/JsonLd'
+import CaseStudySummary from '@/components/CaseStudySummary'
 import { pageSeo, pageStructuredData } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 const PATH = '/services/3d-environments'
 
+const serviceOverview = [
+  {
+    label: 'Focus',
+    answer: 'Art-directed 3D environments that combine realistic lighting, materials, and spatial detail with a clear visual concept.',
+  },
+  {
+    label: 'Best for',
+    answer: 'Brand films, product campaigns, digital landscapes, visual identities, and animated backdrops for studios and agencies.',
+  },
+  {
+    label: 'Approach',
+    answer: 'Every environment is designed around mood, composition, and narrative—not treated as a purely technical render.',
+  },
+  {
+    label: 'Production',
+    answer: 'Look development, scene building, animation, simulation, rendering, and delivery, handled independently or with specialist collaborators.',
+  },
+]
+
 export const metadata = {
-  title: '3D Environments',
-  description: 'CGI environment design, 3D visualization, architectural scenes, and animated brand campaign backdrops.',
+  title: 'Art-Directed 3D Environments',
+  description: 'Art-directed 3D environments and visualization for brand films, product campaigns, digital landscapes, and animated studio backdrops.',
   ...pageSeo(PATH),
 }
 
@@ -29,18 +49,19 @@ export default function ThreeDEnvironments() {
               <div className="work-header-container">
                 <div className="work-h1-wrap">
                   <div className="div-block-112">
-                    <div className="label green">Specialized service</div>
-                    <h1 className="heading-h1">3D Environments</h1>
+                    <div className="label green">Primary specialization</div>
+                    <h1 className="heading-h1">Art-Directed 3D Environments</h1>
                   </div>
                   <div className="back-block">
                     <Link href="/" className="button inverted-border w-button">Back to home</Link>
                   </div>
                 </div>
                 <div className="div-block-55">
-                  <p className="paragraph header">I craft super-realistic environments tailored specifically to your project&apos;s needs. From immersive digital landscapes to custom animated mockups used by worldwide studios, I provide the high-end backdrops necessary to showcase your work with maximum impact.<br /></p>
+                  <p className="paragraph header">I create realistic 3D environments with the creative direction of campaign imagery. Built for brands and studios, each scene is shaped around a visual idea—from composition and lighting to materials, atmosphere, and motion.<br /></p>
                 </div>
               </div>
             </div>
+            <CaseStudySummary items={serviceOverview} ariaLabel="3D environments service overview" />
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-033eedbd" className="work-main-wrap first">
               <div className="w-layout-grid cs-grid services" data-reveal-group>
                 <div id="w-node-_771e6bc8-f93d-6c0b-e588-52ea025093ed-033eedbd" className="wrapper services" data-reveal>

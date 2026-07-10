@@ -1,6 +1,6 @@
-export default function CaseStudySummary({ items }) {
+export default function CaseStudySummary({ items, ariaLabel = 'Case study summary' }) {
   return (
-    <section className="main-resume" aria-label="Case study summary" data-reveal>
+    <section className="main-resume" aria-label={ariaLabel} data-reveal>
       <div className="w-layout-blockcontainer container-3 nopad w-container">
         <div className="div-block-141 credits case-study">
           <dl className="case-study-grid">

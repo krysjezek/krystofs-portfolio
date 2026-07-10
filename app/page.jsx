@@ -69,9 +69,9 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfae-a7256e91" className="div-block-135">
                   <div className="footer--text">
-                    <h1 className="label">CGI Designer, Software Engineer</h1>
+                    <h1 className="label">Independent 3D Designer</h1>
                     <div className="div-block-59">
-                      <p className="paragraph">I craft high-end 3D and motion visuals for brands and studios. When I&#x27;m not designing, I&#x27;m building apps and tools that bridge art and tech.</p>
+                      <p className="paragraph">I create art-directed 3D environments and visualizations for brands and studios, combining realistic detail with a clear creative idea. My software engineering background helps me solve technically demanding briefs and build efficient workflows.</p>
                     </div>
                   </div>
                 </div>
@@ -84,7 +84,7 @@ export default function HomePage() {
                         <div className="line-mask"><div className="line"></div></div>
                       </div>
                       <div className="div-block-65">
-                        <a href="/services/mixed-reality" className="link">Mixed Reality</a>
+                        <a href="/services/mixed-reality" className="link">FOOH &amp; Mixed Reality</a>
                         <div className="line-mask"><div className="line"></div></div>
                       </div>
                       <div className="div-block-65">
@@ -147,7 +147,7 @@ export default function HomePage() {
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
                     <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', backgroundColor: 'rgb(255,255,255)' }} className="button case">
-                      <div style={{ color: 'rgb(5,7,10)' }} className="text-block-18">3D Environments</div>
+                      <div style={{ color: 'rgb(5,7,10)' }} className="text-block-18">Primary Focus — 3D Environments</div>
                     </div>
                   </div>
                   <div className="div-block-66">
@@ -166,7 +166,7 @@ export default function HomePage() {
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
                     <div style={{ backgroundColor: 'rgb(255,255,255)', transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button case">
-                      <div style={{ color: 'rgb(5,7,10)' }} className="text-block-18">Mixed Reality</div>
+                      <div style={{ color: 'rgb(5,7,10)' }} className="text-block-18">FOOH &amp; Mixed Reality</div>
                     </div>
                   </div>
                   <div className="div-block-66">
@@ -238,7 +238,7 @@ export default function HomePage() {
         </div>
 
         <div className="main-services" data-reveal>
-          <h2 className="heading-3">Benefits of 3D and Motion</h2>
+          <h2 className="heading-3">Why art-directed 3D</h2>
           <div className="div-block-100">
             <div className="div-block-96">
               <ul role="list" className="list-3 w-list-unstyled">
@@ -246,8 +246,8 @@ export default function HomePage() {
                   <button id="b1" type="button" className="services-link selected w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
-                        <div className="services-heading">Engage audiences</div>
-                        <div className="services-heading">Engage audiences</div>
+                        <div className="services-heading">Build a visual world</div>
+                        <div className="services-heading">Build a visual world</div>
                       </div>
                     </div>
                   </button>
@@ -256,8 +256,8 @@ export default function HomePage() {
                   <button id="b2" type="button" className="services-link w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
-                        <div className="services-heading">Showcase products</div>
-                        <div className="services-heading">Showcase products</div>
+                        <div className="services-heading">Direct every detail</div>
+                        <div className="services-heading">Direct every detail</div>
                       </div>
                     </div>
                   </button>
@@ -266,8 +266,8 @@ export default function HomePage() {
                   <button id="b3" type="button" className="services-link w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
-                        <div className="services-heading">Streamline Iterations</div>
-                        <div className="services-heading">Streamline Iterations</div>
+                        <div className="services-heading">Iterate efficiently</div>
+                        <div className="services-heading">Iterate efficiently</div>
                       </div>
                     </div>
                   </button>
@@ -276,8 +276,8 @@ export default function HomePage() {
                   <button id="b4" type="button" className="services-link w-inline-block" data-cursor="Explore" data-cursor-icon="eye">
                     <div className="div-block-104">
                       <div style={{ transform: 'translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-105">
-                        <div className="services-heading">Educate Customers</div>
-                        <div className="services-heading">Educate Customers</div>
+                        <div className="services-heading">Extend across formats</div>
+                        <div className="services-heading">Extend across formats</div>
                       </div>
                     </div>
                   </button>
@@ -286,29 +286,29 @@ export default function HomePage() {
             </div>
             <div id="serv2" className="div-block-95 none">
               <div className="div-block-98">
-                <div className="services-heading large">Showcase products</div>
-                <p className="paragraph smaller">Present your products in dynamic, detailed views that traditional photos and videos can&#x27;t match.</p>
+                <div className="services-heading large">Direct every detail</div>
+                <p className="paragraph smaller">Control composition, lighting, materials, weather, and scale without being limited by a physical location or shoot.</p>
               </div>
               <div className="div-block-97 _2"><Image fill src={CDN + '/images/untitled.2png-min.png'} alt="3D product showcase visual" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
             </div>
             <div id="serv4" className="div-block-95 none">
               <div className="div-block-98">
-                <div className="services-heading large">Educate Customers</div>
-                <p className="paragraph smaller">Creative animations effectively break down complex information, making learning both engaging and memorable.</p>
+                <div className="services-heading large">Extend across formats</div>
+                <p className="paragraph smaller">A single environment can support stills, animation, vertical edits, and wider campaign assets while keeping the art direction consistent.</p>
               </div>
               <div className="div-block-97 _4"><Image fill src={CDN + '/images/chainer-case-4.webp'} alt="Chainer 3D product visualization" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
             </div>
             <div id="serv3" className="div-block-95 none">
               <div className="div-block-98">
-                <div className="services-heading large">Streamline Iterations</div>
-                <p className="paragraph smaller">With your product modeled and textured, iterating becomes quick and cost-effective. Adjust angles, animations, and environment without the need for a new photo shoot.</p>
+                <div className="services-heading large">Iterate efficiently</div>
+                <p className="paragraph smaller">Once a scene is built, camera angles, lighting, materials, and seasonal variations can be explored without rebuilding the production from scratch.</p>
               </div>
               <div className="div-block-97 _3"><Image fill src={CDN + '/images/kunaj-sklo-preview-2-min-ezgif.com-png-to-webp-converter.webp'} alt="Iterative 3D glass product preview" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
             </div>
             <div id="serv1" className="div-block-95">
               <div className="div-block-98">
-                <div className="services-heading large">Engage audiences</div>
-                <p className="paragraph smaller">In the quick-scroll world of digital media, striking visuals are key to catching a consumer&#x27;s eye. Enhanced with 3D and motion designs, your content stands a better chance of grabbing attention.</p>
+                <div className="services-heading large">Build a visual world</div>
+                <p className="paragraph smaller">Move beyond a neutral render. An environment can establish mood, narrative, and a recognizable visual language around a product or campaign.</p>
               </div>
               <div className="div-block-97"><Image fill unoptimized src={CDN + '/images/ezgif.com-animated-gif-maker-4.gif'} loading="lazy" alt="Animated 3D motion design example" className="image-26" style={{ objectFit: 'cover' }} /></div>
             </div>
@@ -316,7 +316,7 @@ export default function HomePage() {
         </div>
         <section id="main-projects" className="main-projects">
           <div className="w-layout-blockcontainer container-3 w-container">
-            <h2 className="heading-2">Recent Case Studies</h2>
+            <h2 className="heading-2">Selected Work</h2>
             <div className="w-layout-grid main-proj-grid" data-reveal-group>
               <a id="w-node-_0a0f2415-0cbe-189d-07e1-6388208cf7e6-a7256e91" href="/work/the-mag-w-rap-2025" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
                 <div className="proj-img-wrap">
@@ -586,10 +586,10 @@ export default function HomePage() {
             <h2 className="heading-2 pad">About me</h2>
             <div className="div-block-141">
               <div className="div-block-143 top">
-                <p className="paragraph">Designer, Creator, and Problem Solver.</p>
+                <p className="paragraph">Independent 3D designer and creative problem solver.</p>
               </div>
               <div className="div-block-135 nomarg">
-                <p className="paragraph">Based in Prague. Blending art, design and tech.<br />Skilled in 3D, motion, art direction, and development.<br />A nerd with taste.</p>
+                <p className="paragraph">Based in Prague, working with brands and studios worldwide.<br />Focused on art-directed 3D environments, visualization, and motion.<br />Software engineer by training. A nerd with taste.</p>
               </div>
               <div id="w-node-a66f41d9-e251-18b3-06ea-3875b7f7d02d-a7256e91" className="div-block-142">
                 <div className="div-block-143 date">
@@ -602,11 +602,11 @@ export default function HomePage() {
                     <p className="paragraph">Freelance</p>
                   </div>
                   <div className="div-block-143">
-                    <p className="paragraph">3D, Motion, AI</p>
+                    <p className="paragraph">3D Environments, Visualization, Motion</p>
                   </div>
                 </div>
                 <div className="div-block-143 date">
-                  <p className="paragraph dates">23—26&#x27;</p>
+                  <p className="paragraph dates">23—25&#x27;</p>
                   <div className="line about"></div>
                 </div>
                 <div id="w-node-e92b1f06-779b-ab8e-7226-54032dc56be0-a7256e91" className="postion">

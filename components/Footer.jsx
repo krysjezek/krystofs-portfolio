@@ -51,7 +51,7 @@ export default function Footer() {
                       <div className="line-mask"><div className="line"></div></div>
                     </div>
                     <div data-w-id="83c84ea4-2158-f7fa-a22d-a8faeb1e691e" className="div-block-65">
-                      <Link href="/services/mixed-reality" className="link" data-cursor="Explore" data-cursor-icon="eye">Mixed Reality</Link>
+                      <Link href="/services/mixed-reality" className="link" data-cursor="Explore" data-cursor-icon="eye">FOOH &amp; Mixed Reality</Link>
                       <div className="line-mask"><div className="line"></div></div>
                     </div>
                     <div data-w-id="adb6576a-5e98-8477-410d-959810b17bcc" className="div-block-65">

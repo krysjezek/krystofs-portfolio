@@ -9,8 +9,8 @@ const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 const PATH = '/services/mixed-reality'
 
 export const metadata = {
-  title: 'Mixed Reality',
-  description: 'Mixed reality campaign visuals, FOOH-style CGI advertising, VFX, and social media content for brands.',
+  title: 'FOOH & Mixed Reality',
+  description: 'FOOH and mixed reality campaign production combining live-action plates with CGI, tracking, animation, and compositing.',
   ...pageSeo(PATH),
 }
 
@@ -28,15 +28,15 @@ export default function MixedRealityPage() {
               <div className="work-header-container">
                 <div className="work-h1-wrap">
                   <div className="div-block-112">
-                    <div className="label green">Specialized service</div>
-                    <h1 className="heading-h1">Mixed Reality</h1>
+                    <div className="label green">Additional capability</div>
+                    <h1 className="heading-h1">FOOH &amp; Mixed Reality</h1>
                   </div>
                   <div className="back-block">
                     <Link href="/" className="button inverted-border w-button">Back to home</Link>
                   </div>
                 </div>
                 <div className="div-block-55">
-                  <p className="paragraph header">Blur the line between the physical and digital. I produce high-quality mixed reality content that merges live footage with CGI, delivering realistic, viral-ready visuals perfect for modern social media campaigns.<br /></p>
+                  <p className="paragraph header">I combine live-action plates with CGI, tracking, animation, and compositing to create FOOH and mixed reality campaign films for brands and agencies. Each production is planned around a clear visual idea, location, format, and launch context.<br /></p>
                 </div>
               </div>
             </div>

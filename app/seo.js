@@ -1,6 +1,6 @@
 export const SITE_URL = 'https://www.krystofjezek.com'
 export const OG_IMAGE = '/og-main.jpg'
-export const OG_IMAGE_ALT = 'CGI and motion design portfolio work by Krystof Jezek'
+export const OG_IMAGE_ALT = 'Art-directed 3D environments and visualization work by Krystof Jezek'
 export const PERSON_ID = `${SITE_URL}/#person`
 export const WEBSITE_ID = `${SITE_URL}/#website`
 export const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com'
@@ -8,7 +8,7 @@ export const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://ziwvaiplle7bd
 const pageSocialImages = {
   '/services/3d-environments': {
     url: '/videos/posters/cgi-environments.jpg',
-    alt: 'CGI 3D environments and visualization work by Krystof Jezek',
+    alt: 'Art-directed 3D environments and visualization work by Krystof Jezek',
   },
   '/services/mixed-reality': {
     url: '/videos/posters/mixed-reality.jpg',
@@ -87,19 +87,19 @@ export const portfolioRoutes = [
     path: '/',
     priority: 1.0,
     changeFrequency: 'weekly',
-    lastModified: '2026-07-01',
+    lastModified: '2026-07-10',
   },
   {
     path: '/services/3d-environments',
     priority: 0.9,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-01',
+    lastModified: '2026-07-10',
   },
   {
     path: '/services/mixed-reality',
-    priority: 0.9,
+    priority: 0.7,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-01',
+    lastModified: '2026-07-10',
   },
   {
     path: '/work/the-mag-w-rap-2025',
@@ -268,12 +268,12 @@ export const videoAssets = [
   {
     name: '3D environments service reel',
     page: '/services/3d-environments',
-    description: '3D environments reel showing CGI landscapes, architectural visualization, product backdrops, and animated mockup environments for brand campaigns.',
+    description: 'Art-directed 3D environments reel showing CGI landscapes, product backdrops, and animated environments for brand campaigns.',
     thumbnailUrl: '/videos/posters/yiskra_veha.jpg',
     contentUrl: '/videos/h264/yiskra_veha-fallback.mp4',
     dateCreated: '2026',
-    keywords: ['3D environments', 'CGI environments', 'architectural visualization', 'brand campaign visuals'],
-    transcript: 'No spoken dialogue. Visual reel showing 3D environments, CGI landscapes, architectural scenes, and high-end backdrops for product and brand visuals.',
+    keywords: ['3D environments', 'CGI environments', '3D visualization', 'brand campaign visuals'],
+    transcript: 'No spoken dialogue. Visual reel showing art-directed 3D environments, CGI landscapes, spatial scenes, and animated backdrops for product and brand visuals.',
   },
   {
     name: 'Mixed reality and FOOH service reel',
@@ -301,12 +301,12 @@ export const imageAssets = [
   {
     page: '/services/3d-environments',
     url: '/videos/posters/cgi-environments.jpg',
-    title: 'CGI 3D environments service visuals',
+    title: 'Art-directed 3D environments service visuals',
   },
   {
     page: '/services/mixed-reality',
     url: '/videos/posters/mixed-reality.jpg',
-    title: 'Mixed reality CGI campaign visuals',
+    title: 'FOOH and mixed reality CGI campaign visuals',
   },
 ]
 
@@ -363,8 +363,8 @@ export function siteStructuredData() {
         '@id': PERSON_ID,
         name: 'Krystof Jezek',
         alternateName: ['Kryštof Ježek', 'Krystof Ježek'],
-        jobTitle: ['CGI Designer', 'Software Engineer', '3D Motion Designer'],
-        description: 'CGI designer and software engineer creating 3D, motion, mixed reality, WebGL, and product visualization work for brands and studios.',
+        jobTitle: ['Independent 3D Designer', '3D Environment Designer', 'Software Engineer'],
+        description: 'Independent 3D designer creating art-directed environments and visualizations for brands and studios, with a background in software engineering and motion design.',
         url: SITE_URL,
         image: absoluteUrl(OG_IMAGE),
         email: 'studio@krystofjezek.com',
@@ -374,8 +374,10 @@ export function siteStructuredData() {
           addressCountry: 'CZ',
         },
         knowsAbout: [
-          '3D motion design',
+          '3D environment design',
+          'art-directed visualization',
           'CGI',
+          '3D motion design',
           'VFX',
           'mixed reality',
           'WebGL',
