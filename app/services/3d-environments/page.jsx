@@ -57,7 +57,7 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div className="div-block-55">
-                  <p className="paragraph header">I build custom animated mockups for agencies to present their work. Each one is a 3D environment built custom for your case study. <a href="https://motionmockups.com/" target="_blank" rel="noopener noreferrer" className="link">Motion Mockups</a> is the ready-made version I sell online. This is the custom one.<br /></p>
+                  <p className="paragraph header">I build custom animated mockups for agencies to present their work. Each one is a 3D environment built custom for your case study. <a href="https://motionmockups.com/" target="_blank" rel="noopener noreferrer" className="link green">Motion Mockups</a> is the ready-made version I sell online. This is the custom one.<br /></p>
                 </div>
               </div>
             </div>
