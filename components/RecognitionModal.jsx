@@ -169,8 +169,7 @@ export default function RecognitionModal() {
         <div className="recognition-modal-inner">
           <header className="recognition-modal-header">
             <h2 id="recognition-dialog-title" className="recognition-modal-title">Selected recognitions</h2>
-            <button type="button" className="recognition-modal-close paragraph link" onClick={closeModal}>
-              <span>Close</span>
+            <button type="button" className="recognition-modal-close" aria-label="Close recognition modal" onClick={closeModal}>
               <span className="recognition-modal-close-icon" aria-hidden="true">+</span>
             </button>
           </header>

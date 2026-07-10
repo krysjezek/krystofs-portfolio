@@ -4943,14 +4943,15 @@ body {
 
 .recognition-modal-close {
   appearance: none;
-  grid-column-gap: 7px;
   background: none;
   border: 0;
+  justify-content: center;
   align-items: center;
+  flex: none;
+  width: 24px;
+  height: 24px;
   padding: 0;
   font: inherit;
-  font-size: 16px;
-  line-height: 20px;
   display: inline-flex;
   cursor: pointer;
 }
@@ -4961,7 +4962,7 @@ body {
 }
 
 .recognition-modal-close-icon {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1;
   transform: rotate(45deg);
 }
@@ -9333,11 +9334,6 @@ body {
   .recognition-modal-title {
     font-size: clamp(30px, 10vw, 44px);
     white-space: normal;
-  }
-
-  .recognition-modal-close {
-    font-size: 12px;
-    line-height: 16px;
   }
 
   .recognition-modal-list {
