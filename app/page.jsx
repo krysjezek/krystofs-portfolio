@@ -723,6 +723,24 @@ export default function HomePage() {
                 <div className="recognition-row">
                   <div className="div-block-143 recognition-description">
                     <div className="div-block-65 recognition-description-link">
+                      <a href="https://the-brandidentity.com/directory" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
+                        Featured as an independent CGI designer in The Brand Identity directory
+                        <ExternalArrowIcon />
+                      </a>
+                      <div className="line-mask"><div className="line"></div></div>
+                    </div>
+                  </div>
+                  <div className="div-block-143 recognition-source">
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://the-brandidentity.com/favicon.ico)' }} aria-hidden="true"></span>
+                    <p className="paragraph">The Brand Identity</p>
+                  </div>
+                  <div className="div-block-143">
+                    <time className="paragraph dates" dateTime="2026-07">July 2026</time>
+                  </div>
+                </div>
+                <div className="recognition-row">
+                  <div className="div-block-143 recognition-description">
+                    <div className="div-block-65 recognition-description-link">
                       <a href="https://motionfolios.com/inspirations/krystof-jezek" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
                         Featured portfolio in a curated directory of leading 3D motion work
                         <ExternalArrowIcon />
