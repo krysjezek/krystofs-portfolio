@@ -117,7 +117,7 @@ function RecognitionRow({ item }) {
         <span className="recognition-favicon" style={{ backgroundImage: `url(${item.favicon})` }} aria-hidden="true"></span>
         <p className="paragraph">{item.source}</p>
       </div>
-      <div className="div-block-143">
+      <div className="div-block-143 recognition-date">
         <time className="paragraph dates" dateTime={item.dateTime}>{item.date}</time>
       </div>
     </div>
