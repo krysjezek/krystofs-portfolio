@@ -741,6 +741,78 @@ export default function HomePage() {
                 <div className="recognition-row">
                   <div className="div-block-143 recognition-description">
                     <div className="div-block-65 recognition-description-link">
+                      <a href="https://the-brandidentity.com/project/how-ashfall-built-out-shelbys-identity-from-an-extruded-hexagon?brid=YWdncwHSXqCQhlPojD_JIF5mJBjx" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
+                        Credited for 3D work on Shelby’s identity created with Ashfall Studio
+                        <ExternalArrowIcon />
+                      </a>
+                      <div className="line-mask"><div className="line"></div></div>
+                    </div>
+                  </div>
+                  <div className="div-block-143 recognition-source">
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://the-brandidentity.com/favicon.ico)' }} aria-hidden="true"></span>
+                    <p className="paragraph">The Brand Identity</p>
+                  </div>
+                  <div className="div-block-143">
+                    <time className="paragraph dates" dateTime="2026-05">May 2026</time>
+                  </div>
+                </div>
+                <div className="recognition-row">
+                  <div className="div-block-143 recognition-description">
+                    <div className="div-block-65 recognition-description-link">
+                      <a href="https://www.instagram.com/p/DWV5ftiDJhn/" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
+                        Featured in DESIGN BOD’s “The Art of the Perfect Render” spotlight
+                        <ExternalArrowIcon />
+                      </a>
+                      <div className="line-mask"><div className="line"></div></div>
+                    </div>
+                  </div>
+                  <div className="div-block-143 recognition-source">
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(/design-bod.jpg)' }} aria-hidden="true"></span>
+                    <p className="paragraph">DESIGN BOD</p>
+                  </div>
+                  <div className="div-block-143">
+                    <time className="paragraph dates" dateTime="2026-03">March 2026</time>
+                  </div>
+                </div>
+                <div className="recognition-row">
+                  <div className="div-block-143 recognition-description">
+                    <div className="div-block-65 recognition-description-link">
+                      <a href="https://www.brandsinmotion.xyz/resource/yiskra-veha" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
+                        Credited for 3D motion on VEHA’s identity created with Yiskra Studio
+                        <ExternalArrowIcon />
+                      </a>
+                      <div className="line-mask"><div className="line"></div></div>
+                    </div>
+                  </div>
+                  <div className="div-block-143 recognition-source">
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://images.squarespace-cdn.com/content/v1/663ba87248e1575777904df4/e39de4b0-db21-4e23-91f5-816b1a8a12dc/favicon.ico?format=100w)' }} aria-hidden="true"></span>
+                    <p className="paragraph">Brands in Motion</p>
+                  </div>
+                  <div className="div-block-143">
+                    <time className="paragraph dates" dateTime="2026-01">January 2026</time>
+                  </div>
+                </div>
+                <div className="recognition-row">
+                  <div className="div-block-143 recognition-description">
+                    <div className="div-block-65 recognition-description-link">
+                      <a href="https://www.brandsinmotion.xyz/resource/ashfallstudio-fifthrow" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
+                        Credited for 3D work on the Fifth Row identity created with Ashfall Studio
+                        <ExternalArrowIcon />
+                      </a>
+                      <div className="line-mask"><div className="line"></div></div>
+                    </div>
+                  </div>
+                  <div className="div-block-143 recognition-source">
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://images.squarespace-cdn.com/content/v1/663ba87248e1575777904df4/e39de4b0-db21-4e23-91f5-816b1a8a12dc/favicon.ico?format=100w)' }} aria-hidden="true"></span>
+                    <p className="paragraph">Brands in Motion</p>
+                  </div>
+                  <div className="div-block-143">
+                    <time className="paragraph dates" dateTime="2025-04">April 2025</time>
+                  </div>
+                </div>
+                <div className="recognition-row">
+                  <div className="div-block-143 recognition-description">
+                    <div className="div-block-65 recognition-description-link">
                       <a href="https://www.brandsinmotion.xyz/resource/ashfallstudio-tekuma" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
                         Credited for the Tekuma case-study CGI created with Ashfall Studio
                         <ExternalArrowIcon />
