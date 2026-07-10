@@ -16,6 +16,7 @@ const nextConfig = {
       { protocol: 'https', hostname: 'uploads-ssl.webflow.com' },
     ],
     formats: ['image/avif', 'image/webp'],
+    qualities: [75, 90],
   },
   async headers() {
     return [
