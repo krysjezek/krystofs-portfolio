@@ -713,13 +713,31 @@ export default function HomePage() {
         </section>
         <section className="main-resume" aria-labelledby="recognition-heading" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
-            <h2 id="recognition-heading" className="heading-2 pad">Selected recognition</h2>
+            <h2 id="recognition-heading" className="heading-2 pad">Selected recognition &amp; credits</h2>
             <div className="div-block-141">
               <div className="div-block-143 top">
-                <p className="paragraph">Selected external features and production credits for my CGI and motion work.</p>
+                <p className="paragraph">Selected awards, external features and production credits for my CGI and motion work.</p>
               </div>
               <div className="div-block-135 nomarg"></div>
               <div className="recognition-list">
+                <div className="recognition-row">
+                  <div className="div-block-143 recognition-description">
+                    <div className="div-block-65 recognition-description-link">
+                      <a href="https://www.awwwards.com/sites/krystof-portfolio-website" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
+                        Received an Awwwards Honorable Mention for my portfolio website
+                        <ExternalArrowIcon />
+                      </a>
+                      <div className="line-mask"><div className="line"></div></div>
+                    </div>
+                  </div>
+                  <div className="div-block-143 recognition-source">
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://www.awwwards.com/favicon.ico)' }} aria-hidden="true"></span>
+                    <p className="paragraph">Awwwards</p>
+                  </div>
+                  <div className="div-block-143">
+                    <time className="paragraph dates" dateTime="2023-12">December 2023</time>
+                  </div>
+                </div>
                 <div className="recognition-row">
                   <div className="div-block-143 recognition-description">
                     <div className="div-block-65 recognition-description-link">
@@ -756,7 +774,14 @@ export default function HomePage() {
                     <time className="paragraph dates" dateTime="2026-06">June 2026</time>
                   </div>
                 </div>
-                <div className="recognition-row">
+                <details className="recognition-more">
+                  <summary className="recognition-summary">
+                    <span className="paragraph link recognition-summary-label recognition-summary-label-closed">View all features &amp; credits (8)</span>
+                    <span className="paragraph link recognition-summary-label recognition-summary-label-open">Hide additional features &amp; credits</span>
+                    <span className="recognition-summary-icon" aria-hidden="true">+</span>
+                  </summary>
+                  <div className="recognition-more-list">
+                    <div className="recognition-row">
                   <div className="div-block-143 recognition-description">
                     <div className="div-block-65 recognition-description-link">
                       <a href="https://the-brandidentity.com/project/how-ashfall-built-out-shelbys-identity-from-an-extruded-hexagon?brid=YWdncwHSXqCQhlPojD_JIF5mJBjx" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
@@ -885,24 +910,6 @@ export default function HomePage() {
                 <div className="recognition-row">
                   <div className="div-block-143 recognition-description">
                     <div className="div-block-65 recognition-description-link">
-                      <a href="https://www.awwwards.com/sites/krystof-portfolio-website" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
-                        Received an Awwwards Honorable Mention for my portfolio website
-                        <ExternalArrowIcon />
-                      </a>
-                      <div className="line-mask"><div className="line"></div></div>
-                    </div>
-                  </div>
-                  <div className="div-block-143 recognition-source">
-                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://www.awwwards.com/favicon.ico)' }} aria-hidden="true"></span>
-                    <p className="paragraph">Awwwards</p>
-                  </div>
-                  <div className="div-block-143">
-                    <time className="paragraph dates" dateTime="2023-12">December 2023</time>
-                  </div>
-                </div>
-                <div className="recognition-row">
-                  <div className="div-block-143 recognition-description">
-                    <div className="div-block-65 recognition-description-link">
                       <a href="https://monopo.london/work/yonex-all-england-brand-identity/" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
                         Credited for motion design on the Yonex All England teaser assets
                         <ExternalArrowIcon />
@@ -918,6 +925,8 @@ export default function HomePage() {
                     <time className="paragraph dates" dateTime="2023-09">September 2023</time>
                   </div>
                 </div>
+                  </div>
+                </details>
               </div>
             </div>
           </div>
