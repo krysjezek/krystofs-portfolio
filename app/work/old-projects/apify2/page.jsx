@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { pageSeo } from '../../../seo'
+import { noIndex, pageSeo } from '../../../seo'
 
 export const metadata = {
   title: 'Apify Brand Video',
   ...pageSeo('/work/old-projects/apify2'),
+  ...noIndex,
   description: 'Brand video and motion design for Apify Technologies',
 }
 

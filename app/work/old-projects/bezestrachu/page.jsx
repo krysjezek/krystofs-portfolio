@@ -2,11 +2,12 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
-import { pageSeo } from '../../../seo'
+import { noIndex, pageSeo } from '../../../seo'
 
 export const metadata = {
   title: 'Bez Estrachu',
   ...pageSeo('/work/old-projects/bezestrachu'),
+  ...noIndex,
   description: 'Design and motion work for Bez Estrachu',
 }
 

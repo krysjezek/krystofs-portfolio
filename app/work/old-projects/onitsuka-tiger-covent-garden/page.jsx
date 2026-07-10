@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { pageSeo } from '../../../seo'
+import { noIndex, pageSeo } from '../../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export const metadata = {
   title: 'Onitsuka Tiger Covent Garden',
   ...pageSeo('/work/old-projects/onitsuka-tiger-covent-garden'),
+  ...noIndex,
   description: 'Mixed reality CGI campaign visuals for the Onitsuka Tiger Covent Garden store opening.',
 }
 

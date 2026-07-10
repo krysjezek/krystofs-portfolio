@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import { pageSeo } from '../../../seo'
+import { noIndex, pageSeo } from '../../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export const metadata = {
   title: 'Bezdeno',
   ...pageSeo('/work/old-projects/bezdeno'),
+  ...noIndex,
   description: '3D visualization and design for Bezdeno',
 }
 

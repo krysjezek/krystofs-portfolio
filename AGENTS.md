@@ -30,7 +30,7 @@ Fast map for agents working in this repository. Prefer this file over rediscover
 Route groups worth knowing:
 
 - `/services/*`: current service landing pages.
-- `/work/*`: current case studies; `/work/old-projects/*` is legacy Webflow-derived content.
+- `/work/*`: current case studies. Public navigation, work indexes, sitemaps, and structured data must expose only the four projects in `featuredCreativeWorks`/the homepage. `/work/old-projects/*` is legacy Webflow-derived content kept only for direct archival URLs; keep those routes `noindex, nofollow` and never link or list them publicly.
 - `/other/*`: CV, print CV, work index, and join page.
 - `/test/depth`: experimental depth-effect route; do not treat it as portfolio navigation.
 

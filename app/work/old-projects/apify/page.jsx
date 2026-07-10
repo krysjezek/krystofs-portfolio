@@ -2,13 +2,14 @@ import Link from 'next/link'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
-import { pageSeo } from '../../../seo'
+import { noIndex, pageSeo } from '../../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 export const metadata = {
   title: 'Apify',
   ...pageSeo('/work/old-projects/apify'),
+  ...noIndex,
   description: 'Design and motion work for Apify Technologies',
 }
 
