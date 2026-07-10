@@ -4899,8 +4899,8 @@ body {
   color: var(--white);
   background-color: var(--black);
   border: 1px solid var(--gray-light);
-  width: min(1200px, calc(100% - 40px));
-  max-width: none;
+  width: max-content;
+  max-width: calc(100% - 40px);
   max-height: calc(100dvh - 40px);
   margin: auto;
   padding: 0;
@@ -4938,6 +4938,7 @@ body {
   font-size: clamp(38px, 5vw, 70px);
   font-weight: 400;
   line-height: 0.95;
+  white-space: nowrap;
 }
 
 .recognition-modal-close {
@@ -4966,7 +4967,9 @@ body {
 }
 
 .recognition-modal-list {
-  margin-top: 30px;
+  width: max-content;
+  max-width: 100%;
+  margin-top: 50px;
   padding-left: var(--default-space);
   padding-right: var(--default-space);
 }
@@ -9329,6 +9332,7 @@ body {
 
   .recognition-modal-title {
     font-size: clamp(30px, 10vw, 44px);
+    white-space: normal;
   }
 
   .recognition-modal-close {
@@ -9337,6 +9341,7 @@ body {
   }
 
   .recognition-modal-list {
+    width: 100%;
     margin-top: 22px;
     padding-left: 18px;
     padding-right: 18px;
