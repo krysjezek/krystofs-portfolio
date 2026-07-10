@@ -4,10 +4,30 @@ import Footer from '@/components/Footer'
 import WorkPageHeader from '@/components/WorkPageHeader'
 import BackgroundVideo from '@/components/BackgroundVideo'
 import JsonLd from '@/components/JsonLd'
+import CaseStudySummary from '@/components/CaseStudySummary'
 import { pageSeo, pageStructuredData } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 const PATH = '/work/barbour'
+
+const caseStudySummary = [
+  {
+    label: 'Role',
+    answer: 'CGI direction, 3D animation, VFX, and Houdini simulation for Barbour\'s multi-market FOOH advertising campaign.',
+  },
+  {
+    label: 'Brief',
+    answer: 'Translate Barbour\'s Icons in Quilting platform into scroll-stopping fake out-of-home films for London, New York, Seoul, and Shanghai while carrying the British countryside into each city.',
+  },
+  {
+    label: 'Process',
+    answer: 'We reconstructed and tracked live-action city plates, animated the signature quilt, and built procedural nature trails in Blender and Houdini before compositing every scene for a convincing mixed-reality finish.',
+  },
+  {
+    label: 'Result',
+    answer: 'The campaign expanded into four city launches plus two additional films, averaging 100k+ organic Instagram views and 30% more engagement than Barbour\'s other posts.',
+  },
+]
 
 export const metadata = {
   title: 'Barbour Quilt FOOH',
@@ -163,6 +183,7 @@ export default function BarbourPage() {
             </div>
           </div>
         </section>
+        <CaseStudySummary items={caseStudySummary} />
         <section id="main-projects" className="main-resume w-node-ab61f89b-2906-3854-9eb5-67a933bce7ba-b6236407" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
             <div className="div-block-141 credits">

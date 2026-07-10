@@ -4,10 +4,30 @@ import Footer from '@/components/Footer'
 import WorkPageHeader from '@/components/WorkPageHeader'
 import BackgroundVideo from '@/components/BackgroundVideo'
 import JsonLd from '@/components/JsonLd'
+import CaseStudySummary from '@/components/CaseStudySummary'
 import { pageSeo, pageStructuredData } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 const PATH = '/work/chainer'
+
+const caseStudySummary = [
+  {
+    label: 'Role',
+    answer: 'Art direction, 3D product visualization, CGI animation, sound design, and ecommerce web design and development for a men\'s accessories brand.',
+  },
+  {
+    label: 'Brief',
+    answer: 'Create a distinctive visual identity and online store that made Chainer\'s jewelry feel premium, contemporary, and recognisable in a competitive ecommerce category.',
+  },
+  {
+    label: 'Process',
+    answer: 'We developed immersive 3D product worlds, modeled and animated the jewelry, produced launch films and campaign renders, then carried the same art direction into the ecommerce website.',
+  },
+  {
+    label: 'Result',
+    answer: 'Chainer launched with one cohesive system spanning CGI product imagery, 3D animation, campaign assets, and a custom-designed online store.',
+  },
+]
 
 export const metadata = {
   title: 'Chainer',
@@ -83,6 +103,7 @@ export default function ChainerPage() {
             </div>
           </div>
         </section>
+        <CaseStudySummary items={caseStudySummary} />
         <section id="main-projects" className="main-resume" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
             <div className="div-block-141 credits">

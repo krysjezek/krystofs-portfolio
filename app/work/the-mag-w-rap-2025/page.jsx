@@ -4,10 +4,30 @@ import Footer from '@/components/Footer'
 import WorkPageHeader from '@/components/WorkPageHeader'
 import EmbedVideo from '@/components/EmbedVideo'
 import JsonLd from '@/components/JsonLd'
+import CaseStudySummary from '@/components/CaseStudySummary'
 import { pageSeo, pageStructuredData } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 const PATH = '/work/the-mag-w-rap-2025'
+
+const caseStudySummary = [
+  {
+    label: 'Role',
+    answer: 'Art direction, 3D animation, motion design, and broadcast graphics for the fourth season of The Mag Wrap rap talent show.',
+  },
+  {
+    label: 'Brief',
+    answer: 'Refresh the most-watched show on Czech and Slovak YouTube with a cohesive motion graphics package for the intro, recurring segments, sponsor content, statistics, and long-form episodes.',
+  },
+  {
+    label: 'Process',
+    answer: 'We built a modular 2D and 3D motion design system: a 20-second intro, show IDs, 10 looping backgrounds, reusable templates, explainers, standings, and duel graphics across Blender, Houdini, Nuke, and After Effects.',
+  },
+  {
+    label: 'Result',
+    answer: 'The season averaged 500k+ YouTube views per episode, reached 10,000+ Patreon subscribers, and recorded 50% more watch time than 2024 after a four-week delivery sprint.',
+  },
+]
 
 export const metadata = {
   title: 'The Mag Wrap 2025',
@@ -164,6 +184,7 @@ export default function MagWrap2025Page() {
           </div>
           <div className="liner bottom"></div>
         </section>
+        <CaseStudySummary items={caseStudySummary} />
         <section id="main-projects" className="main-resume" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
             <div className="div-block-141 credits">

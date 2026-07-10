@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import WorkPageHeader from '@/components/WorkPageHeader'
 import EmbedVideo from '@/components/EmbedVideo'
 import JsonLd from '@/components/JsonLd'
+import CaseStudySummary from '@/components/CaseStudySummary'
 import { absoluteUrl, assetUrl, creativeWorkId, pageSeo, PERSON_ID, videoObjectId } from '../../seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
@@ -228,24 +229,7 @@ export default function VSXSportsBraPage() {
             </div>
           </div>
         </section>
-        <section className="main-resume" aria-label="Case study summary" data-reveal>
-          <div className="w-layout-blockcontainer container-3 nopad w-container">
-            <div className="div-block-141 credits case-study">
-              <dl className="case-study-grid">
-                {caseStudyAnswers.map((item) => (
-                  <div className="case-study-column" key={item.label}>
-                    <dt className="div-block-143">
-                      <span className="label">{item.label}</span>
-                    </dt>
-                    <dd className="div-block-143">
-                      <p className="paragraph">{item.answer}<br /></p>
-                    </dd>
-                  </div>
-                ))}
-              </dl>
-            </div>
-          </div>
-        </section>
+        <CaseStudySummary items={caseStudyAnswers} />
         <section id="main-projects" className="main-resume" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
             <div className="div-block-141 credits">
