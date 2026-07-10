@@ -8,7 +8,7 @@ export const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://ziwvaiplle7bd
 const pageSocialImages = {
   '/services/3d-environments': {
     url: '/videos/posters/cgi-environments.jpg',
-    alt: 'Art-directed 3D environments and visualization work by Krystof Jezek',
+    alt: 'Custom animated 3D motion mockups for agency case studies by Krystof Jezek',
   },
   '/services/mixed-reality': {
     url: '/videos/posters/mixed-reality.jpg',
@@ -266,14 +266,14 @@ export const videoAssets = [
     transcript: 'No spoken dialogue. Visual sequence showing 3D jewelry product scenes, campaign art direction, and ecommerce brand visuals for Chainer.',
   },
   {
-    name: '3D environments service reel',
+    name: 'Custom motion mockups and 3D environments reel',
     page: '/services/3d-environments',
-    description: 'Art-directed 3D environments reel showing CGI landscapes, product backdrops, and animated environments for brand campaigns.',
+    description: 'Custom animated 3D environments and motion mockups built around branding, web, and design projects for agency case studies.',
     thumbnailUrl: '/videos/posters/yiskra_veha.jpg',
     contentUrl: '/videos/h264/yiskra_veha-fallback.mp4',
     dateCreated: '2026',
-    keywords: ['3D environments', 'CGI environments', '3D visualization', 'brand campaign visuals'],
-    transcript: 'No spoken dialogue. Visual reel showing art-directed 3D environments, CGI landscapes, spatial scenes, and animated backdrops for product and brand visuals.',
+    keywords: ['custom motion mockups', 'animated mockups', '3D environments', 'agency case studies'],
+    transcript: 'No spoken dialogue. Visual reel showing custom animated 3D environments and motion mockups created to present branding, web, and design projects.',
   },
   {
     name: 'Mixed reality and FOOH service reel',
@@ -301,7 +301,7 @@ export const imageAssets = [
   {
     page: '/services/3d-environments',
     url: '/videos/posters/cgi-environments.jpg',
-    title: 'Art-directed 3D environments service visuals',
+    title: 'Custom motion mockups and animated 3D environments',
   },
   {
     page: '/services/mixed-reality',
@@ -375,7 +375,8 @@ export function siteStructuredData() {
         },
         knowsAbout: [
           '3D environment design',
-          'art-directed visualization',
+          'custom motion mockups',
+          'animated mockups',
           'CGI',
           '3D motion design',
           'VFX',

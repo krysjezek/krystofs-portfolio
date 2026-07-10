@@ -11,26 +11,26 @@ const PATH = '/services/3d-environments'
 
 const serviceOverview = [
   {
-    label: 'Focus',
-    answer: 'Art-directed 3D environments that combine realistic lighting, materials, and spatial detail with a clear visual concept.',
+    label: 'What it is',
+    answer: 'An animated 3D mockup built around one project.',
   },
   {
-    label: 'Best for',
-    answer: 'Brand films, product campaigns, digital landscapes, visual identities, and animated backdrops for studios and agencies.',
+    label: 'Who it is for',
+    answer: 'Branding, web, and design agencies that want a custom way to present their work.',
   },
   {
-    label: 'Approach',
-    answer: 'Every environment is designed around mood, composition, and narrative rather than treated as a purely technical render.',
+    label: 'How it works',
+    answer: 'You send me the project and what you want to feature. I design and animate the environment around it.',
   },
   {
-    label: 'Production',
-    answer: 'Look development, scene building, animation, simulation, rendering, and delivery, handled independently or with specialist collaborators.',
+    label: 'Where it goes',
+    answer: 'Usually into a case study or the agency website.',
   },
 ]
 
 export const metadata = {
-  title: 'Art-Directed 3D Environments',
-  description: 'Art-directed 3D environments and visualization for brand films, product campaigns, digital landscapes, and animated studio backdrops.',
+  title: 'Custom Motion Mockups for Agencies',
+  description: 'Custom animated 3D mockups built around branding, web, and design projects for agency case studies and websites.',
   ...pageSeo(PATH),
 }
 
@@ -49,20 +49,20 @@ export default function ThreeDEnvironments() {
               <div className="work-header-container">
                 <div className="work-h1-wrap">
                   <div className="div-block-112">
-                    <div className="label green">Primary specialization</div>
-                    <h1 className="heading-h1">Art-Directed 3D Environments</h1>
+                    <div className="label green">For branding, web, and design agencies</div>
+                    <h1 className="heading-h1">Custom Motion Mockups</h1>
                   </div>
                   <div className="back-block">
                     <Link href="/" className="button inverted-border w-button">Back to home</Link>
                   </div>
                 </div>
                 <div className="div-block-55">
-                  <p className="paragraph header">I create realistic 3D environments with the creative direction of campaign imagery. Built for brands and studios, each scene is shaped around a visual idea, from composition and lighting to materials, atmosphere, and motion.<br /></p>
+                  <p className="paragraph header">I build custom animated mockups for agencies to present their work. Each one is a 3D environment made around a specific project, usually for its case study or website. <a href="https://www.motionmockups.com/" target="_blank" rel="noopener noreferrer" className="link">Motion Mockups</a> is the ready-made version I sell online. This is the custom one.<br /></p>
                 </div>
               </div>
             </div>
           </div>
-          <CaseStudySummary items={serviceOverview} ariaLabel="3D environments service overview" />
+          <CaseStudySummary items={serviceOverview} ariaLabel="Custom motion mockups service overview" />
           <div className="w-layout-blockcontainer container-3 w-container">
             <div id="w-node-c5f2b9ac-b925-2203-4fe3-002441086a5d-033eedbd" className="work-main-wrap first">
               <div className="w-layout-grid cs-grid services" data-reveal-group>
