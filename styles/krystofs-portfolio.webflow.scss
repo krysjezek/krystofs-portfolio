@@ -4794,6 +4794,20 @@ body {
   grid-row-gap: var(--half-space);
 }
 
+.case-study-grid {
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  padding-bottom: var(--default-space);
+  display: grid;
+}
+
+.case-study-column {
+  grid-row-gap: var(--half-space);
+  flex-flow: column;
+  min-width: 0;
+  display: flex;
+}
+
 .div-block-142 {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr;
@@ -6077,6 +6091,11 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
+  .case-study-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: var(--default-space);
+  }
+
   .postion {
     grid-column-gap: 3px;
     grid-row-gap: 3px;
@@ -6773,6 +6792,10 @@ body {
     grid-row-gap: 15px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .case-study-grid {
+    grid-template-columns: 1fr;
   }
 
   .cv-main {

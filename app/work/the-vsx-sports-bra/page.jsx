@@ -238,13 +238,18 @@ export default function VSXSportsBraPage() {
         </section>
         <section className="main-resume" data-reveal>
           <div className="w-layout-blockcontainer container-3 nopad w-container">
-            <div className="cv-container">
-              <div className="label">Case Study</div>
-              <div className="project-specs-wrap">
+            <div className="div-block-141 credits case-study">
+              <div className="div-block-143 top">
+                <p className="label">Case Study</p>
+              </div>
+              <div className="div-block-135 nomarg"></div>
+              <div className="case-study-grid">
                 {caseStudyAnswers.map((item) => (
-                  <div className="specs-item" key={item.label}>
-                    <div className="label">{item.label}</div>
-                    <div className="specs-inner-block">
+                  <div className="case-study-column" key={item.label}>
+                    <div className="div-block-143">
+                      <p className="label">{item.label}</p>
+                    </div>
+                    <div className="div-block-143">
                       <p className="paragraph">{item.answer}<br /></p>
                     </div>
                   </div>
