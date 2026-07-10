@@ -18,6 +18,14 @@ import { homepageStructuredData } from './seo'
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 const PROFILE_BLUR = 'data:image/jpeg;base64,/9j/2wBDABQODxIPDRQSEBIXFRQYHjIhHhwcHj0sLiQySUBMS0dARkVQWnNiUFVtVkVGZIhlbXd7gYKBTmCNl4x9lnN+gXz/2wBDARUXFx4aHjshITt8U0ZTfHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHx8fHz/wAARCAAKAAoDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABQEG/8QAIBABAAEDAwUAAAAAAAAAAAAAAQIAAwQSEyERMkJRcv/EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwAe5h40ce9ruG4OqJGXMT5pXGbJjWjch2Hkeqyk1ZyV5V61KD//2Q=='
 
+function ExternalArrowIcon() {
+  return (
+    <svg className="image-20 recognition-arrow" viewBox="0 0 10 10" aria-hidden="true">
+      <path d="M1 9 9 1M3 1h6v6" fill="none" stroke="currentColor" strokeWidth="1.25" />
+    </svg>
+  )
+}
+
 export default function HomePage() {
   const profilePicUrl = `${CDN}/images/profilovka-new-edit-ezgif.com-png-to-webp-converter.webp`
   const gridRef = useRef(null)
@@ -714,13 +722,17 @@ export default function HomePage() {
               <div className="recognition-list">
                 <div className="recognition-row">
                   <div className="div-block-143 recognition-description">
-                    <p className="paragraph">Featured portfolio in a curated directory of leading 3D motion work.</p>
+                    <div className="div-block-65 recognition-description-link">
+                      <a href="https://motionfolios.com/inspirations/krystof-jezek" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
+                        Featured portfolio in a curated directory of leading 3D motion work
+                        <ExternalArrowIcon />
+                      </a>
+                      <div className="line-mask"><div className="line"></div></div>
+                    </div>
                   </div>
-                  <div className="div-block-143">
-                    <a href="https://motionfolios.com/inspirations/krystof-jezek" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-source">
-                      <span className="recognition-favicon" style={{ backgroundImage: 'url(https://global.divhunt.com/5b25794ad4a46784aa03244df4a7a28d_5809.png)' }} aria-hidden="true"></span>
-                      Motionfolios
-                    </a>
+                  <div className="div-block-143 recognition-source">
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://global.divhunt.com/5b25794ad4a46784aa03244df4a7a28d_5809.png)' }} aria-hidden="true"></span>
+                    <p className="paragraph">Motionfolios</p>
                   </div>
                   <div className="div-block-143">
                     <time className="paragraph dates" dateTime="2026-06">June 2026</time>
@@ -728,13 +740,17 @@ export default function HomePage() {
                 </div>
                 <div className="recognition-row">
                   <div className="div-block-143 recognition-description">
-                    <p className="paragraph">Credited for the Tekuma case-study CGI created with Ashfall Studio.</p>
+                    <div className="div-block-65 recognition-description-link">
+                      <a href="https://www.brandsinmotion.xyz/resource/ashfallstudio-tekuma" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
+                        Credited for the Tekuma case-study CGI created with Ashfall Studio
+                        <ExternalArrowIcon />
+                      </a>
+                      <div className="line-mask"><div className="line"></div></div>
+                    </div>
                   </div>
-                  <div className="div-block-143">
-                    <a href="https://www.brandsinmotion.xyz/resource/ashfallstudio-tekuma" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-source">
-                      <span className="recognition-favicon" style={{ backgroundImage: 'url(https://images.squarespace-cdn.com/content/v1/663ba87248e1575777904df4/e39de4b0-db21-4e23-91f5-816b1a8a12dc/favicon.ico?format=100w)' }} aria-hidden="true"></span>
-                      Brands in Motion
-                    </a>
+                  <div className="div-block-143 recognition-source">
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://images.squarespace-cdn.com/content/v1/663ba87248e1575777904df4/e39de4b0-db21-4e23-91f5-816b1a8a12dc/favicon.ico?format=100w)' }} aria-hidden="true"></span>
+                    <p className="paragraph">Brands in Motion</p>
                   </div>
                   <div className="div-block-143">
                     <time className="paragraph dates" dateTime="2025-02">February 2025</time>
@@ -742,13 +758,17 @@ export default function HomePage() {
                 </div>
                 <div className="recognition-row">
                   <div className="div-block-143 recognition-description">
-                    <p className="paragraph">Credited for motion design on the Yonex All England teaser assets.</p>
+                    <div className="div-block-65 recognition-description-link">
+                      <a href="https://monopo.london/work/yonex-all-england-brand-identity/" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
+                        Credited for motion design on the Yonex All England teaser assets
+                        <ExternalArrowIcon />
+                      </a>
+                      <div className="line-mask"><div className="line"></div></div>
+                    </div>
                   </div>
-                  <div className="div-block-143">
-                    <a href="https://monopo.london/work/yonex-all-england-brand-identity/" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-source">
-                      <span className="recognition-favicon" style={{ backgroundImage: 'url(https://monopo.london/favicon/favicon-32x32.png)' }} aria-hidden="true"></span>
-                      Monopo London
-                    </a>
+                  <div className="div-block-143 recognition-source">
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://monopo.london/favicon/favicon-32x32.png)' }} aria-hidden="true"></span>
+                    <p className="paragraph">Monopo London</p>
                   </div>
                   <div className="div-block-143">
                     <time className="paragraph dates" dateTime="2023-09">September 2023</time>
