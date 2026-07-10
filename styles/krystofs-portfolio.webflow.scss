@@ -4886,10 +4886,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 3px;
   flex: none;
   width: 20px;
   height: 20px;
   display: block;
+  overflow: hidden;
 }
 
 .div-block-142 {
