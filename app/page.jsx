@@ -831,6 +831,24 @@ export default function HomePage() {
                 <div className="recognition-row">
                   <div className="div-block-143 recognition-description">
                     <div className="div-block-65 recognition-description-link">
+                      <a href="https://www.awwwards.com/sites/krystof-portfolio-website" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
+                        Received an Awwwards Honorable Mention for my portfolio website
+                        <ExternalArrowIcon />
+                      </a>
+                      <div className="line-mask"><div className="line"></div></div>
+                    </div>
+                  </div>
+                  <div className="div-block-143 recognition-source">
+                    <span className="recognition-favicon" style={{ backgroundImage: 'url(https://www.awwwards.com/favicon.ico)' }} aria-hidden="true"></span>
+                    <p className="paragraph">Awwwards</p>
+                  </div>
+                  <div className="div-block-143">
+                    <time className="paragraph dates" dateTime="2023-12">December 2023</time>
+                  </div>
+                </div>
+                <div className="recognition-row">
+                  <div className="div-block-143 recognition-description">
+                    <div className="div-block-65 recognition-description-link">
                       <a href="https://monopo.london/work/yonex-all-england-brand-identity/" target="_blank" rel="noopener noreferrer" className="paragraph link recognition-link-content">
                         Credited for motion design on the Yonex All England teaser assets
                         <ExternalArrowIcon />
