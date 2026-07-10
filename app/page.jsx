@@ -69,9 +69,9 @@ export default function HomePage() {
                 </div>
                 <div id="w-node-b83b1921-bc4d-1a56-1b33-65a76eb8dfae-a7256e91" className="div-block-135">
                   <div className="footer--text">
-                    <h1 className="label">Independent 3D Designer</h1>
+                    <h1 className="label">CGI Designer, Software Engineer</h1>
                     <div className="div-block-59">
-                      <p className="paragraph">I create art-directed 3D environments and visualizations for brands and studios, combining realistic detail with a clear creative idea. My software engineering background helps me solve technically demanding briefs and build efficient workflows.</p>
+                      <p className="paragraph">I craft high-end 3D and motion visuals for brands and studios. When I&#x27;m not designing, I&#x27;m building apps and tools that bridge art and tech.</p>
                     </div>
                   </div>
                 </div>
