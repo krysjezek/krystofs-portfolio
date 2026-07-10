@@ -163,18 +163,12 @@ export default function RecognitionModal() {
         id="recognition-dialog"
         className="recognition-modal"
         aria-labelledby="recognition-dialog-title"
-        aria-describedby="recognition-dialog-description"
         onClick={handleBackdropClick}
         onClose={() => setIsOpen(false)}
       >
         <div className="recognition-modal-inner">
           <header className="recognition-modal-header">
-            <div>
-              <h2 id="recognition-dialog-title" className="recognition-modal-title">Selected recognition &amp; credits</h2>
-              <p id="recognition-dialog-description" className="paragraph recognition-modal-description">
-                Selected awards, external features and production credits for my CGI and motion work.
-              </p>
-            </div>
+            <h2 id="recognition-dialog-title" className="recognition-modal-title">Selected recognitions</h2>
             <button type="button" className="recognition-modal-close paragraph link" onClick={closeModal}>
               <span>Close</span>
               <span className="recognition-modal-close-icon" aria-hidden="true">+</span>

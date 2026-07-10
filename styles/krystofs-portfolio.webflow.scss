@@ -4940,11 +4940,6 @@ body {
   line-height: 0.95;
 }
 
-.recognition-modal-description {
-  max-width: 720px;
-  margin-top: 18px;
-}
-
 .recognition-modal-close {
   appearance: none;
   grid-column-gap: 7px;
@@ -9334,10 +9329,6 @@ body {
 
   .recognition-modal-title {
     font-size: clamp(30px, 10vw, 44px);
-  }
-
-  .recognition-modal-description {
-    margin-top: 12px;
   }
 
   .recognition-modal-close {
