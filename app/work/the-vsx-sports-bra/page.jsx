@@ -131,7 +131,7 @@ export default function VSXSportsBraPage() {
       <Navbar />
       <JsonLd data={vsxCaseStudyStructuredData} />
       <div className="w-layout-blockcontainer container-2 w-container">
-        <section className="work-main">
+        <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
             <WorkPageHeader label="Victoria&#x27;s Secret, VSX" title="The VSX Sports Bra" data-reveal="hero">
               <p className="paragraph header">

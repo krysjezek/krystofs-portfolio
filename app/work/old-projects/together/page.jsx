@@ -18,7 +18,7 @@ export default function Together() {
     <>
       <Navbar />
       <div className="w-layout-blockcontainer container-2 w-container">
-        <section className="work-main">
+        <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
             <div className="work-header-wrap" data-reveal="hero">
               <div className="work-header-container">
@@ -48,17 +48,17 @@ export default function Together() {
               <div className="w-layout-grid cs-grid" data-reveal-group>
                 <div id="w-node-e8429e11-5aa6-96d5-e284-8347675c6313-92c4b03b" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
-                    <div style={{ padding: '100.00% 0 0 0', position: 'relative' }}><iframe src="https://player.vimeo.com/video/993080938?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen frameBorder="0" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}></iframe></div>
+                    <div style={{ padding: '100.00% 0 0 0', position: 'relative' }}><iframe loading="lazy" title="Together campaign animation one" src="https://player.vimeo.com/video/993080938?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen frameBorder="0" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}></iframe></div>
                   </div>
                 </div>
                 <div id="w-node-e8429e11-5aa6-96d5-e284-8347675c6315-92c4b03b" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
-                    <div style={{ padding: '100.00% 0 0 0', position: 'relative' }}><iframe src="https://player.vimeo.com/video/993080748?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen frameBorder="0" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}></iframe></div>
+                    <div style={{ padding: '100.00% 0 0 0', position: 'relative' }}><iframe loading="lazy" title="Together campaign animation two" src="https://player.vimeo.com/video/993080748?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen frameBorder="0" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}></iframe></div>
                   </div>
                 </div>
                 <div id="w-node-b0a55255-f054-c1cc-e862-7828ddeabddc-92c4b03b" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
-                    <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe src="https://player.vimeo.com/video/993081310?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen frameBorder="0" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}></iframe></div>
+                    <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe loading="lazy" title="Together campaign main film" src="https://player.vimeo.com/video/993081310?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen frameBorder="0" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}></iframe></div>
                   </div>
                 </div>
                 <div className="project-specs-wrap" data-reveal>

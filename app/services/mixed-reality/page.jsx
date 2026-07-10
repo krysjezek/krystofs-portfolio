@@ -19,7 +19,7 @@ export default function MixedRealityPage() {
     <>
       <Navbar />
       <div className="w-layout-blockcontainer container-2 w-container">
-        <section className="work-main">
+        <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
             <div className="work-header-wrap" data-reveal="hero">
               <div className="work-header-container">
@@ -184,7 +184,7 @@ export default function MixedRealityPage() {
                     srcMp4="/videos/h264/cgi_yogrillz%20updated-fallback.mp4"
                   /></div>
                   <div className="div-block-146">
-                    <h1 className="label services">YoGrillz</h1>
+                    <h2 className="label services">YoGrillz</h2>
                     <h2 className="service-heading">Sparta Championship Ring</h2>
                   </div>
                 </div>

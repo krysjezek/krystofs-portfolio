@@ -23,7 +23,7 @@ export default function Bezestrachu() {
           srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e944674bd9074bf9ddd482_intro do case-transcode.webm"
         />
       </div>
-      <div>
+      <div id="main-content" role="main">
         <div className="work-header-wrap" data-reveal="hero">
           <div className="back-block">
             <Link href="/" className="button inverted-border w-button">Back to home</Link>
@@ -40,10 +40,10 @@ export default function Bezestrachu() {
           <div id="w-node-_29f6f88b-bbb8-6aef-df1d-3bc0f6e39c10-67f2d765" className="work-main-wrap first">
             <div className="w-layout-grid cs-grid _2-col" data-reveal-group>
               <div id="w-node-cd4baa0b-1ad0-41bf-af43-f758782c6f44-67f2d765" className="html-embed w-embed w-iframe w-script">
-                <div style={{ padding: '75% 0 0 0', position: 'relative' }}><iframe src="https://player.vimeo.com/video/796936380?h=d64c69f816&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }} title="Bezestrachu &amp;ndash; Brand Reveal"></iframe></div>
+                <div style={{ padding: '75% 0 0 0', position: 'relative' }}><iframe loading="lazy" src="https://player.vimeo.com/video/796936380?h=d64c69f816&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }} title="Bezestrachu &amp;ndash; Brand Reveal"></iframe></div>
               </div>
               <div id="w-node-fdbd520a-bb90-9839-ee68-40b6c3decaa5-67f2d765" className="html-embed w-embed w-iframe w-script">
-                <div style={{ padding: '75% 0 0 0', position: 'relative' }}><iframe src="https://player.vimeo.com/video/796901161?h=4cd72e0728&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }} title="claymotion-intro"></iframe></div>
+                <div style={{ padding: '75% 0 0 0', position: 'relative' }}><iframe loading="lazy" src="https://player.vimeo.com/video/796901161?h=4cd72e0728&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }} title="claymotion-intro"></iframe></div>
               </div>
               <BackgroundVideo className="background-video-15 bezestrachu"
                 poster="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e3461a2a73c8622898d8c1_bezestrachu-transformation-2-poster-00001.jpg"

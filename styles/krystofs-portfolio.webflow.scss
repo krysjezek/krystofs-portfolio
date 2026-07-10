@@ -3178,6 +3178,34 @@ body {
   }
 }
 
+.skip-link {
+  position: fixed;
+  z-index: 100000;
+  top: 8px;
+  left: 8px;
+  padding: 10px 14px;
+  color: #05070a;
+  background: #fff;
+  border-radius: 4px;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 @keyframes arrow-diagonal-in {
   0% {
     transform: translate(0);
@@ -8227,7 +8255,6 @@ body {
   }
 
   .div-block-152 {
-    background-image: url('#{$cdn}/images/Comp-2-0-00-00-00.png');
     padding-bottom: 50%;
   }
 
@@ -8236,10 +8263,7 @@ body {
     grid-row-gap: 10px;
   }
 
-  .code-embed {
-    display: none;
-  }
-
+  .code-embed,
   .code-embed.mobile {
     display: block;
   }

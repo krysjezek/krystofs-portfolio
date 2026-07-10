@@ -17,7 +17,7 @@ export default function CVPage() {
     <>
       <Navbar />
       <div className="w-layout-blockcontainer container-2 w-container">
-        <section className="cv-main">
+        <section id="main-content" role="main" className="cv-main">
           <div className="w-layout-blockcontainer container-3 w-container">
             <div className="work-header-wrap" data-reveal="hero">
               <div className="work-header-container">

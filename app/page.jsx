@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState, useEffect } from 'react'
+import { useRef, useEffect } from 'react'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BackgroundVideo from '@/components/BackgroundVideo'
@@ -21,10 +21,6 @@ export default function HomePage() {
   const gridRef = useRef(null)
   const marqueeRef = useRef(null)
   const mockupsBannerRef = useRef(null)
-  const [isMobile] = useState(() =>
-    typeof window !== 'undefined' ? window.matchMedia('(max-width: 991px)').matches : false
-  )
-
   useServiceTabs()
   useCardTilt(gridRef)
   useMarquee(marqueeRef)
@@ -46,7 +42,7 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <div className="w-layout-blockcontainer container-2 w-container">
+      <div id="main-content" role="main" className="w-layout-blockcontainer container-2 w-container">
         <section className="main-hero">
           <div className="liner bottom"></div>
           <div className="w-layout-blockcontainer container-3 padbot nogap w-container" data-reveal="hero">
@@ -128,18 +124,15 @@ export default function HomePage() {
                     </div>
                   </div>
                   <div id="w-node-_1ced7a6b-e1d3-ec40-248f-ca4885de56d5-a7256e91" className="div-block-152">
-                    {!isMobile && <div className="code-embed w-embed"><EmbedVideo
+                    <div className="code-embed mobile w-embed"><EmbedVideo
                       poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69944082d88aed7c8242c463_Comp%201%20(0-00-00-00).png"
+                      posterMobile="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69944804e0ecbc47b70b6bea_Comp%202%20(0-00-00-00).png"
                       posterAlt="Motion Mockups video template collection preview"
                       title="Motion Mockups video mockup collection"
+                      posterPriority
                       srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/6994449789efbe463813c5f2_web-video-2k.mp4"
-                    /></div>}
-                    {isMobile && <div className="code-embed mobile w-embed"><EmbedVideo
-                      poster="https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69944804e0ecbc47b70b6bea_Comp%202%20(0-00-00-00).png"
-                      posterAlt="Motion Mockups mobile video template preview"
-                      title="Motion Mockups mobile video mockup collection"
-                      srcMp4="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/699447a96279cd427dd46294_web-video-mobile.mp4"
-                    /></div>}
+                      srcMp4Mobile="https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/699447a96279cd427dd46294_web-video-mobile.mp4"
+                    /></div>
                   </div>
                 </a>
               </div>
@@ -288,13 +281,13 @@ export default function HomePage() {
                 </li>
               </ul>
             </div>
-            <main id="serv2" className="div-block-95 none">
+            <div id="serv2" className="div-block-95 none">
               <div className="div-block-98">
                 <div className="services-heading large">Showcase products</div>
                 <p className="paragraph smaller">Present your products in dynamic, detailed views that traditional photos and videos can&#x27;t match.</p>
               </div>
               <div className="div-block-97 _2"><Image fill src={CDN + '/images/untitled.2png-min.png'} alt="3D product showcase visual" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
-            </main>
+            </div>
             <div id="serv4" className="div-block-95 none">
               <div className="div-block-98">
                 <div className="services-heading large">Educate Customers</div>

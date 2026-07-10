@@ -14,7 +14,7 @@ export const dynamic = 'force-static'
 export default function CVPrintPage() {
   return (
     <div className="w-layout-blockcontainer container-2 w-container">
-      <section className="cv-main">
+      <section id="main-content" role="main" className="cv-main">
         <div className="w-layout-blockcontainer container-3 w-container">
           <div className="work-header-wrap">
             <div className="work-header-container">

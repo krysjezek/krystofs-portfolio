@@ -9,7 +9,7 @@ export default function Navbar() {
   useNavbarScroll(navbarRef)
 
   return (
-    <div
+    <header
       ref={navbarRef}
       data-w-id="ca89d5d4-26d0-52d6-d41d-978fc24c638a"
       data-animation="default"
@@ -17,17 +17,17 @@ export default function Navbar() {
       data-duration="400"
       data-easing="ease"
       data-easing2="ease"
-      role="banner"
       className="navbar w-nav"
     >
-      <div className="w-layout-blockcontainer container-3 w-container">
+      <a className="skip-link" href="#main-content">Skip to content</a>
+      <nav aria-label="Primary" className="w-layout-blockcontainer container-3 w-container">
         <div className="mav-div">
           <div data-w-id="de2c0a77-b599-71cc-6764-3b97578d2a30" className="div-block-65">
             <Link href="/" className="link smaller">Kryštof Ježek</Link>
             <div className="line-mask"><div className="line"></div></div>
           </div>
         </div>
-      </div>
-    </div>
+      </nav>
+    </header>
   )
 }

@@ -20,7 +20,7 @@ export default function BarbourPage() {
     <>
       <Navbar />
       <div className="w-layout-blockcontainer container-2 w-container">
-        <section className="work-main">
+        <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
             <WorkPageHeader label="Barbour" title="Icons in Quilting" data-reveal="hero">
               <div className="div-block-55">
@@ -75,7 +75,7 @@ export default function BarbourPage() {
                 <div id="w-node-_0870a03f-5ebe-95fe-6c14-ca2a77e8140e-b6236407" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '177.78% 0 0 0', position: 'relative' }}>
-                      <iframe src="https://www.youtube.com/embed/oeVS_Q1VsKU" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
+                      <iframe loading="lazy" title="Barbour Icons in Quilting campaign film" src="https://www.youtube.com/embed/oeVS_Q1VsKU" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
                       </iframe>
                     </div>
                   </div>
@@ -83,7 +83,7 @@ export default function BarbourPage() {
                 <div id="w-node-_43309ad1-9455-348a-f5f3-72947d380fb6-b6236407" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '177.78% 0 0 0', position: 'relative' }}>
-                      <iframe src="https://www.youtube.com/embed/12xJ6Qkvtxw" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
+                      <iframe loading="lazy" title="Barbour Icons in Quilting London campaign" src="https://www.youtube.com/embed/12xJ6Qkvtxw" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
                       </iframe>
                     </div>
                   </div>
@@ -91,7 +91,7 @@ export default function BarbourPage() {
                 <div id="w-node-_44808b41-a2a6-1d69-efd0-2c223370001c-b6236407" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '177.78% 0 0 0', position: 'relative' }}>
-                      <iframe src="https://www.youtube.com/embed/mzHQ8lmL7BA" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
+                      <iframe loading="lazy" title="Barbour Icons in Quilting New York campaign" src="https://www.youtube.com/embed/mzHQ8lmL7BA" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
                       </iframe>
                     </div>
                   </div>
@@ -99,7 +99,7 @@ export default function BarbourPage() {
                 <div id="w-node-_836c59fa-a031-cefc-6f9c-a56fb44ee565-b6236407" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '177.78% 0 0 0', position: 'relative' }}>
-                      <iframe src="https://www.youtube.com/embed/6U9uTPf64nU" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
+                      <iframe loading="lazy" title="Barbour Icons in Quilting Seoul campaign" src="https://www.youtube.com/embed/6U9uTPf64nU" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
                       </iframe>
                     </div>
                   </div>

@@ -20,7 +20,7 @@ export default function ChainerPage() {
     <>
       <Navbar />
       <div className="w-layout-blockcontainer container-2 w-container">
-        <section className="work-main">
+        <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
             <WorkPageHeader label="Chainer" title="Men&#x27;s apparel" data-reveal="hero">
               <div className="div-block-55">
@@ -46,14 +46,14 @@ export default function ChainerPage() {
                 <div id="w-node-d145010a-49fc-1f3d-3116-e279f7b14105-408b32ff" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-                      <iframe src="https://www.youtube.com/embed/vMFwsejYYaU" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
+                      <iframe loading="lazy" title="Chainer 3D product visualization film" src="https://www.youtube.com/embed/vMFwsejYYaU" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen="">
                       </iframe>
                     </div>
                   </div>
                 </div>
                 <div id="w-node-_0870a03f-5ebe-95fe-6c14-ca2a77e8140e-408b32ff" className="wrapper _15px" data-reveal>
                   <div id="w-node-_36490e61-281c-99e3-82df-29faba706f21-408b32ff" className="html-embed _2span w-embed w-iframe w-script">
-                    <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe src="https://player.vimeo.com/video/881397523?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Chainer Launch (2023)"></iframe></div>
+                    <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe loading="lazy" src="https://player.vimeo.com/video/881397523?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Chainer Launch (2023)"></iframe></div>
                   </div>
                 </div>
                 <div id="w-node-e91308e9-5de3-e650-87d5-29a902701986-408b32ff" className="wrapper _15px" data-reveal><Image src={CDN + '/images/chainer-case-0.webp'} alt="Chainer men's accessories art direction hero render" width={3840} height={2160} sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" className="image-21" /></div>

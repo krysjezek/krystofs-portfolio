@@ -6,12 +6,14 @@
 
 Client component. Renders an inline video with lazy loading and GSAP fade-in.
 
-**Props:** `{ poster, srcH265, srcAv1, srcMp4, style, className }`
+**Props:** `{ poster, posterMobile, posterAlt, posterSizes, posterPriority, srcH265, srcAv1, srcMp4, srcMp4Mobile, style, className }`
 
 **Behavior:**
 - Container fills its parent (`width: 100%; height: 100%`) — parent must provide dimensions
-- Poster rendered as absolutely positioned `<img>` with `object-fit: cover`
-- `<video>` only mounts when IntersectionObserver fires (200px rootMargin)
+- Poster uses responsive Next.js image output at quality 90; `posterMobile` can provide a breakpoint-specific source
+- `<video>` only mounts after at least 25% of the container intersects the viewport
+- Video loading is skipped for `prefers-reduced-motion` and data-saver users
+- Videos use `preload="none"`; autoplay begins only after the lazy-load condition is met
 - Video starts at `opacity: 0`, GSAP fades to 1 on `canplay`
 - Source order: H.265 → AV1 → H.264 (browser picks first supported)
 - All URL props accept both CDN-relative paths (`/videos/h264/clip.mp4`) and absolute URLs (`https://...`) — absolute URLs pass through without CDN prefix
@@ -35,12 +37,14 @@ Client component. Renders an inline video with lazy loading and GSAP fade-in.
 
 Client component. Renders a Webflow-style background video with lazy loading.
 
-**Props:** `{ className, poster, srcH265, srcAv1, srcMp4, srcWebm, style }`
+**Props:** `{ className, poster, posterAlt, posterSizes, posterPriority, srcH265, srcAv1, srcMp4, srcWebm, style }`
 
 **Behavior:**
 - Container div always renders with Webflow classes (`w-background-video w-background-video-atom`) — preserves layout even before video loads
-- Poster displayed as CSS `background-image` on the container
-- `<video>` only mounts when in viewport
+- Poster uses a responsive Next.js image at quality 90 behind the video
+- `<video>` mounts after at least 25% of the container intersects the viewport
+- Video loading is skipped for `prefers-reduced-motion` and data-saver users
+- Videos use `preload="none"`
 - Video starts at `opacity: 0`, GSAP fades to 1 on `canplay`
 - Source order: H.265 (optional) → AV1 (optional) → H.264 → WebM (optional)
 - `srcH265` and `srcAv1` are optional — existing pages with only H.264+WebM work unchanged
@@ -97,7 +101,7 @@ Client component. Wraps `next/image` with a GSAP-animated shimmer placeholder.
 Used internally by EmbedVideo and BackgroundVideo. Not typically used directly.
 
 ```
-useVideoLazyLoad(rootMargin = '200px')
+useVideoLazyLoad(rootMargin = '0px')
   → { containerRef, videoRef, inView, onCanPlay }
 ```
 

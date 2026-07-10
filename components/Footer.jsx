@@ -7,7 +7,7 @@ const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 export default function Footer() {
   return (
     <>
-      <section id="footer" className="main-footer w-node-fdc1100f-5835-0dce-89e8-cffe96d29d50-96d29d50">
+      <footer id="footer" className="main-footer w-node-fdc1100f-5835-0dce-89e8-cffe96d29d50-96d29d50">
         <div className="w-layout-blockcontainer container-3 padbot w-container">
           <div className="liner"></div>
           <div className="div-block-147">
@@ -97,7 +97,7 @@ export default function Footer() {
             <div className="footer-right"></div>
           </div>
         </div>
-      </section>
+      </footer>
       <div className="background">
         <div className="w-layout-blockcontainer container-3 bcg w-container">
           <div className="div-block-131">

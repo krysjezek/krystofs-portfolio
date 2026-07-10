@@ -2,7 +2,7 @@
 
 import { useRef, useState, useEffect } from 'react'
 
-export function useVideoLazyLoad(rootMargin = '200px') {
+export function useVideoLazyLoad(rootMargin = '0px') {
   const containerRef = useRef(null)
   const videoRef = useRef(null)
   const [inView, setInView] = useState(false)
@@ -11,6 +11,10 @@ export function useVideoLazyLoad(rootMargin = '200px') {
     const el = containerRef.current
     if (!el) return
 
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const saveData = navigator.connection?.saveData
+    if (reducedMotion || saveData) return
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -18,7 +22,7 @@ export function useVideoLazyLoad(rootMargin = '200px') {
           observer.disconnect()
         }
       },
-      { rootMargin }
+      { rootMargin, threshold: 0.25 }
     )
 
     observer.observe(el)

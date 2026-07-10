@@ -19,7 +19,8 @@ export default function WorkPage() {
     <>
       <Navbar />
       <div className="w-layout-blockcontainer container-2 w-container">
-        <div className="work-main">
+        <div id="main-content" role="main" className="work-main">
+          <h1 className="visually-hidden">Selected work</h1>
           <section className="container-3">
             <div className="w-layout-grid main-proj-grid" data-reveal-group>
 

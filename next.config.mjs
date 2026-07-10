@@ -12,6 +12,8 @@ const nextConfig = {
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'ziwvaiplle7bdzaz.public.blob.vercel-storage.com' },
+      { protocol: 'https', hostname: 'cdn.prod.website-files.com' },
+      { protocol: 'https', hostname: 'uploads-ssl.webflow.com' },
     ],
     formats: ['image/avif', 'image/webp'],
   },

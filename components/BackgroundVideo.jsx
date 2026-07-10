@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useVideoLazyLoad } from '@/hooks/useVideoLazyLoad'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
@@ -10,7 +11,19 @@ function resolve(url) {
   return CDN + url
 }
 
-export default function BackgroundVideo({ className, poster, posterAlt = '', srcH265, srcAv1, srcMp4, srcWebm, style, title }) {
+export default function BackgroundVideo({
+  className,
+  poster,
+  posterAlt = '',
+  posterSizes = '(max-width: 991px) 100vw, 50vw',
+  posterPriority = false,
+  srcH265,
+  srcAv1,
+  srcMp4,
+  srcWebm,
+  style,
+  title,
+}) {
   const { containerRef, videoRef, inView } = useVideoLazyLoad()
   const p = resolve(poster)
   const mp4 = resolve(srcMp4)
@@ -26,13 +39,17 @@ export default function BackgroundVideo({ className, poster, posterAlt = '', src
       data-wf-ignore="true"
       aria-label={posterAlt || title || undefined}
       className={`${className} w-background-video w-background-video-atom`}
-      style={{ ...style, backgroundImage: p ? `url("${p}")` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}
+      style={{ position: 'relative', overflow: 'hidden', ...style }}
     >
-      {p && posterAlt && (
-        <img
+      {p && (
+        <Image
+          fill
           src={p}
           alt={posterAlt}
-          style={{ position: 'absolute', width: 1, height: 1, overflow: 'hidden', clip: 'rect(0 0 0 0)', clipPath: 'inset(50%)', whiteSpace: 'nowrap' }}
+          sizes={posterSizes}
+          quality={90}
+          priority={posterPriority}
+          style={{ objectFit: 'cover' }}
         />
       )}
       {inView && (
@@ -42,6 +59,7 @@ export default function BackgroundVideo({ className, poster, posterAlt = '', src
           loop
           muted
           playsInline
+          preload="none"
           data-wf-ignore="true"
           data-object-fit="cover"
         >

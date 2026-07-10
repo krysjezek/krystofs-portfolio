@@ -25,7 +25,7 @@ export default function ApifyPage() {
           srcWebm="https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-transcode.webm"
         />
       </div>
-      <div>
+      <div id="main-content" role="main">
         <div className="work-header-wrap" data-reveal="hero">
           <div className="back-block">
             <Link href="/" className="button inverted-border w-button">Back to home</Link>
@@ -40,10 +40,10 @@ export default function ApifyPage() {
           <div id="w-node-b805cc1a-6511-5184-3780-4dc1a1e8f64c-7b5129d6" className="work-main-wrap first">
             <div className="w-layout-grid cs-grid" data-reveal-group>
               <div id="w-node-f4abb4df-7a40-9129-aead-dfd34f39edda-7b5129d6" className="html-embed _2span w-embed w-iframe w-script">
-                <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe src="https://player.vimeo.com/video/677387125?h=93af2f5bd5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Apify &mdash; Homepage Animation"></iframe></div>
+                <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe loading="lazy" src="https://player.vimeo.com/video/677387125?h=93af2f5bd5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Apify &mdash; Homepage Animation"></iframe></div>
               </div>
               <div id="w-node-b805cc1a-6511-5184-3780-4dc1a1e8f64d-7b5129d6" className="html-embed w-embed w-iframe w-script">
-                <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe src="https://player.vimeo.com/video/669417356?h=4a28822f69&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Apify &mdash; Hiring video"></iframe></div>
+                <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe loading="lazy" src="https://player.vimeo.com/video/669417356?h=4a28822f69&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="Apify &mdash; Hiring video"></iframe></div>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ export default function MagWrap2025Page() {
     <>
       <Navbar />
       <div className="w-layout-blockcontainer container-2 w-container">
-        <section className="work-main">
+        <section id="main-content" role="main" className="work-main">
           <div className="w-layout-blockcontainer container-3 w-container">
             <WorkPageHeader label="The Mag WRAP 2025" title="Rap Talent Show" data-reveal="hero">
               <div className="div-block-55">
@@ -76,7 +76,7 @@ export default function MagWrap2025Page() {
                 <div id="w-node-_0870a03f-5ebe-95fe-6c14-ca2a77e8140e-db1fcd0c" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-                      <iframe src="https://www.youtube.com/embed/-s2ly4Fgu5c" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                      <iframe loading="lazy" title="The Mag Wrap 2025 motion design package" src="https://www.youtube.com/embed/-s2ly4Fgu5c" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ export default function MagWrap2025Page() {
                 <div id="w-node-aa1cd08d-7967-db46-3e54-dbcc5425c446-db1fcd0c" className="wrapper _15px" data-reveal>
                   <div className="html-embed w-embed w-iframe">
                     <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
-                      <iframe src="https://www.youtube.com/embed/poEZ7qcoZXI" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                      <iframe loading="lazy" title="The Mag Wrap 2025 show graphics breakdown" src="https://www.youtube.com/embed/poEZ7qcoZXI" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
                   </div>
                 </div>
