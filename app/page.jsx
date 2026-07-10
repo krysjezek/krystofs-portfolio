@@ -591,7 +591,7 @@ export default function HomePage() {
                 <p className="paragraph">Independent 3D designer and creative problem solver.</p>
               </div>
               <div className="div-block-135 nomarg">
-                <p className="paragraph">Based in Prague, working with brands and studios worldwide.<br />Focused on art-directed 3D environments, visualization, and motion.<br />Software engineer by training. A nerd with taste.</p>
+                <p className="paragraph">I&#x27;m based in Prague and work with brands and studios around the world.<br />I tend to move between art direction, visualization, motion and code.<br />A nerd with taste.</p>
               </div>
               <div id="w-node-a66f41d9-e251-18b3-06ea-3875b7f7d02d-a7256e91" className="div-block-142">
                 <div className="div-block-143 date">
