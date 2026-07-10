@@ -318,7 +318,7 @@ export default function HomePage() {
           <div className="w-layout-blockcontainer container-3 w-container">
             <div className="section-heading-grid">
               <h2 className="heading-2 nomargin">Selected Work</h2>
-              <p className="paragraph section-context">3D environments are my main focus now, but I didn&#x27;t get there through one straight path. These projects show the mix of art direction, motion, simulation and product work that shaped how I approach them.</p>
+              <p className="paragraph section-context">3D environments are my main focus, but I still take on broader projects when they&#x27;re a good fit. The work below spans art direction, motion, simulation and product visuals.</p>
             </div>
             <div className="w-layout-grid main-proj-grid" data-reveal-group>
               <a id="w-node-_0a0f2415-0cbe-189d-07e1-6388208cf7e6-a7256e91" href="/work/the-mag-w-rap-2025" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
