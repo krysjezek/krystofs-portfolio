@@ -268,12 +268,12 @@ export const videoAssets = [
   {
     name: 'Custom motion mockups and 3D environments reel',
     page: '/services/3d-environments',
-    description: 'Custom animated 3D environments and motion mockups built around branding, web, and design projects for agency case studies.',
+    description: 'Custom animated 3D environments and motion mockups built for branding, web, and design agency case studies.',
     thumbnailUrl: '/videos/posters/yiskra_veha.jpg',
     contentUrl: '/videos/h264/yiskra_veha-fallback.mp4',
     dateCreated: '2026',
     keywords: ['custom motion mockups', 'animated mockups', '3D environments', 'agency case studies'],
-    transcript: 'No spoken dialogue. Visual reel showing custom animated 3D environments and motion mockups created to present branding, web, and design projects.',
+    transcript: 'No spoken dialogue. Visual reel showing custom animated 3D environments and motion mockups built for branding, web, and design agency case studies.',
   },
   {
     name: 'Mixed reality and FOOH service reel',

@@ -12,7 +12,7 @@ const PATH = '/services/3d-environments'
 const serviceOverview = [
   {
     label: 'What it is',
-    answer: 'An animated 3D mockup built around one project.',
+    answer: 'An animated 3D mockup built custom for your case study.',
   },
   {
     label: 'Who it is for',
@@ -23,14 +23,14 @@ const serviceOverview = [
     answer: 'You send me the project and what you want to feature. I design and animate the environment around it.',
   },
   {
-    label: 'Where it goes',
-    answer: 'Usually into a case study or the agency website.',
+    label: 'Production',
+    answer: 'Look development, modelling, animation, rendering, and post-production.',
   },
 ]
 
 export const metadata = {
   title: 'Custom Motion Mockups for Agencies',
-  description: 'Custom animated 3D mockups built around branding, web, and design projects for agency case studies and websites.',
+  description: 'Custom animated 3D mockups built for branding, web, and design agency case studies, from look development through post-production.',
   ...pageSeo(PATH),
 }
 
@@ -57,7 +57,7 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div className="div-block-55">
-                  <p className="paragraph header">I build custom animated mockups for agencies to present their work. Each one is a 3D environment made around a specific project, usually for its case study or website. <a href="https://www.motionmockups.com/" target="_blank" rel="noopener noreferrer" className="link">Motion Mockups</a> is the ready-made version I sell online. This is the custom one.<br /></p>
+                  <p className="paragraph header">I build custom animated mockups for agencies to present their work. Each one is a 3D environment built custom for your case study. <a href="https://www.motionmockups.com/" target="_blank" rel="noopener noreferrer" className="link">Motion Mockups</a> is the ready-made version I sell online. This is the custom one.<br /></p>
                 </div>
               </div>
             </div>
