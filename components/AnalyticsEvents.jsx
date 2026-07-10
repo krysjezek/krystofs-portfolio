@@ -8,8 +8,34 @@ const CONTACT_HOSTS = new Map([
   ['wa.me', 'whatsapp'],
 ])
 
+const AI_REFERRERS = new Map([
+  ['chatgpt.com', 'chatgpt'],
+  ['perplexity.ai', 'perplexity'],
+  ['claude.ai', 'claude'],
+  ['gemini.google.com', 'gemini'],
+  ['copilot.microsoft.com', 'copilot'],
+])
+
 function cleanText(value) {
   return value?.replace(/\s+/g, ' ').trim().slice(0, 80) || 'unlabeled'
+}
+
+function getAiReferralSource() {
+  const campaignSource = new URLSearchParams(window.location.search).get('utm_source')?.toLowerCase()
+  if (campaignSource) {
+    for (const [host, source] of AI_REFERRERS) {
+      if (campaignSource === host || campaignSource === source) return source
+    }
+  }
+
+  if (!document.referrer) return null
+
+  try {
+    const referrerHost = new URL(document.referrer).hostname.replace(/^www\./, '')
+    return AI_REFERRERS.get(referrerHost) || null
+  } catch {
+    return null
+  }
 }
 
 function getLinkEvent(anchor) {
@@ -92,6 +118,26 @@ function getButtonEvent(button) {
 
 export default function AnalyticsEvents() {
   useEffect(() => {
+    const aiReferralSource = getAiReferralSource()
+    if (aiReferralSource) {
+      const eventKey = `ai_referral:${aiReferralSource}:${window.location.pathname}`
+      let shouldTrack = true
+
+      try {
+        shouldTrack = !sessionStorage.getItem(eventKey)
+        sessionStorage.setItem(eventKey, '1')
+      } catch {
+        // Analytics should never block navigation when storage is unavailable.
+      }
+
+      if (shouldTrack) {
+        track('ai_referral', {
+          source: aiReferralSource,
+          landing_path: window.location.pathname,
+        })
+      }
+    }
+
     function handleClick(event) {
       const target = event.target
       if (!(target instanceof Element)) return
