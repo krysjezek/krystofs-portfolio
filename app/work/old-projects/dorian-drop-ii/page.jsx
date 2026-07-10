@@ -26,7 +26,7 @@ export default function DorianDropII() {
               <div className="work-header-container">
                 <div className="work-h1-wrap">
                   <div className="div-block-112">
-                    <div className="quote lime">Dorian — Drop II</div>
+                    <div className="quote lime">Dorian: Drop II</div>
                     <h1 className="heading-h1">Official lyrics video</h1>
                   </div>
                   <div className="back-block">

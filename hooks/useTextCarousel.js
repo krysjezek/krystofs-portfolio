@@ -16,7 +16,7 @@ export function useTextCarousel() {
 
     for (let i = 1; i < totalItems; i++) {
       if (i > totalItems - 2) {
-        // Last item — animate to it, then snap back to start
+        // Animate to the last item, then snap back to start
         tl.to(changerMove, {
           y: -i * changerHeight,
           duration: 0.5,

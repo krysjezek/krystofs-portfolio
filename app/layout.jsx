@@ -13,7 +13,7 @@ export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
     default: 'Krystof Jezek, Independent 3D Designer',
-    template: '%s — Krystof Jezek',
+    template: '%s | Krystof Jezek',
   },
   description: 'Independent 3D designer creating art-directed environments and visualizations for brands and studios, supported by a background in software engineering and motion design.',
   ...pageSeo('/'),

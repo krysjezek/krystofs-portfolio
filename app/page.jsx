@@ -28,7 +28,7 @@ export default function HomePage() {
   useMarquee(marqueeRef)
   useHoverShimmer(mockupsBannerRef)
 
-  // Scale-up entrance — delay per element via data-reveal-scale="<seconds>".
+  // Scale-up entrance. Delay per element via data-reveal-scale="<seconds>".
   // Lives here (not in useScrollReveal) so it replays on every SPA re-navigation.
   useEffect(() => {
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -595,7 +595,7 @@ export default function HomePage() {
               </div>
               <div id="w-node-a66f41d9-e251-18b3-06ea-3875b7f7d02d-a7256e91" className="div-block-142">
                 <div className="div-block-143 date">
-                  <p className="paragraph dates">20—26&#x27;</p>
+                  <p className="paragraph dates">20-26&#x27;</p>
                   <div id="w-node-_4ebab516-efd9-a6a1-4e35-be88f0a0a681-a7256e91" className="line about"></div>
                 </div>
                 <div id="w-node-_911d34b6-530c-4860-0a92-df038baabbbf-a7256e91" className="postion">
@@ -608,7 +608,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="div-block-143 date">
-                  <p className="paragraph dates">23—25&#x27;</p>
+                  <p className="paragraph dates">23-25&#x27;</p>
                   <div className="line about"></div>
                 </div>
                 <div id="w-node-e92b1f06-779b-ab8e-7226-54032dc56be0-a7256e91" className="postion">
@@ -621,7 +621,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="div-block-143 date">
-                  <p className="paragraph dates">23—25&#x27;</p>
+                  <p className="paragraph dates">23-25&#x27;</p>
                   <div className="line about"></div>
                 </div>
                 <div id="w-node-_5a64a6dc-8158-3455-90ea-a07fb5ab6da6-a7256e91" className="postion">
@@ -647,7 +647,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="div-block-143 date">
-                  <p className="paragraph dates">21—22&#x27;</p>
+                  <p className="paragraph dates">21-22&#x27;</p>
                   <div className="line about"></div>
                 </div>
                 <div className="postion">
@@ -660,7 +660,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="div-block-143 date">
-                  <p className="paragraph dates">19—21&#x27;</p>
+                  <p className="paragraph dates">19-21&#x27;</p>
                   <div className="line about"></div>
                 </div>
                 <div id="w-node-_6023291a-8637-8489-7555-d076ce0a4cdc-a7256e91" className="postion">
@@ -673,7 +673,7 @@ export default function HomePage() {
                   </div>
                 </div>
                 <div className="div-block-143 date">
-                  <p className="paragraph dates">18—19&#x27;</p>
+                  <p className="paragraph dates">18-19&#x27;</p>
                   <div className="line about"></div>
                 </div>
                 <div id="w-node-_1cb748ed-e5bd-0608-0052-a71053df4e13-a7256e91" className="postion">
@@ -688,7 +688,7 @@ export default function HomePage() {
               </div>
               <div id="w-node-cf7ea84b-e864-21d3-c56e-f196d3a90349-a7256e91" className="div-block-142">
                 <div className="div-block-143">
-                  <p className="paragraph">22—25&#x27;</p>
+                  <p className="paragraph">22-25&#x27;</p>
                 </div>
                 <div id="w-node-cf7ea84b-e864-21d3-c56e-f196d3a9034d-a7256e91" className="postion">
                   <div className="div-block-143">

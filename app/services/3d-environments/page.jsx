@@ -20,7 +20,7 @@ const serviceOverview = [
   },
   {
     label: 'Approach',
-    answer: 'Every environment is designed around mood, composition, and narrative—not treated as a purely technical render.',
+    answer: 'Every environment is designed around mood, composition, and narrative rather than treated as a purely technical render.',
   },
   {
     label: 'Production',
@@ -57,7 +57,7 @@ export default function ThreeDEnvironments() {
                   </div>
                 </div>
                 <div className="div-block-55">
-                  <p className="paragraph header">I create realistic 3D environments with the creative direction of campaign imagery. Built for brands and studios, each scene is shaped around a visual idea—from composition and lighting to materials, atmosphere, and motion.<br /></p>
+                  <p className="paragraph header">I create realistic 3D environments with the creative direction of campaign imagery. Built for brands and studios, each scene is shaped around a visual idea, from composition and lighting to materials, atmosphere, and motion.<br /></p>
                 </div>
               </div>
             </div>

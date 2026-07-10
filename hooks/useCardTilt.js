@@ -15,7 +15,7 @@ export function useCardTilt(gridRef) {
     if (mql.matches) return // no tilt on mobile
 
     // Config
-    const BASE_TILTS = [-6, 6] // concave arc — inner edges forward
+    const BASE_TILTS = [-6, 6] // Concave arc with inner edges forward
     const MOUSE_RANGE_Y = 3
     const MOUSE_RANGE_X = 2
     const EASE_DURATION = 0.6
@@ -57,7 +57,7 @@ export function useCardTilt(gridRef) {
     // Fix hover detection: preserve-3d breaks elementFromPoint hit-testing.
     // Instead of overlay divs inside the 3D context (which inherit the broken
     // geometry), we place flat <a> hitboxes in a position:fixed layer on
-    // document.body — completely outside the preserve-3d hierarchy.
+    // document.body sits completely outside the preserve-3d hierarchy.
     // A rAF loop syncs their bounds to the visual card positions via
     // getBoundingClientRect (which correctly returns the 2D projection).
     let hitLayer = null

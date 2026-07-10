@@ -53,7 +53,7 @@ const POST_FRAGMENT = `
     vec3 color = texture2D(u_scene, uv).rgb;
     float depth = sampleDepth(uv);
 
-    // Chromatic aberration — stronger on background, radiates from center
+    // Chromatic aberration is stronger on the background and radiates from center
     if (u_ca > 0.001) {
       vec2 fromCenter = uv - 0.5;
       float dist = length(fromCenter);
@@ -62,7 +62,7 @@ const POST_FRAGMENT = `
       color.b = texture2D(u_scene, uv - caOffset).b;
     }
 
-    // Depth of field — disc blur on background
+    // Depth of field uses disc blur on the background
     if (u_dof > 0.001) {
       float blurRadius = smoothstep(0.45, 0.0, depth) * u_dof * 0.008;
       if (blurRadius > 0.0005) {
@@ -79,7 +79,7 @@ const POST_FRAGMENT = `
       }
     }
 
-    // Normal-derived lighting — soft directional light follows the mouse
+    // Normal-derived lighting lets soft directional light follow the mouse
     if (u_light > 0.001) {
       float eps = 0.004;
       float dL = sampleDepth(uv - vec2(eps, 0.0));
@@ -292,7 +292,7 @@ export default function DepthParallax({
         pu.u_light.value = p.lighting
         t.renderer.render(t.postScene, t.postCamera)
       } else {
-        // No post-processing — render directly
+        // No post-processing. Render directly.
         t.renderer.setRenderTarget(null)
         t.renderer.render(t.scene, t.camera)
       }

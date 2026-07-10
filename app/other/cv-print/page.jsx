@@ -6,7 +6,7 @@ export const metadata = {
   title: 'CV Print',
   ...pageSeo('/other/cv-print'),
   ...noIndex,
-  description: 'Printable CV of Kryštof Ježek — independent 3D designer specializing in art-directed environments and visualization.',
+  description: 'Printable CV of Kryštof Ježek, an independent 3D designer specializing in art-directed environments and visualization.',
 }
 
 export const dynamic = 'force-static'

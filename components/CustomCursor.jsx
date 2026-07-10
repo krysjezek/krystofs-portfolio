@@ -85,7 +85,7 @@ export default function CustomCursor() {
       gsap.to(pill, { scale: 0, duration: 0.15, ease: 'power2.in', overwrite: true })
     }
 
-    // rAF loop — validates hover state every frame so the pill collapses
+    // rAF loop validates hover state every frame so the pill collapses
     // even when the mouse is stationary and no mousemove events fire.
     const tick = () => {
       if (activeEl !== null && lastX !== null) {
@@ -105,7 +105,7 @@ export default function CustomCursor() {
       moveCursor(e.clientX, e.clientY)
 
       // Skip synthetic events fired by the browser on DOM changes (e.g. rAF marquee)
-      // — real movement always changes clientX/Y
+      // Real movement always changes clientX/Y
       if (e.clientX === lastX && e.clientY === lastY) return
       lastX = e.clientX
       lastY = e.clientY
@@ -182,7 +182,7 @@ export default function CustomCursor() {
         willChange: 'transform',
       }}
     >
-      {/* SVG arrow — tip aligns with wrapper origin (mouse position) */}
+      {/* SVG arrow. Tip aligns with wrapper origin (mouse position). */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         ref={imgRef}
@@ -191,7 +191,7 @@ export default function CustomCursor() {
         style={{ display: 'none', width: 16 }}
       />
 
-      {/* Pill label — appears offset below-right of arrow tip */}
+      {/* Pill label appears offset below-right of arrow tip. */}
       <div
         ref={pillRef}
         style={{

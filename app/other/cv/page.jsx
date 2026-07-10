@@ -8,7 +8,7 @@ const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 export const metadata = {
   title: 'CV',
   ...pageSeo('/other/cv'),
-  description: 'Curriculum vitae of Kryštof Ježek — independent 3D designer specializing in art-directed environments and visualization, with a software engineering background.',
+  description: 'Curriculum vitae of Kryštof Ježek, an independent 3D designer specializing in art-directed environments and visualization, with a software engineering background.',
 }
 
 export const dynamic = 'force-static'

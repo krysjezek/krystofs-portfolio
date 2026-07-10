@@ -50,7 +50,7 @@ export function useScrollReveal() {
         gsap.to(el, { opacity: 1, duration: 0.4, ease: 'none', delay: 0.05 })
       })
 
-      // Hero groups — children stagger row by row
+      // Hero groups stagger children row by row
       document.querySelectorAll('[data-reveal-group="hero"]').forEach(group => {
         if (processed.has(group)) return
         processed.add(group)
@@ -67,7 +67,7 @@ export function useScrollReveal() {
         })
       })
 
-      // --- Scroll-triggered groups — stagger row by row ---
+      // Scroll-triggered groups stagger row by row
       document.querySelectorAll('[data-reveal-group]:not([data-reveal-group="hero"])').forEach(group => {
         if (processed.has(group)) return
         processed.add(group)
