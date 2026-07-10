@@ -147,7 +147,7 @@ export default function HomePage() {
                 <div className="specs-wrap">
                   <div className="specs-contain-button">
                     <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', backgroundColor: 'rgb(255,255,255)' }} className="button case">
-                      <div style={{ color: 'rgb(5,7,10)' }} className="text-block-18">3D Environments (Custom Mockups)</div>
+                      <div style={{ color: 'rgb(5,7,10)' }} className="text-block-18">3D Environments &amp; Custom Mockups</div>
                     </div>
                   </div>
                   <div className="div-block-66">
