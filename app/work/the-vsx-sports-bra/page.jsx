@@ -273,7 +273,7 @@ export default function VSXSportsBraPage() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Independent</p>
+                    <p className="paragraph">Krystof&apos;s Team</p>
                   </div>
                 </div>
                 <div className="div-block-143">
@@ -285,7 +285,7 @@ export default function VSXSportsBraPage() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Independent</p>
+                    <p className="paragraph">Krystof&apos;s Team</p>
                   </div>
                 </div>
               </div>
