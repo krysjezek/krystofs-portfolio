@@ -606,7 +606,7 @@ export default function HomePage() {
                 <div id="w-node-_911d34b6-530c-4860-0a92-df038baabbbf-a7256e91" className="postion">
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Independent</p>
+                    <p className="paragraph">Freelance</p>
                   </div>
                   <div className="div-block-143">
                     <p className="paragraph">CGI Environments, Visualization, Motion</p>
