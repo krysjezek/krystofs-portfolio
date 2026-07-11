@@ -598,6 +598,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div id="w-node-a66f41d9-e251-18b3-06ea-3875b7f7d02d-a7256e91" className="div-block-142">
+                <h3 className="resume-group-label">Experience</h3>
                 <div className="div-block-143 date">
                   <p className="paragraph dates">20-26&#x27;</p>
                   <div id="w-node-_4ebab516-efd9-a6a1-4e35-be88f0a0a681-a7256e91" className="line about"></div>
@@ -691,6 +692,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div id="w-node-cf7ea84b-e864-21d3-c56e-f196d3a90349-a7256e91" className="div-block-142">
+                <h3 className="resume-group-label">Education</h3>
                 <div className="div-block-143">
                   <p className="paragraph">22-25&#x27;</p>
                 </div>
