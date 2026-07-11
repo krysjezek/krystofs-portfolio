@@ -239,7 +239,7 @@ export default function MagWrap2025Page() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Krystof&apos;s Team</p>
+                    <p className="paragraph">Kryštof&apos;s Team</p>
                   </div>
                 </div>
                 <div className="div-block-143">
@@ -251,7 +251,7 @@ export default function MagWrap2025Page() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Krystof&apos;s Team</p>
+                    <p className="paragraph">Kryštof&apos;s Team</p>
                   </div>
                 </div>
                 <div className="div-block-143">
@@ -263,7 +263,7 @@ export default function MagWrap2025Page() {
                   </div>
                   <div className="div-block-143">
                     <div className="div-block-144"></div>
-                    <p className="paragraph">Krystof&apos;s Team</p>
+                    <p className="paragraph">Kryštof&apos;s Team</p>
                   </div>
                 </div>
                 <div className="div-block-143">
