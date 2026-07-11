@@ -44,6 +44,14 @@ const recognitionItems = [
     dateTime: '2026-03',
   },
   {
+    description: 'Featured by Database™ for my CGI work on the ValkaAI identity created with Less and Better',
+    href: 'https://www.instagram.com/p/DUiLHrFjBYK/?img_index=1',
+    source: 'Database™',
+    favicon: 'https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico',
+    date: 'February 2026',
+    dateTime: '2026-02',
+  },
+  {
     description: 'Credited for 3D motion on VEHA’s identity created with Yiskra Studio',
     href: 'https://www.brandsinmotion.xyz/resource/yiskra-veha',
     source: 'Brands in Motion',
