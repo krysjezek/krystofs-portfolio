@@ -37,7 +37,7 @@ export default function CVPage() {
                           <p className="paragraph cvhead">I am an independent CGI designer specializing in art-directed environments, visualization, and motion for brands and studios. I combine realistic lighting, materials, and spatial detail with a strong creative concept. In my free time, I build apps and creative tools that connect art and technology.</p>
                           <a href="https://www.krystofjezek.com/" className="link invert cv back">Portfolio: <span className="blue invert">krystofjezek.com</span></a>
                           <div className="div-block-90 cv">
-                            <a href="mailto:studio@krystofjezek.com?subject=Let&#x27;s%20work%20together!" className="link invert cv back">studio@krystofjezek.com</a>
+                            <a href="mailto:krystof@jezek.me?subject=Let&#x27;s%20work%20together!" className="link invert cv back">krystof@jezek.me</a>
                             <a href="https://wa.me/+420774066745?text=Hi%20Krystof%2C%20I%20am%20interested%20in%20collaborating%20with%20you%21" target="_blank" rel="noopener noreferrer" className="link invert cv back">+420 774 066 745</a>
                             <div className="link invert cv back">Vitkova 10, Prague, Czechia, 100 00</div>
                           </div>

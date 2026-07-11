@@ -107,7 +107,7 @@ export default function JoinPage() {
                 <div className="main-contact-wrap">
                   <div className="heading-copy">
                     <h3 className="heading-3">How to apply?</h3>
-                    <p className="paragraph padding25">Please send your work directly to <a href="mailto:studio@krystofjezek.com?subject=I%20want%20to%20join%20your%20team" className="link green">studio@krystofjezek.com</a></p>
+                    <p className="paragraph padding25">Please send your work directly to <a href="mailto:krystof@jezek.me?subject=I%20want%20to%20join%20your%20team" className="link green">krystof@jezek.me</a></p>
                   </div>
                   <div className="div-block-56">
                     <div className="form-block w-form">

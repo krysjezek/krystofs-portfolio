@@ -372,7 +372,7 @@ export function siteStructuredData() {
         description: 'Independent CGI designer creating art-directed environments, motion visuals, and mixed reality campaigns for brands and studios. In his free time, he builds apps and creative tools that connect art and technology.',
         url: SITE_URL,
         image: absoluteUrl(OG_IMAGE),
-        email: 'studio@krystofjezek.com',
+        email: 'krystof@jezek.me',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Prague',
