@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { track } from '@vercel/analytics'
 
 const recognitionItems = [
   {
@@ -150,6 +151,7 @@ export default function RecognitionModal() {
   const openModal = () => {
     dialogRef.current?.showModal()
     setIsOpen(true)
+    track('recognition_modal_open', { item_count: recognitionItems.length })
   }
 
   const closeModal = () => {
