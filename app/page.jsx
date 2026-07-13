@@ -322,6 +322,39 @@ export default function HomePage() {
               <p className="paragraph section-context">3D environments are my main focus, but I still take on broader projects when they&#x27;re a good fit. The work below spans art direction, motion, simulation and product visuals.</p>
             </div>
             <div className="w-layout-grid main-proj-grid" data-reveal-group>
+              <a href="/work/valkaai" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
+                <div className="proj-img-wrap">
+                  <div className="div-block-99">
+                    <div className="wrappedtext">
+                      <div className="div-block-134">
+                        <div className="mini-label">
+                          <div className="label mini">Art Direction</div>
+                        </div>
+                        <div className="mini-label">
+                          <div className="label mini">3D</div>
+                        </div>
+                        <div className="mini-label">
+                          <div className="label mini">Motion Graphics</div>
+                        </div>
+                      </div>
+                      <div className="div-block-67"><Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized className="image-19" />
+                        <h2 className="proj-heading">ValkaAI</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
+                    <div className="background-video-18 w-embed"><EmbedVideo
+                      poster="/videos/posters/valkaai-logo-glass-prism.jpg"
+                      posterAlt="ValkaAI mirrored-butterfly glass-prism logo animation preview"
+                      title="ValkaAI 3D glass-prism logo animation preview"
+                      srcH265="/videos/h265/valkaai-logo-glass-prism-web.mp4"
+                      srcAv1="/videos/av1/valkaai-logo-glass-prism.webm"
+                      srcMp4="/videos/h264/valkaai-logo-glass-prism-fallback.mp4"
+                    /></div>
+                    <div className="proj-img"><Image fill src={CDN + '/videos/posters/valkaai-logo-glass-prism.jpg'} alt="ValkaAI glass-prism logo animation case study preview" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
+                  </div>
+                </div>
+              </a>
               <a id="w-node-_0a0f2415-0cbe-189d-07e1-6388208cf7e6-a7256e91" href="/work/the-mag-w-rap-2025" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
                 <div className="proj-img-wrap">
                   <div className="div-block-99">

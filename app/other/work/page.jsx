@@ -8,6 +8,18 @@ const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 const featuredProjects = [
   {
+    href: '/work/valkaai',
+    title: 'ValkaAI',
+    services: 'ART DIRECTION • 3D • MOTION GRAPHICS',
+    image: '/videos/posters/valkaai-logo-glass-prism.jpg',
+    imageAlt: 'ValkaAI 3D glass-prism logo animation case study',
+    imageClass: 'proj-img',
+    poster: '/videos/posters/valkaai-logo-glass-prism.jpg',
+    srcH265: '/videos/h265/valkaai-logo-glass-prism-web.mp4',
+    srcAv1: '/videos/av1/valkaai-logo-glass-prism.webm',
+    srcMp4: '/videos/h264/valkaai-logo-glass-prism-fallback.mp4',
+  },
+  {
     id: 'w-node-_03a17276-6ae4-7c7c-1c4a-065b032c86c0-500e5fc1',
     href: '/work/the-mag-w-rap-2025',
     title: 'The Mag Wrap 2025',
@@ -59,7 +71,7 @@ const featuredProjects = [
 export const metadata = {
   title: 'Work',
   ...pageSeo('/other/work'),
-  description: 'Four featured CGI, 3D motion design, FOOH, and product visualization case studies by Kryštof Ježek.',
+  description: 'Five featured CGI, 3D motion design, FOOH, and product visualization case studies by Kryštof Ježek.',
 }
 
 export const dynamic = 'force-static'
@@ -82,6 +94,8 @@ function ProjectCard({ project }) {
             className="background-video-18"
             style={{ display: 'none' }}
             poster={project.poster}
+            srcH265={project.srcH265}
+            srcAv1={project.srcAv1}
             srcMp4={project.srcMp4}
             srcWebm={project.srcWebm}
           />

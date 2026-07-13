@@ -164,6 +164,7 @@ These work via the `resolve()` helper but should eventually be migrated to Verce
 | `app/page.jsx` (homepage) | inline `<video>` | 5 | Case studies + tech projects + Motion Mockups |
 | `work/the-vsx-sports-bra` | EmbedVideo | 5 | In `.html-embed.w-embed` |
 | `work/the-mag-w-rap-2025` | EmbedVideo | 7 | In `.html-embed.w-embed` |
+| `work/valkaai` | EmbedVideo | 1 | Single full-width case-study animation |
 | `work/barbour` | BackgroundVideo | 1 | Header video |
 | `work/chainer` | BackgroundVideo | 1 | Webflow CDN URLs |
 | `old-projects/apify` | BackgroundVideo | 1 | Webflow CDN URLs |

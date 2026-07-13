@@ -14,6 +14,10 @@ const pageSocialImages = {
     url: '/videos/posters/mixed-reality.jpg',
     alt: 'Mixed reality and FOOH CGI campaign work by Krystof Jezek',
   },
+  '/work/valkaai': {
+    url: '/videos/posters/valkaai-logo-glass-prism.jpg',
+    alt: 'ValkaAI 3D glass-prism logo animation case study',
+  },
   '/work/the-mag-w-rap-2025': {
     url: '/videos/posters/w25_injektaz.jpg',
     alt: 'The Mag Wrap 2025 3D motion design case study',
@@ -87,7 +91,7 @@ export const portfolioRoutes = [
     path: '/',
     priority: 1.0,
     changeFrequency: 'weekly',
-    lastModified: '2026-07-10',
+    lastModified: '2026-07-13',
   },
   {
     path: '/services/3d-environments',
@@ -100,6 +104,12 @@ export const portfolioRoutes = [
     priority: 0.7,
     changeFrequency: 'monthly',
     lastModified: '2026-07-10',
+  },
+  {
+    path: '/work/valkaai',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+    lastModified: '2026-07-13',
   },
   {
     path: '/work/the-mag-w-rap-2025',
@@ -135,7 +145,7 @@ export const portfolioRoutes = [
     path: '/other/work',
     priority: 0.6,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-10',
+    lastModified: '2026-07-13',
   },
   {
     path: '/other/join',
@@ -146,6 +156,14 @@ export const portfolioRoutes = [
 ]
 
 export const featuredCreativeWorks = [
+  {
+    name: 'ValkaAI',
+    path: '/work/valkaai',
+    description: 'Art direction, 3D, and motion graphics for ValkaAI’s glass-prism mirrored-butterfly logo animation, created with Less and Better.',
+    keywords: ['3D logo animation', 'glass prism animation', 'art direction', 'motion graphics', 'AI brand identity'],
+    dateCreated: '2026',
+    datePublished: '2026-07',
+  },
   {
     name: 'The Mag Wrap 2025',
     path: '/work/the-mag-w-rap-2025',
@@ -198,6 +216,16 @@ export const videoAssets = [
     contentUrl: '/videos/h264/mixed-reality-fallback.mp4',
     dateCreated: '2026',
     keywords: ['mixed reality campaign', 'CGI advertising', 'FOOH visuals'],
+  },
+  {
+    name: 'ValkaAI 3D glass-prism logo animation',
+    page: '/work/valkaai',
+    description: 'A 3D motion design sequence that transforms the ValkaAI mirrored-butterfly logo into a refractive glass prism filled with AI persona imagery and the brand’s blue and orange light.',
+    thumbnailUrl: '/videos/posters/valkaai-logo-glass-prism.jpg',
+    contentUrl: '/videos/h264/valkaai-logo-glass-prism-fallback.mp4',
+    dateCreated: '2026',
+    keywords: ['ValkaAI', '3D logo animation', 'glass prism animation', 'art direction', 'motion graphics'],
+    transcript: 'No spoken dialogue. A refractive glass prism assembles into the ValkaAI mirrored-butterfly logo while colourful light and AI persona imagery travel through its transparent geometry.',
   },
   {
     name: 'Barbour Icons in Quilting FOOH campaign',

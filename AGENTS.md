@@ -5,7 +5,7 @@ Fast map for agents working in this repository. Prefer this file over rediscover
 ## Project at a glance
 
 - Next.js 16 App Router portfolio, React 19, JavaScript/JSX, npm.
-- Mostly static pages; `npm run build` currently prerenders 25 application routes plus framework routes.
+- Mostly static pages; `npm run build` currently prerenders 26 application routes plus framework routes.
 - UI was migrated from Webflow. Preserve existing Webflow class names and DOM structure unless the task explicitly calls for a redesign.
 - Styling: `styles/normalize.css`, `styles/webflow.css`, then the main editable SCSS file `styles/krystofs-portfolio.webflow.scss`, all imported by `app/layout.jsx`.
 - Interactions: GSAP hooks/components; Three.js is used by the depth effect. There is no test suite.
@@ -30,7 +30,7 @@ Fast map for agents working in this repository. Prefer this file over rediscover
 Route groups worth knowing:
 
 - `/services/*`: current service landing pages.
-- `/work/*`: current case studies. Public navigation, work indexes, sitemaps, and structured data must expose only the four projects in `featuredCreativeWorks`/the homepage. `/work/old-projects/*` is legacy Webflow-derived content kept only for direct archival URLs; keep those routes `noindex, nofollow` and never link or list them publicly.
+- `/work/*`: current case studies. Public navigation, work indexes, sitemaps, and structured data must expose only the projects in `featuredCreativeWorks`/the homepage. `/work/old-projects/*` is legacy Webflow-derived content kept only for direct archival URLs; keep those routes `noindex, nofollow` and never link or list them publicly.
 - `/other/*`: CV, print CV, work index, and join page.
 - `/test/depth`: experimental depth-effect route; do not treat it as portfolio navigation.
 
