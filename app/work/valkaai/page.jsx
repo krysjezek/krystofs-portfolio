@@ -123,11 +123,11 @@ export default function ValkaAIPage() {
                 <p className="label">Credits</p>
               </div>
               <div className="div-block-135 nomarg"></div>
-              <div className="div-block-142">
+              <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a58-db1fcd0c" className="div-block-142">
                 <div className="div-block-143">
                   <p className="paragraph">Creative Direction</p>
                 </div>
-                <div className="postion">
+                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a5c-db1fcd0c" className="postion">
                   <div className="div-block-143">
                     <p className="paragraph">Dominik Smuchar</p>
                   </div>
@@ -139,7 +139,7 @@ export default function ValkaAIPage() {
                 <div className="div-block-143">
                   <p className="paragraph">Creative Direction</p>
                 </div>
-                <div className="postion">
+                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a67-db1fcd0c" className="postion">
                   <div className="div-block-143">
                     <p className="paragraph">Petr Skovajsa</p>
                   </div>
@@ -151,7 +151,7 @@ export default function ValkaAIPage() {
                 <div className="div-block-143">
                   <p className="paragraph">Art Direction</p>
                 </div>
-                <div className="postion">
+                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a73-db1fcd0c" className="postion">
                   <div className="div-block-143">
                     <p className="paragraph">Kryštof Ježek</p>
                   </div>
@@ -163,7 +163,7 @@ export default function ValkaAIPage() {
                 <div className="div-block-143">
                   <p className="paragraph">3D</p>
                 </div>
-                <div className="postion">
+                <div id="w-node-_2c31e8c5-4344-7e8d-74f4-4a2fa2272a97-db1fcd0c" className="postion">
                   <div className="div-block-143">
                     <p className="paragraph">Kryštof Ježek</p>
                   </div>
@@ -175,7 +175,7 @@ export default function ValkaAIPage() {
                 <div className="div-block-143">
                   <p className="paragraph">Motion Graphics</p>
                 </div>
-                <div className="postion">
+                <div id="w-node-c7733b9b-5c56-2b79-1e5b-04089cccb67b-db1fcd0c" className="postion">
                   <div className="div-block-143">
                     <p className="paragraph">Kryštof Ježek</p>
                   </div>
