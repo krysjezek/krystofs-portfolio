@@ -129,15 +129,51 @@ export default function ValkaAIPage() {
                 </div>
                 <div className="postion">
                   <div className="div-block-143">
-                    <p className="paragraph">Dominik Smuchar &amp; Petr Skovajsa</p>
+                    <p className="paragraph">Dominik Smuchar</p>
                   </div>
                   <div className="div-block-143">
-                    <div className="div-block-144"><Image src={CDN + '/images/less-and-better-logo.png'} alt="Less and Better studio logo" width={256} height={256} className="image-32" /></div>
+                    <div className="div-block-144"><Image src={CDN + '/images/less-and-better-logo.png'} alt="Less and Better studio logo" width={256} height={256} className="image-32" style={{ filter: 'invert(1)' }} /></div>
                     <p className="paragraph">Less and Better</p>
                   </div>
                 </div>
                 <div className="div-block-143">
-                  <p className="paragraph">Art Direction, 3D, Motion Graphics</p>
+                  <p className="paragraph">Creative Direction</p>
+                </div>
+                <div className="postion">
+                  <div className="div-block-143">
+                    <p className="paragraph">Petr Skovajsa</p>
+                  </div>
+                  <div className="div-block-143">
+                    <div className="div-block-144"><Image src={CDN + '/images/less-and-better-logo.png'} alt="Less and Better studio logo" width={256} height={256} className="image-32" style={{ filter: 'invert(1)' }} /></div>
+                    <p className="paragraph">Less and Better</p>
+                  </div>
+                </div>
+                <div className="div-block-143">
+                  <p className="paragraph">Art Direction</p>
+                </div>
+                <div className="postion">
+                  <div className="div-block-143">
+                    <p className="paragraph">Kryštof Ježek</p>
+                  </div>
+                  <div className="div-block-143">
+                    <div className="div-block-144"></div>
+                    <p className="paragraph">Kryštof&apos;s Team</p>
+                  </div>
+                </div>
+                <div className="div-block-143">
+                  <p className="paragraph">3D</p>
+                </div>
+                <div className="postion">
+                  <div className="div-block-143">
+                    <p className="paragraph">Kryštof Ježek</p>
+                  </div>
+                  <div className="div-block-143">
+                    <div className="div-block-144"></div>
+                    <p className="paragraph">Kryštof&apos;s Team</p>
+                  </div>
+                </div>
+                <div className="div-block-143">
+                  <p className="paragraph">Motion Graphics</p>
                 </div>
                 <div className="postion">
                   <div className="div-block-143">
