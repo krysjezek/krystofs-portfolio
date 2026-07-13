@@ -463,7 +463,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a id="w-node-ca5842f0-12ea-bba6-91ec-c62ab4bb5501-a7256e91" href="/work/chainer" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
+              <a id="w-node-ca5842f0-12ea-bba6-91ec-c62ab4bb5501-a7256e91" href="/work/chainer" className="proj-item hide w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
                     <div className="wrappedtext">
