@@ -68,6 +68,49 @@ NEXT_PUBLIC_CDN_URL=https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com
 
 Some deep-dive docs contain historical migration notes. Trust current imports/files over examples in docs; notably, `docs/video-and-media.md` still mentions a removed `ShimmerImage` component.
 
+## Media preparation and upload standard
+
+Use this workflow whenever the user asks to add or upload an image or video. Published delivery assets live in Vercel Blob under stable CDN-relative paths; `public/images/` and `public/videos/` are only ignored local staging directories, not the archive for original masters. Inspect every supplied file with `ffprobe` before converting it, preserve its aspect ratio, never upscale it, and remove audio from decorative/autoplay video.
+
+### Images
+
+- Use SVG for vector artwork and WebP for new raster artwork. Keep PNG only when a lossless/alpha source is materially better. JPEG is reserved mainly for video posters.
+- Size to roughly 2x the largest rendered width. Full-bleed artwork may be up to 3840px wide; images in the 940px case-study column normally need no more than 1920px. Existing high-resolution case-study masters include 3840x2160 landscape and 2160x2160 square files; homepage thumbnails are commonly 1280-1440px wide. Never enlarge a smaller source to meet these numbers.
+- Encode raster sources as WebP around quality 82 (80-85 is the acceptable visual range), strip metadata, and visually compare fine gradients/text against the source. Do not create manual responsive copies: `next/image` generates AVIF/WebP variants. `next.config.mjs` allows quality 75 (normal images) and 90 (video posters).
+- Upload to `images/<descriptive-lowercase-slug>.webp` (or `.svg`) and reference it as `CDN + '/images/...'` in `<Image>`. Supply truthful intrinsic `width`/`height`, an accurate `sizes` prop, useful `alt` text, and `priority` only for the above-fold LCP image. SVGs passed to `<Image>` require `unoptimized`.
+
+Example still conversion (change the 3840 cap to the actual 2x display need):
+
+```powershell
+ffmpeg -y -i source.png -map_metadata -1 -vf "scale='min(3840,iw)':-2:flags=lanczos" -frames:v 1 -c:v libwebp -quality 82 -compression_level 6 public/images/descriptive-slug.webp
+```
+
+### Videos
+
+- Start from one high-quality master. Preserve 24/25/30fps; cap higher-frame-rate sources at 30fps unless the brief explicitly needs otherwise. Standard delivery dimensions are 1440px wide for landscape/full-width video and 1080px wide for square or portrait video (for example 1440x810, 1080x1080, or 1080x1350). Keep the source aspect ratio and use a smaller source unchanged rather than upscaling it. A separately art-directed mobile encode is optional, not routine.
+- Produce all three current codecs. These settings are the quality-first baseline; inspect the result and raise CRF by 1-2 only if a file is unreasonably large: H.264 High/yuv420p, CRF 20, slow preset (universal fallback); H.265 Main/yuv420p, CRF 24, slow preset plus `hvc1` tag; AV1 Main/10-bit, CRF 30, SVT-AV1 preset 6. Strip audio and metadata. MP4 outputs require `+faststart`.
+- Use one clean lowercase slug and these exact Blob paths: `videos/h264/<slug>-fallback.mp4`, `videos/h265/<slug>-web.mp4`, `videos/av1/<slug>.webm`, and `videos/posters/<slug>.jpg`. Avoid spaces and URL-encoded names. When replacing published media, use a versioned slug such as `-v2` so CDN/browser caches cannot serve the old bytes.
+- Generate the poster from frame 1 of the H.264 delivery at the same dimensions, JPEG quality 2. The poster is displayed immediately and optimized by Next at quality 90 while the video itself remains `preload="none"` and mounts only near the viewport.
+
+Example encodes (use 1080 instead of 1440 for square/portrait media):
+
+```powershell
+ffmpeg -y -i source.mov -map 0:v:0 -an -map_metadata -1 -vf "scale='min(1440,iw)':-2:flags=lanczos" -c:v libx264 -preset slow -crf 20 -profile:v high -pix_fmt yuv420p -movflags +faststart public/videos/h264/descriptive-slug-fallback.mp4
+ffmpeg -y -i source.mov -map 0:v:0 -an -map_metadata -1 -vf "scale='min(1440,iw)':-2:flags=lanczos" -c:v libx265 -preset slow -crf 24 -tag:v hvc1 -pix_fmt yuv420p -movflags +faststart public/videos/h265/descriptive-slug-web.mp4
+ffmpeg -y -i source.mov -map 0:v:0 -an -map_metadata -1 -vf "scale='min(1440,iw)':-2:flags=lanczos" -c:v libsvtav1 -preset 6 -crf 30 -pix_fmt yuv420p10le public/videos/av1/descriptive-slug.webm
+ffmpeg -y -i public/videos/h264/descriptive-slug-fallback.mp4 -ss 0 -frames:v 1 -q:v 2 public/videos/posters/descriptive-slug.jpg
+```
+
+Wire new video through `EmbedVideo` (sized parent required) or `BackgroundVideo`, passing `poster`, `srcH265`, `srcAv1`, and `srcMp4` as CDN-relative `/videos/...` paths. H.265 must appear first, then AV1, then H.264. Add `posterAlt` and an accurate `posterSizes`; use `posterPriority` only above the fold.
+
+### Upload and verify
+
+1. Place only prepared delivery files in the ignored `public/images/` / `public/videos/` staging tree. Do not commit them.
+2. With `BLOB_READ_WRITE_TOKEN` available only in the process environment, run `node scripts/upload-to-blob.mjs` (or `node scripts/upload-posters.mjs` for poster-only updates). Both preserve the folder path, disable random suffixes, and allow overwrites. Never put the token in a tracked file or terminal output.
+3. Confirm each returned/existing Blob URL loads and has the expected content type. Run `ffprobe` on every uploaded video to verify codec, dimensions, frame rate, pixel format, duration, and absence of audio; check the poster dimensions too.
+4. Check the affected page at desktop and mobile widths. In the Network panel confirm the poster loads first, video is not fetched before it approaches the viewport, the browser selects a supported preferred codec, and no asset 404s. Also test reduced-motion/data-saver behavior when relevant.
+5. Update `app/seo.js` and route metadata when the media represents a public case study or other indexable creative work; use the H.264 URL as structured-data `contentUrl` and the JPEG poster as `thumbnailUrl`.
+
 ## Verify before handoff
 
 ```powershell
