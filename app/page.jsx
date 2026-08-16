@@ -148,8 +148,8 @@ export default function HomePage() {
                 <div className="specs-wrap worlds-feature-media">
                   <div className="specs-contain-button worlds-feature-overlay">
                     <div className="worlds-feature-copy">
-                      <h2 className="worlds-feature-heading">3D Worlds</h2>
-                      <p className="worlds-feature-description">Art-directed CGI environments built around brands, products, and identities.</p>
+                      <h2 className="heading-2 nomargin">3D Worlds</h2>
+                      <p className="paragraph">Art-directed CGI environments built around brands, products, and identities.</p>
                     </div>
                     <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', backgroundColor: 'rgb(255,255,255)' }} className="button case">
                       <div style={{ color: 'rgb(5,7,10)' }} className="text-block-18">Explore 3D Worlds</div>
