@@ -145,10 +145,10 @@ export default function HomePage() {
           <div className="w-layout-blockcontainer container-3 header w-container">
             <div ref={gridRef} className="w-layout-grid main-proj-grid head" data-reveal-group="hero">
               <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91" href="/services/3d-environments" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal data-reveal-scale="0.5">
-                <div className="specs-wrap">
+                <div className="specs-wrap worlds-feature-media">
                   <div className="specs-contain-button">
                     <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', backgroundColor: 'rgb(255,255,255)' }} className="button case">
-                      <div style={{ color: 'rgb(5,7,10)' }} className="text-block-18">3D Environments &amp; Custom Mockups</div>
+                      <div style={{ color: 'rgb(5,7,10)' }} className="text-block-18">3D Worlds</div>
                     </div>
                   </div>
                   <div className="div-block-66">
@@ -159,25 +159,6 @@ export default function HomePage() {
                       srcH265="/videos/h265/cgi-environments-web.mp4"
                       srcAv1="/videos/av1/cgi-environments.webm"
                       srcMp4="/videos/h264/cgi-environments-fallback.mp4"
-                    /></div>
-                  </div>
-                </div>
-              </a>
-              <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4eae-a7256e91" href="/services/mixed-reality" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal data-reveal-scale="0.75">
-                <div className="specs-wrap">
-                  <div className="specs-contain-button">
-                    <div style={{ backgroundColor: 'rgb(255,255,255)', transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="button case">
-                      <div style={{ color: 'rgb(5,7,10)' }} className="text-block-18">FOOH &amp; Mixed Reality</div>
-                    </div>
-                  </div>
-                  <div className="div-block-66">
-                    <div className="cb w-embed"><EmbedVideo
-                      poster="/videos/posters/mixed-reality.jpg"
-                      posterAlt="Mixed reality and FOOH-style CGI campaign reel preview"
-                      title="Mixed reality CGI campaign reel"
-                      srcH265="/videos/h265/mixed-reality-web.mp4"
-                      srcAv1="/videos/av1/mixed-reality.webm"
-                      srcMp4="/videos/h264/mixed-reality-fallback.mp4"
                     /></div>
                   </div>
                 </div>

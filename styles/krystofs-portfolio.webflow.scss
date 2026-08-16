@@ -4569,6 +4569,10 @@ body {
   padding-bottom: 50%;
 }
 
+.specs-wrap.worlds-feature-media {
+  padding-bottom: 50%;
+}
+
 .specs-contain-button {
   z-index: 99;
   grid-column-gap: 3px;
@@ -8352,6 +8356,10 @@ body {
     padding-bottom: 100%;
   }
 
+  .specs-wrap.worlds-feature-media {
+    padding-bottom: 100%;
+  }
+
   .specs-contain-button {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
@@ -8608,8 +8616,8 @@ body {
   grid-area: span 1 / span 3 / span 1 / span 3;
 }
 
-#w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91, #w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4eae-a7256e91 {
-  grid-area: span 1 / span 1 / span 1 / span 1;
+#w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91 {
+  grid-column: 1 / -1;
 }
 
 #w-node-_0922472a-8b42-2f1d-7fbf-9cb935b9512f-a7256e91 {
