@@ -146,9 +146,13 @@ export default function HomePage() {
             <div ref={gridRef} className="w-layout-grid main-proj-grid head" data-reveal-group="hero">
               <a id="w-node-eb78cafc-0f7f-e8d6-7ab0-e20f7e4b4e9c-a7256e91" href="/services/3d-environments" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal data-reveal-scale="0.5">
                 <div className="specs-wrap worlds-feature-media">
-                  <div className="specs-contain-button">
+                  <div className="specs-contain-button worlds-feature-overlay">
+                    <div className="worlds-feature-copy">
+                      <h2 className="worlds-feature-heading">3D Worlds</h2>
+                      <p className="worlds-feature-description">Art-directed CGI environments built around brands, products, and identities.</p>
+                    </div>
                     <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)', backgroundColor: 'rgb(255,255,255)' }} className="button case">
-                      <div style={{ color: 'rgb(5,7,10)' }} className="text-block-18">3D Worlds</div>
+                      <div style={{ color: 'rgb(5,7,10)' }} className="text-block-18">Explore 3D Worlds</div>
                     </div>
                   </div>
                   <div className="div-block-66">
