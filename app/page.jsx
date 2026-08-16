@@ -81,7 +81,7 @@ export default function HomePage() {
                     <div className="label">Menu</div>
                     <div className="div-block-119">
                       <div className="div-block-65">
-                        <a href="/services/3d-environments" className="link">3D Environments</a>
+                        <a href="/services/3d-environments" className="link">3D Worlds</a>
                         <div className="line-mask"><div className="line"></div></div>
                       </div>
                       <div className="div-block-65">

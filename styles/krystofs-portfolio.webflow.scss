@@ -605,6 +605,326 @@ body {
   width: 50%;
 }
 
+/* 3D Worlds service page */
+.worlds-page {
+  padding-bottom: var(--big-space);
+}
+
+.worlds-hero {
+  grid-row-gap: var(--default-space);
+}
+
+.worlds-hero-title {
+  width: auto;
+}
+
+.worlds-back-button {
+  flex: none;
+}
+
+.worlds-hero-copy {
+  grid-column-gap: var(--default-space);
+  grid-row-gap: var(--half-space);
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.worlds-hero-copy .paragraph.header {
+  grid-column: 2;
+  width: 100%;
+  padding-right: 0;
+}
+
+.worlds-button-row {
+  grid-column: 2;
+  grid-column-gap: var(--small-space);
+  grid-row-gap: var(--small-space);
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+}
+
+.worlds-reel {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  margin-top: var(--big-space);
+  overflow: hidden;
+}
+
+.worlds-sections {
+  grid-row-gap: calc(var(--big-space) * 2);
+  padding-top: calc(var(--big-space) * 2);
+  padding-bottom: var(--big-space);
+}
+
+.worlds-section {
+  grid-row-gap: var(--default-space);
+  flex-flow: column;
+  width: 100%;
+  display: flex;
+}
+
+.worlds-section-heading {
+  grid-row-gap: var(--small-space);
+  flex-flow: column;
+  max-width: 760px;
+  display: flex;
+}
+
+.worlds-section-heading-row {
+  grid-column-gap: var(--default-space);
+  grid-row-gap: var(--default-space);
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: none;
+}
+
+.worlds-section-heading-row > div {
+  grid-row-gap: var(--small-space);
+  flex-flow: column;
+  display: flex;
+}
+
+.worlds-section-heading-row > .paragraph {
+  width: 50%;
+  max-width: 620px;
+}
+
+.worlds-output-grid {
+  grid-column-gap: var(--default-space);
+  grid-row-gap: var(--default-space);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: grid;
+}
+
+.worlds-output-item {
+  grid-row-gap: var(--half-space);
+  border-top: 1px solid var(--gray-0-08-opacity);
+  flex-flow: column;
+  min-height: 130px;
+  padding-top: var(--half-space);
+  display: flex;
+}
+
+.worlds-proof-grid {
+  grid-column-gap: var(--small-space);
+  grid-row-gap: var(--small-space);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: dense;
+  align-items: start;
+  display: grid;
+}
+
+.worlds-proof-card {
+  aspect-ratio: 1;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.worlds-proof-card.wide {
+  grid-column: span 2;
+  aspect-ratio: 2 / 1;
+}
+
+.worlds-proof-card .worlds-proof-overlay {
+  opacity: 1;
+}
+
+.worlds-proof-card .services-name,
+.worlds-proof-card .service-heading {
+  transform: none;
+}
+
+.worlds-proof-card .services-name {
+  width: 100%;
+}
+
+.worlds-process-grid {
+  grid-column-gap: var(--small-space);
+  grid-row-gap: var(--small-space);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  display: grid;
+}
+
+.worlds-process-card {
+  grid-row-gap: var(--half-space);
+  border: 1px solid var(--gray-0-08-opacity);
+  flex-flow: column;
+  min-height: 280px;
+  padding: var(--half-space);
+  display: flex;
+}
+
+.worlds-process-card .paragraph {
+  margin-top: auto;
+}
+
+.worlds-fit-grid {
+  grid-column-gap: var(--small-space);
+  grid-row-gap: var(--small-space);
+  grid-template-columns: 1fr 1fr;
+  flex-flow: row;
+  display: grid;
+}
+
+.worlds-fit-card {
+  grid-row-gap: var(--half-space);
+  border: 1px solid var(--gray-0-08-opacity);
+  flex-flow: column;
+  min-height: 410px;
+  padding: var(--default-space);
+  display: flex;
+}
+
+.worlds-fit-card .paragraph {
+  width: 80%;
+  margin-top: auto;
+}
+
+.worlds-cta {
+  grid-column-gap: var(--big-space);
+  grid-row-gap: var(--default-space);
+  border-top: 1px solid var(--gray-0-08-opacity);
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  padding-top: var(--big-space);
+  display: flex;
+}
+
+.worlds-cta-copy {
+  grid-row-gap: var(--small-space);
+  flex-flow: column;
+  max-width: 760px;
+  display: flex;
+}
+
+.worlds-cta-buttons {
+  grid-column: auto;
+  flex: none;
+}
+
+@media screen and (max-width: 991px) {
+  .worlds-hero-copy {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .worlds-sections {
+    grid-row-gap: var(--big-space);
+    padding-top: var(--big-space);
+  }
+
+  .worlds-output-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .worlds-proof-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .worlds-process-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .worlds-process-card {
+    min-height: 230px;
+  }
+
+  .worlds-fit-card {
+    min-height: 360px;
+  }
+
+  .worlds-fit-card .paragraph {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .worlds-back-button {
+    display: none;
+  }
+
+  .worlds-hero-copy {
+    grid-template-columns: 1fr;
+  }
+
+  .worlds-hero-copy .paragraph.header,
+  .worlds-button-row {
+    grid-column: 1;
+  }
+
+  .worlds-reel {
+    margin-top: var(--default-space);
+  }
+
+  .worlds-section-heading-row {
+    align-items: flex-start;
+    flex-flow: column;
+  }
+
+  .worlds-section-heading-row > .paragraph {
+    width: 100%;
+  }
+
+  .worlds-fit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .worlds-fit-card {
+    min-height: 320px;
+  }
+
+  .worlds-cta {
+    align-items: flex-start;
+    flex-flow: column;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .worlds-sections {
+    grid-row-gap: var(--big-space);
+  }
+
+  .worlds-output-grid,
+  .worlds-process-grid,
+  .worlds-proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .worlds-output-item {
+    min-height: 100px;
+  }
+
+  .worlds-proof-card.wide {
+    grid-column: span 1;
+    aspect-ratio: 16 / 9;
+  }
+
+  .worlds-process-card,
+  .worlds-fit-card {
+    min-height: 260px;
+  }
+
+  .worlds-fit-card {
+    padding: var(--half-space);
+  }
+
+  .worlds-cta {
+    padding-top: var(--default-space);
+  }
+
+  .worlds-button-row {
+    align-items: stretch;
+    flex-flow: column;
+    width: 100%;
+  }
+
+  .worlds-button-row .button {
+    width: 100%;
+  }
+}
+
 .paragraph.section-context {
   margin: 0;
 }
@@ -9410,9 +9730,37 @@ body {
     padding-right: 0;
   }
 
-  .recognition-modal .recognition-row .div-block-143 {
+.recognition-modal .recognition-row .div-block-143 {
     padding-left: 0;
     padding-right: 0;
+  }
+}
+
+/* Keep page-specific sizing above the migrated Webflow service-card rules. */
+.work-main.worlds-page {
+  padding-bottom: var(--big-space);
+}
+
+.div-block-112.worlds-hero-title {
+  width: auto;
+}
+
+.wrapper.services.worlds-proof-card {
+  padding-bottom: 0;
+}
+
+.wrapper.services.worlds-proof-card .services-name,
+.wrapper.services.worlds-proof-card .service-heading {
+  transform: none;
+}
+
+@media screen and (max-width: 767px) {
+  .button.worlds-back-button {
+    display: none;
+  }
+
+  .div-block-112.worlds-hero-title {
+    width: 100%;
   }
 }
 

@@ -8,7 +8,7 @@ export const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://ziwvaiplle7bd
 const pageSocialImages = {
   '/services/3d-environments': {
     url: '/videos/posters/cgi-environments.jpg',
-    alt: 'Custom animated 3D motion mockups for agency case studies by Krystof Jezek',
+    alt: 'Art-directed CGI worlds for brands, products, and digital experiences by Krystof Jezek',
   },
   '/services/mixed-reality': {
     url: '/videos/posters/mixed-reality.jpg',
@@ -298,14 +298,14 @@ export const videoAssets = [
     transcript: 'No spoken dialogue. Visual sequence showing 3D jewelry product scenes, campaign art direction, and ecommerce brand visuals for Chainer.',
   },
   {
-    name: 'Custom motion mockups and 3D environments reel',
+    name: '3D Worlds showreel',
     page: '/services/3d-environments',
-    description: 'Custom animated 3D environments and motion mockups built for branding, web, and design agency case studies.',
-    thumbnailUrl: '/videos/posters/yiskra_veha.jpg',
-    contentUrl: '/videos/h264/yiskra_veha-fallback.mp4',
+    description: 'Art-directed CGI worlds built around brands, products, identities, and digital experiences for motion, stills, web, launches, and campaign content.',
+    thumbnailUrl: '/videos/posters/cgi-environments.jpg',
+    contentUrl: '/videos/h264/cgi-environments-fallback.mp4',
     dateCreated: '2026',
-    keywords: ['custom motion mockups', 'animated mockups', '3D environments', 'agency case studies'],
-    transcript: 'No spoken dialogue. Visual reel showing custom animated 3D environments and motion mockups built for branding, web, and design agency case studies.',
+    keywords: ['3D worlds', 'art-directed CGI', '3D environments', 'CGI brand campaigns'],
+    transcript: 'No spoken dialogue. Visual reel showing art-directed CGI worlds created around brands, products, identities, and digital experiences.',
   },
   {
     name: 'Mixed reality and FOOH service reel',
@@ -333,7 +333,7 @@ export const imageAssets = [
   {
     page: '/services/3d-environments',
     url: '/videos/posters/cgi-environments.jpg',
-    title: 'Custom motion mockups and animated 3D environments',
+    title: 'Art-directed CGI worlds and 3D environments',
   },
   {
     page: '/services/mixed-reality',
