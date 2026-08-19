@@ -5159,6 +5159,10 @@ body {
   grid-row-gap: var(--half-space);
 }
 
+.div-block-141.credits > .div-block-142 {
+  grid-column: 1 / -1;
+}
+
 .case-study-grid {
   grid-column: 1 / -1;
   grid-template-columns: repeat(4, minmax(0, 1fr));

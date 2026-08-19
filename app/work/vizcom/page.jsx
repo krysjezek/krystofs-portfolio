@@ -141,12 +141,18 @@ export default function VizcomPage() {
                 <div className="div-block-143"><p className="paragraph">Brand Identity &amp; Creative Direction</p></div>
                 <div className="postion">
                   <div className="div-block-143"><p className="paragraph">Outland</p></div>
-                  <div className="div-block-143"><p className="paragraph">Design Studio</p></div>
+                  <div className="div-block-143">
+                    <div className="div-block-144"></div>
+                    <p className="paragraph">Design Studio</p>
+                  </div>
                 </div>
                 <div className="div-block-143"><p className="paragraph">3D Design &amp; Animation</p></div>
                 <div className="postion">
                   <div className="div-block-143"><p className="paragraph">Kryštof Ježek</p></div>
-                  <div className="div-block-143"><p className="paragraph">Independent CGI Designer</p></div>
+                  <div className="div-block-143">
+                    <div className="div-block-144"></div>
+                    <p className="paragraph">Independent CGI Designer</p>
+                  </div>
                 </div>
               </div>
             </div>

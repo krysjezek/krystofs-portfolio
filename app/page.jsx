@@ -373,44 +373,6 @@ export default function HomePage() {
                   </div>
                 </div>
               </a>
-              <a id="w-node-_0a0f2415-0cbe-189d-07e1-6388208cf7e6-a7256e91" href="/work/the-mag-w-rap-2025" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
-                <div className="proj-img-wrap">
-                  <div className="div-block-99">
-                    <div className="wrappedtext">
-                      <div className="div-block-134">
-                        <div className="mini-label">
-                          <div className="label mini">Art Direction</div>
-                        </div>
-                        <div className="mini-label">
-                          <div className="label mini">3D</div>
-                        </div>
-                        <div className="mini-label">
-                          <div className="label mini">Motion Design</div>
-                        </div>
-                      </div>
-                      <div className="div-block-67"><Image src={CDN + '/images/arrow.svg'} alt="" width={25} height={25} unoptimized className="image-19" />
-                        <h2 className="proj-heading">The Mag Wrap 2025</h2>
-                      </div>
-                    </div>
-                    <div className="div-block-127">
-                      <div className="div-block-128"><Image src={CDN + '/images/kj-stats.png'} alt="" width={32} height={16} className="image-31" />
-                        <div className="tag-work">11 000+ Patreon subscribers</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div style={{ transform: 'translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)' }} className="div-block-66">
-                    <div className="background-video-18 w-embed"><EmbedVideo
-                      poster="/videos/posters/wrap_header.jpg"
-                      posterAlt="The Mag Wrap 2025 3D motion design case study preview"
-                      title="The Mag Wrap 2025 3D motion design package"
-                      srcH265="/videos/h265/wrap_header-web.mp4"
-                      srcAv1="/videos/av1/wrap_header.webm"
-                      srcMp4="/videos/h264/wrap_header-fallback.mp4"
-                    /></div>
-                    <div className="proj-img wrap25"><Image fill src={CDN + '/images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp'} alt="The Mag Wrap 2025 case study preview" style={{ objectFit: 'cover' }} sizes="(max-width: 991px) 100vw, 50vw" /></div>
-                  </div>
-                </div>
-              </a>
               <a id="w-node-_3c9fd363-924c-9b72-f486-2437327d7019-a7256e91" href="/work/barbour" className="proj-item w-inline-block" data-cursor="Explore" data-cursor-icon="eye" data-reveal>
                 <div className="proj-img-wrap">
                   <div className="div-block-99">
