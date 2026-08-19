@@ -8,6 +8,18 @@ const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
 const featuredProjects = [
   {
+    href: '/work/vizcom',
+    title: 'Vizcom Brand World',
+    services: '3D ENVIRONMENT • MOTION MOCKUP • LOOK DEVELOPMENT',
+    image: '/videos/posters/vizcom-brand-world.jpg',
+    imageAlt: 'Vizcom dynamic 3D brand world case study',
+    imageClass: 'proj-img',
+    poster: '/videos/posters/vizcom-brand-world.jpg',
+    srcH265: '/videos/h265/vizcom-brand-world-web.mp4',
+    srcAv1: '/videos/av1/vizcom-brand-world.webm',
+    srcMp4: '/videos/h264/vizcom-brand-world-fallback.mp4',
+  },
+  {
     href: '/work/valkaai',
     title: 'ValkaAI',
     services: 'ART DIRECTION • 3D • MOTION GRAPHICS',
@@ -71,7 +83,7 @@ const featuredProjects = [
 export const metadata = {
   title: 'Work',
   ...pageSeo('/other/work'),
-  description: 'Five featured CGI, 3D motion design, FOOH, and product visualization case studies by Kryštof Ježek.',
+  description: 'Six featured CGI, 3D environment, motion design, FOOH, and product visualization case studies by Kryštof Ježek.',
 }
 
 export const dynamic = 'force-static'

@@ -14,6 +14,10 @@ const pageSocialImages = {
     url: '/videos/posters/mixed-reality.jpg',
     alt: 'Mixed reality and FOOH CGI campaign work by Krystof Jezek',
   },
+  '/work/vizcom': {
+    url: '/videos/posters/vizcom-brand-world.jpg',
+    alt: 'Vizcom dynamic 3D brand world mockup case study',
+  },
   '/work/valkaai': {
     url: '/videos/posters/valkaai-logo-glass-prism.jpg',
     alt: 'ValkaAI 3D glass-prism logo animation case study',
@@ -91,7 +95,7 @@ export const portfolioRoutes = [
     path: '/',
     priority: 1.0,
     changeFrequency: 'weekly',
-    lastModified: '2026-07-13',
+    lastModified: '2026-08-19',
   },
   {
     path: '/services/3d-environments',
@@ -104,6 +108,12 @@ export const portfolioRoutes = [
     priority: 0.7,
     changeFrequency: 'monthly',
     lastModified: '2026-07-10',
+  },
+  {
+    path: '/work/vizcom',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+    lastModified: '2026-08-19',
   },
   {
     path: '/work/valkaai',
@@ -145,7 +155,7 @@ export const portfolioRoutes = [
     path: '/other/work',
     priority: 0.6,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-13',
+    lastModified: '2026-08-19',
   },
   {
     path: '/other/join',
@@ -156,6 +166,14 @@ export const portfolioRoutes = [
 ]
 
 export const featuredCreativeWorks = [
+  {
+    name: 'Vizcom Brand World',
+    path: '/work/vizcom',
+    description: 'A dynamic 3D environment and animated brand mockup for Vizcom, created for design studio Outland.',
+    keywords: ['3D environment design', 'animated mockup', 'brand world', 'look development', 'motion design'],
+    dateCreated: '2026',
+    datePublished: '2026-08',
+  },
   {
     name: 'ValkaAI',
     path: '/work/valkaai',
@@ -216,6 +234,16 @@ export const videoAssets = [
     contentUrl: '/videos/h264/mixed-reality-fallback.mp4',
     dateCreated: '2026',
     keywords: ['mixed reality campaign', 'CGI advertising', 'FOOH visuals'],
+  },
+  {
+    name: 'Vizcom dynamic 3D brand world mockup',
+    page: '/work/vizcom',
+    description: 'A moving 3D design-studio environment presenting the Vizcom identity across branded tools, stationery, screens, and merchandise.',
+    thumbnailUrl: '/videos/posters/vizcom-brand-world.jpg',
+    contentUrl: '/videos/h264/vizcom-brand-world-fallback.mp4',
+    dateCreated: '2026',
+    keywords: ['Vizcom', '3D environment design', 'animated brand mockup', 'brand world', 'look development'],
+    transcript: 'No spoken dialogue. The camera moves through a sunlit design studio, travelling from a wide room view into close-ups of Vizcom-branded stationery, tools, a laptop, colour samples, a mug, and merchandise before returning to the full environment.',
   },
   {
     name: 'ValkaAI 3D glass-prism logo animation',
