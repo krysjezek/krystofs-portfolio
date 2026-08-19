@@ -142,8 +142,10 @@ export default function VizcomPage() {
                 <div className="postion">
                   <div className="div-block-143"><p className="paragraph">Outland</p></div>
                   <div className="div-block-143">
-                    <div className="div-block-144"></div>
-                    <p className="paragraph">Design Studio</p>
+                    <div className="div-block-144">
+                      <Image src={CDN + '/images/outland-logo.svg'} alt="Outland studio logo" width={64} height={64} unoptimized className="image-32" />
+                    </div>
+                    <p className="paragraph">Outland</p>
                   </div>
                 </div>
                 <div className="div-block-143"><p className="paragraph">3D Design &amp; Animation</p></div>
