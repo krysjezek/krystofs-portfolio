@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import CopyEmailButton from '@/components/CopyEmailLink'
+import SmoothSectionLink from '@/components/SmoothSectionLink'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
 
@@ -55,7 +56,7 @@ export default function Footer() {
                       <div className="line-mask"><div className="line"></div></div>
                     </div>
                     <div data-w-id="adb6576a-5e98-8477-410d-959810b17bcc" className="div-block-65">
-                      <Link href="/#tech-projects" className="link" data-cursor="Explore" data-cursor-icon="eye">Tech Projects</Link>
+                      <SmoothSectionLink href="/#tech-projects" className="link" data-cursor="Explore" data-cursor-icon="eye">Tech Projects</SmoothSectionLink>
                       <div className="line-mask"><div className="line"></div></div>
                     </div>
                   </div>

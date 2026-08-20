@@ -172,6 +172,18 @@ Mounted globally in `app/layout.jsx`. Native cursor hidden via `cursor: none !im
 | **Duration / Easing** | 3s / `ease-in-out` infinite |
 | **Element** | `.div-block-88` |
 
+### 3g. Tech Projects section scroll
+
+**File:** `components/SmoothSectionLink.jsx`
+
+| | |
+|-|-|
+| **What** | Smoothly scrolls same-page Tech Projects links to `#tech-projects` |
+| **Trigger** | Click either Tech Projects link while on the homepage |
+| **Method** | GSAP `ScrollToPlugin`, with user scroll input allowed to interrupt the tween |
+| **Duration / Easing** | 1.2s / `power2.inOut` |
+| **Reduced motion** | Uses an immediate native section jump |
+
 ---
 
 ## 4. Image Loading (ShimmerImage)

@@ -14,6 +14,7 @@ import gsap from 'gsap'
 import CopyEmailButton from '@/components/CopyEmailLink'
 import JsonLd from '@/components/JsonLd'
 import RecognitionModal from '@/components/RecognitionModal'
+import SmoothSectionLink from '@/components/SmoothSectionLink'
 import { homepageStructuredData } from './seo'
 
 const CDN = process.env.NEXT_PUBLIC_CDN_URL || ''
@@ -89,7 +90,7 @@ export default function HomePage() {
                         <div className="line-mask"><div className="line"></div></div>
                       </div>
                       <div className="div-block-65">
-                        <a href="#tech-projects" className="link">Tech Projects</a>
+                        <SmoothSectionLink href="#tech-projects" className="link">Tech Projects</SmoothSectionLink>
                         <div className="line-mask"><div className="line"></div></div>
                       </div>
                     </div>
