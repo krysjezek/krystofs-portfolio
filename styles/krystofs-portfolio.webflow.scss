@@ -72,6 +72,16 @@
   --gray-0-35: #595959;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 ::selection {
   color: var(--green-new);
   background: rgba(164, 246, 131, 0.15);
