@@ -117,6 +117,14 @@ const recognitionItems = [
     dateTime: '2024-03',
   },
   {
+    description: 'Featured among Muzli\u2019s 60 most creative and unique portfolio websites of 2023',
+    href: 'https://muz.li/blog/60-most-creative-portfolio-websites-of-2023/',
+    source: 'Muzli',
+    favicon: 'https://muz.li/favicon.ico',
+    date: 'January 2024',
+    dateTime: '2024-01',
+  },
+  {
     description: 'Credited for motion design on the Yonex All England teaser assets',
     href: 'https://monopo.london/work/yonex-all-england-brand-identity/',
     source: 'Monopo London',
