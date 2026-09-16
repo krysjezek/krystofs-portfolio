@@ -1,4 +1,12 @@
 @font-face {
+  font-family: 'JetBrains Mono';
+  src: url('/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: Clashgrotesk;
   src: url('/fonts/ClashGrotesk-Regular.woff') format("woff");
   font-weight: 400;
@@ -9787,7 +9795,7 @@ body:has(.airport-preview) { background: var(--black); }
   width: min(480px, calc(100% - 32px));
   margin: 100px auto;
   min-height: 125vh;
-  .airport-preview-heading { display: flex; justify-content: space-between; margin-bottom: 24px; font: 10px/1.4 monospace; color: var(--gray-050o); }
+  .airport-preview-heading { display: flex; justify-content: space-between; margin-bottom: 24px; font: 10px/1.4 'JetBrains Mono', monospace; color: var(--gray-050o); }
   .airport-preview-heading a { color: inherit; }
   .airport-preview-note { color: var(--gray-050o); font-size: 13px; line-height: 1.6; margin-top: 24px; }
 }
@@ -9796,7 +9804,7 @@ body:has(.airport-preview) { background: var(--black); }
   color: var(--white);
   padding: 24px;
   width: 100%;
-  font: 10px/1.4 ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font: 10px/1.4 'JetBrains Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
   font-variant-numeric: tabular-nums;
   -webkit-font-smoothing: antialiased;
   p, h2, dl, dd { margin: 0; }
