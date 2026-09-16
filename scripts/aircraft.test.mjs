@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { CENTER, displayedPosition, mergeAircraft, normalizeAircraft, project, retryDelay } from '../lib/aircraft.mjs'
+import { CENTER, displayedPosition, mergeAircraft, normalizeAircraft, project, retryDelay, smoothAircraftPose } from '../lib/aircraft.mjs'
 
 const now = 1789571000000
 const observation = { hex: 'test', lat: CENTER.lat, lon: CENTER.lon, seen_pos: 1, alt_baro: 0, gs: 0, track: 0 }
@@ -8,7 +8,7 @@ const response = ac => ({ ac, now, msg: 'No error' })
 
 test('filters invalid, ground, old and out-of-radius reports while retaining valid zero values', () => {
   const data = normalizeAircraft(response([observation, { ...observation, hex: 'ground', alt_baro: 'ground' },
-    { ...observation, hex: 'outside', lat: 51 }, { ...observation, lat: null },
+    { ...observation, hex: 'outside', lat: 51 }, { ...observation, hex: '40km-away', lat: 50.4355 }, { ...observation, lat: null },
     { ...observation, seen_pos: 130 }, { ...observation, seen_pos: null }]), now)
   assert.equal(data.aircraft.length, 1)
   assert.equal(data.aircraft[0].altitude, 0)
@@ -55,4 +55,26 @@ test('Retry-After supports seconds and HTTP dates with a one-minute minimum', ()
   assert.equal(retryDelay(new Date(now + 180000).toUTCString(), now), 180000)
   assert.equal(retryDelay(null, now), 60000)
   assert.equal(retryDelay('nonsense', now), 60000)
+})
+
+test('motion corrects continuously from the rendered pose and settles on the moving target', () => {
+  const a = { ...normalizeAircraft(response([observation]), now).aircraft[0], speed: 300, track: 1 }
+  const correction = { startedAt: now, offset: [4, -3], headingOffset: -2 }
+  const start = smoothAircraftPose(a, now, correction)
+  const target = displayedPosition(a, now)
+  assert.deepEqual(start.point, [target.point[0] + 4, target.point[1] - 3])
+  assert.equal(start.heading, -1) // 359° to 1° takes the short, two-degree turn.
+  assert.equal(smoothAircraftPose(a, now + 1000, correction).heading, 0)
+  assert.deepEqual(smoothAircraftPose(a, now + 2000, correction).point, displayedPosition(a, now + 2000).point)
+  assert.equal(smoothAircraftPose(a, now + 2000, correction).heading, 1)
+  assert.deepEqual(smoothAircraftPose(a, now, correction, true).point, project(a.lat, a.lon))
+  assert.deepEqual(smoothAircraftPose(a, now + 70000, correction).point, smoothAircraftPose(a, now + 80000, correction).point)
+})
+
+test('projection starts continuously without the former two-second position jump', () => {
+  const a = { ...normalizeAircraft(response([observation]), now).aircraft[0], speed: 300, track: 90 }
+  const before = displayedPosition(a, a.observedAt + 1999).point
+  const after = displayedPosition(a, a.observedAt + 2001).point
+  assert.ok(after[0] - before[0] > 0)
+  assert.ok(after[0] - before[0] < 0.001)
 })

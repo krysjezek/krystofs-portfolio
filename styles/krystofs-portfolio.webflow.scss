@@ -9831,7 +9831,7 @@ body:has(.airport-preview) { background: var(--black); }
   .map-airport { transform: translate(-100%, -130%); white-space: nowrap; }
   .map-range { bottom: 5px; left: 50%; transform: translateX(-50%); font-size: 7px; color: #ffffff80; }
   .aircraft-observation { position: absolute; width: 2px; height: 2px; margin: -1px; border-radius: 50%; background: #fff; pointer-events: none; }
-  .aircraft-marker { position: absolute; display: grid; place-items: center; width: 26px; height: 26px; padding: 0; border: 0; border-radius: 50%; background: transparent; transform: translate(-50%, -50%); transition: left 1s linear, top 1s linear; z-index: 2; touch-action: pan-y; }
+  .aircraft-marker { position: absolute; display: grid; place-items: center; width: 26px; height: 26px; padding: 0; border: 0; border-radius: 50%; background: transparent; transform: translate(-50%, -50%); left: 0; top: 0; z-index: 2; touch-action: pan-y; }
   .aircraft-marker svg { fill: #fff; stroke: #fff; stroke-width: .7; overflow: visible; }
   .aircraft-marker.is-estimated svg { fill: var(--airport-blue); stroke: #fff; stroke-width: 1.15; }
   .aircraft-marker.is-stale { opacity: .4; transition: none; }

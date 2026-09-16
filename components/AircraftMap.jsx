@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { useVisiblePolling } from '@/hooks/useVisiblePolling'
-import { displayedPosition, EXPIRE_MS, mergeAircraft, project, STALE_MS } from '@/lib/aircraft.mjs'
+import { useAircraftMotion } from '@/hooks/useAircraftMotion'
+import { displayedPosition, EXPIRE_MS, mergeAircraft, project, RADIUS_KM, STALE_MS } from '@/lib/aircraft.mjs'
 import geography from '@/data/prague-map.json'
 
 const time = (value) => new Date(value).toISOString().slice(11, 19) + 'Z'
@@ -16,6 +17,7 @@ export default function AircraftMap() {
   const [selected, setSelected] = useState(null)
   const [reduced, setReduced] = useState(false)
   const trails = data?.trails || {}
+  useAircraftMotion(ref, data?.aircraft, active, reduced)
 
   useEffect(() => {
     const media = window.matchMedia('(prefers-reduced-motion: reduce)')
@@ -38,15 +40,15 @@ export default function AircraftMap() {
   const stale = feedStale || error
   const status = data?.fixture ? 'FIXTURE' : !data ? error ? 'UNAVAILABLE' : 'CONNECTING' : stale ? 'STALE' : 'LIVE'
   const message = !data ? error ? 'Traffic unavailable. Retrying automatically.' : 'Receiving live aircraft…' :
-    stale ? aircraft.length ? 'Updates delayed. Last known traffic shown.' : 'Updates delayed. No recent positions available.' : !aircraft.length ? 'No airborne aircraft reported within 50 km.' : null
+    stale ? aircraft.length ? 'Updates delayed. Last known traffic shown.' : 'Updates delayed. No recent positions available.' : !aircraft.length ? `No airborne aircraft reported within ${RADIUS_KM} km.` : null
   const close = () => {
     const marker = ref.current.querySelector(`[data-aircraft-id="${CSS.escape(selected || '')}"]`)
     setSelected(null); marker?.focus()
   }
 
-  return <section ref={ref} className="aircraft-map" aria-label="Aircraft within 50 kilometres of Prague" onKeyDown={event => { if (event.key === 'Escape') close() }}>
+  return <section ref={ref} className="aircraft-map" aria-label={`Aircraft within ${RADIUS_KM} kilometres of Prague`} onKeyDown={event => { if (event.key === 'Escape') close() }}>
     {data?.fixture && <p className="aircraft-fixture" role="status">DEVELOPMENT FIXTURE — NOT LIVE TRAFFIC</p>}
-    <header className="aircraft-map-header"><span>AIRSPACE <span className="aircraft-count">{String(aircraft.length).padStart(2, '0')}</span></span><span className={`aircraft-feed-status ${stale ? 'is-stale' : ''}`}><i />{status} / 50 KM</span></header>
+    <header className="aircraft-map-header"><span>AIRSPACE <span className="aircraft-count">{String(aircraft.length).padStart(2, '0')}</span></span><span className={`aircraft-feed-status ${stale ? 'is-stale' : ''}`}><i />{status} / {RADIUS_KM} KM</span></header>
     <div className={`aircraft-map-canvas ${reduced || !active ? 'is-still' : ''}`}>
       <div className="aircraft-map-space">
       <svg viewBox="0 0 432 180" preserveAspectRatio="none" className="aircraft-basemap" aria-hidden="true">
@@ -57,7 +59,7 @@ export default function AircraftMap() {
       </svg>
       <span className="map-prague">PRAGUE</span>
       <span className="map-airport" style={{ left: `${airport[0] / 432 * 100}%`, top: `${airport[1] / 180 * 100}%` }}>⊕ LKPR</span>
-      <span className="map-range">50 KM RADIUS</span>
+      <span className="map-range">{RADIUS_KM} KM RADIUS</span>
       {aircraft.map(a => {
         const position = displayedPosition(a, now, reduced)
         const observed = project(a.lat, a.lon)
@@ -65,9 +67,8 @@ export default function AircraftMap() {
           <span className="aircraft-observation" style={{ left: `${observed[0] / 432 * 100}%`, top: `${observed[1] / 180 * 100}%` }} />
           <button type="button" data-aircraft-id={a.id} aria-label={`Inspect ${a.callsign || 'aircraft ' + a.id}`} aria-pressed={selected === a.id}
             className={`aircraft-marker ${position.estimated ? 'is-estimated' : ''} ${position.stale ? 'is-stale' : ''}`}
-            style={{ left: `${position.point[0] / 432 * 100}%`, top: `${position.point[1] / 180 * 100}%` }}
             onClick={() => setSelected(a.id)}>
-            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true" style={{ transform: `rotate(${a.track || 0}deg)` }}>
+            <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
               {a.track === null ? <circle cx="12" cy="12" r="4" /> : <path d="M12 2 14 10 21 15 21 17 14 15 14 20 17 22 12 21 7 22 10 20 10 15 3 17 3 15 10 10Z" />}
             </svg>
           </button>

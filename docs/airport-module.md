@@ -12,8 +12,8 @@ with a real LKPR METAR readout and the map beneath it. No compass.
 - [ADSB.lol public API](https://www.adsb.lol/docs/open-data/api/) and
   [live OpenAPI](https://api.adsb.lol/api/openapi.json): free, no credentials
   currently required. `/v2/point/{lat}/{lon}/{radius}` uses **nautical miles**, up
-  to 250. The query uses Prague 50.0755, 14.4378 and 27 NM (50.004 km); server
-  filtering enforces 50 km. The initial live response contained 38 reports;
+  to 250. The query uses Prague 50.0755, 14.4378 and 17 NM (31.484 km); server
+  filtering enforces the requested 30 km radius. The initial 50 km evaluation contained 38 reports;
   subsequent map checks displayed 16–17 positioned airborne aircraft after
   excluding ground, old, invalid and out-of-radius reports. This demonstrates
   coverage at the test time, not completeness or guaranteed availability.
@@ -36,11 +36,11 @@ with a real LKPR METAR readout and the map beneath it. No compass.
 - [Natural Earth terms](https://www.naturalearthdata.com/about/terms-of-use/)
   permit commercial use and adaptation of its public-domain data without a key
   or attribution requirement. The module nevertheless credits Natural Earth.
-  `data/prague-map.json` is an 11.4 KB vector extract of roads and rivers from
+  `data/prague-map.json` is an 11.7 KB vector extract of roads and rivers from
   [Natural Earth's source GeoJSON](https://github.com/nvkelso/natural-earth-vector/tree/master/geojson).
   Regenerate with `node scripts/prepare-prague-map.mjs`. This is generalized
   geographic context, not navigation cartography. It uses the same local
-  projection as the aircraft. The north-up view includes the entire 50 km circle
+  projection as the aircraft. The north-up view includes the entire 30 km circle
   and LKPR. On narrow screens only the outer geographic context is cropped.
   No runtime tile requests, map SDK, external font, or raster assets were added.
 - Weather comes from the [NOAA/AWC METAR API](https://aviationweather.gov/data/api/)
@@ -80,9 +80,13 @@ than a falsely oriented aircraft.
 Small dots are received positions, trails join at most five distinct received
 positions, and hollow aircraft indicate estimated positions. Estimates use only
 reported speed and ground track, stop progressing after 30 seconds, fade as stale
-at 60 seconds and disappear at 120 seconds. No synthetic initial trails. CSS
-smooths one-second position steps; reduced-motion shows received positions with
-no interpolation or projection. Estimates are never written into the data cache.
+at 60 seconds and disappear at 120 seconds. No synthetic initial trails. A single
+GSAP ticker updates marker transforms every animation frame, without React renders
+or layout reads. New reports blend from the last rendered position over two
+seconds while continuing toward the moving target; heading corrections take the
+shortest turn across north. There is no initial two-second projection jump.
+The ticker stops when hidden/off-screen. Reduced-motion shows received positions
+with no interpolation or projection. Estimates are never written into the data cache.
 Selection stays anchored to the aircraft ID and reports departure/expiry explicitly.
 
 Loading, no airborne reports, failed initial fetch, failed refresh with last-known
@@ -103,7 +107,7 @@ use explicitly labelled intercepted data, not upstream request flooding.
 Hidden-tab state was emulated with a visibility-change event. A mobile touch
 context additionally verified tap selection and a swipe beginning over the map;
 reduced-motion disabled both estimated positions and CSS movement. Build and all
-five focused tests pass; lint reports zero errors and 61 existing image warnings.
+seven focused tests pass; lint reports zero errors and 61 existing image warnings.
 
 Deployment remains a separate, explicitly requested action. Recheck provider
 terms and coverage before public rollout. No changes to homepage placement are
