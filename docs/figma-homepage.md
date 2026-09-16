@@ -10,6 +10,42 @@ Page: `67:63` — **Homepage — current site / editable**.
 
 ## Returning edits to code
 
+### Global variables (2026-09-16)
+
+Use Figma's **Variables** panel to edit the current homepage globally:
+
+- **Homepage / Content**: 83 strings bound to all 161 desktop/mobile text layers.
+  Repeated labels share variables; experience date ranges have independent variables.
+- **Homepage / Typography**: 27 font family, style, size, pixel line-height and tracking values.
+- **Homepage / Colours**: 11 semantic colour aliases backed by 7 homepage primitives.
+  Existing paint opacity and gradient/image fills are retained.
+- **Homepage / Layout**: 25 nonzero auto-layout spacing and corner-radius values.
+  Fractional values use underscores in names (for example `space/17_5`).
+
+Edit variable values instead of directly overwriting bound text. These changes affect
+Figma only; send the design link to implement them on the site. Images, gradients,
+fixed frame dimensions and interactive behaviour remain separate from variables.
+
+The three old `Study / ...` collections (31 variables) were removed. Resolved fills,
+strokes, effects, spacing, dimensions and opacity of all 385 consumers were compared
+before/after deletion with no changes. All 161 homepage text layers have content
+bindings. A temporary edit to `labels/get-in-touch` updated four buttons across both
+frames, then was restored. Font assignments remain Roobert PRO and Clash Grotesk.
+One mobile tag (`66:202`, parents `66:201`/`66:200`) was widened slightly to avoid an
+extra line after local-font recalculation. Earlier capture measurements can differ
+from locally resolved font metrics; preserve the currently rendered editor layout.
+
+Variable IDs are recorded in `figma-homepage-variables.json`; old definitions and
+homepage values are backed up in `figma-variables-before.json`.
+
+MCP's remote runtime cannot load these custom fonts. A local-editor helper was
+authored through MCP to load them before binding. **Homepage variable migration**,
+ID `9a6e701f-d90c-42ad-875b-cccc40bfe1e2`, version
+`c8f4006985d0cf440691f20c6a493562e6d79a37`, provides a Rebuild button and validation
+status. It is a migration utility, not required for normal variable edits.
+[Open helper scaffold in a new file](https://www.figma.com/file/new?try-tool-resource-content-id=9a6e701f-d90c-42ad-875b-cccc40bfe1e2&try-tool-resource-type=gen_tool&type=design&mode=design).
+The helper validates the original homepage node IDs and does not modify other files.
+
 Ask for or use the edited frame URL. Read this map and `figma-homepage-baseline.json`
 before implementing. The JSON records the exported text, font assignments, dimensions,
 and positions by stable Figma node ID. Compare edited nodes with this baseline and

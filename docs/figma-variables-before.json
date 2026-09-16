@@ -1,0 +1,899 @@
+{
+  "colors": {
+    "[{\"r\":1,\"g\":1,\"b\":1},1]": 99,
+    "[{\"r\":0.14901961386203766,\"g\":0.14901961386203766,\"b\":0.14901961386203766},1]": 11,
+    "[{\"r\":1,\"g\":1,\"b\":1},0.6499999761581421]": 16,
+    "[{\"r\":0.6431372761726379,\"g\":0.9647058844566345,\"b\":0.5137255191802979},1]": 16,
+    "[{\"r\":0.0784313753247261,\"g\":0.09803921729326248,\"b\":0},1]": 8,
+    "[{\"r\":0.019607843831181526,\"g\":0.027450980618596077,\"b\":0.03921568766236305},1]": 57,
+    "[{\"r\":0.14901961386203766,\"g\":0.14901961386203766,\"b\":0.14901961386203766},0.25]": 2,
+    "[{\"r\":0,\"g\":0,\"b\":0},1]": 9,
+    "[{\"r\":1,\"g\":1,\"b\":1},0.8500000238418579]": 40,
+    "[{\"r\":0.07450980693101883,\"g\":0.09019608050584793,\"b\":0.11764705926179886},1]": 6
+  },
+  "sizes": {
+    "8": 20,
+    "10": 8,
+    "11": 1,
+    "12": 21,
+    "14": 40,
+    "16": 10,
+    "18": 2,
+    "20": 48,
+    "25": 3,
+    "30": 4,
+    "50": 4
+  },
+  "spaces": {
+    "2": 1,
+    "3": 26,
+    "4": 8,
+    "5": 98,
+    "7": 14,
+    "8": 11,
+    "10": 163,
+    "14": 4,
+    "15": 45,
+    "20": 3,
+    "25": 21,
+    "35": 80,
+    "60": 2,
+    "70": 2,
+    "85": 2,
+    "140": 9,
+    "259": 3,
+    "17.5": 32,
+    "12.5": 34,
+    "10.509599685668945": 1
+  },
+  "texts": [
+    {
+      "id": "64:89",
+      "text": "Independent CGI Designer",
+      "name": "Independent CGI Designer"
+    },
+    {
+      "id": "64:93",
+      "text": "I craft high-end CGI environments and motion visuals for brands and studios. In my free time, I'm building apps and creative tools that bridge art and tech.",
+      "name": "I craft high-end CGI environments and motion visua"
+    },
+    {
+      "id": "64:98",
+      "text": "Menu",
+      "name": "Menu"
+    },
+    {
+      "id": "64:102",
+      "text": "3D Worlds",
+      "name": "3D Worlds"
+    },
+    {
+      "id": "64:108",
+      "text": "FOOH & Mixed Reality",
+      "name": "FOOH & Mixed Reality"
+    },
+    {
+      "id": "64:114",
+      "text": "Tech Projects",
+      "name": "Tech Projects"
+    },
+    {
+      "id": "64:123",
+      "text": "Available for work",
+      "name": "Available for work"
+    },
+    {
+      "id": "64:129",
+      "text": "Schedule a call",
+      "name": "Schedule a call"
+    },
+    {
+      "id": "64:132",
+      "text": "Get in touch",
+      "name": "Get in touch"
+    },
+    {
+      "id": "64:141",
+      "text": "Motion Mockups",
+      "name": "Motion Mockups"
+    },
+    {
+      "id": "64:145",
+      "text": "New",
+      "name": "New"
+    },
+    {
+      "id": "64:148",
+      "text": "Collection of 8 video mockups.\nEasy to use AE templates. 4K, all formats.",
+      "name": "Collection of 8 video mockups. Easy to use AE temp"
+    },
+    {
+      "id": "64:152",
+      "text": "motionmockups.com",
+      "name": "motionmockups.com"
+    },
+    {
+      "id": "64:176",
+      "text": "3D Worlds",
+      "name": "3D Worlds"
+    },
+    {
+      "id": "64:179",
+      "text": "Art-directed CGI environments built around brands, products, and identities.",
+      "name": "Art-directed CGI environments built around brands,"
+    },
+    {
+      "id": "64:183",
+      "text": "Explore 3D Worlds",
+      "name": "Explore 3D Worlds"
+    },
+    {
+      "id": "64:223",
+      "text": "Selected Work",
+      "name": "Selected Work"
+    },
+    {
+      "id": "64:226",
+      "text": "3D environments are my main focus, but I still take on broader projects when they're a good fit. The work below spans art direction, motion, simulation and product visuals.",
+      "name": "3D environments are my main focus, but I still tak"
+    },
+    {
+      "id": "64:240",
+      "text": "3D Environment",
+      "name": "3D Environment"
+    },
+    {
+      "id": "64:244",
+      "text": "Motion Mockup",
+      "name": "Motion Mockup"
+    },
+    {
+      "id": "64:248",
+      "text": "Look Development",
+      "name": "Look Development"
+    },
+    {
+      "id": "64:253",
+      "text": "Vizcom Brand World",
+      "name": "Vizcom Brand World"
+    },
+    {
+      "id": "64:267",
+      "text": "Art Direction",
+      "name": "Art Direction"
+    },
+    {
+      "id": "64:271",
+      "text": "3D",
+      "name": "3D"
+    },
+    {
+      "id": "64:275",
+      "text": "Motion Graphics",
+      "name": "Motion Graphics"
+    },
+    {
+      "id": "64:280",
+      "text": "ValkaAI",
+      "name": "ValkaAI"
+    },
+    {
+      "id": "64:294",
+      "text": "Mixed Reality",
+      "name": "Mixed Reality"
+    },
+    {
+      "id": "64:298",
+      "text": "3D",
+      "name": "3D"
+    },
+    {
+      "id": "64:302",
+      "text": "Simulation",
+      "name": "Simulation"
+    },
+    {
+      "id": "64:307",
+      "text": "Barbour Quilt FOOH",
+      "name": "Barbour Quilt FOOH"
+    },
+    {
+      "id": "64:321",
+      "text": "3D",
+      "name": "3D"
+    },
+    {
+      "id": "64:325",
+      "text": "Simulation",
+      "name": "Simulation"
+    },
+    {
+      "id": "64:329",
+      "text": "Look Development",
+      "name": "Look Development"
+    },
+    {
+      "id": "64:334",
+      "text": "The VSX Sports Bra",
+      "name": "The VSX Sports Bra"
+    },
+    {
+      "id": "64:345",
+      "text": "Tech Projects",
+      "name": "Tech Projects"
+    },
+    {
+      "id": "64:348",
+      "text": "I also build software and creative tools. These projects explore rendering, WebGL and video automation, and often feed back into my visual work.",
+      "name": "I also build software and creative tools. These pr"
+    },
+    {
+      "id": "64:364",
+      "text": "C++",
+      "name": "C++"
+    },
+    {
+      "id": "64:368",
+      "text": "Ray Tracing",
+      "name": "Ray Tracing"
+    },
+    {
+      "id": "64:372",
+      "text": "My Own Ray Tracing Render Engine in C++",
+      "name": "My Own Ray Tracing Render Engine in C++"
+    },
+    {
+      "id": "64:376",
+      "text": "GitLab",
+      "name": "GitLab"
+    },
+    {
+      "id": "64:390",
+      "text": "WebGl",
+      "name": "WebGl"
+    },
+    {
+      "id": "64:394",
+      "text": "ThreeJS",
+      "name": "ThreeJS"
+    },
+    {
+      "id": "64:398",
+      "text": "MindAR",
+      "name": "MindAR"
+    },
+    {
+      "id": "64:402",
+      "text": "Relive AR - WebGL Platform for AR/VR Experiences",
+      "name": "Relive AR - WebGL Platform for AR/VR Experiences"
+    },
+    {
+      "id": "64:406",
+      "text": "Instagram",
+      "name": "Instagram"
+    },
+    {
+      "id": "64:420",
+      "text": "Python",
+      "name": "Python"
+    },
+    {
+      "id": "64:424",
+      "text": "OpenCV",
+      "name": "OpenCV"
+    },
+    {
+      "id": "64:428",
+      "text": "MoviePy",
+      "name": "MoviePy"
+    },
+    {
+      "id": "64:432",
+      "text": "Video Processing Backend for Mockup Templates",
+      "name": "Video Processing Backend for Mockup Templates"
+    },
+    {
+      "id": "64:436",
+      "text": "Github",
+      "name": "Github"
+    },
+    {
+      "id": "64:445",
+      "text": "About me",
+      "name": "About me"
+    },
+    {
+      "id": "64:450",
+      "text": "Designer and creative problem solver.",
+      "name": "Designer and creative problem solver."
+    },
+    {
+      "id": "64:455",
+      "text": "I'm based in Prague and work with brands and studios around the world.\nI tend to move between art direction, visualization, motion and code.\nA nerd with taste.",
+      "name": "I'm based in Prague and work with brands and studi"
+    },
+    {
+      "id": "64:459",
+      "text": "View recognition & credits (18)",
+      "name": "View recognition & credits (18)"
+    },
+    {
+      "id": "64:462",
+      "text": "+",
+      "name": "+"
+    },
+    {
+      "id": "64:467",
+      "text": "Experience",
+      "name": "Experience"
+    },
+    {
+      "id": "64:471",
+      "text": "20-26'",
+      "name": "20-26'"
+    },
+    {
+      "id": "64:477",
+      "text": "Freelance",
+      "name": "Freelance"
+    },
+    {
+      "id": "64:481",
+      "text": "CGI Environments, Visualization, Motion",
+      "name": "CGI Environments, Visualization, Motion"
+    },
+    {
+      "id": "64:485",
+      "text": "23-25'",
+      "name": "23-25'"
+    },
+    {
+      "id": "64:492",
+      "text": "Yiskra Studio",
+      "name": "Yiskra Studio"
+    },
+    {
+      "id": "64:496",
+      "text": "3D, Art Direction, Motion",
+      "name": "3D, Art Direction, Motion"
+    },
+    {
+      "id": "64:500",
+      "text": "23-25'",
+      "name": "23-25'"
+    },
+    {
+      "id": "64:507",
+      "text": "ProductionBot",
+      "name": "ProductionBot"
+    },
+    {
+      "id": "64:511",
+      "text": "Pipeline Automation, Motion",
+      "name": "Pipeline Automation, Motion"
+    },
+    {
+      "id": "64:515",
+      "text": "23'",
+      "name": "23'"
+    },
+    {
+      "id": "64:522",
+      "text": "Relive AR",
+      "name": "Relive AR"
+    },
+    {
+      "id": "64:526",
+      "text": "WebGL, AR, Growth",
+      "name": "WebGL, AR, Growth"
+    },
+    {
+      "id": "64:530",
+      "text": "21-22'",
+      "name": "21-22'"
+    },
+    {
+      "id": "64:537",
+      "text": "Growthcurve",
+      "name": "Growthcurve"
+    },
+    {
+      "id": "64:541",
+      "text": "3D, Motion",
+      "name": "3D, Motion"
+    },
+    {
+      "id": "64:545",
+      "text": "19-21'",
+      "name": "19-21'"
+    },
+    {
+      "id": "64:552",
+      "text": "Apify Technologies",
+      "name": "Apify Technologies"
+    },
+    {
+      "id": "64:556",
+      "text": "Web, Video, Motion",
+      "name": "Web, Video, Motion"
+    },
+    {
+      "id": "64:560",
+      "text": "18-19'",
+      "name": "18-19'"
+    },
+    {
+      "id": "64:567",
+      "text": "Glami",
+      "name": "Glami"
+    },
+    {
+      "id": "64:571",
+      "text": "AI Training",
+      "name": "AI Training"
+    },
+    {
+      "id": "64:583",
+      "text": "Education",
+      "name": "Education"
+    },
+    {
+      "id": "64:587",
+      "text": "22-25'",
+      "name": "22-25'"
+    },
+    {
+      "id": "64:594",
+      "text": "Czech Technical University",
+      "name": "Czech Technical University"
+    },
+    {
+      "id": "64:598",
+      "text": "Software Engineering",
+      "name": "Software Engineering"
+    },
+    {
+      "id": "64:620",
+      "text": "Social",
+      "name": "Social"
+    },
+    {
+      "id": "64:624",
+      "text": "Instagram",
+      "name": "Instagram"
+    },
+    {
+      "id": "64:629",
+      "text": "Gumroad",
+      "name": "Gumroad"
+    },
+    {
+      "id": "64:634",
+      "text": "LinkedIn",
+      "name": "LinkedIn"
+    },
+    {
+      "id": "64:641",
+      "text": "Menu",
+      "name": "Menu"
+    },
+    {
+      "id": "64:645",
+      "text": "3D Worlds",
+      "name": "3D Worlds"
+    },
+    {
+      "id": "64:651",
+      "text": "FOOH & Mixed Reality",
+      "name": "FOOH & Mixed Reality"
+    },
+    {
+      "id": "64:657",
+      "text": "Tech Projects",
+      "name": "Tech Projects"
+    },
+    {
+      "id": "64:665",
+      "text": "Contact",
+      "name": "Contact"
+    },
+    {
+      "id": "64:670",
+      "text": "krystof@jezek.me",
+      "name": "krystof@jezek.me"
+    },
+    {
+      "id": "64:676",
+      "text": "WhatsApp",
+      "name": "WhatsApp"
+    },
+    {
+      "id": "64:683",
+      "text": "Schedule a call",
+      "name": "Schedule a call"
+    },
+    {
+      "id": "64:686",
+      "text": "Get in touch",
+      "name": "Get in touch"
+    },
+    {
+      "id": "64:698",
+      "text": "Kryštof Ježek",
+      "name": "Kryštof Ježek"
+    },
+    {
+      "id": "64:692",
+      "text": "Skip to content",
+      "name": "Skip to content"
+    }
+  ],
+  "variables": [
+    {
+      "id": "VariableID:3:3",
+      "name": "white",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:2",
+      "values": {
+        "3:0": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:4",
+      "name": "ink",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:2",
+      "values": {
+        "3:0": {
+          "r": 0.03921568766236305,
+          "g": 0.0470588244497776,
+          "b": 0.062745101749897,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:5",
+      "name": "mid",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:2",
+      "values": {
+        "3:0": {
+          "r": 0.33725491166114807,
+          "g": 0.35686275362968445,
+          "b": 0.3921568691730499,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:6",
+      "name": "faint",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:2",
+      "values": {
+        "3:0": {
+          "r": 0.545098066329956,
+          "g": 0.5647059082984924,
+          "b": 0.6039215922355652,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:7",
+      "name": "blue",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:2",
+      "values": {
+        "3:0": {
+          "r": 0.18039216101169586,
+          "g": 0.43529412150382996,
+          "b": 1,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:8",
+      "name": "blueLight",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:2",
+      "values": {
+        "3:0": {
+          "r": 0.35686275362968445,
+          "g": 0.5490196347236633,
+          "b": 1,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:9",
+      "name": "paper",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:2",
+      "values": {
+        "3:0": {
+          "r": 0.9647058844566345,
+          "g": 0.9686274528503418,
+          "b": 0.9764705896377563,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:10",
+      "name": "lightInk",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:2",
+      "values": {
+        "3:0": {
+          "r": 0.95686274766922,
+          "g": 0.9647058844566345,
+          "b": 0.9803921580314636,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:12",
+      "name": "surface/white",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:11",
+      "values": {
+        "3:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:3"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:13",
+      "name": "surface/dark",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:11",
+      "values": {
+        "3:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:4"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:14",
+      "name": "text/primary",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:11",
+      "values": {
+        "3:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:4"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:15",
+      "name": "text/secondary",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:11",
+      "values": {
+        "3:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:5"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:16",
+      "name": "text/muted",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:11",
+      "values": {
+        "3:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:6"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:17",
+      "name": "accent/blue",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:11",
+      "values": {
+        "3:1": {
+          "r": 0.18039216101169586,
+          "g": 0.43529412150382996,
+          "b": 1,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:18",
+      "name": "accent/light",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:11",
+      "values": {
+        "3:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:8"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:19",
+      "name": "surface/subtle",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:11",
+      "values": {
+        "3:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:9"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:20",
+      "name": "text/inverse",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:11",
+      "values": {
+        "3:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:10"
+        }
+      }
+    },
+    {
+      "id": "VariableID:3:22",
+      "name": "space/4",
+      "type": "FLOAT",
+      "collection": "VariableCollectionId:3:21",
+      "values": {
+        "3:2": 4
+      }
+    },
+    {
+      "id": "VariableID:3:23",
+      "name": "space/8",
+      "type": "FLOAT",
+      "collection": "VariableCollectionId:3:21",
+      "values": {
+        "3:2": 8
+      }
+    },
+    {
+      "id": "VariableID:3:24",
+      "name": "space/12",
+      "type": "FLOAT",
+      "collection": "VariableCollectionId:3:21",
+      "values": {
+        "3:2": 12
+      }
+    },
+    {
+      "id": "VariableID:3:25",
+      "name": "space/16",
+      "type": "FLOAT",
+      "collection": "VariableCollectionId:3:21",
+      "values": {
+        "3:2": 16
+      }
+    },
+    {
+      "id": "VariableID:3:26",
+      "name": "space/24",
+      "type": "FLOAT",
+      "collection": "VariableCollectionId:3:21",
+      "values": {
+        "3:2": 24
+      }
+    },
+    {
+      "id": "VariableID:3:27",
+      "name": "space/32",
+      "type": "FLOAT",
+      "collection": "VariableCollectionId:3:21",
+      "values": {
+        "3:2": 32
+      }
+    },
+    {
+      "id": "VariableID:3:28",
+      "name": "space/48",
+      "type": "FLOAT",
+      "collection": "VariableCollectionId:3:21",
+      "values": {
+        "3:2": 48
+      }
+    },
+    {
+      "id": "VariableID:3:29",
+      "name": "space/72",
+      "type": "FLOAT",
+      "collection": "VariableCollectionId:3:21",
+      "values": {
+        "3:2": 72
+      }
+    },
+    {
+      "id": "VariableID:3:30",
+      "name": "space/104",
+      "type": "FLOAT",
+      "collection": "VariableCollectionId:3:21",
+      "values": {
+        "3:2": 104
+      }
+    },
+    {
+      "id": "VariableID:4:26",
+      "name": "radius/6",
+      "type": "FLOAT",
+      "collection": "VariableCollectionId:3:21",
+      "values": {
+        "3:2": 6
+      }
+    },
+    {
+      "id": "VariableID:7:48",
+      "name": "blueReadable",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:2",
+      "values": {
+        "3:0": {
+          "r": 0.1411764770746231,
+          "g": 0.37254902720451355,
+          "b": 0.8980392217636108,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:7:49",
+      "name": "accent/readable",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:11",
+      "values": {
+        "3:1": {
+          "r": 0.1411764770746231,
+          "g": 0.37254902720451355,
+          "b": 0.8980392217636108,
+          "a": 1
+        }
+      }
+    },
+    {
+      "id": "VariableID:7:50",
+      "name": "text/on-accent",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:11",
+      "values": {
+        "3:1": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3:3"
+        }
+      }
+    },
+    {
+      "id": "VariableID:43:1114",
+      "name": "text/50o",
+      "type": "COLOR",
+      "collection": "VariableCollectionId:3:11",
+      "values": {
+        "3:1": {
+          "r": 1,
+          "g": 1,
+          "b": 1,
+          "a": 0.5
+        }
+      }
+    }
+  ]
+}
