@@ -55,6 +55,7 @@
 }
 
 :root {
+  --airport-blue: #245fe5;
   --black: #05070a;
   --white: white;
   --blue2: #3d87ff;
@@ -9779,3 +9780,79 @@ body {
 }
 
 
+
+// Compact airport instrument, Figma 43:1119. All rules scoped to the module.
+body:has(.airport-preview) { background: var(--black); }
+.airport-preview {
+  width: min(480px, calc(100% - 32px));
+  margin: 100px auto;
+  min-height: 125vh;
+  .airport-preview-heading { display: flex; justify-content: space-between; margin-bottom: 24px; font: 10px/1.4 monospace; color: var(--gray-050o); }
+  .airport-preview-heading a { color: inherit; }
+  .airport-preview-note { color: var(--gray-050o); font-size: 13px; line-height: 1.6; margin-top: 24px; }
+}
+.airport-module {
+  background: var(--airport-blue);
+  color: var(--white);
+  padding: 24px;
+  width: 100%;
+  font: 10px/1.4 ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  p, h2, dl, dd { margin: 0; }
+  a { color: inherit; text-underline-offset: 2px; }
+  button { font: inherit; cursor: pointer; color: inherit; }
+  button:focus-visible, a:focus-visible { outline: 2px solid white; outline-offset: 3px; }
+  .airport-status { display: flex; justify-content: space-between; gap: 8px; color: #ffffffa6; font-size: 9px; letter-spacing: .035em; }
+  .airport-title { display: flex; justify-content: space-between; gap: 8px; padding: 2px 0 10px; }
+  .airport-title h2 { font: 400 18px/1.4 Roobert, Arial, sans-serif; }
+  .airport-title > span { font-size: 9px; }
+  .airport-readings { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px 16px; padding-bottom: 14px; font-size: 9px; }
+  dt { color: #ffffffa6; font-size: 9px; letter-spacing: .025em; }
+  dd { padding-top: 2px; overflow-wrap: anywhere; }
+  .airport-weather-source { color: #ffffffb8; font-size: 9px; margin-top: 6px; }
+}
+.aircraft-map {
+  border-top: 1px solid #ffffff40;
+  .aircraft-map-header { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 10px 0 8px; font-size: 9px; letter-spacing: .05em; }
+  .aircraft-count { margin-left: 6px; color: #fff; }
+  .aircraft-feed-status { color: #ffffffbf; }
+  .aircraft-feed-status i { display: inline-block; width: 4px; height: 4px; background: #bdffd4; border-radius: 50%; margin: 0 5px 1px 0; }
+  .aircraft-feed-status.is-stale i { background: #ffda97; }
+  .aircraft-map-canvas { height: 180px; position: relative; overflow: hidden; border: 1px solid #ffffff26; touch-action: pan-y; }
+  .aircraft-map-space { position: absolute; width: 432px; height: 180px; left: 50%; transform: translateX(-50%); }
+  .aircraft-basemap { width: 432px; height: 180px; position: absolute; inset: 0; pointer-events: none; }
+  .map-roads { stroke: #ffffff17; stroke-width: .65; fill: none; }
+  .map-rivers { stroke: #ffffff40; stroke-width: 1.25; fill: none; }
+  .map-grid { stroke: #ffffff26; stroke-width: .5; fill: none; stroke-dasharray: 2 4; }
+  .map-trails { stroke: #ffffff73; stroke-width: .8; fill: none; }
+  .map-prague, .map-airport, .map-range { position: absolute; pointer-events: none; font-size: 8px; letter-spacing: .06em; color: #ffffffa6; }
+  .map-prague { top: 53%; left: 51%; }
+  .map-airport { transform: translate(-100%, -130%); white-space: nowrap; }
+  .map-range { bottom: 5px; left: 50%; transform: translateX(-50%); font-size: 7px; color: #ffffff80; }
+  .aircraft-observation { position: absolute; width: 2px; height: 2px; margin: -1px; border-radius: 50%; background: #fff; pointer-events: none; }
+  .aircraft-marker { position: absolute; display: grid; place-items: center; width: 26px; height: 26px; padding: 0; border: 0; border-radius: 50%; background: transparent; transform: translate(-50%, -50%); transition: left 1s linear, top 1s linear; z-index: 2; touch-action: pan-y; }
+  .aircraft-marker svg { fill: #fff; stroke: #fff; stroke-width: .7; overflow: visible; }
+  .aircraft-marker.is-estimated svg { fill: var(--airport-blue); stroke: #fff; stroke-width: 1.15; }
+  .aircraft-marker.is-stale { opacity: .4; transition: none; }
+  .aircraft-marker:hover, .aircraft-marker:focus-visible, .aircraft-marker[aria-pressed='true'] { background: #ffffff24; outline: 1px solid #ffffffa6; z-index: 3; }
+  .is-still .aircraft-marker { transition: none; }
+  .aircraft-map-message { position: absolute; z-index: 4; bottom: 0; width: 100%; padding: 6px 8px; background: #1b4dc4e8; color: #fff; font-size: 9px; pointer-events: none; }
+  .aircraft-legend { display: flex; justify-content: space-between; gap: 6px; padding: 6px 0 8px; font-size: 8px; color: #ffffffb8; }
+  .legend-estimated { margin-left: 7px; }
+  .aircraft-details { padding: 10px 0; border-top: 1px solid #ffffff40; font-size: 10px; }
+  .aircraft-details-title { display: flex; align-items: center; justify-content: space-between; }
+  .aircraft-details-title strong { font-weight: 400; letter-spacing: .06em; }
+  .aircraft-details button { border: 1px solid #ffffff59; background: none; min-width: 28px; min-height: 28px; }
+  .aircraft-details dl { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: 5px 0 8px; }
+  .aircraft-details p { color: #ffffffb8; font-size: 9px; }
+  .aircraft-map-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 8px; color: #ffffffb8; font-size: 8px; }
+}
+@media (max-width: 479px) {
+  .airport-preview { margin-top: 48px; }
+  .airport-module { padding: 20px; }
+  .airport-module .airport-readings { column-gap: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .aircraft-map .aircraft-marker { transition: none; }
+}
