@@ -9826,9 +9826,13 @@ body:has(.airport-preview) { background: var(--black); }
   .map-rivers { stroke: #ffffff40; stroke-width: 1.25; fill: none; }
   .map-grid { stroke: #ffffff26; stroke-width: .5; fill: none; stroke-dasharray: 2 4; }
   .map-trails { stroke: #ffffff73; stroke-width: .8; fill: none; }
+  .map-runways { fill: none; stroke-linecap: butt; }
+  .map-runway-glow { stroke: #ffe4ab; stroke-width: 7; opacity: .13; }
+  .map-runway-strip { stroke: #ffe4ab; stroke-width: 2.4; }
+  .map-runway-center { stroke: var(--airport-blue); stroke-width: .5; stroke-dasharray: 1 .8; }
   .map-prague, .map-airport, .map-range { position: absolute; pointer-events: none; font-size: 8px; letter-spacing: .06em; color: #ffffffa6; }
   .map-prague { top: 53%; left: 51%; }
-  .map-airport { transform: translate(-100%, -130%); white-space: nowrap; }
+  .map-airport { transform: translate(-120%, -150%); white-space: nowrap; color: #ffe4ab; }
   .map-range { bottom: 5px; left: 50%; transform: translateX(-50%); font-size: 7px; color: #ffffff80; }
   .aircraft-observation { position: absolute; width: 2px; height: 2px; margin: -1px; border-radius: 50%; background: #fff; pointer-events: none; }
   .aircraft-marker { position: absolute; display: grid; place-items: center; width: 26px; height: 26px; padding: 0; border: 0; border-radius: 50%; background: transparent; transform: translate(-50%, -50%); left: 0; top: 0; z-index: 2; touch-action: pan-y; }

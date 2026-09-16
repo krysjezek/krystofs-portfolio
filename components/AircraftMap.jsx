@@ -5,10 +5,14 @@ import { useVisiblePolling } from '@/hooks/useVisiblePolling'
 import { useAircraftMotion } from '@/hooks/useAircraftMotion'
 import { displayedPosition, EXPIRE_MS, mergeAircraft, project, RADIUS_KM, STALE_MS } from '@/lib/aircraft.mjs'
 import geography from '@/data/prague-map.json'
+import runwayData from '@/data/lkpr-runways.json'
 import AircraftDetails from './AircraftDetails'
 
 const time = (value) => new Date(value).toISOString().slice(11, 19) + 'Z'
 const airport = project(50.1008, 14.26)
+const runways = runwayData.runways.map(runway => ({
+  name: runway.name, points: runway.ends.map(([lat, lon]) => project(lat, lon).join(',')).join(' '),
+}))
 
 export default function AircraftMap() {
   const ref = useRef(null)
@@ -55,10 +59,15 @@ export default function AircraftMap() {
         <path className="map-roads" d={geography.roads} />
         <path className="map-rivers" d={geography.rivers} />
         <g className="map-grid"><path d="M0 90H432M216 0V180" /><circle cx="216" cy="90" r="39" /><circle cx="216" cy="90" r="78" /></g>
+        <g className="map-runways">{runways.map(runway => <g key={runway.name}>
+          <polyline className="map-runway-glow" points={runway.points} />
+          <polyline className="map-runway-strip" points={runway.points} />
+          <polyline className="map-runway-center" points={runway.points} />
+        </g>)}</g>
         <g className="map-trails">{aircraft.map(a => <polyline key={a.id} points={(trails[a.id] || []).map(p => p.point.join(',')).join(' ')} />)}</g>
       </svg>
       <span className="map-prague">PRAGUE</span>
-      <span className="map-airport" style={{ left: `${airport[0] / 432 * 100}%`, top: `${airport[1] / 180 * 100}%` }}>⊕ LKPR</span>
+      <span className="map-airport" aria-label="LKPR runways 06/24 and 12/30" style={{ left: `${airport[0] / 432 * 100}%`, top: `${airport[1] / 180 * 100}%` }}>LKPR</span>
       <span className="map-range">{RADIUS_KM} KM RADIUS</span>
       {aircraft.map(a => {
         const position = displayedPosition(a, now, reduced)
@@ -84,7 +93,7 @@ export default function AircraftMap() {
     </div> : selected ? <div className="aircraft-details" role="status">Aircraft left coverage or its report expired.<button type="button" onClick={() => setSelected(null)}>Close</button></div> : null}
     <footer className="aircraft-map-footer">
       <span aria-live="polite">UPDATED {data ? time(data.observedAt) : '—'}</span>
-      <span><a href="https://www.adsb.lol/">ADSB.lol</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL</a> · <a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a></span>
+      <span><a href="https://www.adsb.lol/">ADSB.lol</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL</a> · <a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a> · <a href="https://ourairports.com/data/">OurAirports</a></span>
     </footer>
   </section>
 }

@@ -43,6 +43,12 @@ with a real LKPR METAR readout and the map beneath it. No compass.
   projection as the aircraft. The north-up view includes the entire 30 km circle
   and LKPR. On narrow screens only the outer geographic context is cropped.
   No runtime tile requests, map SDK, external font, or raster assets were added.
+- LKPR runways 06/24 and 12/30 are highlighted in pale amber, using runway-end
+  coordinates from the [OurAirports public-domain runway dataset](https://ourairports.com/data/)
+  retrieved on 16 September 2026. `data/lkpr-runways.json` stores the small extract;
+  the closed 04/22 runway is omitted. Length and orientation follow the shared
+  map projection; width and glow are exaggerated for legibility at this scale.
+  The highlight indicates runway geometry, not which runway is currently in use.
 - Weather comes from the [NOAA/AWC METAR API](https://aviationweather.gov/data/api/)
   at a five-minute cadence with a shared cache and custom User-Agent. Its published
   limit is 100 requests/minute; browser CORS is unavailable, so requests are made
