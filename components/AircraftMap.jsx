@@ -5,9 +5,9 @@ import { useVisiblePolling } from '@/hooks/useVisiblePolling'
 import { useAircraftMotion } from '@/hooks/useAircraftMotion'
 import { displayedPosition, EXPIRE_MS, mergeAircraft, project, RADIUS_KM, STALE_MS } from '@/lib/aircraft.mjs'
 import geography from '@/data/prague-map.json'
+import AircraftDetails from './AircraftDetails'
 
 const time = (value) => new Date(value).toISOString().slice(11, 19) + 'Z'
-const format = (value, unit) => value == null ? 'Not reported' : `${Math.round(value).toLocaleString('en-US')} ${unit}`
 const airport = project(50.1008, 14.26)
 
 export default function AircraftMap() {
@@ -80,8 +80,7 @@ export default function AircraftMap() {
     <div className="aircraft-legend"><span>• Observed <span className="legend-estimated">△ Estimated</span></span><span>Airborne only</span></div>
     {chosen ? <div className="aircraft-details" aria-live="polite">
       <div className="aircraft-details-title"><strong>{chosen.callsign || 'Callsign not reported'}</strong><button type="button" onClick={close} aria-label="Close aircraft details">×</button></div>
-      <dl><div><dt>ALT / BARO</dt><dd>{format(chosen.altitude, 'FT')}</dd></div><div><dt>GROUND SPEED</dt><dd>{format(chosen.speed, 'KT')}</dd></div><div><dt>TYPE</dt><dd>{chosen.aircraftType || 'Not reported'}</dd></div></dl>
-      <p>{displayedPosition(chosen, now, reduced).stale ? 'Stale · movement stopped' : displayedPosition(chosen, now, reduced).estimated ? 'Estimated position · projection limited to 30 s' : 'Observed position'}<br />Report {time(chosen.observedAt)} · {Math.max(0, Math.floor((now - chosen.observedAt) / 1000))} s ago</p>
+      <AircraftDetails key={`${chosen.id}:${chosen.callsign}`} aircraft={chosen} />
     </div> : selected ? <div className="aircraft-details" role="status">Aircraft left coverage or its report expired.<button type="button" onClick={() => setSelected(null)}>Close</button></div> : null}
     <footer className="aircraft-map-footer">
       <span aria-live="polite">UPDATED {data ? time(data.observedAt) : '—'}</span>

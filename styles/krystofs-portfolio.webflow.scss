@@ -9846,6 +9846,10 @@ body:has(.airport-preview) { background: var(--black); }
   .aircraft-details button { border: 1px solid #ffffff59; background: none; min-width: 28px; min-height: 28px; }
   .aircraft-details dl { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin: 5px 0 8px; }
   .aircraft-details p { color: #ffffffb8; font-size: 9px; }
+  .aircraft-journey dl { display: flex; flex-direction: column; gap: 6px; margin: 8px 0; }
+  .aircraft-journey dl > div { display: grid; grid-template-columns: 66px minmax(0, 1fr); gap: 10px; align-items: baseline; }
+  .aircraft-journey dd { padding: 0; font-size: 11px; }
+  .aircraft-details .aircraft-details-source { font-size: 8px; }
   .aircraft-map-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 8px; color: #ffffffb8; font-size: 8px; }
 }
 @media (max-width: 479px) {

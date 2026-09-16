@@ -72,10 +72,32 @@ minutes and honor server retry timing. There are eight-second upstream and
 ten-second browser timeouts. No credentials or environment variables are needed.
 
 Only positioned airborne reports less than two minutes old are displayed.
-The count matches those markers. Flight strings and type codes come directly from
-the feed; missing callsign, barometric altitude, speed or type say `Not reported`.
-No lookup guesses or inferred aircraft types. Unknown track uses a circle rather
-than a falsely oriented aircraft.
+The count matches those markers. Selecting an aircraft shows From, To, and
+Aircraft, replacing the altitude/speed readout. Unknown track uses a circle rather
+than a falsely oriented aircraft; speed remains internal to the movement estimate.
+
+`/api/aircraft/[id]` binds the lookup to a recent aircraft in the shared Prague
+snapshot. The browser cannot supply its own callsign or upstream URL. Route data
+comes from [ADSB.lol's VRS standing-data service](https://github.com/adsblol/vrs-standing-data),
+whose [upstream data is CC0](https://github.com/vradarserver/standing-data).
+It provides IATA (or ICAO) codes and city names. This is a callsign database match,
+not a confirmed current flight plan; the route source link carries that explanation
+in its tooltip. Missing, mismatched or multi-leg routes are not guessed. The
+documented routeset POST returned an empty HTTP 201 during evaluation, so the
+documented per-callsign JSON service is used directly instead.
+
+Full aircraft models come from [adsbdb's aircraft endpoint](https://www.adsbdb.com/),
+matched by Mode-S ID. Keep its adsbdb / PlaneBase credit. Its documented rate
+limits start at 512 requests per rolling minute (60-second block), increasing to
+a 300-second block at 1024. Lookups run only when selected, with shared caching:
+one hour for source route JSON, one day for model data, and one minute for the
+combined response including failures. The selected panel refreshes at five minutes
+while visible. No key or subscription is required. We do not use adsbdb flight
+routes, which carry separate copying/publishing restrictions, or aircraft photos.
+If the model lookup has no match, show the live feed's type code; never invent a
+subvariant. Live verification returned PRG—Prague to DUS—Düsseldorf and Airbus
+A320-214 for EWG7KG. Only the source line is shown beneath these fields, per the
+requested compact layout; per-aircraft projection/report notes were removed.
 
 Small dots are received positions, trails join at most five distinct received
 positions, and hollow aircraft indicate estimated positions. Estimates use only
@@ -96,7 +118,7 @@ TRAFFIC**. No production endpoint accepts a fixture mode or substitutes traffic.
 
 ## Verification
 
-Run `node --test scripts/aircraft.test.mjs`, `npm.cmd run lint`,
+Run `node --test scripts/aircraft.test.mjs scripts/aircraft-details.test.mjs`, `npm.cmd run lint`,
 `npm.cmd run build`, and `git diff --check`.
 
 Browser verification covers desktop and 390 px mobile rendering, live API data,
@@ -107,7 +129,7 @@ use explicitly labelled intercepted data, not upstream request flooding.
 Hidden-tab state was emulated with a visibility-change event. A mobile touch
 context additionally verified tap selection and a swipe beginning over the map;
 reduced-motion disabled both estimated positions and CSS movement. Build and all
-seven focused tests pass; lint reports zero errors and 61 existing image warnings.
+ten focused tests pass; lint reports zero errors and 61 existing image warnings.
 
 Deployment remains a separate, explicitly requested action. Recheck provider
 terms and coverage before public rollout. No changes to homepage placement are
