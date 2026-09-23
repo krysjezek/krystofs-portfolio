@@ -24,6 +24,7 @@ Fast map for agents working in this repository. Prefer this file over rediscover
 | Sitemaps and robots | `app/sitemap.js`, `app/image-sitemap.xml/route.js`, `app/robots.js` |
 | Media behavior and codec conventions | `docs/video-and-media.md` |
 | Case-study design, content, icons and Work/Fun rules | `docs/portfolio-2027-case-study-rules.md` |
+| Inline figure source notes and case-study evidence audit | `docs/portfolio-2027-source-notes.md` |
 | Animation inventory | `docs/animations.md` |
 | 3D service-card behavior | `docs/3d-tilt-service-cards.md` |
 | Blob/poster utilities | `scripts/` |
