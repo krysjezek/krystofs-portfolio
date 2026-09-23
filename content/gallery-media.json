@@ -1,6 +1,6 @@
 {
   "prepared": "2026-09-23",
-  "note": "Card deliveries resized from verified existing CDN videos. Source aspect ratios and full clips preserved; CSS applies gallery crops. Audio and metadata removed, frame rates above 30 capped at 30. Posters are first frames of H.264 deliveries.",
+  "note": "Card deliveries prepared from verified existing CDN videos and owner-selected Instagram media. Source aspect ratios and full clips preserved; CSS applies gallery crops. Audio and metadata removed, frame rates above 30 capped at 30. First-frame JPEGs are included; displayPoster records the chosen static preview.",
   "encoding": {
     "h264": "High, yuv420p, CRF 20, slow, faststart",
     "h265": "Main, yuv420p, CRF 24, slow, hvc1, faststart",
@@ -837,6 +837,103 @@
         }
       ],
       "displayPoster": "/videos/posters/portfolio-card-tweezers-jewelry-v1.jpg"
+    },
+    {
+      "id": "erem",
+      "source": "https://www.instagram.com/p/CpX0vqDsmAk/?img_index=2",
+      "sourceVideo": {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 720,
+        "height": 720,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1"
+      },
+      "sourceDuration": 60,
+      "widthCap": 960,
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-erem-v1-web.mp4",
+          "bytes": 5428437,
+          "sha256": "5ee8067ca62b152495337c2ecab830af54e46622d3846666ec6015a60612570a",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 720,
+              "height": 720,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "60.000000"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-erem-v1.webm",
+          "bytes": 6421023,
+          "sha256": "bd713bdebf8faa124e6e6cf5f8d46f0f0e9621e8db6447a3ed777cfe0748d66e",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 720,
+              "height": 720,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "60.000000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-erem-v1-fallback.mp4",
+          "bytes": 6716012,
+          "sha256": "f376290d8f1a6e548fc1293dd71f1dea2cb73836f65f521cb725052ac1382198",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 720,
+              "height": 720,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "60.000000"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-erem-v1.jpg",
+          "bytes": 13925,
+          "sha256": "c546c5ad139965935fe3a0124c603c54e855273ff85802ba50da26b9e9cec19e",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 720,
+              "height": 720,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "sourceItem": 2,
+      "sourceMediaId": "CpX0iy8DMEJ",
+      "sourceArchive": "erem-instagram-carousel-02.mp4",
+      "sourceSha256": "137bba6c1b23b6989d01046ac9cad2d9458295ef5e4084c85701eb7b76d84d2d",
+      "displayPoster": "/videos/posters/portfolio-card-erem-v1.jpg"
     }
   ]
 }

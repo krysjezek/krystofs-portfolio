@@ -289,10 +289,13 @@
         "category": "fun",
         "disciplines": "",
         "href": null,
-        "poster": "/images/portfolio-2027-gallery-erem-v2.webp",
+        "poster": "/videos/posters/portfolio-card-erem-v1.jpg",
         "aspect": 1.33333,
         "tabletAspect": 1.33333,
-        "mobileAspect": 1.33333
+        "mobileAspect": 1.33333,
+        "srcH265": "/videos/h265/portfolio-card-erem-v1-web.mp4",
+        "srcAv1": "/videos/av1/portfolio-card-erem-v1.webm",
+        "srcMp4": "/videos/h264/portfolio-card-erem-v1-fallback.mp4"
       },
       {
         "id": "tweezers-jewelry",
