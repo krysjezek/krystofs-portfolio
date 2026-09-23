@@ -114,6 +114,37 @@ try {
     assert.equal(canvas.width, 1440);
     assert.equal(canvas.x, 240);
     assert.equal(await page.locator(".page-grid > span:visible").count(), 4);
+    const dividers = await page
+      .locator(
+        ".site-header, .site-footer, .portfolio-navigation, .case-specifications:visible, .recommendations, .worlds-deliverables, .worlds-gallery-intro, .worlds-fit",
+      )
+      .evaluateAll((nodes) =>
+        nodes.map((node) => {
+          const style = getComputedStyle(
+            node,
+            node.matches(".site-header") ? "::after" : "::before",
+          );
+          return {
+            width: parseFloat(style.width),
+            height: parseFloat(style.height),
+            pageWidth: document.body.clientWidth,
+          };
+        }),
+      );
+    for (const divider of dividers) {
+      assert.equal(
+        divider.width,
+        divider.pageWidth,
+        "Horizontal divider spans the page",
+      );
+      assert.equal(divider.height, 0.5);
+    }
+    assert(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+      "Full-width dividers must not create horizontal scrolling",
+    );
   }
 
   // Switching between overflowing galleries and a short About page must not

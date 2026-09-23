@@ -168,13 +168,47 @@ button {
   position: relative;
   z-index: 1;
 }
+/* Page dividers span the viewport; content and column rules stay on the canvas. */
+:is(
+  .portfolio-navigation,
+  .case-specifications,
+  .recommendations,
+  .worlds-deliverables,
+  .worlds-gallery-intro,
+  .worlds-fit
+) {
+  position: relative;
+}
+.site-header::after,
+:is(
+  .portfolio-navigation,
+  .site-footer,
+  .case-specifications,
+  .recommendations,
+  .worlds-deliverables,
+  .worlds-gallery-intro,
+  .worlds-fit
+)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 0.5px;
+  transform: translateX(-50%);
+  background: var(--line);
+  pointer-events: none;
+}
+.site-header::after {
+  top: auto;
+  bottom: 0;
+}
 .site-header {
   height: 70px;
   padding: 0 var(--inset);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: inset 0 -0.5px var(--line);
 }
 .site-header.home-header {
   height: 70.5px;
@@ -367,7 +401,6 @@ button {
   vertical-align: bottom;
 }
 .portfolio-navigation {
-  box-shadow: inset 0 0.5px var(--line);
   padding: 1px 0 5px;
 }
 .portfolio-navigation > [role="tablist"] {
@@ -553,7 +586,6 @@ button {
 }
 .site-footer {
   margin-top: 35px;
-  box-shadow: inset 0 0.5px var(--line);
   padding-top: 0.5px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -683,7 +715,6 @@ button {
   max-width: calc((100% - 2 * var(--inset)) * 0.75);
 }
 .case-specifications {
-  box-shadow: inset 0 0.5px var(--line);
   padding-top: 35.5px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -795,7 +826,6 @@ button {
   flex: none;
 }
 .recommendations {
-  box-shadow: inset 0 0.5px var(--line);
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   padding: 35.5px 0 35px;
@@ -912,7 +942,6 @@ button {
 }
 .worlds-deliverables {
   padding: 70.5px 0 70px;
-  box-shadow: inset 0 0.5px var(--line);
 }
 .worlds-deliverables > ul {
   grid-column: 2 / 4;
@@ -934,7 +963,6 @@ button {
 }
 .worlds-gallery-intro {
   padding: 70.5px 0 35px;
-  box-shadow: inset 0 0.5px var(--line);
 }
 .worlds-gallery-intro p {
   grid-column: 2/4;
@@ -995,7 +1023,6 @@ button {
 }
 .worlds-fit {
   padding: 70.5px 0 70px;
-  box-shadow: inset 0 0.5px var(--line);
 }
 .worlds-fit .external-link {
   line-height: 28px;

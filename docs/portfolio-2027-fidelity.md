@@ -34,3 +34,5 @@ The layout test now launches Chromium with scrollbars enabled. Figma coordinates
 ## Updated grid token
 
 Synced Figma's `border/subtle` → `palette/super subtle` value to `#ededed`. Column rules start at Y=0 and span the complete page. Grid lines and horizontal dividers use 0.5px; the navigation separator and selected-tab indicator use the same thickness without changing the existing section positions. The darker selected-tab color remains the separate selected-state token.
+
+Page-level horizontal dividers extend across the viewport beyond the 1440px canvas. Content, vertical column rules and dialog-local separators retain their existing widths.
