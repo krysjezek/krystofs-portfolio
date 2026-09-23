@@ -93,6 +93,24 @@ try {
     if (screen.tab && ["work", "fun"].includes(screen.tab) && ruleCount) {
       const columns = page.locator(`#panel-${screen.tab} .gallery-column`);
       const canvas = await page.locator(".portfolio-shell").boundingBox();
+      const endings = await columns.evaluateAll((nodes) =>
+        nodes.map((column) => {
+          const cards = [...column.querySelectorAll(".project-card")];
+          const last = cards.at(-1);
+          return {
+            bottom: last.getBoundingClientRect().bottom,
+            mediaBottom: last.querySelector(".media").getBoundingClientRect().bottom,
+            gaps: cards.slice(1).map((card, index) =>
+              card.getBoundingClientRect().top - cards[index].getBoundingClientRect().bottom,
+            ),
+          };
+        }),
+      );
+      for (const ending of endings) {
+        assert(Math.abs(ending.bottom - endings[0].bottom) < 0.1, "Gallery columns end together");
+        assert(Math.abs(ending.mediaBottom - ending.bottom) < 0.1, "Media fills the balanced final card");
+        assert(ending.gaps.every((gap) => Math.abs(gap - 5) < 0.1), "Vertical card gaps stay 5px");
+      }
       for (let index = 0; index < (await columns.count()) - 1; index++) {
         const left = await columns.nth(index).locator(".project-card").first().boundingBox();
         const right = await columns.nth(index + 1).locator(".project-card").first().boundingBox();

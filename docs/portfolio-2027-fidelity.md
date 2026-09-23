@@ -40,3 +40,5 @@ Page-level horizontal dividers extend across the viewport beyond the 1440px canv
 ## Follow-up: center rules in card gutters
 
 The original gallery's 5px outer padding and 5px gaps put its gap centers off the page thirds. Work and Fun now use equal structural columns with half-gutters inside each column, retaining 5px outer insets and 5px between cards. Interior rules are centered on exact thirds (halves on tablet). This supersedes the unequal desktop Fun columns: card widths and masonry heights intentionally differ slightly from the original Figma measurements. The original fixture is retained; those desktop width/height comparisons are replaced by assertions for gutter width, line centering and structural column alignment. Mobile dimensions are unchanged.
+
+Work and Fun columns also finish at a shared bottom edge. On desktop and tablet, the final card fills any remaining height in its column, with cover cropping inside its frame. Earlier cards retain their authored ratios and all gaps stay 5px. Browser checks cover both galleries at nine widths from 390 to 1920px; the layout suite asserts matching card/media bottom edges and unchanged vertical gaps.
