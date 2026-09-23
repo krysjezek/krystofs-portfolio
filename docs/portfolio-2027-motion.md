@@ -40,6 +40,8 @@ Reveal an unseen card once when its top crosses 92% of the viewport: opacity 0 �
 
 ## 03 — Hover and focus
 
+Implementation update: About photo-grid images zoom to 1.045× on hover, entering and leaving over 600ms with the respond curve. Their clipped frames and grid positions stay fixed. Enable this only for fine pointers with hover and no reduced-motion preference; project-card artwork retains its existing behavior.
+
 | Target | Enter / focus | Leave |
 | --- | --- | --- |
 | Project card | Existing name label: y 12 → 0, opacity 0 → 1, 240ms arrive. Category begins 60ms later. Artwork and hit area stay fixed. | Both labels exit together in 180ms arrive; reverse from current value. |
