@@ -153,16 +153,30 @@ button {
   flex-shrink: 0;
 }
 .page-grid {
+  --grid-columns: 3;
   position: absolute;
   inset: 0;
-  display: flex;
-  justify-content: space-between;
   z-index: 0;
   pointer-events: none;
 }
 .page-grid > span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
   width: 0.5px;
   background: var(--line);
+}
+.page-grid > span:first-child {
+  left: 0;
+}
+.page-grid > span:nth-child(2) {
+  left: calc(100% / var(--grid-columns) - 0.25px);
+}
+.page-grid > span:nth-child(3) {
+  left: calc(200% / var(--grid-columns) - 0.25px);
+}
+.page-grid > span:last-child {
+  right: 0;
 }
 .portfolio-shell > :is(header, main, footer) {
   position: relative;
@@ -436,14 +450,19 @@ button {
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--gutter);
-  padding: 0 var(--gutter);
 }
 .gallery-column {
   display: flex;
   flex-direction: column;
   gap: var(--gutter);
   min-width: 0;
+  padding-inline: calc(var(--gutter) / 2);
+}
+.gallery-column:first-child {
+  padding-left: var(--gutter);
+}
+.gallery-column:last-child {
+  padding-right: var(--gutter);
 }
 .project-card {
   position: relative;
@@ -1039,6 +1058,9 @@ button {
 .portfolio-shell:has(.worlds-service) > .page-grid > span {
   display: block;
 }
+.portfolio-shell:has(.worlds-service) > .page-grid {
+  --grid-columns: 3;
+}
 .worlds-fit p {
   color: var(--muted);
   margin-top: 10px;
@@ -1053,9 +1075,6 @@ button {
   color: var(--muted);
 }
 @media (min-width: 1100px) {
-  .gallery-fun {
-    grid-template-columns: minmax(0, 187fr) minmax(0, 187fr) minmax(0, 184fr);
-  }
   .about-photos {
     min-height: 718px;
   }
@@ -1068,6 +1087,9 @@ button {
   }
   .page-grid > span:nth-child(3) {
     display: none;
+  }
+  .page-grid {
+    --grid-columns: 2;
   }
   h1 {
     font-size: 28px;

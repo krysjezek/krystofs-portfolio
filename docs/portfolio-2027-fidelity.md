@@ -36,3 +36,7 @@ The layout test now launches Chromium with scrollbars enabled. Figma coordinates
 Synced Figma's `border/subtle` → `palette/super subtle` value to `#ededed`. Column rules start at Y=0 and span the complete page. Grid lines and horizontal dividers use 0.5px; the navigation separator and selected-tab indicator use the same thickness without changing the existing section positions. The darker selected-tab color remains the separate selected-state token.
 
 Page-level horizontal dividers extend across the viewport beyond the 1440px canvas. Content, vertical column rules and dialog-local separators retain their existing widths.
+
+## Follow-up: center rules in card gutters
+
+The original gallery's 5px outer padding and 5px gaps put its gap centers off the page thirds. Work and Fun now use equal structural columns with half-gutters inside each column, retaining 5px outer insets and 5px between cards. Interior rules are centered on exact thirds (halves on tablet). This supersedes the unequal desktop Fun columns: card widths and masonry heights intentionally differ slightly from the original Figma measurements. The original fixture is retained; those desktop width/height comparisons are replaced by assertions for gutter width, line centering and structural column alignment. Mobile dimensions are unchanged.

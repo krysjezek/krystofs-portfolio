@@ -60,6 +60,15 @@ try {
       });
       for (const key of ["x", "y", "width", "height"]) {
         if (anchor[key] === undefined) continue;
+        // Approved follow-up: desktop gallery gutters now sit on exact thirds.
+        // This changes card widths and therefore masonry/page heights from Figma.
+        // Keep the original fixture; verify the new geometry separately below.
+        if (
+          screen.width >= 1100 &&
+          ["work", "fun"].includes(screen.tab) &&
+          (key === "height" ||
+            (key === "width" && anchor.selector.includes(".project-card")))
+        ) continue;
         checks++;
         if (Math.abs(actual[key] - anchor[key]) > reference.tolerance)
           failures.push(
@@ -81,6 +90,18 @@ try {
           ? 4
           : 3;
     assert.equal(await rules.count(), ruleCount, `Grid rules: ${screen.frame}`);
+    if (screen.tab && ["work", "fun"].includes(screen.tab) && ruleCount) {
+      const columns = page.locator(`#panel-${screen.tab} .gallery-column`);
+      const canvas = await page.locator(".portfolio-shell").boundingBox();
+      for (let index = 0; index < (await columns.count()) - 1; index++) {
+        const left = await columns.nth(index).locator(".project-card").first().boundingBox();
+        const right = await columns.nth(index + 1).locator(".project-card").first().boundingBox();
+        const rule = await rules.nth(index + 1).boundingBox();
+        assert(Math.abs(right.x - left.x - left.width - 5) < 0.04, "5px card gutter");
+        assert(Math.abs((left.x + left.width + right.x) / 2 - rule.x - rule.width / 2) < 0.04, "Column rule centered in card gutter");
+        assert(Math.abs(rule.x + rule.width / 2 - canvas.x - canvas.width * (index + 1) / (ruleCount - 1)) < 0.04, "Column rule on structural grid");
+      }
+    }
     for (let index = 0; index < ruleCount; index++) {
       const rule = await rules.nth(index).boundingBox();
       const canvas = await page.locator(".portfolio-shell").boundingBox();
