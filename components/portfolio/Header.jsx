@@ -25,7 +25,7 @@ export default function Header({
     return () => clearInterval(interval);
   }, [home]);
   return (
-    <header className="site-header">
+    <header className={`site-header${home ? " home-header" : ""}`}>
       <RouteLink href="/" className="site-name">
         Krystof Jezek
       </RouteLink>

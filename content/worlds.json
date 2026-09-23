@@ -6,15 +6,15 @@
     },
     {
       "label": "Best fit",
-      "answer": "Launches, campaigns, case studies, and brand moments that need a distinctive visual language of their own."
+      "answer": "Launches, campaigns, case studies and brand moments that need a distinctive visual language of their own."
     },
     {
       "label": "Core output",
-      "answer": "A hero film or loop, shaped around the story, applications, and formats that matter most to the project."
+      "answer": "A hero film or loop, shaped around the story, applications and formats that matter most to the project."
     },
     {
       "label": "Extensions",
-      "answer": "The same world can become stills, vertical edits, website assets, product imagery, and presentation content."
+      "answer": "The same world can become stills, vertical edits, website assets, product imagery and presentation content."
     }
   ],
   "outputs": [
@@ -29,27 +29,27 @@
     {
       "number": "01",
       "title": "Brief & references",
-      "copy": "We define the story, applications, audience, formats, and visual territory the world needs to hold together."
+      "copy": "We define the story, applications, audience, formats and visual territory the world needs to hold together."
     },
     {
       "number": "02",
       "title": "World concept",
-      "copy": "I develop a clear creative direction around the identity or product, then align on the strongest route."
+      "copy": "I develop a creative direction around the identity or product, then align on the strongest route."
     },
     {
       "number": "03",
       "title": "Look development",
-      "copy": "Materials, lighting, composition, cameras, and key frames establish the visual system before animation."
+      "copy": "Materials, lighting, composition, cameras and key frames establish the visual system before animation."
     },
     {
       "number": "04",
       "title": "Production",
-      "copy": "I handle modelling, animation, rendering, and post-production, with specialist collaborators when needed."
+      "copy": "I handle modelling, animation, rendering and post-production, with specialist collaborators when needed."
     },
     {
       "number": "05",
       "title": "Format extensions",
-      "copy": "The finished world is adapted into the agreed motion, still, social, website, and presentation formats."
+      "copy": "The finished world is adapted into the agreed motion, still, social, website and presentation formats."
     }
   ],
   "worlds": [

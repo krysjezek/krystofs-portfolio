@@ -54,6 +54,12 @@ export default function RootLayout({ children }) {
         </a>
         <JsonLd data={siteStructuredData()} />
         <div className="portfolio-shell">
+          <div className="page-grid" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
           {children}
           <Footer />
         </div>

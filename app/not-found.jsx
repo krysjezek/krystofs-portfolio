@@ -7,15 +7,17 @@ export default function NotFound() {
     <>
       <Header backLabel="Home" />
       <main id="main-content">
-        <header className="not-found-introduction editorial-three">
-          <div>
-            <h1 tabIndex={-1}>This page doesn’t exist.</h1>
-            <p className="label">404 · Page not found</p>
+        <header className="not-found-introduction case-introduction">
+          <div className="case-overview">
+            <div className="case-title not-found-title">
+              <h1 tabIndex={-1}>This page doesn’t exist.</h1>
+              <p>404 · Page not found</p>
+            </div>
+            <p>The page may have moved, or the address may be incorrect.</p>
+            <p>
+              Take a look at a case study below, or head back to the homepage.
+            </p>
           </div>
-          <p>The page may have moved, or the address may be incorrect.</p>
-          <p>
-            Take a look at a case study below, or head back to the homepage.
-          </p>
         </header>
         <Recommendations />
         <div className="return-home">

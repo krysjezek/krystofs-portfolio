@@ -1,0 +1,1396 @@
+{
+  "source": "https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR/Portfolio-2027",
+  "tolerance": 0.6,
+  "screens": [
+    {
+      "frame": "1:27",
+      "width": 1440,
+      "route": "/",
+      "anchors": [
+        {
+          "selector": ".portfolio-shell",
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 2242.19
+        },
+        {
+          "selector": ".practice-copy",
+          "index": 0,
+          "x": 35,
+          "y": 221,
+          "width": 326,
+          "height": 84
+        },
+        {
+          "selector": "#panel-work .project-gallery",
+          "index": 0,
+          "x": 0,
+          "y": 396,
+          "width": 1440,
+          "height": 1740.69
+        }
+      ],
+      "tab": "work"
+    },
+    {
+      "frame": "1:271",
+      "width": 1440,
+      "route": "/",
+      "anchors": [
+        {
+          "selector": ".portfolio-shell",
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1253.88
+        },
+        {
+          "selector": ".practice-copy",
+          "index": 0,
+          "x": 35,
+          "y": 221,
+          "width": 326,
+          "height": 84
+        },
+        {
+          "selector": ".about-content",
+          "index": 0,
+          "x": 0,
+          "y": 396,
+          "width": 1440,
+          "height": 752.38
+        },
+        {
+          "selector": ".about-photos",
+          "index": 0,
+          "x": 480,
+          "y": 431,
+          "width": 960,
+          "height": 717.38
+        }
+      ],
+      "tab": "about"
+    },
+    {
+      "frame": "25:501",
+      "width": 834,
+      "route": "/",
+      "anchors": [
+        {
+          "selector": ".portfolio-shell",
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 834,
+          "height": 2921.47
+        },
+        {
+          "selector": ".practice-copy",
+          "index": 0,
+          "x": 24,
+          "y": 94.5,
+          "width": 369,
+          "height": 72
+        },
+        {
+          "selector": "#panel-work .project-gallery",
+          "index": 0,
+          "x": 0,
+          "y": 336.5,
+          "width": 834,
+          "height": 2473.47
+        }
+      ],
+      "tab": "work"
+    },
+    {
+      "frame": "25:720",
+      "width": 834,
+      "route": "/",
+      "anchors": [
+        {
+          "selector": ".portfolio-shell",
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 834,
+          "height": 1353.38
+        },
+        {
+          "selector": ".practice-copy",
+          "index": 0,
+          "x": 24,
+          "y": 94.5,
+          "width": 369,
+          "height": 72
+        },
+        {
+          "selector": ".about-content",
+          "index": 0,
+          "x": 0,
+          "y": 336.5,
+          "width": 834,
+          "height": 905.38
+        },
+        {
+          "selector": ".about-photos",
+          "index": 0,
+          "y": 620.5,
+          "height": 621.38
+        }
+      ],
+      "tab": "about"
+    },
+    {
+      "frame": "25:233",
+      "width": 390,
+      "route": "/",
+      "anchors": [
+        {
+          "selector": ".portfolio-shell",
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 5151.42
+        },
+        {
+          "selector": ".practice-copy",
+          "index": 0,
+          "x": 20,
+          "y": 94.5,
+          "width": 350,
+          "height": 72
+        },
+        {
+          "selector": "#panel-work .project-gallery",
+          "index": 0,
+          "x": 0,
+          "y": 424.5,
+          "width": 390,
+          "height": 4575.42
+        }
+      ],
+      "tab": "work"
+    },
+    {
+      "frame": "25:448",
+      "width": 390,
+      "route": "/",
+      "anchors": [
+        {
+          "selector": ".portfolio-shell",
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 2201.86
+        },
+        {
+          "selector": ".practice-copy",
+          "index": 0,
+          "x": 20,
+          "y": 94.5,
+          "width": 350,
+          "height": 72
+        },
+        {
+          "selector": ".about-content",
+          "index": 0,
+          "x": 0,
+          "y": 424.5,
+          "width": 390,
+          "height": 1625.86
+        },
+        {
+          "selector": ".about-photos",
+          "index": 0,
+          "x": 0,
+          "y": 892.5,
+          "width": 390,
+          "height": 1157.86
+        }
+      ],
+      "tab": "about"
+    },
+    {
+      "frame": "1:149",
+      "width": 1440,
+      "route": "/",
+      "anchors": [
+        {
+          "selector": ".portfolio-shell",
+          "height": 2340.7
+        },
+        {
+          "selector": "#panel-fun .project-card",
+          "width": 475.878
+        }
+      ],
+      "tab": "fun"
+    },
+    {
+      "frame": "25:611",
+      "width": 834,
+      "route": "/",
+      "anchors": [
+        {
+          "selector": ".portfolio-shell",
+          "height": 2994.72
+        },
+        {
+          "selector": "#panel-fun .project-card",
+          "width": 409.5
+        }
+      ],
+      "tab": "fun"
+    },
+    {
+      "frame": "25:341",
+      "width": 390,
+      "route": "/",
+      "anchors": [
+        {
+          "selector": ".portfolio-shell",
+          "height": 5024.75
+        },
+        {
+          "selector": "#panel-fun .project-card",
+          "width": 380
+        }
+      ],
+      "tab": "fun"
+    },
+    {
+      "frame": "277:6138",
+      "width": 1440,
+      "route": "/work/valkaai",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 470.5
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 540.5,
+          "height": 893.75
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 1434.25,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1460.25,
+          "height": 334
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 1794.25,
+          "height": 243
+        },
+        {
+          "selector": ".case-credits",
+          "index": 0,
+          "y": 2037.75,
+          "height": 241
+        }
+      ]
+    },
+    {
+      "frame": "277:6363",
+      "width": 834,
+      "route": "/work/valkaai",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 616.5
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 686.5,
+          "height": 515
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 1201.5,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1227.5,
+          "height": 250
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 1477.5,
+          "height": 197
+        },
+        {
+          "selector": ".case-credits",
+          "index": 0,
+          "y": 1674.5,
+          "height": 221
+        }
+      ]
+    },
+    {
+      "frame": "277:6584",
+      "width": 390,
+      "route": "/work/valkaai",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 453
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 523,
+          "height": 237.5
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 760.5,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1169,
+          "height": 444
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 1613,
+          "height": 343
+        },
+        {
+          "selector": ".case-credits",
+          "index": 0,
+          "y": 1956,
+          "height": 366
+        }
+      ]
+    },
+    {
+      "frame": "277:6763",
+      "width": 1440,
+      "route": "/work/the-mag-w-rap-2025",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 290
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 360,
+          "height": 893.75
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 1253.75,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1279.75,
+          "height": 446
+        },
+        {
+          "selector": ".case-media",
+          "index": 0,
+          "y": 1725.75,
+          "height": 2831.09
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 4556.84,
+          "height": 327
+        }
+      ]
+    },
+    {
+      "frame": "277:7037",
+      "width": 834,
+      "route": "/work/the-mag-w-rap-2025",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 302
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 372,
+          "height": 515
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 887,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 913,
+          "height": 346
+        },
+        {
+          "selector": ".case-media",
+          "index": 0,
+          "y": 1259,
+          "height": 1638.03
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 2897.03,
+          "height": 269
+        }
+      ]
+    },
+    {
+      "frame": "277:7307",
+      "width": 390,
+      "route": "/work/the-mag-w-rap-2025",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 453
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 523,
+          "height": 237.5
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 760.5,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 786.5,
+          "height": 540
+        },
+        {
+          "selector": ".case-media",
+          "index": 0,
+          "y": 1326.5,
+          "height": 1745
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 3071.5,
+          "height": 487
+        }
+      ]
+    },
+    {
+      "frame": "277:7532",
+      "width": 1440,
+      "route": "/work/barbour",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 470.5
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 540.5,
+          "height": 893.75
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 1434.25,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1460.25,
+          "height": 390
+        },
+        {
+          "selector": ".case-media",
+          "index": 0,
+          "y": 1850.25,
+          "height": 1903.33
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 3753.58,
+          "height": 271
+        },
+        {
+          "selector": ".case-credits",
+          "index": 0,
+          "y": 4024.58,
+          "height": 317
+        }
+      ]
+    },
+    {
+      "frame": "277:7804",
+      "width": 834,
+      "route": "/work/barbour",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 616.5
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 686.5,
+          "height": 515
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 1201.5,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1227.5,
+          "height": 298
+        },
+        {
+          "selector": ".case-media",
+          "index": 0,
+          "y": 1525.5,
+          "height": 1095.33
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 2620.83,
+          "height": 221
+        },
+        {
+          "selector": ".case-credits",
+          "index": 0,
+          "y": 2841.83,
+          "height": 289
+        }
+      ]
+    },
+    {
+      "frame": "277:8072",
+      "width": 390,
+      "route": "/work/barbour",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 453
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 523,
+          "height": 237.5
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 760.5,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1145,
+          "height": 492
+        },
+        {
+          "selector": ".case-media",
+          "index": 0,
+          "y": 1637,
+          "height": 4600
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 6237,
+          "height": 367
+        },
+        {
+          "selector": ".case-credits",
+          "index": 0,
+          "y": 6604,
+          "height": 492
+        }
+      ]
+    },
+    {
+      "frame": "277:8297",
+      "width": 1440,
+      "route": "/work/the-vsx-sports-bra",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 470.5
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 540.5,
+          "height": 893.75
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 1434.25,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1460.25,
+          "height": 306
+        },
+        {
+          "selector": ".case-media",
+          "index": 0,
+          "y": 1766.25,
+          "height": 1667.5
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 3433.75,
+          "height": 243
+        },
+        {
+          "selector": ".case-credits",
+          "index": 0,
+          "y": 3676.75,
+          "height": 165
+        }
+      ]
+    },
+    {
+      "frame": "277:8523",
+      "width": 834,
+      "route": "/work/the-vsx-sports-bra",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 592.5
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 662.5,
+          "height": 515
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 1177.5,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1203.5,
+          "height": 226
+        },
+        {
+          "selector": ".case-media",
+          "index": 0,
+          "y": 1429.5,
+          "height": 960.5
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 2390,
+          "height": 197
+        },
+        {
+          "selector": ".case-credits",
+          "index": 0,
+          "y": 2587,
+          "height": 153
+        }
+      ]
+    },
+    {
+      "frame": "277:8745",
+      "width": 390,
+      "route": "/work/the-vsx-sports-bra",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 429
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 499,
+          "height": 237.5
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 736.5,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1145,
+          "height": 420
+        },
+        {
+          "selector": ".case-media",
+          "index": 0,
+          "y": 1565,
+          "height": 1788.33
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 3353.33,
+          "height": 367
+        },
+        {
+          "selector": ".case-credits",
+          "index": 0,
+          "y": 3720.33,
+          "height": 240
+        }
+      ]
+    },
+    {
+      "frame": "277:8929",
+      "width": 1440,
+      "route": "/work/chainer",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 290
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 360,
+          "height": 893.75
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 1253.75,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1279.75,
+          "height": 446
+        },
+        {
+          "selector": ".case-media",
+          "index": 0,
+          "y": 1725.75,
+          "height": 3050.94
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 4776.69,
+          "height": 327
+        }
+      ]
+    },
+    {
+      "frame": "277:9170",
+      "width": 834,
+      "route": "/work/chainer",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 350
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 420,
+          "height": 515
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 935,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 961,
+          "height": 370
+        },
+        {
+          "selector": ".case-media",
+          "index": 0,
+          "y": 1331,
+          "height": 1763.19
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 3094.19,
+          "height": 269
+        }
+      ]
+    },
+    {
+      "frame": "277:9407",
+      "width": 390,
+      "route": "/work/chainer",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 501
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 571,
+          "height": 237.5
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 808.5,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 834.5,
+          "height": 564
+        },
+        {
+          "selector": ".case-media",
+          "index": 0,
+          "y": 1398.5,
+          "height": 2628.75
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 4027.25,
+          "height": 511
+        }
+      ]
+    },
+    {
+      "frame": "279:1365",
+      "width": 1440,
+      "route": "/work/not-a-route",
+      "anchors": [
+        {
+          "selector": ".not-found-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 231
+        }
+      ]
+    },
+    {
+      "frame": "279:1493",
+      "width": 834,
+      "route": "/work/not-a-route",
+      "anchors": [
+        {
+          "selector": ".not-found-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 195
+        }
+      ]
+    },
+    {
+      "frame": "279:1617",
+      "width": 390,
+      "route": "/work/not-a-route",
+      "anchors": [
+        {
+          "selector": ".not-found-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 333
+        }
+      ]
+    },
+    {
+      "frame": "92:1937",
+      "width": 1440,
+      "route": "/work/vizcom",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 470.5
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 540.5,
+          "height": 893.75
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 1434.25,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1460.25,
+          "height": 334
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 3948.78,
+          "height": 243
+        },
+        {
+          "selector": ".case-credits",
+          "index": 0,
+          "y": 4191.78,
+          "height": 165
+        },
+        {
+          "selector": ".vizcom-detail-row",
+          "index": 0,
+          "y": 2603.63,
+          "height": 535.78
+        }
+      ]
+    },
+    {
+      "frame": "100:2952",
+      "width": 834,
+      "route": "/work/vizcom",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 616.5
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 686.5,
+          "height": 515
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 1201.5,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1227.5,
+          "height": 250
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 2644.84,
+          "height": 197
+        },
+        {
+          "selector": ".case-credits",
+          "index": 0,
+          "y": 2841.84,
+          "height": 153
+        },
+        {
+          "selector": ".vizcom-detail-row",
+          "index": 0,
+          "y": 1946,
+          "height": 230.34
+        }
+      ]
+    },
+    {
+      "frame": "100:2870",
+      "width": 390,
+      "route": "/work/vizcom",
+      "anchors": [
+        {
+          "selector": ".case-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 477
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 547,
+          "height": 237.5
+        },
+        {
+          "selector": ".film-caption",
+          "index": 0,
+          "y": 784.5,
+          "height": 26
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 0,
+          "y": 1193,
+          "height": 444
+        },
+        {
+          "selector": ".case-narrative",
+          "index": 1,
+          "y": 2507,
+          "height": 367
+        },
+        {
+          "selector": ".case-credits",
+          "index": 0,
+          "y": 2874,
+          "height": 240
+        },
+        {
+          "selector": ".vizcom-detail-row",
+          "index": 0,
+          "y": 1855.75,
+          "height": 432.5
+        }
+      ]
+    },
+    {
+      "frame": "340:1372",
+      "width": 1440,
+      "route": "/services/3d-environments",
+      "anchors": [
+        {
+          "selector": ".portfolio-shell",
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 6334.75
+        },
+        {
+          "selector": ".worlds-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 211
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 281,
+          "height": 893.75
+        },
+        {
+          "selector": ".worlds-overview",
+          "index": 0,
+          "y": 1200.75,
+          "height": 250
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 0,
+          "x": 5,
+          "y": 1984.75,
+          "width": 1430,
+          "height": 527
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 1,
+          "x": 5,
+          "y": 2535.75,
+          "width": 1430,
+          "height": 527
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 2,
+          "x": 5,
+          "y": 3086.75,
+          "width": 1430,
+          "height": 527
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 3,
+          "x": 5,
+          "y": 3637.75,
+          "width": 1430,
+          "height": 527
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 4,
+          "x": 5,
+          "y": 4188.75,
+          "width": 1430,
+          "height": 527
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 5,
+          "x": 5,
+          "y": 4739.75,
+          "width": 1430,
+          "height": 527
+        },
+        {
+          "selector": ".worlds-process",
+          "index": 0,
+          "y": 5266.75,
+          "height": 672
+        }
+      ]
+    },
+    {
+      "frame": "340:1373",
+      "width": 834,
+      "route": "/services/3d-environments",
+      "anchors": [
+        {
+          "selector": ".portfolio-shell",
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 834,
+          "height": 4624
+        },
+        {
+          "selector": ".worlds-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 195
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 265,
+          "height": 515
+        },
+        {
+          "selector": ".worlds-overview",
+          "index": 0,
+          "y": 806,
+          "height": 202
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 0,
+          "x": 5,
+          "y": 1480,
+          "width": 824,
+          "height": 325
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 1,
+          "x": 5,
+          "y": 1829,
+          "width": 824,
+          "height": 325
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 2,
+          "x": 5,
+          "y": 2178,
+          "width": 824,
+          "height": 325
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 3,
+          "x": 5,
+          "y": 2527,
+          "width": 824,
+          "height": 325
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 4,
+          "x": 5,
+          "y": 2876,
+          "width": 824,
+          "height": 325
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 5,
+          "x": 5,
+          "y": 3225,
+          "width": 824,
+          "height": 325
+        },
+        {
+          "selector": ".worlds-process",
+          "index": 0,
+          "y": 3550,
+          "height": 700
+        }
+      ]
+    },
+    {
+      "frame": "340:1374",
+      "width": 390,
+      "route": "/services/3d-environments",
+      "anchors": [
+        {
+          "selector": ".portfolio-shell",
+          "index": 0,
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 7767
+        },
+        {
+          "selector": ".worlds-introduction",
+          "index": 0,
+          "y": 70,
+          "height": 337
+        },
+        {
+          "selector": ".case-hero",
+          "index": 0,
+          "y": 407,
+          "height": 237.5
+        },
+        {
+          "selector": ".worlds-overview",
+          "index": 0,
+          "y": 670.5,
+          "height": 422
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 0,
+          "x": 5,
+          "y": 1966.5,
+          "width": 380,
+          "height": 721.75
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 1,
+          "x": 5,
+          "y": 2712.25,
+          "width": 380,
+          "height": 721.75
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 2,
+          "x": 5,
+          "y": 3458,
+          "width": 380,
+          "height": 721.75
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 3,
+          "x": 5,
+          "y": 4203.75,
+          "width": 380,
+          "height": 721.75
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 4,
+          "x": 5,
+          "y": 4949.5,
+          "width": 380,
+          "height": 721.75
+        },
+        {
+          "selector": ".worlds-pair",
+          "index": 5,
+          "x": 5,
+          "y": 5695.25,
+          "width": 380,
+          "height": 721.75
+        },
+        {
+          "selector": ".worlds-process",
+          "index": 0,
+          "y": 6417,
+          "height": 814
+        }
+      ]
+    }
+  ]
+}

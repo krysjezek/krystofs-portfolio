@@ -61,6 +61,8 @@ Weather remains intentionally deferred. The homepage shows Prague time without a
 
 ## Verification record — 23 September 2026
 
+The subsequent [Figma fidelity correction](portfolio-2027-fidelity.md) supersedes the initial visual review below. It adds the 1440px canvas, correct typeface, visible column rules, responsive geometry corrections and automated comparisons against 33 Figma frames.
+
 Lint: zero errors or warnings. Production build: passes. scripts/verify-portfolio.mjs checks gallery permutations, six eligible routes, 18 recognition URLs, media dimensions, canonicals, main landmarks and archive noindex/nofollow policies.
 
 Browser review covered Work/Fun/About and 3D Worlds at 1440, 834 and 390; all six cases at desktop and mobile; CV/print CV, join, work index, mixed reality and representative archives. No horizontal overflow, broken visible images or page errors were found in the 24 primary-page captures. Verification artifacts are in the local temporary portfolio-qa directory.

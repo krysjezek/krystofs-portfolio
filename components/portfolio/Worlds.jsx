@@ -61,17 +61,9 @@ export default function Worlds() {
             </p>
           </div>
           <ul>
-            {data.outputs.slice(0, 3).map((text, i) => (
+            {data.outputs.map((text, i) => (
               <li key={text}>
                 <span className="label">0{i + 1}</span>
-                {text}
-              </li>
-            ))}
-          </ul>
-          <ul>
-            {data.outputs.slice(3).map((text, i) => (
-              <li key={text}>
-                <span className="label">0{i + 4}</span>
                 {text}
               </li>
             ))}
@@ -91,7 +83,10 @@ export default function Worlds() {
               key={row}
             >
               {data.worlds.slice(row * 2, row * 2 + 2).map((world) => (
-                <figure key={world.title}>
+                <figure
+                  key={world.title}
+                  className={world.size === "wide" ? "world-wide" : ""}
+                >
                   <Media
                     media={{
                       ...world,
@@ -122,7 +117,7 @@ export default function Worlds() {
             {data.process.map((step) => (
               <li key={step.number}>
                 <h3>
-                  {step.number} · {step.title}
+                  {step.number} / {step.title}
                 </h3>
                 <p>{step.copy}</p>
               </li>

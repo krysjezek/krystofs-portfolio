@@ -50,7 +50,7 @@ function Gallery({ category, viewport, onOpen }) {
       ? [5, 7]
       : Array(columns).fill(order.length / columns);
   return (
-    <div className="project-gallery">
+    <div className={`project-gallery gallery-${category}`}>
       {breaks.map((count, column) => {
         const start = breaks
           .slice(0, column)
@@ -208,7 +208,8 @@ export default function Home() {
               </ExternalLink>
               ,
             </span>{" "}
-            an app for turning screen recordings into polished, art-directed
+            an app for turning screen recordings into polished,{" "}
+            <span className="no-wrap">art-directed</span>
             product visuals.
           </p>
           <div className="contact-copy">

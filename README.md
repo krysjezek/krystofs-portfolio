@@ -32,3 +32,12 @@ git diff --check
 ```
 
 Check desktop, tablet and mobile in a browser, including keyboard focus, history restoration, reduced motion and lazy video playback. No push or deployment without an explicit owner request; see [deploy.md](deploy.md).
+
+With the local server running, verify the measured Figma layouts:
+
+```powershell
+npx.cmd playwright install chromium # First run only
+npm.cmd run test:layout
+```
+
+This checks 33 reference screens at 1440, 834 and 390px, visible grid rules, a centered 1440px canvas at 1920px, and the recognition dialog. Coordinates come from Figma; tolerance is 0.6px for browser rounding. See the [fidelity record](docs/portfolio-2027-fidelity.md). `LAYOUT_BASE_URL` can point at another local server; `LAYOUT_CDP_URL` optionally attaches to an existing Chromium browser.

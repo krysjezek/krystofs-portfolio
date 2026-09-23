@@ -124,6 +124,8 @@ git status --short
 
 Rebuild baseline: lint passes with no warnings; production build passes. Run `node scripts/verify-portfolio.mjs` after building. Check desktop, tablet and mobile layouts and fine-pointer interactions.
 
+For layout changes, run `npm.cmd run test:layout` with the local server running (`npx.cmd playwright install chromium` once). It compares 33 screens against measured Figma coordinates, including the visible grid and centered 1440px canvas. Read [the fidelity record](docs/portfolio-2027-fidelity.md) before changing reference measurements; do not replace Figma values with application output merely to pass a test.
+
 ## GitHub
 
 - Repository: `https://github.com/krysjezek/krystofs-portfolio`
