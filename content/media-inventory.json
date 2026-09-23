@@ -1,0 +1,2918 @@
+{
+  "source": "checkpoint/pre-rebuild-2026-09-23",
+  "cdn": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com",
+  "note": "Reference inventory, not a verified CDN listing or an archive of source masters. Availability and dimensions must be verified for assets selected for the rebuild.",
+  "assets": [
+    {
+      "id": "987301b6c5c5",
+      "url": "/fonts/ClashGrotesk-Bold.woff",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "409562ef0ecc",
+      "url": "/fonts/ClashGrotesk-Medium.woff",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "a295d1178bb5",
+      "url": "/fonts/ClashGrotesk-Regular.woff",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "15b89933432b",
+      "url": "/fonts/JetBrainsMono-Regular.woff2",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "a10fa31c04b5",
+      "url": "/fonts/Roobert-Bold.woff2",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "5ddba74fca31",
+      "url": "/fonts/Roobert-Regular.woff2",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "dfe1ebd910e1",
+      "url": "/fonts/RoobertPRO-Light.woff",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "30671e0ca649",
+      "url": "/fonts/RoobertPRO-Medium.woff",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "13210794ff64",
+      "url": "/images/100966072_625778771344489_2288294208672262474_n.jpg",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "b86839763315",
+      "url": "/images/119213490_340250750506883_7878986000222452245_n.jpg",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "ddf72b862fa1",
+      "url": "/images/1631366714918.jpeg",
+      "references": [
+        "app/other/cv-print/page.jsx",
+        "app/other/cv/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "00f60687f44c",
+      "url": "/images/16x9thumb-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "app/other/work/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "7197f8aa4db2",
+      "url": "/images/1753950309864.jpg",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "40f4bd03ec7b",
+      "url": "/images/95397093_565476874367461_3337143817775669193_n.jpg",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "df6b63089c2a",
+      "url": "/images/96083211_2305295353106059_6014108428870843819_n.jpg",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "64e226b41608",
+      "url": "/images/96763281_2638816886374609_1196589082135317297_n.jpg",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "e739562d5a80",
+      "url": "/images/AnimatedMockups-Devices-1x10-00-03-23-ezgif.com-resize.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "c1903a584dde",
+      "url": "/images/anna-logo.png",
+      "references": [
+        "app/work/old-projects/apify/page.jsx"
+      ]
+    },
+    {
+      "id": "f261ab962251",
+      "url": "/images/antartica-sound-4x50-00-03-19-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "410b60c4e47c",
+      "url": "/images/apify_logo.jpeg",
+      "references": [
+        "app/other/cv-print/page.jsx",
+        "app/other/cv/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "7eff1ffe5048",
+      "url": "/images/arrow-leftup.svg",
+      "references": [
+        "app/page.jsx",
+        "app/work/old-projects/ashfall/page.jsx",
+        "app/work/old-projects/barbour-international-puffer-fooh/page.jsx",
+        "app/work/old-projects/bezdeno/page.jsx",
+        "app/work/old-projects/onitsuka-tiger-covent-garden/page.jsx",
+        "app/work/old-projects/together/page.jsx",
+        "components/CustomCursor.jsx",
+        "components/Footer.jsx"
+      ]
+    },
+    {
+      "id": "446ba828c534",
+      "url": "/images/arrow.svg",
+      "references": [
+        "app/other/work/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "a5dc54c7b757",
+      "url": "/images/arrows.svg",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "b99a962c181d",
+      "url": "/images/badlod.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "5626fc46ae65",
+      "url": "/images/barb.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "e8a8dd6c160f",
+      "url": "/images/barbour_frasers-16x9-15s_10-00-01-13-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "634d64fbdfcb",
+      "url": "/images/barbour_frasers-16x9-15s_10-00-06-26-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "app/test/projects/page.jsx",
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "c58b24963014",
+      "url": "/images/barbour_frasers-16x9-15s_10-00-12-13-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "46fc87933e9c",
+      "url": "/images/Barbour-Header-HP2.webp",
+      "references": [
+        "app/other/work/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "2dedb830fe12",
+      "url": "/images/barbour.png",
+      "references": [
+        "app/other/cv/page.jsx",
+        "app/page.jsx",
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "1aa341734d3c",
+      "url": "/images/can-v3.webp",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "f9c2633e3dd7",
+      "url": "/images/cb.svg",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "fa38cc05d427",
+      "url": "/images/cementinside-min-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "4651299044df",
+      "url": "/images/cgi-poster.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "9dc54e22893e",
+      "url": "/images/chainer-case-0.webp",
+      "references": [
+        "app/work/chainer/page.jsx"
+      ]
+    },
+    {
+      "id": "13c4fa9489ce",
+      "url": "/images/chainer-case-1.webp",
+      "references": [
+        "app/work/chainer/page.jsx"
+      ]
+    },
+    {
+      "id": "c331e7a52ce5",
+      "url": "/images/chainer-case-2.webp",
+      "references": [
+        "app/work/chainer/page.jsx"
+      ]
+    },
+    {
+      "id": "35687d4ad0bb",
+      "url": "/images/chainer-case-3-2.webp",
+      "references": [
+        "app/work/chainer/page.jsx"
+      ]
+    },
+    {
+      "id": "ffc2aace2f50",
+      "url": "/images/chainer-case-3.webp",
+      "references": [
+        "app/work/chainer/page.jsx"
+      ]
+    },
+    {
+      "id": "3256046c3c68",
+      "url": "/images/chainer-case-4.webp",
+      "references": [
+        "app/page.jsx",
+        "app/work/chainer/page.jsx"
+      ]
+    },
+    {
+      "id": "988d056ab1d8",
+      "url": "/images/chainer-case-5.webp",
+      "references": [
+        "app/work/chainer/page.jsx"
+      ]
+    },
+    {
+      "id": "fc30974f5702",
+      "url": "/images/Chainer-Header-HP.webp",
+      "references": [
+        "app/other/work/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "5d71f6dbe36a",
+      "url": "/images/chainer-logo.png",
+      "references": [
+        "app/services/mixed-reality/page.jsx",
+        "app/work/old-projects/apify/page.jsx"
+      ]
+    },
+    {
+      "id": "e665d6b0bdde",
+      "url": "/images/cigarlounge-min1-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "57c89917c801",
+      "url": "/images/coinbase-logo.svg",
+      "references": [
+        "app/other/cv/page.jsx",
+        "app/page.jsx",
+        "app/work/old-projects/apify/page.jsx"
+      ]
+    },
+    {
+      "id": "61a42e7052eb",
+      "url": "/images/Comp-1-0-00-00-00.png",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "09556b7c6270",
+      "url": "/images/container3.webp",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "e12e8fe26049",
+      "url": "/images/cursor-date.svg",
+      "references": [
+        "components/CustomCursor.jsx"
+      ]
+    },
+    {
+      "id": "30e4c9d7067f",
+      "url": "/images/cursor-eye.svg",
+      "references": [
+        "components/CustomCursor.jsx"
+      ]
+    },
+    {
+      "id": "acc888776f77",
+      "url": "/images/cursor-message.svg",
+      "references": [
+        "components/CustomCursor.jsx"
+      ]
+    },
+    {
+      "id": "fdececce80de",
+      "url": "/images/cvutlogo-2-p-500.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "50c5c1af172f",
+      "url": "/images/cvutlogo-2.png",
+      "references": [
+        "app/other/cv-print/page.jsx",
+        "app/other/cv/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "031938cc398f",
+      "url": "/images/ex-min-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "aba6a8126087",
+      "url": "/images/ex2-min.png",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "d1e9f57f8169",
+      "url": "/images/ezgif.com-animated-gif-maker-4.gif",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "a76081cdbf7a",
+      "url": "/images/ezgif.com-resize.webp",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "d8b2686ddc90",
+      "url": "/images/final-min-5.png",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "3754d83651b5",
+      "url": "/images/Final0-00-05-02-ezgif.com-png-to-webp-converter-2.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "bccab465a4ac",
+      "url": "/images/fini_1-p-1080.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "708f62f4c984",
+      "url": "/images/fini_1-p-500.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "6eede90b76c4",
+      "url": "/images/fini_1-p-800.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "9dbe4422ef80",
+      "url": "/images/fini_1.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "9db05aa94c80",
+      "url": "/images/fini.png",
+      "references": [
+        "app/other/cv/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "b85ff017f6c0",
+      "url": "/images/fotka3.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "7071eaefec57",
+      "url": "/images/fragrance-3.webp",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "455faae0686b",
+      "url": "/images/Frame-10350.png",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "4e8e59da646b",
+      "url": "/images/Frame-10352.png",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "3e4c06587be9",
+      "url": "/images/frasers-logo-1-1.svg",
+      "references": [
+        "app/other/cv/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "8c4609c77062",
+      "url": "/images/gif-ahoj2-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "components/Footer.jsx",
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "adeee9219c4f",
+      "url": "/images/glami-logo.jpg",
+      "references": [
+        "app/page.jsx",
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "11b1e0946130",
+      "url": "/images/hubpay-logo.png",
+      "references": [
+        "app/work/old-projects/apify/page.jsx"
+      ]
+    },
+    {
+      "id": "2192da82e0f1",
+      "url": "/images/ipadconcrete-1x1-min-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "6501b9c11985",
+      "url": "/images/ipadconcrete-min1-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "0443c2e3f178",
+      "url": "/images/jn-p-500.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "c80c9c88b950",
+      "url": "/images/jn.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "cd4e5cb1f68a",
+      "url": "/images/jnt.png",
+      "references": [
+        "app/other/cv/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "3f17ddef9e66",
+      "url": "/images/kfc-logo.svg",
+      "references": [
+        "app/other/cv/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "73130c15f9c2",
+      "url": "/images/kfc.svg",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "c19a19ec110b",
+      "url": "/images/kj-stats.png",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "7e3f3c337c6b",
+      "url": "/images/Knit0-00-04-25-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "af54e4c4d19c",
+      "url": "/images/koko2t-min-1.png",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "f70787567ff7",
+      "url": "/images/kunaj-sklo-preview-2-min-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "0d33cef6916e",
+      "url": "/images/LaptopConcrete-Animation-1x10-00-02-14-ezgif.com-resize.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "8ab27aaa4843",
+      "url": "/images/led-v11-00-01-04-min-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "0b0e63ef5904",
+      "url": "/images/lepshee-logo-1.png",
+      "references": [
+        "app/work/old-projects/apify/page.jsx"
+      ]
+    },
+    {
+      "id": "11e8a4805ca3",
+      "url": "/images/less-and-better-logo.png",
+      "references": [
+        "app/work/valkaai/page.jsx"
+      ]
+    },
+    {
+      "id": "c07685fa497d",
+      "url": "/images/logo-1.svg",
+      "references": [
+        "app/other/cv/page.jsx",
+        "app/work/old-projects/apify/page.jsx"
+      ]
+    },
+    {
+      "id": "c145ab0d8a4e",
+      "url": "/images/lucrative-p-1080.webp",
+      "references": [
+        "app/work/old-projects/dorian-drop-ii/page.jsx"
+      ]
+    },
+    {
+      "id": "55b410fad9b3",
+      "url": "/images/lucrative-p-1600.webp",
+      "references": [
+        "app/work/old-projects/dorian-drop-ii/page.jsx"
+      ]
+    },
+    {
+      "id": "f4b7d3dcb5cd",
+      "url": "/images/lucrative-p-500.webp",
+      "references": [
+        "app/work/old-projects/dorian-drop-ii/page.jsx"
+      ]
+    },
+    {
+      "id": "9ba8f02470eb",
+      "url": "/images/lucrative-p-800.webp",
+      "references": [
+        "app/work/old-projects/dorian-drop-ii/page.jsx"
+      ]
+    },
+    {
+      "id": "bd263bbcfa50",
+      "url": "/images/lucrative.webp",
+      "references": [
+        "app/work/old-projects/dorian-drop-ii/page.jsx"
+      ]
+    },
+    {
+      "id": "0f517723168d",
+      "url": "/images/maisoncrivelli.webp",
+      "references": [
+        "app/page.jsx",
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "7cd32f9b141d",
+      "url": "/images/menywhite.svg",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "7991d6b7e114",
+      "url": "/images/monop.svg",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "44a3cb67f78b",
+      "url": "/images/monopo-logo.jpg",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "706fbe199b81",
+      "url": "/images/monopologo4.jpg",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "a5b6d8f9ba4a",
+      "url": "/images/monopoly-logo.svg",
+      "references": [
+        "app/other/cv/page.jsx",
+        "app/page.jsx",
+        "app/work/old-projects/apify/page.jsx"
+      ]
+    },
+    {
+      "id": "82c866b62213",
+      "url": "/images/montreal-subway-station-Krystof-Jezek.jpg",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "063ec4ec5527",
+      "url": "/images/moreeee-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "20ac3b489b0b",
+      "url": "/images/niacid.webp",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "a423dbe61d59",
+      "url": "/images/onit.svg",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "d4d70a00df0b",
+      "url": "/images/onitsuka-tiger-covent-garden_disclaimer30-00-06-06-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "5e21c64d9022",
+      "url": "/images/onitsuka-tiger-logo.svg",
+      "references": [
+        "app/other/cv/page.jsx",
+        "app/page.jsx",
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "c5ebbdf2d7e3",
+      "url": "/images/orum-logo.png",
+      "references": [
+        "app/work/old-projects/apify/page.jsx"
+      ]
+    },
+    {
+      "id": "b71db2124b59",
+      "url": "/images/outland-logo.svg",
+      "references": [
+        "app/work/vizcom/page.jsx"
+      ]
+    },
+    {
+      "id": "c513754116dd",
+      "url": "/images/output-v2.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "ba0612406e93",
+      "url": "/images/PhotoStudio-Animation-1x10-00-15-17-ezgif.com-resize.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "c878017dd76d",
+      "url": "/images/photostudio-min1-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "36d63274d56f",
+      "url": "/images/profilovka-maruska-p-500.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "48d7baa7cb7c",
+      "url": "/images/profilovka-maruska.png",
+      "references": [
+        "app/other/cv-print/page.jsx",
+        "app/other/cv/page.jsx"
+      ]
+    },
+    {
+      "id": "72721a206fc5",
+      "url": "/images/profilovka-new-edit-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "e6bff2970a60",
+      "url": "/images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "app/page.jsx",
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "4ba45cc93c39",
+      "url": "/images/relive-logo.png",
+      "references": [
+        "app/work/old-projects/apify/page.jsx"
+      ]
+    },
+    {
+      "id": "64670f177f1e",
+      "url": "/images/relive.png",
+      "references": [
+        "app/other/cv-print/page.jsx",
+        "app/other/cv/page.jsx",
+        "app/page.jsx",
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "9e3d47058200",
+      "url": "/images/SCENE1-VFX0-00-00-00-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "bcbd78e4188c",
+      "url": "/images/SCENE3VFX-BCG0-00-00-00-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "2dc5a1912048",
+      "url": "/images/ScreenRecording2025-03-24at16.01.310-00-01-02-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "18372bc6b304",
+      "url": "/images/sliderpohoto2.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "c57eacc2a52c",
+      "url": "/images/test/depth.png",
+      "references": [
+        "app/test/depth/page.jsx"
+      ]
+    },
+    {
+      "id": "922dec106f8d",
+      "url": "/images/test/render.png",
+      "references": [
+        "app/test/depth/page.jsx"
+      ]
+    },
+    {
+      "id": "c158cacfc92f",
+      "url": "/images/themag.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "83e9909a76bd",
+      "url": "/images/themaglogo.jpg",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "0b94faeeb24d",
+      "url": "/images/tmrzvlogo.jpg",
+      "references": [
+        "app/work/barbour/page.jsx",
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "ed2a71e51eff",
+      "url": "/images/trezor-1.svg",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "1d6ae29411a4",
+      "url": "/images/tweezers-sound-4x50000011-ezgif.com-png-to-webp-converter-1.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "d5047f4d8f58",
+      "url": "/images/udemy-business.png",
+      "references": [
+        "app/other/cv-print/page.jsx",
+        "app/other/cv/page.jsx"
+      ]
+    },
+    {
+      "id": "e7a5650e7ec4",
+      "url": "/images/unnamed-p-500.jpg",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "6c6e679bf0d3",
+      "url": "/images/unnamed-p-800.jpg",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "e002bdc83cd3",
+      "url": "/images/unnamed.jpg",
+      "references": [
+        "app/other/cv-print/page.jsx",
+        "app/other/cv/page.jsx"
+      ]
+    },
+    {
+      "id": "656375e0d8cd",
+      "url": "/images/Untitled-1.png",
+      "references": [
+        "app/other/cv/page.jsx"
+      ]
+    },
+    {
+      "id": "cd5a14bcae23",
+      "url": "/images/untitled-min-3.png",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "9d9d5ed4870d",
+      "url": "/images/untitled-min-4.png",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "4f8364a3f6ff",
+      "url": "/images/untitled.2png-min.png",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "a5af75b939c7",
+      "url": "/images/Untitled0-00-00-00-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "7fc3fead4d5a",
+      "url": "/images/untitled2-min.png",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "d54bfdcae7dd",
+      "url": "/images/untitled3-min-1.png",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "3c6afefea569",
+      "url": "/images/vizcom-brand-world-laptop.webp",
+      "references": [
+        "app/work/vizcom/page.jsx"
+      ]
+    },
+    {
+      "id": "8e421b869d52",
+      "url": "/images/vizcom-brand-world-mug.webp",
+      "references": [
+        "app/work/vizcom/page.jsx"
+      ]
+    },
+    {
+      "id": "65318445c87e",
+      "url": "/images/vizcom-brand-world-overhead.webp",
+      "references": [
+        "app/work/vizcom/page.jsx"
+      ]
+    },
+    {
+      "id": "4a57fc0daebf",
+      "url": "/images/vizcom-brand-world-studio.webp",
+      "references": [
+        "app/work/vizcom/page.jsx"
+      ]
+    },
+    {
+      "id": "865aa23fff13",
+      "url": "/images/voda-p-1080.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "4e131e56c268",
+      "url": "/images/voda-p-1600.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "3935ad6f7157",
+      "url": "/images/voda-p-500.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "dc45474a1249",
+      "url": "/images/voda-p-800.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "efabe152c6ed",
+      "url": "/images/voda.png",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "f2deba145def",
+      "url": "/images/vodafone-logo-horiz-rgb-white.png",
+      "references": [
+        "app/other/cv/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "fdd553c14b78",
+      "url": "/images/vs-logo.svg",
+      "references": [
+        "app/other/cv/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "4efce087ab5f",
+      "url": "/images/vs.svg",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "a9a8dfc6fa60",
+      "url": "/images/vsx-logo.svg",
+      "references": [
+        "app/other/cv/page.jsx",
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "cdc64028b904",
+      "url": "/images/vsx-upscaled10-00-01-28-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "07ea07c6529d",
+      "url": "/images/vsx-upscaled20-00-05-24-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "8e832cd9273f",
+      "url": "/images/vsx-upscaled30-00-04-25-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "6850bfad693c",
+      "url": "/images/vsx.svg",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "29c8d66f8dff",
+      "url": "/images/w25-postupujici-praha-V30-00-10-05-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "e931f305d140",
+      "url": "/images/Weave0-00-03-12-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "a7a452a579f7",
+      "url": "/images/webclip.png",
+      "references": [
+        "app/other/cv-print/page.jsx",
+        "app/other/cv/page.jsx"
+      ]
+    },
+    {
+      "id": "04d72f29066c",
+      "url": "/images/wrap25_injektaz_preview0-00-01-02-min-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "app/other/work/page.jsx",
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "bf75c98ad1a3",
+      "url": "/images/wrap25-loop-bcg1-00-02-13-ezgif.com-png-to-webp-converter.webp",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "e663019413df",
+      "url": "/images/yiskra_studio_logo.jpeg",
+      "references": [
+        "app/other/cv-print/page.jsx",
+        "app/other/cv/page.jsx",
+        "app/page.jsx",
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "2f7049b6d151",
+      "url": "/images/yone.svg",
+      "references": [
+        "app/other/cv-print/page.jsx"
+      ]
+    },
+    {
+      "id": "57798cf8767d",
+      "url": "/images/yonex-logo-1.png",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "563b616264f3",
+      "url": "/images/yonex-logo.svg",
+      "references": [
+        "app/other/cv/page.jsx",
+        "app/page.jsx",
+        "app/work/old-projects/apify/page.jsx"
+      ]
+    },
+    {
+      "id": "025cd3e222b1",
+      "url": "/videos/av1/ashfall_aptos-2x1.webm",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "44bd57fb544e",
+      "url": "/videos/av1/ashfall_ccus%20updated.webm",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "35fc73eaa824",
+      "url": "/videos/av1/ashfall_fifthrow%20updated.webm",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "656a3de6a686",
+      "url": "/videos/av1/ashfall_hyperframe%20updated.webm",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "c1a250e2929b",
+      "url": "/videos/av1/ashfall_promo%20updated.webm",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "d50aae49b51f",
+      "url": "/videos/av1/cgi_antartcica.webm",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "f054a5551272",
+      "url": "/videos/av1/cgi_barbour_london%20updated.webm",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "f9f2107e49b7",
+      "url": "/videos/av1/cgi_barbour_ny%20updated.webm",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "85db4f8a014e",
+      "url": "/videos/av1/cgi_barbour_seoul%20updated.webm",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "f3ee51811725",
+      "url": "/videos/av1/cgi_barbour_shanghai%20updated.webm",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "a5e5b39c8f06",
+      "url": "/videos/av1/cgi_chainer%20updated.webm",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "00b91553e150",
+      "url": "/videos/av1/cgi_frasers%20updated.webm",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "7978d23c6779",
+      "url": "/videos/av1/cgi_onitsuka.webm",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "db8b246d8d63",
+      "url": "/videos/av1/cgi_presto%20updated.webm",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "f9c856013c48",
+      "url": "/videos/av1/cgi_spojka%20updated.webm",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "b8331a533e36",
+      "url": "/videos/av1/cgi_tweezers.webm",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "d09339bb4baf",
+      "url": "/videos/av1/cgi_yogrillz%20updated.webm",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "3d5dcc07bbc5",
+      "url": "/videos/av1/cgi_yonex.webm",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "350057c48b3a",
+      "url": "/videos/av1/cgi-environments.webm",
+      "references": [
+        "app/page.jsx",
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "620437b5b035",
+      "url": "/videos/av1/cn_skyll-1x1.webm",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "b2a842cfaba1",
+      "url": "/videos/av1/coding-02.webm",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "c0c56df7d92a",
+      "url": "/videos/av1/kokos.webm",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "032731cb4fda",
+      "url": "/videos/av1/outpost_explorer-2x1.webm",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "f4c2f280ceb0",
+      "url": "/videos/av1/outpost_resort-2x1.webm",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "234cb65c149f",
+      "url": "/videos/av1/valkaai-logo-glass-prism.webm",
+      "references": [
+        "app/other/work/page.jsx",
+        "app/page.jsx",
+        "app/work/valkaai/page.jsx"
+      ]
+    },
+    {
+      "id": "ea4a739f02fd",
+      "url": "/videos/av1/vizcom-brand-world.webm",
+      "references": [
+        "app/other/work/page.jsx",
+        "app/page.jsx",
+        "app/work/vizcom/page.jsx"
+      ]
+    },
+    {
+      "id": "048d998e7f98",
+      "url": "/videos/av1/volkov_homio.webm",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "77f8112d12c3",
+      "url": "/videos/av1/volkov_jimu.webm",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "063ffde1ec20",
+      "url": "/videos/av1/volkov_sparta.webm",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "a867c037af61",
+      "url": "/videos/av1/vsx_bts-01.webm",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "149484260dc3",
+      "url": "/videos/av1/vsx_header.webm",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "ea1525d07679",
+      "url": "/videos/av1/vsx_main-01.webm",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "47ed96b8c7c2",
+      "url": "/videos/av1/vsx_main-02.webm",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "adf66d80620e",
+      "url": "/videos/av1/vsx_main-03.webm",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "e8896eadebd5",
+      "url": "/videos/av1/w25_aneta_greenscreen.webm",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "ecfe4cc3bab9",
+      "url": "/videos/av1/w25_injektaz.webm",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "51548cbff124",
+      "url": "/videos/av1/w25_ledka.webm",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "436b2ddbe37f",
+      "url": "/videos/av1/w25_loop_bcg.webm",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "82a18cc7fe9f",
+      "url": "/videos/av1/w25_postupujici.webm",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "5edb79a5e801",
+      "url": "/videos/av1/w25_rytmus.webm",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "3283a4fcca19",
+      "url": "/videos/av1/yiskra_veha.webm",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "97d4630a40ca",
+      "url": "/videos/h264/ashfall_aptos-2x1-fallback.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "ddcb2fc305f4",
+      "url": "/videos/h264/ashfall_ccus%20updated-fallback.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "2eb1f2ffebc6",
+      "url": "/videos/h264/ashfall_fifthrow%20updated-fallback.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "320583e1cc18",
+      "url": "/videos/h264/ashfall_hyperframe%20updated-fallback.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "50b926f1517c",
+      "url": "/videos/h264/ashfall_promo%20updated-fallback.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "86ff7be2c317",
+      "url": "/videos/h264/barbour_header-fallback.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "c07db0a103e6",
+      "url": "/videos/h264/Barbour---IiQ---Bus---BTS----4x5_1.mp4",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "124f16a83634",
+      "url": "/videos/h264/Barbour---IiQ---Fern-02--BTS----4x5.mp4",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "c37b1a3f4369",
+      "url": "/videos/h264/Barbour---IiQ---Fern-03--BTS----4x5.mp4",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "ee25d7b9ac49",
+      "url": "/videos/h264/Barbour---IiQ---Instant-Render-2---BTS----4x5.mp4",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "f13047061ada",
+      "url": "/videos/h264/Barbour---IiQ---Nodes---BTS----4x5.mp4",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "26c4efbc7a74",
+      "url": "/videos/h264/Barbour---IiQ---Reconstruction-2---BTS---4x5.mp4",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "4b5406ccbc00",
+      "url": "/videos/h264/Barbour-London---16x9_3_prob4.mp4",
+      "references": [
+        "app/other/work/page.jsx"
+      ]
+    },
+    {
+      "id": "9a638dea8b31",
+      "url": "/videos/h264/cgi_antartcica-fallback.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "911ea33ba2a4",
+      "url": "/videos/h264/cgi_barbour_london updated-fallback.mp4",
+      "references": [
+        "app/seo.js"
+      ]
+    },
+    {
+      "id": "030ebd6ca322",
+      "url": "/videos/h264/cgi_barbour_london%20updated-fallback.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "7721873d24b7",
+      "url": "/videos/h264/cgi_barbour_ny%20updated-fallback.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "b782029429b9",
+      "url": "/videos/h264/cgi_barbour_seoul%20updated-fallback.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "8057444dff2d",
+      "url": "/videos/h264/cgi_barbour_shanghai%20updated-fallback.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "2a5694abf162",
+      "url": "/videos/h264/cgi_chainer%20updated-fallback.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "d1d3196f0cd7",
+      "url": "/videos/h264/cgi_frasers%20updated-fallback.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "8251d7e11765",
+      "url": "/videos/h264/cgi_onitsuka-fallback.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "907b0ac507ea",
+      "url": "/videos/h264/cgi_presto%20updated-fallback.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "40c0d4417383",
+      "url": "/videos/h264/cgi_spojka%20updated-fallback.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "ffdfecea4b34",
+      "url": "/videos/h264/cgi_tweezers-fallback.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "2dfcff41945d",
+      "url": "/videos/h264/cgi_yogrillz%20updated-fallback.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "a75725433e1f",
+      "url": "/videos/h264/cgi_yonex-fallback.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "68302a78e601",
+      "url": "/videos/h264/cgi-environments-fallback.mp4",
+      "references": [
+        "app/page.jsx",
+        "app/seo.js",
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "47b562142e14",
+      "url": "/videos/h264/chainer_header-fallback.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "31203c1ccdd0",
+      "url": "/videos/h264/cn_skyll-1x1-fallback.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "1ac858d60e0b",
+      "url": "/videos/h264/coding-02-fallback.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "4a635351f6d5",
+      "url": "/videos/h264/davinci-render2.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "a0c131d62a7f",
+      "url": "/videos/h264/mixed-reality-fallback.mp4",
+      "references": [
+        "app/seo.js"
+      ]
+    },
+    {
+      "id": "02169c068ed9",
+      "url": "/videos/h264/outpost_explorer-2x1-fallback.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "4b45a50dec6c",
+      "url": "/videos/h264/outpost_resort-2x1-fallback.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "e58f17d75a07",
+      "url": "/videos/h264/valkaai-logo-glass-prism-fallback.mp4",
+      "references": [
+        "app/other/work/page.jsx",
+        "app/page.jsx",
+        "app/seo.js",
+        "app/work/valkaai/page.jsx"
+      ]
+    },
+    {
+      "id": "91dbd8b2db0e",
+      "url": "/videos/h264/vizcom-brand-world-fallback.mp4",
+      "references": [
+        "app/other/work/page.jsx",
+        "app/page.jsx",
+        "app/seo.js",
+        "app/work/vizcom/page.jsx"
+      ]
+    },
+    {
+      "id": "779f7ef2e49e",
+      "url": "/videos/h264/volkov_homio-fallback.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "426ae78a0436",
+      "url": "/videos/h264/volkov_jimu-fallback.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "29b75b5e9aa3",
+      "url": "/videos/h264/volkov_sparta-fallback.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "e25088e7c354",
+      "url": "/videos/h264/vsx_16x9.mp4",
+      "references": [
+        "app/other/work/page.jsx"
+      ]
+    },
+    {
+      "id": "d29b989eba05",
+      "url": "/videos/h264/vsx_bts-01-fallback.mp4",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "c1875b5a4aae",
+      "url": "/videos/h264/vsx_bts-02-fallback.mp4",
+      "references": [
+        "app/seo.js",
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "63a9afcabc46",
+      "url": "/videos/h264/vsx_header-fallback.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "fb0f3fb78087",
+      "url": "/videos/h264/vsx_main-01-fallback.mp4",
+      "references": [
+        "app/seo.js",
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "4017f17861c5",
+      "url": "/videos/h264/vsx_main-02-fallback.mp4",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "ad807b5681a2",
+      "url": "/videos/h264/vsx_main-03-fallback.mp4",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "95eae8a08576",
+      "url": "/videos/h264/w25_aneta_greenscreen-fallback.mp4",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "5c8d42b76dc1",
+      "url": "/videos/h264/w25_injektaz-fallback.mp4",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "e7459cf4493e",
+      "url": "/videos/h264/w25_ledka-fallback.mp4",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "e979619fc0f8",
+      "url": "/videos/h264/w25_loop_bcg-fallback.mp4",
+      "references": [
+        "app/seo.js",
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "0abed1c489f3",
+      "url": "/videos/h264/w25_nametag-fallback.mp4",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "75b62c2731bd",
+      "url": "/videos/h264/w25_postupujici-fallback.mp4",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "eb752a88b347",
+      "url": "/videos/h264/w25_rytmus-fallback.mp4",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "d48f0be1f492",
+      "url": "/videos/h264/wrap25_injektaz_preview.mp4",
+      "references": [
+        "app/other/work/page.jsx"
+      ]
+    },
+    {
+      "id": "3d688af37210",
+      "url": "/videos/h264/yiskra_veha-fallback.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "ab046e5da116",
+      "url": "/videos/h265/ashfall_aptos-2x1-web.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "e35ea03416cc",
+      "url": "/videos/h265/ashfall_ccus%20updated-web2.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "30e6bc5e1478",
+      "url": "/videos/h265/ashfall_fifthrow%20updated-web.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "3bb9498d8bfe",
+      "url": "/videos/h265/ashfall_hyperframe%20updated-web-2.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "de44268408a4",
+      "url": "/videos/h265/ashfall_promo%20updated-web2.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "590b2eb459a0",
+      "url": "/videos/h265/barbour_header-web.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "bbaf7a31fd2e",
+      "url": "/videos/h265/cgi_antartcica-web2.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "3ddf07ef39cc",
+      "url": "/videos/h265/cgi_barbour_london%20updated-web2.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "5955a902873f",
+      "url": "/videos/h265/cgi_barbour_ny%20updated-web2.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "931eab080ac7",
+      "url": "/videos/h265/cgi_barbour_seoul%20updated-web2.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "e3edd9031214",
+      "url": "/videos/h265/cgi_barbour_shanghai%20updated-web2.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "f0e7b4644276",
+      "url": "/videos/h265/cgi_chainer%20updated-web2.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "f5e91f27948b",
+      "url": "/videos/h265/cgi_frasers%20updated-web2.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "3e6dfdf0c99e",
+      "url": "/videos/h265/cgi_onitsuka-web2.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "6755151e8f59",
+      "url": "/videos/h265/cgi_presto%20updated-web2.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "6eacf3a39f3c",
+      "url": "/videos/h265/cgi_spojka%20updated-web2.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "c560882f5f44",
+      "url": "/videos/h265/cgi_tweezers-web2.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "570c91220c11",
+      "url": "/videos/h265/cgi_yogrillz%20updated-web2.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "0dad1c2a9aa5",
+      "url": "/videos/h265/cgi_yonex-web-2.mp4",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "3cac213b06f4",
+      "url": "/videos/h265/cgi-environments-web.mp4",
+      "references": [
+        "app/page.jsx",
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "d6f7a139033b",
+      "url": "/videos/h265/chainer_header-web.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "7d6e0f619c52",
+      "url": "/videos/h265/cn_skyll-1x1-web.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "99519b022679",
+      "url": "/videos/h265/coding-01-web.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "1d80bbfcd0ca",
+      "url": "/videos/h265/coding-02-web.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "aac5a85a695d",
+      "url": "/videos/h265/kokos-web.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "4e093fdea72d",
+      "url": "/videos/h265/outpost_explorer-2x1-web.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "361049c222ab",
+      "url": "/videos/h265/outpost_resort-2x1-web.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "228e812522cd",
+      "url": "/videos/h265/valkaai-logo-glass-prism-web.mp4",
+      "references": [
+        "app/other/work/page.jsx",
+        "app/page.jsx",
+        "app/work/valkaai/page.jsx"
+      ]
+    },
+    {
+      "id": "a12981d9efb5",
+      "url": "/videos/h265/vizcom-brand-world-web.mp4",
+      "references": [
+        "app/other/work/page.jsx",
+        "app/page.jsx",
+        "app/work/vizcom/page.jsx"
+      ]
+    },
+    {
+      "id": "0bc9c17d0a3c",
+      "url": "/videos/h265/volkov_homio-web2.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "98734b2ebb77",
+      "url": "/videos/h265/volkov_jimu-web2.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "91d426c73e21",
+      "url": "/videos/h265/volkov_sparta-web2.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "e11ab8d5cc81",
+      "url": "/videos/h265/vsx_bts-01-web.mp4",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "94f918f6d364",
+      "url": "/videos/h265/vsx_bts-02-web.mp4",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "357e5594a1b8",
+      "url": "/videos/h265/vsx_header-web.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "b62095af1ef5",
+      "url": "/videos/h265/vsx_main-01-web.mp4",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "6afc53eccc5d",
+      "url": "/videos/h265/vsx_main-02-web.mp4",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "54f587ef9536",
+      "url": "/videos/h265/vsx_main-03-web.mp4",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "5488666f4d5e",
+      "url": "/videos/h265/w25_aneta_greenscreen-web.mp4",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "8e795e2c88d7",
+      "url": "/videos/h265/w25_injektaz-web.mp4",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "d933a6504e06",
+      "url": "/videos/h265/w25_ledka-web.mp4",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "cf7293ed5ed2",
+      "url": "/videos/h265/w25_loop_bcg-web.mp4",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "caba0a1f296a",
+      "url": "/videos/h265/w25_nametag-web.mp4",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "f479b9d7e2ad",
+      "url": "/videos/h265/w25_postupujici-web.mp4",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "e010112732aa",
+      "url": "/videos/h265/w25_rytmus-web.mp4",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "36a8caf361e6",
+      "url": "/videos/h265/yiskra_veha-web2.mp4",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "45a84fb26c51",
+      "url": "/videos/other/Barbour---IiQ---Bus---BTS----4x5_1.webm",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "4178e0188980",
+      "url": "/videos/other/Barbour---IiQ---Fern-02--BTS----4x5.webm",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "2a6d5849206d",
+      "url": "/videos/other/Barbour---IiQ---Fern-03--BTS----4x5.webm",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "bc09820fd688",
+      "url": "/videos/other/Barbour---IiQ---Instant-Render-2---BTS----4x5.webm",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "f55b1278efd9",
+      "url": "/videos/other/Barbour---IiQ---Nodes---BTS----4x5.webm",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "5f7225079ef8",
+      "url": "/videos/other/Barbour---IiQ---Reconstruction-2---BTS---4x5.mp4",
+      "references": [
+        "app/seo.js"
+      ]
+    },
+    {
+      "id": "538f82afcc1e",
+      "url": "/videos/other/Barbour---IiQ---Reconstruction-2---BTS---4x5.webm",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "1d232b11b11d",
+      "url": "/videos/other/Barbour-London---16x9_3_prob4.webm",
+      "references": [
+        "app/other/work/page.jsx"
+      ]
+    },
+    {
+      "id": "91f7da30b10b",
+      "url": "/videos/other/davinci-render2.webm",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "ae69c9ce5005",
+      "url": "/videos/other/vsx_16x9.webm",
+      "references": [
+        "app/other/work/page.jsx"
+      ]
+    },
+    {
+      "id": "56e4077d4b46",
+      "url": "/videos/other/wrap25_injektaz_preview.webm",
+      "references": [
+        "app/other/work/page.jsx"
+      ]
+    },
+    {
+      "id": "cfeba568b658",
+      "url": "/videos/posters/ashfall_aptos-2x1.jpg",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "39329a123144",
+      "url": "/videos/posters/ashfall_ccus%20updated.jpg",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "b2be68ba872e",
+      "url": "/videos/posters/ashfall_fifthrow%20updated.jpg",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "0e45e59d2ee5",
+      "url": "/videos/posters/ashfall_hyperframe%20updated.jpg",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "196c5932d63b",
+      "url": "/videos/posters/ashfall_promo%20updated.jpg",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "000ac8bb35af",
+      "url": "/videos/posters/barbour_header.jpg",
+      "references": [
+        "app/page.jsx",
+        "app/seo.js"
+      ]
+    },
+    {
+      "id": "f2a2f7cf1cb6",
+      "url": "/videos/posters/Barbour---IiQ---Bus---BTS----4x5_1.jpg",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "06181924df08",
+      "url": "/videos/posters/Barbour---IiQ---Fern-02--BTS----4x5.jpg",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "e300e5cceab2",
+      "url": "/videos/posters/Barbour---IiQ---Fern-03--BTS----4x5.jpg",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "4292c0bf28bc",
+      "url": "/videos/posters/Barbour---IiQ---Instant-Render-2---BTS----4x5.jpg",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "355b38c7acc6",
+      "url": "/videos/posters/Barbour---IiQ---Nodes---BTS----4x5.jpg",
+      "references": [
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "771340043291",
+      "url": "/videos/posters/Barbour---IiQ---Reconstruction-2---BTS---4x5.jpg",
+      "references": [
+        "app/seo.js",
+        "app/work/barbour/page.jsx"
+      ]
+    },
+    {
+      "id": "61daceb98597",
+      "url": "/videos/posters/Barbour-London---16x9_3_prob4.jpg",
+      "references": [
+        "app/other/work/page.jsx"
+      ]
+    },
+    {
+      "id": "a15f445b7274",
+      "url": "/videos/posters/cgi_antartcica.jpg",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "26e55c0899ce",
+      "url": "/videos/posters/cgi_barbour_london updated.jpg",
+      "references": [
+        "app/seo.js"
+      ]
+    },
+    {
+      "id": "686d1476812a",
+      "url": "/videos/posters/cgi_barbour_london%20updated.jpg",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "4bdc44758fc5",
+      "url": "/videos/posters/cgi_barbour_ny%20updated.jpg",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "c3e0d31e2393",
+      "url": "/videos/posters/cgi_barbour_seoul%20updated.jpg",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "9f36ffa2589e",
+      "url": "/videos/posters/cgi_barbour_shanghai%20updated.jpg",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "7bbe49e1c320",
+      "url": "/videos/posters/cgi_chainer%20updated.jpg",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "0c55d7bc5227",
+      "url": "/videos/posters/cgi_frasers%20updated.jpg",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "ce7a715f6b46",
+      "url": "/videos/posters/cgi_onitsuka.jpg",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "f8b33acba7e4",
+      "url": "/videos/posters/cgi_presto%20updated.jpg",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "9106173c4f8b",
+      "url": "/videos/posters/cgi_spojka%20updated.jpg",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "b9ae32dec534",
+      "url": "/videos/posters/cgi_tweezers.jpg",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "38b71cd68375",
+      "url": "/videos/posters/cgi_yogrillz%20updated.jpg",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "a814ff4f59a3",
+      "url": "/videos/posters/cgi_yonex.jpg",
+      "references": [
+        "app/services/mixed-reality/page.jsx"
+      ]
+    },
+    {
+      "id": "f3e12375cb4b",
+      "url": "/videos/posters/cgi-environments.jpg",
+      "references": [
+        "app/page.jsx",
+        "app/seo.js",
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "a43b0ac73ae3",
+      "url": "/videos/posters/chainer_header.jpg",
+      "references": [
+        "app/page.jsx",
+        "app/seo.js"
+      ]
+    },
+    {
+      "id": "6ca439cb2550",
+      "url": "/videos/posters/cn_skyll-1x1.jpg",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "931e4a9426b8",
+      "url": "/videos/posters/coding-01.jpg",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "9f53a4469e3d",
+      "url": "/videos/posters/coding-02.jpg",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "3a8883de905a",
+      "url": "/videos/posters/davinci-render2.jpg",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "4bfa6deec889",
+      "url": "/videos/posters/kokos.jpg",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "23f820a12cf8",
+      "url": "/videos/posters/mixed-reality.jpg",
+      "references": [
+        "app/seo.js"
+      ]
+    },
+    {
+      "id": "4befa5693ca0",
+      "url": "/videos/posters/outpost_explorer-2x1.jpg",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "808b19a8335f",
+      "url": "/videos/posters/outpost_resort-2x1.jpg",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "557e332a1ed1",
+      "url": "/videos/posters/valkaai-logo-glass-prism.jpg",
+      "references": [
+        "app/other/work/page.jsx",
+        "app/page.jsx",
+        "app/seo.js",
+        "app/work/valkaai/page.jsx"
+      ]
+    },
+    {
+      "id": "322169e8d777",
+      "url": "/videos/posters/vizcom-brand-world.jpg",
+      "references": [
+        "app/other/work/page.jsx",
+        "app/page.jsx",
+        "app/seo.js",
+        "app/work/vizcom/page.jsx"
+      ]
+    },
+    {
+      "id": "4bc02c609310",
+      "url": "/videos/posters/volkov_homio.jpg",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "cbd868041f4a",
+      "url": "/videos/posters/volkov_jimu.jpg",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "94ea9ba74ebb",
+      "url": "/videos/posters/volkov_sparta.jpg",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "1a969dc73abe",
+      "url": "/videos/posters/vsx_16x9.jpg",
+      "references": [
+        "app/other/work/page.jsx"
+      ]
+    },
+    {
+      "id": "67df1010ba45",
+      "url": "/videos/posters/vsx_bts-01.jpg",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "d3661454be98",
+      "url": "/videos/posters/vsx_bts-02.jpg",
+      "references": [
+        "app/seo.js",
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "3c7daba215ba",
+      "url": "/videos/posters/vsx_header.jpg",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "2a53e4393f86",
+      "url": "/videos/posters/vsx_main-01.jpg",
+      "references": [
+        "app/seo.js",
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "2bba65fd5553",
+      "url": "/videos/posters/vsx_main-02.jpg",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "5d6ffa3b0a9e",
+      "url": "/videos/posters/vsx_main-03.jpg",
+      "references": [
+        "app/work/the-vsx-sports-bra/page.jsx"
+      ]
+    },
+    {
+      "id": "b0a512183514",
+      "url": "/videos/posters/w25_aneta_greenscreen.jpg",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "c01574497c8a",
+      "url": "/videos/posters/w25_injektaz.jpg",
+      "references": [
+        "app/seo.js",
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "ae5df70d9da9",
+      "url": "/videos/posters/w25_ledka.jpg",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "897259e4ea67",
+      "url": "/videos/posters/w25_loop_bcg.jpg",
+      "references": [
+        "app/seo.js",
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "8ddd8dbf3e97",
+      "url": "/videos/posters/w25_nametag.jpg",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "7ae63b47e713",
+      "url": "/videos/posters/w25_postupujici.jpg",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "7780f071334f",
+      "url": "/videos/posters/w25_rytmus.jpg",
+      "references": [
+        "app/work/the-mag-w-rap-2025/page.jsx"
+      ]
+    },
+    {
+      "id": "26bb7b0e9d4b",
+      "url": "/videos/posters/wrap25_injektaz_preview.jpg",
+      "references": [
+        "app/other/work/page.jsx"
+      ]
+    },
+    {
+      "id": "34d1ab78b3f6",
+      "url": "/videos/posters/yiskra_veha.jpg",
+      "references": [
+        "app/services/3d-environments/page.jsx"
+      ]
+    },
+    {
+      "id": "db8c7bed95b0",
+      "url": "https://abduzeedo.com/favicon.ico",
+      "references": [
+        "components/RecognitionModal.jsx"
+      ]
+    },
+    {
+      "id": "e41478e63cb1",
+      "url": "https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69944082d88aed7c8242c463_Comp%201%20(0-00-00-00).png",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "be044f8407f8",
+      "url": "https://cdn.prod.website-files.com/5d626c045bf4d84a1c256e90/69944804e0ecbc47b70b6bea_Comp%202%20(0-00-00-00).png",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "aacd820b93e2",
+      "url": "https://d3e54v103j8qbb.cloudfront.net/static/youtube-placeholder.2b05e7d68d.svg",
+      "references": [
+        "styles/krystofs-portfolio.webflow.scss"
+      ]
+    },
+    {
+      "id": "9ec7e20315db",
+      "url": "https://global.divhunt.com/5b25794ad4a46784aa03244df4a7a28d_5809.png",
+      "references": [
+        "components/RecognitionModal.jsx"
+      ]
+    },
+    {
+      "id": "f09ca56b0a72",
+      "url": "https://images.squarespace-cdn.com/content/v1/663ba87248e1575777904df4/e39de4b0-db21-4e23-91f5-816b1a8a12dc/favicon.ico?format=100w",
+      "references": [
+        "components/RecognitionModal.jsx"
+      ]
+    },
+    {
+      "id": "333bb122da2c",
+      "url": "https://monopo.london/favicon/favicon-32x32.png",
+      "references": [
+        "components/RecognitionModal.jsx"
+      ]
+    },
+    {
+      "id": "5f6ff3c68895",
+      "url": "https://muz.li/favicon.ico",
+      "references": [
+        "components/RecognitionModal.jsx"
+      ]
+    },
+    {
+      "id": "6778f16ddfda",
+      "url": "https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/68f3a8823d027ddf4acf306e_coding-01-down.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "051551350e6d",
+      "url": "https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/6904bf39c739929045b96bb7_IG_feed_1080x1080%20(1).mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "444209f3b022",
+      "url": "https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/6994449789efbe463813c5f2_web-video-2k.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "ad2eeb65f1fa",
+      "url": "https://s3.amazonaws.com/webflow-prod-assets/5d626c045bf4d84a1c256e90/699447a96279cd427dd46294_web-video-mobile.mp4",
+      "references": [
+        "app/page.jsx"
+      ]
+    },
+    {
+      "id": "bee43654abf4",
+      "url": "https://static.cdninstagram.com/rsrc.php/y4/r/QaBlI0OZiks.ico",
+      "references": [
+        "components/RecognitionModal.jsx"
+      ]
+    },
+    {
+      "id": "133bc10ea307",
+      "url": "https://the-brandidentity.com/favicon.ico",
+      "references": [
+        "components/RecognitionModal.jsx"
+      ]
+    },
+    {
+      "id": "103875f199ce",
+      "url": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-poster-00001.jpg",
+      "references": [
+        "app/work/old-projects/apify/page.jsx"
+      ]
+    },
+    {
+      "id": "c466fdd762a3",
+      "url": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-transcode.mp4",
+      "references": [
+        "app/work/old-projects/apify/page.jsx"
+      ]
+    },
+    {
+      "id": "0dd2c34e5c83",
+      "url": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-transcode.webm",
+      "references": [
+        "app/work/old-projects/apify/page.jsx"
+      ]
+    },
+    {
+      "id": "1e661f2e4259",
+      "url": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e3461a2a73c8622898d8c1_bezestrachu-transformation-2-poster-00001.jpg",
+      "references": [
+        "app/work/old-projects/bezestrachu/page.jsx"
+      ]
+    },
+    {
+      "id": "d8dc0689b640",
+      "url": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e3461a2a73c8622898d8c1_bezestrachu-transformation-2-transcode.mp4",
+      "references": [
+        "app/work/old-projects/bezestrachu/page.jsx"
+      ]
+    },
+    {
+      "id": "2d45a293624b",
+      "url": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e3461a2a73c8622898d8c1_bezestrachu-transformation-2-transcode.webm",
+      "references": [
+        "app/work/old-projects/bezestrachu/page.jsx"
+      ]
+    },
+    {
+      "id": "591cc050b2a9",
+      "url": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e3467f89fc0b83a22c5880_vid-3-poster-00001.jpg",
+      "references": [
+        "app/work/old-projects/bezestrachu/page.jsx"
+      ]
+    },
+    {
+      "id": "df79f53a73cf",
+      "url": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e3467f89fc0b83a22c5880_vid-3-transcode.mp4",
+      "references": [
+        "app/work/old-projects/bezestrachu/page.jsx"
+      ]
+    },
+    {
+      "id": "d1d4bfe960c6",
+      "url": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e3467f89fc0b83a22c5880_vid-3-transcode.webm",
+      "references": [
+        "app/work/old-projects/bezestrachu/page.jsx"
+      ]
+    },
+    {
+      "id": "b24b6bd828f8",
+      "url": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/6547b0ff636d8d2153b3eefd_portofilio-poster-00001.jpg",
+      "references": [
+        "app/other/work/page.jsx"
+      ]
+    },
+    {
+      "id": "250c537d5a30",
+      "url": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/6547b0ff636d8d2153b3eefd_portofilio-transcode.mp4",
+      "references": [
+        "app/other/work/page.jsx"
+      ]
+    },
+    {
+      "id": "9fd60bcc3984",
+      "url": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/6547b0ff636d8d2153b3eefd_portofilio-transcode.webm",
+      "references": [
+        "app/other/work/page.jsx"
+      ]
+    },
+    {
+      "id": "3ca64edc9ec9",
+      "url": "https://www.awwwards.com/favicon.ico",
+      "references": [
+        "components/RecognitionModal.jsx"
+      ]
+    },
+    {
+      "id": "d11280d1d3ad",
+      "url": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/images/cursor.svg",
+      "references": [
+        "components/CustomCursor.jsx"
+      ]
+    }
+  ]
+}
