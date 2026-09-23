@@ -5,10 +5,10 @@ Fast map for agents working in this repository. Prefer this file over rediscover
 ## Project at a glance
 
 - Next.js 16 App Router portfolio, React 19, JavaScript/JSX, npm.
-- Mostly static pages; `npm run build` currently prerenders 26 application routes plus framework routes.
-- UI was migrated from Webflow. Preserve existing Webflow class names and DOM structure unless the task explicitly calls for a redesign.
-- Styling: `styles/normalize.css`, `styles/webflow.css`, then the main editable SCSS file `styles/krystofs-portfolio.webflow.scss`, all imported by `app/layout.jsx`.
-- Interactions: GSAP hooks/components; Three.js is used by the depth effect. There is no test suite.
+- Static App Router pages; use the build output for the current route inventory.
+- Portfolio 2027 is rebuilt from Figma. The Webflow implementation is archived at `checkpoint/pre-rebuild-2026-09-23`.
+- Styling: `styles/portfolio.css`, imported by `app/layout.jsx`.
+- Interactions: React, CSS and native browser APIs in `components/portfolio/`. No GSAP or Three.js runtime.
 
 ## Start here
 
@@ -18,15 +18,15 @@ Fast map for agents working in this repository. Prefer this file over rediscover
 | Homepage | `app/page.jsx` |
 | Public pages | `app/**/page.jsx` |
 | Shared UI | `components/` |
-| Reusable interaction logic | `hooks/` |
-| Main styles | `styles/krystofs-portfolio.webflow.scss` |
+| Reusable interaction logic | `components/portfolio/` |
+| Main styles | `styles/portfolio.css` |
 | SEO source of truth, route list, structured data | `app/seo.js` |
 | Sitemaps and robots | `app/sitemap.js`, `app/image-sitemap.xml/route.js`, `app/robots.js` |
 | Media behavior and codec conventions | `docs/video-and-media.md` |
 | Case-study design, content, icons and Work/Fun rules | `docs/portfolio-2027-case-study-rules.md` |
 | Inline figure source notes and case-study evidence audit | `docs/portfolio-2027-source-notes.md` |
-| Animation inventory | `docs/animations.md` |
-| 3D service-card behavior | `docs/3d-tilt-service-cards.md` |
+| Motion direction | `docs/portfolio-2027-motion.md` |
+| Content and media records | `content/` |
 | Blob/poster utilities | `scripts/` |
 
 Route groups worth knowing:
@@ -34,7 +34,6 @@ Route groups worth knowing:
 - `/services/*`: current service landing pages.
 - `/work/*`: current case studies. Public navigation, work indexes, sitemaps, and structured data must expose only the projects in `featuredCreativeWorks`/the homepage. `/work/old-projects/*` is legacy Webflow-derived content kept only for direct archival URLs; keep those routes `noindex, nofollow` and never link or list them publicly.
 - `/other/*`: CV, print CV, work index, and join page.
-- `/test/depth`: experimental depth-effect route; do not treat it as portfolio navigation.
 
 ## Local workflow
 
@@ -63,13 +62,13 @@ NEXT_PUBLIC_CDN_URL=https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com
 
 - Case studies: read `docs/portfolio-2027-case-study-rules.md` before creating or revising a case or its Figma design. Vizcom is the layout reference; Work and Fun have different content/credit rules. Preserve existing URLs and SEO policy.
 - New/renamed public page: update its `app/**/page.jsx` and also `portfolioRoutes`/metadata in `app/seo.js`; verify sitemap and structured data remain correct.
-- Shared navigation/contact: edit `components/Navbar.jsx` and/or `components/Footer.jsx`.
-- Video: use `EmbedVideo` inside a parent with explicit dimensions, or `BackgroundVideo`; read `docs/video-and-media.md` first.
-- Animation: prefer the existing GSAP hooks and honor `prefers-reduced-motion`; read `docs/animations.md` before changing global reveal/cursor behavior.
-- Images: prefer `next/image` for new content. Existing raw `<img>` tags are legacy and produce known lint warnings; do not perform a broad migration during an unrelated change.
+- Shared navigation/contact: `components/portfolio/Header.jsx` and `Footer.jsx`.
+- Video: use `components/portfolio/Media.jsx` with `media.aspect`; read `docs/video-and-media.md`.
+- Animation: use CSS/WAAPI, honor reduced motion, and follow `docs/portfolio-2027-motion.md`.
+- Images: use `next/image` and truthful dimensions or an explicitly sized fill container.
 - Client boundaries: pages are client components only where browser APIs/interactions require them. Keep new static content server-renderable when practical.
 
-Some deep-dive docs contain historical migration notes. Trust current imports/files over examples in docs; notably, `docs/video-and-media.md` still mentions a removed `ShimmerImage` component.
+See `docs/rebuild.md` for the current implementation map. Historical implementation research remains in the Git checkpoint.
 
 ## Media preparation and upload standard
 
@@ -104,7 +103,7 @@ ffmpeg -y -i source.mov -map 0:v:0 -an -map_metadata -1 -vf "scale='min(1440,iw)
 ffmpeg -y -i public/videos/h264/descriptive-slug-fallback.mp4 -ss 0 -frames:v 1 -q:v 2 public/videos/posters/descriptive-slug.jpg
 ```
 
-Wire new video through `EmbedVideo` (sized parent required) or `BackgroundVideo`, passing `poster`, `srcH265`, `srcAv1`, and `srcMp4` as CDN-relative `/videos/...` paths. H.265 must appear first, then AV1, then H.264. Add `posterAlt` and an accurate `posterSizes`; use `posterPriority` only above the fold.
+Wire video through `Media`, passing `poster`, `srcH265`, `srcAv1`, `srcMp4`, `alt` and `aspect` in the media record. Pass `sizes` and above-fold `priority` on the component. Source order is H.265, AV1, H.264.
 
 ### Upload and verify
 
@@ -123,12 +122,12 @@ git diff --check
 git status --short
 ```
 
-Baseline as of 2026-07-10: build passes; lint exits successfully with 104 existing `@next/next/no-img-element` warnings and no errors. There are no automated tests. For visual/interaction changes, check desktop and mobile widths in a browser; custom cursor/hover behavior requires a fine pointer.
+Rebuild baseline: lint passes with no warnings; production build passes. Run `node scripts/verify-portfolio.mjs` after building. Check desktop, tablet and mobile layouts and fine-pointer interactions.
 
 ## GitHub
 
 - Repository: `https://github.com/krysjezek/krystofs-portfolio`
-- Default working branch in this checkout: `master`
+- Current rebuild branch: `rebuild/portfolio-2027`; default branch: `master`
 - Remote: `origin`
 
 ```powershell
@@ -155,8 +154,6 @@ vercel.cmd inspect <deployment-url>
 
 Deploy only when explicitly requested. Before production deployment, require a passing build and verify the affected page at the returned deployment URL.
 
-## Known audit items
+## Recovery
 
-- `npm audit --omit=dev` currently reports 5 production dependency vulnerabilities (4 high, 1 moderate), including `next@16.1.6`; treat a framework upgrade as a dedicated task and retest visuals/build.
-- `README.md` is still the create-next-app placeholder and contains stale `.tsx`/Geist guidance.
-- `deploy.md` contains an old absolute checkout path, an SSH remote different from the current HTTPS remote, and assumes a local `.vercel` link. Use the portable commands above.
+Original source, experiments and historical notes: `checkpoint/pre-rebuild-2026-09-23`. See `docs/rebuild.md` for retained content and media gaps.

@@ -1,21 +1,21 @@
 # Portfolio 2027 rebuild
 
-The application is being rebuilt from the approved Figma design on `rebuild/portfolio-2027`.
+The application has been rebuilt from the approved Figma design on `rebuild/portfolio-2027`.
 The recoverable source is the annotated tag `checkpoint/pre-rebuild-2026-09-23`
 (`5d7e130f1494e1438c30c04d7da5d6a9e9194cc0`). Do not merge, push or deploy without an explicit request.
 
 ## Scope and completion gates
 
 - [x] Preserve the original implementation and all committed research in a Git checkpoint.
-- [ ] Inventory existing media references and separately back up ignored local media.
-- [ ] Extract project, recognition, service, CV and archive content from presentation code.
-- [ ] Implement Work, Fun and About from their desktop, tablet and mobile Figma references.
-- [ ] Implement all six current case studies, 3D Worlds, recognition, source notes and 404.
-- [ ] Rebuild remaining public pages and archived direct URLs with the shared system.
-- [ ] Preserve canonical URLs, public project eligibility, indexing and media behavior.
-- [ ] Remove Webflow styles/markup, obsolete components, unused dependencies and stale guidance.
-- [ ] Verify responsive appearance, keyboard use, history, media, error states and route policies.
-- [ ] Pass lint, build, applicable tests and `git diff --check`; commit the finished work.
+- [x] Inventory existing media references and separately back up ignored local media.
+- [x] Extract project, recognition, service, CV and archive content from presentation code.
+- [x] Implement Work, Fun and About from their desktop, tablet and mobile Figma references.
+- [x] Implement all six current case studies, 3D Worlds, recognition, source notes and 404.
+- [x] Rebuild remaining public pages and archived direct URLs with the shared system.
+- [x] Preserve canonical URLs, public project eligibility, indexing and media behavior.
+- [x] Remove Webflow styles/markup, obsolete components, unused dependencies and stale guidance.
+- [x] Verify responsive appearance, keyboard use, history, media, error states and route policies.
+- [x] Pass lint, build, applicable tests and `git diff --check`; commit the finished work.
 
 ## Sources of truth
 
@@ -39,3 +39,34 @@ delivery files exist. Never infer a playable URL from its filename.
 The homepage weather provider remains deferred in the approved handoff. Show Prague
 time; omit weather when no selected provider supplies a current observation. The
 airport experiment is not a requirement of the new homepage.
+
+## Implementation map
+
+- content/gallery.json holds 24 cards and the authored desktop/tablet/mobile orders.
+- content/cases.json holds the six case studies, specifications, credits, evidence copy and media rows.
+- content/profile.json, recognition.json, worlds.json and pages.json separate reusable content from presentation.
+- components/portfolio contains the new React components; styles/portfolio.css is the sole application stylesheet.
+- Legacy Webflow markup/styles, obsolete interaction components, GSAP/Sass/Three.js dependencies, unused fonts, experiment routes/APIs and stale implementation notes were removed. They remain recoverable from the checkpoint; no legacy runtime is imported.
+- Useful design decisions, evidence notes, media standards, route policies and SEO research remain current documentation.
+
+## Media and recovery
+
+73 prepared Figma assets are recorded by dimensions, node IDs and SHA-256 hashes. Their CDN URLs and content types were verified. Six odd-sized sources were corrected to retain exact source dimensions and published with versioned paths. No source was enlarged.
+
+The original 14 ignored local media files (50,895,043 bytes) were copied to C:/Users/kryst/Dev/portfolio-checkpoint-media-2026-09-23 and verified against SHA-256 hashes. New Figma source masters and the delivery manifest are backed up in C:/Users/kryst/Dev/portfolio-2027-media-masters-2026-09-23. Delivery files remain in ignored staging directories and Vercel Blob; no media binaries or secrets were committed.
+
+Eight embed-only source films have approved still previews: two Mag films, four Barbour city films, and two Chainer films. Their sourceEmbed and source-master-needed records remain explicit in cases.json. Acquiring and encoding those masters can replace the stills later. Existing deliveries retain their known codec availability, including legacy H.264/WebM-only footage; no missing codec URLs were invented.
+
+Weather remains intentionally deferred. The homepage shows Prague time without an invented weather reading.
+
+## Verification record — 23 September 2026
+
+Lint: zero errors or warnings. Production build: passes. scripts/verify-portfolio.mjs checks gallery permutations, six eligible routes, 18 recognition URLs, media dimensions, canonicals, main landmarks and archive noindex/nofollow policies.
+
+Browser review covered Work/Fun/About and 3D Worlds at 1440, 834 and 390; all six cases at desktop and mobile; CV/print CV, join, work index, mixed reality and representative archives. No horizontal overflow, broken visible images or page errors were found in the 24 primary-page captures. Verification artifacts are in the local temporary portfolio-qa directory.
+
+Behavior verified: manual keyboard tabs; browser Back restoring Fun/card focus/scroll; recognition title focus, 18 links, scroll lock and focus return; inline source notes and dismissal; copy success and denied-clipboard recovery; genuine HTTP 404 with two unique eligible recommendations; route failure retaining outgoing context and retrying the same destination; video error/poster/retry; AV1 playback; no below-fold video mount; reduced-motion and data-saver posters.
+
+The media rewrite fixes two inherited failure modes: shorthand AV1 declarations rejected by Chromium, and bubbling errors from an unsupported source being mistaken for failure of the entire video.
+
+Dependency maintenance remains separate from this redesign. npm audit --omit=dev reports 6 advisories (2 moderate, 3 high, 1 critical), including the retained Next.js version. No production deployment was performed. Resolve the framework/dependency upgrade before production release.

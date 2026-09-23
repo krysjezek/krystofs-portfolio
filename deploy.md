@@ -1,52 +1,31 @@
-# Deploy Runbook
+# Publishing
 
-Fast path for future agents working in this repo.
+Project: krystofs-portfolio. Canonical site: https://www.krystofjezek.com.
+Repository: https://github.com/krysjezek/krystofs-portfolio.
+The rebuild lives on rebuild/portfolio-2027 until explicitly approved for merging.
 
-## Project
-
-- App root: `C:\Users\kryst\Dropbox\Work\Kodeni\Portfolio Update\portfolio`
-- Git branch: `master`
-- Remote: `origin` (`git@github.com:krysjezek/krystofs-portfolio.git`)
-- Vercel project: `krystofs-portfolio`
-- Package manager: `npm` (`package-lock.json`)
-
-## Verify
+Only push or deploy when requested. From the repository root, first run:
 
 ```powershell
+npm.cmd run lint
 npm.cmd run build
+node scripts/verify-portfolio.mjs
+git diff --check
+git status --short --branch
 ```
 
-PowerShell blocks the `npm.ps1` shim on this machine, so call `npm.cmd`. Use this before pushing when code changed. For tiny content-only changes, `git diff --check` is the minimum sanity check.
-
-## Push
+Verify the affected pages at desktop and mobile sizes. Commit the intended files.
+If deployment is requested and this checkout is not linked:
 
 ```powershell
-git status --short --branch
-git add <changed-files>
-git commit -m "<message>"
-git push origin master
+vercel.cmd link --project krystofs-portfolio --yes
 ```
 
-## Deploy Production
-
-PowerShell blocks the `vercel.ps1` shim on this machine, so call the CMD shim explicitly:
+Then deploy and inspect the returned URL:
 
 ```powershell
 vercel.cmd deploy --prod --yes
-```
-
-If Vercel reports that the project is not linked, run this once from the app root:
-
-```powershell
-vercel.cmd link --yes
-```
-
-The repo already has `.vercel/project.json`, so linking should normally be unnecessary.
-
-## Post-Deploy Check
-
-```powershell
 vercel.cmd inspect <deployment-url>
 ```
 
-Open the production URL and verify the changed page or interaction. For this portfolio, hover/cursor changes should be checked in a desktop browser because the custom cursor is disabled on coarse pointers.
+Verify the affected pages at the returned deployment URL. Keep .vercel/ and .env* ignored. Do not infer authorization to push or merge from authorization to deploy.
