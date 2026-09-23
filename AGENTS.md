@@ -23,6 +23,7 @@ Fast map for agents working in this repository. Prefer this file over rediscover
 | SEO source of truth, route list, structured data | `app/seo.js` |
 | Sitemaps and robots | `app/sitemap.js`, `app/image-sitemap.xml/route.js`, `app/robots.js` |
 | Media behavior and codec conventions | `docs/video-and-media.md` |
+| Case-study design, content, icons and Work/Fun rules | `docs/portfolio-2027-case-study-rules.md` |
 | Animation inventory | `docs/animations.md` |
 | 3D service-card behavior | `docs/3d-tilt-service-cards.md` |
 | Blob/poster utilities | `scripts/` |
@@ -59,6 +60,7 @@ NEXT_PUBLIC_CDN_URL=https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com
 
 ## Change patterns
 
+- Case studies: read `docs/portfolio-2027-case-study-rules.md` before creating or revising a case or its Figma design. Vizcom is the layout reference; Work and Fun have different content/credit rules. Preserve existing URLs and SEO policy.
 - New/renamed public page: update its `app/**/page.jsx` and also `portfolioRoutes`/metadata in `app/seo.js`; verify sitemap and structured data remain correct.
 - Shared navigation/contact: edit `components/Navbar.jsx` and/or `components/Footer.jsx`.
 - Video: use `EmbedVideo` inside a parent with explicit dimensions, or `BackgroundVideo`; read `docs/video-and-media.md` first.

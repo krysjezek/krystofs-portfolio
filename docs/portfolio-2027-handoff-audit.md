@@ -6,7 +6,7 @@ Updated 2026-09-23 following the owner’s audit decisions. This replaces the ea
 
 ## Case-study references
 
-The original Vizcom frames retain their IDs on **10 · Case studies**. The other five cases reuse that design, with their existing copy, full credits and media sequences.
+The original Vizcom frames retain their IDs on **10 · Case studies**. All six cases follow the [case-study rules](portfolio-2027-case-study-rules.md), including the distinct Work/Fun content, named Work credits, identity icons and media crops. Those rules supersede the earlier uniform migration.
 
 | Case route | Desktop | Tablet | Mobile |
 | --- | --- | --- | --- |
@@ -70,7 +70,7 @@ Work is the default tab on /. Fun and About are local tab states, never /fun or 
 
 **History**
 
-Changing tabs does not add browser-history entries. Preserve the active tab, focused card and scroll in the existing homepage history entry before navigating to a case. Browser Back restores them. Direct homepage load defaults to Work. Both authored case Back/Home controls explicitly return to / with Work selected.
+Changing tabs does not add browser-history entries. Preserve the active tab, focused card and scroll in the existing homepage history entry before navigating to a case. Browser Back restores them. Direct homepage load defaults to Work. Authored case Back/Home controls return to / with the case’s category selected: Work for the four Work cases, Fun for The Mag Wrap and Chainer.
 
 **SEO preservation**
 
@@ -110,15 +110,15 @@ Portfolio / Label: Roobert PRO Regular 11/16, +2% tracking. Tags: surface/tag, 3
 
 **Background video**
 
-Retain current EmbedVideo / BackgroundVideo behavior: poster first, preferred H.265 then AV1 then H.264; muted loop, playsInline, preload none, mount at the current viewport threshold. Reduced motion/data saver retain the poster. Existing media dimensions, captions and alt text are preserved. No decorative player-control redesign.
+Retain current EmbedVideo / BackgroundVideo behavior: poster first, preferred H.265 then AV1 then H.264; muted loop, playsInline, preload none, mount at the current viewport threshold. Reduced motion/data saver retain the poster. Case heroes are 16:10; portrait videos are cropped to 3:4; media in each row shares a height with 5px gutters and no empty pockets. Preserve source masters, captions and useful alt text.
 
-**Failure and external players**
+**Failure and source embeds**
 
-Loading retains the poster and reserved space. A real video failure shows Video unavailable + Try again, while preserving the poster. YouTube/Vimeo retain native controls, titles and fullscreen behavior. The Vimeo launch film uses the existing Chainer project poster in the Figma still preview because oEmbed supplied no thumbnail.
+Loading retains the poster and reserved space. A real video failure shows Video unavailable + Try again, while preserving the poster. The new cases contain only photos and background videos, with no YouTube/Vimeo player cards or media click-throughs. Existing embed-only sources need authorised masters and delivery encodes before implementation; do not invent URLs. The Vimeo launch film uses the existing Chainer project poster in the Figma still preview because oEmbed supplied no thumbnail.
 
 **Asset completeness**
 
-The five additional cases use 35 existing posters/stills, inspected with ffprobe. Seven WebP stills also have lossless PNG previews inside Figma because its renderer did not display the uploaded WebP bytes. Published WebP files remain unchanged; no upscale or CDN replacement. All supplied source sequences are retained, including Mag’s two embeds, Barbour’s four embeds and BTS clips, VSX’s five clips and Chainer’s ten media entries. Existing codec gaps are tracked for implementation, not filled with invented URLs.
+The five additional cases use 35 existing posters/stills, inspected with ffprobe. Seven WebP stills also have lossless PNG previews inside Figma because its renderer did not display the uploaded WebP bytes. Published WebP files remain unchanged; no upscale or CDN replacement. Source sequences are retained, including the entries previously presented as Mag’s two embeds, Barbour’s four embeds and BTS clips, VSX’s five clips and Chainer’s ten media entries. Figma now specifies background-video treatment for moving media. Existing codec gaps and embed source acquisition are tracked for implementation.
 
 ## Feedback and accessibility
 
