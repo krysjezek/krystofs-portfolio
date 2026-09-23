@@ -11,7 +11,7 @@ const reference = JSON.parse(
 );
 const browser = process.env.LAYOUT_CDP_URL
   ? await chromium.connectOverCDP(process.env.LAYOUT_CDP_URL)
-  : await chromium.launch();
+  : await chromium.launch({ ignoreDefaultArgs: ["--hide-scrollbars"] });
 const context = await browser.newContext({
   reducedMotion: "reduce",
   viewport: { width: 1440, height: 844 },
@@ -27,6 +27,12 @@ try {
   for (const screen of reference.screens) {
     await page.setViewportSize({ width: screen.width, height: 844 });
     await page.goto(base + screen.route);
+    // Figma measures the content canvas; classic scrollbars occupy extra space.
+    const gutter = await page.evaluate(
+      () => innerWidth - document.body.clientWidth,
+    );
+    if (gutter)
+      await page.setViewportSize({ width: screen.width + gutter, height: 844 });
     await page.evaluate(() => document.fonts.ready);
     if (screen.tab) {
       await page.locator(`#tab-${screen.tab}`).click();
@@ -43,7 +49,10 @@ try {
       const actual = await element.evaluate((node) => {
         const rect = node.getBoundingClientRect();
         return {
-          x: rect.x,
+          x:
+            rect.x -
+            document.querySelector(".portfolio-shell").getBoundingClientRect()
+              .x,
           y: rect.y + scrollY,
           width: rect.width,
           height: rect.height,
@@ -74,9 +83,11 @@ try {
     assert.equal(await rules.count(), ruleCount, `Grid rules: ${screen.frame}`);
     for (let index = 0; index < ruleCount; index++) {
       const rule = await rules.nth(index).boundingBox();
+      const canvas = await page.locator(".portfolio-shell").boundingBox();
       assert(
-        Math.abs(rule.x - (index * (screen.width - 0.5)) / (ruleCount - 1)) <
-          reference.tolerance,
+        Math.abs(
+          rule.x - canvas.x - (index * (screen.width - 0.5)) / (ruleCount - 1),
+        ) < reference.tolerance,
       );
       assert.equal(rule.width, 0.5);
       assert.equal(
@@ -99,10 +110,75 @@ try {
     assert.equal(await page.locator(".page-grid > span:visible").count(), 4);
   }
 
+  // Switching between overflowing galleries and a short About page must not
+  // change the canvas position. The short page's footer meets the viewport edge.
+  for (const [width, height] of [
+    [1920, 1400],
+    [1280, 1600],
+    [834, 1600],
+    [390, 2400],
+  ]) {
+    await page.setViewportSize({ width, height });
+    await page.goto(base);
+    await page.evaluate(() => document.fonts.ready);
+    let initial;
+    for (const tab of ["Work", "About", "Fun", "About", "Work"]) {
+      await page.getByRole("tab", { name: tab, exact: true }).click();
+      const state = await page.evaluate(() => {
+        const canvas = document
+          .querySelector(".portfolio-shell")
+          .getBoundingClientRect();
+        const footer = document
+          .querySelector(".site-footer")
+          .getBoundingClientRect();
+        return {
+          x: canvas.x,
+          width: canvas.width,
+          navTop:
+            document
+              .querySelector(".portfolio-navigation")
+              .getBoundingClientRect().top + scrollY,
+          footerBottom: footer.bottom + scrollY,
+          contentBottom:
+            document
+              .querySelector("[role=tabpanel]:not([hidden])")
+              .getBoundingClientRect().bottom + scrollY,
+          footerTop: footer.top + scrollY,
+        };
+      });
+      initial ||= state;
+      assert.equal(state.x, initial.x, `Tab shifts sideways at ${width}px`);
+      assert.equal(
+        state.width,
+        initial.width,
+        `Tab changes width at ${width}px`,
+      );
+      assert.equal(
+        state.navTop,
+        initial.navTop,
+        `Tab changes header layout at ${width}px`,
+      );
+      assert(
+        state.footerTop >= state.contentBottom + 34.9,
+        "Footer overlaps content",
+      );
+      if (tab === "About")
+        assert(
+          Math.abs(state.footerBottom - height) < 0.6,
+          `Footer above viewport bottom at ${width}px`,
+        );
+    }
+  }
+
   // Modal layout and keyboard dismissal remain usable after font/grid changes.
   for (const width of [1440, 390]) {
     await page.setViewportSize({ width, height: 844 });
     await page.goto(base);
+    const gutter = await page.evaluate(
+      () => innerWidth - document.body.clientWidth,
+    );
+    if (gutter)
+      await page.setViewportSize({ width: width + gutter, height: 844 });
     await page.getByRole("tab", { name: "About", exact: true }).click();
     await page.getByRole("button", { name: "More info", exact: true }).click();
     const dialog = page.getByRole("dialog");
@@ -128,7 +204,7 @@ try {
   assert.deepEqual(errors, [], "Browser runtime errors");
   assert.deepEqual(failures, [], "Figma coordinate differences");
   console.log(
-    `PASS: ${reference.screens.length} Figma screens, ${checks} coordinate checks (±${reference.tolerance}px), 1920px canvas, and recognition dialog.`,
+    `PASS: ${reference.screens.length} Figma screens, ${checks} coordinate checks (±${reference.tolerance}px), stable tab layout, bottom-aligned footer, 1920px canvas, and recognition dialog.`,
   );
 } finally {
   await context.close();

@@ -31,6 +31,7 @@
 }
 html {
   color-scheme: light;
+  scrollbar-gutter: stable both-edges;
 }
 body {
   margin: 0;
@@ -136,11 +137,20 @@ button {
 }
 .portfolio-shell {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1440px;
   margin-inline: auto;
   min-height: 100vh;
+  min-height: 100dvh;
   isolation: isolate;
+}
+.portfolio-shell > main {
+  flex: 1 0 auto;
+}
+.portfolio-shell > :is(header, footer) {
+  flex-shrink: 0;
 }
 .page-grid {
   position: absolute;

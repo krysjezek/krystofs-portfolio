@@ -24,3 +24,9 @@ Lint, production build and `scripts/verify-portfolio.mjs` pass. The latter retai
 The coordinate test is a layout regression check, not a pixel-difference assertion for every image or video frame. Browser text rasterization can differ from Figma. Live time, animated media and the approved random related-project selection are dynamic; related-project samples can change the total case-page height. Weather remains deferred, and the eight films awaiting source masters retain their approved posters.
 
 The application remains available locally. Nothing was pushed or deployed.
+
+## Follow-up: tab shifts and short-page footer
+
+The initial check used a browser with hidden scrollbars and missed the horizontal shift when About fits the viewport. The root now reserves stable scrollbar space on both sides, keeping the canvas centered as page height changes. The page shell uses a column flex layout with a growing main region, so the footer meets the bottom of a short viewport and follows content on longer pages.
+
+The layout test now launches Chromium with scrollbars enabled. Figma coordinates are compared relative to the content canvas, allowing for scrollbar space without changing the reference measurements. Additional checks repeatedly switch Work/About/Fun at 1920×1400, 1280×1600, 834×1600 and 390×2400, asserting unchanged horizontal position, width and navigation position, a bottom-aligned About footer, and no content overlap.
