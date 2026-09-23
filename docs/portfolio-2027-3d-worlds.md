@@ -11,9 +11,11 @@ Completed 23 September 2026. Source: `app/services/3d-environments/page.jsx`, in
 
 ## Design and editing
 
-This remains a service presentation on `/services/3d-environments`, even though its frames live on the Case studies page. It does not claim a single client, project date or Work/Fun classification. The source introduction, service overview, six deliverables, all 12 selected worlds, five process steps, service-fit guidance, Motion Mockups alternative and contact actions are represented.
+This remains a service presentation on `/services/3d-environments`, even though its frames live on the Case studies page. It does not claim a single client, project date or Work/Fun classification. The source introduction, service overview, six deliverables, all 12 selected worlds, five process steps and service-fit guidance are represented. The owner's follow-up removes the introductory contact buttons/address and the entire closing contact section at all three sizes.
 
-The redesign follows Vizcom's white surface, Roobert PRO styles, muted supporting copy, column rules, fine dividers, 16:10 opening media and 5px media gutters. Desktop and tablet use three editorial columns and alternating 2:1 gallery pairs with equal image heights. Mobile stacks content in source order, using 20px text insets and 5px media insets. Gallery titles and collaborator credits sit below the images. Tablet contact actions stack to fit their column.
+The redesign follows Vizcom's white surface, Roobert PRO styles, muted supporting copy, column rules, fine dividers, 16:10 opening media and 5px media gutters. Desktop and tablet use three editorial columns and alternating 2:1 gallery pairs with equal image heights. Mobile stacks content in source order, using 20px text insets and 5px media insets. Gallery titles and collaborator credits sit below the images.
+
+Motion Mockups is now a standalone 17.5px Roobert PRO link at every size, with the same linked 15px icon and native external-link instance used in the homepage header. It replaces the entire Ready-made alternative label, explanatory paragraph and Explore link. Its URL is `https://www.motionmockups.com/`.
 
 Edit global typography/colors in the existing Foundations styles and variables. Header, footer, secondary buttons, service details and media remain instances of existing shared components. Detail labels and values use their existing component properties; button labels use `Label`. Edit local copy and the gallery image fills on each responsive screen. No new competing component library was created. Directory links navigate to the three frames.
 
@@ -23,11 +25,11 @@ All imagery comes from the source page's existing CDN media. The showreel uses i
 
 Three near-empty opening posters have clearer Figma-only still previews extracted from their existing H.264 deliveries: Ashfall Launch at 15 seconds, Veha Architects at 8 seconds, and Fifthrow at 3 seconds. These are still representations of background videos. The website posters, source masters, delivery encodes and published URLs remain unchanged. All other selected-world posters retain the source imagery and order.
 
-Video frames remain raster image fills, not editable 3D scenes or working Figma video players. Text, layout and shared UI are editable. Booking and Motion Mockups links have URL targets. Copy email is a visual control; this task does not implement clipboard behavior in Figma or the website. Existing website media and email feedback contracts continue to apply during implementation.
+Video frames remain raster image fills, not editable 3D scenes or working Figma video players. Text, layout and shared UI are editable. The Motion Mockups link has a URL target. Existing website media contracts continue to apply during implementation.
 
 ## Verification
 
-Visually reviewed all three full compositions and a readable mobile introduction. Structural checks found 89 text nodes per screen, all using Roobert PRO, no overflowing text, and all 12 gallery images populated per screen. The three layouts contain 31/36/36 linked component instances respectively.
+Initially reviewed all three full compositions and a readable mobile introduction. Structural checks confirmed Roobert PRO typography, no overflowing text and all 12 gallery images populated per screen. Following CTA removal, reviewed each revised service-fit section and verified that no removed CTA or alternative-description copy remains, the Motion Mockups label is 17.5px in every layout, its 15px icon is visible and text does not overflow. Column-rule heights were shortened to the new page heights.
 
 A temporary change to the shared secondary button's radius propagated through its main component, the case-header module and the new desktop screen; the original 5px radius was restored and verified. Shared style and semantic color bindings were retained; layout spacing is bound to existing variables where matching values exist.
 
