@@ -1,0 +1,358 @@
+{
+  "work": {
+    "cards": [
+      {
+        "id": "outland-vizcom",
+        "name": "Outland, Vizcom",
+        "category": "work",
+        "disciplines": "3D, Art Direction",
+        "href": "/work/vizcom",
+        "poster": "/images/portfolio-2027-gallery-outland-vizcom-v2.webp",
+        "aspect": 1.33333,
+        "tabletAspect": 1.33333,
+        "mobileAspect": 1.33333
+      },
+      {
+        "id": "shelby",
+        "name": "Shelby",
+        "category": "work",
+        "disciplines": "AR, Interaction, Creative Development",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-shelby.webp",
+        "aspect": 1,
+        "tabletAspect": 1,
+        "mobileAspect": 1
+      },
+      {
+        "id": "victoria-s-secret",
+        "name": "Victoria’s Secret",
+        "category": "work",
+        "disciplines": "3D, Motion, Art Direction",
+        "href": "/work/the-vsx-sports-bra",
+        "poster": "/images/portfolio-2027-gallery-victoria-s-secret.webp",
+        "aspect": 1.77778,
+        "tabletAspect": 0.75,
+        "mobileAspect": 0.75
+      },
+      {
+        "id": "barbour",
+        "name": "Barbour",
+        "category": "work",
+        "disciplines": "3D, Motion, Art Direction",
+        "href": "/work/barbour",
+        "poster": "/images/portfolio-2027-gallery-barbour.webp",
+        "aspect": 0.75,
+        "tabletAspect": 0.75,
+        "mobileAspect": 0.75
+      },
+      {
+        "id": "motion-mockups",
+        "name": "Motion Mockups",
+        "category": "work",
+        "disciplines": "Product Design, Creative Development",
+        "href": "https://www.motionmockups.com/",
+        "poster": "/images/portfolio-2027-gallery-motion-mockups.webp",
+        "aspect": 0.75,
+        "tabletAspect": 1.33333,
+        "mobileAspect": 1.33333
+      },
+      {
+        "id": "custom-mockups",
+        "name": "Custom Mockups",
+        "category": "work",
+        "disciplines": "3D, Art Direction",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-custom-mockups.webp",
+        "aspect": 1.33333,
+        "tabletAspect": 1.33333,
+        "mobileAspect": 1.33333
+      },
+      {
+        "id": "stnck",
+        "name": "STNCK",
+        "category": "work",
+        "disciplines": "3D, Motion, Art Direction",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-stnck.webp",
+        "aspect": 1,
+        "tabletAspect": 1,
+        "mobileAspect": 1
+      },
+      {
+        "id": "outland-rounds",
+        "name": "Outland, Rounds",
+        "category": "work",
+        "disciplines": "Automation, Scripting",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-outland-rounds.webp",
+        "aspect": 1.77778,
+        "tabletAspect": 0.75,
+        "mobileAspect": 0.75
+      },
+      {
+        "id": "valkaai",
+        "name": "ValkaAI",
+        "category": "work",
+        "disciplines": "3D, Motion, Art Direction",
+        "href": "/work/valkaai",
+        "poster": "/images/portfolio-2027-gallery-valkaai.webp",
+        "aspect": 1,
+        "tabletAspect": 1,
+        "mobileAspect": 1
+      },
+      {
+        "id": "gusto",
+        "name": "Gusto",
+        "category": "work",
+        "disciplines": "3D, Motion, Art Direction",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-gusto.webp",
+        "aspect": 0.75,
+        "tabletAspect": 0.75,
+        "mobileAspect": 0.75
+      },
+      {
+        "id": "trezor",
+        "name": "Trezor",
+        "category": "work",
+        "disciplines": "3D, Motion, Art Direction",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-trezor.webp",
+        "aspect": 1.33333,
+        "tabletAspect": 1.33333,
+        "mobileAspect": 1.33333
+      },
+      {
+        "id": "fantasy",
+        "name": "Fantasy",
+        "category": "work",
+        "disciplines": "3D, Motion, Art Direction",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-fantasy-v2.webp",
+        "aspect": 1.77778,
+        "tabletAspect": 1.77778,
+        "mobileAspect": 1.77778
+      }
+    ],
+    "desktop": [
+      "outland-vizcom",
+      "shelby",
+      "victoria-s-secret",
+      "barbour",
+      "motion-mockups",
+      "custom-mockups",
+      "stnck",
+      "outland-rounds",
+      "valkaai",
+      "gusto",
+      "trezor",
+      "fantasy"
+    ],
+    "tablet": [
+      "outland-vizcom",
+      "valkaai",
+      "shelby",
+      "fantasy",
+      "gusto",
+      "victoria-s-secret",
+      "motion-mockups",
+      "barbour",
+      "custom-mockups",
+      "stnck",
+      "outland-rounds",
+      "trezor"
+    ],
+    "mobile": [
+      "outland-vizcom",
+      "motion-mockups",
+      "valkaai",
+      "barbour",
+      "shelby",
+      "custom-mockups",
+      "fantasy",
+      "stnck",
+      "gusto",
+      "outland-rounds",
+      "victoria-s-secret",
+      "trezor"
+    ]
+  },
+  "fun": {
+    "cards": [
+      {
+        "id": "c-render-engine",
+        "name": "C++ Render Engine",
+        "category": "fun",
+        "disciplines": "",
+        "href": "https://gitlab.fel.cvut.cz/jezekkr2/pcc-ray-tracing",
+        "poster": "/images/portfolio-2027-gallery-c-render-engine.webp",
+        "aspect": 1,
+        "tabletAspect": 1,
+        "mobileAspect": 1
+      },
+      {
+        "id": "frozen-jewelry",
+        "name": "Frozen Jewelry",
+        "category": "fun",
+        "disciplines": "",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-frozen-jewelry.webp",
+        "aspect": 0.75,
+        "tabletAspect": 0.75,
+        "mobileAspect": 0.75
+      },
+      {
+        "id": "the-mag-wrap",
+        "name": "The Mag Wrap",
+        "category": "fun",
+        "disciplines": "",
+        "href": "/work/the-mag-w-rap-2025",
+        "poster": "/images/portfolio-2027-gallery-the-mag-wrap.webp",
+        "aspect": 1.33333,
+        "tabletAspect": 1.33333,
+        "mobileAspect": 1.33333
+      },
+      {
+        "id": "blender-addon",
+        "name": "Blender addon",
+        "category": "fun",
+        "disciplines": "",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-blender-addon.webp",
+        "aspect": 1.33333,
+        "tabletAspect": 1.33333,
+        "mobileAspect": 1.33333
+      },
+      {
+        "id": "chainer",
+        "name": "Chainer",
+        "category": "fun",
+        "disciplines": "",
+        "href": "/work/chainer",
+        "poster": "/images/portfolio-2027-gallery-chainer.webp",
+        "aspect": 1.33333,
+        "tabletAspect": 1.33333,
+        "mobileAspect": 1.33333
+      },
+      {
+        "id": "relivear",
+        "name": "ReliveAR",
+        "category": "fun",
+        "disciplines": "",
+        "href": "https://www.instagram.com/relive.ar/",
+        "poster": "/images/portfolio-2027-gallery-relivear.webp",
+        "aspect": 1,
+        "tabletAspect": 1,
+        "mobileAspect": 1
+      },
+      {
+        "id": "renders",
+        "name": "Renders",
+        "category": "fun",
+        "disciplines": "",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-renders.webp",
+        "aspect": 0.75,
+        "tabletAspect": 0.75,
+        "mobileAspect": 0.75
+      },
+      {
+        "id": "erem",
+        "name": "Erem",
+        "category": "fun",
+        "disciplines": "",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-erem-v2.webp",
+        "aspect": 1.33333,
+        "tabletAspect": 1.33333,
+        "mobileAspect": 1.33333
+      },
+      {
+        "id": "tweezers-jewelry",
+        "name": "Tweezers Jewelry",
+        "category": "fun",
+        "disciplines": "",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-tweezers-jewelry.webp",
+        "aspect": 1,
+        "tabletAspect": 1,
+        "mobileAspect": 1
+      },
+      {
+        "id": "fwa-logo",
+        "name": "FWA logo",
+        "category": "fun",
+        "disciplines": "",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-fwa-logo-v2.webp",
+        "aspect": 1,
+        "tabletAspect": 1,
+        "mobileAspect": 1
+      },
+      {
+        "id": "vojta-zizka",
+        "name": "Vojta Zizka",
+        "category": "fun",
+        "disciplines": "",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-vojta-zizka.webp",
+        "aspect": 1.77778,
+        "tabletAspect": 1.77778,
+        "mobileAspect": 1.77778
+      },
+      {
+        "id": "cgi-karlin",
+        "name": "CGI Karlin",
+        "category": "fun",
+        "disciplines": "",
+        "href": null,
+        "poster": "/images/portfolio-2027-gallery-cgi-karlin.webp",
+        "aspect": 0.75,
+        "tabletAspect": 0.75,
+        "mobileAspect": 0.75
+      }
+    ],
+    "desktop": [
+      "c-render-engine",
+      "frozen-jewelry",
+      "the-mag-wrap",
+      "blender-addon",
+      "chainer",
+      "relivear",
+      "renders",
+      "erem",
+      "tweezers-jewelry",
+      "fwa-logo",
+      "vojta-zizka",
+      "cgi-karlin"
+    ],
+    "tablet": [
+      "c-render-engine",
+      "frozen-jewelry",
+      "relivear",
+      "renders",
+      "the-mag-wrap",
+      "chainer",
+      "tweezers-jewelry",
+      "fwa-logo",
+      "vojta-zizka",
+      "blender-addon",
+      "cgi-karlin",
+      "erem"
+    ],
+    "mobile": [
+      "c-render-engine",
+      "chainer",
+      "tweezers-jewelry",
+      "frozen-jewelry",
+      "fwa-logo",
+      "relivear",
+      "vojta-zizka",
+      "blender-addon",
+      "renders",
+      "cgi-karlin",
+      "the-mag-wrap",
+      "erem"
+    ]
+  }
+}

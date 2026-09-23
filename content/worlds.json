@@ -1,0 +1,180 @@
+{
+  "overview": [
+    {
+      "label": "What it is",
+      "answer": "An art-directed CGI world built around a brand, product, identity, or digital experience."
+    },
+    {
+      "label": "Best fit",
+      "answer": "Launches, campaigns, case studies, and brand moments that need a distinctive visual language of their own."
+    },
+    {
+      "label": "Core output",
+      "answer": "A hero film or loop, shaped around the story, applications, and formats that matter most to the project."
+    },
+    {
+      "label": "Extensions",
+      "answer": "The same world can become stills, vertical edits, website assets, product imagery, and presentation content."
+    }
+  ],
+  "outputs": [
+    "Hero films and launch sequences",
+    "Short loops and vertical edits",
+    "High-resolution campaign stills",
+    "Website and case-study assets",
+    "Product and merchandise imagery",
+    "Presentation and pitch formats"
+  ],
+  "process": [
+    {
+      "number": "01",
+      "title": "Brief & references",
+      "copy": "We define the story, applications, audience, formats, and visual territory the world needs to hold together."
+    },
+    {
+      "number": "02",
+      "title": "World concept",
+      "copy": "I develop a clear creative direction around the identity or product, then align on the strongest route."
+    },
+    {
+      "number": "03",
+      "title": "Look development",
+      "copy": "Materials, lighting, composition, cameras, and key frames establish the visual system before animation."
+    },
+    {
+      "number": "04",
+      "title": "Production",
+      "copy": "I handle modelling, animation, rendering, and post-production, with specialist collaborators when needed."
+    },
+    {
+      "number": "05",
+      "title": "Format extensions",
+      "copy": "The finished world is adapted into the agreed motion, still, social, website, and presentation formats."
+    }
+  ],
+  "worlds": [
+    {
+      "title": "Aptos Foundation",
+      "credit": "With Ashfall Studio",
+      "size": "wide",
+      "poster": "/videos/posters/ashfall_aptos-2x1.jpg",
+      "alt": "Aptos Foundation CGI brand world",
+      "srcH265": "/videos/h265/ashfall_aptos-2x1-web.mp4",
+      "srcAv1": "/videos/av1/ashfall_aptos-2x1.webm",
+      "srcMp4": "/videos/h264/ashfall_aptos-2x1-fallback.mp4"
+    },
+    {
+      "title": "Homio Smart Home",
+      "credit": "With Lubos Volkov",
+      "size": "square",
+      "poster": "/videos/posters/volkov_homio.jpg",
+      "alt": "Homio Smart Home CGI brand world",
+      "srcH265": "/videos/h265/volkov_homio-web2.mp4",
+      "srcAv1": "/videos/av1/volkov_homio.webm",
+      "srcMp4": "/videos/h264/volkov_homio-fallback.mp4"
+    },
+    {
+      "title": "Skyll",
+      "credit": "With Creative Nights",
+      "size": "square",
+      "poster": "/videos/posters/cn_skyll-1x1.jpg",
+      "alt": "Skyll CGI brand world",
+      "srcH265": "/videos/h265/cn_skyll-1x1-web.mp4",
+      "srcAv1": "/videos/av1/cn_skyll-1x1.webm",
+      "srcMp4": "/videos/h264/cn_skyll-1x1-fallback.mp4"
+    },
+    {
+      "title": "Primland Explore",
+      "credit": "With Outpøst®",
+      "size": "wide",
+      "poster": "/videos/posters/outpost_explorer-2x1.jpg",
+      "alt": "Primland Explore cinematic CGI world",
+      "srcH265": "/videos/h265/outpost_explorer-2x1-web.mp4",
+      "srcAv1": "/videos/av1/outpost_explorer-2x1.webm",
+      "srcMp4": "/videos/h264/outpost_explorer-2x1-fallback.mp4"
+    },
+    {
+      "title": "Primland Resort",
+      "credit": "With Outpøst®",
+      "size": "wide",
+      "poster": "/videos/posters/outpost_resort-2x1.jpg",
+      "alt": "Primland Resort architectural CGI world",
+      "srcH265": "/videos/h265/outpost_resort-2x1-web.mp4",
+      "srcAv1": "/videos/av1/outpost_resort-2x1.webm",
+      "srcMp4": "/videos/h264/outpost_resort-2x1-fallback.mp4"
+    },
+    {
+      "title": "Jimu",
+      "credit": "With Lubos Volkov",
+      "size": "square",
+      "poster": "/videos/posters/volkov_jimu.jpg",
+      "alt": "Jimu CGI brand world",
+      "srcH265": "/videos/h265/volkov_jimu-web2.mp4",
+      "srcAv1": "/videos/av1/volkov_jimu.webm",
+      "srcMp4": "/videos/h264/volkov_jimu-fallback.mp4"
+    },
+    {
+      "title": "Sparta",
+      "credit": "With Lubos Volkov",
+      "size": "square",
+      "poster": "/videos/posters/volkov_sparta.jpg",
+      "alt": "Sparta CGI brand world",
+      "srcH265": "/videos/h265/volkov_sparta-web2.mp4",
+      "srcAv1": "/videos/av1/volkov_sparta.webm",
+      "srcMp4": "/videos/h264/volkov_sparta-fallback.mp4"
+    },
+    {
+      "title": "Heidelberg CCUS",
+      "credit": "With Ashfall Studio",
+      "size": "wide",
+      "poster": "/videos/posters/ashfall_ccus%20updated.jpg",
+      "alt": "Heidelberg CCUS industrial CGI world",
+      "srcH265": "/videos/h265/ashfall_ccus%20updated-web2.mp4",
+      "srcAv1": "/videos/av1/ashfall_ccus%20updated.webm",
+      "srcMp4": "/videos/h264/ashfall_ccus%20updated-fallback.mp4"
+    },
+    {
+      "title": "Ashfall Launch",
+      "credit": "With Ashfall Studio",
+      "size": "wide",
+      "poster": "/videos/posters/ashfall_promo%20updated.jpg",
+      "alt": "Ashfall launch CGI world",
+      "srcH265": "/videos/h265/ashfall_promo%20updated-web2.mp4",
+      "srcAv1": "/videos/av1/ashfall_promo%20updated.webm",
+      "srcMp4": "/videos/h264/ashfall_promo%20updated-fallback.mp4",
+      "preview": "/images/portfolio-2027-world-ashfall-launch.webp"
+    },
+    {
+      "title": "Veha Architects",
+      "credit": "With Yiskra Studio",
+      "size": "square",
+      "poster": "/videos/posters/yiskra_veha.jpg",
+      "alt": "Veha Architects architectural CGI world",
+      "srcH265": "/videos/h265/yiskra_veha-web2.mp4",
+      "srcAv1": "/videos/av1/yiskra_veha.webm",
+      "srcMp4": "/videos/h264/yiskra_veha-fallback.mp4",
+      "preview": "/images/portfolio-2027-world-veha-architects.webp"
+    },
+    {
+      "title": "Fifthrow",
+      "credit": "With Ashfall Studio",
+      "size": "square",
+      "poster": "/videos/posters/ashfall_fifthrow%20updated.jpg",
+      "alt": "Fifthrow CGI brand world",
+      "srcH265": "/videos/h265/ashfall_fifthrow%20updated-web.mp4",
+      "srcAv1": "/videos/av1/ashfall_fifthrow%20updated.webm",
+      "srcMp4": "/videos/h264/ashfall_fifthrow%20updated-fallback.mp4",
+      "preview": "/images/portfolio-2027-world-fifthrow.webp"
+    },
+    {
+      "title": "Hyperframe",
+      "credit": "With Ashfall Studio",
+      "size": "wide",
+      "poster": "/videos/posters/ashfall_hyperframe%20updated.jpg",
+      "alt": "Hyperframe CGI brand world",
+      "srcH265": "/videos/h265/ashfall_hyperframe%20updated-web-2.mp4",
+      "srcAv1": "/videos/av1/ashfall_hyperframe%20updated.webm",
+      "srcMp4": "/videos/h264/ashfall_hyperframe%20updated-fallback.mp4"
+    }
+  ]
+}

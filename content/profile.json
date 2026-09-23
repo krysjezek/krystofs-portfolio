@@ -1,0 +1,41 @@
+{
+  "paragraphs": [
+    "I’m Kryštof. I’ve always been somewhere between visual work and figuring out how things are built. I studied software engineering, which probably explains why I tend to drift into the technical side of projects instead of stopping at the design.",
+    "Most of my work happens alongside small design studios and independent creatives. Good ideas, small teams, and not too many layers between thinking of something and actually making it.",
+    "Outside of work, I’m usually travelling with my wife, getting into all things aviation ✈️, or sharing a beer with friends 🍺."
+  ],
+  "photos": [
+    {
+      "src": "/images/portfolio-2027-about-photo-01.webp",
+      "alt": "Kryštof Ježek"
+    },
+    {
+      "src": "/images/portfolio-2027-about-photo-02.webp",
+      "alt": "A Christmas gift and chocolate mould"
+    },
+    {
+      "src": "/images/portfolio-2027-about-photo-03.webp",
+      "alt": "A rocky Mediterranean coastline"
+    },
+    {
+      "src": "/images/portfolio-2027-about-photo-04.webp",
+      "alt": "A swim in a harbour"
+    },
+    {
+      "src": "/images/portfolio-2027-about-photo-05.webp",
+      "alt": "Lunch and a beer"
+    },
+    {
+      "src": "/images/portfolio-2027-about-photo-06.webp",
+      "alt": "Making pasta at home"
+    },
+    {
+      "src": "/images/portfolio-2027-about-photo-07.webp",
+      "alt": "Tulips on a road trip"
+    },
+    {
+      "src": "/images/portfolio-2027-about-photo-08.webp",
+      "alt": "Northern lights"
+    }
+  ]
+}

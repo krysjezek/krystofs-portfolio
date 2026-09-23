@@ -1,0 +1,962 @@
+[
+  {
+    "slug": "vizcom",
+    "path": "/work/vizcom",
+    "figma": "92:1937",
+    "title": "Vizcom",
+    "subtitle": "Dynamic 3D Brand World Mockup",
+    "date": "Work · August 2026",
+    "category": "work",
+    "overview": [
+      "Outland invited me to bring Vizcom’s new identity into motion through a dynamic 3D mockup of a working design studio.",
+      "Branded tools, screens, stationery and merchandise make the space feel tactile, lived-in and always in process."
+    ],
+    "specs": [
+      {
+        "label": "Client",
+        "name": "Outland",
+        "href": "https://www.enteroutland.com/",
+        "icon": "/images/portfolio-2027-identity-outland.webp",
+        "lines": [
+          "Brand identity and creative direction",
+          "Independent design studio"
+        ]
+      },
+      {
+        "label": "Brand",
+        "name": "Vizcom",
+        "href": "https://vizcom.com/",
+        "icon": "/images/portfolio-2027-identity-vizcom.webp",
+        "lines": [
+          "AI-powered design platform",
+          "Product and industrial design"
+        ]
+      },
+      {
+        "label": "Deliverable",
+        "name": null,
+        "href": null,
+        "icon": null,
+        "lines": [
+          "1 × 32-second brand-world animation",
+          "4 × high-resolution stills",
+          "Dynamic 3D brand mockup"
+        ]
+      }
+    ],
+    "tags": [
+      "3D Environment",
+      "Motion Mockup",
+      "Look Development"
+    ],
+    "hero": {
+      "poster": "/videos/posters/vizcom-brand-world.jpg",
+      "alt": "Vizcom brand world inside a sunlit design studio",
+      "aspect": 1.6,
+      "type": "EmbedVideo",
+      "posterAlt": "Vizcom brand world inside a sunlit design studio",
+      "title": "Vizcom dynamic 3D brand world mockup",
+      "srcH265": "/videos/h265/vizcom-brand-world-web.mp4",
+      "srcAv1": "/videos/av1/vizcom-brand-world.webm",
+      "srcMp4": "/videos/h264/vizcom-brand-world-fallback.mp4"
+    },
+    "caption": "Brand-world animation · 32 seconds",
+    "approach": [
+      {
+        "label": "Brief",
+        "paragraphs": [
+          "Extend Outland's identity into a dynamic workshop world where Vizcom feels actively used, with branded tools, stationery, screens, and merchandise woven through the space."
+        ]
+      },
+      {
+        "label": "Process",
+        "paragraphs": [
+          "I built a detailed studio and tabletop environment, translated the identity across tactile objects, and choreographed the camera from wide spatial views into close product moments."
+        ]
+      }
+    ],
+    "outcome": [
+      {
+        "label": "My role",
+        "paragraphs": [
+          "3D environment design, look development, animation, and rendering for a moving Vizcom brand mockup."
+        ]
+      },
+      {
+        "label": "Result",
+        "paragraphs": [
+          "A 32-second animated mockup and still-image set that presents Vizcom as a living creative system rather than a collection of static applications."
+        ]
+      }
+    ],
+    "media": [
+      {
+        "poster": "/images/vizcom-brand-world-overhead.webp",
+        "alt": "Overhead view of the Vizcom studio desk",
+        "aspect": 1.7777777777777777
+      },
+      {
+        "poster": "/images/vizcom-brand-world-laptop.webp",
+        "alt": "Vizcom-branded laptop and colour studies",
+        "aspect": 1.7777777777777777
+      },
+      {
+        "poster": "/images/vizcom-brand-world-mug.webp",
+        "alt": "Vizcom mug and desk accessories",
+        "aspect": 0.8888888888888888
+      },
+      {
+        "poster": "/images/vizcom-brand-world-studio.webp",
+        "alt": "Wide view of the Vizcom studio",
+        "aspect": 1.7777777777777777
+      }
+    ],
+    "rows": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    "credits": [
+      {
+        "role": "Brand Identity & Creative Direction",
+        "name": "Jordan Jenkins",
+        "href": "https://enteroutland.com/",
+        "icon": "/images/portfolio-2027-credit-icon-credit-icon-outland.webp"
+      },
+      {
+        "role": "Brand Identity & Creative Direction",
+        "name": "Evan Place",
+        "href": "https://enteroutland.com/",
+        "icon": "/images/portfolio-2027-credit-icon-credit-icon-outland.webp"
+      },
+      {
+        "role": "3D Design & Animation",
+        "name": "Kryštof Ježek",
+        "href": "/",
+        "icon": null
+      }
+    ]
+  },
+  {
+    "slug": "valkaai",
+    "path": "/work/valkaai",
+    "figma": "277:6138",
+    "title": "ValkaAI",
+    "subtitle": "3D Glass Prism Logo Animation",
+    "date": "Work · July 2026",
+    "category": "work",
+    "overview": [
+      "Less and Better invited me to translate its mirrored-butterfly mark for ValkaAI into motion.",
+      "A glass prism refracts blue and orange accents through AI persona imagery, bridging real and digital realities."
+    ],
+    "specs": [
+      {
+        "label": "Client",
+        "name": "ValkaAI",
+        "href": "https://valka.ai/",
+        "icon": "/images/portfolio-2027-identity-valkaai.webp",
+        "lines": [
+          "AI-native entertainment",
+          "Real-time AI personas"
+        ]
+      },
+      {
+        "label": "Agency",
+        "name": "Less and Better",
+        "href": "https://www.l-ab.eu/work/valkaai",
+        "icon": "/images/portfolio-2027-identity-less-and-better.webp",
+        "lines": [
+          "Brand identity and creative direction",
+          "Brno, Czech Republic"
+        ]
+      },
+      {
+        "label": "Deliverable",
+        "name": null,
+        "href": null,
+        "icon": null,
+        "lines": [
+          "1 × 36-second 3D logo animation",
+          "4K master delivery",
+          "Web-ready 16:9 loop"
+        ]
+      }
+    ],
+    "tags": [
+      "Art Direction",
+      "3D",
+      "Motion Graphics"
+    ],
+    "hero": {
+      "poster": "/videos/posters/valkaai-logo-glass-prism.jpg",
+      "alt": "ValkaAI mirrored-butterfly logo rendered as a refractive glass prism",
+      "aspect": 1.6,
+      "type": "EmbedVideo",
+      "posterAlt": "ValkaAI mirrored-butterfly logo rendered as a refractive glass prism",
+      "title": "ValkaAI 3D glass-prism logo animation",
+      "srcH265": "/videos/h265/valkaai-logo-glass-prism-web.mp4",
+      "srcAv1": "/videos/av1/valkaai-logo-glass-prism.webm",
+      "srcMp4": "/videos/h264/valkaai-logo-glass-prism-fallback.mp4"
+    },
+    "caption": "Glass-prism logo animation · 36 seconds",
+    "approach": [
+      {
+        "label": "Brief",
+        "paragraphs": [
+          "Translate Less and Better’s identity into a distinctive motion asset that presents ValkaAI as serious AI infrastructure while retaining the emotion and transformation built into the logo."
+        ]
+      },
+      {
+        "label": "Process",
+        "paragraphs": [
+          "I developed a transparent, refractive 3D prism and used light, colour, and AI persona imagery to reveal the mirrored geometry as a bridge between real and digital realities."
+        ]
+      }
+    ],
+    "outcome": [
+      {
+        "label": "My role",
+        "paragraphs": [
+          "Art direction, 3D, and motion graphics for a glass-prism animation of the ValkaAI mirrored-butterfly logo."
+        ]
+      },
+      {
+        "label": "Result",
+        "paragraphs": [
+          "The final 4K loop extends the brand into motion with a tactile hero asset that keeps ValkaAI’s personas at the centre of the visual story."
+        ]
+      }
+    ],
+    "media": [],
+    "rows": [],
+    "credits": [
+      {
+        "role": "Creative Direction",
+        "name": "Dominik Smuchar",
+        "href": null,
+        "icon": "/images/portfolio-2027-credit-icon-credit-icon-less-and-better.webp"
+      },
+      {
+        "role": "Creative Direction",
+        "name": "Petr Skovajsa",
+        "href": null,
+        "icon": "/images/portfolio-2027-credit-icon-credit-icon-less-and-better.webp"
+      },
+      {
+        "role": "Art Direction",
+        "name": "Kryštof Ježek",
+        "href": "/",
+        "icon": null
+      },
+      {
+        "role": "3D",
+        "name": "Kryštof Ježek",
+        "href": "/",
+        "icon": null
+      },
+      {
+        "role": "Motion Graphics",
+        "name": "Kryštof Ježek",
+        "href": "/",
+        "icon": null
+      }
+    ]
+  },
+  {
+    "slug": "the-mag-w-rap-2025",
+    "path": "/work/the-mag-w-rap-2025",
+    "figma": "277:6763",
+    "title": "The Mag Wrap 2025",
+    "subtitle": "A motion system for The Mag Wrap",
+    "date": "Fun · August 2025",
+    "category": "fun",
+    "overview": [
+      "This is where I got to play with 3D, motion and the slightly chaotic energy of a rap show.",
+      "I built an intro, loops and reusable graphics that could feel like one world without repeating the same shot."
+    ],
+    "specs": [],
+    "tags": [
+      "Art Direction",
+      "3D",
+      "Motion Graphics"
+    ],
+    "hero": {
+      "poster": "/images/portfolio-2027-the-mag-w-rap-2025-hero.webp",
+      "alt": "The Mag Wrap 2025 — A motion system for The Mag Wrap",
+      "aspect": 1.6,
+      "sourceEmbed": "https://www.youtube.com/embed/-s2ly4Fgu5c",
+      "deliveryStatus": "source-master-needed"
+    },
+    "caption": "The Mag Wrap 2025 · Main motion package",
+    "approach": [
+      {
+        "label": "Brief / Why I did it",
+        "paragraphs": [
+          "I wanted to see how far I could push one visual idea across a whole motion package. Something loud and recognisable, with enough room to keep trying things."
+        ]
+      },
+      {
+        "label": "Process / Tools & thinking process",
+        "paragraphs": [
+          "I used Blender and Houdini for the 3D work, Nuke and After Effects for compositing and motion, and DaVinci Resolve to bring it together.",
+          "I started with a few shapes, materials and movements, then treated them as a kit. The question was always: can this idea work as an intro, a loop and a small on-screen graphic?"
+        ]
+      }
+    ],
+    "outcome": [
+      {
+        "label": "My role / What I made",
+        "paragraphs": [
+          "I worked on the art direction, 3D animation and motion design: the intro, show IDs, looping backgrounds and reusable graphics. A mix of making individual shots and figuring out how the pieces should fit together."
+        ]
+      },
+      {
+        "label": "Result / What I learned",
+        "paragraphs": [
+          "The useful part was learning to build a system that still left room to play. Reusing the same visual ingredients made the package more coherent, and gave me more time to spend on the moments that needed something different."
+        ]
+      }
+    ],
+    "media": [
+      {
+        "poster": "/videos/posters/w25_injektaz.jpg",
+        "alt": "The Mag Wrap 2025 3D motion design show injection graphic",
+        "aspect": 1.7777777777777777,
+        "type": "EmbedVideo",
+        "posterAlt": "The Mag Wrap 2025 3D motion design show injection graphic",
+        "title": "The Mag Wrap 2025 show injection motion design",
+        "srcH265": "/videos/h265/w25_injektaz-web.mp4",
+        "srcAv1": "/videos/av1/w25_injektaz.webm",
+        "srcMp4": "/videos/h264/w25_injektaz-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/w25_loop_bcg.jpg",
+        "alt": "The Mag Wrap 2025 looping 3D motion design background",
+        "aspect": 1.7777777777777777,
+        "type": "EmbedVideo",
+        "posterAlt": "The Mag Wrap 2025 looping 3D motion design background",
+        "title": "The Mag Wrap 2025 looping 3D background",
+        "srcH265": "/videos/h265/w25_loop_bcg-web.mp4",
+        "srcAv1": "/videos/av1/w25_loop_bcg.webm",
+        "srcMp4": "/videos/h264/w25_loop_bcg-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/w25_ledka.jpg",
+        "alt": "The Mag Wrap 2025 LED screen motion graphics",
+        "aspect": 1.7777777777777777,
+        "type": "EmbedVideo",
+        "posterAlt": "The Mag Wrap 2025 LED screen motion graphics",
+        "title": "The Mag Wrap 2025 LED show graphics",
+        "srcH265": "/videos/h265/w25_ledka-web.mp4",
+        "srcAv1": "/videos/av1/w25_ledka.webm",
+        "srcMp4": "/videos/h264/w25_ledka-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/w25_rytmus.jpg",
+        "alt": "The Mag Wrap 2025 broadcast motion graphic for judges",
+        "aspect": 1.7777777777777777,
+        "type": "EmbedVideo",
+        "posterAlt": "The Mag Wrap 2025 broadcast motion graphic for judges",
+        "title": "The Mag Wrap 2025 broadcast motion graphics",
+        "srcH265": "/videos/h265/w25_rytmus-web.mp4",
+        "srcAv1": "/videos/av1/w25_rytmus.webm",
+        "srcMp4": "/videos/h264/w25_rytmus-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/w25_aneta_greenscreen.jpg",
+        "alt": "The Mag Wrap 2025 greenscreen motion design asset",
+        "aspect": 1.7777777777777777,
+        "type": "EmbedVideo",
+        "posterAlt": "The Mag Wrap 2025 greenscreen motion design asset",
+        "title": "The Mag Wrap 2025 greenscreen show graphic",
+        "srcH265": "/videos/h265/w25_aneta_greenscreen-web.mp4",
+        "srcAv1": "/videos/av1/w25_aneta_greenscreen.webm",
+        "srcMp4": "/videos/h264/w25_aneta_greenscreen-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/w25_nametag.jpg",
+        "alt": "The Mag Wrap 2025 name tag motion graphics template",
+        "aspect": 1.7777777777777777,
+        "type": "EmbedVideo",
+        "posterAlt": "The Mag Wrap 2025 name tag motion graphics template",
+        "title": "The Mag Wrap 2025 name tag motion template",
+        "srcH265": "/videos/h265/w25_nametag-web.mp4",
+        "srcMp4": "/videos/h264/w25_nametag-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/w25_postupujici.jpg",
+        "alt": "The Mag Wrap 2025 standings and progression motion graphics",
+        "aspect": 1.7777777777777777,
+        "type": "EmbedVideo",
+        "posterAlt": "The Mag Wrap 2025 standings and progression motion graphics",
+        "title": "The Mag Wrap 2025 standings motion graphics",
+        "srcH265": "/videos/h265/w25_postupujici-web.mp4",
+        "srcAv1": "/videos/av1/w25_postupujici.webm",
+        "srcMp4": "/videos/h264/w25_postupujici-fallback.mp4"
+      },
+      {
+        "poster": "/images/portfolio-2027-the-mag-w-rap-2025-media-09.webp",
+        "alt": "The Mag Wrap 2025 — project detail 8",
+        "aspect": 1.7777777777777777,
+        "sourceEmbed": "https://www.youtube.com/embed/poEZ7qcoZXI",
+        "deliveryStatus": "source-master-needed"
+      }
+    ],
+    "rows": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ]
+    ],
+    "credits": []
+  },
+  {
+    "slug": "barbour",
+    "path": "/work/barbour",
+    "figma": "277:7532",
+    "title": "Barbour",
+    "subtitle": "Icons in Quilting · FOOH Campaign",
+    "date": "Work · September 2024",
+    "category": "work",
+    "overview": [
+      "Monopo London invited me to direct CGI and VFX for Barbour’s Icons in Quilting campaign.",
+      "The iconic quilt spreads across London, New York, Shanghai and Seoul, followed by a trail of British countryside."
+    ],
+    "specs": [
+      {
+        "label": "Client",
+        "name": "Barbour",
+        "href": "https://www.barbour.com/",
+        "icon": "/images/portfolio-2027-identity-barbour.webp",
+        "lines": [
+          "British clothing and outerwear",
+          "Icons in Quilting"
+        ]
+      },
+      {
+        "label": "Agency",
+        "name": "Monopo London",
+        "href": "https://monopo.london/",
+        "icon": "/images/portfolio-2027-identity-monopo-london.webp",
+        "lines": [
+          "Creative direction and production"
+        ]
+      },
+      {
+        "label": "Deliverable",
+        "name": null,
+        "href": null,
+        "icon": null,
+        "lines": [
+          "4 cities · 3 scenes per city",
+          "2 additional films",
+          "CGI, simulation and compositing"
+        ]
+      }
+    ],
+    "tags": [
+      "3D",
+      "Motion Graphics",
+      "VFX"
+    ],
+    "hero": {
+      "poster": "/images/portfolio-2027-barbour-hero.webp",
+      "alt": "Barbour — Icons in Quilting · FOOH Campaign",
+      "aspect": 1.6,
+      "sourceEmbed": "https://www.youtube.com/embed/oeVS_Q1VsKU",
+      "deliveryStatus": "source-master-needed"
+    },
+    "caption": "Barbour · Icons in Quilting campaign",
+    "approach": [
+      {
+        "label": "Brief",
+        "paragraphs": [
+          "Translate Barbour's Icons in Quilting platform into scroll-stopping fake out-of-home films for London, New York, Seoul, and Shanghai while carrying the British countryside into each city."
+        ]
+      },
+      {
+        "label": "Process",
+        "paragraphs": [
+          "I directed the CGI production, reconstructing and tracking live-action city plates, animating the signature quilt, and building procedural nature trails in Blender and Houdini before compositing each scene for a convincing mixed-reality finish."
+        ]
+      }
+    ],
+    "outcome": [
+      {
+        "label": "My role",
+        "paragraphs": [
+          "CGI direction, 3D animation, VFX, and Houdini simulation for Barbour's multi-market FOOH advertising campaign."
+        ]
+      },
+      {
+        "label": "Result",
+        "paragraphs": [
+          "About 407k views across the four city Reels on Barbour’s Instagram. CGI quilting and procedural nature brought the campaign into London, New York, Seoul and Shanghai."
+        ]
+      }
+    ],
+    "media": [
+      {
+        "poster": "/images/portfolio-2027-barbour-media-02.webp",
+        "alt": "Barbour — project detail 1",
+        "aspect": 0.75,
+        "sourceEmbed": "https://www.youtube.com/embed/12xJ6Qkvtxw",
+        "deliveryStatus": "source-master-needed"
+      },
+      {
+        "poster": "/images/portfolio-2027-barbour-media-03.webp",
+        "alt": "Barbour — project detail 2",
+        "aspect": 0.75,
+        "sourceEmbed": "https://www.youtube.com/embed/mzHQ8lmL7BA",
+        "deliveryStatus": "source-master-needed"
+      },
+      {
+        "poster": "/images/portfolio-2027-barbour-media-04.webp",
+        "alt": "Barbour — project detail 3",
+        "aspect": 0.75,
+        "sourceEmbed": "https://www.youtube.com/embed/6U9uTPf64nU",
+        "deliveryStatus": "source-master-needed"
+      },
+      {
+        "poster": "/videos/posters/Barbour---IiQ---Reconstruction-2---BTS---4x5.jpg",
+        "alt": "Barbour FOOH campaign CGI reconstruction behind-the-scenes",
+        "aspect": 0.75,
+        "type": "BackgroundVideo",
+        "posterAlt": "Barbour FOOH campaign CGI reconstruction behind-the-scenes",
+        "title": "Barbour FOOH campaign CGI reconstruction breakdown",
+        "srcMp4": "/videos/h264/Barbour---IiQ---Reconstruction-2---BTS---4x5.mp4",
+        "srcWebm": "/videos/other/Barbour---IiQ---Reconstruction-2---BTS---4x5.webm"
+      },
+      {
+        "poster": "/videos/posters/Barbour---IiQ---Fern-03--BTS----4x5.jpg",
+        "alt": "Barbour FOOH campaign CGI nature detail behind-the-scenes",
+        "aspect": 0.75,
+        "type": "BackgroundVideo",
+        "posterAlt": "Barbour FOOH campaign CGI nature detail behind-the-scenes",
+        "title": "Barbour FOOH CGI nature detail breakdown",
+        "srcMp4": "/videos/h264/Barbour---IiQ---Fern-03--BTS----4x5.mp4",
+        "srcWebm": "/videos/other/Barbour---IiQ---Fern-03--BTS----4x5.webm"
+      },
+      {
+        "poster": "/videos/posters/Barbour---IiQ---Instant-Render-2---BTS----4x5.jpg",
+        "alt": "Barbour FOOH campaign instant render VFX breakdown",
+        "aspect": 0.75,
+        "type": "BackgroundVideo",
+        "posterAlt": "Barbour FOOH campaign instant render VFX breakdown",
+        "title": "Barbour FOOH VFX render breakdown",
+        "srcMp4": "/videos/h264/Barbour---IiQ---Instant-Render-2---BTS----4x5.mp4",
+        "srcWebm": "/videos/other/Barbour---IiQ---Instant-Render-2---BTS----4x5.webm"
+      },
+      {
+        "poster": "/videos/posters/Barbour---IiQ---Nodes---BTS----4x5.jpg",
+        "alt": "Barbour FOOH campaign Houdini and CGI node setup",
+        "aspect": 0.75,
+        "type": "BackgroundVideo",
+        "posterAlt": "Barbour FOOH campaign Houdini and CGI node setup",
+        "title": "Barbour FOOH CGI node setup breakdown",
+        "srcMp4": "/videos/h264/Barbour---IiQ---Nodes---BTS----4x5.mp4",
+        "srcWebm": "/videos/other/Barbour---IiQ---Nodes---BTS----4x5.webm"
+      },
+      {
+        "poster": "/videos/posters/Barbour---IiQ---Bus---BTS----4x5_1.jpg",
+        "alt": "Barbour FOOH campaign bus scene VFX breakdown",
+        "aspect": 0.75,
+        "type": "BackgroundVideo",
+        "posterAlt": "Barbour FOOH campaign bus scene VFX breakdown",
+        "title": "Barbour FOOH bus scene CGI breakdown",
+        "srcMp4": "/videos/h264/Barbour---IiQ---Bus---BTS----4x5_1.mp4",
+        "srcWebm": "/videos/other/Barbour---IiQ---Bus---BTS----4x5_1.webm"
+      },
+      {
+        "poster": "/videos/posters/Barbour---IiQ---Fern-02--BTS----4x5.jpg",
+        "alt": "Barbour FOOH campaign fern simulation VFX breakdown",
+        "aspect": 0.75,
+        "type": "BackgroundVideo",
+        "posterAlt": "Barbour FOOH campaign fern simulation VFX breakdown",
+        "title": "Barbour FOOH nature simulation breakdown",
+        "srcMp4": "/videos/h264/Barbour---IiQ---Fern-02--BTS----4x5.mp4",
+        "srcWebm": "/videos/other/Barbour---IiQ---Fern-02--BTS----4x5.webm"
+      }
+    ],
+    "rows": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3,
+        4,
+        5
+      ],
+      [
+        6,
+        7,
+        8
+      ]
+    ],
+    "credits": [
+      {
+        "role": "Project Manager",
+        "name": "Mary Wu",
+        "href": null,
+        "icon": "/images/portfolio-2027-credit-icon-credit-icon-monopo-london.webp"
+      },
+      {
+        "role": "Creative Producer",
+        "name": "Maud Dedrecked",
+        "href": null,
+        "icon": "/images/portfolio-2027-credit-icon-credit-icon-monopo-london.webp"
+      },
+      {
+        "role": "Art Director",
+        "name": "Stella Grotti",
+        "href": null,
+        "icon": "/images/portfolio-2027-credit-icon-credit-icon-monopo-london.webp"
+      },
+      {
+        "role": "Designer",
+        "name": "Luna Gooriah",
+        "href": null,
+        "icon": "/images/portfolio-2027-credit-icon-credit-icon-monopo-london.webp"
+      },
+      {
+        "role": "CGI Director",
+        "name": "Kryštof Ježek",
+        "href": "/",
+        "icon": null
+      },
+      {
+        "role": "3D, VFX",
+        "name": "Josef Talač",
+        "href": null,
+        "icon": null
+      },
+      {
+        "role": "3D Animation, Modeling",
+        "name": "David Hájek",
+        "href": null,
+        "icon": null
+      }
+    ]
+  },
+  {
+    "slug": "the-vsx-sports-bra",
+    "path": "/work/the-vsx-sports-bra",
+    "figma": "277:8297",
+    "title": "Victoria’s Secret",
+    "subtitle": "VSX Sports Bra · CGI Animation",
+    "date": "Work · April 2025",
+    "category": "work",
+    "overview": [
+      "TMRZV Studio brought me in to create a quick-turn CGI product animation for the VSX Sports Bra.",
+      "Photoreal fabric simulations and knit detail reveal the bra’s stretch, support and material performance."
+    ],
+    "specs": [
+      {
+        "label": "Client",
+        "name": "Victoria’s Secret",
+        "href": "https://www.victoriassecret.com/",
+        "icon": "/images/portfolio-2027-identity-victoria-s-secret.webp",
+        "lines": [
+          "VSX activewear",
+          "Sports Bra"
+        ]
+      },
+      {
+        "label": "Agency",
+        "name": "TMRZV Studio",
+        "href": "https://tmrzv.com/",
+        "icon": "/images/portfolio-2027-identity-tmrzv-studio-v2.webp",
+        "lines": [
+          "Creative direction, sound",
+          "and compositing"
+        ]
+      },
+      {
+        "label": "Deliverable",
+        "name": null,
+        "href": null,
+        "icon": null,
+        "lines": [
+          "15-second Instagram Reel",
+          "3 fabric and knit simulations",
+          "CGI product animation"
+        ]
+      }
+    ],
+    "tags": [
+      "3D Simulation",
+      "CGI",
+      "Product Animation"
+    ],
+    "hero": {
+      "poster": "/videos/posters/vsx_main-01.jpg",
+      "alt": "The VSX Sports Bra 3D product visualization with cloth simulation",
+      "aspect": 1.6,
+      "type": "EmbedVideo",
+      "posterAlt": "The VSX Sports Bra 3D product visualization with cloth simulation",
+      "title": "The VSX Sports Bra CGI product animation",
+      "srcH265": "/videos/h265/vsx_main-01-web.mp4",
+      "srcAv1": "/videos/av1/vsx_main-01.webm",
+      "srcMp4": "/videos/h264/vsx_main-01-fallback.mp4"
+    },
+    "caption": "VSX Sports Bra · Product animation · 15 seconds",
+    "approach": [
+      {
+        "label": "Brief",
+        "paragraphs": [
+          "Create a short-form product film that makes the bra feel technical, tactile, and performance-led while staying fast enough for a one-week campaign sprint."
+        ]
+      },
+      {
+        "label": "Process",
+        "paragraphs": [
+          "I built photoreal fabric, knit, stretch, and support moments in Blender and Houdini, then refined the lighting, material response, and simulation detail for a 15-second Instagram Reel."
+        ]
+      }
+    ],
+    "outcome": [
+      {
+        "label": "My role",
+        "paragraphs": [
+          "3D product visualization, CGI product animation, look development, and Houdini cloth simulation for a VSX Sports Bra social launch asset."
+        ]
+      },
+      {
+        "label": "Result",
+        "paragraphs": [
+          "A short product film showing the bra’s fabric, stretch and support through close-up CGI and cloth simulation."
+        ]
+      }
+    ],
+    "media": [
+      {
+        "poster": "/videos/posters/vsx_main-02.jpg",
+        "alt": "The VSX Sports Bra photoreal CGI fabric simulation",
+        "aspect": 0.75,
+        "type": "EmbedVideo",
+        "posterAlt": "The VSX Sports Bra photoreal CGI fabric simulation",
+        "title": "The VSX Sports Bra fabric simulation detail",
+        "srcH265": "/videos/h265/vsx_main-02-web.mp4",
+        "srcAv1": "/videos/av1/vsx_main-02.webm",
+        "srcMp4": "/videos/h264/vsx_main-02-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/vsx_main-03.jpg",
+        "alt": "The VSX Sports Bra CGI knit and stretch visualization",
+        "aspect": 0.75,
+        "type": "EmbedVideo",
+        "posterAlt": "The VSX Sports Bra CGI knit and stretch visualization",
+        "title": "The VSX Sports Bra knit simulation",
+        "srcH265": "/videos/h265/vsx_main-03-web.mp4",
+        "srcAv1": "/videos/av1/vsx_main-03.webm",
+        "srcMp4": "/videos/h264/vsx_main-03-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/vsx_bts-01.jpg",
+        "alt": "Behind-the-scenes 3D cloth simulation for The VSX Sports Bra",
+        "aspect": 1,
+        "type": "EmbedVideo",
+        "posterAlt": "Behind-the-scenes 3D cloth simulation for The VSX Sports Bra",
+        "title": "The VSX Sports Bra simulation breakdown",
+        "srcH265": "/videos/h265/vsx_bts-01-web.mp4",
+        "srcAv1": "/videos/av1/vsx_bts-01.webm",
+        "srcMp4": "/videos/h264/vsx_bts-01-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/vsx_bts-02.jpg",
+        "alt": "The VSX Sports Bra CGI look development and cloth simulation breakdown",
+        "aspect": 1,
+        "type": "EmbedVideo",
+        "posterAlt": "The VSX Sports Bra CGI look development and cloth simulation breakdown",
+        "title": "The VSX Sports Bra CGI breakdown",
+        "srcH265": "/videos/h265/vsx_bts-02-web.mp4",
+        "srcMp4": "/videos/h264/vsx_bts-02-fallback.mp4"
+      }
+    ],
+    "rows": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "credits": [
+      {
+        "role": "Creative Director",
+        "name": "Artem Morozov",
+        "href": null,
+        "icon": "/images/portfolio-2027-credit-icon-credit-icon-tmrzv-studio-v2.webp"
+      },
+      {
+        "role": "3D & Look Development",
+        "name": "Kryštof Ježek",
+        "href": "/",
+        "icon": null
+      },
+      {
+        "role": "Houdini Simulation",
+        "name": "Kryštof Ježek",
+        "href": "/",
+        "icon": null
+      }
+    ]
+  },
+  {
+    "slug": "chainer",
+    "path": "/work/chainer",
+    "figma": "277:8929",
+    "title": "Chainer",
+    "subtitle": "Small objects, strange worlds",
+    "date": "Fun · September 2023",
+    "category": "fun",
+    "overview": [
+      "I used jewellery as a starting point for a series of 3D worlds. Small objects, strange landscapes, and a lot of playing with light and materials.",
+      "The experiment grew into animation, sound and a website. I wanted all of it to feel like it belonged to the same place."
+    ],
+    "specs": [],
+    "tags": [
+      "Art Direction",
+      "3D",
+      "Web Design"
+    ],
+    "hero": {
+      "poster": "/images/portfolio-2027-chainer-hero.webp",
+      "alt": "Chainer — Small objects, strange worlds",
+      "aspect": 1.6,
+      "sourceEmbed": "https://www.youtube.com/embed/vMFwsejYYaU",
+      "deliveryStatus": "source-master-needed"
+    },
+    "caption": "Chainer · Product visualization film",
+    "approach": [
+      {
+        "label": "Brief / Why I did it",
+        "paragraphs": [
+          "I wanted to make jewellery feel interesting before you even looked at the product details. It was a chance to build a world around a small object and see how much atmosphere I could get out of it."
+        ]
+      },
+      {
+        "label": "Process / Tools & thinking process",
+        "paragraphs": [
+          "My toolkit was 3D modelling, materials, lighting and animation, alongside sound design and web development.",
+          "I started with the object and its material, then built a setting around it. I kept looking for a balance: enough of a world to make the image interesting, but not so much that the jewellery disappeared."
+        ]
+      }
+    ],
+    "outcome": [
+      {
+        "label": "My role / What I made",
+        "paragraphs": [
+          "I shaped the art direction, animated the product scenes, worked on the sound and carried the visual direction into the website. The fun part was connecting the still images, moving shots and interactions."
+        ]
+      },
+      {
+        "label": "Result / What I learned",
+        "paragraphs": [
+          "A strong image does not need a complicated scene. A clear silhouette, a useful reflection and one good contrast can do a lot. Taking the same ideas into motion and the website also made me pay more attention to how the pieces connect."
+        ]
+      }
+    ],
+    "media": [
+      {
+        "poster": "/images/portfolio-2027-chainer-media-02.webp",
+        "alt": "Chainer — project detail 1",
+        "aspect": 1.7777777777777777,
+        "sourceEmbed": "https://player.vimeo.com/video/881397523?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479",
+        "deliveryStatus": "source-master-needed"
+      },
+      {
+        "poster": "/images/chainer-case-0.webp",
+        "alt": "Chainer men's accessories art direction hero render",
+        "aspect": 1.7777777777777777
+      },
+      {
+        "poster": "/images/chainer-case-1.webp",
+        "alt": "Chainer jewelry 3D product scene",
+        "aspect": 1.7777777777777777
+      },
+      {
+        "poster": "/images/chainer-case-2.webp",
+        "alt": "Chainer product visualization web design mockup",
+        "aspect": 1.7777777777777777
+      },
+      {
+        "poster": "/images/chainer-case-3-2.webp",
+        "alt": "Chainer accessory campaign render",
+        "aspect": 1.7777777777777777
+      },
+      {
+        "poster": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-poster-00001.jpg",
+        "alt": "Chainer 3D product visualization and CGI jewelry launch visual",
+        "aspect": 1,
+        "type": "BackgroundVideo",
+        "posterAlt": "Chainer 3D product visualization and CGI jewelry launch visual",
+        "title": "Chainer 3D product visualization launch visual",
+        "srcMp4": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-transcode.mp4",
+        "srcWebm": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-transcode.webm"
+      },
+      {
+        "poster": "/images/chainer-case-3.webp",
+        "alt": "Chainer ring product visualization",
+        "aspect": 1
+      },
+      {
+        "poster": "/images/chainer-case-4.webp",
+        "alt": "Chainer bracelet 3D product visualization",
+        "aspect": 1
+      },
+      {
+        "poster": "/images/chainer-case-5.webp",
+        "alt": "Chainer campaign visual detail",
+        "aspect": 1
+      }
+    ],
+    "rows": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        8
+      ]
+    ],
+    "credits": []
+  }
+]

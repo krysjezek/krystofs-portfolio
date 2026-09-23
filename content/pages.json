@@ -1,0 +1,2568 @@
+{
+  "/other/cv": {
+    "title": "CV",
+    "description": "Curriculum vitae of Kryštof Ježek, an independent CGI designer specializing in art-directed environments, visualization, and motion.",
+    "overview": [],
+    "blocks": [
+      {
+        "type": "h1",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "/ INDEPENDENT CGI DESIGNER"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "I am an independent CGI designer specializing in art-directed environments, visualization, and motion for brands and studios. I combine realistic lighting, materials, and spatial detail with a strong creative concept. In my free time, I build apps and creative tools that connect art and technology."
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Portfolio: ",
+            [
+              "krystofjezek.com"
+            ]
+          ],
+          "href": "https://www.krystofjezek.com/"
+        },
+        "href": "https://www.krystofjezek.com/"
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "krystof@jezek.me"
+          ],
+          "href": "mailto:krystof@jezek.me?subject=Let's%20work%20together!"
+        },
+        "href": "mailto:krystof@jezek.me?subject=Let's%20work%20together!"
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "+420 774 066 745"
+          ],
+          "href": "https://wa.me/+420774066745?text=Hi%20Krystof%2C%20I%20am%20interested%20in%20collaborating%20with%20you%21"
+        },
+        "href": "https://wa.me/+420774066745?text=Hi%20Krystof%2C%20I%20am%20interested%20in%20collaborating%20with%20you%21"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Vitkova 10, Prague, Czechia, 100 00"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "/ WORK EXPERIENCE"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Self-employed"
+          ],
+          "href": "https://www.krystofjezek.com/"
+        },
+        "href": "https://www.krystofjezek.com/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Independent CGI Designer",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Create art-directed 3D environments, visualizations, and motion work for brands and studios. Lead projects from concept and look development through animation, simulation, rendering, and delivery, working independently or with specialist collaborators. Selected work includes ",
+          {
+            "text": [
+              "Victoria's Secret"
+            ],
+            "href": "/work/the-vsx-sports-bra"
+          },
+          ", ",
+          {
+            "text": [
+              "Barbour"
+            ],
+            "href": "/work/barbour"
+          },
+          ", and ",
+          {
+            "text": [
+              "The Mag Wrap"
+            ],
+            "href": "/work/the-mag-w-rap-2025"
+          },
+          ".",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Feb 2017 - Present | Worldwide"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "YISKRA STUDIO"
+          ],
+          "href": "https://www.yiskra.studio/"
+        },
+        "href": "https://www.yiskra.studio/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Lead 3D Artist",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Provided 3D expertise and visual direction for identity and campaign projects. Led CGI look development and delivery, mentored 3D and motion designers, and helped the studio adopt more advanced production techniques.",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "2023 - 2025 | Prague, Czechia | Freelance"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Growthcurve"
+          ],
+          "href": "https://growthcurve.co/"
+        },
+        "href": "https://growthcurve.co/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Motion Designer",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Created short-form social media ads for clients including Coinbase, ANNA Money, and Hubpay, combining 2D and 3D production. Managed projects from concept to final delivery across a fast-moving growth marketing pipeline.",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "May 2021 - Sep 2022 | London, United Kingdom | Full-time"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "APIFY"
+          ],
+          "href": "https://apify.com/"
+        },
+        "href": "https://apify.com/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Visual Designer",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Created web, video, and 3D work for Apify's web scraping and browser automation platform, including product animation, promotional content, interviews, and website design.",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Aug 2019 - Sep 2021 | Prague, Czechia | Part-time "
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "/ EDUCATION"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Czech Technical University"
+          ],
+          "href": "https://fit.cvut.cz/en"
+        },
+        "href": "https://fit.cvut.cz/en"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Bachelor's Degree in Software Engineering",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Focused on core software engineering principles, including programming, algorithms, and system design. I completed the coursework while gaining practical experience in design and animation, bridging technical development with creative applications.",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Sep 2022 - Jun 2025 | Prague, Czechia | Final Grade: A"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "freeCodeCamp"
+          ],
+          "href": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/"
+        },
+        "href": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "JavaScript Algorithms and Data Structures",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Completed comprehensive curriculum covering JavaScript fundamentals, algorithmic problem-solving, and data structures. Built projects demonstrating proficiency in coding challenges, enhancing skills in software development applicable to web and interactive design.",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Mar 2024"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "/ OTHER"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Tools I Use Daily",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          [
+            "3D: "
+          ],
+          "Blender, Houdini, Nuke, Cinema 4D (Octane & Redshift)",
+          "\n",
+          [
+            "Motion Design: "
+          ],
+          "Adobe After Effects, JavaScript scripting and automation",
+          "\n",
+          [
+            "Development:"
+          ],
+          " HTML, CSS, JavaScript, Next.js, Three.js, Python",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Selected Personal Initiative",
+          "\n"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "RELIVE AR - CUSTOM CRAFTED AR SOLUTIONS"
+          ],
+          "href": "https://www.instagram.com/relive.ar/"
+        },
+        "href": "https://www.instagram.com/relive.ar/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Co-founded a platform that develops custom augmented reality (AR) solutions for brands using Three.js. Gained expertise in web-based AR development and 3D graphics integration with JavaScript.",
+          "\n"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Animated mockups - VIDEO PROCESSING PYTHON BACKEND"
+          ],
+          "href": "https://github.com/krysjezek/video-process-backend"
+        },
+        "href": "https://github.com/krysjezek/video-process-backend"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Built a backend platform to service video mockup templates, integrating user inputs into pre-rendered videos using blending modes and homography.",
+          "\n"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "MY OWN RENDER ENGINE - RAYTRACING WITH C++"
+          ],
+          "href": "https://gitlab.fel.cvut.cz/jezekkr2/pcc-ray-tracing"
+        },
+        "href": "https://gitlab.fel.cvut.cz/jezekkr2/pcc-ray-tracing"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Developed a custom raytracing render engine in C++. Gained in-depth knowledge of computer graphics principles, ray tracing algorithms, and low-level optimization techniques in C++.",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "3D VISUAL ART IN C4D - UDEMY COURSE"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Created and published a 40-hour Udemy course teaching the basics of 3D visual art in Cinema 4D and Octane.",
+          "\n"
+        ]
+      }
+    ],
+    "media": []
+  },
+  "/other/join": {
+    "title": "Join",
+    "description": "Collaborate with Kryštof Ježek on creative projects for top-tier brands",
+    "overview": [],
+    "blocks": [
+      {
+        "type": "h1",
+        "content": [
+          "I would love to work with you."
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "I'm on the lookout for some sharp-eyed creatives to collaborate with on projects for some top-tier brands. If you're all about fresh designs and love sweating the small stuff as much as I do, you might be a great fit. I'm after folks who like to make design that POP, care about their craft, and are ready to roll up their sleeves and dive into some exciting work."
+        ]
+      },
+      {
+        "type": "h3",
+        "content": [
+          "Open roles"
+        ]
+      },
+      {
+        "type": "h4",
+        "content": [
+          "3D Animator"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "I am seeking a skilled 3D Generalist to collaborate with me on diverse projects and help advance each project's creative direction. I offer a supportive working relationship with regular feedback and opportunities for professional development.",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Requirements:",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Experience in 3D software (Blender, C4D, Maya..)"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Ability to manage time effectively and work under pressure."
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Strong passion for design and innovation in 3D graphics."
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "NICE TO HAVE:",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Experience with VFX, animation, or motion graphics."
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Apply"
+          ],
+          "href": "#apply"
+        },
+        "href": "#apply"
+      },
+      {
+        "type": "h4",
+        "content": [
+          "Junior 2D Motion Designer"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "I am looking for a passionate and creative Junior Motion Graphics Designer who is eager to learn and grow with my team. If you have a basic understanding of motion design and are enthusiastic about developing your skills in a dynamic and supportive environment, this opportunity is for you."
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Requirements:",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Basic knowledge of Adobe Suite, particularly After Effects."
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "A portfolio or examples of your work that demonstrate a keen interest in motion graphics."
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "A willingness to learn, take feedback, and work collaboratively."
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Apply"
+          ],
+          "href": "#apply"
+        },
+        "href": "#apply"
+      },
+      {
+        "type": "h4",
+        "content": [
+          "Video Editor (TikTok)"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "I am seeking a Video Editor who specializes in creating short-form content. An awesome opportunity for young creatives to work part time while studying."
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Requirements:",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Experience with Premiere Pro or After Effects"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Track record of few successful Tiktoks/Reels"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Attention to detail"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Overview of current trends and up-to-date editing methods"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Apply"
+          ],
+          "href": "#apply"
+        },
+        "href": "#apply"
+      },
+      {
+        "type": "h4",
+        "content": [
+          "Didn't find your fit?"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "No worries, I am always looking to connect with talented people from various fields. Do not hesitate to reach out anyway :)"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Reach out"
+          ],
+          "href": "#apply"
+        },
+        "href": "#apply"
+      },
+      {
+        "type": "h3",
+        "content": [
+          "How to apply?"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Please send your work directly to ",
+          {
+            "text": [
+              "krystof@jezek.me"
+            ],
+            "href": "mailto:krystof@jezek.me?subject=I%20want%20to%20join%20your%20team"
+          }
+        ]
+      }
+    ],
+    "media": []
+  },
+  "/services/mixed-reality": {
+    "title": "FOOH & Mixed Reality",
+    "description": "FOOH and mixed reality campaign production by independent CGI designer Krystof Jezek, combining live-action plates with CGI, tracking, animation, and compositing.",
+    "overview": [
+      {
+        "label": "What it is",
+        "answer": "A live-action campaign film enhanced with CGI so an impossible event feels grounded in a real location."
+      },
+      {
+        "label": "Who it is for",
+        "answer": "Brands and agencies planning social launches, retail moments, store openings, or location-led campaign ideas that need to stop the scroll."
+      },
+      {
+        "label": "Best fit",
+        "answer": "Concepts where the CGI is connected to the brand, product, or place—not added as a visual trick without a campaign idea behind it."
+      },
+      {
+        "label": "Deliverables",
+        "answer": "Finished FOOH or mixed reality films in the agreed aspect ratios, with cutdowns, clean versions, stills, and platform variants when required."
+      },
+      {
+        "label": "What I need",
+        "answer": "The campaign objective, target locations, desired launch formats, available footage or shoot plan, brand assets, and any product CAD or 3D files."
+      },
+      {
+        "label": "Process",
+        "answer": "I develop the CGI approach around the approved concept, advise on plates and camera movement, then track, animate, simulate, light, render, and composite the final scenes."
+      },
+      {
+        "label": "Production",
+        "answer": "I lead the CGI production directly and bring in independent specialists for filming, complex simulation, or compositing when the scope calls for them."
+      },
+      {
+        "label": "Formats",
+        "answer": "Campaigns can be planned for Instagram, TikTok, YouTube, digital out-of-home, launch presentations, and wider horizontal or vertical edits."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "p",
+        "content": [
+          "Additional capability"
+        ]
+      },
+      {
+        "type": "h1",
+        "content": [
+          "FOOH & Mixed Reality"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "I am an independent CGI designer combining live-action plates with tracking, animation, simulation, and compositing to create FOOH and mixed reality films for brands and agencies. I plan each production around a clear campaign idea, location, camera move, delivery format, and launch context so the CGI feels connected to the brand rather than added as a standalone effect.",
+          "\n"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 0
+      },
+      {
+        "type": "media",
+        "index": 1
+      },
+      {
+        "type": "h2",
+        "content": [
+          "Icons in Quilting London"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 2
+      },
+      {
+        "type": "p",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "h2",
+        "content": [
+          "Arctic Landscape"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 3
+      },
+      {
+        "type": "p",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "h2",
+        "content": [
+          "Bouncy Greens"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 4
+      },
+      {
+        "type": "p",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "h2",
+        "content": [
+          "Gemstone"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 5
+      },
+      {
+        "type": "media",
+        "index": 6
+      },
+      {
+        "type": "h2",
+        "content": [
+          "Frasers Collab"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 7
+      },
+      {
+        "type": "p",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "h2",
+        "content": [
+          "Revitalizing Serum "
+        ]
+      },
+      {
+        "type": "media",
+        "index": 8
+      },
+      {
+        "type": "media",
+        "index": 9
+      },
+      {
+        "type": "h2",
+        "content": [
+          "Icons in Quilting NYC"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 10
+      },
+      {
+        "type": "media",
+        "index": 11
+      },
+      {
+        "type": "h2",
+        "content": [
+          "New Store Opening"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 12
+      },
+      {
+        "type": "media",
+        "index": 13
+      },
+      {
+        "type": "h2",
+        "content": [
+          "Icons in Quilting Seoul"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 14
+      },
+      {
+        "type": "h2",
+        "content": [
+          "YoGrillz"
+        ]
+      },
+      {
+        "type": "h2",
+        "content": [
+          "Sparta Championship Ring"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 15
+      },
+      {
+        "type": "media",
+        "index": 16
+      },
+      {
+        "type": "h2",
+        "content": [
+          "Icons in Quilting Shanghai"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 17
+      },
+      {
+        "type": "media",
+        "index": 18
+      },
+      {
+        "type": "h2",
+        "content": [
+          "Launch Video"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 19
+      },
+      {
+        "type": "media",
+        "index": 20
+      },
+      {
+        "type": "h2",
+        "content": [
+          "S&D Campaign "
+        ]
+      }
+    ],
+    "media": [
+      {
+        "type": "EmbedVideo",
+        "poster": "/videos/posters/cgi_barbour_london%20updated.jpg",
+        "posterAlt": "Barbour Icons in Quilting London FOOH CGI campaign visual",
+        "title": "Barbour London FOOH CGI campaign",
+        "srcH265": "/videos/h265/cgi_barbour_london%20updated-web2.mp4",
+        "srcAv1": "/videos/av1/cgi_barbour_london%20updated.webm",
+        "srcMp4": "/videos/h264/cgi_barbour_london%20updated-fallback.mp4"
+      },
+      {
+        "type": "img",
+        "src": "/images/barbour.png",
+        "alt": "Barbour logo",
+        "width": 250,
+        "height": 50
+      },
+      {
+        "type": "EmbedVideo",
+        "poster": "/videos/posters/cgi_antartcica.jpg",
+        "posterAlt": "Arctic Landscape mixed reality CGI campaign visual",
+        "title": "Arctic Landscape mixed reality CGI visual",
+        "srcH265": "/videos/h265/cgi_antartcica-web2.mp4",
+        "srcAv1": "/videos/av1/cgi_antartcica.webm",
+        "srcMp4": "/videos/h264/cgi_antartcica-fallback.mp4"
+      },
+      {
+        "type": "EmbedVideo",
+        "poster": "/videos/posters/cgi_presto%20updated.jpg",
+        "posterAlt": "Bouncy Greens mixed reality CGI advertising visual",
+        "title": "Bouncy Greens mixed reality CGI visual",
+        "srcH265": "/videos/h265/cgi_presto%20updated-web2.mp4",
+        "srcAv1": "/videos/av1/cgi_presto%20updated.webm",
+        "srcMp4": "/videos/h264/cgi_presto%20updated-fallback.mp4"
+      },
+      {
+        "type": "EmbedVideo",
+        "poster": "/videos/posters/cgi_tweezers.jpg",
+        "posterAlt": "Gemstone mixed reality CGI product visual",
+        "title": "Gemstone mixed reality CGI product visual",
+        "srcH265": "/videos/h265/cgi_tweezers-web2.mp4",
+        "srcAv1": "/videos/av1/cgi_tweezers.webm",
+        "srcMp4": "/videos/h264/cgi_tweezers-fallback.mp4"
+      },
+      {
+        "type": "EmbedVideo",
+        "poster": "/videos/posters/cgi_frasers%20updated.jpg",
+        "posterAlt": "Barbour Frasers mixed reality FOOH campaign visual",
+        "title": "Barbour Frasers mixed reality campaign",
+        "srcH265": "/videos/h265/cgi_frasers%20updated-web2.mp4",
+        "srcAv1": "/videos/av1/cgi_frasers%20updated.webm",
+        "srcMp4": "/videos/h264/cgi_frasers%20updated-fallback.mp4"
+      },
+      {
+        "type": "img",
+        "src": "/images/barbour.png",
+        "alt": "Barbour logo",
+        "width": 250,
+        "height": 50
+      },
+      {
+        "type": "EmbedVideo",
+        "poster": "/videos/posters/cgi_spojka%20updated.jpg",
+        "posterAlt": "Revitalizing Serum mixed reality CGI product campaign visual",
+        "title": "Revitalizing Serum mixed reality CGI campaign",
+        "srcH265": "/videos/h265/cgi_spojka%20updated-web2.mp4",
+        "srcAv1": "/videos/av1/cgi_spojka%20updated.webm",
+        "srcMp4": "/videos/h264/cgi_spojka%20updated-fallback.mp4"
+      },
+      {
+        "type": "EmbedVideo",
+        "poster": "/videos/posters/cgi_barbour_ny%20updated.jpg",
+        "posterAlt": "Barbour Icons in Quilting New York FOOH CGI campaign visual",
+        "title": "Barbour New York FOOH CGI campaign",
+        "srcH265": "/videos/h265/cgi_barbour_ny%20updated-web2.mp4",
+        "srcAv1": "/videos/av1/cgi_barbour_ny%20updated.webm",
+        "srcMp4": "/videos/h264/cgi_barbour_ny%20updated-fallback.mp4"
+      },
+      {
+        "type": "img",
+        "src": "/images/barbour.png",
+        "alt": "Barbour logo",
+        "width": 250,
+        "height": 50
+      },
+      {
+        "type": "EmbedVideo",
+        "poster": "/videos/posters/cgi_onitsuka.jpg",
+        "posterAlt": "Onitsuka Tiger store opening mixed reality CGI campaign visual",
+        "title": "Onitsuka Tiger mixed reality CGI campaign",
+        "srcH265": "/videos/h265/cgi_onitsuka-web2.mp4",
+        "srcAv1": "/videos/av1/cgi_onitsuka.webm",
+        "srcMp4": "/videos/h264/cgi_onitsuka-fallback.mp4"
+      },
+      {
+        "type": "img",
+        "src": "/images/onitsuka-tiger-logo.svg",
+        "alt": "Onitsuka Tiger logo",
+        "width": 1612,
+        "height": 1015
+      },
+      {
+        "type": "EmbedVideo",
+        "poster": "/videos/posters/cgi_barbour_seoul%20updated.jpg",
+        "posterAlt": "Barbour Icons in Quilting Seoul FOOH CGI campaign visual",
+        "title": "Barbour Seoul FOOH CGI campaign",
+        "srcH265": "/videos/h265/cgi_barbour_seoul%20updated-web2.mp4",
+        "srcAv1": "/videos/av1/cgi_barbour_seoul%20updated.webm",
+        "srcMp4": "/videos/h264/cgi_barbour_seoul%20updated-fallback.mp4"
+      },
+      {
+        "type": "img",
+        "src": "/images/barbour.png",
+        "alt": "Barbour logo",
+        "width": 250,
+        "height": 50
+      },
+      {
+        "type": "EmbedVideo",
+        "poster": "/videos/posters/cgi_yogrillz%20updated.jpg",
+        "posterAlt": "YoGrillz Sparta Championship Ring mixed reality CGI product visual",
+        "title": "YoGrillz mixed reality CGI product visual",
+        "srcH265": "/videos/h265/cgi_yogrillz%20updated-web2.mp4",
+        "srcAv1": "/videos/av1/cgi_yogrillz%20updated.webm",
+        "srcMp4": "/videos/h264/cgi_yogrillz%20updated-fallback.mp4"
+      },
+      {
+        "type": "EmbedVideo",
+        "poster": "/videos/posters/cgi_barbour_shanghai%20updated.jpg",
+        "posterAlt": "Barbour Icons in Quilting Shanghai FOOH CGI campaign visual",
+        "title": "Barbour Shanghai FOOH CGI campaign",
+        "srcH265": "/videos/h265/cgi_barbour_shanghai%20updated-web2.mp4",
+        "srcAv1": "/videos/av1/cgi_barbour_shanghai%20updated.webm",
+        "srcMp4": "/videos/h264/cgi_barbour_shanghai%20updated-fallback.mp4"
+      },
+      {
+        "type": "img",
+        "src": "/images/barbour.png",
+        "alt": "Barbour logo",
+        "width": 250,
+        "height": 50
+      },
+      {
+        "type": "EmbedVideo",
+        "poster": "/videos/posters/cgi_chainer%20updated.jpg",
+        "posterAlt": "Chainer launch video mixed reality CGI campaign visual",
+        "title": "Chainer mixed reality CGI launch video",
+        "srcH265": "/videos/h265/cgi_chainer%20updated-web2.mp4",
+        "srcAv1": "/videos/av1/cgi_chainer%20updated.webm",
+        "srcMp4": "/videos/h264/cgi_chainer%20updated-fallback.mp4"
+      },
+      {
+        "type": "img",
+        "src": "/images/chainer-logo.png",
+        "alt": "Chainer logo",
+        "width": 239,
+        "height": 50
+      },
+      {
+        "type": "EmbedVideo",
+        "poster": "/videos/posters/cgi_yonex.jpg",
+        "posterAlt": "Yonex mixed reality CGI advertising campaign visual",
+        "title": "Yonex mixed reality CGI campaign",
+        "srcH265": "/videos/h265/cgi_yonex-web-2.mp4",
+        "srcAv1": "/videos/av1/cgi_yonex.webm",
+        "srcMp4": "/videos/h264/cgi_yonex-fallback.mp4"
+      },
+      {
+        "type": "img",
+        "src": "/images/yonex-logo-1.png",
+        "alt": "Yonex logo",
+        "width": 271,
+        "height": 50
+      }
+    ]
+  },
+  "/work/old-projects/apify": {
+    "title": "Apify",
+    "description": "Design and motion work for Apify Technologies",
+    "overview": [],
+    "blocks": [
+      {
+        "type": "media",
+        "index": 0
+      },
+      {
+        "type": "p",
+        "content": [
+          "Apify"
+        ]
+      },
+      {
+        "type": "h1",
+        "content": [
+          "MAKE THE WEB WORK FOR YOU"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "I have been working at ",
+          [
+            "Apify"
+          ],
+          " for precisely ",
+          [
+            "2 years"
+          ],
+          ". During my time there, I worked on various design projects ranging from ",
+          [
+            "Web Design"
+          ],
+          " and interview videos to ",
+          [
+            "complex 3D animations"
+          ],
+          "."
+        ]
+      },
+      {
+        "type": "media",
+        "index": 1
+      },
+      {
+        "type": "media",
+        "index": 2
+      }
+    ],
+    "media": [
+      {
+        "type": "BackgroundVideo",
+        "poster": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-poster-00001.jpg",
+        "srcMp4": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-transcode.mp4",
+        "srcWebm": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/624af93684d7a6884259a813_hpanimation_1-transcode.webm"
+      },
+      {
+        "type": "iframe",
+        "src": "https://player.vimeo.com/video/677387125?h=93af2f5bd5&badge=0&autopause=0&player_id=0&app_id=58479",
+        "title": "Apify &mdash; Homepage Animation"
+      },
+      {
+        "type": "iframe",
+        "src": "https://player.vimeo.com/video/669417356?h=4a28822f69&badge=0&autopause=0&player_id=0&app_id=58479",
+        "title": "Apify &mdash; Hiring video"
+      }
+    ]
+  },
+  "/work/old-projects/apify2": {
+    "title": "Apify Brand Video",
+    "description": "Brand video and motion design for Apify Technologies",
+    "overview": [],
+    "blocks": [
+      {
+        "type": "p",
+        "content": [
+          "Apify"
+        ]
+      },
+      {
+        "type": "h1",
+        "content": [
+          "Web scraping platform"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Apify is the platform where developers build, deploy, and monitor web scraping and browser automation tools. I have worked with Apify on several projects ranging from web design to 3D animation."
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Art Direction"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "3D"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Web Design"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 0
+      },
+      {
+        "type": "media",
+        "index": 1
+      }
+    ],
+    "media": [
+      {
+        "type": "iframe",
+        "src": "https://player.vimeo.com/video/677387125?h=93af2f5bd5&badge=0&autopause=0&player_id=0&app_id=58479",
+        "title": "Apify &mdash; Homepage Animation"
+      },
+      {
+        "type": "iframe",
+        "src": "https://player.vimeo.com/video/669417356?h=4a28822f69&badge=0&autopause=0&player_id=0&app_id=58479",
+        "title": "Apify &mdash; Hiring video"
+      }
+    ]
+  },
+  "/work/old-projects/ashfall": {
+    "title": "Ashfall",
+    "description": "3D and motion design project Ashfall",
+    "overview": [],
+    "blocks": [
+      {
+        "type": "p",
+        "content": [
+          "Ashfall"
+        ]
+      },
+      {
+        "type": "h1",
+        "content": [
+          "Custom Animated Mockups"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Together with Martin Ehrlich, the founder of the branding and web design studio Ashfall, we crafted three distinct environments to showcase Ashfall's work. It was crucial to align these scenes with the aesthetic of their designs, ensuring they complemented the design language established by the Ashfall team.",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "3D"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Sound Design"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Visit Ashfall"
+          ],
+          "href": "https://ashfall.studio/"
+        },
+        "href": "https://ashfall.studio/"
+      },
+      {
+        "type": "media",
+        "index": 0
+      },
+      {
+        "type": "media",
+        "index": 1
+      },
+      {
+        "type": "media",
+        "index": 2
+      },
+      {
+        "type": "p",
+        "content": [
+          "/ CREDITS"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Art Direction"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Martin Ehrlich"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(ASHFALL)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://hhttps://ashfall.studio/"
+        },
+        "href": "https://hhttps://ashfall.studio/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Motion Design"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Martin Egrt"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(ASHFALL)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://ashfall.studio/"
+        },
+        "href": "https://ashfall.studio/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "3D"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "(KRYSTOF)",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Sound Design"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "(KRYSTOF)",
+          "\n"
+        ]
+      }
+    ],
+    "media": [
+      {
+        "type": "iframe",
+        "title": "Ashfall studio motion design reel",
+        "src": "https://player.vimeo.com/video/993079634?badge=0&autopause=0&player_id=0&app_id=58479"
+      },
+      {
+        "type": "iframe",
+        "title": "Ashfall CGI project reel",
+        "src": "https://player.vimeo.com/video/941168152?badge=0&autopause=0&player_id=0&app_id=58479"
+      },
+      {
+        "type": "iframe",
+        "title": "Ashfall brand animation reel",
+        "src": "https://player.vimeo.com/video/934309759?badge=0&autopause=0&player_id=0&app_id=58479"
+      }
+    ]
+  },
+  "/work/old-projects/barbour-international-puffer-fooh": {
+    "title": "Barbour International Puffer FOOH",
+    "description": "FOOH campaign and fake out-of-home CGI advertising visuals for Barbour International.",
+    "overview": [],
+    "blocks": [
+      {
+        "type": "p",
+        "content": [
+          "Barbour, Barbour International, Frasers"
+        ]
+      },
+      {
+        "type": "h1",
+        "content": [
+          "Barbour International, Frasers Collaboration"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          " ",
+          {
+            "text": [
+              "Monopo London"
+            ],
+            "href": "https://monopo.london/"
+          },
+          " invited us to work on a ",
+          {
+            "text": [
+              "Barbour International's"
+            ],
+            "href": "https://www.barbour.com/row/barbour-international-home.html"
+          },
+          " launch film for its winter collaboration with ",
+          {
+            "text": [
+              "Frasers"
+            ],
+            "href": "https://www.houseoffraser.co.uk/"
+          },
+          ", putting the spotlight on the brand's signature black puffer jacket. Using high-fidelity cloth-simulation and full-CG look-development, we delivered a 15-second sequence in which the quilted shell inflates and wraps entire storefront façades. The result was an eye-catching hero asset rolled out on in-store LED walls and social channels to kick-start the campaign.",
+          "\n",
+          " "
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "3D"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Fabric Simulation"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Look Development"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Watch on Instagram"
+          ],
+          "href": "https://www.instagram.com/p/DD1eFc5NjSR/?hl=cs"
+        },
+        "href": "https://www.instagram.com/p/DD1eFc5NjSR/?hl=cs"
+      },
+      {
+        "type": "media",
+        "index": 0
+      },
+      {
+        "type": "media",
+        "index": 1
+      },
+      {
+        "type": "media",
+        "index": 2
+      },
+      {
+        "type": "p",
+        "content": [
+          "/ CREDITS"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Creative Producers"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Maud Dedecker, Paige Collins"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(MONOPO)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://monopo.london/"
+        },
+        "href": "https://monopo.london/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Art Director"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Stella Grotti"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(MONOPO)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://monopo.london/"
+        },
+        "href": "https://monopo.london/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Fabric Simulation, 3D"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Keeo Lu"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(MONOPO)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://monopo.london/"
+        },
+        "href": "https://monopo.london/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Fabric Simulation, Compositing, 3D Rendering, Edit"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "(KRYSTOF)",
+          "\n"
+        ]
+      }
+    ],
+    "media": [
+      {
+        "type": "iframe",
+        "src": "https://player.vimeo.com/video/1098482953?background=1",
+        "title": "Barbour Puffer FOOH"
+      },
+      {
+        "type": "iframe",
+        "src": "https://player.vimeo.com/video/1098488205?background=1",
+        "title": "Barbour Puffer FOOH - Scene 01"
+      },
+      {
+        "type": "iframe",
+        "src": "https://player.vimeo.com/video/1098488233?background=1",
+        "title": "Barbour Puffer FOOH - Scene 2"
+      }
+    ]
+  },
+  "/work/old-projects/bezdeno": {
+    "title": "Bezdeno",
+    "description": "3D visualization and design for Bezdeno",
+    "overview": [],
+    "blocks": [
+      {
+        "type": "p",
+        "content": [
+          "Zdeno Boureanu"
+        ]
+      },
+      {
+        "type": "h1",
+        "content": [
+          "Bezdeno Youtube Channel"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Career & Money ≠ Happiness & Satisfaction, that was the main idea of the personal brand for the successful entrepreneur Zdeno Boreanu, who decided to talk about this topic last year. Zdeno opens up important topics of mental health and today's grind mindset, which often leads people into a dead end and a chase for money.",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "3D"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Motion Graphics"
+        ]
+      },
+      {
+        "type": "media",
+        "index": 0
+      },
+      {
+        "type": "media",
+        "index": 1
+      },
+      {
+        "type": "p",
+        "content": [
+          "/ CREDITS"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Client"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Zdeno Boureanu"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(BEZDENO)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://monopo.london/"
+        },
+        "href": "https://monopo.london/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Art Direction"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Tomáš Gnosis Snop"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(YISKRA)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://www.yiskra.studio/"
+        },
+        "href": "https://www.yiskra.studio/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Logo / Brand"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Tomáš Gnosis Snop"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(YISKRA)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://www.yiskra.studio/"
+        },
+        "href": "https://www.yiskra.studio/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Video Editing"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "(KRYSTOF)",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "3D / Motion Design"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "(KRYSTOF)",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Sound Design"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "(KRYSTOF)",
+          "\n"
+        ]
+      }
+    ],
+    "media": [
+      {
+        "type": "iframe",
+        "title": "Bezdeno campaign main film",
+        "src": "https://player.vimeo.com/video/993084311?badge=0&autopause=0&player_id=0&app_id=58479"
+      },
+      {
+        "type": "iframe",
+        "title": "Bezdeno vertical campaign film",
+        "src": "https://player.vimeo.com/video/993085240?badge=0&autopause=0&player_id=0&app_id=58479"
+      }
+    ]
+  },
+  "/work/old-projects/bezestrachu": {
+    "title": "Bez Estrachu",
+    "description": "Design and motion work for Bez Estrachu",
+    "overview": [],
+    "blocks": [
+      {
+        "type": "media",
+        "index": 0
+      },
+      {
+        "type": "p",
+        "content": [
+          "Bezestrachu"
+        ]
+      },
+      {
+        "type": "h1",
+        "content": [
+          "Motion design rebrand"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "I lead a team of 3D artists to bring the new brand of Bezestrachu to life with 3D motion design. Teaming up with the talented brand designers at ",
+          {
+            "text": [
+              "yiskra.studio"
+            ],
+            "href": "https://www.instagram.com/yiskra.studio/"
+          },
+          ", was a fulfilling experience, as we brought the Bezestrachu team's brand vision to reality. The result was a lively, eye-catching brand that truly captures the energy and passion of the top production house in the Czech Republic, Bezestrachu.",
+          "\n",
+          " ",
+          {
+            "text": [
+              [
+                "bezestrachu.com"
+              ]
+            ],
+            "href": "https://bezestrachu.com"
+          },
+          " "
+        ]
+      },
+      {
+        "type": "media",
+        "index": 1
+      },
+      {
+        "type": "media",
+        "index": 2
+      },
+      {
+        "type": "media",
+        "index": 3
+      },
+      {
+        "type": "media",
+        "index": 4
+      },
+      {
+        "type": "p",
+        "content": [
+          "Art Direction / Brand: ",
+          {
+            "text": [
+              "yiskra.studio"
+            ],
+            "href": "https://www.instagram.com/yiskra.studio/"
+          },
+          "\n",
+          "3D / Motion Lead: Krystof Jezek",
+          "\n",
+          "3D Artists: ",
+          {
+            "text": [
+              "Josef Talac, Marek Sucharda"
+            ],
+            "href": "https://www.instagram.com/jta_cz/"
+          },
+          "\n",
+          " ",
+          {
+            "text": [
+              []
+            ],
+            "href": "https://bezestrachu.com"
+          },
+          " "
+        ]
+      }
+    ],
+    "media": [
+      {
+        "type": "BackgroundVideo",
+        "poster": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e944674bd9074bf9ddd482_intro do case-poster-00001.jpg",
+        "srcMp4": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e944674bd9074bf9ddd482_intro do case-transcode.mp4",
+        "srcWebm": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e944674bd9074bf9ddd482_intro do case-transcode.webm"
+      },
+      {
+        "type": "iframe",
+        "src": "https://player.vimeo.com/video/796936380?h=d64c69f816&badge=0&autopause=0&player_id=0&app_id=58479",
+        "title": "Bezestrachu &ndash; Brand Reveal"
+      },
+      {
+        "type": "iframe",
+        "src": "https://player.vimeo.com/video/796901161?h=4cd72e0728&badge=0&autopause=0&player_id=0&app_id=58479",
+        "title": "claymotion-intro"
+      },
+      {
+        "type": "BackgroundVideo",
+        "poster": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e3461a2a73c8622898d8c1_bezestrachu-transformation-2-poster-00001.jpg",
+        "srcMp4": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e3461a2a73c8622898d8c1_bezestrachu-transformation-2-transcode.mp4",
+        "srcWebm": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e3461a2a73c8622898d8c1_bezestrachu-transformation-2-transcode.webm"
+      },
+      {
+        "type": "BackgroundVideo",
+        "poster": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e3467f89fc0b83a22c5880_vid-3-poster-00001.jpg",
+        "srcMp4": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e3467f89fc0b83a22c5880_vid-3-transcode.mp4",
+        "srcWebm": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/63e3467f89fc0b83a22c5880_vid-3-transcode.webm"
+      }
+    ]
+  },
+  "/work/old-projects/dorian-drop-ii": {
+    "title": "Dorian Drop II",
+    "description": "3D product visualization for Dorian Drop II",
+    "overview": [],
+    "blocks": [
+      {
+        "type": "p",
+        "content": [
+          "Dorian: Drop II"
+        ]
+      },
+      {
+        "type": "h1",
+        "content": [
+          "Official lyrics video"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Dorian Wave is a TOP 10 rapper in Czechia. He is known for his R&B romantic tunes, trending among teenagers. I had the unique opportunity to create a lyrics video to his summer hit song \"Drop II\". The video is entirely 3D CGI, made in C4D and Octane. The deadline for this project was especially challenging, only 14 days. To this day, it is my most extended animation duration-wise."
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "TOTAL IMPACT"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          [
+            "150k+ "
+          ],
+          "Youtube views",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          [
+            "3 500+"
+          ],
+          " likes",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Art Direction"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "3D"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Motion Graphics"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Watch on Youtube"
+          ],
+          "href": "https://www.youtube.com/watch?v=0CCLweTo1Fo"
+        },
+        "href": "https://www.youtube.com/watch?v=0CCLweTo1Fo"
+      },
+      {
+        "type": "media",
+        "index": 0
+      },
+      {
+        "type": "media",
+        "index": 1
+      },
+      {
+        "type": "media",
+        "index": 2
+      },
+      {
+        "type": "media",
+        "index": 3
+      }
+    ],
+    "media": [
+      {
+        "type": "iframe",
+        "src": "https://www.youtube.com/embed/0CCLweTo1Fo?rel=0&controls=1&autoplay=0&mute=0&start=0",
+        "title": "Dorian - DROP II (Official lyrics video)"
+      },
+      {
+        "type": "img",
+        "src": "/images/lucrative.webp",
+        "alt": "Dorian drop image",
+        "width": 1620,
+        "height": 2025
+      },
+      {
+        "type": "BackgroundVideo",
+        "poster": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/62e926f53cc59fd9f53414c9_2022-07-14 16-53-30-poster-00001.jpg",
+        "srcMp4": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/62e926f53cc59fd9f53414c9_2022-07-14 16-53-30-transcode.mp4",
+        "srcWebm": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/62e926f53cc59fd9f53414c9_2022-07-14 16-53-30-transcode.webm"
+      },
+      {
+        "type": "BackgroundVideo",
+        "poster": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/62e9271e3cc59f8d2434164a_4x5 - video2-poster-00001.jpg",
+        "srcMp4": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/62e9271e3cc59f8d2434164a_4x5 - video2-transcode.mp4",
+        "srcWebm": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/62e9271e3cc59f8d2434164a_4x5 - video2-transcode.webm"
+      }
+    ]
+  },
+  "/work/old-projects/onitsuka-tiger-covent-garden": {
+    "title": "Onitsuka Tiger Covent Garden",
+    "description": "Mixed reality CGI campaign visuals for the Onitsuka Tiger Covent Garden store opening.",
+    "overview": [],
+    "blocks": [
+      {
+        "type": "p",
+        "content": [
+          "Onitsuka Tiger"
+        ]
+      },
+      {
+        "type": "h1",
+        "content": [
+          "Covent Garden Store Opening"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          " ",
+          {
+            "text": [
+              "Monopo London"
+            ],
+            "href": "https://monopo.london/"
+          },
+          " tapped us to help with creation of launch visuals for ",
+          {
+            "text": [
+              "Onitsuka Tiger's"
+            ],
+            "href": "https://www.instagram.com/onitsukatigerofficial/"
+          },
+          " new Covent Garden flagship. We delivered a CGI footage and VFX for an Instagram reel announcing the store opening, capturing the brand's Japanese heritage while injecting London street energy.",
+          "\n",
+          " "
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "3D"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "VFX"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Edit"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Watch on Instagram"
+          ],
+          "href": "https://www.instagram.com/p/DKMCl8dP2Pt/"
+        },
+        "href": "https://www.instagram.com/p/DKMCl8dP2Pt/"
+      },
+      {
+        "type": "media",
+        "index": 0
+      },
+      {
+        "type": "media",
+        "index": 1
+      },
+      {
+        "type": "media",
+        "index": 2
+      },
+      {
+        "type": "p",
+        "content": [
+          "/ CREDITS"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Creative Producers"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Maud Dedrecker, Melanie Hubert"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(MONOPO)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://monopo.london/"
+        },
+        "href": "https://monopo.london/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Art Director"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Josh Gan"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(MONOPO)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://monopo.london/"
+        },
+        "href": "https://monopo.london/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Edit"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Hector Miller"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(MONOPO)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://monopo.london/"
+        },
+        "href": "https://monopo.london/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "CGI Lead, Compositing"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "(KRYSTOF)",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "3D VFX"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "David Hájek"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "(KRYSTOF)",
+          "\n"
+        ]
+      }
+    ],
+    "media": [
+      {
+        "type": "iframe",
+        "src": "https://player.vimeo.com/video/1098821592?background=1",
+        "title": "Onitsuka Tiger - Main"
+      },
+      {
+        "type": "iframe",
+        "src": "https://player.vimeo.com/video/1098821664?background=1",
+        "title": "Onitsuka Tiger - Scene 1"
+      },
+      {
+        "type": "iframe",
+        "src": "https://player.vimeo.com/video/1098821634?background=1",
+        "title": "Onitsuka Tiger - Scene 2"
+      }
+    ]
+  },
+  "/work/old-projects/together": {
+    "title": "Together",
+    "description": "3D and motion design project Together",
+    "overview": [],
+    "blocks": [
+      {
+        "type": "p",
+        "content": [
+          "Together"
+        ]
+      },
+      {
+        "type": "h1",
+        "content": [
+          "Full-service Branding Agency"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Together is a branding and web design agency based in London. They brought me on board to help them present their work through motion graphics.",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Motion Graphics"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            "Visit Together"
+          ],
+          "href": "https://together.agency/"
+        },
+        "href": "https://together.agency/"
+      },
+      {
+        "type": "media",
+        "index": 0
+      },
+      {
+        "type": "media",
+        "index": 1
+      },
+      {
+        "type": "media",
+        "index": 2
+      },
+      {
+        "type": "p",
+        "content": [
+          "/ CREDITS"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Founder / Creative Director"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Will Beeching"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(Together)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://together.agency/about/"
+        },
+        "href": "https://together.agency/about/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Creative Director"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Ben Wynn-Owen"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(TOGETHER)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://together.agency/about/"
+        },
+        "href": "https://together.agency/about/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Project Manager"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Diana Telvak"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(TOGETHER)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://together.agency/about/"
+        },
+        "href": "https://together.agency/about/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Design Lead"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Shameel Batavia"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(TOGETHER)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://together.agency/about/"
+        },
+        "href": "https://together.agency/about/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Senior Designer"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Reiss Hussain"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(TOGETHER)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://together.agency/about/"
+        },
+        "href": "https://together.agency/about/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Senior Designer"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Plamen Kyosovski"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(TOGETHER)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://together.agency/about/"
+        },
+        "href": "https://together.agency/about/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Motion Designer"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Joseph Collis"
+        ]
+      },
+      {
+        "type": "link",
+        "content": {
+          "text": [
+            " ",
+            [
+              "(TOGETHER)",
+              "\n"
+            ],
+            "",
+            " "
+          ],
+          "href": "https://together.agency/about/"
+        },
+        "href": "https://together.agency/about/"
+      },
+      {
+        "type": "p",
+        "content": [
+          "Motion Designer"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "(KRYSTOF)",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "3D Designer"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Kryštof Ježek"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "(KRYSTOF)",
+          "\n"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "3D Designer"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "Josef Talač"
+        ]
+      },
+      {
+        "type": "p",
+        "content": [
+          "(KRYSTOF)",
+          "\n"
+        ]
+      }
+    ],
+    "media": [
+      {
+        "type": "iframe",
+        "title": "Together campaign animation one",
+        "src": "https://player.vimeo.com/video/993080938?badge=0&autopause=0&player_id=0&app_id=58479"
+      },
+      {
+        "type": "iframe",
+        "title": "Together campaign animation two",
+        "src": "https://player.vimeo.com/video/993080748?badge=0&autopause=0&player_id=0&app_id=58479"
+      },
+      {
+        "type": "iframe",
+        "title": "Together campaign main film",
+        "src": "https://player.vimeo.com/video/993081310?badge=0&autopause=0&player_id=0&app_id=58479"
+      }
+    ]
+  }
+}
