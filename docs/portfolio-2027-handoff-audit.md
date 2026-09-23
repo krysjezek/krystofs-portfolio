@@ -6,6 +6,8 @@ Updated 2026-09-23 following the owner’s audit decisions. This replaces the ea
 
 ## Case-study references
 
+The **3D Worlds service redesign** also lives on this page in 1440, 834 and 390 widths. See its [frame directory, media provenance and verification](portfolio-2027-3d-worlds.md). Its route remains `/services/3d-environments`.
+
 The original Vizcom frames retain their IDs on **10 · Case studies**. All six cases follow the [case-study rules](portfolio-2027-case-study-rules.md), including the distinct Work/Fun content, named Work credits, identity icons and media crops. Those rules supersede the earlier uniform migration.
 
 | Case route | Desktop | Tablet | Mobile |
