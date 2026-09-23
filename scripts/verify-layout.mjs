@@ -90,11 +90,17 @@ try {
         ) < reference.tolerance,
       );
       assert.equal(rule.width, 0.5);
+      assert.equal(rule.y, canvas.y, "Column rules start at the page top");
+      assert.equal(
+        rule.height,
+        canvas.height,
+        "Column rules reach the page bottom",
+      );
       assert.equal(
         await rules
           .nth(index)
           .evaluate((n) => getComputedStyle(n).backgroundColor),
-        "rgb(210, 210, 210)",
+        "rgb(237, 237, 237)",
       );
     }
   }

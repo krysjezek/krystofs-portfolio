@@ -17,7 +17,7 @@
   --tag: #f5f5f5;
   --ink: #05070a;
   --muted: #707681;
-  --line: #d2d2d2;
+  --line: #ededed;
   --inset: 35px;
   --gutter: 5px;
   --radius: 5px;
@@ -154,7 +154,7 @@ button {
 }
 .page-grid {
   position: absolute;
-  inset: 35px 0 0;
+  inset: 0;
   display: flex;
   justify-content: space-between;
   z-index: 0;
@@ -367,8 +367,8 @@ button {
   vertical-align: bottom;
 }
 .portfolio-navigation {
-  border-top: 1px solid var(--line);
-  padding-bottom: 5px;
+  box-shadow: inset 0 0.5px var(--line);
+  padding: 1px 0 5px;
 }
 .portfolio-navigation > [role="tablist"] {
   display: flex;
@@ -380,15 +380,22 @@ button {
   flex: 1;
   color: var(--muted);
   position: relative;
-  border-top: 1px solid transparent;
+  padding-top: 1px;
   margin-top: 0;
-  transition:
-    color 150ms ease-out,
-    border-color 150ms ease-out;
+  transition: color 150ms ease-out;
+}
+.portfolio-navigation [role="tab"]::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 0.5px;
+  transition: background-color 150ms ease-out;
 }
 .portfolio-navigation [aria-selected="true"] {
   color: var(--ink);
-  border-top-color: var(--muted);
+}
+.portfolio-navigation [aria-selected="true"]::before {
+  background: var(--muted);
 }
 .portfolio-navigation [role="tab"]:hover {
   color: var(--ink);
@@ -994,9 +1001,6 @@ button {
   line-height: 28px;
   vertical-align: top;
 }
-.portfolio-shell:has(.worlds-service) > .page-grid {
-  top: 0;
-}
 .portfolio-shell:has(.worlds-service) > .page-grid > span {
   display: block;
 }
@@ -1060,9 +1064,7 @@ button {
     width: 50%;
   }
   .portfolio-navigation {
-    border-top: 0;
-    box-shadow: inset 0 1px var(--line);
-    padding-bottom: 0;
+    padding: 0;
   }
   .project-gallery {
     grid-template-columns: repeat(2, minmax(0, 1fr));

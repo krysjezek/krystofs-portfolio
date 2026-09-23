@@ -30,3 +30,7 @@ The application remains available locally. Nothing was pushed or deployed.
 The initial check used a browser with hidden scrollbars and missed the horizontal shift when About fits the viewport. The root now reserves stable scrollbar space on both sides, keeping the canvas centered as page height changes. The page shell uses a column flex layout with a growing main region, so the footer meets the bottom of a short viewport and follows content on longer pages.
 
 The layout test now launches Chromium with scrollbars enabled. Figma coordinates are compared relative to the content canvas, allowing for scrollbar space without changing the reference measurements. Additional checks repeatedly switch Work/About/Fun at 1920×1400, 1280×1600, 834×1600 and 390×2400, asserting unchanged horizontal position, width and navigation position, a bottom-aligned About footer, and no content overlap.
+
+## Updated grid token
+
+Synced Figma's `border/subtle` → `palette/super subtle` value to `#ededed`. Column rules start at Y=0 and span the complete page. Grid lines and horizontal dividers use 0.5px; the navigation separator and selected-tab indicator use the same thickness without changing the existing section positions. The darker selected-tab color remains the separate selected-state token.
