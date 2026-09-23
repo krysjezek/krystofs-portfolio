@@ -873,9 +873,6 @@ button {
   grid-column: 2/4;
   height: min(33vw, 475.2px);
 }
-.return-home {
-  padding: 0 var(--inset) 35px;
-}
 .route-status {
   position: fixed;
   bottom: 20px;

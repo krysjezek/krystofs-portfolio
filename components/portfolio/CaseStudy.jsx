@@ -146,9 +146,6 @@ export default function CaseStudy({ project }) {
           </section>
         )}
         <Recommendations current={project.path} />
-        <div className="return-home">
-          <HomeLink category={project.category} />
-        </div>
       </main>
     </>
   );

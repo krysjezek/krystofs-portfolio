@@ -83,6 +83,8 @@ New reusable 15px icon components are on the Components page. Official-site favi
 
 ## Routes and recommendations
 
+Case studies have a Back control in the header only. The bottom Return home row was removed from the implementation and all 18 responsive Figma case frames on 23 September 2026; the shared footer follows More case studies directly.
+
 Classification does not rename routes. Preserve all six current `/work/...` URLs, metadata, indexing, `featuredCreativeWorks`, sitemaps and robots rules. Work / Fun / About remain states of one homepage. Legacy `/work/old-projects/*` stay unlisted and `noindex, nofollow`.
 
 404 and More case studies draw only from cases that actually have a published page. Both Work and Fun can be eligible. Sample two distinct cases once per page entry, exclude the current case from More, and keep the selection stable across hydration and rerenders. Never use an unlinked gallery card. Figma shows illustrative fixed samples, not runtime randomness.
