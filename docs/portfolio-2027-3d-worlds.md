@@ -15,6 +15,8 @@ This remains a service presentation on `/services/3d-environments`, even though 
 
 The redesign follows Vizcom's white surface, Roobert PRO styles, muted supporting copy, column rules, fine dividers, 16:10 opening media and 5px media gutters. Desktop and tablet use three editorial columns and alternating 2:1 gallery pairs with equal image heights. Mobile stacks content in source order, using 20px text insets and 5px media insets. Gallery titles and collaborator credits sit below the images.
 
+The introduction puts the title in column one, “I create CGI worlds…” in column two and “Each world is designed…” in column three. The redundant “For brands, creative directors and design studios” sentence is removed. Mobile keeps the same content order in a vertical stack. All three arrangements and the restored Motion Mockups explanation were checked for text overflow.
+
 Motion Mockups is a standalone 17.5px Roobert PRO link at every size, with the same linked 15px icon and native external-link instance used in the homepage header. The original explanatory paragraph sits beneath it with a 10px gap, using the existing desktop/compact body styles. The Ready-made alternative label and separate Explore link are removed. Its URL is `https://www.motionmockups.com/`.
 
 Edit global typography/colors in the existing Foundations styles and variables. Header, footer, secondary buttons, service details and media remain instances of existing shared components. Detail labels and values use their existing component properties; button labels use `Label`. Edit local copy and the gallery image fills on each responsive screen. No new competing component library was created. Directory links navigate to the three frames.
