@@ -185,7 +185,10 @@
         "category": "fun",
         "disciplines": "",
         "href": "https://gitlab.fel.cvut.cz/jezekkr2/pcc-ray-tracing",
-        "poster": "/images/portfolio-2027-gallery-c-render-engine.webp",
+        "poster": "/videos/posters/coding-01.jpg",
+        "srcH265": "/videos/h265/coding-01-web.mp4",
+        "srcAv1": "/videos/av1/coding-01.webm",
+        "srcMp4": "/videos/h264/coding-01-fallback.mp4",
         "aspect": 1,
         "tabletAspect": 1,
         "mobileAspect": 1
@@ -240,7 +243,10 @@
         "category": "fun",
         "disciplines": "",
         "href": "https://www.instagram.com/relive.ar/",
-        "poster": "/images/portfolio-2027-gallery-relivear.webp",
+        "poster": "/videos/posters/coding-02.jpg",
+        "srcH265": "/videos/h265/coding-02-web.mp4",
+        "srcAv1": "/videos/av1/coding-02.webm",
+        "srcMp4": "/videos/h264/coding-02-fallback.mp4",
         "aspect": 1,
         "tabletAspect": 1,
         "mobileAspect": 1
