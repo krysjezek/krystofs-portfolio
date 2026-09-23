@@ -12,12 +12,9 @@
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
     "@vercel/blob": "^2.6.1",
-    "gsap": "^3.14.2",
     "next": "^16.2.10",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "sass": "^1.101.0",
-    "three": "^0.183.2"
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^16.2.10",

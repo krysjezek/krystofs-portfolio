@@ -54,11 +54,13 @@ export function assetUrl(path) {
 }
 
 export function pageSeo(path, imageAlt = OG_IMAGE_ALT) {
+  const work = featuredCreativeWorks.find(item => item.path === path)
   const socialImage = pageSocialImages[path]
   const imageUrl = assetUrl(socialImage?.url || OG_IMAGE)
   const resolvedImageAlt = socialImage?.alt || imageAlt
 
   return {
+    ...(work ? { title: work.name, description: work.description } : {}),
     alternates: {
       canonical: path,
     },
@@ -95,73 +97,73 @@ export const portfolioRoutes = [
     path: '/',
     priority: 1.0,
     changeFrequency: 'weekly',
-    lastModified: '2026-08-19',
+    lastModified: '2026-09-23',
   },
   {
     path: '/services/3d-environments',
     priority: 0.9,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-10',
+    lastModified: '2026-09-23',
   },
   {
     path: '/services/mixed-reality',
     priority: 0.7,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-10',
+    lastModified: '2026-09-23',
   },
   {
     path: '/work/vizcom',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-08-19',
+    lastModified: '2026-09-23',
   },
   {
     path: '/work/valkaai',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-13',
+    lastModified: '2026-09-23',
   },
   {
     path: '/work/the-mag-w-rap-2025',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-10',
+    lastModified: '2026-09-23',
   },
   {
     path: '/work/barbour',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-10',
+    lastModified: '2026-09-23',
   },
   {
     path: '/work/the-vsx-sports-bra',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-10',
+    lastModified: '2026-09-23',
   },
   {
     path: '/work/chainer',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-10',
+    lastModified: '2026-09-23',
   },
   {
     path: '/other/cv',
     priority: 0.5,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-01',
+    lastModified: '2026-09-23',
   },
   {
     path: '/other/work',
     priority: 0.6,
     changeFrequency: 'monthly',
-    lastModified: '2026-08-19',
+    lastModified: '2026-09-23',
   },
   {
     path: '/other/join',
     priority: 0.4,
     changeFrequency: 'monthly',
-    lastModified: '2026-07-01',
+    lastModified: '2026-09-23',
   },
 ]
 

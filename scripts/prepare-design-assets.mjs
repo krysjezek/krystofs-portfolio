@@ -39,4 +39,9 @@ for (const job of jobs) {
   records.push({ id:job.id, path:job.dest, figmaNode:job.node, width:output.width, height:output.height, sourceWidth:probe.width, sourceHeight:probe.height, bytes:bytes.length, sha256:createHash('sha256').update(bytes).digest('hex') })
   console.log(`${job.id}: ${output.width}×${output.height}, ${bytes.length} bytes`)
 }
-await writeFile('content/design-assets.json', JSON.stringify(records,null,2)+'\n')
+const previous = await readFile('content/design-assets.json', 'utf8').then(JSON.parse).catch(error => {
+  if (error.code === 'ENOENT') return []
+  throw error
+})
+const replaced = new Set(records.map(record => record.id))
+await writeFile('content/design-assets.json', JSON.stringify([...previous.filter(record => !replaced.has(record.id)), ...records],null,2)+'\n')

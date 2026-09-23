@@ -1,30 +1,33 @@
-import Script from 'next/script'
-import ClientCursor from '@/components/ClientCursor'
-import JsonLd from '@/components/JsonLd'
-import LinkLines from '@/components/LinkLines'
-import ScrollReveal from '@/components/ScrollReveal'
-import VercelAnalytics from '@/components/VercelAnalytics'
-import { OG_IMAGE, OG_IMAGE_ALT, SITE_URL, pageSeo, siteStructuredData } from './seo'
-import '@/styles/normalize.css'
-import '@/styles/webflow.css'
-import '@/styles/krystofs-portfolio.webflow.scss'
+import JsonLd from "@/components/JsonLd";
+import Footer from "@/components/portfolio/Footer";
+import Experience from "@/components/portfolio/Experience";
+import VercelAnalytics from "@/components/VercelAnalytics";
+import {
+  OG_IMAGE,
+  OG_IMAGE_ALT,
+  SITE_URL,
+  pageSeo,
+  siteStructuredData,
+} from "./seo";
+import "@/styles/portfolio.css";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: 'Krystof Jezek, Independent CGI Designer',
-    template: '%s | Krystof Jezek',
+    default: "Krystof Jezek, Independent CGI Designer",
+    template: "%s | Krystof Jezek",
   },
-  description: 'Independent CGI designer creating art-directed environments, motion visuals, and mixed reality campaigns for brands and studios.',
-  ...pageSeo('/'),
+  description:
+    "Independent CGI designer creating art-directed environments, motion visuals, and mixed reality campaigns for brands and studios.",
+  ...pageSeo("/"),
   openGraph: {
-    ...pageSeo('/').openGraph,
-    type: 'website',
-    siteName: 'Krystof Jezek',
-    locale: 'en_US',
+    ...pageSeo("/").openGraph,
+    type: "website",
+    siteName: "Krystof Jezek",
+    locale: "en_US",
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     images: [
       {
         url: OG_IMAGE,
@@ -32,36 +35,31 @@ export const metadata = {
       },
     ],
   },
-}
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="w-mod-js" suppressHydrationWarning>
+    <html lang="en">
       <head>
-        <link rel="preconnect" href="https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com" />
-        <link rel="preconnect" href="https://s3.amazonaws.com" />
-        <link rel="preconnect" href="https://cdn.prod.website-files.com" />
-
-        <Script id="webflow-touch-class" strategy="beforeInteractive">{`
-          (function(window, document) {
-            var html = document.documentElement;
-            if (('ontouchstart' in window) || (window.DocumentTouch && document instanceof window.DocumentTouch)) {
-              html.className += ' w-mod-touch';
-            }
-          })(window, document);
-        `}</Script>
-
+        <link
+          rel="preconnect"
+          href="https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com"
+        />
         <link rel="shortcut icon" href="/favicon.jpg" type="image/x-icon" />
         <link rel="apple-touch-icon" href="/webclip.jpg" />
       </head>
-      <body className="body">
-        <ClientCursor />
+      <body>
+        <a className="skip-link" href="#main-content">
+          Skip to content
+        </a>
         <JsonLd data={siteStructuredData()} />
-        <LinkLines />
-        <ScrollReveal />
-        {children}
+        <div className="portfolio-shell">
+          {children}
+          <Footer />
+        </div>
+        <Experience />
         <VercelAnalytics />
       </body>
     </html>
-  )
+  );
 }
