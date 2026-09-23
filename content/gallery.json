@@ -7,10 +7,13 @@
         "category": "work",
         "disciplines": "3D, Art Direction",
         "href": "/work/vizcom",
-        "poster": "/images/portfolio-2027-gallery-outland-vizcom-v2.webp",
+        "poster": "/videos/posters/portfolio-card-outland-vizcom-v1.jpg",
         "aspect": 1.33333,
         "tabletAspect": 1.33333,
-        "mobileAspect": 1.33333
+        "mobileAspect": 1.33333,
+        "srcH265": "/videos/h265/portfolio-card-outland-vizcom-v1-web.mp4",
+        "srcAv1": "/videos/av1/portfolio-card-outland-vizcom-v1.webm",
+        "srcMp4": "/videos/h264/portfolio-card-outland-vizcom-v1-fallback.mp4"
       },
       {
         "id": "shelby",
@@ -29,10 +32,13 @@
         "category": "work",
         "disciplines": "3D, Motion, Art Direction",
         "href": "/work/the-vsx-sports-bra",
-        "poster": "/images/portfolio-2027-gallery-victoria-s-secret.webp",
+        "poster": "/videos/posters/portfolio-card-victoria-s-secret-v1.jpg",
         "aspect": 1.77778,
         "tabletAspect": 0.75,
-        "mobileAspect": 0.75
+        "mobileAspect": 0.75,
+        "srcH265": "/videos/h265/portfolio-card-victoria-s-secret-v1-web.mp4",
+        "srcAv1": "/videos/av1/portfolio-card-victoria-s-secret-v1.webm",
+        "srcMp4": "/videos/h264/portfolio-card-victoria-s-secret-v1-fallback.mp4"
       },
       {
         "id": "barbour",
@@ -40,10 +46,13 @@
         "category": "work",
         "disciplines": "3D, Motion, Art Direction",
         "href": "/work/barbour",
-        "poster": "/images/portfolio-2027-gallery-barbour.webp",
+        "poster": "/videos/posters/portfolio-card-barbour-v1.jpg",
         "aspect": 0.75,
         "tabletAspect": 0.75,
-        "mobileAspect": 0.75
+        "mobileAspect": 0.75,
+        "srcH265": "/videos/h265/portfolio-card-barbour-v1-web.mp4",
+        "srcAv1": "/videos/av1/portfolio-card-barbour-v1.webm",
+        "srcMp4": "/videos/h264/portfolio-card-barbour-v1-fallback.mp4"
       },
       {
         "id": "motion-mockups",
@@ -98,7 +107,10 @@
         "poster": "/images/portfolio-2027-gallery-valkaai.webp",
         "aspect": 1,
         "tabletAspect": 1,
-        "mobileAspect": 1
+        "mobileAspect": 1,
+        "srcH265": "/videos/h265/portfolio-card-valkaai-v1-web.mp4",
+        "srcAv1": "/videos/av1/portfolio-card-valkaai-v1.webm",
+        "srcMp4": "/videos/h264/portfolio-card-valkaai-v1-fallback.mp4"
       },
       {
         "id": "gusto",
@@ -202,7 +214,10 @@
         "poster": "/images/portfolio-2027-gallery-frozen-jewelry.webp",
         "aspect": 0.75,
         "tabletAspect": 0.75,
-        "mobileAspect": 0.75
+        "mobileAspect": 0.75,
+        "srcH265": "/videos/h265/portfolio-card-frozen-jewelry-v1-web.mp4",
+        "srcAv1": "/videos/av1/portfolio-card-frozen-jewelry-v1.webm",
+        "srcMp4": "/videos/h264/portfolio-card-frozen-jewelry-v1-fallback.mp4"
       },
       {
         "id": "the-mag-wrap",
@@ -210,10 +225,13 @@
         "category": "fun",
         "disciplines": "",
         "href": "/work/the-mag-w-rap-2025",
-        "poster": "/images/portfolio-2027-gallery-the-mag-wrap.webp",
+        "poster": "/videos/posters/portfolio-card-the-mag-wrap-v1.jpg",
         "aspect": 1.33333,
         "tabletAspect": 1.33333,
-        "mobileAspect": 1.33333
+        "mobileAspect": 1.33333,
+        "srcH265": "/videos/h265/portfolio-card-the-mag-wrap-v1-web.mp4",
+        "srcAv1": "/videos/av1/portfolio-card-the-mag-wrap-v1.webm",
+        "srcMp4": "/videos/h264/portfolio-card-the-mag-wrap-v1-fallback.mp4"
       },
       {
         "id": "blender-addon",
@@ -235,7 +253,10 @@
         "poster": "/images/portfolio-2027-gallery-chainer.webp",
         "aspect": 1.33333,
         "tabletAspect": 1.33333,
-        "mobileAspect": 1.33333
+        "mobileAspect": 1.33333,
+        "srcH265": "/videos/h265/portfolio-card-chainer-v1-web.mp4",
+        "srcAv1": "/videos/av1/portfolio-card-chainer-v1.webm",
+        "srcMp4": "/videos/h264/portfolio-card-chainer-v1-fallback.mp4"
       },
       {
         "id": "relivear",
@@ -279,10 +300,13 @@
         "category": "fun",
         "disciplines": "",
         "href": null,
-        "poster": "/images/portfolio-2027-gallery-tweezers-jewelry.webp",
+        "poster": "/videos/posters/portfolio-card-tweezers-jewelry-v1.jpg",
         "aspect": 1,
         "tabletAspect": 1,
-        "mobileAspect": 1
+        "mobileAspect": 1,
+        "srcH265": "/videos/h265/portfolio-card-tweezers-jewelry-v1-web.mp4",
+        "srcAv1": "/videos/av1/portfolio-card-tweezers-jewelry-v1.webm",
+        "srcMp4": "/videos/h264/portfolio-card-tweezers-jewelry-v1-fallback.mp4"
       },
       {
         "id": "fwa-logo",
@@ -312,10 +336,13 @@
         "category": "fun",
         "disciplines": "",
         "href": null,
-        "poster": "/images/portfolio-2027-gallery-cgi-karlin.webp",
+        "poster": "/videos/posters/portfolio-card-cgi-karlin-v1.jpg",
         "aspect": 0.75,
         "tabletAspect": 0.75,
-        "mobileAspect": 0.75
+        "mobileAspect": 0.75,
+        "srcH265": "/videos/h265/portfolio-card-cgi-karlin-v1-web.mp4",
+        "srcAv1": "/videos/av1/portfolio-card-cgi-karlin-v1.webm",
+        "srcMp4": "/videos/h264/portfolio-card-cgi-karlin-v1-fallback.mp4"
       }
     ],
     "desktop": [

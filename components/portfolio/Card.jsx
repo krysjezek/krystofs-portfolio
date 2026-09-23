@@ -30,7 +30,7 @@ export default function Card({
           alt: card.alt || card.name,
         }}
         priority={priority}
-        sizes="(max-width: 599px) calc(100vw - 10px), (max-width: 1099px) calc(50vw - 8px), calc(33.333vw - 7px)"
+        sizes="(max-width: 599px) calc(100vw - 10px), (max-width: 1099px) calc(50vw - 7.5px), (max-width: 1440px) calc(33.333vw - 5px), 475px"
       />
       <div className="project-labels" aria-hidden="true">
         <span className="tag">{card.name}</span>

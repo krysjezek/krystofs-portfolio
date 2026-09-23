@@ -1,0 +1,842 @@
+{
+  "prepared": "2026-09-23",
+  "note": "Card deliveries resized from verified existing CDN videos. Source aspect ratios and full clips preserved; CSS applies gallery crops. Audio and metadata removed, frame rates above 30 capped at 30. Posters are first frames of H.264 deliveries.",
+  "encoding": {
+    "h264": "High, yuv420p, CRF 20, slow, faststart",
+    "h265": "Main, yuv420p, CRF 24, slow, hvc1, faststart",
+    "av1": "Main, yuv420p10le, CRF 30, SVT-AV1 preset 6"
+  },
+  "assets": [
+    {
+      "id": "outland-vizcom",
+      "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/videos/h264/vizcom-brand-world-fallback.mp4",
+      "sourceVideo": {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1440,
+        "height": 900,
+        "r_frame_rate": "24/1"
+      },
+      "sourceDuration": 32.166667,
+      "widthCap": 1080,
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-outland-vizcom-v1-web.mp4",
+          "bytes": 4110452,
+          "sha256": "9fd6a63a82f6a9927cdbb1ab20b83504dbeaafe53faf4b91343b3db83dae0eca",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 676,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "32.166667"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-outland-vizcom-v1.webm",
+          "bytes": 3989831,
+          "sha256": "2f4cd7aa66d81069659cbd154e9b8a50f7c4832ef5bf4a5185e4e51703777abe",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 676,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "32.167000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-outland-vizcom-v1-fallback.mp4",
+          "bytes": 7510476,
+          "sha256": "d2bc900b6f67a2e6cbbabed144e46b6bf62be66ab780c14f94408e7ceea01717",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 676,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "32.166667"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-outland-vizcom-v1.jpg",
+          "bytes": 135358,
+          "sha256": "8c3e5c1ba4b5ab44c72c2c6970264bdfe17e94818ad586cb5622f44a04ab7c93",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 676,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "displayPoster": "/videos/posters/portfolio-card-outland-vizcom-v1.jpg"
+    },
+    {
+      "id": "valkaai",
+      "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/videos/h264/valkaai-logo-glass-prism-fallback.mp4",
+      "sourceVideo": {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1440,
+        "height": 810,
+        "r_frame_rate": "30/1"
+      },
+      "sourceDuration": 36.133333,
+      "widthCap": 1080,
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-valkaai-v1-web.mp4",
+          "bytes": 4365408,
+          "sha256": "99258226419225b55e671dcc87c7f230e1c4bea965413bd2f5010388b6a53daf",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 608,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "36.133333"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-valkaai-v1.webm",
+          "bytes": 4626654,
+          "sha256": "f97dea1fafd5e957ea9456d861629abd32e2e298de9a5e03474d33b78b0d12e1",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 608,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "36.133000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-valkaai-v1-fallback.mp4",
+          "bytes": 7912118,
+          "sha256": "72efe26e96b0a7ed7db8466877f1f3f9bd9d11944037ab36b29ef849fdba9bbb",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 608,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "36.133333"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-valkaai-v1.jpg",
+          "bytes": 4081,
+          "sha256": "e934a684b6cdb9751292634316a05178f34b6df6f779d2a58071c4923d111b20",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 608,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "displayPoster": "/images/portfolio-2027-gallery-valkaai.webp",
+      "posterNote": "Retains authored gallery still for loading and reduced-motion mode; video opens on an empty, dark or breakdown frame. First-frame delivery poster is also prepared and archived in this manifest."
+    },
+    {
+      "id": "chainer",
+      "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/videos/h264/chainer_header-fallback.mp4",
+      "sourceVideo": {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "24/1"
+      },
+      "sourceDuration": 7.375,
+      "widthCap": 1080,
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-chainer-v1-web.mp4",
+          "bytes": 1640981,
+          "sha256": "89df8e962815eb454f82c5875d64d1bad2877c58361bc3090cfd73faecdcf62c",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 608,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "7.375000"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-chainer-v1.webm",
+          "bytes": 1601257,
+          "sha256": "a036f989e9fcb03c524c8325e7a619c811afbeab1d59a9bb04bb9c1ca28ad32d",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 608,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "7.375000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-chainer-v1-fallback.mp4",
+          "bytes": 2130679,
+          "sha256": "ee22ec8b05d615d6d0809101c5c027347eb29166a98a083f6ffbf72238abbf58",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 608,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "7.375000"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-chainer-v1.jpg",
+          "bytes": 98226,
+          "sha256": "b7de298e6767f6cf3155ac9c351e3ea44b4abb419cc1b4e8c90ef4508b17c065",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 608,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "displayPoster": "/images/portfolio-2027-gallery-chainer.webp",
+      "posterNote": "Retains authored gallery still for loading and reduced-motion mode; video opens on an empty, dark or breakdown frame. First-frame delivery poster is also prepared and archived in this manifest."
+    },
+    {
+      "id": "the-mag-wrap",
+      "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/videos/other/wrap25_injektaz_preview.mp4",
+      "sourceVideo": {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "30/1"
+      },
+      "sourceDuration": 2.566667,
+      "widthCap": 1080,
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-the-mag-wrap-v1-web.mp4",
+          "bytes": 541695,
+          "sha256": "5b9e8dc1f98ee247988c19ed3fba42448c57b4fce285350b9bc4e607338f7312",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 608,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "2.566667"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-the-mag-wrap-v1.webm",
+          "bytes": 569865,
+          "sha256": "fb8019a23fbbfcd673f042b4e05f1bae696c356e0d8aae02e016939bc6be913b",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 608,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "2.566000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-the-mag-wrap-v1-fallback.mp4",
+          "bytes": 1007954,
+          "sha256": "594e2200a8fd8b38a77a4aa58ae87b89f1cb76d6d78e69d25c2fbe7b8792238f",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 608,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "2.566667"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-the-mag-wrap-v1.jpg",
+          "bytes": 62257,
+          "sha256": "4e47749ed51a6e9cc865bc667a2f44393e3d1d4d6c769f9243df581a57543270",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 608,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "displayPoster": "/videos/posters/portfolio-card-the-mag-wrap-v1.jpg"
+    },
+    {
+      "id": "victoria-s-secret",
+      "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/videos/h264/vsx_header-fallback.mp4",
+      "sourceVideo": {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1336,
+        "height": 810,
+        "r_frame_rate": "30/1"
+      },
+      "sourceDuration": 6.08,
+      "widthCap": 1080,
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-victoria-s-secret-v1-web.mp4",
+          "bytes": 726051,
+          "sha256": "9a7ca40fec8b74a7da9a3da9e393a12e7d5bf4554977b9340a00fcfff618ee03",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 654,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "6.066667"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-victoria-s-secret-v1.webm",
+          "bytes": 671540,
+          "sha256": "51f2a6df935e94575a8720455da31906aac4696dedf42b215258762d4813f648",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 654,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "6.066000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-victoria-s-secret-v1-fallback.mp4",
+          "bytes": 1285722,
+          "sha256": "1831d7bb97e69de99f40794b6db831d75e3d5130190855110c1830b4a2a58e5e",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 654,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "6.066667"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-victoria-s-secret-v1.jpg",
+          "bytes": 58159,
+          "sha256": "50811db004dc82a1c6c3775d7f1c3a711923090f415a3f6315ec997e853d443c",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 654,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "displayPoster": "/videos/posters/portfolio-card-victoria-s-secret-v1.jpg"
+    },
+    {
+      "id": "barbour",
+      "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/videos/h264/cgi_barbour_london%20updated-fallback.mp4",
+      "sourceVideo": {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 720,
+        "height": 1440,
+        "r_frame_rate": "24000/1001"
+      },
+      "sourceDuration": 17.856,
+      "widthCap": 720,
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-barbour-v1-web.mp4",
+          "bytes": 5065490,
+          "sha256": "bc5de353c2124fc3b7149efb68ba424d363c024ef59b87f7afe73c4bc9458b66",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 720,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24000/1001"
+            }
+          ],
+          "format": {
+            "duration": "17.851167"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-barbour-v1.webm",
+          "bytes": 5342479,
+          "sha256": "0b03cda4ca312c5a742f655d09f10b27035d6ae0aad8d35b68f74d86bc1d05bd",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 720,
+              "height": 1440,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "24000/1001"
+            }
+          ],
+          "format": {
+            "duration": "17.851000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-barbour-v1-fallback.mp4",
+          "bytes": 6601937,
+          "sha256": "e48ad2acda26091a7b15684b275e9b04714ebe4914a7785787e673d32a3d539e",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 720,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24000/1001"
+            }
+          ],
+          "format": {
+            "duration": "17.851167"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-barbour-v1.jpg",
+          "bytes": 203120,
+          "sha256": "b0aa73653f508d3647d662fbc700f30350c3d41dc9dbabfd2d713c41ae2f3858",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 720,
+              "height": 1440,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "displayPoster": "/videos/posters/portfolio-card-barbour-v1.jpg"
+    },
+    {
+      "id": "cgi-karlin",
+      "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/videos/h264/cgi_presto%20updated-fallback.mp4",
+      "sourceVideo": {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 720,
+        "height": 1440,
+        "r_frame_rate": "24/1"
+      },
+      "sourceDuration": 10.005,
+      "widthCap": 720,
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-cgi-karlin-v1-web.mp4",
+          "bytes": 1744298,
+          "sha256": "1de67f302c56cd2779f7f8f9b94caed3e38298b0323e4700a747a9969842d805",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 720,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "10.000000"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-cgi-karlin-v1.webm",
+          "bytes": 1486183,
+          "sha256": "822340cbdb170eeaf9f248658cedba2ea2b4fd383d767b8966710318542c2c3c",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 720,
+              "height": 1440,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "10.000000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-cgi-karlin-v1-fallback.mp4",
+          "bytes": 2637837,
+          "sha256": "ab2c787924b0e0941bf2723398206cae6a7ca24d450efbe497a80ef0efd024ec",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 720,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "10.000000"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-cgi-karlin-v1.jpg",
+          "bytes": 171349,
+          "sha256": "44f4fba57b898f6f0afdc7a724314b953e3937b511c980fde7dd6af04a3ec364",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 720,
+              "height": 1440,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "displayPoster": "/videos/posters/portfolio-card-cgi-karlin-v1.jpg"
+    },
+    {
+      "id": "frozen-jewelry",
+      "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/videos/h264/cgi_antartcica-fallback.mp4",
+      "sourceVideo": {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1080,
+        "r_frame_rate": "60/1"
+      },
+      "sourceDuration": 15.21,
+      "widthCap": 960,
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-frozen-jewelry-v1-web.mp4",
+          "bytes": 2261368,
+          "sha256": "ec5e8562ac33239f403f36cf5a1e23fbf0de03f5edc91b03bac9230c5b198e32",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 960,
+              "height": 960,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "15.200000"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-frozen-jewelry-v1.webm",
+          "bytes": 1865577,
+          "sha256": "e677cfc22a781ec151f2b90398d8bc81ce1b2d9e9badb736c75814ac0ea1222e",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 960,
+              "height": 960,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "15.200000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-frozen-jewelry-v1-fallback.mp4",
+          "bytes": 3984354,
+          "sha256": "1c2fd6c817034a90fd2fa1170288e684cfb36851c11e2ed88fb413603162f15d",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 960,
+              "height": 960,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "15.200000"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-frozen-jewelry-v1.jpg",
+          "bytes": 55824,
+          "sha256": "3cd7b0717d7fdc47d5066e8c59d6165fff2422e0364896569ea3b0f71de059de",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 960,
+              "height": 960,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "displayPoster": "/images/portfolio-2027-gallery-frozen-jewelry.webp",
+      "posterNote": "Retains authored gallery still for loading and reduced-motion mode; video opens on an empty, dark or breakdown frame. First-frame delivery poster is also prepared and archived in this manifest."
+    },
+    {
+      "id": "tweezers-jewelry",
+      "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/videos/h264/cgi_tweezers-fallback.mp4",
+      "sourceVideo": {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1080,
+        "r_frame_rate": "60000/1001"
+      },
+      "sourceDuration": 13.376,
+      "widthCap": 960,
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-tweezers-jewelry-v1-web.mp4",
+          "bytes": 1570852,
+          "sha256": "e30c4a982cbb1d47be89967b62a8ac37e22e966d991345bda2a0957b1410006f",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 960,
+              "height": 960,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "13.366667"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-tweezers-jewelry-v1.webm",
+          "bytes": 1416997,
+          "sha256": "4422f5bbbb8a3080e58c1d34ebb61566df6d388939dda27dd58c767fde46a526",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 960,
+              "height": 960,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "13.366000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-tweezers-jewelry-v1-fallback.mp4",
+          "bytes": 2745406,
+          "sha256": "3c3dfd9e7f8aa5221b9de1127288fd0111d131dfd259748b1c841948fcd3ffcc",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 960,
+              "height": 960,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "13.366667"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-tweezers-jewelry-v1.jpg",
+          "bytes": 37238,
+          "sha256": "f9724b1b744d673eaecf4391fe4b497251726c0d2f6ee02c34845ecc292aacc8",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 960,
+              "height": 960,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "displayPoster": "/videos/posters/portfolio-card-tweezers-jewelry-v1.jpg"
+    }
+  ]
+}
