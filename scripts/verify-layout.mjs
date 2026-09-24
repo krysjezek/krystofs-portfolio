@@ -69,11 +69,25 @@ try {
           (key === "height" ||
             (key === "width" && anchor.selector.includes(".project-card")))
         ) continue;
+        let expected = anchor[key];
+        // Owner-approved Fun crops: Handheld 4:3 -> 1:1, Mag 4:3 -> 16:9.
+        // Keep Figma's fixture and calculate only the resulting height delta.
+        if (screen.tab === "fun" && key === "height" && anchor.selector === ".portfolio-shell") {
+          const cardWidth = screen.width < 600 ? screen.width - 10 : (screen.width - 15) / 2;
+          expected += cardWidth * (screen.width < 600 ? 1 / 16 : 1 / 4);
+        }
         checks++;
-        if (Math.abs(actual[key] - anchor[key]) > reference.tolerance)
+        if (Math.abs(actual[key] - expected) > reference.tolerance)
           failures.push(
-            `${screen.frame} ${screen.width}px ${anchor.selector}[${anchor.index || 0}] ${key}: ${actual[key].toFixed(2)}, expected ${anchor[key]}`,
+            `${screen.frame} ${screen.width}px ${anchor.selector}[${anchor.index || 0}] ${key}: ${actual[key].toFixed(2)}, expected ${expected}`,
           );
+      }
+    }
+    if (screen.tab === "fun") {
+      for (const [id, ratio] of [["blender-addon", 1], ["the-mag-wrap", 16 / 9]]) {
+        const card = await page.locator(`#panel-fun [data-project="${id}"]`).boundingBox();
+        assert(Math.abs(card.width / card.height - ratio) < 0.001, `${id} keeps its requested ratio at ${screen.width}px`);
+        checks++;
       }
     }
     assert(

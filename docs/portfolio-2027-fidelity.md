@@ -43,6 +43,16 @@ The original gallery's 5px outer padding and 5px gaps put its gap centers off th
 
 Work and Fun columns also finish at a shared bottom edge. On desktop and tablet, the final card fills any remaining height in its column, with cover cropping inside its frame. Earlier cards retain their authored ratios and all gaps stay 5px. Browser checks cover both galleries at nine widths from 390 to 1920px; the layout suite asserts matching card/media bottom edges and unchanged vertical gaps.
 
+## Follow-up: Fun card ratios
+
+Owner-approved on 24 September 2026: Handheld Loop uses 1:1 and The Mag Wrap
+uses 16:9 at desktop, tablet and mobile widths. These two cards retain their
+ratios when columns balance; the last flexible card in each column absorbs any
+remaining height. This supersedes their original 4:3 Figma frames. The reference
+fixture stays unchanged; Fun page height checks add the height difference
+calculated from the approved ratios, with explicit card-ratio checks alongside
+the existing balanced-column checks.
+
 ## Follow-up: compact Mentions and credits popover
 
 Owner-approved on 24 September 2026: replace the recognition modal with a compact

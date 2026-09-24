@@ -19,6 +19,7 @@ export default function Card({
     className: "project-card",
     id: `project-${card.id}`,
     "data-project": card.id,
+    "data-fixed-aspect": card.fixedAspect || undefined,
     style: { "--card-aspect": ratio || card.aspect },
   };
   const content = (
