@@ -34,7 +34,7 @@ export default function CopyEmail() {
         >
           <span className="copy-default" aria-hidden={state === "success"}>
             <Icon name="copy" size="compact" />
-            Email
+            Copy email
           </span>
           <span className="copy-success" aria-hidden={state !== "success"}>
             <Icon name="check" size="compact" />

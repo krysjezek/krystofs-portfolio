@@ -242,33 +242,40 @@ button {
 .header-utility {
   display: flex;
   align-items: center;
-  gap: 24px;
-  font-size: 12px;
-  line-height: 18px;
-  font-weight: 300;
-  letter-spacing: -0.5px;
-  color: var(--muted);
+  gap: 32px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--ink);
 }
 .prague-clock {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
+  color: var(--muted);
+  white-space: nowrap;
 }
 .prague-clock time {
-  min-width: 30px;
+  width: 40px;
   font-variant-numeric: tabular-nums;
-  margin-left: 4px;
+  color: var(--ink);
 }
 .utility-actions {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 8px;
 }
 .utility-actions > a {
-  min-width: 24px;
+  width: 44px;
   min-height: 44px;
   display: grid;
   place-items: center;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.utility-actions > a:hover {
+  background: var(--tag);
 }
 .identity-icon {
   display: inline-block;
@@ -313,12 +320,13 @@ button {
   height: 44px;
   display: flex;
   align-items: center;
-  gap: 5px;
-  min-width: 46px;
-  text-align: left;
+  justify-content: center;
+  width: 112px;
+  border-radius: var(--radius);
+  background: var(--tag);
 }
 .copy-email > button:hover {
-  text-decoration: underline;
+  background: var(--line);
 }
 .copy-error {
   position: absolute;
@@ -1320,12 +1328,9 @@ button {
   .page-grid {
     display: none;
   }
-  .utility-actions {
+  .prague-clock,
+  .utility-actions > a {
     display: none;
-  }
-  .header-utility {
-    font-size: 11px;
-    gap: 0;
   }
   .home-introduction {
     display: flex;
@@ -1874,7 +1879,6 @@ h1 {
   flex: none;
 }
 .copy-email > button {
-  width: max-content;
   white-space: nowrap;
 }
 .recognition-dialog[open],
@@ -2004,7 +2008,8 @@ html[data-history-restoring] .portfolio-shell *::after {
   grid-area: 1 / 1;
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+  gap: 8px;
   transition: opacity 180ms ease-out;
 }
 .copy-success {

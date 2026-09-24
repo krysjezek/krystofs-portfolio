@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { HomeLink, IdentityIcon, RouteLink } from "./Links";
-import Icon from "./Icon";
 import CopyEmail from "./CopyEmail";
 
 export default function Header({
@@ -33,7 +32,6 @@ export default function Header({
       {home ? (
         <div className="header-utility">
           <span className="prague-clock">
-            <Icon name="location" size="compact" />
             <span>Prague</span>
             <time aria-label={time ? `Time in Prague: ${time}` : "Prague time"}>
               {time || "—:—"}

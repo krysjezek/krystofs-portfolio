@@ -43,7 +43,7 @@ try {
     const rect = node.getBoundingClientRect();
     return { width: rect.width, height: rect.height, color: css.backgroundColor, labelColor: getComputedStyle(node.parentElement).color, hidden: node.getAttribute("aria-hidden") };
   }));
-  assert(compact.length >= 3);
+  assert.equal(compact.length, 2, "Header retains copy and success icons; location is text-only");
   for (const icon of compact) {
     assert.equal(icon.width, 12);
     assert.equal(icon.height, 12);
