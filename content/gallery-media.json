@@ -1125,7 +1125,17 @@
           }
         }
       ],
-      "displayPoster": "/videos/posters/portfolio-card-handheld-loop-v1.jpg"
+      "displayPoster": "/videos/posters/portfolio-card-handheld-loop-v1.jpg",
+      "tooltipIcon": {
+        "source": "https://extensions.blender.org/media/images/87/87fd2f2eaedd6e9ee746011bdd0233a1eb608163f99eb7a1147854a7316d0f5d.png",
+        "path": "/images/handheld-loop-tooltip-icon-v1.webp",
+        "sourceWidth": 256,
+        "sourceHeight": 256,
+        "width": 64,
+        "height": 64,
+        "sha256": "83ea0ee7da48bd0ad47932cd3994a1474c7f4dd10ffbe06b82036025054a6f1b",
+        "encoding": "WebP quality 82, metadata stripped"
+      }
     }
   ]
 }

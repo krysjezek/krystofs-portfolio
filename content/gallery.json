@@ -259,7 +259,8 @@
         "mobileAspect": 1.33333,
         "srcH265": "/videos/h265/portfolio-card-handheld-loop-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-handheld-loop-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-handheld-loop-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/portfolio-card-handheld-loop-v1-fallback.mp4",
+        "icon": "/images/handheld-loop-tooltip-icon-v1.webp"
       },
       {
         "id": "chainer",
