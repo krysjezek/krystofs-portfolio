@@ -358,6 +358,19 @@ button {
 .airspace-weather { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .airspace-weather.is-compact dt { margin-bottom: 4px; }
 .airspace-weather dd { overflow-wrap: anywhere; }
+.airspace-shimmer { position: relative; overflow: hidden; }
+.airspace-shimmer::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(105deg, transparent 20%, rgb(255 255 255 / 65%) 50%, transparent 80%);
+  transform: translateX(-100%);
+  animation: airspace-shimmer 1800ms ease-in-out infinite;
+}
+.airspace-skeleton {
+  display: inline-block; max-width: 100%; height: .8em;
+  vertical-align: -.05em; border-radius: 3px; background: var(--tag);
+}
+.airspace-value { animation: airspace-enter 180ms ease-out both; }
+@keyframes airspace-shimmer { to { transform: translateX(100%); } }
 .airspace-route { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 .airspace-selection,
 .airspace-selected { display: flex; flex-direction: column; gap: 10px; }
@@ -378,6 +391,12 @@ button {
   background: var(--map-land); border-radius: 3px;
 }
 .airspace-map-space { position: absolute; left: 50%; top: 0; width: 432px; height: 200px; transform: translateX(-50%) scale(var(--map-zoom)); transform-origin: top center; }
+.airspace-map-loading {
+  position: absolute; inset: 0; background: rgb(255 255 255 / 45%);
+  pointer-events: none; opacity: 0; transition: opacity 240ms ease-out;
+}
+.airspace-map-loading.is-loading { opacity: 1; }
+.airspace-map-loading:not(.is-loading)::after { animation: none; }
 .airspace-geography { position: absolute; left: 0; top: 0; width: 432px; height: 200px; max-width: none; }
 .airspace-runway { position: absolute; max-width: none; }
 .airspace-runway.runway-one { left: 176.334px; top: 87.385px; }
@@ -422,7 +441,10 @@ button {
   .airspace-weather { column-gap: 6px; }
   .airspace-weather dt { font-size: 10px; }
 }
-@media (prefers-reduced-motion: reduce) { .airspace-panel { animation: none; } }
+@media (prefers-reduced-motion: reduce) {
+  .airspace-panel, .airspace-value, .airspace-shimmer::after { animation: none; }
+  .airspace-map-loading { transition: none; }
+}
 @media print { .airspace-layer { display: none; } }
 .identity-tile {
   position: relative;

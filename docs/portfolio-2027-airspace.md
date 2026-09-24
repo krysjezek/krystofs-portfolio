@@ -1,5 +1,21 @@
 # Prague airspace interaction
 
+## Loading feedback — 24 September 2026
+
+The hover preview and details panel show neutral shimmer bars for initial weather,
+traffic counts/timestamps and selected-flight lookups. A soft sweep covers the
+map while the first traffic request is pending, then fades away over 240ms.
+The map keeps its existing dimensions; no placeholder aircraft are invented.
+Shimmers run at 1800ms and become static with reduced motion. Weather readings
+fade in over 180ms. Each feed settles independently, errors stop its shimmer,
+and cached readings stay visible during polling and reopening. Loading weather
+is labelled as connecting in the attribution instead of unavailable.
+
+`node scripts/verify-airspace-loading.mjs` holds responses to verify preview,
+desktop/tablet/mobile details, independent completion, flight lookup, cached
+reopening, errors and reduced motion. Screenshots are saved to the system temp
+directory under `portfolio-airspace-loading`.
+
 ## Map and aircraft artwork — 24 September 2026
 
 The map now uses warm pale land/roads, green vegetation and blue water, linked to

@@ -7,12 +7,13 @@ import { EXPIRE_MS, mergeAircraft, STALE_MS } from "@/lib/aircraft.mjs";
 import AirspaceMap from "./AirspaceMap";
 import AirspaceDetails from "./AirspaceDetails";
 import AirlineIdentity from "./AirlineIdentity";
+import AirspaceSkeleton from "./AirspaceSkeleton";
 
 const utc = time => new Date(time).toISOString().slice(11, 19) + "Z";
 const reading = (value, unit) => Number.isFinite(value) ? `${value}${unit}` : "—";
 const cloudNames = { FEW: "Few", SCT: "Scattered", BKN: "Broken", OVC: "Overcast", CLR: "Clear", SKC: "Clear", NSC: "Clear", CAVOK: "Clear" };
 
-function Weather({ data, compact, unavailable }) {
+function Weather({ data, compact, unavailable, loading }) {
   const w = unavailable ? null : data;
   const cloud = w?.clouds?.[0];
   const visibility = parseFloat(w?.visibility);
@@ -24,7 +25,7 @@ function Weather({ data, compact, unavailable }) {
     ["DEW POINT", reading(w?.dew, "°C")],
     ["QNH", Number.isFinite(w?.pressure) ? `${w.pressure.toLocaleString("en-US")} hPa` : "—"],
   ];
-  return <dl className={`airspace-weather${compact ? " is-compact" : ""}`}>{fields.slice(0, compact ? 3 : 6).map(([label, value]) => <div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>;
+  return <dl className={`airspace-weather${compact ? " is-compact" : ""}`} aria-label="Airport weather" aria-busy={loading}>{fields.slice(0, compact ? 3 : 6).map(([label, value], index) => <div key={label}><dt>{label}</dt><dd>{loading ? <AirspaceSkeleton width={["3.5em", "5em", "4em", "5.5em", "3em", "4.5em"][index]} /> : <span className="airspace-value">{value}</span>}</dd></div>)}</dl>;
 }
 
 // Explicit demo prop for isolated design previews. The live path never falls
@@ -78,6 +79,8 @@ export default function PragueAirspace({ mode = "live" }) {
   const tone = simulation || fixture ? "informative" : !data && traffic.error ? "negative" : delayed ? "warning" : data && aircraft.length ? "positive" : "neutral";
   const message = simulation ? null : !data ? traffic.error ? "Traffic unavailable. Retrying automatically." : "Receiving aircraft reports…" : delayed ? aircraft.length ? "Updates delayed. Last known traffic shown." : "Updates delayed. No recent positions available." : !aircraft.length ? "No airborne aircraft reported within 30 km." : null;
   const weatherUnavailable = simulation || !weather.data || now - weather.data.observedAt > 7200000;
+  const trafficLoading = !simulation && !data && !traffic.error;
+  const weatherLoading = !simulation && !weather.data && !weather.error;
 
   const close = useCallback((restore = true) => {
     clearTimeout(hoverTimer.current);
@@ -189,7 +192,7 @@ export default function PragueAirspace({ mode = "live" }) {
     (marker || panel.current?.querySelector("button"))?.focus({ preventScroll: true });
   });
   const clearSelection = () => { setSelected(null); focusMarker(selected); };
-  const map = <AirspaceMap data={data} now={now} active={active} reduced={reduced} frozen={delayed} preview={view === "preview"} selected={selected} onSelect={choose} message={message} />;
+  const map = <AirspaceMap data={data} now={now} active={active} reduced={reduced} frozen={delayed} preview={view === "preview"} selected={selected} onSelect={choose} message={message} loading={trafficLoading} />;
   const badge = <span className={`airspace-badge status-${tone}`}><i className={simulation || fixture ? "is-hollow" : ""} />{status}</span>;
   const age = data ? `UPDATED ${Math.max(0, Math.floor((now - data.observedAt) / 1000))} S AGO` : "WAITING FOR REPORTS";
 
@@ -204,17 +207,17 @@ export default function PragueAirspace({ mode = "live" }) {
         onFocusCapture={() => clearTimeout(hoverTimer.current)} onBlur={event => { if (view === "preview" && !event.currentTarget.contains(event.relatedTarget) && event.relatedTarget !== trigger.current) leave(); }}
         onClick={view === "preview" ? details : undefined}>
         {view === "preview" ? <>
-          <div className="airspace-status">{badge}<span className="airspace-label airspace-muted">{age}</span></div>
+          <div className="airspace-status">{badge}<span className="airspace-label airspace-muted">{trafficLoading ? <AirspaceSkeleton width="9em" /> : age}</span></div>
           <div className="airspace-preview-heading"><h2>{simulation ? "Air traffic over Prague" : status === "LIVE" ? "Live air traffic over Prague" : "Air traffic over Prague"}</h2><p className="airspace-label airspace-muted">{data ? `${aircraft.length} ${simulation ? "simulated aircraft" : "aircraft nearby"} · within 30 km` : "Within 30 km of Prague"}</p></div>
-          {map}<Weather data={weather.data} compact unavailable={weatherUnavailable} />
+          {map}<Weather data={weather.data} compact unavailable={weatherUnavailable} loading={weatherLoading} />
           {weatherUnavailable && weather.error && <p className="airspace-label airspace-muted">Weather unavailable</p>}
           <hr /><button type="button" className="button" onClick={details}>Click for more details</button>
         </> : <>
           <div className="airspace-title"><div><h2>Prague, overhead.</h2><p className="airspace-label airspace-muted">PRG / LKPR · 30 KM RADIUS</p></div><button type="button" className="button" onClick={() => close()}>Close</button></div>
           <div className="airspace-status">{badge}</div><hr />
-          <Weather data={weather.data} unavailable={weatherUnavailable} />
-          {(weather.error || weatherUnavailable) && <p className="airspace-label airspace-muted">{simulation ? "Weather unavailable in simulation" : !weather.data && !weather.error ? "Receiving airport weather…" : "Weather unavailable"}</p>}
-          <hr /><div className="airspace-status airspace-label"><span>AIRSPACE / {data ? String(aircraft.length).padStart(2, "0") : "—"}</span><span className="airspace-muted">{data ? `${delayed ? "DELAYED / " : ""}${utc(data.observedAt)}` : "—"}</span></div>
+          <Weather data={weather.data} unavailable={weatherUnavailable} loading={weatherLoading} />
+          {(weather.error || (weatherUnavailable && !weatherLoading)) && <p className="airspace-label airspace-muted">{simulation ? "Weather unavailable in simulation" : "Weather unavailable"}</p>}
+          <hr /><div className="airspace-status airspace-label"><span>AIRSPACE / {trafficLoading ? <AirspaceSkeleton width="2em" /> : data ? String(aircraft.length).padStart(2, "0") : "—"}</span><span className="airspace-muted">{trafficLoading ? <AirspaceSkeleton width="6em" /> : data ? `${delayed ? "DELAYED / " : ""}${utc(data.observedAt)}` : "—"}</span></div>
           {map}<p className="airspace-label airspace-muted">{reduced ? "Received positions only · Reduced motion" : "Dots = reported positions · Movement is estimated"}</p>
           {!!choices.length && <div className="airspace-chooser" aria-label="Overlapping aircraft"><p className="airspace-label">Choose an aircraft</p>{choices.filter(a => aircraft.some(current => current.id === a.id)).map(a => <button key={a.id} type="button" className="button" onClick={() => { setSelected(current => current === a.id ? null : a.id); setChoices([]); focusMarker(a.id); }}>{a.callsign || a.id}</button>)}</div>}
           <hr /><div className="airspace-selection" aria-live="polite">
@@ -223,7 +226,7 @@ export default function PragueAirspace({ mode = "live" }) {
           <footer className="airspace-label airspace-muted">
             <p>Traffic: {simulation ? "Simulation · generated demo data" : <><a href="https://www.adsb.lol/">ADSB.lol</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a></>}</p>
             <p>Map: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · <a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a> · Runways: <a href="https://ourairports.com/data/">OurAirports</a></p>
-            <p>Weather: <a href="https://aviationweather.gov/data/metar/">NOAA / AWC</a>{!simulation && weather.data ? ` · ${weatherUnavailable || weather.error ? "last observation " : "observed "}${utc(weather.data.observedAt)}` : " · unavailable"}</p>
+            <p>Weather: <a href="https://aviationweather.gov/data/metar/">NOAA / AWC</a>{weatherLoading ? " · connecting" : !simulation && weather.data ? ` · ${weatherUnavailable || weather.error ? "last observation " : "observed "}${utc(weather.data.observedAt)}` : " · unavailable"}</p>
           </footer>
         </>}
       </section>

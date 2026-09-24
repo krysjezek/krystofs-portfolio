@@ -7,11 +7,11 @@ import { displayedPosition, EXPIRE_MS, project } from "@/lib/aircraft.mjs";
 import { aircraftArtwork } from "@/lib/aircraft-artwork.mjs";
 import { mediaUrl } from "@/lib/media";
 
-export default function AirspaceMap({ data, now, active, reduced, frozen, preview, selected, onSelect, message }) {
+export default function AirspaceMap({ data, now, active, reduced, frozen, preview, selected, onSelect, message, loading }) {
   const ref = useRef(null);
   useAircraftMotion(ref, data?.aircraft, active, reduced, frozen, preview);
   const aircraft = (data?.aircraft || []).filter(a => now - a.observedAt < EXPIRE_MS);
-  return <div className={`airspace-map${preview ? " is-preview" : ""}`} ref={ref} aria-label="Airborne aircraft within 30 kilometres of Prague">
+  return <div className={`airspace-map${preview ? " is-preview" : ""}`} ref={ref} aria-label="Airborne aircraft within 30 kilometres of Prague" aria-busy={loading}>
     <div className="airspace-map-space">
       <Image className="airspace-geography" src={mediaUrl('/images/airspace/prague-map-v1.webp')} width={1536} height={711} alt="" unoptimized />
       <Image className="airspace-runway runway-one" src="/airspace/runway-06-24.svg" width={9.58954} height={5.91609} alt="" unoptimized />
@@ -58,6 +58,7 @@ export default function AirspaceMap({ data, now, active, reduced, frozen, previe
       })}
     </div>
     <a className="airspace-attribution" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" onClick={event => event.stopPropagation()}>© OpenStreetMap</a>
+    <div className={`airspace-map-loading airspace-shimmer${loading ? " is-loading" : ""}`} aria-hidden="true" />
     <span className="airspace-map-range">30 KM</span>
     {message && <p className="airspace-map-message" role="status">{message}</p>}
   </div>;
