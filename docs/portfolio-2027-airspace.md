@@ -6,6 +6,8 @@ interaction as an editable Figma study; it does not restore the website module.
 - [Figma overview / 11 · Prague airspace](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=371-3)
 - [Desktop selected state](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=375-7432)
 - [Desktop hover preview](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=391-1504)
+- [Live / Simulation hover variants](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=402-9038)
+- [Simulation hover screen](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=402-9043)
 - [Interaction contract](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=377-8525)
 - [Feedback states and editing guide](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=377-8584)
 - [Desktop prototype](https://www.figma.com/proto/z5qZnFX6vkOKlWrVKzdoFR?node-id=375-7645&starting-point-node-id=375%3A7645)
@@ -19,8 +21,9 @@ Source: `checkpoint/pre-rebuild-2026-09-23`, especially
 `data/lkpr-runways.json` and `docs/airport-module.md`.
 
 The original module visualised real aircraft reports and estimated movement
-between updates. The Figma examples are static fixtures explicitly labelled
-**Preview · not live**. The EWG7KG route/model example comes from the archived
+between updates. The Figma examples are static fixtures. Detailed panels carry
+**Preview · not live**; hover cards demonstrate actual **Live / Simulation** UI
+with the illustrative-data disclaimer outside the cards. The EWG7KG route/model example comes from the archived
 verification record; its displayed position and all weather readings are examples.
 No current provider availability or current flight route is asserted.
 
@@ -38,10 +41,14 @@ runway geometry are editable vectors. Existing portfolio photos remain image
 fills in the contextual background screens.
 
 - Desktop 1440: 440px panel, right inset 35px, top 80px.
-- Hover preview: 320px wide with 16px padding, 10px gaps, 0.5px border and
-  3px corners, matching Barbour's Source note / Panel (`313:981`). Show only
-  the map, “Live air traffic over Prague” and “Click for more details”. The
-  static Figma fixture also carries “Design preview · not live”.
+- Hover preview: 360px wide with 16px padding, 10px gaps, 0.5px border and
+  3px corners, retaining Barbour's Source note styling (`313:981`). The 170px
+  map sits between a status/heading/traffic summary and a compact information
+  row, followed by “Click for more details”.
+- Live uses a solid dot, report age, nearby aircraft count and radius, followed
+  by LKPR temperature, wind and visibility. Simulation uses a hollow dot,
+  “SIMULATION / DEMO DATA”, simulated count and coverage; weather is unavailable.
+  Both are 401.5px tall. Simulation has its own title without the word “Live”.
 - A 12px plane replaces the location pin in the proposal's screen instances.
   The canonical header component remains unchanged.
 - Tablet 834: 440px panel, right inset 24px, top 80px.
@@ -59,7 +66,7 @@ The editable chain is Aircraft marker → Map → Panel → Screen. Component fa
 | Airspace / Aircraft marker | `373:7358` | Observed, Estimated, Selected, Unknown, Stale |
 | Airspace / Map | `373:7418` | Overview, Selected |
 | Airspace / Panel | `373:7725` | Desktop/Mobile × Overview/Selected |
-| Airspace / Hover preview | `391:1466` | Title property; nested map instance |
+| Airspace / Hover preview | `402:9038` | Live (`391:1466`), Simulation (`402:8988`); separate title/summary properties and nested map instances |
 | Airspace / Prague plane icon | `391:1501` | Reused aircraft silhouette |
 
 The panel exposes Traffic count and Feed status text properties. Source credits
@@ -89,13 +96,16 @@ quiet control feedback and fixed targets. No radar sweep or decorative pulse.
 Meaningful aircraft movement runs only while preview or details is visible.
 The preview title says “Live” only with fresh reports; connecting, delayed and
 unavailable feeds use truthful status copy.
+Simulation is an explicit demo mode, not a freshness or error state. Never
+silently switch to generated traffic when the live feed fails. No mode-selection
+control is proposed in this pass; the two variants demonstrate their appearance.
 
 Preserve the archived timing: aircraft refresh every 30 seconds, weather every
 5 minutes, estimates stop advancing after 30 seconds, reports become stale at
 60 seconds and expire at 120 seconds. Blend fresh reports from the rendered
 position over 2 seconds. Trails contain at most five distinct received positions.
-Poll aircraft while either preview or details is visible; fetch weather only
-in details. Reuse the current report snapshot when moving from preview to
+Poll aircraft and weather while either live preview or details is visible.
+Simulation uses generated traffic and has no live weather. Reuse the current report snapshot when moving from preview to
 details. Pause polling and motion when closed, hidden or off-screen. Freshness uses the
 observation time. Reduced motion shows received positions without projection
 or interpolation and makes UI transitions immediate.
@@ -121,7 +131,7 @@ Verified in actual Figma prototype playback: desktop open → select → close;
 mobile open → select → clear → close. All ten new prototype targets have linked
 destinations and at least 44px height. Tablet is a visual reference.
 
-Hover refinement: reviewed the 320px preview both in isolation and in its desktop
+Initial hover refinement: reviewed the preview both in isolation and in its desktop
 screen, and checked the updated contract for clipping. Verified preview click →
 details → Close in playback, plus direct Prague click → details. Enter/leave
 reactions and the shared hover region are configured with 150ms delays; automatic
@@ -129,6 +139,14 @@ pointer-hover playback was not verified because the browser controls expose
 click and drag but no hover action. The intended hover timing still needs a
 manual pointer check. Temporary preview padding propagated from the main to the
 screen instance; restored and confirmed the original 16px token binding.
+
+Expanded hover refinement: reviewed the 360px Live and Simulation cards side by
+side and in their desktop screen instances. Verified simulation-specific copy
+propagates correctly and repeated/restored the main-to-screen spacing probe.
+Resized the Live hover region and click target to cover the expanded card.
+The Simulation screen is a visual specimen; its detail navigation is unwired
+so it cannot misleadingly open a Live detail example. The existing Live detail
+connections are preserved. No simulation playback engine was implemented.
 
 Temporarily changed the observed marker's semantic colour and the selected
 desktop panel's radius. A subsequent read confirmed colour inheritance through
