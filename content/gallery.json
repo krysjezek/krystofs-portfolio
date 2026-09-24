@@ -211,9 +211,9 @@
     "cards": [
       {
         "id": "c-render-engine",
-        "name": "C++ Render Engine",
+        "name": "Custom Render Engine",
         "category": "fun",
-        "disciplines": "",
+        "disciplines": "C++ · Graphics Programming",
         "href": "https://gitlab.fel.cvut.cz/jezekkr2/pcc-ray-tracing",
         "poster": "/videos/posters/coding-01.jpg",
         "srcH265": "/videos/h265/coding-01-web.mp4",
