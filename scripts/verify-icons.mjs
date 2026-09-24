@@ -50,7 +50,7 @@ try {
     mask: getComputedStyle(node, '::before').maskImage,
   }));
   assert.equal(inverse.width, 12);
-  assert.equal(inverse.color, 'rgb(255, 255, 255)');
+  assert.equal(inverse.color, 'rgb(5, 7, 10)');
   assert(inverse.mask.includes('/icons/unicons/email.svg'));
   await page.goto(new URL("/work/vizcom", page.url()).href);
   assert(await page.locator(".identity-tile").count() >= 5, "Keep case-study client and credit logos");

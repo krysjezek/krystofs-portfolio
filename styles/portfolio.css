@@ -37,8 +37,8 @@
   --identity-size: 15px;
   --identity-radius: 3px;
   --identity-surface: #fff;
-  --tooltip-surface: var(--ink);
-  --tooltip-ink: var(--surface);
+  --tooltip-surface: var(--surface);
+  --tooltip-ink: var(--ink);
   --tooltip-padding: 10px;
   --tooltip-padding-block: 4px;
   --tooltip-gap: 5px;
@@ -1860,7 +1860,7 @@ button {
   justify-content: space-between;
   gap: 16px;
   align-items: center;
-  border-top: 1px solid rgb(255 255 255 / 20%);
+  border-top: 1px solid rgb(5 7 10 / 20%);
   margin-top: 8px;
 }
 .context-actions a,
@@ -1881,7 +1881,7 @@ button {
   justify-content: flex-end;
 }
 .context-popover :focus-visible {
-  outline-color: white;
+  outline-color: var(--tooltip-ink);
 }
 .worlds-pair .media {
   height: auto;

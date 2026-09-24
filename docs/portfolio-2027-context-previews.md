@@ -28,7 +28,7 @@ Links and text triggers have no underline, including hover and informational pre
 
 The original Cursor Tooltip set and four state IDs are retained. Added optional Detail, Source, Show detail, Show source, Image and Show image properties. Reuses existing tooltip color, padding, gap and radius variables, Portfolio / Label (Roobert PRO 11/16, 2% tracking), supplied Unicons Line and Floating elevation. Image swaps use the shared [Identity tile](portfolio-2027-identity-tiles.md) for brands, apps, schools and affiliations.
 
-Compact height remains 24px. All previews hug their content up to a 280px outer maximum, with content-driven height, 4px vertical gap and original 4px/10px padding. Every identity logo is 15×15 with contain fit and a 3px radius, including the university. Source is white at 75% opacity. Wrapping never truncates a long URL. Native popovers also hug their content and add 44px source/Close hit areas.
+Compact height remains 24px. All previews hug their content up to a 280px outer maximum, with content-driven height, 4px vertical gap and original 4px/10px padding. Every identity logo is 15×15 with contain fit and a 3px radius, including the university. The surface is white with black text and icons; source text uses 75% opacity. Reuse the Floating shadow: 0/2/4px at 4% ink plus 0/8/24px at 8% ink. Wrapping never truncates a long URL. Native popovers share the same light surface and add 44px source/Close hit areas, an ink divider and visible keyboard focus outlines.
 
 Original 160ms fade, 240ms rise/press and 150ms whole-content update remain. Position follows the pointer immediately, flips at viewport edges and keeps a 12px inset. Touch/narrow screens hide only the cursor decoration. Reduced motion changes states instantly. Native pointer stays visible.
 
@@ -60,7 +60,7 @@ Weather: [MET Norway Locationforecast](https://api.met.no/weatherapi/locationfor
 ## Verification
 
 - `node scripts/verify-context-previews.mjs`: weather parsing/staleness/missing conditions, mocked successful and failed weather UI, destination and email content, logo loading and dimensions, credit bio/source, keyboard focus and dismissal, touch popover, long URLs, stationary content updates, viewport bounds, reduced motion, and browser errors.
-- `node scripts/verify-tooltip.mjs`: original typography, inverted surface, icons, press/cancel, reversal, edges and responsive behavior; rich link surface is now 44px high.
+- `node scripts/verify-tooltip.mjs`: original typography, white surface, black text, Floating shadow, icons, press/cancel, reversal, edges and responsive behavior; rich link surface is now 44px high.
 - Regular lint, build, portfolio verifier, interaction suite and 33-screen / 431-coordinate Figma layout suite remain required.
 
 All checks above passed on 24 September 2026. Desktop, tablet and mobile renders were visually reviewed. A live `/api/weather` request also returned a valid temperature, forecast timestamp and condition (the UI regression uses fixed weather fixtures for repeatability).
