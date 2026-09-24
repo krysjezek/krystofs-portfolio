@@ -15,12 +15,16 @@ volume. `/healthz` and `/readyz` passed; a controlled restart retained the saved
 weather poll deadline and resumed current traffic. The effective Railway deployment
 uses `/healthz` with a 30-second startup timeout, On Failure restarts, and no sleeping.
 These settings live in Railway service configuration; new services no longer read
-the retired `railway.json` format. The Vercel production environment has
-`AIRSPACE_SERVICE_URL` configured, and deployment `dpl_8tR6Quy2iF8hFMXG4EKby5o3fkPK`
-was promoted to [www.krystofjezek.com](https://www.krystofjezek.com).
+the retired `railway.json` format. The portfolio rollout is **staging only**.
+`AIRSPACE_SERVICE_URL` is configured for Vercel Preview and removed from Production.
+The staging deployment is
+[`krystofs-portfolio-f0gtxm252-krystofjezeks-projects.vercel.app`](https://krystofs-portfolio-f0gtxm252-krystofjezeks-projects.vercel.app)
+(`dpl_F89PRGJ8M64EXHjNkHm2BX9rxzFB`). Production promotion requires a separate
+explicit request. An earlier mistaken promotion was rolled back: both production
+domains resolve to the original `dpl_H1q5FoZSoocBHtKRBc9f2wVEgyRz` deployment.
 
-`node scripts/verify-airspace-deployed.mjs https://www.krystofjezek.com` passed
-against the public domain at 1440, 834 and 390px: fresh real traffic and weather,
+Before rollback, `node scripts/verify-airspace-deployed.mjs` passed
+against the deployed release at 1440, 834 and 390px: fresh real traffic and weather,
 advancing observation timestamps, aircraft selection/details, no panel overflow,
 no missing airspace assets and no browser errors. The final read contained three
 aircraft with a 13-second observation age. Production runtime error logs were
