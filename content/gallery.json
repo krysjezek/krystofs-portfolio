@@ -225,9 +225,9 @@
       },
       {
         "id": "frozen-jewelry",
-        "name": "Frozen Jewelry",
+        "name": "3D Arctic Environment",
         "category": "fun",
-        "disciplines": "",
+        "disciplines": "Blender, Gaya",
         "href": null,
         "poster": "/images/portfolio-2027-gallery-frozen-jewelry.webp",
         "aspect": 0.75,
@@ -327,9 +327,9 @@
       },
       {
         "id": "tweezers-jewelry",
-        "name": "Tweezers Jewelry",
+        "name": "Realistic 3D Diamond",
         "category": "fun",
-        "disciplines": "",
+        "disciplines": "Blender",
         "href": null,
         "poster": "/videos/posters/portfolio-card-tweezers-jewelry-v1.jpg",
         "aspect": 1,
