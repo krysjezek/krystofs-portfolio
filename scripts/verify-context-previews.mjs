@@ -55,6 +55,25 @@ try {
   assert.match(await hint.textContent(), /Prague Live weather.*18°C • Partly Cloudy.*Source: MET Norway/s);
   assert.doesNotMatch(await hint.textContent(), /forecast|Prague time|14:00/);
   await page.screenshot({ path: join(output, "weather-desktop.png") });
+  const textStyle = node => {
+    const css = getComputedStyle(node);
+    return [css.fontFamily, css.fontWeight, css.fontSize, css.lineHeight, css.letterSpacing, css.color, css.opacity];
+  };
+  const weatherHeadingStyle = await hint.locator('.cursor-hint-label').evaluate(textStyle);
+  const weatherSupportingStyle = await hint.locator('.context-detail').evaluate(textStyle);
+  assert.deepEqual(await hint.locator('.context-meta').evaluate(textStyle), weatherSupportingStyle);
+  await page.route('**/api/aircraft', route => route.fulfill({json:{ok:true,observedAt:Date.now(),aircraft:[]}}));
+  await page.route('**/api/airport-weather', route => route.fulfill({status:503,json:{ok:false}}));
+  await page.getByRole('button', {name:'Prague airspace',exact:true}).hover();
+  const airspace = page.locator('.airspace-preview');
+  await airspace.waitFor();
+  await airspace.evaluate(element => Promise.all(element.getAnimations().map(animation => animation.finished)));
+  assert.deepEqual(await airspace.locator('.airspace-preview-heading h2').evaluate(textStyle), weatherHeadingStyle);
+  assert.deepEqual(await airspace.locator('.airspace-preview-heading .airspace-muted').evaluate(textStyle), weatherSupportingStyle);
+  await page.screenshot({path:join(output,'airspace-shared-typography.png')});
+  await page.mouse.move(20,100);
+  await airspace.waitFor({state:'hidden'});
+  await hover(weather);
   await weather.click(); await pause();
   assert.equal(await page.locator('.context-popover:popover-open').count(), 0);
   assert.equal(await weather.evaluate(n => n.tagName), 'SPAN');

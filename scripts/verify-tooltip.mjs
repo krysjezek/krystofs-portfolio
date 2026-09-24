@@ -36,7 +36,15 @@ try {
   assert.deepEqual(await surface.evaluate((node) => {
     const css = getComputedStyle(node);
     return [css.backgroundColor, css.color, css.borderRadius, node.offsetHeight, css.fontSize, css.lineHeight, css.letterSpacing, css.boxShadow];
-  }), ["rgb(255, 255, 255)", "rgb(5, 7, 10)", "3px", 44, "11px", "16px", "0.22px", "rgba(5, 7, 10, 0.04) 0px 2px 4px 0px, rgba(5, 7, 10, 0.08) 0px 8px 24px 0px"]);
+  }), ["rgb(255, 255, 255)", "rgb(5, 7, 10)", "3px", 52, "11px", "16px", "0.22px", "rgba(5, 7, 10, 0.04) 0px 2px 4px 0px, rgba(5, 7, 10, 0.08) 0px 8px 24px 0px"]);
+  assert.deepEqual(await label.evaluate(node => {
+    const css = getComputedStyle(node);
+    return [css.fontSize, css.lineHeight, css.letterSpacing, css.fontWeight];
+  }), ['16px', '24px', '-0.08px', '400']);
+  assert.deepEqual(await hint.locator('.context-detail').evaluate(node => {
+    const css = getComputedStyle(node);
+    return [css.color, css.opacity];
+  }), ['rgb(112, 118, 129)', '1']);
   assert.equal(await hint.locator('.identity-tile').evaluate(node => node.getBoundingClientRect().width), 15);
   assert.equal(await hint.locator('.cursor-hint-icon').isVisible(), false);
   await page.screenshot({ path: join(output, "browser-rest.png") });
@@ -111,7 +119,7 @@ try {
   assert.equal(await hint.evaluate((node) => getComputedStyle(node).display), "none");
   await page.screenshot({ path: join(output, "browser-mobile.png") });
   assert.deepEqual(errors, []);
-  console.log("PASS: compact tooltip, original typography, white surface, black text, Floating shadow, Unicons Line icons, press/cancel, rapid retarget, edges, reduced motion and responsive states");
+  console.log("PASS: compact tooltip, shared typography, white surface, black text, Floating shadow, Unicons Line icons, press/cancel, rapid retarget, edges, reduced motion and responsive states");
   console.log(`Screenshots: ${output}`);
 } finally {
   await context.close();

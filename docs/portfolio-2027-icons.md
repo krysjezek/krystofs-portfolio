@@ -23,7 +23,7 @@ Use only the Line family from the supplied Unicons pack. Do not mix Line with Th
 | Original library artwork | Native viewBox | 24×24 |
 | Icon-to-label spacing | `--icon-gap` | 5px |
 
-Use one square size for every icon in a context. Center it in the text line box; do not add per-symbol baseline offsets. The existing tooltip retains its 24px height, 3px radius, 11/16 typography, 2% tracking and 4px/10px padding. The external-link reveal retains its 17px total slot: 5px gap plus 12px icon.
+Use one square size for every icon in a context. Center it in the text line box; do not add per-symbol baseline offsets. Tooltips share the floating-panel typography: 16/24 Body Compact titles and 11/16 Label supporting text, with a 3px radius and 4px/10px padding. Their minimum height is 32px. The external-link reveal retains its 17px total slot: 5px gap plus 12px icon.
 
 Icons inherit `currentColor`: primary ink beside ordinary text and inside the white tooltip; muted color beside muted text. Hover, press and success must not change their size, baseline or weight. Keep the existing motion and reduced-motion behavior.
 
