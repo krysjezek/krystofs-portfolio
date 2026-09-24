@@ -245,7 +245,10 @@ try {
   for (const width of [834, 390, 320]) {
     const mobile = width < 600;
     const { context, page, state, trigger, panel } = await setup({ viewport: { width, height: 844 }, isMobile: mobile, hasTouch: mobile });
-    state.callsign = width === 320 ? 'LOT123' : 'EJU12ZD';
+    // Exercise a long cargo name, SVG artwork, and a newly covered major carrier.
+    const identity = width === 320 ? ['BCS123', 'European Air Transport Leipzig']
+      : width === 390 ? ['EAI123', 'Emerald Airlines'] : ['KLM1329', 'KLM'];
+    state.callsign = identity[0];
     if (mobile) await trigger.tap(); else await trigger.click();
     await page.locator('[data-aircraft-id="abc001"]').waitFor();
     const box = await panel.boundingBox();
@@ -266,7 +269,7 @@ try {
     }
     await page.locator('[data-aircraft-id="abc001"]').focus();
     await page.keyboard.press('Enter');
-    check(await panel.locator('.airspace-airline').innerText() === (width === 320 ? 'LOT Polish Airlines' : 'easyJet Europe'), `${width}px selected airline`);
+    check(await panel.locator('.airspace-airline').innerText() === identity[1], `${width}px selected airline`);
     await panel.locator('.airspace-airline img').evaluate(image => image.decode());
     await panel.locator('img').evaluateAll(images => Promise.all(images.map(image => image.decode())));
     await panel.locator('.airspace-airline').scrollIntoViewIfNeeded();

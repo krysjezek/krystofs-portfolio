@@ -2,49 +2,1003 @@
   {
     "name": "easyJet",
     "icon": "/images/airlines/easyjet-v1.webp",
-    "operators": { "EZY": "easyJet", "EJU": "easyJet Europe", "EZS": "easyJet Switzerland" },
+    "operators": {"EZY":"easyJet","EJU":"easyJet Europe","EZS":"easyJet Switzerland"},
     "logoSource": "https://www.easyjet.com/favicon.ico"
   },
   {
     "name": "Eurowings",
     "icon": "/images/airlines/eurowings-v1.webp",
-    "operators": { "EWG": "Eurowings" },
+    "operators": {"EWG":"Eurowings","EWL":"Eurowings Europe"},
     "logoSource": "https://content.presspage.com/favicon/2942.ico?1970835165"
   },
   {
     "name": "Smartwings",
     "icon": "/images/airlines/smartwings-v1.webp",
-    "operators": { "TVS": "Smartwings" },
+    "operators": {"TVS":"Smartwings","TVP":"Smartwings Poland","TVQ":"Smartwings Slovakia","TVL":"Smartwings Hungary"},
     "logoSource": "https://www.smartwings.com/templates/cnt/favicon/favicon-96x96.png"
   },
   {
     "name": "Ryanair",
     "icon": "/images/airlines/ryanair-v1.webp",
-    "operators": { "RYR": "Ryanair", "RUK": "Ryanair UK" },
+    "operators": {"RYR":"Ryanair","RUK":"Ryanair UK","MAY":"Malta Air","RYS":"Buzz","LDA":"Lauda Europe"},
     "logoSource": "https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/favicon-32x32.png"
   },
   {
     "name": "Wizz Air",
     "icon": "/images/airlines/wizzair-v1.webp",
-    "operators": { "WZZ": "Wizz Air", "WMT": "Wizz Air Malta", "WUK": "Wizz Air UK" },
+    "operators": {"WZZ":"Wizz Air","WMT":"Wizz Air Malta","WUK":"Wizz Air UK"},
     "logoSource": "https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/1562/2026/01/32x32_6967b11307237.png"
   },
   {
     "name": "Lufthansa",
     "icon": "/images/airlines/lufthansa-v1.webp",
-    "operators": { "DLH": "Lufthansa" },
+    "operators": {"DLH":"Lufthansa","LHX":"Lufthansa City Airlines"},
     "logoSource": "https://www.lufthansa.com/favicon.ico"
   },
   {
     "name": "British Airways",
     "icon": "/images/airlines/britishairways-v1.webp",
-    "operators": { "BAW": "British Airways" },
+    "operators": {"BAW":"British Airways","CFE":"BA Cityflyer","EFW":"BA Euroflyer"},
     "logoSource": "https://www.britishairways.com/nx/b/homepage/homepage/favicon/favicon-32x32.png"
   },
   {
     "name": "LOT Polish Airlines",
     "icon": "/images/airlines/lot-v1.webp",
-    "operators": { "LOT": "LOT Polish Airlines" },
+    "operators": {"LOT":"LOT Polish Airlines"},
     "logoSource": "https://www.lot.com/favicon.ico"
+  },
+  {
+    "name": "Air France",
+    "icon": "/images/airlines/airfrance-v1.webp",
+    "operators": {"AFR":"Air France","HOP":"Air France HOP"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.airfrance.com&sz=64"
+  },
+  {
+    "name": "KLM",
+    "icon": "/images/airlines/klm-v1.webp",
+    "operators": {"KLM":"KLM","KLC":"KLM Cityhopper"},
+    "logoSource": "https://www.klm.com/apple-touch-icon.png"
+  },
+  {
+    "name": "Turkish Airlines",
+    "icon": "/images/airlines/turkishairlines-v1.webp",
+    "operators": {"THY":"Turkish Airlines"},
+    "logoSource": "https://www.turkishairlines.com/favicon.ico"
+  },
+  {
+    "name": "AJet",
+    "icon": "/images/airlines/ajet-v1.webp",
+    "operators": {"TKJ":"AJet"},
+    "logoSource": "https://ajet.com/favicon.ico"
+  },
+  {
+    "name": "Pegasus Airlines",
+    "icon": "/images/airlines/pegasusairlines-v1.webp",
+    "operators": {"PGT":"Pegasus Airlines"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=flypgs.com&sz=64"
+  },
+  {
+    "name": "Austrian Airlines",
+    "icon": "/images/airlines/austrianairlines-v1.webp",
+    "operators": {"AUA":"Austrian Airlines"},
+    "logoSource": "https://www.austrian.com/favicon.ico"
+  },
+  {
+    "name": "SWISS",
+    "icon": "/images/airlines/swiss-v1.webp",
+    "operators": {"SWR":"SWISS"},
+    "logoSource": "https://www.swiss.com/favicon.ico"
+  },
+  {
+    "name": "Brussels Airlines",
+    "icon": "/images/airlines/brusselsairlines-v1.webp",
+    "operators": {"BEL":"Brussels Airlines"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.brusselsairlines.com&sz=64"
+  },
+  {
+    "name": "Iberia",
+    "icon": "/images/airlines/iberia-v1.webp",
+    "operators": {"IBE":"Iberia","IBS":"Iberia Express"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.iberia.com&sz=64"
+  },
+  {
+    "name": "Vueling",
+    "icon": "/images/airlines/vueling-v1.webp",
+    "operators": {"VLG":"Vueling"},
+    "logoSource": "https://static.vueling.com/corporativeCMS/media/images/vueling.ico"
+  },
+  {
+    "name": "SAS",
+    "icon": "/images/airlines/sas-v1.webp",
+    "operators": {"SAS":"SAS","SZS":"SAS Connect","SVS":"SAS Link"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.flysas.com&sz=64"
+  },
+  {
+    "name": "Norwegian",
+    "icon": "/images/airlines/norwegian-v1.webp",
+    "operators": {"NOZ":"Norwegian Air Shuttle","NSZ":"Norwegian Air Sweden"},
+    "logoSource": "https://www.norwegian.com/favicon.ico"
+  },
+  {
+    "name": "Finnair",
+    "icon": "/images/airlines/finnair-v1.webp",
+    "operators": {"FIN":"Finnair"},
+    "logoSource": "https://www.finnair.com/favicon.ico"
+  },
+  {
+    "name": "TAP Air Portugal",
+    "icon": "/images/airlines/tapairportugal-v1.webp",
+    "operators": {"TAP":"TAP Air Portugal","PGA":"Portugalia"},
+    "logoSource": "https://www.flytap.com/favicon/favicon.ico"
+  },
+  {
+    "name": "Aer Lingus",
+    "icon": "/images/airlines/aerlingus-v1.webp",
+    "operators": {"EIN":"Aer Lingus","EUK":"Aer Lingus UK"},
+    "logoSource": "https://www.aerlingus.com/favicon.ico"
+  },
+  {
+    "name": "ITA Airways",
+    "icon": "/images/airlines/itaairways-v1.webp",
+    "operators": {"ITY":"ITA Airways"},
+    "logoSource": "https://www.ita-airways.com/favicon.ico"
+  },
+  {
+    "name": "Aegean Airlines",
+    "icon": "/images/airlines/aegeanairlines-v1.webp",
+    "operators": {"AEE":"Aegean Airlines","OAL":"Olympic Air"},
+    "logoSource": "https://en.aegeanair.com/favicon.ico"
+  },
+  {
+    "name": "airBaltic",
+    "icon": "/images/airlines/airbaltic-v1.webp",
+    "operators": {"BTI":"airBaltic"},
+    "logoSource": "https://www.airbaltic.com/favicon.ico"
+  },
+  {
+    "name": "Air Europa",
+    "icon": "/images/airlines/aireuropa-v1.webp",
+    "operators": {"AEA":"Air Europa","OVA":"Air Europa Express"},
+    "logoSource": "https://www.aireuropa.com/assets/icons/favicon-32x32.png"
+  },
+  {
+    "name": "Air Serbia",
+    "icon": "/images/airlines/airserbia-v1.webp",
+    "operators": {"ASL":"Air Serbia"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.airserbia.com&sz=64"
+  },
+  {
+    "name": "TAROM",
+    "icon": "/images/airlines/tarom-v1.webp",
+    "operators": {"ROT":"TAROM"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.tarom.ro&sz=64"
+  },
+  {
+    "name": "Croatia Airlines",
+    "icon": "/images/airlines/croatiaairlines-v1.webp",
+    "operators": {"CTN":"Croatia Airlines"},
+    "logoSource": "https://www.croatiaairlines.com/favicon.ico"
+  },
+  {
+    "name": "Bulgaria Air",
+    "icon": "/images/airlines/bulgariaair-v1.webp",
+    "operators": {"LZB":"Bulgaria Air"},
+    "logoSource": "https://air.bg/favicon.ico?v=2"
+  },
+  {
+    "name": "Luxair",
+    "icon": "/images/airlines/luxair-v1.webp",
+    "operators": {"LGL":"Luxair"},
+    "logoSource": "https://www.luxair.lu/themes/luxair/favicon.ico"
+  },
+  {
+    "name": "KM Malta Airlines",
+    "icon": "/images/airlines/kmmaltaairlines-v1.webp",
+    "operators": {"KMM":"KM Malta Airlines"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=kmmaltairlines.com&sz=64"
+  },
+  {
+    "name": "Icelandair",
+    "icon": "/images/airlines/icelandair-v1.webp",
+    "operators": {"ICE":"Icelandair"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.icelandair.com&sz=64"
+  },
+  {
+    "name": "Jet2",
+    "icon": "/images/airlines/jet2-v1.webp",
+    "operators": {"EXS":"Jet2"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.jet2.com&sz=64"
+  },
+  {
+    "name": "TUI",
+    "icon": "/images/airlines/tui-v1.webp",
+    "operators": {"TOM":"TUI Airways","TUI":"TUI fly Germany","TFL":"TUI fly Netherlands","JAF":"TUI fly Belgium","BLX":"TUI fly Nordic"},
+    "logoSource": "https://www.tui.com/favicon.ico"
+  },
+  {
+    "name": "Transavia",
+    "icon": "/images/airlines/transavia-v1.webp",
+    "operators": {"TRA":"Transavia","TVF":"Transavia France"},
+    "logoSource": "https://www.transavia.com/favicon.ico"
+  },
+  {
+    "name": "Condor",
+    "icon": "/images/airlines/condor-v1.webp",
+    "operators": {"CFG":"Condor"},
+    "logoSource": "https://www.condor.com/favicon.ico"
+  },
+  {
+    "name": "Discover Airlines",
+    "icon": "/images/airlines/discoverairlines-v1.webp",
+    "operators": {"OCN":"Discover Airlines"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.discover-airlines.com&sz=64"
+  },
+  {
+    "name": "Edelweiss Air",
+    "icon": "/images/airlines/edelweissair-v1.webp",
+    "operators": {"EDW":"Edelweiss Air"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.flyedelweiss.com&sz=64"
+  },
+  {
+    "name": "SunExpress",
+    "icon": "/images/airlines/sunexpress-v1.webp",
+    "operators": {"SXS":"SunExpress"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.sunexpress.com&sz=64"
+  },
+  {
+    "name": "Corendon Airlines",
+    "icon": "/images/airlines/corendonairlines-v1.webp",
+    "operators": {"CAI":"Corendon Airlines","CND":"Corendon Dutch Airlines","CXI":"Corendon Airlines Europe"},
+    "logoSource": "https://www.corendonairlines.com/favicon.ico"
+  },
+  {
+    "name": "Freebird Airlines",
+    "icon": "/images/airlines/freebirdairlines-v1.webp",
+    "operators": {"FHY":"Freebird Airlines","FHM":"Freebird Airlines Europe"},
+    "logoSource": "https://www.freebirdairlines.com/favicon.ico"
+  },
+  {
+    "name": "Sunclass Airlines",
+    "icon": "/images/airlines/sunclassairlines-v1.webp",
+    "operators": {"VKG":"Sunclass Airlines"},
+    "logoSource": "https://img.nltg.com/image/upload/v1727957824/web/favicon_nltg.png"
+  },
+  {
+    "name": "Enter Air",
+    "icon": "/images/airlines/enterair-v1.webp",
+    "operators": {"ENT":"Enter Air"},
+    "logoSource": "https://www.enterair.pl/favicon.ico"
+  },
+  {
+    "name": "Electra Airways",
+    "icon": "/images/airlines/electraairways-v1.webp",
+    "operators": {"EAF":"Electra Airways"},
+    "logoSource": "https://www.electra-airways.com/wp-content/themes/electra/img/icons/favicon.ico"
+  },
+  {
+    "name": "European Air Charter",
+    "icon": "/images/airlines/europeanaircharter-v1.webp",
+    "operators": {"BUC":"European Air Charter"},
+    "logoSource": "https://cdn.prod.website-files.com/69e07f31f135e0a6dcb821b2/69e0a47de62966bb47b0e2e2_favicon.png"
+  },
+  {
+    "name": "Sky Express",
+    "icon": "/images/airlines/skyexpress-v1.webp",
+    "operators": {"SEH":"Sky Express"},
+    "logoSource": "https://www.skyexpress.gr/favicon.ico"
+  },
+  {
+    "name": "Volotea",
+    "icon": "/images/airlines/volotea-v1.webp",
+    "operators": {"VOE":"Volotea"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.volotea.com&sz=64"
+  },
+  {
+    "name": "Air Dolomiti",
+    "icon": "/images/airlines/airdolomiti-v1.webp",
+    "operators": {"DLA":"Air Dolomiti"},
+    "logoSource": "https://www.airdolomiti.eu/favicon/favicon.ico"
+  },
+  {
+    "name": "Air Nostrum",
+    "icon": "/images/airlines/airnostrum-v1.webp",
+    "operators": {"ANE":"Air Nostrum"},
+    "logoSource": "https://www.airnostrum.es/export/sites/airnostrum/.galleries/iconos/favicon.ico"
+  },
+  {
+    "name": "Binter Canarias",
+    "icon": "/images/airlines/bintercanarias-v1.webp",
+    "operators": {"IBB":"Binter Canarias","RSC":"Canarias Airlines"},
+    "logoSource": "https://www.bintercanarias.com/favicon.ico"
+  },
+  {
+    "name": "Widerøe",
+    "icon": "/images/airlines/wideroe-v1.webp",
+    "operators": {"WIF":"Widerøe"},
+    "logoSource": "https://www.wideroe.no/favicon.ico"
+  },
+  {
+    "name": "Loganair",
+    "icon": "/images/airlines/loganair-v1.webp",
+    "operators": {"LOG":"Loganair"},
+    "logoSource": "https://www.loganair.co.uk/favicons/logo-512x512.png"
+  },
+  {
+    "name": "Aurigny",
+    "icon": "/images/airlines/aurigny-v1.webp",
+    "operators": {"AUR":"Aurigny"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.aurigny.com&sz=64"
+  },
+  {
+    "name": "SATA Air Açores",
+    "icon": "/images/airlines/sataairacores-v1.webp",
+    "operators": {"SAT":"SATA Air Açores"},
+    "logoSource": "https://www.azoresairlines.pt/themes/custom/sata_v4/favicon.ico"
+  },
+  {
+    "name": "Azores Airlines",
+    "icon": "/images/airlines/azoresairlines-v1.webp",
+    "operators": {"RZO":"Azores Airlines"},
+    "logoSource": "https://www.azoresairlines.pt/themes/custom/sata_v4/favicon.ico"
+  },
+  {
+    "name": "Air Corsica",
+    "icon": "/images/airlines/aircorsica-v1.webp",
+    "operators": {"CCM":"Air Corsica"},
+    "logoSource": "https://www.aircorsica.com/themes/custom/bl_main/img/favicon/favicon.ico"
+  },
+  {
+    "name": "Air Montenegro",
+    "icon": "/images/airlines/airmontenegro-v1.webp",
+    "operators": {"MNE":"Air Montenegro"},
+    "logoSource": "https://airmontenegro.com/favicon.png"
+  },
+  {
+    "name": "ASL Airlines France",
+    "icon": "/images/airlines/aslairlinesfrance-v1.webp",
+    "operators": {"FPO":"ASL Airlines France"},
+    "logoSource": "https://www.aslairlines.fr/wp-content/uploads/2026/05/cropped-Logo-aslairlines-france-128x128-1-32x32.png"
+  },
+  {
+    "name": "ASL Airlines Belgium",
+    "icon": "/images/airlines/aslairlinesbelgium-v1.webp",
+    "operators": {"TAY":"ASL Airlines Belgium"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.aslairlines.com&sz=64"
+  },
+  {
+    "name": "ASL Airlines Ireland",
+    "icon": "/images/airlines/aslairlinesireland-v1.webp",
+    "operators": {"ABR":"ASL Airlines Ireland"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.aslairlines.com&sz=64"
+  },
+  {
+    "name": "ASL Airlines UK",
+    "icon": "/images/airlines/aslairlinesuk-v1.webp",
+    "operators": {"ABV":"ASL Airlines UK"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.aslairlines.com&sz=64"
+  },
+  {
+    "name": "DHL",
+    "icon": "/images/airlines/dhl-v1.webp",
+    "operators": {"BCS":"European Air Transport Leipzig","DHK":"DHL Air UK","DHA":"DHL Air Austria"},
+    "logoSource": "https://www.dhl.com/favicon.ico"
+  },
+  {
+    "name": "Cargolux",
+    "icon": "/images/airlines/cargolux-v1.webp",
+    "operators": {"CLX":"Cargolux","ICV":"Cargolux Italia"},
+    "logoSource": "https://www.cargolux.com/favicon/favicon.ico?-1687267668"
+  },
+  {
+    "name": "Lufthansa Cargo",
+    "icon": "/images/airlines/lufthansacargo-v1.webp",
+    "operators": {"GEC":"Lufthansa Cargo"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=lufthansa-cargo.com&sz=64"
+  },
+  {
+    "name": "FedEx",
+    "icon": "/images/airlines/fedex-v1.webp",
+    "operators": {"FDX":"FedEx"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.fedex.com&sz=64"
+  },
+  {
+    "name": "UPS Airlines",
+    "icon": "/images/airlines/upsairlines-v1.webp",
+    "operators": {"UPS":"UPS Airlines"},
+    "logoSource": "https://www.ups.com/favicon.ico"
+  },
+  {
+    "name": "West Atlantic",
+    "icon": "/images/airlines/westatlantic-v1.webp",
+    "operators": {"NPT":"West Atlantic UK","SWN":"West Atlantic Sweden"},
+    "logoSource": "https://westatlantic.eu/wp-content/uploads/2018/04/WA_wing-symbol_L_large.png"
+  },
+  {
+    "name": "Avion Express",
+    "icon": "/images/airlines/avionexpress-v1.webp",
+    "operators": {"NVD":"Avion Express","MLH":"Avion Express Malta"},
+    "logoSource": "https://avionexpress.aero/wp-content/uploads/2024/05/cropped-fav-icon-32x32.png"
+  },
+  {
+    "name": "GetJet Airlines",
+    "icon": "/images/airlines/getjetairlines-v1.webp",
+    "operators": {"GJT":"GetJet Airlines","GJM":"GetJet Airlines Malta"},
+    "logoSource": "https://getjet.aero/wp-content/themes/getjet-theme/assets/img/favicon/apple-touch-icon-57x57.png"
+  },
+  {
+    "name": "AirExplore",
+    "icon": "/images/airlines/airexplore-v1.webp",
+    "operators": {"AXE":"AirExplore"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=airexplore.aero&sz=64"
+  },
+  {
+    "name": "ETF Airways",
+    "icon": "/images/airlines/etfairways-v1.webp",
+    "operators": {"EZZ":"ETF Airways"},
+    "logoSource": "https://www.etfairways.com/wp-content/uploads/2020/12/cropped-ETF_LOGO_slogan__-300x300.png"
+  },
+  {
+    "name": "Chair Airlines",
+    "icon": "/images/airlines/chairairlines-v1.svg",
+    "operators": {"CSW":"Chair Airlines"},
+    "logoSource": "https://cdn.main.go7.io/dx8eu04hzex3mpku18sjkycz/attachments/cj4pp3i5a3njbktch024zxjo-chair-logo.svg"
+  },
+  {
+    "name": "Helvetic Airways",
+    "icon": "/images/airlines/helveticairways-v1.webp",
+    "operators": {"OAW":"Helvetic Airways"},
+    "logoSource": "https://static.helvetic.com/tiles/favicon.ico"
+  },
+  {
+    "name": "Trade Air",
+    "icon": "/images/airlines/tradeair-v1.webp",
+    "operators": {"TDR":"Trade Air"},
+    "logoSource": "https://www.trade-air.com/syst/wp-content/uploads/2020/09/cropped-tradeair-favicon-32x32.png"
+  },
+  {
+    "name": "Danish Air Transport",
+    "icon": "/images/airlines/danishairtransport-v1.webp",
+    "operators": {"DTR":"Danish Air Transport","DNU":"DAT LT"},
+    "logoSource": "https://dat.dk/wp-content/uploads/2024/01/DAT_img_logo_square-150x150.png"
+  },
+  {
+    "name": "BRA",
+    "icon": "/images/airlines/bra-v1.webp",
+    "operators": {"BRX":"Braathens Regional Airways"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.flygbra.se&sz=64"
+  },
+  {
+    "name": "Norse Atlantic Airways",
+    "icon": "/images/airlines/norseatlanticairways-v1.webp",
+    "operators": {"NBT":"Norse Atlantic Airways","UBT":"Norse Atlantic UK"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.flynorse.com&sz=64"
+  },
+  {
+    "name": "HiSky",
+    "icon": "/images/airlines/hisky-v1.webp",
+    "operators": {"HYS":"HiSky Europe","HYM":"HiSky"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=hisky.aero&sz=64"
+  },
+  {
+    "name": "Animawings",
+    "icon": "/images/airlines/animawings-v1.webp",
+    "operators": {"AWG":"Animawings"},
+    "logoSource": "https://www.animawings.com/favicons/apple-icon-57x57.png"
+  },
+  {
+    "name": "FlyOne",
+    "icon": "/images/airlines/flyone-v1.svg",
+    "operators": {"FIA":"FlyOne","FIE":"FlyOne Armenia"},
+    "logoSource": "https://d2b5gmzfxp2iy.cloudfront.net/obsah/aerolinka/627/logo/500x300logosvgflyone.svg"
+  },
+  {
+    "name": "SkyUp Airlines",
+    "icon": "/images/airlines/skyupairlines-v1.webp",
+    "operators": {"SQP":"SkyUp Airlines","SEU":"SkyUp MT"},
+    "logoSource": "https://skyup.aero/favicon.ico"
+  },
+  {
+    "name": "SkyAlps",
+    "icon": "/images/airlines/skyalps-v1.webp",
+    "operators": {"SWU":"SkyAlps"},
+    "logoSource": "https://www.skyalps.com/favicon.ico"
+  },
+  {
+    "name": "Emirates",
+    "icon": "/images/airlines/emirates-v1.webp",
+    "operators": {"UAE":"Emirates"},
+    "logoSource": "https://www.emirates.com/favicon.ico"
+  },
+  {
+    "name": "Qatar Airways",
+    "icon": "/images/airlines/qatarairways-v1.webp",
+    "operators": {"QTR":"Qatar Airways"},
+    "logoSource": "https://www.qatarairways.com/favicon.ico"
+  },
+  {
+    "name": "Etihad Airways",
+    "icon": "/images/airlines/etihadairways-v1.webp",
+    "operators": {"ETD":"Etihad Airways"},
+    "logoSource": "https://www.etihad.com/favicon.ico"
+  },
+  {
+    "name": "flydubai",
+    "icon": "/images/airlines/flydubai-v1.webp",
+    "operators": {"FDB":"flydubai"},
+    "logoSource": "https://www.flydubai.com/favicon.ico"
+  },
+  {
+    "name": "Air Arabia",
+    "icon": "/images/airlines/airarabia-v1.webp",
+    "operators": {"ABY":"Air Arabia","MAC":"Air Arabia Maroc","ADY":"Air Arabia Abu Dhabi","RBG":"Air Arabia Egypt"},
+    "logoSource": "https://www.airarabia.com/-/media/AA_New_Favicon_32px_0.png"
+  },
+  {
+    "name": "Royal Jordanian",
+    "icon": "/images/airlines/royaljordanian-v1.webp",
+    "operators": {"RJA":"Royal Jordanian"},
+    "logoSource": "https://www.rj.com/favicon.ico"
+  },
+  {
+    "name": "Middle East Airlines",
+    "icon": "/images/airlines/middleeastairlines-v1.webp",
+    "operators": {"MEA":"Middle East Airlines"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.mea.com.lb&sz=64"
+  },
+  {
+    "name": "EL AL",
+    "icon": "/images/airlines/elal-v1.webp",
+    "operators": {"ELY":"EL AL"},
+    "logoSource": "https://www.elal.com/favicon.ico"
+  },
+  {
+    "name": "Arkia",
+    "icon": "/images/airlines/arkia-v1.webp",
+    "operators": {"AIZ":"Arkia"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.arkia.com&sz=64"
+  },
+  {
+    "name": "Israir",
+    "icon": "/images/airlines/israir-v1.webp",
+    "operators": {"ISR":"Israir"},
+    "logoSource": "https://storage.googleapis.com/prod-wgclients/isra2023/gallery/img/favicon.ico"
+  },
+  {
+    "name": "Egyptair",
+    "icon": "/images/airlines/egyptair-v1.webp",
+    "operators": {"MSR":"Egyptair"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.egyptair.com&sz=64"
+  },
+  {
+    "name": "Air Cairo",
+    "icon": "/images/airlines/aircairo-v1.webp",
+    "operators": {"MSC":"Air Cairo"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.aircairo.com&sz=64"
+  },
+  {
+    "name": "Nesma Airlines",
+    "icon": "/images/airlines/nesmaairlines-v1.webp",
+    "operators": {"NMA":"Nesma Airlines"},
+    "logoSource": "https://irp.cdn-website.com/4758f1df/dms3rep/multi/NE_Logo_-_57-57px_-RGB-01-1-.png"
+  },
+  {
+    "name": "Nouvelair",
+    "icon": "/images/airlines/nouvelair-v1.webp",
+    "operators": {"LBT":"Nouvelair"},
+    "logoSource": "https://www.nouvelair.com/images/favicon.ico"
+  },
+  {
+    "name": "Tunisair",
+    "icon": "/images/airlines/tunisair-v1.webp",
+    "operators": {"TAR":"Tunisair"},
+    "logoSource": "https://www.tunisair.com/sites/default/files/tunisair_ico.png"
+  },
+  {
+    "name": "Royal Air Maroc",
+    "icon": "/images/airlines/royalairmaroc-v1.webp",
+    "operators": {"RAM":"Royal Air Maroc"},
+    "logoSource": "https://www.royalairmaroc.com/documents/31824/0/favicon.ico/a24318ac-7ec0-3c0f-581d-930009528883"
+  },
+  {
+    "name": "Ethiopian Airlines",
+    "icon": "/images/airlines/ethiopianairlines-v1.webp",
+    "operators": {"ETH":"Ethiopian Airlines"},
+    "logoSource": "https://www.ethiopianairlines.com/favicon.ico"
+  },
+  {
+    "name": "Saudia",
+    "icon": "/images/airlines/saudia-v1.webp",
+    "operators": {"SVA":"Saudia"},
+    "logoSource": "https://www.saudia.com/favicon.ico"
+  },
+  {
+    "name": "flynas",
+    "icon": "/images/airlines/flynas-v1.webp",
+    "operators": {"KNE":"flynas"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.flynas.com&sz=64"
+  },
+  {
+    "name": "Kuwait Airways",
+    "icon": "/images/airlines/kuwaitairways-v1.webp",
+    "operators": {"KAC":"Kuwait Airways"},
+    "logoSource": "https://kuwaitairways.com/PublishingImages/favicon.ico"
+  },
+  {
+    "name": "Oman Air",
+    "icon": "/images/airlines/omanair-v1.webp",
+    "operators": {"OMA":"Oman Air"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.omanair.com&sz=64"
+  },
+  {
+    "name": "Gulf Air",
+    "icon": "/images/airlines/gulfair-v1.webp",
+    "operators": {"GFA":"Gulf Air"},
+    "logoSource": "https://www.gulfair.com/favicon.ico"
+  },
+  {
+    "name": "Delta Air Lines",
+    "icon": "/images/airlines/deltaairlines-v1.webp",
+    "operators": {"DAL":"Delta Air Lines"},
+    "logoSource": "https://www.delta.com/favicon.ico"
+  },
+  {
+    "name": "United Airlines",
+    "icon": "/images/airlines/unitedairlines-v1.webp",
+    "operators": {"UAL":"United Airlines"},
+    "logoSource": "https://www.united.com/favicon.ico"
+  },
+  {
+    "name": "American Airlines",
+    "icon": "/images/airlines/americanairlines-v1.webp",
+    "operators": {"AAL":"American Airlines"},
+    "logoSource": "https://www.aa.com/favicon.ico"
+  },
+  {
+    "name": "Air Canada",
+    "icon": "/images/airlines/aircanada-v1.webp",
+    "operators": {"ACA":"Air Canada"},
+    "logoSource": "https://www.aircanada.com/home/favicon.ico"
+  },
+  {
+    "name": "Air Transat",
+    "icon": "/images/airlines/airtransat-v1.webp",
+    "operators": {"TSC":"Air Transat"},
+    "logoSource": "https://www.airtransat.com/favicon.ico"
+  },
+  {
+    "name": "WestJet",
+    "icon": "/images/airlines/westjet-v1.webp",
+    "operators": {"WJA":"WestJet"},
+    "logoSource": "https://www.westjet.com/favicon.ico"
+  },
+  {
+    "name": "Virgin Atlantic",
+    "icon": "/images/airlines/virginatlantic-v1.webp",
+    "operators": {"VIR":"Virgin Atlantic"},
+    "logoSource": "https://www.virginatlantic.com/_nextfavicons/favicon.ico"
+  },
+  {
+    "name": "Korean Air",
+    "icon": "/images/airlines/koreanair-v1.webp",
+    "operators": {"KAL":"Korean Air"},
+    "logoSource": "https://www.koreanair.com/favicon.ico"
+  },
+  {
+    "name": "China Airlines",
+    "icon": "/images/airlines/chinaairlines-v1.webp",
+    "operators": {"CAL":"China Airlines"},
+    "logoSource": "https://www.china-airlines.com/favicon.ico"
+  },
+  {
+    "name": "EVA Air",
+    "icon": "/images/airlines/evaair-v1.webp",
+    "operators": {"EVA":"EVA Air"},
+    "logoSource": "https://www.evaair.com/favicon.ico"
+  },
+  {
+    "name": "Hainan Airlines",
+    "icon": "/images/airlines/hainanairlines-v1.webp",
+    "operators": {"CHH":"Hainan Airlines"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.hainanairlines.com&sz=64"
+  },
+  {
+    "name": "Air China",
+    "icon": "/images/airlines/airchina-v1.webp",
+    "operators": {"CCA":"Air China"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.airchina.com&sz=64"
+  },
+  {
+    "name": "China Eastern Airlines",
+    "icon": "/images/airlines/chinaeasternairlines-v1.webp",
+    "operators": {"CES":"China Eastern Airlines"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.ceair.com&sz=64"
+  },
+  {
+    "name": "China Southern Airlines",
+    "icon": "/images/airlines/chinasouthernairlines-v1.webp",
+    "operators": {"CSN":"China Southern Airlines"},
+    "logoSource": "https://www.csair.com/favicon.ico"
+  },
+  {
+    "name": "Sichuan Airlines",
+    "icon": "/images/airlines/sichuanairlines-v1.webp",
+    "operators": {"CSC":"Sichuan Airlines"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.sichuanair.com&sz=64"
+  },
+  {
+    "name": "Singapore Airlines",
+    "icon": "/images/airlines/singaporeairlines-v1.webp",
+    "operators": {"SIA":"Singapore Airlines"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.singaporeair.com&sz=64"
+  },
+  {
+    "name": "Cathay Pacific",
+    "icon": "/images/airlines/cathaypacific-v1.webp",
+    "operators": {"CPA":"Cathay Pacific"},
+    "logoSource": "https://www.cathaypacific.com/content/dam/header-footer-lrp/cx-web-clip-icon.png"
+  },
+  {
+    "name": "All Nippon Airways",
+    "icon": "/images/airlines/allnipponairways-v1.webp",
+    "operators": {"ANA":"All Nippon Airways"},
+    "logoSource": "https://www.ana.co.jp/favicon-v2.ico"
+  },
+  {
+    "name": "Japan Airlines",
+    "icon": "/images/airlines/japanairlines-v1.webp",
+    "operators": {"JAL":"Japan Airlines"},
+    "logoSource": "https://www.jal.com/favicon.ico"
+  },
+  {
+    "name": "Thai Airways",
+    "icon": "/images/airlines/thaiairways-v1.webp",
+    "operators": {"THA":"Thai Airways"},
+    "logoSource": "https://www.thaiairways.com/osci/favicon.ico"
+  },
+  {
+    "name": "Air India",
+    "icon": "/images/airlines/airindia-v1.webp",
+    "operators": {"AIC":"Air India"},
+    "logoSource": "https://www.airindia.com/favicon.ico"
+  },
+  {
+    "name": "Air Astana",
+    "icon": "/images/airlines/airastana-v1.webp",
+    "operators": {"KZR":"Air Astana"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.airastana.com&sz=64"
+  },
+  {
+    "name": "SCAT Airlines",
+    "icon": "/images/airlines/scatairlines-v1.webp",
+    "operators": {"VSV":"SCAT Airlines"},
+    "logoSource": "https://www.scat.kz/favicon.ico"
+  },
+  {
+    "name": "Uzbekistan Airways",
+    "icon": "/images/airlines/uzbekistanairways-v1.webp",
+    "operators": {"UZB":"Uzbekistan Airways"},
+    "logoSource": "https://www.uzairways.com/assets/images/favicon.ico"
+  },
+  {
+    "name": "Azerbaijan Airlines",
+    "icon": "/images/airlines/azerbaijanairlines-v1.webp",
+    "operators": {"AHY":"Azerbaijan Airlines"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.azal.az&sz=64"
+  },
+  {
+    "name": "Georgian Airways",
+    "icon": "/images/airlines/georgianairways-v1.webp",
+    "operators": {"TGZ":"Georgian Airways"},
+    "logoSource": "https://www.georgian-airways.com/public/a9/favicon.ico"
+  },
+  {
+    "name": "Aeroitalia",
+    "icon": "/images/airlines/aeroitalia-v1.webp",
+    "operators": {"AEZ":"Aeroitalia"},
+    "logoSource": "https://www.aeroitalia.com/favicon.ico"
+  },
+  {
+    "name": "Amelia",
+    "icon": "/images/airlines/amelia-v1.webp",
+    "operators": {"AIA":"Amelia"},
+    "logoSource": "https://flyamelia.com/wp-content/uploads/2019/12/favicon-150x150.png"
+  },
+  {
+    "name": "Marabu",
+    "icon": "/images/airlines/marabu-v1.webp",
+    "operators": {"MBU":"Marabu"},
+    "logoSource": "https://flymarabu.com/favicons/favicon.ico"
+  },
+  {
+    "name": "Fly4 Airlines",
+    "icon": "/images/airlines/fly4airlines-v1.webp",
+    "operators": {"FFA":"Fly4 Airlines"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=fly4airlines.com&sz=64"
+  },
+  {
+    "name": "Jettime",
+    "icon": "/images/airlines/jettime-v1.webp",
+    "operators": {"JTD":"Jettime"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=jettime.com&sz=64"
+  },
+  {
+    "name": "Emerald Airlines",
+    "icon": "/images/airlines/emeraldairlines-v1.svg",
+    "operators": {"EAI":"Emerald Airlines","EAG":"Emerald Airlines UK"},
+    "logoSource": "https://www.emeraldairlines.com/site/themes/emeraldairlines.com/images/favicon.svg"
+  },
+  {
+    "name": "AeroLogic",
+    "icon": "/images/airlines/aerologic-v1.webp",
+    "operators": {"BOX":"AeroLogic"},
+    "logoSource": "https://aerologic.aero/build/favicon/apple-touch-icon.png"
+  },
+  {
+    "name": "Air Atlanta",
+    "icon": "/images/airlines/airatlanta-v1.webp",
+    "operators": {"ABD":"Air Atlanta Icelandic","AAE":"Air Atlanta Europe"},
+    "logoSource": "https://airatlanta.com/wp-content/uploads/2025/01/airatlanta-favicon.png"
+  },
+  {
+    "name": "Hi Fly",
+    "icon": "/images/airlines/hifly-v1.webp",
+    "operators": {"HFY":"Hi Fly","HFM":"Hi Fly Malta"},
+    "logoSource": "https://hifly.aero/public/imgs/id/apple-touch-icon.png"
+  },
+  {
+    "name": "Titan Airways",
+    "icon": "/images/airlines/titanairways-v1.webp",
+    "operators": {"AWC":"Titan Airways"},
+    "logoSource": "https://www.titan-airways.com/favicon.ico"
+  },
+  {
+    "name": "AlbaStar",
+    "icon": "/images/airlines/albastar-v1.webp",
+    "operators": {"LAV":"AlbaStar"},
+    "logoSource": "https://upload.wikimedia.org/wikipedia/en/d/df/Albastar_logo.png"
+  },
+  {
+    "name": "Neos",
+    "icon": "/images/airlines/neos-v1.webp",
+    "operators": {"NOS":"Neos"},
+    "logoSource": "https://www.neosair.com/favicon.ico"
+  },
+  {
+    "name": "World2Fly",
+    "icon": "/images/airlines/world2fly-v1.webp",
+    "operators": {"WFL":"World2Fly","WPT":"World2Fly Portugal"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.w2fly.es&sz=64"
+  },
+  {
+    "name": "Iberojet",
+    "icon": "/images/airlines/iberojet-v1.webp",
+    "operators": {"EVE":"Iberojet","OBS":"Iberojet Portugal"},
+    "logoSource": "https://d2l4159s3q6ni.cloudfront.net/dam/photos/81/db/3b/b7/c9013bab5d70e2bc5fef7b6a2f959ba3607fc659408374e3ee25328d.png"
+  },
+  {
+    "name": "Plus Ultra",
+    "icon": "/images/airlines/plusultra-v1.webp",
+    "operators": {"PUE":"Plus Ultra"},
+    "logoSource": "https://static.plusultra.com/assets/imgs/favicons/apple-touch-icon.png?1001"
+  },
+  {
+    "name": "Air Austral",
+    "icon": "/images/airlines/airaustral-v2.webp",
+    "operators": {"REU":"Air Austral"},
+    "logoSource": "https://www.air-austral.com/favicon.ico"
+  },
+  {
+    "name": "Air Caraïbes",
+    "icon": "/images/airlines/aircaraibes-v2.webp",
+    "operators": {"FWI":"Air Caraïbes"},
+    "logoSource": "https://www.aircaraibes.com/themes/custom/airc_com/favicon.ico"
+  },
+  {
+    "name": "Corsair",
+    "icon": "/images/airlines/corsair-v1.webp",
+    "operators": {"CRL":"Corsair"},
+    "logoSource": "https://www.flycorsair.com/favicon.ico"
+  },
+  {
+    "name": "Air Belgium",
+    "icon": "/images/airlines/airbelgium-v1.webp",
+    "operators": {"ABB":"Air Belgium"},
+    "logoSource": "https://www.airbelgium.com/wp-content/uploads/2024/01/air-belgium-logo-150x150.png"
+  },
+  {
+    "name": "Mavi Gok Airlines",
+    "icon": "/images/airlines/mavigokairlines-v1.webp",
+    "operators": {"MGH":"Mavi Gök Airlines"},
+    "logoSource": "https://content.mgaairlines.com/v1/mga/58f5891ceba94bae92bcd682d9eef779.png"
+  },
+  {
+    "name": "Southwind Airlines",
+    "icon": "/images/airlines/southwindairlines-v1.svg",
+    "operators": {"STW":"Southwind Airlines"},
+    "logoSource": "https://upload.wikimedia.org/wikipedia/en/4/43/Southwind_Airlines_Logo.svg"
+  },
+  {
+    "name": "French bee",
+    "icon": "/images/airlines/frenchbee-v1.webp",
+    "operators": {"FBU":"French bee"},
+    "logoSource": "https://www.frenchbee.com/themes/custom/bl_desktop/favicon.ico"
+  },
+  {
+    "name": "Asiana Airlines",
+    "icon": "/images/airlines/asianaairlines-v2.webp",
+    "operators": {"AAR":"Asiana Airlines"},
+    "logoSource": "https://flyasiana.com/favicon.ico"
+  },
+  {
+    "name": "Jazeera Airways",
+    "icon": "/images/airlines/jazeeraairways-v1.webp",
+    "operators": {"JZR":"Jazeera Airways"},
+    "logoSource": "https://www.google.com/s2/favicons?domain=www.jazeeraairways.com&sz=64"
+  },
+  {
+    "name": "Bul Air",
+    "icon": "/images/airlines/bulair-v1.webp",
+    "operators": {"BVL":"Bul Air"},
+    "logoSource": "https://bulair.bg/favicon/favicon-32x32.png"
+  },
+  {
+    "name": "Qanot Sharq",
+    "icon": "/images/airlines/qanotsharq-v1.webp",
+    "operators": {"QNT":"Qanot Sharq"},
+    "logoSource": "https://qanotsharq.com/favicon-96x96.png"
+  },
+  {
+    "name": "Global Reach Aviation",
+    "icon": "/images/airlines/globalreachaviation-v1.webp",
+    "operators": {"GAV":"Global Reach Aviation"},
+    "logoSource": "https://www.globalreachaviation.com/favicon.ico"
+  },
+  {
+    "name": "HelloJets",
+    "icon": "/images/airlines/hellojets-v1.webp",
+    "operators": {"HLJ":"HelloJets"},
+    "logoSource": "https://hellojets.com/wp-content/uploads/2024/12/favicon_512x512px-150x150.png"
+  },
+  {
+    "name": "TUS Airways",
+    "icon": "/images/airlines/tusairways-v1.webp",
+    "operators": {"CYF":"TUS Airways"},
+    "logoSource": "https://www.tusairways.com/wp-content/uploads/2022/05/cropped-logofavicon16X16-150x150.png"
+  },
+  {
+    "name": "STARLUX Airlines",
+    "icon": "/images/airlines/starluxairlines-v1.webp",
+    "operators": {"SJX":"STARLUX Airlines"},
+    "logoSource": "https://www.starlux-airlines.com/favicon.png"
+  },
+  {
+    "name": "flyadeal",
+    "icon": "/images/airlines/flyadeal-v1.svg",
+    "operators": {"FAD":"flyadeal"},
+    "logoSource": "https://d2b5gmzfxp2iy.cloudfront.net/obsah/aerolinka/80377/logo/flyadeallogosvg.svg"
+  },
+  {
+    "name": "VietJet Air",
+    "icon": "/images/airlines/vietjetair-v1.webp",
+    "operators": {"VJC":"VietJet Air","TVJ":"Thai VietJet Air"},
+    "logoSource": "https://www.vietjetair.com/favicon.ico"
+  },
+  {
+    "name": "Air Horizont",
+    "icon": "/images/airlines/airhorizont-v1.webp",
+    "operators": {"HAT":"Air Horizont"},
+    "logoSource": "https://airhorizont.com/wp-content/uploads/2023/10/cropped-favicon-air-horizont-32x32.png"
+  },
+  {
+    "name": "Air Algerie",
+    "icon": "/images/airlines/airalgerie-v2.webp",
+    "operators": {"DAH":"Air Algérie"},
+    "logoSource": "https://airalgerie.dz/favicon.ico"
+  },
+  {
+    "name": "Air Mauritius",
+    "icon": "/images/airlines/airmauritius-v1.webp",
+    "operators": {"MAU":"Air Mauritius"},
+    "logoSource": "https://www.airmauritius.com/build/images/favicon.ico"
   }
 ]

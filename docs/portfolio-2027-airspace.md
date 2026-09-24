@@ -26,17 +26,38 @@ Identity tile, 3px corners, 5px icon gap, and `Portfolio / Label` 11/16 text in
 gap. Unknown, malformed and simulation callsigns omit the airline row. The local
 mapping works even when route/model enrichment is unavailable.
 
-`content/airlines.json` stores eight brands and thirteen verified operator codes:
-easyJet (EZY/EJU/EZS), Eurowings (EWG), Smartwings (TVS), Ryanair (RYR/RUK), Wizz Air
-(WZZ/WMT/WUK), Lufthansa (DLH), British Airways (BAW), and LOT (LOT). Names preserve
-subsidiary identity, such as easyJet Europe. These are operator-code matches, not
-inferred marketing flight numbers or proof of a codeshare. Codes were checked
-against [adsbdb airline records](https://api.adsbdb.com/v0/airline/EJU); initial
-coverage follows [Prague's active carriers](https://www.slot-czech.cz/airport-information).
+`content/airlines.json` stores **167 brands/groups and 221 operator codes**. Coverage
+includes the major European network and low-cost airlines, regional operators,
+leisure/charter and wet-lease airlines, cargo carriers, and international airlines
+serving Europe. The shortlist was checked against
+[EUROCONTROL traffic rankings](https://www.eurocontrol.int/publication/eurocontrol-data-snapshot-57-2025-european-aviation-numbers)
+and [Prague Airport's carrier list](https://www.prg.aero/en/destinations).
 
-Official-site favicon URLs are recorded in each registry entry. All source images
-were inspected with ffprobe, converted without upscaling to 32×32 WebP at quality
-82, visually compared and stored at the registry's versioned Vercel Blob paths.
+Operator codes were cross-checked on 24 September 2026 against the
+[FAA ICAO designator table](https://www.faa.gov/air_traffic/publications/atpubs/cnt_html/chap3_section_3.html).
+Do not import the adsbdb airline directory blindly: some records retain previous
+holders of reassigned codes. In particular, Lauda Europe is LDA (not LDM),
+Lufthansa City Airlines is LHX (not VLH), AirExplore is AXE (not EDG), DAT LT is
+DNU (not DXT), Chair Airlines is CSW (not GSW), and Air Atlanta Europe is AAE
+(not AAH). HiSky Europe is HYS; Moldova's HiSky is HYM. GetJet's
+[2026 rebrand](https://getjet.aero/news/getjet-aviation-holdings-an-international-aviation-services-group-headquartered-in-lithuania-is-rebranded-as-getjet-group/)
+supplies the current display name for GJM, still listed as Airhub in the FAA table.
+Known closed operators such as Czech Airlines, Alitalia, Eastern Airways, Wizz Air
+Abu Dhabi and Lufthansa CityLine are not added as aliases for their successors.
+
+Names preserve subsidiary identity, such as KLM Cityhopper, Malta Air, Buzz,
+Eurowings Europe and the four Smartwings operators. Subsidiaries can share group
+artwork; a logo does not imply a codeshare or a marketing flight number. Matching
+remains local and needs no extra lookup, API key, or live logo service.
+
+Logo source URLs are recorded in each registry entry. Most are official-site
+favicons; where a site blocks downloads, a cached official-site favicon is used.
+FlyOne and flyadeal use Prague Airport's vector artwork; AlbaStar and Southwind
+use Wikimedia-hosted airline logos. Generic web-server/framework placeholders
+are excluded. Raster sources were inspected with ffprobe, converted without
+upscaling to at most 32×32 WebP at quality 82, and visually reviewed. Vector
+artwork stays SVG, retaining its proportions and colors. Delivery assets use
+versioned Vercel Blob paths, never runtime third-party favicon requests.
 Figma uses PNG copies because its renderer did not display the uploaded WebP fills.
 Original downloadable sources remain linked; ignored local staging is not an archive.
 The upload utility accepts `images/airlines` to upload only this asset directory.
@@ -44,8 +65,12 @@ The upload utility accepts `images/airlines` to upload only this asset directory
 Figma: airline artwork components `491:1295`–`491:1302`, shared row `491:9798`,
 desktop instance `491:9813`, mobile instance `491:9818`. Both selected panel main
 components propagate the new row to their screen instances. Checks:
-`node --test scripts/airlines.test.mjs` and `node scripts/verify-airspace.mjs` cover
-matching, unknown identifiers, failed enrichment, 15px imagery and responsive fit.
+`node --test scripts/airlines.test.mjs` checks major carriers, subsidiaries,
+corrected codes, duplicate operators, provenance and unknown identifiers.
+`node scripts/verify-airline-assets.mjs` checks every published logo's content type,
+dimensions, bytes and image decoding. `node scripts/verify-airspace.mjs` covers
+failed enrichment, 15px imagery, SVG logos and responsive fit, including the long
+European Air Transport Leipzig name at 320px width.
 
 ## Reliability update — 24 September 2026
 
