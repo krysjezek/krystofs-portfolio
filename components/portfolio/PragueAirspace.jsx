@@ -6,6 +6,7 @@ import { useAirspacePolling } from "@/hooks/useAirspacePolling";
 import { EXPIRE_MS, mergeAircraft, STALE_MS } from "@/lib/aircraft.mjs";
 import AirspaceMap from "./AirspaceMap";
 import AirspaceDetails from "./AirspaceDetails";
+import AirlineIdentity from "./AirlineIdentity";
 
 const utc = time => new Date(time).toISOString().slice(11, 19) + "Z";
 const reading = (value, unit) => Number.isFinite(value) ? `${value}${unit}` : "—";
@@ -217,7 +218,7 @@ export default function PragueAirspace({ mode = "live" }) {
           {map}<p className="airspace-label airspace-muted">{reduced ? "Received positions only · Reduced motion" : "Dots = observed · Outlines = estimates"}</p>
           {!!choices.length && <div className="airspace-chooser" aria-label="Overlapping aircraft"><p className="airspace-label">Choose an aircraft</p>{choices.filter(a => aircraft.some(current => current.id === a.id)).map(a => <button key={a.id} type="button" className="button" onClick={() => { setSelected(current => current === a.id ? null : a.id); setChoices([]); focusMarker(a.id); }}>{a.callsign || a.id}</button>)}</div>}
           <hr /><div className="airspace-selection" aria-live="polite">
-            {chosen ? <><div className="airspace-selected-title"><p>{chosen.callsign || "Callsign not reported"}</p><button className="airspace-clear" type="button" onClick={clearSelection}>Clear</button></div>{simulation ? <p className="airspace-label airspace-muted">Simulated aircraft · Route and model not reported.</p> : <AirspaceDetails key={`${chosen.id}:${chosen.callsign}`} aircraft={chosen} enabled={active} />}</> : selected ? <p>Aircraft left coverage or its report expired. <button type="button" className="airspace-clear" onClick={clearSelection}>Clear</button></p> : <><p>Select an aircraft to explore.</p><p className="airspace-label airspace-muted">Reported positions, with bounded estimates between updates. Airborne aircraft only.</p></>}
+            {chosen ? <><div className="airspace-selected-title"><div className="airspace-flight-identity"><p>{chosen.callsign || "Callsign not reported"}</p>{!simulation && <AirlineIdentity callsign={chosen.callsign} />}</div><button className="airspace-clear" type="button" onClick={clearSelection}>Clear</button></div>{simulation ? <p className="airspace-label airspace-muted">Simulated aircraft · Route and model not reported.</p> : <AirspaceDetails key={`${chosen.id}:${chosen.callsign}`} aircraft={chosen} enabled={active} />}</> : selected ? <p>Aircraft left coverage or its report expired. <button type="button" className="airspace-clear" onClick={clearSelection}>Clear</button></p> : <><p>Select an aircraft to explore.</p><p className="airspace-label airspace-muted">Reported positions, with bounded estimates between updates. Airborne aircraft only.</p></>}
           </div><hr />
           <footer className="airspace-label airspace-muted">
             <p>Traffic: {simulation ? "Simulation · generated demo data" : <><a href="https://www.adsb.lol/">ADSB.lol</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a></>}</p>

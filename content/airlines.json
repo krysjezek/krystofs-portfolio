@@ -1,0 +1,50 @@
+[
+  {
+    "name": "easyJet",
+    "icon": "/images/airlines/easyjet-v1.webp",
+    "operators": { "EZY": "easyJet", "EJU": "easyJet Europe", "EZS": "easyJet Switzerland" },
+    "logoSource": "https://www.easyjet.com/favicon.ico"
+  },
+  {
+    "name": "Eurowings",
+    "icon": "/images/airlines/eurowings-v1.webp",
+    "operators": { "EWG": "Eurowings" },
+    "logoSource": "https://content.presspage.com/favicon/2942.ico?1970835165"
+  },
+  {
+    "name": "Smartwings",
+    "icon": "/images/airlines/smartwings-v1.webp",
+    "operators": { "TVS": "Smartwings" },
+    "logoSource": "https://www.smartwings.com/templates/cnt/favicon/favicon-96x96.png"
+  },
+  {
+    "name": "Ryanair",
+    "icon": "/images/airlines/ryanair-v1.webp",
+    "operators": { "RYR": "Ryanair", "RUK": "Ryanair UK" },
+    "logoSource": "https://assets.ryanair.com/resources/ui/ryanair3.0/favicons/favicon-32x32.png"
+  },
+  {
+    "name": "Wizz Air",
+    "icon": "/images/airlines/wizzair-v1.webp",
+    "operators": { "WZZ": "Wizz Air", "WMT": "Wizz Air Malta", "WUK": "Wizz Air UK" },
+    "logoSource": "https://cdn-sites-assets.mziq.com/wp-content/uploads/sites/1562/2026/01/32x32_6967b11307237.png"
+  },
+  {
+    "name": "Lufthansa",
+    "icon": "/images/airlines/lufthansa-v1.webp",
+    "operators": { "DLH": "Lufthansa" },
+    "logoSource": "https://www.lufthansa.com/favicon.ico"
+  },
+  {
+    "name": "British Airways",
+    "icon": "/images/airlines/britishairways-v1.webp",
+    "operators": { "BAW": "British Airways" },
+    "logoSource": "https://www.britishairways.com/nx/b/homepage/homepage/favicon/favicon-32x32.png"
+  },
+  {
+    "name": "LOT Polish Airlines",
+    "icon": "/images/airlines/lot-v1.webp",
+    "operators": { "LOT": "LOT Polish Airlines" },
+    "logoSource": "https://www.lot.com/favicon.ico"
+  }
+]

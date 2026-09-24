@@ -363,6 +363,10 @@ button {
 .airspace-selected { display: flex; flex-direction: column; gap: 10px; }
 .airspace-clear { min-height: 44px; font: var(--type-label); letter-spacing: var(--tracking-label); }
 .airspace-selected-title { margin-block: -10px; }
+.airspace-selected-title:has(.airspace-airline) { margin-block: 0; align-items: flex-start; }
+.airspace-flight-identity { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.airspace-airline { display: flex; align-items: center; gap: var(--icon-gap); }
+.airspace-airline > span:last-child { overflow-wrap: anywhere; }
 .airspace-chooser { display: flex; flex-wrap: wrap; gap: 5px; }
 .airspace-chooser p { flex-basis: 100%; }
 .airspace-map { --map-zoom: 1.755; position: relative; height: calc(200px * var(--map-zoom)); overflow: hidden; }

@@ -1,5 +1,34 @@
 # Prague airspace interaction
 
+## Airline identity — 24 September 2026
+
+Selected flights show the airline below the reported ICAO callsign: shared 15px
+Identity tile, 3px corners, 5px icon gap, and `Portfolio / Label` 11/16 text in
+`text/secondary`. The callsign remains Body Compact; the identity block has a 4px
+gap. Unknown, malformed and simulation callsigns omit the airline row. The local
+mapping works even when route/model enrichment is unavailable.
+
+`content/airlines.json` stores eight brands and thirteen verified operator codes:
+easyJet (EZY/EJU/EZS), Eurowings (EWG), Smartwings (TVS), Ryanair (RYR/RUK), Wizz Air
+(WZZ/WMT/WUK), Lufthansa (DLH), British Airways (BAW), and LOT (LOT). Names preserve
+subsidiary identity, such as easyJet Europe. These are operator-code matches, not
+inferred marketing flight numbers or proof of a codeshare. Codes were checked
+against [adsbdb airline records](https://api.adsbdb.com/v0/airline/EJU); initial
+coverage follows [Prague's active carriers](https://www.slot-czech.cz/airport-information).
+
+Official-site favicon URLs are recorded in each registry entry. All source images
+were inspected with ffprobe, converted without upscaling to 32×32 WebP at quality
+82, visually compared and stored at the registry's versioned Vercel Blob paths.
+Figma uses PNG copies because its renderer did not display the uploaded WebP fills.
+Original downloadable sources remain linked; ignored local staging is not an archive.
+The upload utility accepts `images/airlines` to upload only this asset directory.
+
+Figma: airline artwork components `491:1295`–`491:1302`, shared row `491:9798`,
+desktop instance `491:9813`, mobile instance `491:9818`. Both selected panel main
+components propagate the new row to their screen instances. Checks:
+`node --test scripts/airlines.test.mjs` and `node scripts/verify-airspace.mjs` cover
+matching, unknown identifiers, failed enrichment, 15px imagery and responsive fit.
+
 ## Reliability update — 24 September 2026
 
 The independently deployable collector is public at

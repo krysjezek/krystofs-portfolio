@@ -1,6 +1,7 @@
 /**
  * One-time script: uploads public/videos/ and public/images/ to Vercel Blob.
- * Run with: BLOB_READ_WRITE_TOKEN=xxx node scripts/upload-to-blob.mjs
+ * Run with BLOB_READ_WRITE_TOKEN in the environment.
+ * Optional subdirectories: node scripts/upload-to-blob.mjs images/airlines
  */
 
 import { put } from '@vercel/blob'
@@ -68,7 +69,11 @@ async function upload(dirs) {
   console.log(`\nAlso add to .env.local for local dev:\nNEXT_PUBLIC_CDN_URL=${baseUrl}`)
 }
 
-upload(['videos', 'images']).catch((err) => {
+const directories = process.argv.slice(2)
+if (directories.some(dir => !/^(images|videos)(\/[a-zA-Z0-9_-]+)*$/.test(dir))) {
+  throw new Error('Upload directories must be within public/images or public/videos')
+}
+upload(directories.length ? directories : ['videos', 'images']).catch((err) => {
   console.error(err)
   process.exit(1)
 })

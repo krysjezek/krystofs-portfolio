@@ -19,13 +19,13 @@ async function setup(options = {}) {
   const page = await context.newPage();
   await page.clock.install();
   page.on("pageerror", e => errors.push(e.message));
-  const state = { traffic: 0, weather: 0, details: 0, scenario: "normal", stamp: Date.now() };
+  const state = { traffic: 0, weather: 0, details: 0, scenario: "normal", callsign: "EWG7KG", stamp: Date.now() };
   await page.route("**/api/aircraft", async route => {
     state.traffic++;
     const now = await page.evaluate(() => Date.now());
     if (state.scenario === "error") return route.fulfill({ status: 503, json: { ok: false } });
     const observedAt = state.scenario === "old" ? state.stamp : now;
-    await route.fulfill({ json: { ok: true, fixture: true, delayed: state.scenario === "delayed", observedAt, aircraft: state.scenario === "empty" ? [] : [report(observedAt), report(observedAt, "abc002", { lon: state.scenario === "separated" ? 14.34 : 14.29 }), report(observedAt, "abc003", { lat: 49.91, lon: 14.55, track: null })] } });
+    await route.fulfill({ json: { ok: true, fixture: true, delayed: state.scenario === "delayed", observedAt, aircraft: state.scenario === "empty" ? [] : [report(observedAt, 'abc001', { callsign: state.callsign }), report(observedAt, "abc002", { lon: state.scenario === "separated" ? 14.34 : 14.29 }), report(observedAt, "abc003", { lat: 49.91, lon: 14.55, track: null })] } });
   });
   await page.route("**/api/airport-weather", route => {
     state.weather++;
@@ -69,10 +69,21 @@ try {
   await page.keyboard.press("Enter");
   await until(() => panel.innerText().then(t => t.includes("Airbus A320-214")), "selected details");
   check((await panel.innerText()).includes("PRG · Prague") && (await panel.innerText()).includes("DUS · Düsseldorf"), "selected route and aircraft model render");
+  check(await panel.locator('.airspace-airline').innerText() === 'Eurowings', 'selected callsign shows its airline');
+  const airlineLogo = panel.locator('.airspace-airline img');
+  await airlineLogo.evaluate(image => image.decode());
+  check(await airlineLogo.evaluate(image => image.width === 15 && image.height === 15), 'airline uses the shared 15px logo');
+  check(await panel.locator('.airspace-airline').evaluate(row => {
+    const css = getComputedStyle(row);
+    return css.fontSize === '11px' && css.lineHeight === '16px' && css.columnGap === '5px';
+  }), 'airline uses Label typography and shared icon spacing');
   await page.screenshot({ path: join(output, "desktop-selected.png") });
   await page.locator('[data-aircraft-id="abc001"]').focus();
   await page.keyboard.press("Enter");
   check((await panel.innerText()).includes("Select an aircraft to explore."), "reselecting clears details");
+  await page.locator('[data-aircraft-id="abc003"]').focus();
+  await page.keyboard.press('Enter');
+  check(await panel.locator('.airspace-airline').count() === 0, 'unknown airline has no invented logo or name');
   const movingTarget = await page.locator('[data-aircraft-id="abc002"]').boundingBox();
   await page.mouse.click(movingTarget.x + movingTarget.width / 2, movingTarget.y + movingTarget.height / 2);
   await page.locator(".airspace-chooser").waitFor();
@@ -171,6 +182,7 @@ try {
       await page.locator('[data-aircraft-id="abc001"]').focus(); await page.keyboard.press("Enter");
       await until(() => panel.innerText().then(t => t.includes("Not reported")), "details fallback");
       check((await panel.innerText()).includes("AIRCRAFT / A320"), "unknown model retains reported type");
+      check(await panel.locator('.airspace-airline').innerText() === 'Eurowings', 'airline identity does not depend on route or model lookup');
     }
     check(await panel.evaluate(e => getComputedStyle(e).animationName) === "none", "reduced motion disables transition");
     if (scenario !== "empty" && scenario !== "error") {
@@ -203,7 +215,8 @@ try {
 
   for (const width of [834, 390, 320]) {
     const mobile = width < 600;
-    const { context, page, trigger, panel } = await setup({ viewport: { width, height: 844 }, isMobile: mobile, hasTouch: mobile });
+    const { context, page, state, trigger, panel } = await setup({ viewport: { width, height: 844 }, isMobile: mobile, hasTouch: mobile });
+    state.callsign = width === 320 ? 'LOT123' : 'EJU12ZD';
     if (mobile) await trigger.tap(); else await trigger.click();
     await page.locator('[data-aircraft-id="abc001"]').waitFor();
     const box = await panel.boundingBox();
@@ -222,6 +235,12 @@ try {
       check(await panel.evaluate(e => e.scrollHeight > e.clientHeight && getComputedStyle(e).overflowY === "auto"), "short mobile sheet scrolls vertically");
       await page.setViewportSize({ width, height: 844 });
     }
+    await page.locator('[data-aircraft-id="abc001"]').focus();
+    await page.keyboard.press('Enter');
+    check(await panel.locator('.airspace-airline').innerText() === (width === 320 ? 'LOT Polish Airlines' : 'easyJet Europe'), `${width}px selected airline`);
+    await panel.locator('.airspace-airline img').evaluate(image => image.decode());
+    await panel.locator('.airspace-airline').scrollIntoViewIfNeeded();
+    check(await panel.evaluate(e => e.scrollWidth <= e.clientWidth), `${width}px selected airline has no overflow`);
     await page.screenshot({ path: join(output, `airspace-${width}.png`) });
     await panel.getByRole("button", { name: "Close", exact: true }).click();
     await until(() => trigger.evaluate(e => e === document.activeElement), "mobile focus restoration");
@@ -230,4 +249,9 @@ try {
   }
   check(errors.length === 0, errors.join("\n"));
   console.log(`Airspace: ${checks} checks passed. Screenshots: ${output}`);
-} finally { await browser.close(); }
+} finally {
+  for (const context of browser.contexts()) {
+    for (const page of context.pages()) await page.unrouteAll({ behavior: 'ignoreErrors' });
+  }
+  await browser.close();
+}
