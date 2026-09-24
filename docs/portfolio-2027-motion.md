@@ -78,7 +78,7 @@ Keyboard focus shows project labels and external arrows immediately with the exi
 
 ## 05 — Cursor hint
 
-24 September 2026 extension: [Contextual previews](portfolio-2027-context-previews.md) supersede the action-only content rules below. The existing compact visual treatment and motion remain; optional detail, source and university identity add useful context. Education, weather and text-only credit biographies also have anchored native popovers for keyboard and touch access. Rich previews grow beyond the original 24px minimum height.
+24 September 2026 extension: [Contextual previews](portfolio-2027-context-previews.md) supersede the action-only content rules below. The existing compact visual treatment and motion remain; optional detail, source and university identity add useful context. Education, weather and credit biographies have anchored tooltips for keyboard focus. Cursor previews never open or pin on click/tap: linked credits navigate directly and informational text only reveals context on hover/focus. Rich previews grow beyond the original 24px minimum height.
 
 Floating overlays use the shared [elevation rules](portfolio-2027-elevation.md).
 Shadows follow existing opacity/transform motion; shadow strength is not animated.

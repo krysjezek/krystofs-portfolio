@@ -130,15 +130,37 @@ try {
   assert.equal(await panel.count(), 0);
 
   await page.goto(`${base}/work/barbour`);
-  const stella = page.getByRole('button', { name: 'Stella Grotti', exact: true });
+  const profileUrl = 'https://monopo.london/team/stella-grotti/';
+  await context.route(profileUrl, route => route.fulfill({ contentType: 'text/html', body: '<title>Profile destination</title>' }));
+  const stella = page.getByRole('link', { name: 'Stella Grotti', exact: true });
   await hover(stella);
   assert.match(await hint.textContent(), /philosophy/);
   assert.equal(await hint.locator('.context-image').isVisible(), true);
   assert.match(await hint.locator('.context-image img').getAttribute('src'), /monopo/);
   await page.screenshot({ path: join(output, 'credits-desktop.png') });
-  await stella.click(); await pause();
-  assert.equal(await panel.getByRole('link', { name: /View profile/ }).getAttribute('href'), 'https://monopo.london/team/stella-grotti/');
-  await panel.getByRole('button', { name: 'Close' }).click();
+  assert.equal(await stella.getAttribute('href'), profileUrl);
+  assert.equal(await stella.getAttribute('aria-haspopup'), null);
+  const clickDestination = page.waitForEvent('popup');
+  await stella.click();
+  const clicked = await clickDestination;
+  await clicked.waitForLoadState('domcontentloaded');
+  assert.equal(clicked.url(), profileUrl);
+  assert.equal(await panel.count(), 0, 'Click follows the link without opening a preview');
+  await clicked.close();
+  await page.keyboard.press('Tab');
+  await stella.focus(); await pause();
+  assert.equal(await panel.getAttribute('role'), 'tooltip');
+  assert.match(await panel.textContent(), /philosophy/);
+  assert.equal(await panel.locator('a,button').count(), 0);
+  assert(await stella.evaluate(n => n === document.activeElement));
+  await page.keyboard.press('Escape');
+  assert.equal(await panel.count(), 0);
+  const keyboardDestination = page.waitForEvent('popup');
+  await page.keyboard.press('Enter');
+  const entered = await keyboardDestination;
+  await entered.waitForLoadState('domcontentloaded');
+  assert.equal(entered.url(), profileUrl);
+  await entered.close();
 
   const unlinked = page.locator('.context-trigger[data-hint="Josef Talač"]');
   assert.equal(await unlinked.evaluate(n => n.tagName), 'SPAN');
@@ -160,6 +182,7 @@ try {
   await page.screenshot({path:join(output,'credits-tablet.png')});
 
   const touch = await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+  await touch.route(profileUrl, route => route.fulfill({ contentType: 'text/html', body: '<title>Profile destination</title>' }));
   const mobile = await touch.newPage();
   await mobile.goto(base); await mobile.getByRole('tab',{name:'About',exact:true}).click();
   await mobile.locator('.biography-emphasis[data-informational]').tap();
@@ -169,13 +192,19 @@ try {
   assert.equal(await mobile.locator('.cursor-hint').evaluate(n=>getComputedStyle(n).display),'none');
   await mobile.screenshot({path:join(output,'education-mobile.png')});
   await mobile.goto(`${base}/work/barbour`);
-  await mobile.getByRole('button',{name:'Stella Grotti',exact:true}).tap();
-  await mobile.waitForTimeout(300);
-  assert.match(await mobilePanel.textContent(), /philosophy/);
-  const mobileBounds=await mobilePanel.boundingBox();
-  assert(mobileBounds.x>=12 && mobileBounds.x+mobileBounds.width<=378 && mobileBounds.y>=12 && mobileBounds.y+mobileBounds.height<=832);
-  await mobilePanel.getByRole('button',{name:'Close'}).tap();
+  const touchDestination = mobile.waitForEvent('popup');
+  await mobile.getByRole('link',{name:'Stella Grotti',exact:true}).tap();
+  const tapped = await touchDestination;
+  await tapped.waitForLoadState('domcontentloaded');
+  assert.equal(tapped.url(), profileUrl);
+  assert.equal(await mobilePanel.count(), 0, 'Touch follows the profile link directly');
+  await tapped.close();
   await touch.close();
+
+  await page.goto(`${base}/work/outpost-fantasy`);
+  assert.equal(await page.locator('.context-trigger[popovertarget], .context-trigger[aria-haspopup], .context-actions').count(), 0);
+  await page.locator('.case-credits a[href="/"]').click();
+  await page.waitForURL(base + '/');
 
   await page.unroute('**/api/weather');
   await page.route('**/api/weather', route=>route.fulfill({status:503,json:{temperature:null}}));

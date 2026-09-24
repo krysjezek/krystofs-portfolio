@@ -3,16 +3,15 @@
 import { useCallback, useEffect, useId, useRef, useState } from "react";
 import PreviewContent, { previewAttributes } from "./PreviewContent";
 import { RouteLink } from "./Links";
-import Icon from "./Icon";
 
-// Information reveals on hover/focus; only actionable previews can be pinned.
+// Cursor previews never capture clicks. Destinations use native link behavior.
 export default function ContextPreview({ preview, children, className = "" }) {
   const informational = preview.informational || !preview.href;
-  const Trigger = informational ? "span" : "button";
+  const internal = !informational && preview.href.startsWith("/");
+  const Trigger = informational ? "span" : internal ? RouteLink : "a";
   const id = useId();
   const trigger = useRef(null);
   const panel = useRef(null);
-  const heading = useRef(null);
   const [open, setOpen] = useState(false);
   const position = useCallback(() => {
     const anchor = trigger.current.getBoundingClientRect();
@@ -40,41 +39,33 @@ export default function ContextPreview({ preview, children, className = "" }) {
     };
   }, [open, position]);
 
-  const link = preview.href && (preview.href.startsWith("/") ? (
-    <RouteLink href={preview.href}>{preview.linkLabel || "View portfolio"}</RouteLink>
-  ) : (
-    <a href={preview.href} target="_blank" rel="noopener noreferrer">{preview.linkLabel || "View profile"} <Icon name="arrow" size="compact" /></a>
-  ));
-
   return (
     <>
       <Trigger
         ref={trigger}
-        type={informational ? undefined : "button"}
+        href={informational ? undefined : preview.href}
+        target={!informational && !internal ? "_blank" : undefined}
+        rel={!informational && !internal ? "noopener noreferrer" : undefined}
         className={`context-trigger ${className}`}
         data-informational={informational ? "" : undefined}
         {...previewAttributes(preview)}
         tabIndex={informational ? 0 : undefined}
-        popoverTarget={informational ? undefined : id}
-        aria-haspopup={informational ? undefined : "dialog"}
-        aria-expanded={informational ? undefined : open}
-        aria-controls={informational ? undefined : id}
-        aria-describedby={informational ? id : undefined}
+        aria-describedby={id}
         aria-label={preview.accessibleLabel}
-        onFocus={informational ? (event) => {
+        onFocus={(event) => {
           if (event.currentTarget.matches(":focus-visible")) panel.current.showPopover();
-        } : undefined}
-        onBlur={informational ? () => panel.current.hidePopover() : undefined}
-        onKeyDown={informational ? (event) => {
+        }}
+        onBlur={() => panel.current.hidePopover()}
+        onPointerDown={() => panel.current.hidePopover()}
+        onKeyDown={(event) => {
           if (event.key === "Escape") panel.current.hidePopover();
-        } : undefined}
+        }}
       >{children}</Trigger>
       <span
         id={id}
         ref={panel}
-        popover={informational ? "manual" : "auto"}
-        role={informational ? "tooltip" : "dialog"}
-        aria-label={informational ? undefined : preview.title}
+        popover="manual"
+        role="tooltip"
         className="context-popover"
         onBeforeToggle={(event) => {
           if (event.newState === "open") window.dispatchEvent(new Event("portfolio:preview-open"));
@@ -82,19 +73,10 @@ export default function ContextPreview({ preview, children, className = "" }) {
         onToggle={(event) => {
           const visible = event.newState === "open";
           setOpen(visible);
-          if (visible) {
-            position();
-            if (!informational) heading.current.focus({ preventScroll: true });
-          }
+          if (visible) position();
         }}
       >
-        <span tabIndex={informational ? undefined : -1} ref={heading} className="context-focus">
-          <PreviewContent preview={preview} />
-        </span>
-        {!informational && <span className="context-actions">
-          {link}
-          <button type="button" popoverTarget={id} popoverTargetAction="hide">Close</button>
-        </span>}
+        <PreviewContent preview={preview} />
       </span>
     </>
   );

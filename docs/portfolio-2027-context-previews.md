@@ -20,7 +20,7 @@ Designed in Figma first, then implemented on 24 September 2026. Extends the comp
 
 Weather, education and credits without a destination are informational text with a normal cursor. Hover shows context; keyboard focus shows an anchored tooltip with no actions. Escape or blur dismisses it. Clicking or tapping does not pin anything. Their descriptions remain associated with the text for assistive technology. CTU and weather source URLs are provenance, not reasons to turn the text into a button.
 
-Credits with a destination retain a disclosure button: click, Enter, Space or touch opens the same information with its source link. Escape, Close or outside activation dismisses it. Opening focuses its content, and keyboard dismissal restores the trigger. The cursor preview hides while an anchored preview is open. Ordinary external links and email keep native navigation.
+Owner update, 24 September 2026: credits with a destination are direct links. Click, Enter or touch navigates immediately; external profiles open in a new tab and internal destinations use site navigation. Context appears on hover or keyboard focus, with no click-to-pin behavior, disclosure button, View profile action or Close control. Keyboard focus stays on the link; Escape or blur dismisses its tooltip. The cursor preview hides while a keyboard tooltip is open. Ordinary external links and email keep native navigation.
 
 ## Design system
 
@@ -30,7 +30,7 @@ The original Cursor Tooltip set and four state IDs are retained. Added optional 
 
 All tooltip text uses `Portfolio / Label`: Roobert PRO Regular 11/16, 2% tracking. Titles use `text/primary` (`--ink`); supporting details and sources use `text/secondary` (`--muted`) at full opacity. CSS mirrors this style with `--type-label` and `--tracking-label`, sharing `--font-family`. The Prague airspace preview retains its larger `Portfolio / Body Compact` 16/24 title while sharing the same semantic colors and supporting Label style. Do not approximate secondary text using opacity.
 
-One-line previews are 24px high; a one-line title plus supporting line is 44px. All previews hug their content up to a 280px outer maximum, with content-driven height, 4px vertical gap and 4px/10px padding. Every identity logo remains 15×15 with contain fit and a 3px radius. The surface is white with primary ink icons. Reuse the Floating shadow: 0/2/4px at 4% ink plus 0/8/24px at 8% ink. Wrapping never truncates a long URL. Native popovers share the same hierarchy and add 44px source/Close hit areas, a subtle divider and visible keyboard focus outlines.
+One-line previews are 24px high; a one-line title plus supporting line is 44px. All previews hug their content up to a 280px outer maximum, with content-driven height, 4px vertical gap and 4px/10px padding. Every identity logo remains 15×15 with contain fit and a 3px radius. The surface is white with primary ink icons. Reuse the Floating shadow: 0/2/4px at 4% ink plus 0/8/24px at 8% ink. Wrapping never truncates a long URL. Anchored keyboard tooltips share the same hierarchy and have no interactive contents. Triggers keep visible keyboard focus outlines.
 
 Original 160ms fade, 240ms rise/press and 150ms whole-content update remain. Position follows the pointer immediately, flips at viewport edges and keeps a 12px inset. Touch/narrow screens hide only the cursor decoration. Reduced motion changes states instantly. Native pointer stays visible.
 
@@ -61,7 +61,7 @@ Weather: [MET Norway Locationforecast](https://api.met.no/weatherapi/locationfor
 
 ## Verification
 
-- `node scripts/verify-context-previews.mjs`: weather parsing/staleness/missing conditions, mocked successful and failed weather UI, destination and email content, logo loading and dimensions, credit bio/source, keyboard focus and dismissal, touch popover, long URLs, stationary content updates, viewport bounds, reduced motion, and browser errors.
+- `node scripts/verify-context-previews.mjs`: weather parsing/staleness/missing conditions, mocked successful and failed weather UI, destination and email content, logo loading and dimensions, credit bio/source, keyboard focus and dismissal, direct credit navigation by click/Enter/touch, long URLs, stationary content updates, viewport bounds, reduced motion, and browser errors.
 - `node scripts/verify-tooltip.mjs`: shared title/supporting typography, semantic colors, white surface, Floating shadow, icons, press/cancel, reversal, edges and responsive behavior; a short two-line link preview is 44px high.
 - Regular lint, build, portfolio verifier, interaction suite and 33-screen / 431-coordinate Figma layout suite remain required.
 
