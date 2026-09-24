@@ -58,7 +58,7 @@ The VS source credits “TMRZV Studio” for sound design/compositing without an
 
 ## Media geometry and behaviour
 
-- Every opening image/video uses a **16:10** frame at every breakpoint. Crop with cover/fill; never stretch. Barbour and VS use the current header posters, cropped into that frame.
+- Opening images/videos use a **16:10** frame at every breakpoint. Crop with cover/fill; never stretch. Barbour and VS use the current header posters, cropped into that frame. **Outpost Fantasy is an owner-approved exception (24 September 2026): its opening reel uses 16:9 at every breakpoint to preserve the full video width.**
 - Portrait videos use **3:4** frames with cover/fill. Barbour uses three portrait tiles per row on desktop/tablet and a single stack on mobile.
 - Items in a media row have the same rendered height. Use 16:9 landscape rows or 1:1 square rows where authored; crop mixed source shapes to the row frame. Remove empty pockets caused by mismatched heights. Preserve source order.
 - Keep the intentional **5px** outer media gutters and gaps. “No white spaces” means no vacant cells or letterboxing inside the grid, not removing those gutters.

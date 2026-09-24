@@ -1,0 +1,278 @@
+{
+  "prepared": "2026-09-24",
+  "completed": "2026-05",
+  "sourceDirectory": "Dropbox/Work/2026/00 Case Studies 2026/Outpost Fantasy",
+  "note": "Owner-selected CARD BCG for the homepage and Fantasy Reel Compositoin 2 as the hero excerpt. Three finished device stills selected as supporting media. Original masters remain in the supplied Dropbox folder. Videos retain full duration and 30 fps at 1440x810, with audio and metadata stripped. Posters use frame 1. Stills are 1920x1200 WebP Q82. Identity marks come from the linked official-site favicons.",
+  "encoding": {
+    "h264": "High, yuv420p, CRF 20, slow, faststart",
+    "h265": "Main, yuv420p, CRF 24, slow, hvc1, faststart",
+    "av1": "Main, yuv420p10le, CRF 30, SVT-AV1 preset 6"
+  },
+  "assets": [
+    {
+      "source": "CARD BCG.mp4",
+      "slug": "outpost-fantasy-card-v1",
+      "files": [
+        {
+          "path": "/videos/h264/outpost-fantasy-card-v1-fallback.mp4",
+          "bytes": 3434317,
+          "sha256": "c2ce961ffa328c22d98df91e0e10db31d47f77ca2aa58a17174d9d9ae916010c",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "15.200000"
+          }
+        },
+        {
+          "path": "/videos/h265/outpost-fantasy-card-v1-web.mp4",
+          "bytes": 2149130,
+          "sha256": "02fa47f9e8e4ecd36bd65f7bdf080bb88fe0113b902ffe21d9bf42d5c12fdf65",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "15.200000"
+          }
+        },
+        {
+          "path": "/videos/av1/outpost-fantasy-card-v1.webm",
+          "bytes": 1893236,
+          "sha256": "e00fde3dc427e8da346ed8e68c4b8ea39d4fbdf2d7d8fe2ae631b82e4ab9f133",
+          "contentType": "video/webm",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "15.200000"
+          }
+        },
+        {
+          "path": "/videos/posters/outpost-fantasy-card-v1.jpg",
+          "bytes": 59911,
+          "sha256": "74203ec0a632ab20c37190de43c6ea7afca161b65c97ddb53f2e8090b4031380",
+          "contentType": "image/jpeg",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Fantasy Reel Compositoin 2.mp4",
+      "slug": "outpost-fantasy-reel-v1",
+      "files": [
+        {
+          "path": "/videos/h264/outpost-fantasy-reel-v1-fallback.mp4",
+          "bytes": 2458064,
+          "sha256": "51b336091395e5337f41c7fa56b274fb16587aea6e4b7ecbc78a42a0103f4c4f",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "10.166667"
+          }
+        },
+        {
+          "path": "/videos/h265/outpost-fantasy-reel-v1-web.mp4",
+          "bytes": 1718164,
+          "sha256": "4181dc0db827778dd0b62d61f9d5f57c78f57b391c07a8fc44b53c938678bc9c",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "10.166667"
+          }
+        },
+        {
+          "path": "/videos/av1/outpost-fantasy-reel-v1.webm",
+          "bytes": 1496735,
+          "sha256": "987ce040314ee393df12c2a8172f1202d97774a49d53b83bb98e2cb1e7b806aa",
+          "contentType": "video/webm",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "10.166000"
+          }
+        },
+        {
+          "path": "/videos/posters/outpost-fantasy-reel-v1.jpg",
+          "bytes": 43897,
+          "sha256": "eedf8592d490b0342a3745fbf381aff37681610d58005cae97948b8777469641",
+          "contentType": "image/jpeg",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ]
+    },
+    {
+      "source": "fantasy_mockup_stills1-1.png",
+      "files": [
+        {
+          "path": "/images/outpost-fantasy-desktop-v1.webp",
+          "bytes": 33106,
+          "sha256": "77c4eb6cbe0a6cb19ea6f9bc834e5f2ee7b89d69a3499465f21a442174a208ac",
+          "contentType": "image/webp",
+          "streams": [
+            {
+              "codec_name": "webp",
+              "codec_type": "video",
+              "width": 1920,
+              "height": 1200,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {}
+        }
+      ]
+    },
+    {
+      "source": "fantasy_mockup_stills2.png",
+      "files": [
+        {
+          "path": "/images/outpost-fantasy-tablet-v1.webp",
+          "bytes": 35796,
+          "sha256": "365e277c901d071db7db49998e0dddec1b263af273015188cc04857b22239a57",
+          "contentType": "image/webp",
+          "streams": [
+            {
+              "codec_name": "webp",
+              "codec_type": "video",
+              "width": 1920,
+              "height": 1200,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {}
+        }
+      ]
+    },
+    {
+      "source": "fantasy_mockup_stills3-1.png",
+      "files": [
+        {
+          "path": "/images/outpost-fantasy-phone-v1.webp",
+          "bytes": 32080,
+          "sha256": "acc6dd67c60d2daa63ab69f7ce2465a8e2c44cb25c04d1eaadd032abaa11bb7d",
+          "contentType": "image/webp",
+          "streams": [
+            {
+              "codec_name": "webp",
+              "codec_type": "video",
+              "width": 1920,
+              "height": 1200,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {}
+        }
+      ]
+    },
+    {
+      "source": "https://outpost.design/favicon.png",
+      "files": [
+        {
+          "path": "/images/outpost-fantasy-identity-outpost-v1.webp",
+          "bytes": 1462,
+          "sha256": "b5c376959fdca7e0f7bd3ddc3a413d45544c3ca02ed3960655f16b263623f3b4",
+          "contentType": "image/webp",
+          "streams": [
+            {
+              "codec_name": "webp",
+              "codec_type": "video",
+              "width": 64,
+              "height": 64,
+              "pix_fmt": "yuva420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {}
+        }
+      ]
+    },
+    {
+      "source": "https://www.datocms-assets.com/157026/1751297566-fantasy-favicon.svg",
+      "files": [
+        {
+          "path": "/images/outpost-fantasy-identity-fantasy-v1.svg",
+          "bytes": 741,
+          "sha256": "e18b95807dc80a0bafd572cbcdb4ab40d23e01eaa72a4ad91bf5e5b0031cd10d",
+          "contentType": "image/svg+xml",
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    }
+  ]
+}

@@ -6,6 +6,10 @@ export const WEBSITE_ID = `${SITE_URL}/#website`
 export const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com'
 
 const pageSocialImages = {
+  '/work/outpost-fantasy': {
+    url: '/videos/posters/outpost-fantasy-reel-v1.jpg',
+    alt: 'Fantasy website showcase reel with custom 3D device mockups for Outpost Studio',
+  },
   '/services/3d-environments': {
     url: '/videos/posters/cgi-environments.jpg',
     alt: 'Art-directed CGI worlds for brands, products, and digital experiences by Krystof Jezek',
@@ -94,6 +98,12 @@ export const noIndex = {
 
 export const portfolioRoutes = [
   {
+    path: '/work/outpost-fantasy',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+    lastModified: '2026-09-24',
+  },
+  {
     path: '/',
     priority: 1.0,
     changeFrequency: 'weekly',
@@ -169,6 +179,14 @@ export const portfolioRoutes = [
 
 export const featuredCreativeWorks = [
   {
+    name: 'Outpost Fantasy',
+    path: '/work/outpost-fantasy',
+    description: '2D and 3D motion and custom device mockups for a reel showcasing Outpost Studio’s redesign of the Fantasy website.',
+    keywords: ['2D motion design', '3D motion design', 'custom device mockups', 'website showcase reel'],
+    dateCreated: '2026-05',
+    datePublished: '2026-09-24',
+  },
+  {
     name: 'Vizcom Brand World',
     path: '/work/vizcom',
     description: 'A dynamic 3D environment and animated brand mockup for Vizcom, created for design studio Outland.',
@@ -219,6 +237,17 @@ export const featuredCreativeWorks = [
 ]
 
 export const videoAssets = [
+  {
+    name: 'Outpost Fantasy website showcase reel',
+    page: '/work/outpost-fantasy',
+    description: 'A showcase of Outpost Studio’s Fantasy website redesign, combining interface animation with custom 3D device mockups by Krystof Jezek.',
+    thumbnailUrl: '/videos/posters/outpost-fantasy-reel-v1.jpg',
+    contentUrl: '/videos/h264/outpost-fantasy-reel-v1-fallback.mp4',
+    dateCreated: '2026-05',
+    uploadDate: '2026-09-24',
+    keywords: ['Fantasy', 'Outpost Studio', '2D motion', '3D motion', 'device mockups'],
+    transcript: 'No spoken dialogue. Website elements and interactions transition between full-screen layouts and custom 3D device mockups presenting the Fantasy redesign.',
+  },
   {
     name: 'CGI and 3D environments portfolio reel',
     page: '/',
@@ -404,7 +433,7 @@ function videoStructuredData(video) {
     name: video.name,
     description: video.description,
     thumbnailUrl: assetUrl(video.thumbnailUrl),
-    uploadDate: `${video.dateCreated}-01-01`,
+    uploadDate: video.uploadDate || `${video.dateCreated}-01-01`,
     dateCreated: video.dateCreated,
     keywords: video.keywords,
     transcript: video.transcript,

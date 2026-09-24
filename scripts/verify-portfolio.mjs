@@ -7,7 +7,8 @@ const [cases, gallery, recognition, pages, assets] = await Promise.all(
   ["cases", "gallery", "recognition", "pages", "design-assets"].map(json),
 );
 const routes = new Set(cases.map((project) => project.path));
-assert.equal(routes.size, 6);
+assert.equal(routes.size, cases.length, 'Case routes must be unique');
+assert(routes.has('/work/outpost-fantasy'));
 assert.equal(recognition.length, 18);
 assert.equal(new Set(recognition.map((item) => item.href)).size, 18);
 for (const category of ["work", "fun"]) {
@@ -26,7 +27,8 @@ for (const project of cases) {
     assert.equal(project.specs.length, 0);
     assert.equal(project.credits.length, 0);
   }
-  assert.equal(project.hero.aspect, 1.6);
+  // Owner-approved 16:9 opening reel for Outpost Fantasy; other cases retain 16:10.
+  assert.equal(project.hero.aspect, project.slug === 'outpost-fantasy' ? 16 / 9 : 1.6);
   for (const index of project.rows.flat()) assert(project.media[index]);
   for (const media of [project.hero, ...project.media])
     assert(media.poster || media.src);
@@ -67,5 +69,5 @@ for (const route of [
 const files = await readdir("styles");
 assert.deepEqual(files, ["portfolio.css"]);
 console.log(
-  "Passed: gallery orders, 6 case routes, 18 recognition URLs, media dimensions, canonicals, main landmarks and archive indexing.",
+  `Passed: gallery orders, ${routes.size} case routes, 18 recognition URLs, media dimensions, canonicals, main landmarks and archive indexing.`,
 );

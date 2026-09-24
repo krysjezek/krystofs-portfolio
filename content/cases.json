@@ -958,5 +958,129 @@
       ]
     ],
     "credits": []
+  },
+  {
+    "slug": "outpost-fantasy",
+    "path": "/work/outpost-fantasy",
+    "title": "Outpost Fantasy",
+    "subtitle": "Website Showcase & Custom Device Mockups",
+    "date": "Work · May 2026",
+    "category": "work",
+    "overview": [
+      "Outpost Studio invited me to turn its redesign of the Fantasy website into a reel showcasing the pages, elements and interactions.",
+      "I combined 2D and 3D motion with custom device mockups to present the work across desktop, tablet and mobile."
+    ],
+    "specs": [
+      {
+        "label": "Client",
+        "name": "Outpost Studio",
+        "href": "https://outpost.design/",
+        "icon": "/images/outpost-fantasy-identity-outpost-v1.webp",
+        "lines": [
+          "Website design and development"
+        ]
+      },
+      {
+        "label": "Brand",
+        "name": "Fantasy",
+        "href": "https://fantasy.co/",
+        "icon": "/images/outpost-fantasy-identity-fantasy-v1.svg",
+        "lines": [
+          "Digital product design agency"
+        ]
+      },
+      {
+        "label": "Deliverable",
+        "name": null,
+        "href": null,
+        "icon": null,
+        "lines": [
+          "Website showcase reel",
+          "Custom 3D device mockups"
+        ]
+      }
+    ],
+    "tags": [
+      "2D Motion",
+      "3D Motion",
+      "Custom Mockups"
+    ],
+    "hero": {
+      "poster": "/videos/posters/outpost-fantasy-reel-v1.jpg",
+      "alt": "Fantasy website layouts and interactions presented through 2D motion and custom 3D devices",
+      "aspect": 1.7777777777777777,
+      "srcH265": "/videos/h265/outpost-fantasy-reel-v1-web.mp4",
+      "srcAv1": "/videos/av1/outpost-fantasy-reel-v1.webm",
+      "srcMp4": "/videos/h264/outpost-fantasy-reel-v1-fallback.mp4"
+    },
+    "caption": "Website showcase · Reel excerpt",
+    "approach": [
+      {
+        "label": "Brief",
+        "paragraphs": [
+          "My brief was to create a reel that showed the elements and interactions Outpost had built for Fantasy’s redesigned website. The motion needed to bring the web experience into a film."
+        ]
+      },
+      {
+        "label": "Process",
+        "paragraphs": [
+          "Working from Chris Willcock’s storyboard and creative direction, I animated the interface sequences and built custom 3D device mockups. I used a clean, light setting for the devices to give the dark website layouts room to stand out."
+        ]
+      }
+    ],
+    "outcome": [
+      {
+        "label": "My role",
+        "paragraphs": [
+          "I created the 2D and 3D motion, including the custom desktop, tablet and phone mockups used to present the website. Chris led the storyboard and creative direction; Outpost created the website redesign."
+        ]
+      },
+      {
+        "label": "Result",
+        "paragraphs": [
+          "The finished reel brings the redesign’s layouts, interactions and device views together in one sequence. The custom mockups give the website a physical setting across all three screen formats."
+        ]
+      }
+    ],
+    "media": [
+      {
+        "poster": "/images/outpost-fantasy-desktop-v1.webp",
+        "alt": "Custom desktop display mockup showing the Fantasy mark in a light studio setting",
+        "aspect": 1.7777777777777777
+      },
+      {
+        "poster": "/images/outpost-fantasy-tablet-v1.webp",
+        "alt": "Custom tablet mockup with the Fantasy mark on a dark screen above a stone plinth",
+        "aspect": 1.7777777777777777
+      },
+      {
+        "poster": "/images/outpost-fantasy-phone-v1.webp",
+        "alt": "Custom phone mockup displaying the Fantasy mark on a reflective metal surface",
+        "aspect": 1.7777777777777777
+      }
+    ],
+    "rows": [
+      [
+        0
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "credits": [
+      {
+        "role": "Storyboard & Creative Direction",
+        "name": "Chris Willcock",
+        "href": "https://outpost.design/",
+        "icon": "/images/outpost-fantasy-identity-outpost-v1.webp"
+      },
+      {
+        "role": "3D & 2D Motion",
+        "name": "Kryštof Ježek",
+        "href": "/",
+        "icon": null
+      }
+    ]
   }
 ]
