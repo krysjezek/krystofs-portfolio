@@ -38,45 +38,50 @@ export default function useReveals(pathname) {
       pending.delete(element);
       running.delete(element);
       observer.unobserve(element);
+      footerObserver.unobserve(element);
     };
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const arriving = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort(
-            (a, b) =>
-              a.boundingClientRect.top - b.boundingClientRect.top ||
-              a.boundingClientRect.left - b.boundingClientRect.left,
-          );
-        arriving.forEach((entry, index) => {
-          const element = entry.target;
-          const animation = pending.get(element);
-          if (!animation) return;
-          observer.unobserve(element);
-          pending.delete(element);
-          // A jump/fast scroll must not leave a visible item waiting to catch up.
-          if (
-            preference.matches ||
-            entry.boundingClientRect.top < innerHeight * 0.2
-          ) {
-            animation.cancel();
-            return;
-          }
-          animation.effect.updateTiming({
-            delay: innerWidth < 600 ? 0 : Math.min(index * 45, 90),
-          });
-          running.set(element, animation);
-          animation.play();
-          animation.finished
-            .then(() => {
-              animation.cancel();
-              running.delete(element);
-            })
-            .catch(() => {});
+    const reveal = (entries) => {
+      const arriving = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort(
+          (a, b) =>
+            a.boundingClientRect.top - b.boundingClientRect.top ||
+            a.boundingClientRect.left - b.boundingClientRect.left,
+        );
+      arriving.forEach((entry, index) => {
+        const element = entry.target;
+        const animation = pending.get(element);
+        if (!animation) return;
+        observer.unobserve(element);
+        footerObserver.unobserve(element);
+        pending.delete(element);
+        // A jump/fast scroll must not leave a visible item waiting to catch up.
+        if (
+          preference.matches ||
+          entry.boundingClientRect.top < innerHeight * 0.2
+        ) {
+          animation.cancel();
+          return;
+        }
+        animation.effect.updateTiming({
+          delay: innerWidth < 600 ? 0 : Math.min(index * 45, 90),
         });
-      },
-      { rootMargin: "0px 0px -8% 0px", threshold: 0 },
-    );
+        running.set(element, animation);
+        animation.play();
+        animation.finished
+          .then(() => {
+            animation.cancel();
+            running.delete(element);
+          })
+          .catch(() => {});
+      });
+    };
+    const observer = new IntersectionObserver(reveal, {
+      rootMargin: "0px 0px -8% 0px",
+      threshold: 0,
+    });
+    // The footer cannot scroll past the page bottom to reach an inset trigger.
+    const footerObserver = new IntersectionObserver(reveal, { threshold: 0 });
 
     function scan() {
       for (const element of document.querySelectorAll(targets)) {
@@ -102,7 +107,9 @@ export default function useReveals(pathname) {
         );
         animation.pause();
         pending.set(element, animation);
-        observer.observe(element);
+        (element.closest(".site-footer") ? footerObserver : observer).observe(
+          element,
+        );
       }
       // Resizing or switching a panel can remove a prepared node.
       for (const element of pending.keys()) {
@@ -150,6 +157,7 @@ export default function useReveals(pathname) {
       mutations.disconnect();
       finishAll();
       observer.disconnect();
+      footerObserver.disconnect();
       preference.removeEventListener("change", finishAll);
       window.removeEventListener("resize", finishAll);
       window.removeEventListener("beforeprint", finishAll);
