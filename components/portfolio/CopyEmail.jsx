@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { track } from "@vercel/analytics";
-import { CheckIcon, Icon } from "./Links";
+import Icon from "./Icon";
 
 export default function CopyEmail() {
   const [state, setState] = useState("idle");
@@ -33,11 +33,11 @@ export default function CopyEmail() {
           data-copied={state === "success" || undefined}
         >
           <span className="copy-default" aria-hidden={state === "success"}>
-            <Icon name="emailSmall" size={12} />
+            <Icon name="copy" size="compact" />
             Email
           </span>
           <span className="copy-success" aria-hidden={state !== "success"}>
-            <CheckIcon />
+            <Icon name="check" size="compact" />
             Email copied
           </span>
         </span>

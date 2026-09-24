@@ -1,6 +1,6 @@
 import Header from "./Header";
 import Media from "./Media";
-import { ExternalLink, HomeLink, Icon } from "./Links";
+import { ExternalLink, HomeLink, IdentityIcon } from "./Links";
 import Recommendations from "./Recommendations";
 import SourceNote from "./SourceNote";
 import JsonLd from "@/components/JsonLd";
@@ -126,7 +126,7 @@ export default function CaseStudy({ project }) {
                   <dt>{credit.role}</dt>
                   <dd>
                     {credit.icon ? (
-                      <Icon src={credit.icon} />
+                      <IdentityIcon src={credit.icon} />
                     ) : (
                       <span className="designer-mark" aria-hidden="true" />
                     )}

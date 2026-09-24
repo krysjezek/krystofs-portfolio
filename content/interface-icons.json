@@ -1,0 +1,56 @@
+{
+  "eye": {
+    "src": "/icons/line-awesome/eye.svg",
+    "library": "Line Awesome",
+    "sourceName": "eye",
+    "sourceNode": "369:4346",
+    "componentNode": "399:14",
+    "viewBox": "0 0 24 24",
+    "sha256": "f41c3e5e2dcadc02df7ae42cd10f9d79944c9493f80c9323718b6291c81025df"
+  },
+  "arrow": {
+    "src": "/icons/line-awesome/arrow.svg",
+    "library": "Line Awesome",
+    "sourceName": "external-link-alt-solid",
+    "sourceNode": "369:4342",
+    "componentNode": "399:17",
+    "viewBox": "0 0 24 24",
+    "sha256": "2f224237475160eadefa3f6ae58d568d7bfbe07f2cdb175aa06c4a46e50bdde1"
+  },
+  "email": {
+    "src": "/icons/line-awesome/email.svg",
+    "library": "Line Awesome",
+    "sourceName": "envelope",
+    "sourceNode": "369:4298",
+    "componentNode": "399:20",
+    "viewBox": "0 0 24 24",
+    "sha256": "e18471fb82f214257d42909b53272ab3c2811acce7c940d58ae3fced15d10bfc"
+  },
+  "copy": {
+    "src": "/icons/line-awesome/copy.svg",
+    "library": "Line Awesome",
+    "sourceName": "copy",
+    "sourceNode": "369:4070",
+    "componentNode": "399:23",
+    "viewBox": "0 0 24 24",
+    "sha256": "1a67c80b10a1e8c2b8ae65fcdbdf3769bd115206433a382bfa6b4bbf9e42f5b2"
+  },
+  "check": {
+    "src": "/icons/line-awesome/check.svg",
+    "library": "Line Awesome",
+    "sourceName": "check-solid",
+    "sourceNode": "369:3900",
+    "componentNode": "399:26",
+    "viewBox": "0 0 24 24",
+    "sha256": "9ae3ec493b9b3b76979486a61951b94eb51744051e3c92c5712afdfa0a48688d"
+  },
+  "location": {
+    "src": "/icons/line-awesome/location.svg",
+    "library": "Line Awesome",
+    "sourceName": "map-marker-alt-solid",
+    "sourceNode": "369:5156",
+    "componentNode": "399:29",
+    "viewBox": "0 0 24 24",
+    "sha256": "f142c16b427de927d7d3e7b051ec557a3afb4a1609cc96ac423defa6e3f97914"
+  }
+}

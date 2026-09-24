@@ -1,9 +1,5 @@
 {
-  "location": "/images/portfolio-2027-icon-location.svg",
-  "emailSmall": "/images/portfolio-2027-icon-emailsmall.svg",
   "xSmall": "/images/portfolio-2027-icon-xsmall.svg",
-  "email": "/images/portfolio-2027-icon-email.svg",
   "x": "/images/portfolio-2027-icon-x.svg",
-  "motionMockups": "/images/portfolio-2027-icon-motionmockups.webp",
-  "arrow": "/images/portfolio-2027-icon-external-arrow.svg"
+  "motionMockups": "/images/portfolio-2027-icon-motionmockups.webp"
 }

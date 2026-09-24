@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { HomeLink, Icon, RouteLink } from "./Links";
+import { HomeLink, IdentityIcon, RouteLink } from "./Links";
+import Icon from "./Icon";
 import CopyEmail from "./CopyEmail";
 
 export default function Header({
@@ -32,7 +33,7 @@ export default function Header({
       {home ? (
         <div className="header-utility">
           <span className="prague-clock">
-            <Icon name="location" size={12} />
+            <Icon name="location" size="compact" />
             <span>Prague</span>
             <time aria-label={time ? `Time in Prague: ${time}` : "Prague time"}>
               {time || "—:—"}
@@ -47,7 +48,7 @@ export default function Header({
               aria-label="Follow @krysjezek on X"
               data-hint="Follow"
             >
-              <Icon name="xSmall" size={12} />
+              <IdentityIcon name="xSmall" size={12} />
             </a>
           </span>
         </div>

@@ -1,20 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef } from "react";
-import { mediaUrl } from "@/lib/media";
-import { CheckIcon } from "./Links";
+import Icon from "./Icon";
 
-const icons = {
-  eye: "cursor-eye.svg",
-  arrow: "arrow-leftup.svg",
-  email: "cursor-message.svg",
-};
+const icons = ["eye", "arrow", "email", "copy", "check"];
 
 function actionIcon(label) {
   if (label === "View project") return "eye";
   if (label === "Email copied") return "check";
-  if (label === "Copy email" || label === "Email me") return "email";
+  if (label === "Copy email") return "copy";
+  if (label === "Email me") return "email";
   return "arrow";
 }
 
@@ -141,19 +136,14 @@ export default function CursorHint({ pathname }) {
       <span className="cursor-hint-press">
         <span className="cursor-hint-surface">
           <span className="cursor-hint-icon">
-            {Object.entries(icons).map(([name, file]) => (
-              <Image
+            {icons.map((name) => (
+              <Icon
                 key={name}
+                name={name}
                 data-icon={name}
-                src={mediaUrl(`/images/${file}`)}
-                alt=""
-                width={name === "arrow" ? 10 : 12}
-                height={name === "arrow" ? 10 : 12}
-                loading="eager"
-                unoptimized
+                size="compact"
               />
             ))}
-            <CheckIcon size={12} data-icon="check" />
           </span>
           <span className="cursor-hint-label" />
         </span>

@@ -6,23 +6,9 @@ import { useLinkStatus } from "next/link";
 import { useEffect, useState } from "react";
 import icons from "@/content/icons.json";
 import { mediaUrl } from "@/lib/media";
+import Icon from "./Icon";
 
-export function CheckIcon({ size = 12, ...props }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 12 12"
-      fill="none"
-      aria-hidden="true"
-      {...props}
-    >
-      <path d="m2 6 2.5 2.5L10 3" stroke="currentColor" strokeWidth="1.2" />
-    </svg>
-  );
-}
-
-export function Icon({ name, src, size = 15 }) {
+export function IdentityIcon({ name, src, size = 15 }) {
   return (
     <Image
       className="identity-icon"
@@ -52,16 +38,10 @@ export function ExternalLink({
       className={`external-link ${className}`}
       {...props}
     >
-      {icon && <Icon src={icon} />}
+      {icon && <IdentityIcon src={icon} />}
       {children}
       <span className="external-arrow" aria-hidden="true">
-        <Image
-          src={mediaUrl(icons.arrow)}
-          alt=""
-          width={17}
-          height={24}
-          unoptimized
-        />
+        <Icon name="arrow" size="compact" />
       </span>
     </a>
   );

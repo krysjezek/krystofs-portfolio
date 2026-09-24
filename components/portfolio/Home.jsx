@@ -8,7 +8,8 @@ import Header from "./Header";
 import Card from "./Card";
 import Media from "./Media";
 import Recognition from "./Recognition";
-import { ExternalLink, Icon } from "./Links";
+import { ExternalLink } from "./Links";
+import Icon from "./Icon";
 
 const tabs = ["work", "fun", "about"];
 

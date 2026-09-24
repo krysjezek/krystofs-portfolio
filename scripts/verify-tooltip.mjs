@@ -36,8 +36,8 @@ try {
     const css = getComputedStyle(node);
     return [css.backgroundColor, css.color, css.borderRadius, node.offsetHeight, css.fontSize, css.lineHeight, css.letterSpacing];
   }), ["rgb(5, 7, 10)", "rgb(255, 255, 255)", "3px", 24, "11px", "16px", "0.22px"]);
-  assert(await hint.locator('img[data-icon="arrow"]').evaluate(
-    (node) => node.complete && node.naturalWidth > 0 && node.width === 10,
+  assert(await hint.locator('[data-ui-icon="arrow"]').evaluate(
+    (node) => getComputedStyle(node).maskImage.includes("/icons/line-awesome/arrow.svg") && node.getBoundingClientRect().width === 12,
   ));
   await page.screenshot({ path: join(output, "browser-rest.png") });
 
@@ -101,7 +101,7 @@ try {
     configurable: true, value: { writeText: async () => {} },
   }));
   await copy.hover();
-  assert.equal(await hint.getAttribute("data-icon"), "email");
+  assert.equal(await hint.getAttribute("data-icon"), "copy");
   await copy.click();
   await page.waitForFunction(() => document.querySelector(".cursor-hint").dataset.icon === "check");
   assert.equal(await label.textContent(), "Email copied");
@@ -122,7 +122,7 @@ try {
   assert.equal(await hint.evaluate((node) => getComputedStyle(node).display), "none");
   await page.screenshot({ path: join(output, "browser-mobile.png") });
   assert.deepEqual(errors, []);
-  console.log("PASS: compact tooltip, original typography, inverted surface, original icons, press/cancel, rapid retarget, edges, clipboard, reduced motion and responsive states");
+  console.log("PASS: compact tooltip, original typography, inverted surface, Line Awesome icons, press/cancel, rapid retarget, edges, clipboard, reduced motion and responsive states");
   console.log(`Screenshots: ${output}`);
 } finally {
   await context.close();

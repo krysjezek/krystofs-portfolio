@@ -26,6 +26,7 @@ Fast map for agents working in this repository. Prefer this file over rediscover
 | Case-study design, content, icons and Work/Fun rules | `docs/portfolio-2027-case-study-rules.md` |
 | Inline figure source notes and case-study evidence audit | `docs/portfolio-2027-source-notes.md` |
 | Motion direction | `docs/portfolio-2027-motion.md` |
+| Interface icon library, sizing, color and identity/emoji rules | `docs/portfolio-2027-icons.md` |
 | Content and media records | `content/` |
 | Blob/poster utilities | `scripts/` |
 
@@ -65,6 +66,7 @@ NEXT_PUBLIC_CDN_URL=https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com
 - Shared navigation/contact: `components/portfolio/Header.jsx` and `Footer.jsx`.
 - Video: use `components/portfolio/Media.jsx` with `media.aspect`; read `docs/video-and-media.md`.
 - Animation: use CSS/WAAPI, honor reduced motion, and follow `docs/portfolio-2027-motion.md`.
+- Interface icons: use only the supplied Line Awesome pack through `components/portfolio/Icon.jsx`; follow `docs/portfolio-2027-icons.md`. Preserve identity logos and emojis.
 - Images: use `next/image` and truthful dimensions or an explicitly sized fill container.
 - Client boundaries: pages are client components only where browser APIs/interactions require them. Keep new static content server-renderable when practical.
 
