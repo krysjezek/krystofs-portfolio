@@ -1,7 +1,64 @@
 # Prague airspace interaction
 
-Design proposal created on 24 September 2026. This restores the archived aircraft
-interaction as an editable Figma study; it does not restore the website module.
+Designed and implemented on 24 September 2026. The homepage Prague control opens
+the live aircraft interaction from the editable Figma study.
+
+## Website implementation
+
+`components/portfolio/PragueAirspace.jsx` owns the preview, desktop detail popover,
+mobile sheet and shared report snapshot. `AirspaceMap.jsx` renders the exact Figma
+geography, runway and aircraft SVG exports from `public/airspace/`, with dynamic
+received positions and trails. Aircraft symbols are domain data artwork; the
+current text-only Prague header utility is retained. `AirspaceDetails.jsx` loads
+route/model information only for the selection. No public page or SEO route was added.
+
+`hooks/useAirspacePolling.js` pauses both feeds when closed, hidden or off-screen,
+aborts pending requests, retains the next due time and backs off after errors.
+`hooks/useAircraftMotion.js` uses native requestAnimationFrame, with a two-second
+correction, a 30-second projection limit and immediate received positions under
+reduced motion. Reports fade at 60 seconds and expire at 120 seconds. Selection
+does not convert estimated positions into observations. Overlapping targets open
+a callsign chooser; keyboard activation selects a specific marker directly.
+
+`/api/aircraft`, `/api/airport-weather` and `/api/aircraft/[id]` restore the archived
+server adapters with shared Next caches, bounded timeouts and provider backoff.
+The detail endpoint binds IDs/callsigns to recent Prague reports. Missing routes
+and aircraft models are never inferred. Invalid weather fields become missing
+readings. Last-known observations retain their original timestamps.
+
+The optional `mode="simulation"` component prop explicitly selects generated demo
+traffic, with its blue hollow status badge and unavailable weather. The homepage
+always uses live mode. There is no error-triggered simulation fallback or public
+mode switch. Intercepted browser-test reports are visibly labelled TEST DATA / NOT LIVE.
+
+Provider documentation rechecked on 24 September 2026:
+[ADSB.lol access / ODbL](https://www.adsb.lol/docs/open-data/api/),
+[live API contract](https://api.adsb.lol/api/openapi.json),
+[VRS callsign standing data / CC0](https://github.com/adsblol/vrs-standing-data),
+[adsbdb aircraft API](https://www.adsbdb.com/),
+[AWC METAR API](https://aviationweather.gov/data/api/),
+[Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/) and
+[OurAirports](https://ourairports.com/data/). Source and licence links are visible
+in the detail panel. Live aircraft and LKPR METAR responses were verified locally;
+route/model availability varies, with truthful fallbacks verified. The archived
+provider guidance to contact ADSB.lol before public rollout remains a deployment
+consideration; this implementation sends no messages and does not deploy.
+
+Verification: `node --test scripts/aircraft.test.mjs scripts/aircraft-details.test.mjs
+scripts/airport-weather.test.mjs` and `node scripts/verify-airspace.mjs`. The browser
+suite covers preview/detail snapshot reuse, selection/clearing, overlapping
+targets, focus restoration, mobile focus containment, desktop/tablet/mobile
+geometry, received-position mode, delayed/empty/unavailable states, expiration,
+five-minute weather refresh and hidden/off-screen/closed polling. Screenshots go
+to the operating system temporary directory under `portfolio-airspace`.
+
+Handoff checks passed: 13 data/motion tests, 74 airspace browser assertions,
+33 existing Figma layout screens, lint, production build and the portfolio
+verifier. The explicit simulation prop was also exercised in an isolated local
+harness: five generated aircraft, labelled demo status, unavailable weather and
+zero aircraft/weather API requests. The temporary harness was removed.
+
+The sections below record the original Figma specification and design review.
 
 - [Figma overview / 11 · Prague airspace](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=371-3)
 - [Desktop selected state](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=375-7432)

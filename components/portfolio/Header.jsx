@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { HomeLink, RouteLink } from "./Links";
 import ContextPreview from "./ContextPreview";
+import PragueAirspace from "./PragueAirspace";
 
 export default function Header({
   home = false,
@@ -71,7 +72,7 @@ export default function Header({
       {home ? (
         <div className="header-utility">
           <span className="prague-clock">
-            <span>Prague</span>
+            <PragueAirspace />
             <time aria-label={time ? `Time in Prague: ${time}` : "Prague time"}>
               {time || "—:—"}
             </time>
