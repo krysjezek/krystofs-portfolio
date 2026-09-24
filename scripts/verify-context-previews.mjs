@@ -61,6 +61,7 @@ try {
   };
   const weatherHeadingStyle = await hint.locator('.cursor-hint-label').evaluate(textStyle);
   const weatherSupportingStyle = await hint.locator('.context-detail').evaluate(textStyle);
+  assert.deepEqual(weatherHeadingStyle.slice(0, 5), weatherSupportingStyle.slice(0, 5));
   assert.deepEqual(await hint.locator('.context-meta').evaluate(textStyle), weatherSupportingStyle);
   await page.route('**/api/aircraft', route => route.fulfill({json:{ok:true,observedAt:Date.now(),aircraft:[]}}));
   await page.route('**/api/airport-weather', route => route.fulfill({status:503,json:{ok:false}}));
@@ -68,7 +69,9 @@ try {
   const airspace = page.locator('.airspace-preview');
   await airspace.waitFor();
   await airspace.evaluate(element => Promise.all(element.getAnimations().map(animation => animation.finished)));
-  assert.deepEqual(await airspace.locator('.airspace-preview-heading h2').evaluate(textStyle), weatherHeadingStyle);
+  const airspaceHeadingStyle = await airspace.locator('.airspace-preview-heading h2').evaluate(textStyle);
+  assert.deepEqual(airspaceHeadingStyle.slice(2, 5), ['16px', '24px', '-0.08px']);
+  assert.deepEqual(airspaceHeadingStyle.slice(5), weatherHeadingStyle.slice(5));
   assert.deepEqual(await airspace.locator('.airspace-preview-heading .airspace-muted').evaluate(textStyle), weatherSupportingStyle);
   await page.screenshot({path:join(output,'airspace-shared-typography.png')});
   await page.mouse.move(20,100);

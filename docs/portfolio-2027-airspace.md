@@ -181,7 +181,7 @@ were reused without modification. A new directory entry links to the study.
 
 ## Design
 
-Hover titles share `Portfolio / Body Compact` (Roobert PRO Regular 16/24, −0.5% tracking, `text/primary`) with cursor and focus tooltips. Supporting labels use `Portfolio / Label` (11/16, 2% tracking, `text/secondary`) at full opacity. The web maps these to shared `--type-body-compact`, `--type-label`, `--tracking-body`, `--tracking-label`, `--ink` and `--muted` tokens; see [context previews](portfolio-2027-context-previews.md).
+Hover titles retain `Portfolio / Body Compact` (Roobert PRO Regular 16/24, −0.5% tracking, `text/primary`). Supporting labels use `Portfolio / Label` (11/16, 2% tracking, `text/secondary`) at full opacity. Compact cursor and focus tooltips use Label 11/16 throughout. The web maps these to shared `--type-body-compact`, `--type-label`, `--tracking-body`, `--tracking-label`, `--ink` and `--muted` tokens; see [context previews](portfolio-2027-context-previews.md).
 
 Hover previews and bounded desktop/tablet detail panels use the shared
 [Floating elevation](portfolio-2027-elevation.md). Apply it once to the panel;

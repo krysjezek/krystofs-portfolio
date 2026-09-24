@@ -36,11 +36,11 @@ try {
   assert.deepEqual(await surface.evaluate((node) => {
     const css = getComputedStyle(node);
     return [css.backgroundColor, css.color, css.borderRadius, node.offsetHeight, css.fontSize, css.lineHeight, css.letterSpacing, css.boxShadow];
-  }), ["rgb(255, 255, 255)", "rgb(5, 7, 10)", "3px", 52, "11px", "16px", "0.22px", "rgba(5, 7, 10, 0.04) 0px 2px 4px 0px, rgba(5, 7, 10, 0.08) 0px 8px 24px 0px"]);
+  }), ["rgb(255, 255, 255)", "rgb(5, 7, 10)", "3px", 44, "11px", "16px", "0.22px", "rgba(5, 7, 10, 0.04) 0px 2px 4px 0px, rgba(5, 7, 10, 0.08) 0px 8px 24px 0px"]);
   assert.deepEqual(await label.evaluate(node => {
     const css = getComputedStyle(node);
     return [css.fontSize, css.lineHeight, css.letterSpacing, css.fontWeight];
-  }), ['16px', '24px', '-0.08px', '400']);
+  }), ['11px', '16px', '0.22px', '400']);
   assert.deepEqual(await hint.locator('.context-detail').evaluate(node => {
     const css = getComputedStyle(node);
     return [css.color, css.opacity];

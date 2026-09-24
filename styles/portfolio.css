@@ -1813,8 +1813,8 @@ button {
 }
 .cursor-hint-label {
   min-width: 0;
-  font: var(--type-body-compact);
-  letter-spacing: var(--tracking-body);
+  font: var(--type-label);
+  letter-spacing: var(--tracking-label);
 }
 .context-content [hidden] {
   display: none !important;
