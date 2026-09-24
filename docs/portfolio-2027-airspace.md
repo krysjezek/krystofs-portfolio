@@ -7,8 +7,19 @@ The independently deployable collector is public at
 It collects traffic every 15 seconds and LKPR METAR every five minutes, keeps
 atomic snapshots and retry deadlines on a Railway volume, and serves read-only
 `/v1/snapshot`, `/healthz` and `/readyz` endpoints. One replica keeps collection
-independent of visitor count. Railway deployment and production connection are
-separate from publishing the repository; neither has been performed by this update.
+independent of visitor count. The user authorized deployment after repository publication.
+The collector is running at
+[`prague-airspace-production.up.railway.app`](https://prague-airspace-production.up.railway.app/readyz)
+as one always-on replica in Railway's Europe region, with `/data` on a persistent
+volume. `/healthz` and `/readyz` passed; a controlled restart retained the saved
+weather poll deadline and resumed current traffic. The Vercel production environment
+now has `AIRSPACE_SERVICE_URL` configured; portfolio promotion is the remaining rollout step.
+
+The release also updates Next.js and its companion packages to 16.3.6, and the
+PostCSS override to 8.5.28, with compatible dependency fixes. `npm audit` reports
+zero vulnerabilities. This addresses the published image-optimizer advisory
+[GHSA-2xp9-vwfh-vxw4](https://github.com/vercel/next.js/security/advisories/GHSA-2xp9-vwfh-vxw4)
+found during the pre-deployment dependency install.
 
 Set the server-only `AIRSPACE_SERVICE_URL` to its HTTPS origin to connect the
 portfolio. The two existing same-origin API routes read the same versioned
