@@ -369,9 +369,9 @@
       },
       {
         "id": "cgi-karlin",
-        "name": "CGI Karlin",
+        "name": "CGI Experiment",
         "category": "fun",
-        "disciplines": "",
+        "disciplines": "Blender",
         "href": null,
         "poster": "/videos/posters/portfolio-card-cgi-karlin-v1.jpg",
         "aspect": 0.75,
