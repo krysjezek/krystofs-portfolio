@@ -35,6 +35,10 @@ were reused without modification. A new directory entry links to the study.
 
 ## Design
 
+Hover previews and bounded desktop/tablet detail panels use the shared
+[Floating elevation](portfolio-2027-elevation.md). Apply it once to the panel;
+mobile sheet content remains flat.
+
 Reuse Roobert PRO text styles, existing semantic colours, 0.5px subtle dividers,
 3px control corners, Project Tag and Button / Secondary components. Status colour
 tokens extend the neutral foundation; typography is unchanged. Original Natural Earth geography and LKPR

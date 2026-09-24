@@ -78,6 +78,9 @@ Keyboard focus shows project labels and external arrows immediately with the exi
 
 ## 05 — Cursor hint
 
+Floating overlays use the shared [elevation rules](portfolio-2027-elevation.md).
+Shadows follow existing opacity/transform motion; shadow strength is not animated.
+
 Owner correction, 24 September 2026: retain the previous rounded rectangle, typography, spacing and subtle animation. Only invert the colors and add the action icons. The temporary pill and per-letter redesign has been replaced in both Figma and code. [Current compact tooltip and motion study](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=376-895); reusable component `191:714` retains its existing IDs and properties.
 
 The tooltip uses black (`--ink`, #05070a), white text/icons, the original 24px height and 3px radius, Roobert PRO Regular 11/16 with 2% tracking, and 4px/10px padding. Every icon occupies the same 12px slot with a 5px gap. All interface artwork now comes from the supplied Line Awesome pack through the shared Icon component; see [icon guidelines](portfolio-2027-icons.md). Identity logos and emojis remain unchanged.
