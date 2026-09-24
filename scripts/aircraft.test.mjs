@@ -3,7 +3,7 @@ import assert from 'node:assert/strict'
 import { CENTER, displayedPosition, mergeAircraft, normalizeAircraft, project, retryDelay, smoothAircraftPose } from '../lib/aircraft.mjs'
 
 const now = 1789571000000
-const observation = { hex: 'test', lat: CENTER.lat, lon: CENTER.lon, seen_pos: 1, alt_baro: 0, gs: 0, track: 0 }
+const observation = { hex: 'abc001', lat: CENTER.lat, lon: CENTER.lon, seen_pos: 1, alt_baro: 0, gs: 0, track: 0 }
 const response = ac => ({ ac, now, msg: 'No error' })
 
 test('filters invalid, ground, old and out-of-radius reports while retaining valid zero values', () => {
@@ -44,9 +44,9 @@ test('trails only append distinct observed reports, stay bounded, and remove dep
   for (let n = 0; n < 10; n++) {
     const next = normalizeAircraft({ ...response([observation]), now: now + n * 30000 }, now + n * 30000)
     data = mergeAircraft(data, next)
-    assert.equal(mergeAircraft(data, next), data)
+    assert.deepEqual(mergeAircraft(data, next), data)
   }
-  assert.ok(data.trails.test.length <= 5)
+  assert.ok(data.trails.abc001.length <= 5)
   assert.deepEqual(mergeAircraft(data, { observedAt: now + 400000, aircraft: [] }).trails, {})
 })
 
@@ -82,7 +82,7 @@ test('projection starts continuously without the former two-second position jump
 test('duplicate positions and older responses cannot create trails or rewind traffic', () => {
   const first = mergeAircraft(null, normalizeAircraft(response([observation]), now))
   const second = mergeAircraft(first, normalizeAircraft({ ...response([observation]), now: now + 1000 }, now + 1000))
-  assert.equal(second.trails.test.length, 1)
+  assert.equal(second.trails.abc001.length, 1)
   assert.equal(mergeAircraft(second, first), second)
   assert.throws(() => normalizeAircraft(null, now))
   const malformed = normalizeAircraft(response([{ ...observation, flight: 42, t: {} }]), now).aircraft[0]

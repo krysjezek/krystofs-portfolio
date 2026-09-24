@@ -1,5 +1,66 @@
 # Prague airspace interaction
 
+## Reliability update — 24 September 2026
+
+The independently deployable collector is public at
+[krysjezek/prague-airspace](https://github.com/krysjezek/prague-airspace).
+It collects traffic every 15 seconds and LKPR METAR every five minutes, keeps
+atomic snapshots and retry deadlines on a Railway volume, and serves read-only
+`/v1/snapshot`, `/healthz` and `/readyz` endpoints. One replica keeps collection
+independent of visitor count. Railway deployment and production connection are
+separate from publishing the repository; neither has been performed by this update.
+
+Set the server-only `AIRSPACE_SERVICE_URL` to its HTTPS origin to connect the
+portfolio. The two existing same-origin API routes read the same versioned
+snapshot through a 10-second Next cache. A configured collector outage never
+fans out to direct provider requests. No browser secrets, new pages or SEO
+changes are needed. Without the variable, the portfolio uses its hardened
+request-driven adapters, sharing successful results through the Next Data Cache.
+
+Two verified failure mechanisms motivated this change: error objects previously
+replaced cached good data; after an idle interval, stale-while-revalidate could
+serve an expired snapshot to the first visitor. Provider failures now throw
+inside the persistent cache boundary, preserving successful data. Expired cache
+reads join a bounded, coalesced foreground refresh. Outages retain original
+observation timestamps and expose delayed status; they never reset freshness.
+
+Collection requests a 25 NM buffer while still displaying only the exact 30 km
+Prague radius. Deduplication prefers newest positions, individual tracks never
+rewind, and brief missing reports are retained for at most 45 seconds from their
+last observed position. Positive landing/departure reports remove them immediately.
+Reports still fade at 60 seconds and expire at 120; estimates stop at 30 seconds.
+True quiet airspace becomes empty. Missing route/model matches remain explicitly
+unavailable rather than inferred. Static route/model enrichment stays on selection.
+
+The browser keeps its 30-second traffic cadence and now retries transient
+failures after 15 seconds, with a 60-second ceiling and server retry deadlines.
+Reconnection retries immediately. Visibility cancellation is not counted as a
+network failure. Desktop, tablet, mobile and reduced-motion behavior are preserved.
+Responses allow short CDN caching (5 seconds traffic, 30 seconds weather), while
+browser responses remain `no-store`; observation ages remain authoritative.
+
+Verification commands:
+
+```powershell
+node --test scripts/aircraft.test.mjs scripts/airspace-feed.test.mjs scripts/airspace-service.test.mjs scripts/aircraft-details.test.mjs scripts/airport-weather.test.mjs
+node scripts/verify-airspace.mjs
+node scripts/verify-airspace-cache.mjs
+# With the collector running on port 8080, after npm run build:
+node scripts/verify-airspace-collector.mjs
+```
+
+The production integration scripts own a temporary server on port 3001 and
+always stop it; they leave the regular port 3000 dev server and environment files
+alone. The collector script checks real provider data at 1440/834/390px; the cache
+script uses explicitly labelled fixtures and tests idle starts, outages and
+recovery without provider requests. The standalone repo's `npm test` additionally
+covers durable restart state, atomic writes and HTTP request fan-out.
+
+Verified for this update: 29 portfolio data tests, 85 airspace browser assertions,
+33 Figma layout screens, production-cache failure/recovery tests, real collector
+integration at all three widths, lint, production build and portfolio verifier.
+The standalone collector's 14 tests also pass in public GitHub CI on Node.js 22.
+
 Designed and implemented on 24 September 2026. The homepage Prague control opens
 the live aircraft interaction from the editable Figma study.
 

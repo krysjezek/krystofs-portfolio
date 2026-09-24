@@ -16,7 +16,7 @@ export function useAirspacePolling(ref, enabled, url, interval, merge = replace)
       clearTimeout(timer);
       const active = visible && !document.hidden && !disposed;
       setState(old => old.active === active ? old : { ...old, active });
-      if (!active) { controller?.abort(); return; }
+      if (!active) { controller?.abort("inactive"); return; }
       if (!running) timer = setTimeout(poll, Math.max(0, due.current - Date.now()));
     };
     async function poll() {
@@ -31,15 +31,15 @@ export function useAirspacePolling(ref, enabled, url, interval, merge = replace)
           throw new Error("Unavailable");
         }
         if (!disposed && !controller.signal.aborted) {
-          setState(old => ({ ...old, data: merge(old.data, payload), error: false }));
+          setState(old => ({ ...old, data: merge(old.data, payload), error: Boolean(payload.delayed) }));
           failures.current = 0;
           due.current = Date.now() + interval;
         }
       } catch {
-        if (!disposed && visible && !document.hidden) {
+        if (!disposed && visible && !document.hidden && controller.signal.reason !== "inactive") {
           setState(old => ({ ...old, error: true }));
           failures.current += 1;
-          due.current = Math.max(due.current, Date.now() + Math.min(300000, interval * 2 ** failures.current));
+          due.current = Math.max(due.current, Date.now() + Math.min(60000, 15000 * 2 ** Math.min(failures.current - 1, 2)));
         }
       } finally {
         clearTimeout(timeout);
@@ -50,12 +50,15 @@ export function useAirspacePolling(ref, enabled, url, interval, merge = replace)
     const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; schedule(); });
     if (ref.current) observer.observe(ref.current);
     document.addEventListener("visibilitychange", schedule);
+    const online = () => { due.current = 0; failures.current = 0; schedule(); };
+    window.addEventListener("online", online);
     return () => {
       disposed = true;
       observer.disconnect();
       clearTimeout(timer);
       controller?.abort();
       document.removeEventListener("visibilitychange", schedule);
+      window.removeEventListener("online", online);
     };
   }, [ref, enabled, url, interval, merge]);
   return { ...state, active: enabled && state.active };

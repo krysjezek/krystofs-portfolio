@@ -25,7 +25,7 @@ async function setup(options = {}) {
     const now = await page.evaluate(() => Date.now());
     if (state.scenario === "error") return route.fulfill({ status: 503, json: { ok: false } });
     const observedAt = state.scenario === "old" ? state.stamp : now;
-    await route.fulfill({ json: { ok: true, fixture: true, observedAt, aircraft: state.scenario === "empty" ? [] : [report(observedAt), report(observedAt, "abc002", { lon: 14.29 }), report(observedAt, "abc003", { lat: 49.91, lon: 14.55, track: null })] } });
+    await route.fulfill({ json: { ok: true, fixture: true, delayed: state.scenario === "delayed", observedAt, aircraft: state.scenario === "empty" ? [] : [report(observedAt), report(observedAt, "abc002", { lon: 14.29 }), report(observedAt, "abc003", { lat: 49.91, lon: 14.55, track: null })] } });
   });
   await page.route("**/api/airport-weather", route => {
     state.weather++;
@@ -138,13 +138,17 @@ try {
     await context.close();
   }
 
-  for (const scenario of ["empty", "error", "weather-error", "details-error"]) {
+  for (const scenario of ["empty", "error", "delayed", "weather-error", "details-error"]) {
     const { context, page, state, trigger, panel } = await setup({ reducedMotion: "reduce" });
     state.scenario = scenario;
     await trigger.click();
     await until(() => state.traffic > 0 && state.weather > 0, "feedback requests");
     if (scenario === "empty") await until(() => panel.innerText().then(t => t.includes("No airborne aircraft reported within 30 km.")), "empty state");
     if (scenario === "error") await until(() => panel.innerText().then(t => t.includes("Traffic unavailable. Retrying automatically.")), "outage state");
+    if (scenario === "delayed") {
+      await until(() => panel.innerText().then(t => t.includes("Updates delayed. Last known traffic shown.")), "new visitor receives collector's retained traffic with honest status");
+      check(await page.locator("[data-aircraft-id]").count() === 3, "collector outage does not erase last known positions for a new visitor");
+    }
     if (scenario === "weather-error") await until(() => panel.innerText().then(t => t.includes("Weather unavailable")), "independent weather failure");
     if (scenario === "details-error") {
       await page.locator('[data-aircraft-id="abc001"]').waitFor();
@@ -159,6 +163,25 @@ try {
       await page.waitForTimeout(150);
       check(await panel.locator('[data-aircraft-id="abc001"]').getAttribute("style") === before, "received markers do not project");
     }
+    await context.close();
+  }
+
+  {
+    const { context, page, state, trigger, panel } = await setup({ reducedMotion: "reduce" });
+    state.scenario = "error";
+    await trigger.click();
+    await until(() => panel.innerText().then(t => t.includes("Traffic unavailable.")), "initial failure");
+    state.scenario = "normal";
+    await page.clock.fastForward(16000);
+    await until(() => page.locator("[data-aircraft-id]").count().then(n => n === 3), "transient failures recover in 15 seconds, not minutes");
+    state.scenario = "error";
+    await page.clock.fastForward(31000);
+    await until(() => panel.innerText().then(t => t.includes("Updates delayed.")), "second network failure");
+    state.scenario = "normal";
+    const before = state.traffic;
+    await page.evaluate(() => window.dispatchEvent(new Event("online")));
+    await until(() => state.traffic > before, "network reconnection retries immediately");
+    await until(() => panel.innerText().then(t => !t.includes("Updates delayed.")), "network reconnection restores healthy status");
     await context.close();
   }
 

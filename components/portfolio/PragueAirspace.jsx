@@ -71,7 +71,7 @@ export default function PragueAirspace({ mode = "live" }) {
   const active = open && visible && (simulation || traffic.active);
   const aircraft = (data?.aircraft || []).filter(a => now - a.observedAt < EXPIRE_MS);
   const chosen = aircraft.find(a => a.id === selected);
-  const delayed = !simulation && !!data && (traffic.error || now - data.observedAt >= STALE_MS || aircraft.length > 0 && aircraft.every(a => now - a.observedAt >= STALE_MS));
+  const delayed = !simulation && !!data && (traffic.error || data.delayed || now - data.observedAt >= STALE_MS || aircraft.length > 0 && aircraft.every(a => a.carried || now - a.observedAt >= STALE_MS));
   const fixture = data?.fixture;
   const status = simulation ? "SIMULATION / DEMO DATA" : fixture ? "TEST DATA / NOT LIVE" : !data ? traffic.error ? "UNAVAILABLE" : "CONNECTING" : delayed ? "DELAYED" : aircraft.length ? "LIVE" : "NO REPORTS";
   const tone = simulation || fixture ? "informative" : !data && traffic.error ? "negative" : delayed ? "warning" : data && aircraft.length ? "positive" : "neutral";
