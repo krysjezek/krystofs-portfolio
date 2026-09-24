@@ -28,26 +28,14 @@ export default function CursorHint({ pathname }) {
     const label = node.querySelector(".cursor-hint-label");
     let target = null;
     let pointer = null;
-    let leaveTimer;
+    let labelAnimation;
 
-    function hide() {
-      clearTimeout(leaveTimer);
+    function hide(event) {
       target = null;
-      node.setAttribute("data-immediate", "");
+      labelAnimation?.cancel();
       node.removeAttribute("data-visible");
       node.removeAttribute("data-pressed");
-    }
-
-    function leave() {
-      if (!target || leaveTimer) return;
-      if (motion.matches) return hide();
-      // Match the old tooltip's edge debounce without delaying entry.
-      leaveTimer = setTimeout(() => {
-        leaveTimer = undefined;
-        target = null;
-        node.removeAttribute("data-visible");
-        node.removeAttribute("data-pressed");
-      }, 30);
+      if (event?.type !== "pointermove") node.setAttribute("data-immediate", "");
     }
 
     function position() {
@@ -66,16 +54,14 @@ export default function CursorHint({ pathname }) {
       if (!target) return;
       const text = target.dataset.hint;
       if (label.textContent === text) return;
-      // This aria-hidden label is effect-owned; React leaves its children empty.
-      label.replaceChildren(
-        ...Array.from(text).map((character, index) => {
-          const glyph = document.createElement("span");
-          glyph.className = "cursor-hint-char";
-          glyph.textContent = character;
-          glyph.style.setProperty("--hint-index", index);
-          return glyph;
-        }),
-      );
+      labelAnimation?.cancel();
+      if (node.hasAttribute("data-visible") && !motion.matches) {
+        labelAnimation = label.animate([{ opacity: 0 }, { opacity: 1 }], {
+          duration: 150,
+          easing: "ease-out",
+        });
+      }
+      label.textContent = text;
       node.dataset.icon = actionIcon(text);
       position();
     }
@@ -84,9 +70,7 @@ export default function CursorHint({ pathname }) {
       if (!fine.matches || event.pointerType === "touch") return hide();
       if (document.querySelector("dialog[open]")) return hide();
       const next = event.target.closest("[data-hint]");
-      if (!next?.dataset.hint || next.closest("[hidden], [inert]")) return leave();
-      clearTimeout(leaveTimer);
-      leaveTimer = undefined;
+      if (!next?.dataset.hint || next.closest("[hidden], [inert]")) return hide(event);
       pointer = { x: event.clientX, y: event.clientY };
       if (target !== next) {
         target = next;
@@ -155,7 +139,7 @@ export default function CursorHint({ pathname }) {
   return (
     <div ref={hint} className="cursor-hint" aria-hidden="true">
       <span className="cursor-hint-press">
-        <span className="cursor-hint-pill">
+        <span className="cursor-hint-surface">
           <span className="cursor-hint-icon">
             {Object.entries(icons).map(([name, file]) => (
               <Image
@@ -163,13 +147,13 @@ export default function CursorHint({ pathname }) {
                 data-icon={name}
                 src={mediaUrl(`/images/${file}`)}
                 alt=""
-                width={name === "arrow" ? 10 : 18}
-                height={name === "arrow" ? 10 : 18}
+                width={name === "arrow" ? 10 : 12}
+                height={name === "arrow" ? 10 : 12}
                 loading="eager"
                 unoptimized
               />
             ))}
-            <CheckIcon size={18} data-icon="check" />
+            <CheckIcon size={12} data-icon="check" />
           </span>
           <span className="cursor-hint-label" />
         </span>

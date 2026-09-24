@@ -78,22 +78,17 @@ Keyboard focus shows project labels and external arrows immediately with the exi
 
 ## 05 — Cursor hint
 
-Revised in Figma first on 24 September 2026, then implemented. [Inverted tooltip and editable motion study](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=376-895). The existing Cursor Tooltip component (`191:714`) retains its IDs, variant states, label property and icon swaps. Original eye, arrow and message SVGs were restored from the archived website; the shared confirmation check matches the Figma vector. This revision supersedes the original grey tag, whole-label fade and 96% press proposals elsewhere in this document.
+Owner correction, 24 September 2026: retain the previous rounded rectangle, typography, spacing and subtle animation. Only invert the colors and add the action icons. The temporary pill and per-letter redesign has been replaced in both Figma and code. [Current compact tooltip and motion study](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=376-895); reusable component `191:714` retains its existing IDs and properties.
 
-The native pointer remains. The hint is a black (`--ink`, #05070a) pill with white text and icons: 28px high, 99px radius, Roobert PRO Regular 12/18 with zero tracking, 5px/12px padding, 18px icon slot and 8px gap. The original arrow sits at 10px inside the slot.
+The tooltip uses black (`--ink`, #05070a), white text/icons, the original 24px height and 3px radius, Roobert PRO Regular 11/16 with 2% tracking, and 4px/10px padding. The added icons occupy a 12px slot with a 5px gap; the original arrow is 10px. Eye, arrow and message artwork come from the archived website; the confirmation check is shared with CopyEmail.
 
-Only `(hover: hover) and (pointer: fine)` enables the hint; narrow mobile layouts hide it. Position immediately at pointer +16px/+16px, flip at screen edges and clamp to a 12px inset. Positioning uses the untransformed outer dimensions and accounts for the site's stable scrollbar gutters; separate wrappers own press and appearance. Resolve the nearest tagged ancestor; child boundaries and pointer movement do not replay the entrance.
+Original motion is restored: a 160ms opacity fade and 240ms subtle rise from 4px/scale .97 using the existing arrive curve. Press scales to .96. Label updates crossfade as a whole over 150ms; there is no letter stagger, expanding pill or leave debounce. CSS transitions retarget their current values on rapid reversal.
 
-- Enter: expand the pill from scale 0 to 1 at its top-left corner in 250ms, circ.out. Letters rise 10px and fade in over 300ms, power3.out, with a 25ms stagger after an initial 30ms. CSS curves match the inspected Figma timeline: `.075,.82,.165,1` for the pill and `.165,.84,.44,1` for letters.
-- Leave: a 30ms edge debounce, then letters/icon fade in 50ms while the pill contracts over 150ms, power2.in (`.55,.055,.675,.19`). An interrupted transition retargets the current scale; animations never queue.
-- Press: a separate wrapper scales to .85 in 200ms and returns in 400ms, power1.inOut (`.455,.03,.515,.955`). The actual target and pointer tracking stay stationary. Pointer cancellation clears the feedback.
-- Semantic label changes, including clipboard success under a stationary pointer, stagger once. Success uses the shared check only after the write succeeds; failure keeps the copy action. Copy confirmation timing and its live region remain owned by CopyEmail.
+Only fine pointers with hover enable the hint; narrow mobile layouts hide it. Keep the native pointer and immediate tracking at +16px/+16px. Flip at viewport edges with a 12px inset, account for stable scrollbar gutters, and measure the untransformed wrapper so appearance/press never shift positioning. Child boundaries do not restart the animation.
 
-Actions: View project / eye; Visit site and Follow / arrow; Copy email and Email me / message; Email copied / check. Booking icons remain a design option only for a real booking control. Hide immediately on keyboard input, window blur, resize, scroll, pointer exit, route change, inactive/removed targets and an open dialog. Reappear on the next valid pointer move. The hint is `aria-hidden`, non-interactive and not focusable.
+Actions: View project / eye; Visit site and Follow / arrow; Copy email and Email me / message; Email copied / check. Clipboard success updates the stationary hint only after the write succeeds. Dismiss on keyboard input, blur, resize, scroll, pointer exit, route change, inactive/removed targets and open dialogs. The hint is aria-hidden, non-interactive and not focusable. Reduced motion switches states instantly.
 
-Reduced motion switches states immediately without scales, translations, stagger or exit delay. Preference and pointer-capability changes dismiss the active hint. `CursorHint.jsx` owns the decoration; `Experience.jsx` retains grid, reveal and route-focus behavior. No animation dependency was added.
-
-Verification: the Figma timeline was exported and inspected at entry, stagger, rest, press, release and exit. `node scripts/verify-tooltip.mjs` checks the rendered entrance, original arrow, black pill geometry, stable tracking during press, rapid reversal, edge positioning, stationary copy update, reduced motion and responsive states. The broader interaction and layout suites remain in use.
+`CursorHint.jsx` owns the decoration; `Experience.jsx` retains grid, reveal and route-focus behavior. `node scripts/verify-tooltip.mjs` checks original typography/geometry, inverted colors, icons, press cancellation, rapid reversal, edge positioning, clipboard updates, reduced motion and responsive states.
 
 ## 06 — Navigation and disappearance
 
