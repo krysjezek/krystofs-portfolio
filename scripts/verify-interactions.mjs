@@ -53,9 +53,9 @@ try {
   console.log("PASS: first-paint entrance never resets during hydration");
   const grid = await page
     .locator(".page-grid > span")
-    .evaluateAll((nodes) => nodes.map((n) => getComputedStyle(n).clipPath));
+    .evaluateAll((nodes) => nodes.map((n) => n.getBoundingClientRect().height));
   assert(
-    grid.some((value) => value !== "none"),
+    grid.some((height) => height > 0 && height < 900),
     "Grid draws during load-in",
   );
   assert.notEqual(grid[0], grid[1], "Grid lines are staggered");
@@ -143,8 +143,10 @@ try {
     await page
       .locator(".page-grid > span")
       .first()
-      .evaluate((n) => getComputedStyle(n).clipPath),
-    "none",
+      .evaluate((n) => n.getBoundingClientRect().height),
+    await page
+      .locator(".portfolio-shell")
+      .evaluate((n) => n.getBoundingClientRect().height),
   );
   const lastCard = page.locator("#panel-work .project-card").last();
   assert.equal(
