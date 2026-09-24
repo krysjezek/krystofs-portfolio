@@ -1136,6 +1136,179 @@
         "sha256": "83ea0ee7da48bd0ad47932cd3994a1474c7f4dd10ffbe06b82036025054a6f1b",
         "encoding": "WebP quality 82, metadata stripped"
       }
+    },
+    {
+      "id": "renders",
+      "prepared": "2026-09-24",
+      "sourceArchive": "C:/Users/kryst/Documents/2026/Outpost/Gusto Case Study/After Effects/concepts/jueb/adsd/sdads/original-web-sources",
+      "sources": [
+        {
+          "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/images/can-v3.webp",
+          "width": 1920,
+          "height": 1920,
+          "sha256": "d3e6368051b91976da8a037752ea20a518e48efc2cbb206a7866d559d0eb80da",
+          "crop": {
+            "width": 1440,
+            "height": 1920,
+            "position": "center"
+          },
+          "startSeconds": 0,
+          "durationSeconds": 1
+        },
+        {
+          "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/images/container3.webp",
+          "width": 1920,
+          "height": 1920,
+          "sha256": "420b01418a09f94e08ab9d59e3552c4af5aed9455b4fa035d371e5a849aedee4",
+          "crop": {
+            "width": 1440,
+            "height": 1920,
+            "position": "center"
+          },
+          "startSeconds": 1,
+          "durationSeconds": 1
+        },
+        {
+          "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/images/final-min-5.png",
+          "width": 1920,
+          "height": 1920,
+          "sha256": "e2090698be2a727b14fd78c83b62c7ac21edb12e007c630844ade40d2c4a9e08",
+          "crop": {
+            "width": 1440,
+            "height": 1920,
+            "position": "center"
+          },
+          "startSeconds": 2,
+          "durationSeconds": 1
+        },
+        {
+          "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/images/maisoncrivelli.webp",
+          "width": 2160,
+          "height": 2160,
+          "sha256": "ac3bb174d598b50f63610c2371132aae2316b4c8c7662895f0e5eec97f78ccf1",
+          "crop": {
+            "width": 1620,
+            "height": 2160,
+            "position": "center"
+          },
+          "startSeconds": 3,
+          "durationSeconds": 1
+        },
+        {
+          "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/images/niacid.webp",
+          "width": 1920,
+          "height": 1920,
+          "sha256": "55deef7462dab57f2611b0157d6c23ec109d52a7f240821256fae54f6e9026bb",
+          "crop": {
+            "width": 1440,
+            "height": 1920,
+            "position": "center"
+          },
+          "startSeconds": 4,
+          "durationSeconds": 1
+        },
+        {
+          "source": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/images/red-ring-exportv1-min-ezgif.com-png-to-webp-converter.webp",
+          "width": 1080,
+          "height": 1350,
+          "sha256": "78424d2d498f226e6cdac8ee3e30d1bb70d0de5e466bd3eda047d54ea7e91150",
+          "crop": {
+            "width": 1008,
+            "height": 1344,
+            "position": "center"
+          },
+          "startSeconds": 5,
+          "durationSeconds": 1
+        }
+      ],
+      "preparation": "Owner-requested centered 3:4 crops from recovered old-site assets, downscaled to 1008x1344 without upscaling. Six one-second stills with hard cuts; silent 6-second loop at 24 fps.",
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-renders-v1-web.mp4",
+          "bytes": 1359149,
+          "sha256": "5ed9085f4295eb5853b72bb349d3a32f7a356b44c807ca58a62657da2a33b8fd",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 1008,
+              "height": 1344,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "6.000000"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-renders-v1.webm",
+          "bytes": 1655808,
+          "sha256": "e325788e038075c8605a81dbd8b0a9dd5f5d59cbc1cc3438151936f7833ac2ef",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 1008,
+              "height": 1344,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "6.000000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-renders-v1-fallback.mp4",
+          "bytes": 2105486,
+          "sha256": "64fcaf42c44d5a442bcfbc2014c75e6344b9814d7948fbbb0fcba8eb87941a6a",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1008,
+              "height": 1344,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "6.000000"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-renders-v1.jpg",
+          "bytes": 139344,
+          "sha256": "9ce348051aee1ffadb0d0813b983957ac6c2a71d4f204038f61c513b3e9a6126",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 1008,
+              "height": 1344,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "displayPoster": "/videos/posters/portfolio-card-renders-v1.jpg"
     }
   ]
 }

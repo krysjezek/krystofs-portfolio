@@ -293,14 +293,18 @@
       },
       {
         "id": "renders",
-        "name": "Renders",
+        "name": "3D Explorations",
         "category": "fun",
-        "disciplines": "",
+        "disciplines": "Blender",
         "href": null,
-        "poster": "/images/portfolio-2027-gallery-renders.webp",
+        "poster": "/videos/posters/portfolio-card-renders-v1.jpg",
         "aspect": 0.75,
         "tabletAspect": 0.75,
-        "mobileAspect": 0.75
+        "mobileAspect": 0.75,
+        "srcH265": "/videos/h265/portfolio-card-renders-v1-web.mp4",
+        "srcAv1": "/videos/av1/portfolio-card-renders-v1.webm",
+        "srcMp4": "/videos/h264/portfolio-card-renders-v1-fallback.mp4",
+        "alt": "Six 3D renders of products, architecture and jewelry, changing every second"
       },
       {
         "id": "erem",
