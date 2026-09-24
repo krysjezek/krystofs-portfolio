@@ -1,5 +1,23 @@
 # Prague airspace interaction
 
+## Map and aircraft artwork — 24 September 2026
+
+The map now uses warm pale land/roads, green vegetation and blue water, linked to
+Figma semantic map variables. Five generated PNG aircraft categories are sized
+26/30/34/42/46px, including a four-engine wide-body. Classification uses the
+reported ICAO type only; missing type or heading retains a neutral position dot.
+Default artwork is muted silver-blue, selected artwork is the original blue.
+A light silhouette edge and neutral drop shadow improve visibility; selection
+and keyboard focus have a stronger blue shadow. Aircraft have no circular
+backplates or dashed halos. The caption explains estimated movement instead.
+Selected/focused aircraft sit above adjacent targets. Existing 44px hit targets,
+overlap selection, motion limits and reduced-motion behaviour are preserved.
+
+This supersedes the older marker-outline/ring specification below. Figma marker
+set `373:7358`, artwork guide `513:1895`, map component `507:1827`.
+See [asset provenance and prompts](../design/airspace/README.md).
+Checks: `scripts/aircraft-artwork.test.mjs` and `scripts/verify-airspace.mjs`.
+
 ## Airline identity — 24 September 2026
 
 Selected flights show the airline below the reported ICAO callsign: shared 15px

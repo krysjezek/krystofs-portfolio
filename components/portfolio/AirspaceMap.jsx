@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useAircraftMotion } from "@/hooks/useAircraftMotion";
 import { displayedPosition, EXPIRE_MS, project } from "@/lib/aircraft.mjs";
+import { aircraftArtwork } from "@/lib/aircraft-artwork.mjs";
+import { mediaUrl } from "@/lib/media";
 
 export default function AirspaceMap({ data, now, active, reduced, frozen, preview, selected, onSelect, message }) {
   const ref = useRef(null);
@@ -11,7 +13,7 @@ export default function AirspaceMap({ data, now, active, reduced, frozen, previe
   const aircraft = (data?.aircraft || []).filter(a => now - a.observedAt < EXPIRE_MS);
   return <div className={`airspace-map${preview ? " is-preview" : ""}`} ref={ref} aria-label="Airborne aircraft within 30 kilometres of Prague">
     <div className="airspace-map-space">
-      <Image className="airspace-geography" src="/airspace/geography.svg" width={432} height={180} alt="" unoptimized />
+      <Image className="airspace-geography" src={mediaUrl('/images/airspace/prague-map-v1.webp')} width={1536} height={711} alt="" unoptimized />
       <Image className="airspace-runway runway-one" src="/airspace/runway-06-24.svg" width={9.58954} height={5.91609} alt="" unoptimized />
       <Image className="airspace-runway runway-two" src="/airspace/runway-12-30.svg" width={7.93643} height={6.65893} alt="" unoptimized />
       <svg className="airspace-trails" width="432" height="180" aria-hidden="true">
@@ -21,12 +23,18 @@ export default function AirspaceMap({ data, now, active, reduced, frozen, previe
       {aircraft.map(a => {
         const position = displayedPosition(a, now, reduced);
         const observed = project(a.lat, a.lon);
-        const marker = <span className="airspace-plane"><Image src={`/airspace/${a.track === null ? "unknown" : position.estimated ? "estimated" : "observed"}.svg`} width={24} height={24} alt="" unoptimized /></span>;
-        const className = `airspace-marker${position.stale ? " is-stale" : ""}${selected === a.id ? " is-selected" : ""}`;
+        const artwork = aircraftArtwork(a.aircraftType);
+        const known = artwork.icon && a.track !== null;
+        const size = known ? artwork.size : 14;
+        const marker = <span className={`airspace-plane${known ? '' : ' is-unknown'}`}>
+          {known && <><Image src={mediaUrl(artwork.icon)} className="airspace-plane-default" width={size} height={size} alt="" unoptimized /><Image src={mediaUrl(artwork.selectedIcon)} className="airspace-plane-selected" width={size} height={size} alt="" unoptimized /></>}
+        </span>;
+        const className = `airspace-marker${position.estimated ? " is-estimated" : ""}${position.stale ? " is-stale" : ""}${selected === a.id ? " is-selected" : ""}`;
+        const markerStyle = { '--aircraft-size': `${size}px` };
         return <div key={a.id}>
           <span className="airspace-observation" style={{ left: observed[0], top: observed[1] + 10 }} />
-          {preview ? <span data-aircraft-id={a.id} className={className} aria-hidden="true">{marker}</span> :
-            <button type="button" data-aircraft-id={a.id} className={className} aria-label={`Inspect ${a.callsign || a.id}`} aria-pressed={selected === a.id}
+          {preview ? <span data-aircraft-id={a.id} data-category={artwork.category} style={markerStyle} className={className} aria-hidden="true">{marker}</span> :
+            <button type="button" data-aircraft-id={a.id} data-category={artwork.category} style={markerStyle} className={className} aria-label={`Inspect ${a.callsign || a.id}`} aria-pressed={selected === a.id}
               onClick={event => {
                 if (!event.detail) { onSelect(a.id, [a]); return; }
                 // Prefer the plane nearest the pointer, even when another plane's
@@ -40,7 +48,7 @@ export default function AirspaceMap({ data, now, active, reduced, frozen, previe
                 }).sort((one, two) => one.distance - two.distance);
                 const nearest = hits[0];
                 if (!nearest) { onSelect(a.id, [a]); return; }
-                // With 24px artwork, centers within 14px substantially overlap.
+                // Centers within 14px substantially overlap at every artwork size.
                 // A clearly closer icon still wins instead of asking the user.
                 const overlaps = hits.filter(hit => Math.hypot(hit.x - nearest.x, hit.y - nearest.y) <= 14 && hit.distance - nearest.distance <= 6);
                 if (overlaps.length === 1) nearest.node.focus({ preventScroll: true });
@@ -49,6 +57,7 @@ export default function AirspaceMap({ data, now, active, reduced, frozen, previe
         </div>;
       })}
     </div>
+    <a className="airspace-attribution" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" onClick={event => event.stopPropagation()}>© OpenStreetMap</a>
     <span className="airspace-map-range">30 KM</span>
     {message && <p className="airspace-map-message" role="status">{message}</p>}
   </div>;

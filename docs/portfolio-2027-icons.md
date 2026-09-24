@@ -44,6 +44,11 @@ The same action uses the same symbol wherever it appears. An envelope means comp
 
 ## Identity artwork and emojis
 
+The airspace map uses owner-requested generated PNG aircraft as geographic data
+symbols, separate from interface icons. Five sizes and default/selected artwork
+are defined in `lib/aircraft-artwork.mjs` and the linked Figma marker set. See
+[airspace assets](../design/airspace/README.md) for masters, prompts and provenance.
+
 All inline identity artwork uses the shared [15px Identity tile](portfolio-2027-identity-tiles.md), including logos inside contextual previews. Its rounded shell is separate from the Unicons action icon component.
 
 Project, client, agency, collaborator, publication and social logos remain identity artwork. Keep their original colors and proportions, including Motion Mockups, X, case-study credit marks and recognition favicons. Render these with `IdentityIcon` from `Links.jsx`; do not use them as action symbols or recolor them with the UI icon mask.

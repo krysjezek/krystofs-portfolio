@@ -39,6 +39,8 @@ yarn-error.log*
 # large media assets (managed separately / via Vercel CDN)
 /public/images/
 /public/videos/
+/design/airspace/aircraft-icons/*-master.png
+/design/airspace/prague-map-v1.svg
 
 # typescript
 *.tsbuildinfo

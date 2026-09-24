@@ -61,13 +61,18 @@ try {
     return Math.abs(e.getBoundingClientRect().right - (header.getBoundingClientRect().right - parseFloat(getComputedStyle(header).paddingRight)));
   });
   check(alignment < 1, "panel aligns with header inset without double-counting scrollbars");
-  check(await panel.locator("img").evaluateAll(images => images.every(image => image.complete && image.naturalWidth > 0)), "all Figma SVG assets load");
-  check(await panel.locator(".airspace-plane img").first().evaluate(e => getComputedStyle(e).width === "24px" && getComputedStyle(e).height === "24px"), "larger 24px aircraft artwork retains its square canvas");
+  await panel.locator('img').evaluateAll(images => Promise.all(images.map(image => image.decode())));
+  check(await panel.locator("img").evaluateAll(images => images.every(image => image.complete && image.naturalWidth > 0)), "map, PNG aircraft and runway assets load");
+  check(await panel.locator(".airspace-plane img").first().evaluate(e => getComputedStyle(e).width === "34px" && getComputedStyle(e).height === "34px"), "jet artwork has a readable 34px square canvas");
+  check(await panel.locator('.airspace-plane-default').first().evaluate(e => getComputedStyle(e).visibility === 'visible' && e.src.includes('-muted-v1.png')), 'unselected aircraft uses muted artwork');
   check(state.traffic === requestCount, "preview to details reuses snapshot and polling cadence");
   check(await page.locator('[data-aircraft-id="abc001"]').evaluate(e => e.style.transform.includes("translate(")), "detail markers retain their projected positions");
   await page.locator('[data-aircraft-id="abc001"]').focus();
   await page.keyboard.press("Enter");
   await until(() => panel.innerText().then(t => t.includes("Airbus A320-214")), "selected details");
+  check(await panel.locator('.is-selected .airspace-plane-selected').evaluate(e => getComputedStyle(e).visibility === 'visible' && getComputedStyle(e).filter.includes('59, 130, 208') && e.src.includes('-blue-v2.png')), 'selected aircraft uses blue artwork and blue shadow');
+  check(await panel.locator('.airspace-marker').evaluateAll(nodes => nodes.every(n => ['::before', '::after'].every(p => getComputedStyle(n,p).content === 'none'))), 'aircraft have no circular selection or estimate backplates');
+  check(await panel.locator('[data-aircraft-id="abc003"] img').count() === 0, 'unknown heading never invents an aircraft orientation');
   check((await panel.innerText()).includes("PRG · Prague") && (await panel.innerText()).includes("DUS · Düsseldorf"), "selected route and aircraft model render");
   check(await panel.locator('.airspace-airline').innerText() === 'Eurowings', 'selected callsign shows its airline');
   const airlineLogo = panel.locator('.airspace-airline img');
@@ -186,7 +191,7 @@ try {
     }
     check(await panel.evaluate(e => getComputedStyle(e).animationName) === "none", "reduced motion disables transition");
     if (scenario !== "empty" && scenario !== "error") {
-      check(await panel.locator('[data-aircraft-id="abc001"] img').getAttribute("src") === "/airspace/observed.svg", "reduced motion uses received positions");
+      check(!(await panel.locator('[data-aircraft-id="abc001"]').getAttribute('class')).includes('is-estimated'), "reduced motion uses received positions");
       const before = await panel.locator('[data-aircraft-id="abc001"]').getAttribute("style");
       await page.waitForTimeout(150);
       check(await panel.locator('[data-aircraft-id="abc001"]').getAttribute("style") === before, "received markers do not project");
@@ -210,6 +215,30 @@ try {
     await page.evaluate(() => window.dispatchEvent(new Event("online")));
     await until(() => state.traffic > before, "network reconnection retries immediately");
     await until(() => panel.innerText().then(t => !t.includes("Updates delayed.")), "network reconnection restores healthy status");
+    await context.close();
+  }
+
+  {
+    const { context, page, trigger, panel } = await setup({ reducedMotion: 'reduce' });
+    await page.route('**/api/aircraft', route => route.fulfill({ json: { ok: true, fixture: true, observedAt: Date.now(), aircraft: [
+      report(Date.now(), 'abc001', { aircraftType: 'C172', lat: 50.17, lon: 14.25 }),
+      report(Date.now(), 'abc002', { aircraftType: 'AT76', lat: 50.17, lon: 14.55 }),
+      report(Date.now(), 'abc003', { aircraftType: 'A320', lat: 50.07, lon: 14.39 }),
+      report(Date.now(), 'abc004', { aircraftType: 'B77W', lat: 49.96, lon: 14.25 }),
+      report(Date.now(), 'abc005', { aircraftType: 'B744', lat: 49.96, lon: 14.55 }),
+    ] } }));
+    await trigger.click();
+    await until(() => panel.locator('[data-aircraft-id]').count().then(n => n === 5), 'all five aircraft categories');
+    await panel.locator('img').evaluateAll(images => Promise.all(images.map(image => image.decode())));
+    for (const category of ['light', 'turboprop', 'jet', 'widebody', 'fourengine']) {
+      check(await panel.locator(`[data-category="${category}"] .airspace-plane-default`).isVisible(), `${category} muted artwork loads`);
+    }
+    await panel.screenshot({ path: join(output, 'aircraft-categories-default.png') });
+    await panel.locator('[data-category="fourengine"]').focus();
+    await page.keyboard.press('Enter');
+    await page.mouse.move(20, 20);
+    await panel.screenshot({ path: join(output, 'aircraft-categories-selected.png') });
+    check(await panel.locator('[data-category="fourengine"] .airspace-plane-selected').isVisible(), 'four-engine selection exposes blue variation');
     await context.close();
   }
 
@@ -239,6 +268,7 @@ try {
     await page.keyboard.press('Enter');
     check(await panel.locator('.airspace-airline').innerText() === (width === 320 ? 'LOT Polish Airlines' : 'easyJet Europe'), `${width}px selected airline`);
     await panel.locator('.airspace-airline img').evaluate(image => image.decode());
+    await panel.locator('img').evaluateAll(images => Promise.all(images.map(image => image.decode())));
     await panel.locator('.airspace-airline').scrollIntoViewIfNeeded();
     check(await panel.evaluate(e => e.scrollWidth <= e.clientWidth), `${width}px selected airline has no overflow`);
     await page.screenshot({ path: join(output, `airspace-${width}.png`) });

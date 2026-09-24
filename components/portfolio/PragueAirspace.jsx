@@ -215,14 +215,14 @@ export default function PragueAirspace({ mode = "live" }) {
           <Weather data={weather.data} unavailable={weatherUnavailable} />
           {(weather.error || weatherUnavailable) && <p className="airspace-label airspace-muted">{simulation ? "Weather unavailable in simulation" : !weather.data && !weather.error ? "Receiving airport weather…" : "Weather unavailable"}</p>}
           <hr /><div className="airspace-status airspace-label"><span>AIRSPACE / {data ? String(aircraft.length).padStart(2, "0") : "—"}</span><span className="airspace-muted">{data ? `${delayed ? "DELAYED / " : ""}${utc(data.observedAt)}` : "—"}</span></div>
-          {map}<p className="airspace-label airspace-muted">{reduced ? "Received positions only · Reduced motion" : "Dots = observed · Outlines = estimates"}</p>
+          {map}<p className="airspace-label airspace-muted">{reduced ? "Received positions only · Reduced motion" : "Dots = reported positions · Movement is estimated"}</p>
           {!!choices.length && <div className="airspace-chooser" aria-label="Overlapping aircraft"><p className="airspace-label">Choose an aircraft</p>{choices.filter(a => aircraft.some(current => current.id === a.id)).map(a => <button key={a.id} type="button" className="button" onClick={() => { setSelected(current => current === a.id ? null : a.id); setChoices([]); focusMarker(a.id); }}>{a.callsign || a.id}</button>)}</div>}
           <hr /><div className="airspace-selection" aria-live="polite">
             {chosen ? <><div className="airspace-selected-title"><div className="airspace-flight-identity"><p>{chosen.callsign || "Callsign not reported"}</p>{!simulation && <AirlineIdentity callsign={chosen.callsign} />}</div><button className="airspace-clear" type="button" onClick={clearSelection}>Clear</button></div>{simulation ? <p className="airspace-label airspace-muted">Simulated aircraft · Route and model not reported.</p> : <AirspaceDetails key={`${chosen.id}:${chosen.callsign}`} aircraft={chosen} enabled={active} />}</> : selected ? <p>Aircraft left coverage or its report expired. <button type="button" className="airspace-clear" onClick={clearSelection}>Clear</button></p> : <><p>Select an aircraft to explore.</p><p className="airspace-label airspace-muted">Reported positions, with bounded estimates between updates. Airborne aircraft only.</p></>}
           </div><hr />
           <footer className="airspace-label airspace-muted">
             <p>Traffic: {simulation ? "Simulation · generated demo data" : <><a href="https://www.adsb.lol/">ADSB.lol</a> · <a href="https://opendatacommons.org/licenses/odbl/1-0/">ODbL 1.0</a></>}</p>
-            <p>Map: <a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a> · Runways: <a href="https://ourairports.com/data/">OurAirports</a></p>
+            <p>Map: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · <a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a> · Runways: <a href="https://ourairports.com/data/">OurAirports</a></p>
             <p>Weather: <a href="https://aviationweather.gov/data/metar/">NOAA / AWC</a>{!simulation && weather.data ? ` · ${weatherUnavailable || weather.error ? "last observation " : "observed "}${utc(weather.data.observedAt)}` : " · unavailable"}</p>
           </footer>
         </>}
