@@ -194,7 +194,7 @@ try {
     check(Math.abs(box.width - (mobile ? width - 40 : 440)) < 1, `${width}px panel width`);
     check(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `${width}px no page overflow`);
     check(await panel.evaluate(e => e.scrollWidth <= e.clientWidth), `${width}px no panel overflow`);
-    check(await page.locator(".airspace-geography").evaluate(e => e.getBoundingClientRect().width) === 432, "map keeps fixed geographic scale");
+    check(await page.locator(".airspace-geography").evaluate(e => Math.abs(e.getBoundingClientRect().width - 432 * 1.35) < .1), "map uses the requested 35% zoom at every viewport");
     if (mobile) {
       check(await panel.getAttribute("aria-modal") === "true", "mobile sheet is modal");
       await panel.getByRole("button", { name: "Close", exact: true }).focus();

@@ -365,8 +365,8 @@ button {
 .airspace-selected-title { margin-block: -10px; }
 .airspace-chooser { display: flex; flex-wrap: wrap; gap: 5px; }
 .airspace-chooser p { flex-basis: 100%; }
-.airspace-map { position: relative; height: 200px; overflow: hidden; }
-.airspace-map-space { position: absolute; left: 50%; top: 0; width: 432px; height: 200px; transform: translateX(-50%); }
+.airspace-map { --map-zoom: 1.35; position: relative; height: calc(200px * var(--map-zoom)); overflow: hidden; }
+.airspace-map-space { position: absolute; left: 50%; top: 0; width: 432px; height: 200px; transform: translateX(-50%) scale(var(--map-zoom)); transform-origin: top center; }
 .airspace-geography { position: absolute; left: 0; top: 10px; max-width: none; }
 .airspace-runway { position: absolute; max-width: none; }
 .airspace-runway.runway-one { left: 176.334px; top: 87.385px; }
@@ -374,20 +374,20 @@ button {
 .airspace-trails { position: absolute; top: 10px; left: 0; fill: none; stroke: var(--muted); stroke-width: .5px; opacity: .6; }
 .airspace-map-prague,
 .airspace-map-lkpr,
-.airspace-map-range { position: absolute; font: var(--type-label); letter-spacing: var(--tracking-label); color: var(--muted); }
+.airspace-map-range { position: absolute; font: var(--type-label); letter-spacing: var(--tracking-label); color: var(--muted); scale: calc(1 / var(--map-zoom)); transform-origin: top left; }
 .airspace-map-prague { left: 230px; top: 87px; }
 .airspace-map-lkpr { left: 150px; top: 91px; }
-.airspace-map-range { left: 303px; top: 175px; }
+.airspace-map-range { right: 0; bottom: 5px; scale: none; }
 .airspace-marker { position: absolute; top: 0; left: 0; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 50%; }
 .airspace-marker.is-selected::before { content: ""; position: absolute; inset: 6px; border: .5px solid var(--ink); border-radius: 50%; }
 .airspace-marker.is-stale { opacity: .35; }
 .airspace-marker:focus-visible { outline-offset: -2px; }
 .airspace-plane { display: block; width: 15px; height: 15px; pointer-events: none; }
-.airspace-plane img { display: block; }
+.airspace-plane img { display: block; scale: calc(1 / var(--map-zoom)); }
 .airspace-observation { position: absolute; width: 3px; height: 3px; transform: translate(-50%, -50%); border-radius: 50%; background: var(--muted); }
 .airspace-map-message { position: absolute; inset-inline: 5px; bottom: 8px; padding: 5px; background: rgb(255 255 255 / 94%); color: var(--muted); font: var(--type-label); letter-spacing: var(--tracking-label); text-align: center; pointer-events: none; }
-.airspace-map.is-preview { height: 170px; }
-.airspace-map.is-preview .airspace-map-space { transform: translateX(-50%) scale(.85); transform-origin: top center; }
+.airspace-map.is-preview { height: calc(170px * var(--map-zoom)); }
+.airspace-map.is-preview .airspace-map-space { transform: translateX(-50%) scale(calc(.85 * var(--map-zoom))); }
 .airspace-preview .airspace-marker { pointer-events: none; }
 @keyframes airspace-enter { from { opacity: 0; } to { opacity: 1; } }
 .airspace-panel.is-closing { animation: airspace-exit 150ms ease-out both; pointer-events: none; }

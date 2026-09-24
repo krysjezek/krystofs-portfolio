@@ -17,7 +17,7 @@ export default function AirspaceMap({ data, now, active, reduced, frozen, previe
       <svg className="airspace-trails" width="432" height="180" aria-hidden="true">
         {aircraft.map(a => <polyline key={a.id} points={(data?.trails?.[a.id] || []).map(p => p.point.join(",")).join(" ")} />)}
       </svg>
-      <span className="airspace-map-prague">PRAGUE</span><span className="airspace-map-lkpr" title="Runway geometry, not active usage">LKPR</span><span className="airspace-map-range">30 KM</span>
+      <span className="airspace-map-prague">PRAGUE</span><span className="airspace-map-lkpr" title="Runway geometry, not active usage">LKPR</span>
       {aircraft.map(a => {
         const position = displayedPosition(a, now, reduced);
         const observed = project(a.lat, a.lon);
@@ -28,18 +28,19 @@ export default function AirspaceMap({ data, now, active, reduced, frozen, previe
           {preview ? <span data-aircraft-id={a.id} className={className} aria-hidden="true">{marker}</span> :
             <button type="button" data-aircraft-id={a.id} className={className} aria-label={`Inspect ${a.callsign || a.id}`} aria-pressed={selected === a.id}
               onClick={event => {
-                // All overlapping 44px targets remain reachable, even when a
+                // All overlapping targets remain reachable at any map zoom, even when a
                 // later DOM marker covers the intended aircraft.
                 const target = event.currentTarget.getBoundingClientRect();
                 const overlaps = aircraft.filter(other => {
                   const box = ref.current.querySelector(`[data-aircraft-id="${CSS.escape(other.id)}"]`)?.getBoundingClientRect();
-                  return box && Math.abs(box.x - target.x) < 44 && Math.abs(box.y - target.y) < 44;
+                  return box && box.left < target.right && box.right > target.left && box.top < target.bottom && box.bottom > target.top;
                 });
                 onSelect(a.id, event.detail ? overlaps : [a]);
               }}>{marker}</button>}
         </div>;
       })}
     </div>
+    <span className="airspace-map-range">30 KM</span>
     {message && <p className="airspace-map-message" role="status">{message}</p>}
   </div>;
 }
