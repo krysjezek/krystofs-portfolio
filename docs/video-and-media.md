@@ -6,7 +6,7 @@ Delivery files live in Vercel Blob. Ignored public/images and public/videos are 
 
 components/portfolio/Media.jsx accepts a media record containing poster (or src for a still), alt, aspect and optional srcH265, srcAv1, srcMp4 and legacy srcWebm. Pass sizes and priority on the component. aspect reserves the display area before loading; object-fit covers the authored crop. Case heroes use 16:10.
 
-The Next Image poster appears first (quality 90 for video, 75 for stills). Video mounts at 25% intersection, with preload none, muted autoplay, loop and playsInline. Source order is H.265, AV1, H.264. The complete AV1 codec identifier is required for Chromium capability detection. Unsupported source errors must not be mistaken for failure of the entire video; final failure leaves the poster and a retry button.
+The Next Image poster appears first (quality 90 for video, 75 for stills). Video mounts when its frame first intersects the viewport, with preload none, muted autoplay, loop and playsInline. Using the frame edge avoids percentage thresholds that cannot be reached by very tall cards. The poster stays visible until playback actually starts, then the video fades in over 360ms. Mounted videos pause when offscreen, in hidden tabs or in a background document, and resume when visible. Source order is H.265, AV1, H.264. The complete AV1 codec identifier is required for Chromium capability detection. Unsupported source errors must not be mistaken for failure of the entire video; final failure leaves the poster and a retry button.
 
 Reduced-motion and data-saver preferences keep the poster. Preference changes are observed while the page is open. Do not mount YouTube/Vimeo players in current case studies. Archives can retain original embeds.
 

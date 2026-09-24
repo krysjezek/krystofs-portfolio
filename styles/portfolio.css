@@ -23,7 +23,7 @@
   --radius: 5px;
   --body: 17.5px;
   --leading: 28px;
-  --arrive: cubic-bezier(0.16, 1, 0.3, 1);
+  --arrive: cubic-bezier(0.22, 0.68, 0, 1);
   --respond: cubic-bezier(0.22, 1, 0.36, 1);
 }
 * {
@@ -309,16 +309,19 @@ button {
   border: 0.5px solid var(--line);
   border-radius: 5px;
   padding: 9px 16px;
-  transition:
-    background-color 150ms ease-out,
-    transform 80ms var(--respond);
+  transition: background-color 150ms ease-out;
   background: var(--surface);
 }
 .button:hover {
   background: var(--tag);
 }
-.button:active {
+.button-content {
+  display: inline-block;
+  transition: transform 180ms var(--respond);
+}
+.button:active > .button-content {
   transform: scale(0.98);
+  transition-duration: 80ms;
 }
 .external-link {
   display: inline-flex;
@@ -421,6 +424,7 @@ button {
   display: flex;
   width: 33.333333%;
   padding: 0 var(--inset);
+  position: relative;
 }
 .portfolio-navigation [role="tab"] {
   height: 50px;
@@ -431,18 +435,27 @@ button {
   margin-top: 0;
   transition: color 150ms ease-out;
 }
-.portfolio-navigation [role="tab"]::before {
+.portfolio-navigation > [role="tablist"]::before {
   content: "";
   position: absolute;
-  inset: 0 0 auto;
+  top: 0;
+  left: var(--inset);
+  width: calc((100% - 2 * var(--inset)) / 3);
   height: 0.5px;
-  transition: background-color 150ms ease-out;
+  background: var(--muted);
+  transform: translateX(calc(var(--active-tab, 0) * 100%));
+  transition: transform 320ms var(--respond);
 }
 .portfolio-navigation [aria-selected="true"] {
   color: var(--ink);
 }
-.portfolio-navigation [aria-selected="true"]::before {
-  background: var(--muted);
+.portfolio-panels {
+  position: relative;
+}
+.portfolio-panels > [data-leaving] {
+  position: absolute;
+  inset: 0 0 auto;
+  pointer-events: none;
 }
 .portfolio-navigation [role="tab"]:hover {
   color: var(--ink);
@@ -498,13 +511,13 @@ button {
   opacity: 0;
   transform: translateY(12px);
   transition:
-    opacity 180ms var(--arrive),
-    transform 180ms var(--arrive);
+    opacity 220ms ease-out,
+    transform 280ms var(--arrive);
 }
 .project-card:hover .project-labels .tag {
   opacity: 1;
   transform: none;
-  transition-duration: 240ms;
+  transition-duration: 340ms;
 }
 .project-card:hover .project-labels .tag:nth-child(2) {
   transition-delay: 60ms;
@@ -531,7 +544,7 @@ button {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 180ms ease-out;
+  transition: opacity 360ms ease-out;
 }
 .media > video.is-ready {
   opacity: 1;
@@ -1639,13 +1652,33 @@ button {
   position: fixed;
   z-index: 200;
   pointer-events: none;
+  opacity: 0;
+  transition: opacity 160ms ease-out;
+}
+.cursor-hint > span {
+  display: block;
   padding: 4px 10px;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.02em;
+  white-space: nowrap;
   border-radius: 3px;
   background: var(--tag);
   color: var(--ink);
+  transform: translateY(4px) scale(0.97);
+  transition: transform 240ms var(--arrive);
+}
+.cursor-hint[data-visible] {
+  opacity: 1;
+}
+.cursor-hint[data-visible] > span {
+  transform: none;
+}
+.cursor-hint[data-pressed] > span {
+  transform: scale(0.96);
+}
+.cursor-hint[data-immediate] {
+  transition: none;
 }
 .worlds-pair .media {
   height: auto;
@@ -1776,41 +1809,99 @@ h1 {
 }
 .recognition-dialog[open],
 .recognition-dialog[open]::backdrop {
-  animation: dialog-in 150ms ease-out;
+  opacity: 1;
+  transition: opacity 150ms ease-out;
 }
 .recognition-dialog[data-closing],
 .recognition-dialog[data-closing]::backdrop {
-  animation: dialog-out 150ms ease-out forwards;
+  opacity: 0;
 }
-@keyframes dialog-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes dialog-out {
-  from {
-    opacity: 1;
-  }
-  to {
+@starting-style {
+  .recognition-dialog[open],
+  .recognition-dialog[open]::backdrop {
     opacity: 0;
   }
 }
+/* CSS owns first paint. Do not restart these entrances after hydration. */
 @media (prefers-reduced-motion: no-preference) {
-  [role="tabpanel"]:not([hidden]) {
-    animation: panel-in 280ms cubic-bezier(0.16, 1, 0.3, 1);
+  .site-header > *,
+  .home-introduction > *,
+  .portfolio-navigation > [role="tablist"],
+  .portfolio-panels,
+  .case-overview,
+  .case-specifications > *,
+  .case-tags,
+  .case-hero,
+  .worlds-introduction,
+  .editorial-page > header,
+  .work-index-heading,
+  .work-index {
+    animation: content-arrive 640ms var(--arrive) both;
   }
-  @keyframes panel-in {
+  .site-header > * {
+    --arrival-distance: 4px;
+    animation-duration: 520ms;
+  }
+  .home-introduction > :nth-child(2) {
+    animation-delay: 60ms;
+  }
+  .home-introduction > :nth-child(3) {
+    animation-delay: 110ms;
+  }
+  .portfolio-navigation > [role="tablist"] {
+    --arrival-distance: 4px;
+    animation-delay: 100ms;
+  }
+  .portfolio-panels,
+  .case-hero,
+  .work-index {
+    animation-delay: 140ms;
+  }
+  @keyframes content-arrive {
     from {
       opacity: 0;
-      transform: translateY(8px);
+      transform: translateY(var(--arrival-distance, 8px));
     }
     to {
       opacity: 1;
       transform: none;
     }
+  }
+  .source-panel {
+    animation: note-arrive 180ms ease-out;
+  }
+  @keyframes note-arrive {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+/* Remove retained transforms: fixed notes/statuses must stay viewport-relative. */
+.site-header > *,
+.home-introduction > *,
+.portfolio-navigation > [role="tablist"],
+.portfolio-panels,
+.case-overview,
+.case-specifications > *,
+.case-tags,
+.case-hero,
+.worlds-introduction,
+.editorial-page > header,
+.work-index-heading,
+.work-index {
+  animation-fill-mode: backwards;
+}
+html[data-history-restoring] .portfolio-shell *,
+html[data-history-restoring] .portfolio-shell *::before,
+html[data-history-restoring] .portfolio-shell *::after {
+  animation: none !important;
+}
+@media print {
+  .portfolio-shell * {
+    animation: none !important;
   }
 }
 @media (max-width: 1099px) {
@@ -1835,4 +1926,91 @@ h1 {
   text-decoration: underline;
   min-height: 32px;
   white-space: nowrap;
+}
+.copy-label {
+  display: grid;
+}
+.copy-label > span {
+  grid-area: 1 / 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: opacity 180ms ease-out;
+}
+.copy-success {
+  opacity: 0;
+}
+.copy-label[data-copied] .copy-default {
+  opacity: 0;
+}
+.copy-label[data-copied] .copy-success {
+  opacity: 1;
+}
+/* The checkpoint drew a viewport-tall grid over 1.8s, with 150ms stagger.
+   Clip the page-length rules to that same visible distance during the draw,
+   then release the clip so the settled grid continues through the whole page. */
+@media (prefers-reduced-motion: no-preference) {
+  html:not([data-grid-ready]) .page-grid > span {
+    animation: grid-draw-y 1800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms
+      backwards;
+  }
+  html:not([data-grid-ready]) .page-grid > span:nth-child(2) {
+    animation-delay: 350ms;
+  }
+  html:not([data-grid-ready]) .page-grid > span:nth-child(3) {
+    animation-delay: 500ms;
+  }
+  html:not([data-grid-ready]) .page-grid > span:nth-child(4) {
+    animation-delay: 650ms;
+  }
+  html:not([data-grid-ready]) .site-header::after,
+  html:not([data-grid-ready])
+    :is(
+      .portfolio-navigation,
+      .site-footer,
+      .case-specifications,
+      .recommendations,
+      .worlds-deliverables,
+      .worlds-gallery-intro,
+      .worlds-fit
+    )::before {
+    transform-origin: left center;
+    animation: grid-draw-x 1800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms
+      backwards;
+  }
+  html:not([data-grid-ready])
+    :is(.portfolio-navigation, .case-specifications)::before {
+    animation-delay: 350ms;
+  }
+  html:not([data-grid-ready]) .site-footer::before {
+    animation-delay: 500ms;
+  }
+  @keyframes grid-draw-y {
+    from {
+      clip-path: inset(0 0 100% 0);
+    }
+    to {
+      clip-path: inset(0 0 max(0px, calc(100% - 100svh)) 0);
+    }
+  }
+  @keyframes grid-draw-x {
+    from {
+      transform: translateX(-50%) scaleX(0);
+    }
+    to {
+      transform: translateX(-50%) scaleX(1);
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .button:active > .button-content,
+  .cursor-hint > span {
+    transform: none;
+  }
+}
+@media print {
+  .portfolio-shell *::before,
+  .portfolio-shell *::after {
+    animation: none !important;
+  }
 }

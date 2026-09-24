@@ -3,8 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useLinkStatus } from "next/link";
-import { useRouter } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import icons from "@/content/icons.json";
 import { mediaUrl } from "@/lib/media";
 
@@ -71,79 +70,19 @@ function LinkFeedback() {
   ) : null;
 }
 
-export function RouteLink({ children, href, ...props }) {
-  const router = useRouter();
-  const request = useRef(null);
-  const [status, setStatus] = useState(null);
-  useEffect(
-    () => () => {
-      request.current?.abort();
-      request.current = null;
-    },
-    [],
-  );
-  async function navigate() {
-    request.current?.abort();
-    const controller = new AbortController();
-    request.current = controller;
-    setStatus(null);
-    const indicator = setTimeout(() => setStatus("loading"), 250);
-    const timeout = setTimeout(() => controller.abort(), 15000);
-    try {
-      // A lightweight availability check lets failures retain the outgoing page.
-      const response = await fetch(href, {
-        method: "HEAD",
-        signal: controller.signal,
-      });
-      if (!response.ok) throw new Error("Destination unavailable");
-      if (request.current === controller) {
-        setStatus(null);
-        router.push(href, { scroll: props.scroll !== false });
-      }
-    } catch {
-      if (request.current === controller) setStatus("error");
-    } finally {
-      clearTimeout(indicator);
-      clearTimeout(timeout);
-    }
-  }
+export function RouteLink({ children, href, onNavigate, ...props }) {
   return (
-    <>
-      <Link
-        href={href}
-        {...props}
-        onNavigate={(event) => {
-          if (
-            typeof href !== "string" ||
-            !href.startsWith("/") ||
-            href.includes("#")
-          )
-            return;
-          event.preventDefault();
-          navigate();
-        }}
-      >
-        {children}
-        <LinkFeedback />
-      </Link>
-      {status && (
-        <div
-          className="route-status"
-          role={status === "error" ? "alert" : "status"}
-        >
-          {status === "error" ? (
-            <>
-              <span>Couldn’t open this page</span>
-              <button type="button" onClick={navigate}>
-                Try again
-              </button>
-            </>
-          ) : (
-            "Opening…"
-          )}
-        </div>
-      )}
-    </>
+    <Link
+      href={href}
+      {...props}
+      onNavigate={(event) => {
+        onNavigate?.(event);
+        window.dispatchEvent(new Event("portfolio:navigate"));
+      }}
+    >
+      {children}
+      <LinkFeedback />
+    </Link>
   );
 }
 
@@ -174,7 +113,7 @@ export function HomeLink({
       }}
       {...props}
     >
-      {children}
+      <span className="button-content">{children}</span>
     </RouteLink>
   );
 }

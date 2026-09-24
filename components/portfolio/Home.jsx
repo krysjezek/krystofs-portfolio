@@ -15,7 +15,7 @@ const tabs = ["work", "fun", "about"];
 function useViewport() {
   const [viewport, setViewport] = useState("desktop");
   const focus = useRef(null);
-  useEffect(() => {
+  useLayoutEffect(() => {
     const mobile = matchMedia("(max-width: 599px)");
     const tablet = matchMedia("(max-width: 1099px)");
     function update() {
@@ -118,7 +118,75 @@ export default function Home() {
   const [tabstop, setTabstop] = useState("work");
   const tabRefs = useRef({});
   const restoring = useRef(null);
+  const panels = useRef(null);
+  const previousTab = useRef(active);
+  const panelFrom = useRef({});
   const viewport = useViewport();
+  useLayoutEffect(() => {
+    const previous = previousTab.current;
+    previousTab.current = active;
+    if (previous === active) return;
+    const root = panels.current;
+    // Stop the first-visit group before starting a user-directed panel change.
+    root.getAnimations().forEach((animation) => animation.finish());
+    if (
+      restoring.current ||
+      matchMedia("(prefers-reduced-motion: reduce)").matches
+    )
+      return;
+    const outgoing = document.getElementById(`panel-${previous}`);
+    const incoming = document.getElementById(`panel-${active}`);
+    outgoing.hidden = false;
+    outgoing.dataset.leaving = "";
+    const exit = outgoing.animate(
+      [
+        panelFrom.current[previous] || { opacity: 1 },
+        { opacity: 0, transform: "none" },
+      ],
+      {
+        duration: 180,
+        easing: "ease-out",
+        fill: "both",
+      },
+    );
+    const entrance = incoming.animate(
+      [
+        panelFrom.current[active] || {
+          opacity: 0,
+          transform: "translateY(6px)",
+        },
+        { opacity: 1, transform: "none" },
+      ],
+      {
+        duration: 480,
+        delay: 50,
+        easing: "cubic-bezier(.22,.68,0,1)",
+        fill: "backwards",
+      },
+    );
+    function settle() {
+      outgoing.hidden = true;
+      delete outgoing.dataset.leaving;
+      exit.cancel();
+      entrance.cancel();
+    }
+    exit.finished
+      .then(() => {
+        outgoing.hidden = true;
+        delete outgoing.dataset.leaving;
+      })
+      .catch(() => {});
+    const preference = matchMedia("(prefers-reduced-motion: reduce)");
+    preference.addEventListener("change", settle);
+    return () => {
+      // React may have just made the previous panel active again.
+      exit.cancel();
+      entrance.cancel();
+      delete outgoing.dataset.leaving;
+      outgoing.hidden = outgoing.inert;
+      preference.removeEventListener("change", settle);
+    };
+  }, [active]);
   useEffect(() => {
     let requested;
     try {
@@ -162,6 +230,16 @@ export default function Home() {
     );
   }
   function activate(tab) {
+    if (tab === active) return;
+    panelFrom.current = {};
+    for (const panel of panels.current.children) {
+      if (panel.hidden) continue;
+      const style = getComputedStyle(panel);
+      panelFrom.current[panel.id.replace("panel-", "")] = {
+        opacity: style.opacity,
+        transform: style.transform,
+      };
+    }
     setActive(tab);
     setTabstop(tab);
     history.replaceState(
@@ -234,7 +312,11 @@ export default function Home() {
           </div>
         </div>
         <div className="portfolio-navigation">
-          <div role="tablist" aria-label="Portfolio sections">
+          <div
+            role="tablist"
+            aria-label="Portfolio sections"
+            style={{ "--active-tab": tabs.indexOf(active) }}
+          >
             {tabs.map((tab) => (
               <button
                 key={tab}
@@ -255,22 +337,24 @@ export default function Home() {
             ))}
           </div>
         </div>
-        {tabs.map((tab) => (
-          <div
-            key={tab}
-            id={`panel-${tab}`}
-            role="tabpanel"
-            aria-labelledby={`tab-${tab}`}
-            hidden={active !== tab}
-            inert={active !== tab}
-          >
-            {tab === "about" ? (
-              <About />
-            ) : (
-              <Gallery category={tab} viewport={viewport} onOpen={save} />
-            )}
-          </div>
-        ))}
+        <div className="portfolio-panels" ref={panels}>
+          {tabs.map((tab) => (
+            <div
+              key={tab}
+              id={`panel-${tab}`}
+              role="tabpanel"
+              aria-labelledby={`tab-${tab}`}
+              hidden={active !== tab}
+              inert={active !== tab}
+            >
+              {tab === "about" ? (
+                <About />
+              ) : (
+                <Gallery category={tab} viewport={viewport} onOpen={save} />
+              )}
+            </div>
+          ))}
+        </div>
       </main>
     </>
   );

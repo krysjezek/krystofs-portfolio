@@ -2,6 +2,22 @@
 
 Design proposal, 23 September 2026. Source: [Portfolio 2027](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=141-2398). The linked node is the file directory; the canonical Work screen is `1:27`. This proposal extends the existing Interactions library. It is a Figma design deliverable, not a production-site implementation.
 
+## Runtime revision — 24 September 2026
+
+The implementation now uses the calmer pacing requested by the owner, including the explicitly requested grid draw from the old design. This section supersedes the original timing tables below for the website; the Figma studies remain the historical proposal.
+
+- Reference inspected: `checkpoint/pre-rebuild-2026-09-23`, especially `hooks/useScrollReveal.js`, `components/CustomCursor.jsx` and `docs/animations.md`. Preserve its deliberate sequencing, one-time reveals and immediate pointer positioning using CSS/WAAPI rather than restoring the old runtime dependencies.
+- On load, vertical rules draw downward across the first viewport and horizontal dividers draw left to right: 1800ms ease-out, beginning at 200ms with 150ms column offsets. The rules settle to their original full-page geometry. This is one draw per document load; tabs and client navigation do not replay it. Scrolling, history restoration and reduced motion finish it immediately.
+- First-paint content entrances are CSS-owned, so hydration never shows content and then hides it again. Header content uses 520ms; introduction, visible gallery and route introductions use 640ms, with offsets capped at 140ms and 4–8px movement. Fonts are preloaded. No media-dependent loader.
+- Only unseen offscreen content receives a scroll reveal: 560ms, 6–10px, desktop batch offsets capped at 90ms and no mobile stagger. IntersectionObserver replaces full-gallery measurement on every scroll. Fast scroll, focus, activation, resizing and preference changes settle affected content. Coverage includes About, cases, service/editorial pages, work index, archive content and footer.
+- Tabs retain the shared header and grid. Outgoing content fades for 180ms while incoming content starts after 50ms and settles over 480ms. Rapid changes start from captured rendered values; only the latest panel remains interactive. Individual first-view cards do not replay inside the panel entrance. The selected rule slides over 320ms.
+- Hover labels enter over 340ms and leave softly. Cursor appearance and label updates ease separately from immediate pointer positioning. Pointer cancellation, scrolling, navigation and keyboard input dismiss the hint. Copy confirmation crossfades in a reserved slot without changing the header width; actual clipboard success remains the prerequisite.
+- Native Next.js links start navigation immediately instead of waiting for an extra HEAD request. The outgoing route remains while the router is pending, with “Opening…” after 250ms. Actual route render errors use `app/error.jsx` and its retry action. Browser Back restores the gallery category, card focus and scroll without replaying load-in.
+- Recognition retains its 150ms fade, now retargeting the current opacity on early dismissal. Explicit keyboard wrapping keeps Shift+Tab from the title inside the dialog. Button feedback scales only the inner label, leaving hit areas fixed.
+- Videos fade over 360ms only after `playing`, keep their poster during loading, pause outside the viewport/inactive tabs/background documents, and resume when visible. Reduced motion and data saver remain poster-only.
+
+Regression checks: `node scripts/verify-interactions.mjs` covers first-paint continuity, grid staging, interrupted tabs, keyboard and pointer behavior, clipboard outcomes, dialog focus, delayed routes/history, public route families, responsive/touch views, live motion preferences, data saver and no-JavaScript visibility. `npm run test:layout` continues to check the original Figma coordinates.
+
 ## Direction: quiet surface, quick response
 
 Keep the white canvas, continuous hairline grid, authored masonry, Roobert PRO typography, 5px media gutters and 3px grey labels. Artwork stays still during hover. Small controls react immediately and settle softly. Animate one meaningful group at a time; never animate individual letters in 11px labels. No elastic overshoot, magnetic targets, scroll hijacking or looping decorative motion.

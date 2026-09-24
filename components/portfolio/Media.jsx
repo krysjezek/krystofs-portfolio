@@ -15,6 +15,7 @@ export default function Media({
   const video = useRef(null);
   const [canAnimate, setCanAnimate] = useState(false);
   const [nearby, setNearby] = useState(false);
+  const [inView, setInView] = useState(false);
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const [attempt, setAttempt] = useState(0);
@@ -28,8 +29,11 @@ export default function Media({
   useEffect(() => {
     const motion = matchMedia("(prefers-reduced-motion: reduce)");
     const connection = navigator.connection;
-    const update = () =>
-      setCanAnimate(!motion.matches && !connection?.saveData);
+    const update = () => {
+      const enabled = !motion.matches && !connection?.saveData;
+      setCanAnimate(enabled);
+      if (!enabled) setReady(false);
+    };
     update();
     motion.addEventListener("change", update);
     connection?.addEventListener("change", update);
@@ -43,16 +47,32 @@ export default function Media({
     if (!root.current) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setNearby(true);
-          observer.disconnect();
-        }
+        setInView(entry.isIntersecting);
+        if (entry.isIntersecting) setNearby(true);
       },
-      { threshold: 0.25 },
+      { threshold: 0 },
     );
     observer.observe(root.current);
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    const element = video.current;
+    if (!element) return;
+    function updatePlayback() {
+      if (!inView || document.hidden) element.pause();
+      else
+        element.play().catch(() => {
+          // Autoplay policy is not a broken asset: retain the poster.
+        });
+    }
+    updatePlayback();
+    document.addEventListener("visibilitychange", updatePlayback);
+    return () => {
+      element.pause();
+      document.removeEventListener("visibilitychange", updatePlayback);
+    };
+  }, [nearby, inView, canAnimate, failed, attempt]);
 
   function retry() {
     setFailed(false);
@@ -87,13 +107,13 @@ export default function Media({
           key={attempt}
           ref={video}
           aria-hidden="true"
-          autoPlay
+          autoPlay={inView}
           muted
           loop
           playsInline
           preload="none"
           className={ready ? "is-ready" : ""}
-          onCanPlay={() => setReady(true)}
+          onPlaying={() => setReady(true)}
           onError={(event) => {
             if (event.target === event.currentTarget) setFailed(true);
           }}

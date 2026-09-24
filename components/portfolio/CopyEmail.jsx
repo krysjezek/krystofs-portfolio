@@ -28,13 +28,30 @@ export default function CopyEmail() {
         disabled={state === "copying"}
         data-hint={state === "success" ? "Email copied" : "Copy email"}
       >
-        <Icon name="emailSmall" size={12} />
-        <span>
-          {state === "success"
-            ? "Email copied"
-            : state === "copying"
-              ? "Copying…"
-              : "Email"}
+        <span
+          className="copy-label"
+          data-copied={state === "success" || undefined}
+        >
+          <span className="copy-default" aria-hidden={state === "success"}>
+            <Icon name="emailSmall" size={12} />
+            Email
+          </span>
+          <span className="copy-success" aria-hidden={state !== "success"}>
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="m2 6 2.5 2.5L10 3"
+                stroke="currentColor"
+                strokeWidth="1.2"
+              />
+            </svg>
+            Email copied
+          </span>
         </span>
       </button>
       <span className="sr-only" role="status">
