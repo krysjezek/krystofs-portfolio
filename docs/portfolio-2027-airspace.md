@@ -12,8 +12,20 @@ The collector is running at
 [`prague-airspace-production.up.railway.app`](https://prague-airspace-production.up.railway.app/readyz)
 as one always-on replica in Railway's Europe region, with `/data` on a persistent
 volume. `/healthz` and `/readyz` passed; a controlled restart retained the saved
-weather poll deadline and resumed current traffic. The Vercel production environment
-now has `AIRSPACE_SERVICE_URL` configured; portfolio promotion is the remaining rollout step.
+weather poll deadline and resumed current traffic. The effective Railway deployment
+uses `/healthz` with a 30-second startup timeout, On Failure restarts, and no sleeping.
+These settings live in Railway service configuration; new services no longer read
+the retired `railway.json` format. The Vercel production environment has
+`AIRSPACE_SERVICE_URL` configured, and deployment `dpl_8tR6Quy2iF8hFMXG4EKby5o3fkPK`
+was promoted to [www.krystofjezek.com](https://www.krystofjezek.com).
+
+`node scripts/verify-airspace-deployed.mjs https://www.krystofjezek.com` passed
+against the public domain at 1440, 834 and 390px: fresh real traffic and weather,
+advancing observation timestamps, aircraft selection/details, no panel overflow,
+no missing airspace assets and no browser errors. The final read contained three
+aircraft with a 13-second observation age. Production runtime error logs were
+empty. The script also accepts an optional ignored Netscape cookie jar for
+authorized verification of a protected Vercel deployment before promotion.
 
 The release also updates Next.js and its companion packages to 16.3.6, and the
 PostCSS override to 8.5.28, with compatible dependency fixes. `npm audit` reports
@@ -113,8 +125,9 @@ Provider documentation rechecked on 24 September 2026:
 [OurAirports](https://ourairports.com/data/). Source and licence links are visible
 in the detail panel. Live aircraft and LKPR METAR responses were verified locally;
 route/model availability varies, with truthful fallbacks verified. The archived
-provider guidance to contact ADSB.lol before public rollout remains a deployment
-consideration; this implementation sends no messages and does not deploy.
+provider guidance to contact ADSB.lol before public rollout remains a provider
+relationship consideration; no messages were sent to the provider. Deployment
+and verification are recorded in the reliability update above.
 
 Verification: `node --test scripts/aircraft.test.mjs scripts/aircraft-details.test.mjs
 scripts/airport-weather.test.mjs` and `node scripts/verify-airspace.mjs`. The browser
