@@ -13,7 +13,7 @@ Designed in Figma first, then implemented on 24 September 2026. Extends the comp
 | --- | --- |
 | External / social link | Actual host and path, plus whether it opens a new tab. No duplicate “Visit site” or “Follow” label. Query strings are omitted from the display; the link destination is unchanged. |
 | Email link | Actual email address and email-app behavior. This remains a mailto action. |
-| Published project card | Project name and eye icon, with “View case study” in grey on the second line. No project description. External project links use “View project”. Unlinked cards remain informational. |
+| Published project card | Project name and shared 15px brand Identity tile when available, otherwise the existing action icon; “View case study” in grey on the second line. No project description. External project links use “View project”. Unlinked cards remain informational. |
 | Prague temperature | “Prague Live weather”, then temperature • condition, then source: MET Norway / CC BY 4.0. No forecast timestamp or forecast explanation in the tooltip. Explicit loading and unavailable states. |
 | About: software engineering | Czech Technical University, original university identity, subject, Sep 2022–Jun 2025 and Prague. No added graduation or grade claim. |
 | Case-study person | Short sourced bio or documented project context, plus source where available. Repeat the existing affiliation mark using the shared 15px Identity tile; no profile photos. |
@@ -38,7 +38,7 @@ Figma padding propagation was verified before the content-hugging refinement; th
 
 ## Sources and content ownership
 
-`content/context-previews.json` owns education and person context. Project tooltips use the card name from the gallery or recommendation data. Do not manufacture personal history for people without a verified biography. Use the explicitly labelled project-credit summary until a better source is supplied.
+`content/context-previews.json` owns education and person context. Project tooltips use the card name and optional `icon` from the gallery or recommendation data. Vizcom, ValkaAI, Barbour, Victoria’s Secret and Motion Mockups reuse their existing identity assets. Figma examples `449:1193` (Vizcom) and `485:2211` (ValkaAI) use the existing tooltip image-swap property. Do not manufacture personal history for people without a verified biography. Use the explicitly labelled project-credit summary until a better source is supplied.
 
 Education: `checkpoint/pre-rebuild-2026-09-23:app/page.jsx` lists CTU, Software Engineering, 22–25 and `/images/cvutlogo-2.png`. The archived `app/other/cv/page.jsx` gives Sep 2022–Jun 2025 and Prague. Existing 704×704 PNG is reused from the published CDN; inspected with ffprobe and rendered in the shared 15px tile. No new media upload or conversion was needed.
 

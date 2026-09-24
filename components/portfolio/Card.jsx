@@ -51,6 +51,7 @@ export default function Card({
     href: card.href,
     "aria-label": card.name,
     "data-hint": card.name,
+    "data-hint-image": card.icon,
     "data-hint-icon": card.href.startsWith("/") ? "eye" : "arrow",
     "data-hint-meta": card.href.startsWith("/") ? "View case study" : "View project",
     onClick: () => onOpen?.(card.id),

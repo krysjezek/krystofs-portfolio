@@ -83,6 +83,23 @@ try {
   assert.equal(await weather.evaluate(n => getComputedStyle(n).cursor), 'default');
   assert.equal(await hint.getAttribute('data-pressed'), null);
 
+  for (const [id, artwork] of [
+    ['outland-vizcom', 'identity-vizcom'],
+    ['victoria-s-secret', 'identity-victoria-s-secret'],
+    ['barbour', 'identity-barbour'],
+    ['motion-mockups', 'icon-motionmockups'],
+    ['valkaai', 'identity-valkaai'],
+  ]) {
+    await hover(page.locator(`.project-card[data-project="${id}"]`));
+    const logo = hint.locator('.identity-tile img');
+    assert.match(await logo.getAttribute('src'), new RegExp(artwork));
+    await logo.evaluate(n => n.decode());
+    assert.deepEqual(await logo.evaluate(n => [n.width, n.height]), [15, 15]);
+    assert.equal(await hint.locator('.cursor-hint-icon').isVisible(), false);
+    assert.equal(await hint.locator('.context-meta').textContent(), id === 'motion-mockups' ? 'View project' : 'View case study');
+  }
+  await page.screenshot({ path: join(output, 'valkaai-brand-tooltip.png') });
+
   await page.getByRole('tab', { name: 'About', exact: true }).click();
   await page.waitForTimeout(650);
   const education = page.locator('.biography-emphasis[data-informational]');

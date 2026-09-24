@@ -3,6 +3,7 @@
     "cards": [
       {
         "id": "outland-vizcom",
+        "icon": "/images/portfolio-2027-identity-vizcom.webp",
         "name": "Outland, Vizcom",
         "category": "work",
         "disciplines": "3D, Art Direction",
@@ -29,6 +30,7 @@
       },
       {
         "id": "victoria-s-secret",
+        "icon": "/images/portfolio-2027-identity-victoria-s-secret.webp",
         "name": "Victoria’s Secret",
         "category": "work",
         "disciplines": "3D, Motion, Art Direction",
@@ -44,6 +46,7 @@
       },
       {
         "id": "barbour",
+        "icon": "/images/portfolio-2027-identity-barbour.webp",
         "name": "Barbour",
         "category": "work",
         "disciplines": "3D, Motion, Art Direction",
@@ -59,6 +62,7 @@
       },
       {
         "id": "motion-mockups",
+        "icon": "/images/portfolio-2027-icon-motionmockups.webp",
         "name": "Motion Mockups",
         "category": "work",
         "disciplines": "Product Design, Creative Development",
@@ -103,6 +107,7 @@
       },
       {
         "id": "valkaai",
+        "icon": "/images/portfolio-2027-identity-valkaai.webp",
         "name": "ValkaAI",
         "category": "work",
         "disciplines": "3D, Motion, Art Direction",
