@@ -24,6 +24,8 @@ Credits with a destination retain a disclosure button: click, Enter, Space or to
 
 ## Design system
 
+Links and text triggers have no underline, including hover and informational previews. Keep keyboard focus outlines and existing contextual feedback.
+
 The original Cursor Tooltip set and four state IDs are retained. Added optional Detail, Source, Show detail, Show source, Image and Show image properties. Reuses existing tooltip color, padding, gap and radius variables, Portfolio / Label (Roobert PRO 11/16, 2% tracking), supplied Unicons Line and Floating elevation. Image swaps use the shared [Identity tile](portfolio-2027-identity-tiles.md) for brands, apps, schools and affiliations.
 
 Compact height remains 24px. All previews hug their content up to a 280px outer maximum, with content-driven height, 4px vertical gap and original 4px/10px padding. Every identity logo is 15×15 with contain fit and a 3px radius, including the university. Source is white at 75% opacity. Wrapping never truncates a long URL. Native popovers also hug their content and add 44px source/Close hit areas.

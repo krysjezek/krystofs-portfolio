@@ -15,7 +15,7 @@ Design direction, 23 September 2026. A reusable anchored source note belongs to 
 The panel uses the shared Floating shadow alongside its thin border; see
 [overlay elevation](portfolio-2027-elevation.md) for matching Figma and CSS values.
 
-Use a black, finely underlined figure in the grey Result paragraph. Match surrounding body size: 17.5/28 desktop, 16/24 compact. The underline makes the extra information discoverable without relying on colour alone. Do not make a headline statistic or move audience metrics back into the header.
+Use a black figure in the grey Result paragraph, without an underline in any state. Match surrounding body size: 17.5/28 desktop, 16/24 compact. Preserve the keyboard focus indicator and source-preview interaction. Do not make a headline statistic or move audience metrics back into the header.
 
 The white panel uses the current shared tokens: `surface/page`, `text/primary`, `text/secondary`, `border/subtle`, 0.5px border, 3px `radius/tag`, 16px padding and 10px gap. Use existing Body, Body Compact, Small Link and Label styles. No new colour, font or spacing collection is introduced. The figure family has Density (Desktop/Compact), State (Default/Open/Focus), and Placement (Below/Above): 12 variants. It contains an instance of the reusable Source note panel.
 
@@ -68,7 +68,7 @@ The canonical Result at desktop, tablet and mobile widths reads:
 
 > About 407k views across the four city Reels on Barbour’s Instagram. CGI quilting and procedural nature brought the campaign into London, New York, Seoul and Shanghai.
 
-The black underlined first phrase opens the shared panel with the four separately clickable source rows, the arithmetic, rounding explanation and observation date. [Monopo’s project case study](https://monopo.london/work/barbour-icons-in-quilting/) corroborates the four-city campaign and two additional department-store films, but is not used as evidence of audience numbers.
+The black first phrase opens the shared panel with the four separately clickable source rows, the arithmetic, rounding explanation and observation date. Neither the trigger nor source links are underlined. [Monopo’s project case study](https://monopo.london/work/barbour-icons-in-quilting/) corroborates the four-city campaign and two additional department-store films, but is not used as evidence of audience numbers.
 
 ## Verification
 

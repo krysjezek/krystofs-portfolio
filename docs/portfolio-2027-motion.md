@@ -62,7 +62,7 @@ Implementation update: About photo-grid images zoom to 1.045× on hover, enterin
 | --- | --- | --- |
 | Project card | Existing name label: y 12 → 0, opacity 0 → 1, 240ms arrive. Category begins 60ms later. Artwork and hit area stay fixed. | Both labels exit together in 180ms arrive; reverse from current value. |
 | Work / Fun / About | Existing text colour / selected rule, 150ms quiet. Selected state stays visible while another item is hovered. | 150ms quiet. |
-| Text / resume / footer links | Existing colour + underline, 150ms quiet. | 150ms quiet. |
+| Text / resume / footer links | Existing colour, no underline. Preserve keyboard focus outline. | 150ms quiet. |
 | External link / publication | Existing arrow scales 0 → 1, opacity 0 → 1; slot 0 → 12px and gap 0 → 5px, 240ms inline. | Reverse all four properties together, 240ms inline. |
 | Back / Close | Existing neutral hover fill, 150ms quiet. | 150ms quiet. |
 
