@@ -176,7 +176,7 @@ try {
     .waitFor();
   assert.deepEqual(await copy.boundingBox(), copyRect);
   assert.equal(
-    await page.locator(".cursor-hint > span").textContent(),
+    await page.locator(".cursor-hint-label").textContent(),
     "Email copied",
   );
   await page.evaluate(() =>
