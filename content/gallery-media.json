@@ -1029,6 +1029,103 @@
         }
       ],
       "displayPoster": "/videos/posters/portfolio-card-fwa-logo-v1.jpg"
+    },
+    {
+      "id": "blender-addon",
+      "source": "blender-camera-handheld-loop/listing/renewalk/walk%04d.png",
+      "prepared": "2026-09-24",
+      "sourceVideo": {
+        "codec_name": "png",
+        "codec_type": "video",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "24/1"
+      },
+      "sourceDuration": 5,
+      "sourceFrameCount": 121,
+      "encodedFrames": "walk0000.png through walk0119.png",
+      "note": "24 fps verified from the adjacent Blender scenes. Frame 120 matches frame 0 (mean pixel difference below 0.007 on each 8-bit channel); omit the repeated endpoint for a seamless 120-frame loop. All 121 source frames verified with ffprobe. Originals remain in the supplied folder.",
+      "sourceSequenceSha256": "f51395c2e4a9d9fa54fee36726dbe40645045c5e9b8ea4c0b6449f9ff6ebd85a",
+      "widthCap": 1440,
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-handheld-loop-v1-web.mp4",
+          "bytes": 128340,
+          "sha256": "112181afd7a8440e9347937500f5310beaad07fad4d169cf461d5252775bd0d6",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "5.000000"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-handheld-loop-v1.webm",
+          "bytes": 78322,
+          "sha256": "ea95b6a571992acb405621d8c013fe2bbae8347bd37c92a7d9ada868b5f9238a",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "5.000000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-handheld-loop-v1-fallback.mp4",
+          "bytes": 436676,
+          "sha256": "260f7685fc64a12ac4a7a88afb7644b11cae979b1f85dd9e6b2143c5581573ff",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "5.000000"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-handheld-loop-v1.jpg",
+          "bytes": 54973,
+          "sha256": "35f6ba930ebd64c1946e86bed4976a47d02af2162a4dbe72d18c4c924b0bbec8",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "displayPoster": "/videos/posters/portfolio-card-handheld-loop-v1.jpg"
     }
   ]
 }

@@ -249,14 +249,17 @@
       },
       {
         "id": "blender-addon",
-        "name": "Blender addon",
+        "name": "Handheld Loop",
         "category": "fun",
-        "disciplines": "",
-        "href": null,
-        "poster": "/images/portfolio-2027-gallery-blender-addon.webp",
+        "disciplines": "Blender Addon",
+        "href": "https://extensions.blender.org/add-ons/handheld-loop/",
+        "poster": "/videos/posters/portfolio-card-handheld-loop-v1.jpg",
         "aspect": 1.33333,
         "tabletAspect": 1.33333,
-        "mobileAspect": 1.33333
+        "mobileAspect": 1.33333,
+        "srcH265": "/videos/h265/portfolio-card-handheld-loop-v1-web.mp4",
+        "srcAv1": "/videos/av1/portfolio-card-handheld-loop-v1.webm",
+        "srcMp4": "/videos/h264/portfolio-card-handheld-loop-v1-fallback.mp4"
       },
       {
         "id": "chainer",
