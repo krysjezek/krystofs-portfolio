@@ -18,9 +18,9 @@ These settings live in Railway service configuration; new services no longer rea
 the retired `railway.json` format. The portfolio rollout is **staging only**.
 `AIRSPACE_SERVICE_URL` is configured for Vercel Preview and removed from Production.
 The staging deployment is
-[`krystofs-portfolio-kv8jrhuxz-krystofjezeks-projects.vercel.app`](https://krystofs-portfolio-kv8jrhuxz-krystofjezeks-projects.vercel.app)
-(`dpl_9aWLc8eHaqdKvtSP8R2ZApLvmCJ2`). The map is zoomed to 175.5% (135% × 1.3) in both preview and detail views, with matching map
-height, original label/icon sizes, and the full 30 km collection radius.
+[`krystofs-portfolio-f8o2p313z-krystofjezeks-projects.vercel.app`](https://krystofs-portfolio-f8o2p313z-krystofjezeks-projects.vercel.app)
+(`dpl_H2TikgZX2VLgB6siXmo1BKuwqreC`). The map is zoomed to 175.5% (135% × 1.3) in both preview and detail views, with matching map
+height, original label sizes, 24px aircraft icons, and the full 30 km collection radius.
 Production promotion requires a separate
 explicit request. An earlier mistaken promotion was rolled back: both production
 domains resolve to the original `dpl_H1q5FoZSoocBHtKRBc9f2wVEgyRz` deployment.
@@ -107,8 +107,10 @@ aborts pending requests, retains the next due time and backs off after errors.
 `hooks/useAircraftMotion.js` uses native requestAnimationFrame, with a two-second
 correction, a 30-second projection limit and immediate received positions under
 reduced motion. Reports fade at 60 seconds and expire at 120 seconds. Selection
-does not convert estimated positions into observations. Overlapping targets open
-a callsign chooser; keyboard activation selects a specific marker directly.
+does not convert estimated positions into observations. Mouse and touch select the plane nearest the pointer within a 44px hit target,
+independent of map zoom. The callsign chooser appears only for substantially
+overlapping icons (centers within 14px) without a clear nearest plane (pointer
+distances within 6px). Keyboard activation selects its focused marker directly.
 
 `/api/aircraft`, `/api/airport-weather` and `/api/aircraft/[id]` restore the archived
 server adapters with shared Next caches, bounded timeouts and provider backoff.
