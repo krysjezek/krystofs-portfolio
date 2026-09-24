@@ -25,8 +25,10 @@
   --inset: 35px;
   --gutter: 5px;
   --radius: 5px;
-  --body: 17.5px;
-  --leading: 28px;
+  --body-regular: 17.5px;
+  --body-regular-leading: 28px;
+  --body: var(--body-regular);
+  --leading: var(--body-regular-leading);
   --arrive: cubic-bezier(0.22, 0.68, 0, 1);
   --respond: cubic-bezier(0.22, 1, 0.36, 1);
   --icon-compact: 12px;
@@ -234,48 +236,37 @@ button {
 .site-header.home-header {
   height: 70.5px;
 }
-.site-name {
-  font-size: 17.5px;
-  line-height: 28px;
+.site-name,
+.header-utility {
+  font-size: var(--body-regular);
+  line-height: var(--body-regular-leading);
   white-space: nowrap;
 }
 .header-utility {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  font-size: 14px;
-  line-height: 20px;
   font-weight: 400;
-  letter-spacing: 0;
-  color: var(--ink);
+  letter-spacing: -0.005em;
 }
 .prague-clock {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   color: var(--muted);
   white-space: nowrap;
 }
+.prague-clock time,
+.prague-temperature {
+  flex: none;
+}
 .prague-clock time {
-  width: 40px;
-  font-variant-numeric: tabular-nums;
   color: var(--ink);
 }
-.utility-actions {
+.prague-temperature {
+  min-height: 44px;
   display: flex;
   align-items: center;
-  gap: 8px;
 }
-.utility-actions > a {
-  width: 44px;
-  min-height: 44px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-}
-.utility-actions > a:hover {
-  background: var(--tag);
+.prague-temperature:hover {
+  color: var(--ink);
 }
 .identity-icon {
   display: inline-block;
@@ -312,38 +303,6 @@ button {
   background-color: currentColor;
   -webkit-mask: var(--icon-source) center / contain no-repeat;
   mask: var(--icon-source) center / contain no-repeat;
-}
-.copy-email {
-  position: relative;
-}
-.copy-email > button {
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 112px;
-  border-radius: var(--radius);
-  background: var(--tag);
-}
-.copy-email > button:hover {
-  background: var(--line);
-}
-.copy-error {
-  position: absolute;
-  right: 0;
-  top: 44px;
-  padding: 16px;
-  background: var(--surface);
-  box-shadow: var(--shadow-floating);
-  border: 0.5px solid var(--line);
-  z-index: 30;
-  width: 240px;
-  font-size: 14px;
-}
-.copy-error button {
-  display: block;
-  text-decoration: underline;
-  margin-top: 10px;
 }
 .button {
   display: inline-flex;
@@ -1338,10 +1297,6 @@ button {
   .page-grid {
     display: none;
   }
-  .prague-clock,
-  .utility-actions > a {
-    display: none;
-  }
   .home-introduction {
     display: flex;
     flex-direction: column;
@@ -1848,9 +1803,6 @@ h1 {
   line-height: 24px;
   flex: none;
 }
-.copy-email > button {
-  white-space: nowrap;
-}
 @starting-style {
   .recognition-popover:popover-open {
     opacity: 0;
@@ -1966,26 +1918,6 @@ html[data-history-restoring] .portfolio-shell *::after {
   min-height: 32px;
   white-space: nowrap;
 }
-.copy-label {
-  display: grid;
-}
-.copy-label > span {
-  grid-area: 1 / 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  transition: opacity 180ms ease-out;
-}
-.copy-success {
-  opacity: 0;
-}
-.copy-label[data-copied] .copy-default {
-  opacity: 0;
-}
-.copy-label[data-copied] .copy-success {
-  opacity: 1;
-}
 /* Draw the four absolute rules by height, keeping their subpixel width in the
    same paint path throughout. A composited clip makes these hairlines lighter
    during the draw, then darker when removed. Only the visible viewport draws;
@@ -2059,5 +1991,21 @@ html[data-history-restoring] .portfolio-shell *::after {
   .portfolio-shell *::before,
   .portfolio-shell *::after {
     animation: none !important;
+  }
+}
+
+@media (max-width: 359px) {
+  .prague-clock {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 12px;
+    row-gap: 0;
+    line-height: 24px;
+  }
+  .prague-clock > span {
+    grid-column: 1 / -1;
+  }
+  .prague-temperature {
+    min-height: 24px;
   }
 }

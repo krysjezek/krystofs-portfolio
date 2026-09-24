@@ -38,30 +38,20 @@ try {
     assert(response.ok(), icon.src);
     assert.match(response.headers()["content-type"], /image\/svg\+xml/);
   }
-  const compact = await page.locator(".header-utility .ui-icon").evaluateAll((nodes) => nodes.map((node) => {
-    const css = getComputedStyle(node);
-    const rect = node.getBoundingClientRect();
-    return { width: rect.width, height: rect.height, color: css.backgroundColor, labelColor: getComputedStyle(node.parentElement).color, hidden: node.getAttribute("aria-hidden") };
-  }));
-  assert.equal(compact.length, 2, "Header retains copy and success icons; location is text-only");
-  for (const icon of compact) {
-    assert.equal(icon.width, 12);
-    assert.equal(icon.height, 12);
-    assert.equal(icon.color, icon.labelColor);
-    assert.equal(icon.hidden, "true");
-  }
-  assert.equal(await page.locator('.contact-copy [data-ui-icon="email"]').evaluate((node) => node.getBoundingClientRect().width), 15);
-  assert.equal(await page.locator('.header-utility img.identity-icon').count(), 1, "Keep X identity artwork");
-  await page.locator(".copy-email > button").hover();
-  assert.equal(await page.locator(".cursor-hint").getAttribute("data-icon"), "copy");
-  const inverse = await page.locator('.cursor-hint [data-ui-icon="copy"]').evaluate((node) => ({
+  assert.equal(await page.locator('.header-utility .ui-icon, .header-utility .identity-icon').count(), 0, "Header is location, time and temperature only");
+  const email = page.locator('.contact-copy [data-ui-icon="email"]');
+  assert.equal(await email.evaluate(node => node.getBoundingClientRect().width), 15);
+  assert(await page.locator('.contact-copy img.identity-icon').count() > 0, "Keep inline X identity artwork");
+  await email.hover();
+  assert.equal(await page.locator('.cursor-hint').getAttribute('data-icon'), 'email');
+  const inverse = await page.locator('.cursor-hint [data-ui-icon="email"]').evaluate(node => ({
     width: node.getBoundingClientRect().width,
-    color: getComputedStyle(node).backgroundColor,
-    mask: getComputedStyle(node).maskImage,
+    color: getComputedStyle(node).color,
+    mask: getComputedStyle(node, '::before').maskImage,
   }));
   assert.equal(inverse.width, 12);
-  assert.equal(inverse.color, "rgb(255, 255, 255)");
-  assert(inverse.mask.includes("/icons/unicons/copy.svg"));
+  assert.equal(inverse.color, 'rgb(255, 255, 255)');
+  assert(inverse.mask.includes('/icons/unicons/email.svg'));
   await page.goto(new URL("/work/vizcom", page.url()).href);
   assert(await page.locator(".identity-icon").count() >= 5, "Keep case-study client and credit logos");
   assert.deepEqual(errors, []);

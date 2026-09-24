@@ -96,17 +96,6 @@ try {
   await page.keyboard.press("Escape");
   assert.equal(await hint.getAttribute("data-visible"), null);
 
-  const copy = page.locator(".copy-email > button");
-  await page.evaluate(() => Object.defineProperty(navigator, "clipboard", {
-    configurable: true, value: { writeText: async () => {} },
-  }));
-  await copy.hover();
-  assert.equal(await hint.getAttribute("data-icon"), "copy");
-  await copy.click();
-  await page.waitForFunction(() => document.querySelector(".cursor-hint").dataset.icon === "check");
-  assert.equal(await label.textContent(), "Email copied");
-  await waitForRest();
-  await page.screenshot({ path: join(output, "browser-copied.png") });
   await page.emulateMedia({ reducedMotion: "reduce" });
   await link.hover();
   assert.equal(await hint.evaluate((node) => node.getAnimations({ subtree: true }).length), 0);
@@ -122,7 +111,7 @@ try {
   assert.equal(await hint.evaluate((node) => getComputedStyle(node).display), "none");
   await page.screenshot({ path: join(output, "browser-mobile.png") });
   assert.deepEqual(errors, []);
-  console.log("PASS: compact tooltip, original typography, inverted surface, Unicons Line icons, press/cancel, rapid retarget, edges, clipboard, reduced motion and responsive states");
+  console.log("PASS: compact tooltip, original typography, inverted surface, Unicons Line icons, press/cancel, rapid retarget, edges, reduced motion and responsive states");
   console.log(`Screenshots: ${output}`);
 } finally {
   await context.close();

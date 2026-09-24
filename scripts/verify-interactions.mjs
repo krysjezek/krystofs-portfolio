@@ -160,44 +160,8 @@ try {
     "PASS: hover/press cancellation and fast-scroll arrivals without replay",
   );
 
-  // Clipboard can resolve or reject without moving the header or lying about success.
-  await page.evaluate(() =>
-    Object.defineProperty(navigator, "clipboard", {
-      configurable: true,
-      value: { writeText: async () => {} },
-    }),
-  );
-  const copy = page.locator(".copy-email > button");
-  const copyRect = await copy.boundingBox();
-  await copy.hover();
-  await copy.click();
-  await page
-    .getByRole("button", { name: "Email copied", exact: true })
-    .waitFor();
-  assert.deepEqual(await copy.boundingBox(), copyRect);
-  assert.equal(
-    await page.locator(".cursor-hint-label").textContent(),
-    "Email copied",
-  );
-  await page.evaluate(() =>
-    Object.defineProperty(navigator, "clipboard", {
-      configurable: true,
-      value: {
-        writeText: async () => {
-          throw new Error("denied");
-        },
-      },
-    }),
-  );
-  await copy.click();
-  await page.locator(".copy-error").waitFor();
-  assert.match(
-    await page.locator(".copy-error").textContent(),
-    /krystof@jezek.me/,
-  );
-  console.log(
-    "PASS: stable copy confirmation, stationary cursor update, denied clipboard",
-  );
+  assert.equal(await page.locator('.header-utility button').count(), 0);
+  assert.equal(await page.locator('.prague-clock').evaluate(n => getComputedStyle(n).fontSize), '17.5px');
 
   await tab("About").click();
   await settle();
