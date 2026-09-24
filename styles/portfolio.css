@@ -365,7 +365,7 @@ button {
 .airspace-selected-title { margin-block: -10px; }
 .airspace-chooser { display: flex; flex-wrap: wrap; gap: 5px; }
 .airspace-chooser p { flex-basis: 100%; }
-.airspace-map { --map-zoom: 1.35; position: relative; height: calc(200px * var(--map-zoom)); overflow: hidden; }
+.airspace-map { --map-zoom: 1.755; position: relative; height: calc(200px * var(--map-zoom)); overflow: hidden; }
 .airspace-map-space { position: absolute; left: 50%; top: 0; width: 432px; height: 200px; transform: translateX(-50%) scale(var(--map-zoom)); transform-origin: top center; }
 .airspace-geography { position: absolute; left: 0; top: 10px; max-width: none; }
 .airspace-runway { position: absolute; max-width: none; }
