@@ -297,11 +297,11 @@ button {
 .ui-icon[data-ui-icon="email"]::before {
   content: "";
   position: absolute;
-  width: calc(100% * 4 / 3);
-  height: calc(100% * 4 / 3);
+  width: 125%;
+  height: 125%;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -53.125%);
+  transform: translate(-50%, -50%);
   background-color: currentColor;
   -webkit-mask: var(--icon-source) center / contain no-repeat;
   mask: var(--icon-source) center / contain no-repeat;

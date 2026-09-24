@@ -66,7 +66,7 @@ NEXT_PUBLIC_CDN_URL=https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com
 - Shared navigation/contact: `components/portfolio/Header.jsx` and `Footer.jsx`.
 - Video: use `components/portfolio/Media.jsx` with `media.aspect`; read `docs/video-and-media.md`.
 - Animation: use CSS/WAAPI, honor reduced motion, and follow `docs/portfolio-2027-motion.md`.
-- Interface icons: use only the supplied Line Awesome pack through `components/portfolio/Icon.jsx`; follow `docs/portfolio-2027-icons.md`. Preserve identity logos and emojis.
+- Interface icons: use only the supplied Unicons Line pack through `components/portfolio/Icon.jsx`; follow `docs/portfolio-2027-icons.md`. Preserve identity logos and emojis.
 - Images: use `next/image` and truthful dimensions or an explicitly sized fill container.
 - Client boundaries: pages are client components only where browser APIs/interactions require them. Keep new static content server-renderable when practical.
 

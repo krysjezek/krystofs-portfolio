@@ -1,2 +1,2 @@
 # Keep exact Figma SVG exports and their provenance hashes stable on Windows.
-public/icons/line-awesome/*.svg text eol=lf
+public/icons/unicons/*.svg text eol=lf

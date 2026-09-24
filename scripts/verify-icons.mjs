@@ -14,8 +14,8 @@ for (const [name, icon] of Object.entries(icons)) {
   assert.match(svg, /<svg[^>]*width="24"[^>]*height="24"[^>]*viewBox="0 0 24 24"/);
   assert.match(svg, /<path\s/);
   assert(!/<(?:image|rect|script)\b/.test(svg), `${name}: artwork only, no opaque backplate or raster substitute`);
-  assert.equal(icon.library, "Line Awesome");
-  assert.match(icon.sourceNode, /^369:/);
+  assert.equal(icon.library, "Unicons Line");
+  assert.match(icon.sourceNode, /^408:/);
 }
 
 const files = await readdir(new URL("components/portfolio/", root));
@@ -61,11 +61,11 @@ try {
   }));
   assert.equal(inverse.width, 12);
   assert.equal(inverse.color, "rgb(255, 255, 255)");
-  assert(inverse.mask.includes("/icons/line-awesome/copy.svg"));
+  assert(inverse.mask.includes("/icons/unicons/copy.svg"));
   await page.goto(new URL("/work/vizcom", page.url()).href);
   assert(await page.locator(".identity-icon").count() >= 5, "Keep case-study client and credit logos");
   assert.deepEqual(errors, []);
-  console.log("PASS: six exact Line Awesome exports, source-only UI icons, shared sizes/colors, inverse state, and preserved identity marks");
+  console.log("PASS: six exact Unicons Line exports, source-only UI icons, shared sizes/colors, inverse state, and preserved identity marks");
 } finally {
   await browser.close();
 }

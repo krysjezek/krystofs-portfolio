@@ -70,7 +70,7 @@ Some current-site entries only provide YouTube/Vimeo embeds. The design now pres
 
 ## Icon provenance
 
-Interface/action icons follow the supplied Line Awesome [icon guidelines](portfolio-2027-icons.md). The identity artwork and emojis described here remain unchanged by that standard.
+Interface/action icons follow the supplied Unicons Line [icon guidelines](portfolio-2027-icons.md). The identity artwork and emojis described here remain unchanged by that standard.
 
 New reusable 15px icon components are on the Components page. Official-site favicons are used at their intended small display size; existing Outland, Vizcom and designer marks are reused.
 
