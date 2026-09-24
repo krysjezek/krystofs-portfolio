@@ -21,21 +21,30 @@ export default function AirspaceMap({ data, now, active, reduced, frozen, previe
       {aircraft.map(a => {
         const position = displayedPosition(a, now, reduced);
         const observed = project(a.lat, a.lon);
-        const marker = <span className="airspace-plane"><Image src={`/airspace/${a.track === null ? "unknown" : position.estimated ? "estimated" : "observed"}.svg`} width={15} height={15} alt="" unoptimized /></span>;
+        const marker = <span className="airspace-plane"><Image src={`/airspace/${a.track === null ? "unknown" : position.estimated ? "estimated" : "observed"}.svg`} width={24} height={24} alt="" unoptimized /></span>;
         const className = `airspace-marker${position.stale ? " is-stale" : ""}${selected === a.id ? " is-selected" : ""}`;
         return <div key={a.id}>
           <span className="airspace-observation" style={{ left: observed[0], top: observed[1] + 10 }} />
           {preview ? <span data-aircraft-id={a.id} className={className} aria-hidden="true">{marker}</span> :
             <button type="button" data-aircraft-id={a.id} className={className} aria-label={`Inspect ${a.callsign || a.id}`} aria-pressed={selected === a.id}
               onClick={event => {
-                // All overlapping targets remain reachable at any map zoom, even when a
-                // later DOM marker covers the intended aircraft.
-                const target = event.currentTarget.getBoundingClientRect();
-                const overlaps = aircraft.filter(other => {
-                  const box = ref.current.querySelector(`[data-aircraft-id="${CSS.escape(other.id)}"]`)?.getBoundingClientRect();
-                  return box && box.left < target.right && box.right > target.left && box.top < target.bottom && box.bottom > target.top;
-                });
-                onSelect(a.id, event.detail ? overlaps : [a]);
+                if (!event.detail) { onSelect(a.id, [a]); return; }
+                // Prefer the plane nearest the pointer, even when another plane's
+                // padded hit area is on top. Padding alone never opens the chooser.
+                const hits = aircraft.flatMap(other => {
+                  const node = ref.current.querySelector(`[data-aircraft-id="${CSS.escape(other.id)}"]`);
+                  const box = node?.getBoundingClientRect();
+                  if (!box || event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom) return [];
+                  const x = box.left + box.width / 2, y = box.top + box.height / 2;
+                  return [{ aircraft: other, node, x, y, distance: Math.hypot(event.clientX - x, event.clientY - y) }];
+                }).sort((one, two) => one.distance - two.distance);
+                const nearest = hits[0];
+                if (!nearest) { onSelect(a.id, [a]); return; }
+                // With 24px artwork, centers within 14px substantially overlap.
+                // A clearly closer icon still wins instead of asking the user.
+                const overlaps = hits.filter(hit => Math.hypot(hit.x - nearest.x, hit.y - nearest.y) <= 14 && hit.distance - nearest.distance <= 6);
+                if (overlaps.length === 1) nearest.node.focus({ preventScroll: true });
+                onSelect(nearest.aircraft.id, overlaps.map(hit => hit.aircraft));
               }}>{marker}</button>}
         </div>;
       })}

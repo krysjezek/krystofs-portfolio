@@ -25,7 +25,7 @@ async function setup(options = {}) {
     const now = await page.evaluate(() => Date.now());
     if (state.scenario === "error") return route.fulfill({ status: 503, json: { ok: false } });
     const observedAt = state.scenario === "old" ? state.stamp : now;
-    await route.fulfill({ json: { ok: true, fixture: true, delayed: state.scenario === "delayed", observedAt, aircraft: state.scenario === "empty" ? [] : [report(observedAt), report(observedAt, "abc002", { lon: 14.29 }), report(observedAt, "abc003", { lat: 49.91, lon: 14.55, track: null })] } });
+    await route.fulfill({ json: { ok: true, fixture: true, delayed: state.scenario === "delayed", observedAt, aircraft: state.scenario === "empty" ? [] : [report(observedAt), report(observedAt, "abc002", { lon: state.scenario === "separated" ? 14.34 : 14.29 }), report(observedAt, "abc003", { lat: 49.91, lon: 14.55, track: null })] } });
   });
   await page.route("**/api/airport-weather", route => {
     state.weather++;
@@ -62,7 +62,7 @@ try {
   });
   check(alignment < 1, "panel aligns with header inset without double-counting scrollbars");
   check(await panel.locator("img").evaluateAll(images => images.every(image => image.complete && image.naturalWidth > 0)), "all Figma SVG assets load");
-  check(await panel.locator(".airspace-plane img").first().evaluate(e => getComputedStyle(e).width === "15px" && getComputedStyle(e).height === "15px"), "15px aircraft artwork retains its square canvas");
+  check(await panel.locator(".airspace-plane img").first().evaluate(e => getComputedStyle(e).width === "24px" && getComputedStyle(e).height === "24px"), "larger 24px aircraft artwork retains its square canvas");
   check(state.traffic === requestCount, "preview to details reuses snapshot and polling cadence");
   check(await page.locator('[data-aircraft-id="abc001"]').evaluate(e => e.style.transform.includes("translate(")), "detail markers retain their projected positions");
   await page.locator('[data-aircraft-id="abc001"]').focus();
@@ -110,6 +110,22 @@ try {
   await page.clock.fastForward(400000);
   check(state.traffic === closedCount, "closed module stops polling");
   await context.close();
+
+  for (const touch of [false, true]) {
+    const { context, page, state, trigger, panel } = await setup({ reducedMotion: "reduce", viewport: { width: touch ? 390 : 1440, height: 1000 }, isMobile: touch, hasTouch: touch });
+    state.scenario = "separated";
+    if (touch) await trigger.tap(); else await trigger.click();
+    const first = page.locator('[data-aircraft-id="abc001"]');
+    await until(() => first.getAttribute("style").then(style => style?.includes("translate(")), "separated markers positioned");
+    const target = await first.boundingBox();
+    check(Math.abs(target.width - 44) < .1, "44px hit targets stay independent of map zoom");
+    const x = target.x + target.width / 2, y = target.y + target.height / 2;
+    check(await page.evaluate(({ x, y }) => document.elementFromPoint(x, y)?.closest('[data-aircraft-id]')?.dataset.aircraftId, { x, y }) === "abc002", "regression covers a nearby hit target obscuring the intended plane");
+    if (touch) await page.touchscreen.tap(x, y); else await page.mouse.click(x, y);
+    await until(() => first.getAttribute("aria-pressed").then(value => value === "true"), "nearest visible plane selected directly");
+    check(await panel.locator(".airspace-chooser").count() === 0, "nearby padded targets do not open the chooser");
+    await context.close();
+  }
 
   {
     const { context, page, state, trigger } = await setup();
