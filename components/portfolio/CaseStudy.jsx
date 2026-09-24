@@ -1,6 +1,8 @@
 import Header from "./Header";
 import Media from "./Media";
-import { ExternalLink, HomeLink, IdentityIcon } from "./Links";
+import { ExternalLink, IdentityIcon } from "./Links";
+import ContextPreview from "./ContextPreview";
+import previews from "@/content/context-previews.json";
 import Recommendations from "./Recommendations";
 import SourceNote from "./SourceNote";
 import JsonLd from "@/components/JsonLd";
@@ -130,15 +132,15 @@ export default function CaseStudy({ project }) {
                     ) : (
                       <span className="designer-mark" aria-hidden="true" />
                     )}
-                    {credit.href?.startsWith("https:") ? (
-                      <ExternalLink href={credit.href}>
-                        {credit.name}
-                      </ExternalLink>
-                    ) : credit.href ? (
-                      <HomeLink className="text-link">{credit.name}</HomeLink>
-                    ) : (
-                      <span>{credit.name}</span>
-                    )}
+                    <ContextPreview preview={{
+                      title: credit.name,
+                      detail: `${credit.role} on ${project.title}.`,
+                      href: credit.href,
+                      ...previews.people[credit.name],
+                      icon: (previews.people[credit.name]?.href || credit.href) ? "arrow" : "eye",
+                    }}>
+                      {previews.people[credit.name]?.title || credit.name}
+                    </ContextPreview>
                   </dd>
                 </div>
               ))}

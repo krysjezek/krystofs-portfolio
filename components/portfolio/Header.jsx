@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { HomeLink, RouteLink } from "./Links";
+import ContextPreview from "./ContextPreview";
 
 export default function Header({
   home = false,
@@ -9,7 +10,22 @@ export default function Header({
   backLabel = "Back",
 }) {
   const [time, setTime] = useState("");
-  const [temperature, setTemperature] = useState(null);
+  const [weather, setWeather] = useState(undefined);
+  const temperature = weather?.temperature ?? null;
+  const forecastTime = weather?.time && Number.isFinite(Date.parse(weather.time))
+    ? new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Prague", hour: "2-digit", minute: "2-digit" }).format(new Date(weather.time))
+    : null;
+  const weatherPreview = {
+    title: temperature === null ? "Weather in Prague" : `Prague · ${temperature}°C`,
+    detail: weather === undefined ? "Loading the hourly forecast."
+      : temperature === null ? "The forecast is temporarily unavailable."
+        : `${weather.condition || "Conditions unavailable"} · hourly forecast${forecastTime ? ` for ${forecastTime} (Prague time)` : ""}.`,
+    meta: "MET Norway · CC BY 4.0",
+    icon: "location",
+    href: "https://api.met.no/doc/License",
+    linkLabel: "Weather source & license",
+    accessibleLabel: temperature === null ? "Weather in Prague" : `Prague temperature: ${temperature} degrees Celsius`,
+  };
   useEffect(() => {
     if (!home) return;
     const controller = new AbortController();
@@ -18,10 +34,10 @@ export default function Header({
       try {
         const response = await fetch("/api/weather", { signal: controller.signal });
         if (!response.ok) throw new Error("Weather unavailable");
-        const weather = await response.json();
-        setTemperature(Number.isFinite(weather.temperature) ? weather.temperature : null);
+        const data = await response.json();
+        setWeather(Number.isFinite(data.temperature) ? data : null);
       } catch {
-        if (!controller.signal.aborted) setTemperature(null);
+        if (!controller.signal.aborted) setWeather(null);
       }
     }
     updateWeather();
@@ -59,20 +75,12 @@ export default function Header({
             <time aria-label={time ? `Time in Prague: ${time}` : "Prague time"}>
               {time || "—:—"}
             </time>
-            <a
+            <ContextPreview
               className="prague-temperature"
-              href="https://api.met.no/doc/License"
-              target="_blank"
-              rel="noopener noreferrer"
-              title={temperature === null
-                ? "Temperature unavailable · Weather data: MET Norway (CC BY 4.0)"
-                : "Hourly forecast · MET Norway (CC BY 4.0), rounded to whole degrees"}
-              aria-label={temperature === null
-                ? "Prague temperature unavailable. Weather source and license"
-                : `Prague temperature: ${temperature} degrees Celsius. Weather source and license`}
+              preview={weatherPreview}
             >
               {temperature === null ? "—" : temperature}°C
-            </a>
+            </ContextPreview>
           </span>
         </div>
       ) : (

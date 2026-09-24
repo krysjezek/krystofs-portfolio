@@ -13,7 +13,7 @@ const errors = [];
 page.on("pageerror", (error) => errors.push(error.message));
 const hint = page.locator(".cursor-hint");
 const surface = page.locator(".cursor-hint-surface");
-const label = page.locator(".cursor-hint-label");
+const label = hint.locator(".cursor-hint-label");
 const waitForRest = () => page.waitForTimeout(650);
 
 try {
@@ -30,12 +30,13 @@ try {
   assert.equal(entrance.labelChildren, 0, "Keep the original whole-label typography");
   await page.screenshot({ path: join(output, "browser-enter.png") });
   await waitForRest();
-  assert.equal(await label.textContent(), "Visit site");
+  assert.equal(await label.textContent(), "motionmockups.com");
+  assert.equal(await hint.locator(".context-detail").textContent(), "Opens in a new tab.");
   assert.equal(await hint.getAttribute("data-icon"), "arrow");
   assert.deepEqual(await surface.evaluate((node) => {
     const css = getComputedStyle(node);
     return [css.backgroundColor, css.color, css.borderRadius, node.offsetHeight, css.fontSize, css.lineHeight, css.letterSpacing];
-  }), ["rgb(5, 7, 10)", "rgb(255, 255, 255)", "3px", 24, "11px", "16px", "0.22px"]);
+  }), ["rgb(5, 7, 10)", "rgb(255, 255, 255)", "3px", 44, "11px", "16px", "0.22px"]);
   assert(await hint.locator('[data-ui-icon="arrow"]').evaluate(
     (node) => getComputedStyle(node).maskImage.includes("/icons/unicons/arrow.svg") && node.getBoundingClientRect().width === 12,
   ));

@@ -1,3 +1,5 @@
+import { currentForecast } from "@/lib/weather";
+
 const FORECAST_URL = "https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=50.0755&lon=14.4378";
 
 export async function GET() {
@@ -10,23 +12,7 @@ export async function GET() {
     });
     if (!response.ok) throw new Error("Weather provider unavailable");
     const forecast = await response.json();
-    if (forecast.properties?.meta?.units?.air_temperature !== "celsius") {
-      throw new Error("Unexpected temperature unit");
-    }
-    const now = Date.now();
-    const hours = forecast.properties.timeseries;
-    if (!Array.isArray(hours)) throw new Error("Missing forecast");
-    const closest = hours.reduce((best, hour) => {
-      const distance = Math.abs(Date.parse(hour.time) - now);
-      const temperature = hour.data?.instant?.details?.air_temperature;
-      if (!Number.isFinite(temperature) || !Number.isFinite(distance) || distance > 90 * 60 * 1000) return best;
-      return !best || distance < best.distance ? { distance, temperature, time: hour.time } : best;
-    }, null);
-    if (!closest) throw new Error("No current forecast");
-    return Response.json({
-      temperature: Math.round(closest.temperature),
-      time: closest.time,
-    }, {
+    return Response.json(currentForecast(forecast), {
       headers: {
         "Cache-Control": "public, max-age=300, s-maxage=600, stale-while-revalidate=300",
         "X-Robots-Tag": "noindex",

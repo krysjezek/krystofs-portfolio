@@ -1,9 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Icon from "./Icon";
-
-const icons = ["eye", "arrow", "email", "copy", "check"];
+import PreviewContent from "./PreviewContent";
 
 function actionIcon(label) {
   if (label === "View project") return "eye";
@@ -11,6 +9,27 @@ function actionIcon(label) {
   if (label === "Copy email") return "copy";
   if (label === "Email me") return "email";
   return "arrow";
+}
+
+function previewFor(target) {
+  const authored = target.hasAttribute("data-hint-detail") || target.hasAttribute("data-hint-meta");
+  const title = target.dataset.hint;
+  if (authored) return {
+    title, detail: target.dataset.hintDetail, meta: target.dataset.hintMeta,
+    icon: target.dataset.hintIcon || actionIcon(title), image: target.dataset.hintImage,
+  };
+  const href = target.getAttribute("href") || "";
+  if (href.startsWith("mailto:")) return {
+    title: href.slice(7).split("?")[0], detail: "Opens your email app.", icon: "email",
+  };
+  if (/^https?:/.test(href)) {
+    const url = new URL(href);
+    return {
+      title: url.host.replace(/^www\./, "") + (url.pathname === "/" ? "" : url.pathname.replace(/\/$/, "")),
+      detail: target.target === "_blank" ? "Opens in a new tab." : "Opens this website.", icon: "arrow",
+    };
+  }
+  return { title, icon: actionIcon(title) };
 }
 
 export default function CursorHint({ pathname }) {
@@ -21,6 +40,12 @@ export default function CursorHint({ pathname }) {
     const motion = matchMedia("(prefers-reduced-motion: reduce)");
     const node = hint.current;
     const label = node.querySelector(".cursor-hint-label");
+    const content = node.querySelector(".context-content");
+    const detail = node.querySelector(".context-detail");
+    const meta = node.querySelector(".context-meta");
+    const identity = node.querySelector(".context-image");
+    const icon = node.querySelector(".cursor-hint-icon");
+    let signature = "";
     let target = null;
     let pointer = null;
     let labelAnimation;
@@ -47,23 +72,32 @@ export default function CursorHint({ pathname }) {
 
     function updateLabel() {
       if (!target) return;
-      const text = target.dataset.hint;
-      if (label.textContent === text) return;
+      const preview = previewFor(target);
+      const nextSignature = JSON.stringify(preview);
+      if (signature === nextSignature) return;
+      signature = nextSignature;
       labelAnimation?.cancel();
       if (node.hasAttribute("data-visible") && !motion.matches) {
-        labelAnimation = label.animate([{ opacity: 0 }, { opacity: 1 }], {
+        labelAnimation = content.animate([{ opacity: 0 }, { opacity: 1 }], {
           duration: 150,
           easing: "ease-out",
         });
       }
-      label.textContent = text;
-      node.dataset.icon = actionIcon(text);
+      label.textContent = preview.title;
+      detail.textContent = preview.detail || "";
+      meta.textContent = preview.meta || "";
+      detail.hidden = !preview.detail;
+      meta.hidden = !preview.meta;
+      identity.hidden = preview.image !== "university";
+      icon.hidden = !identity.hidden;
+      content.toggleAttribute("data-rich", !!(preview.detail || preview.meta));
+      node.dataset.icon = preview.icon;
       position();
     }
 
     function move(event) {
       if (!fine.matches || event.pointerType === "touch") return hide();
-      if (document.querySelector("dialog[open]")) return hide();
+      if (document.querySelector("dialog[open], .context-popover:popover-open")) return hide();
       const next = event.target.closest("[data-hint]");
       if (!next?.dataset.hint || next.closest("[hidden], [inert]")) return hide(event);
       pointer = { x: event.clientX, y: event.clientY };
@@ -93,7 +127,7 @@ export default function CursorHint({ pathname }) {
         (!target.isConnected ||
           target.closest("[hidden], [inert]") ||
           !target.dataset.hint ||
-          document.querySelector("dialog[open]"))
+          document.querySelector("dialog[open], .context-popover:popover-open"))
       )
         hide();
       else updateLabel();
@@ -102,7 +136,7 @@ export default function CursorHint({ pathname }) {
       subtree: true,
       childList: true,
       attributes: true,
-      attributeFilter: ["data-hint", "open", "hidden", "inert"],
+      attributeFilter: ["data-hint", "data-hint-detail", "data-hint-meta", "data-hint-icon", "data-hint-image", "href", "open", "hidden", "inert"],
     });
     const dismissEvents = ["pointercancel", "keydown", "scroll", "pointerleave"];
     document.addEventListener("pointermove", move);
@@ -113,6 +147,7 @@ export default function CursorHint({ pathname }) {
     window.addEventListener("blur", hide);
     window.addEventListener("resize", hide);
     window.addEventListener("portfolio:navigate", hide);
+    window.addEventListener("portfolio:preview-open", hide);
     fine.addEventListener("change", hide);
     motion.addEventListener("change", hide);
     return () => {
@@ -126,6 +161,7 @@ export default function CursorHint({ pathname }) {
       window.removeEventListener("blur", hide);
       window.removeEventListener("resize", hide);
       window.removeEventListener("portfolio:navigate", hide);
+      window.removeEventListener("portfolio:preview-open", hide);
       fine.removeEventListener("change", hide);
       motion.removeEventListener("change", hide);
     };
@@ -135,17 +171,7 @@ export default function CursorHint({ pathname }) {
     <div ref={hint} className="cursor-hint" aria-hidden="true">
       <span className="cursor-hint-press">
         <span className="cursor-hint-surface">
-          <span className="cursor-hint-icon">
-            {icons.map((name) => (
-              <Icon
-                key={name}
-                name={name}
-                data-icon={name}
-                size="compact"
-              />
-            ))}
-          </span>
-          <span className="cursor-hint-label" />
+          <PreviewContent cursor />
         </span>
       </span>
     </div>

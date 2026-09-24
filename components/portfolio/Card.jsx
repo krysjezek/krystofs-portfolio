@@ -50,7 +50,8 @@ export default function Card({
     ...props,
     href: card.href,
     "aria-label": card.name,
-    "data-hint": card.href.startsWith("/") ? "View project" : "Visit site",
+    "data-hint": card.preview ? "Inside the project" : card.href.startsWith("/") ? "View project" : "Visit site",
+    ...(card.preview ? { "data-hint-detail": card.preview, "data-hint-icon": "eye", "data-hint-meta": card.category === "fun" ? "Personal project" : "Case study" } : {}),
     onClick: () => onOpen?.(card.id),
   };
   return card.href.startsWith("/") ? (

@@ -1,0 +1,69 @@
+{
+  "education": {
+    "title": "Czech Technical University",
+    "detail": "Software engineering · Sep 2022–Jun 2025",
+    "meta": "Prague, Czechia · fit.cvut.cz",
+    "image": "university",
+    "href": "https://fit.cvut.cz/en",
+    "linkLabel": "University website"
+  },
+  "people": {
+    "Kryštof Ježek": {
+      "detail": "Independent CGI designer based in Prague, working across 3D, motion and interactive projects.",
+      "href": "/",
+      "meta": "krystofjezek.com"
+    },
+    "Jordan Jenkins": {
+      "detail": "Outland collaborator working on brand identity and creative direction. Helped shape Vizcom’s visual identity.",
+      "href": "https://enteroutland.com/",
+      "meta": "Outland · enteroutland.com"
+    },
+    "Evan Place": {
+      "detail": "Designer and co-founder of Outland and TagTeam, working across brand, web and product design.",
+      "href": "https://evanplace.com/",
+      "meta": "Profile · evanplace.com"
+    },
+    "Dominik Smuchar": {
+      "detail": "Creative collaborator with Less and Better, credited with creative direction for the ValkaAI identity.",
+      "meta": "Less and Better · ValkaAI project credits"
+    },
+    "Petr Skovajsa": {
+      "detail": "Creative collaborator with Less and Better, credited with creative direction for the ValkaAI identity.",
+      "meta": "Less and Better · ValkaAI project credits"
+    },
+    "Mary Wu": {
+      "detail": "Project manager with a background in anthropology, public relations and visual effects, bringing creative teams and ambitious ideas together.",
+      "href": "https://monopo.london/team/mary-wu/",
+      "meta": "Profile · monopo london"
+    },
+    "Maud Dedrecked": {
+      "title": "Maud Dedecker",
+      "detail": "Creative producer whose experience spans films, integrated campaigns and digital content. Connects clients and creative teams at monopo london.",
+      "href": "https://monopo.london/team/maud-dedecker/",
+      "meta": "Profile · monopo london"
+    },
+    "Stella Grotti": {
+      "detail": "Art director and designer at monopo london exploring the overlap between graphic and interactive design, with a background in philosophy.",
+      "href": "https://monopo.london/team/stella-grotti/",
+      "meta": "Profile · monopo london"
+    },
+    "Luna Gooriah": {
+      "detail": "Designer and creative at monopo london, turning stories and cultural influences into visual ideas. Studied communications and art direction.",
+      "href": "https://monopo.london/team/luna-gooriah/",
+      "meta": "Profile · monopo london"
+    },
+    "Josef Talač": {
+      "detail": "3D and VFX collaborator on Barbour’s Icons in Quilting campaign, helping bring the CGI sequences to life.",
+      "meta": "Barbour · project credits"
+    },
+    "David Hájek": {
+      "detail": "3D animation and modeling collaborator on Barbour’s Icons in Quilting campaign.",
+      "meta": "Barbour · project credits"
+    },
+    "Artem Morozov": {
+      "detail": "CGI and fake-out-of-home content creator and founder of TMRZV Studio. Creative director on the VSX Sports Bra project.",
+      "href": "https://linktr.ee/tmrzv",
+      "meta": "Profile · TMRZV Studio"
+    }
+  }
+}

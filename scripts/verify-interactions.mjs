@@ -160,7 +160,8 @@ try {
     "PASS: hover/press cancellation and fast-scroll arrivals without replay",
   );
 
-  assert.equal(await page.locator('.header-utility button').count(), 0);
+  assert.equal(await page.locator('.prague-temperature').getAttribute('aria-haspopup'), 'dialog');
+  assert.equal(await page.locator('.context-popover:popover-open').count(), 0);
   assert.equal(await page.locator('.prague-clock').evaluate(n => getComputedStyle(n).fontSize), '17.5px');
 
   await tab("About").click();

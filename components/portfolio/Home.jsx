@@ -10,6 +10,8 @@ import Media from "./Media";
 import Recognition from "./Recognition";
 import { ExternalLink } from "./Links";
 import Icon from "./Icon";
+import ContextPreview from "./ContextPreview";
+import previews from "@/content/context-previews.json";
 
 const tabs = ["work", "fun", "about"];
 
@@ -85,7 +87,11 @@ function About() {
               {text
                 .split(/(Kryštof|software engineering)/)
                 .map((part, index) =>
-                  /^(Kryštof|software engineering)$/.test(part) ? (
+                  part === "software engineering" ? (
+                    <ContextPreview preview={previews.education} className="biography-emphasis" key={index}>
+                      {part}
+                    </ContextPreview>
+                  ) : part === "Kryštof" ? (
                     <span className="biography-emphasis" key={index}>
                       {part}
                     </span>

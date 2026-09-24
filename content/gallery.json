@@ -13,7 +13,8 @@
         "mobileAspect": 1.33333,
         "srcH265": "/videos/h265/portfolio-card-outland-vizcom-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-outland-vizcom-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-outland-vizcom-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/portfolio-card-outland-vizcom-v1-fallback.mp4",
+        "preview": "An animated 3D brand world for Vizcom, created with Outland."
       },
       {
         "id": "shelby",
@@ -38,7 +39,8 @@
         "mobileAspect": 0.75,
         "srcH265": "/videos/h265/portfolio-card-victoria-s-secret-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-victoria-s-secret-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-victoria-s-secret-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/portfolio-card-victoria-s-secret-v1-fallback.mp4",
+        "preview": "Product animation, cloth simulation and look development for the VSX Sports Bra."
       },
       {
         "id": "barbour",
@@ -52,7 +54,8 @@
         "mobileAspect": 0.75,
         "srcH265": "/videos/h265/portfolio-card-barbour-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-barbour-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-barbour-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/portfolio-card-barbour-v1-fallback.mp4",
+        "preview": "Oversized quilted jackets meet city streets in a CGI campaign for Barbour."
       },
       {
         "id": "motion-mockups",
@@ -110,7 +113,8 @@
         "mobileAspect": 1,
         "srcH265": "/videos/h265/portfolio-card-valkaai-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-valkaai-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-valkaai-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/portfolio-card-valkaai-v1-fallback.mp4",
+        "preview": "Glass, prisms and a mirrored butterfly brought to life with Less and Better."
       },
       {
         "id": "gusto",
@@ -231,7 +235,8 @@
         "mobileAspect": 1.33333,
         "srcH265": "/videos/h265/portfolio-card-the-mag-wrap-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-the-mag-wrap-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-the-mag-wrap-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/portfolio-card-the-mag-wrap-v1-fallback.mp4",
+        "preview": "A personal motion project exploring 3D and broadcast graphics."
       },
       {
         "id": "blender-addon",
@@ -256,7 +261,8 @@
         "mobileAspect": 1.33333,
         "srcH265": "/videos/h265/portfolio-card-chainer-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-chainer-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-chainer-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/portfolio-card-chainer-v1-fallback.mp4",
+        "preview": "A personal exploration of 3D product visuals, art direction and web design."
       },
       {
         "id": "relivear",
