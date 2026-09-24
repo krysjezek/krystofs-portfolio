@@ -332,10 +332,13 @@
         "category": "fun",
         "disciplines": "",
         "href": null,
-        "poster": "/images/portfolio-2027-gallery-fwa-logo-v2.webp",
+        "poster": "/videos/posters/portfolio-card-fwa-logo-v1.jpg",
         "aspect": 1,
         "tabletAspect": 1,
-        "mobileAspect": 1
+        "mobileAspect": 1,
+        "srcH265": "/videos/h265/portfolio-card-fwa-logo-v1-web.mp4",
+        "srcAv1": "/videos/av1/portfolio-card-fwa-logo-v1.webm",
+        "srcMp4": "/videos/h264/portfolio-card-fwa-logo-v1-fallback.mp4"
       },
       {
         "id": "vojta-zizka",

@@ -934,6 +934,101 @@
       "sourceArchive": "erem-instagram-carousel-02.mp4",
       "sourceSha256": "137bba6c1b23b6989d01046ac9cad2d9458295ef5e4084c85701eb7b76d84d2d",
       "displayPoster": "/videos/posters/portfolio-card-erem-v1.jpg"
+    },
+    {
+      "id": "fwa-logo",
+      "source": "outpost_award-post_fwa_1080_1x1.mp4",
+      "sourceVideo": {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1080,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "24/1"
+      },
+      "sourceDuration": 10.0,
+      "sourceSha256": "e522ed3986f888151305dda84a6b16a51a9b539c17538adf3dd9d3bed845e95c",
+      "prepared": "2026-09-24",
+      "widthCap": 1080,
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-fwa-logo-v1-web.mp4",
+          "bytes": 8409187,
+          "sha256": "b36eb2ea720433a488404797e7c218bf989f5111234cac26a9a7faa9552d8369",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "10.000000"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-fwa-logo-v1.webm",
+          "bytes": 7140160,
+          "sha256": "a7d86b0992f9796764423aa791ee059e82b4d80b0df9e6206683503736578483",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "10.000000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-fwa-logo-v1-fallback.mp4",
+          "bytes": 11552631,
+          "sha256": "be1d7f62c358bddfa63254ae55e4c8b19891e3663a49d42f709ec7a865f2d1f6",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "10.000000"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-fwa-logo-v1.jpg",
+          "bytes": 347280,
+          "sha256": "db47ea1b69b3bdc1ddf749a2a12c50ae21cb6319f4f8b8814d62331ea03061a2",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "displayPoster": "/videos/posters/portfolio-card-fwa-logo-v1.jpg"
     }
   ]
 }
