@@ -987,6 +987,37 @@ button {
 .case-outcome {
   padding-bottom: 35px;
 }
+.case-chapter + .case-chapter {
+  margin-top: 70px;
+}
+.case-chapter-intro {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom: 35px;
+}
+.case-chapter-intro > div {
+  padding-inline: var(--inset);
+}
+.case-chapter-intro h2 {
+  margin-top: 10px;
+  font: inherit;
+}
+.case-chapter-intro > div > p:not(.label) {
+  max-width: 560px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+.case-chapter-intro .external-link {
+  font: var(--type-label);
+  letter-spacing: var(--tracking-label);
+}
+@media (max-width: 1099px) {
+  .case-chapter-intro { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 599px) {
+  .case-chapter-intro { grid-template-columns: 1fr; gap: 28px; }
+  .case-chapter + .case-chapter { margin-top: 50px; }
+}
 .case-media {
   padding: 0 5px;
   display: flex;

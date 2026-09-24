@@ -19,7 +19,7 @@ const sources = [
   ],
 ];
 
-export default function SourceNote() {
+export default function SourceNote({ note } = {}) {
   const id = useId();
   const region = useRef(null);
   const trigger = useRef(null);
@@ -112,19 +112,20 @@ export default function SourceNote() {
           }
         }}
       >
-        About 407k views
+        {note?.figure || "About 407k views"}
       </button>
       {open && (
         <span
           ref={panel}
           id={id}
           role="dialog"
-          aria-label="Sources and calculation for Barbour views"
+          aria-label={note?.title || "Sources and calculation for Barbour views"}
           className="source-panel"
           style={position}
         >
           <span className="label">Source note</span>
-          <strong>Views across four city Reels</strong>
+          <strong>{note?.title || "Views across four city Reels"}</strong>
+          {note ? note.paragraphs.map((paragraph) => <span key={paragraph}>{paragraph}</span>) : <>
           <span>
             Combined public counters on Barbour’s Instagram. These describe the
             campaign’s audience, not the impact of my work alone.
@@ -133,13 +134,14 @@ export default function SourceNote() {
             69.8k + 100k + 163k + 74.6k ≈ 407k. Inputs are abbreviated public
             counters, not exact analytics.
           </span>
-          {sources.map(([label, url]) => (
+          </>}
+          {(note?.sources || sources).map(([label, url]) => (
             <ExternalLink key={url} href={url}>
               {label}
             </ExternalLink>
           ))}
           <span className="label">
-            Observed 23 September 2026 · Posts dated 30 September 2024
+            {note?.date || "Observed 23 September 2026 · Posts dated 30 September 2024"}
           </span>
           <button
             type="button"

@@ -6,6 +6,10 @@ export const WEBSITE_ID = `${SITE_URL}/#website`
 export const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com'
 
 const pageSocialImages = {
+  '/work/vojta-zizka': {
+    url: '/videos/posters/vojta-zizka-patreon-v1.jpg',
+    alt: 'Automated Patreon supporter credits and branded market charts for Vojta Zizka',
+  },
   '/work/outpost-fantasy': {
     url: '/videos/posters/outpost-fantasy-reel-v1.jpg',
     alt: 'Fantasy website showcase reel with custom 3D device mockups for Outpost Studio',
@@ -98,6 +102,12 @@ export const noIndex = {
 
 export const portfolioRoutes = [
   {
+    path: '/work/vojta-zizka',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+    lastModified: '2026-09-24',
+  },
+  {
     path: '/work/outpost-fantasy',
     priority: 0.8,
     changeFrequency: 'monthly',
@@ -179,6 +189,14 @@ export const portfolioRoutes = [
 
 export const featuredCreativeWorks = [
   {
+    name: 'Vojta Zizka — Automated Patreon "Thank You" & Market Charts',
+    path: '/work/vojta-zizka',
+    description: 'Two video-production tools for Vojta Zizka: automated Patreon supporter credits in After Effects and a web app for branded market charts.',
+    keywords: ['video production automation', 'After Effects scripting', 'Patreon credits', 'automated market charts', 'motion design'],
+    dateCreated: '2025',
+    datePublished: '2026-09-24',
+  },
+  {
     name: 'Outpost Fantasy',
     path: '/work/outpost-fantasy',
     description: '2D and 3D motion and custom device mockups for a reel showcasing Outpost Studio’s redesign of the Fantasy website.',
@@ -237,6 +255,26 @@ export const featuredCreativeWorks = [
 ]
 
 export const videoAssets = [
+  {
+    name: 'Vojta Zizka automated Patreon end screen',
+    page: '/work/vojta-zizka',
+    description: 'Animated supporter credits generated from a Patreon CSV using a custom After Effects script.',
+    thumbnailUrl: '/videos/posters/vojta-zizka-patreon-v1.jpg',
+    contentUrl: '/videos/h264/vojta-zizka-patreon-v1-fallback.mp4',
+    dateCreated: '2025',
+    uploadDate: '2026-09-24',
+    keywords: ['Patreon', 'After Effects scripting', 'automated credits', 'motion design'],
+  },
+  {
+    name: 'Vojta Zizka automated market charts',
+    page: '/work/vojta-zizka',
+    description: 'Branded market charts generated from current data and presented beneath a video conversation.',
+    thumbnailUrl: '/videos/posters/vojta-zizka-market-charts-v1.jpg',
+    contentUrl: '/videos/h264/vojta-zizka-market-charts-v1-fallback.mp4',
+    dateCreated: '2025',
+    uploadDate: '2026-09-24',
+    keywords: ['automated market charts', 'video production automation', 'motion design'],
+  },
   {
     name: 'Outpost Fantasy website showcase reel',
     page: '/work/outpost-fantasy',

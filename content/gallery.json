@@ -344,12 +344,15 @@
         "id": "vojta-zizka",
         "name": "Vojta Zizka",
         "category": "fun",
-        "disciplines": "",
-        "href": null,
-        "poster": "/images/portfolio-2027-gallery-vojta-zizka.webp",
+        "disciplines": "Automation, Motion",
+        "href": "/work/vojta-zizka",
+        "poster": "/videos/posters/vojta-zizka-patreon-v1.jpg",
         "aspect": 1.77778,
         "tabletAspect": 1.77778,
-        "mobileAspect": 1.77778
+        "mobileAspect": 1.77778,
+        "srcH265": "/videos/h265/vojta-zizka-patreon-v1-web.mp4",
+        "srcAv1": "/videos/av1/vojta-zizka-patreon-v1.webm",
+        "srcMp4": "/videos/h264/vojta-zizka-patreon-v1-fallback.mp4"
       },
       {
         "id": "cgi-karlin",

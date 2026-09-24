@@ -125,6 +125,7 @@ export default function Home() {
   const [tabstop, setTabstop] = useState("work");
   const tabRefs = useRef({});
   const restoring = useRef(null);
+  const requestedTab = useRef(undefined);
   const panels = useRef(null);
   const previousTab = useRef(active);
   const panelFrom = useRef({});
@@ -195,11 +196,15 @@ export default function Home() {
     };
   }, [active]);
   useEffect(() => {
-    let requested;
-    try {
-      requested = sessionStorage.getItem("portfolio:return-tab");
-      sessionStorage.removeItem("portfolio:return-tab");
-    } catch {}
+    // Keep the consumed intent stable when development Strict Mode replays effects.
+    if (requestedTab.current === undefined) {
+      requestedTab.current = null;
+      try {
+        requestedTab.current = sessionStorage.getItem("portfolio:return-tab");
+        sessionStorage.removeItem("portfolio:return-tab");
+      } catch {}
+    }
+    const requested = requestedTab.current;
     const nav = performance.getEntriesByType("navigation")[0];
     const saved = history.state?.portfolio;
     const tab = tabs.includes(requested)

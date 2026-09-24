@@ -228,12 +228,23 @@ try {
     "PASS: immediate route request, slow-route status, heading focus and browser Back",
   );
 
+  // A direct Fun case entry must survive Strict Mode's effect replay on return.
+  await page.goto(base + '/work/vojta-zizka');
+  await page.getByRole('link', { name: 'Back', exact: true }).click();
+  await page.waitForURL(base + '/');
+  await page.waitForFunction(() => document.querySelector('#tab-fun')?.getAttribute('aria-selected') === 'true');
+  await settle();
+  assert.equal(await tab('Fun').getAttribute('aria-selected'), 'true');
+  console.log('PASS: authored Back from a direct Fun case entry restores Fun');
+
   for (const route of [
     "/work/barbour",
     "/work/chainer",
     "/work/the-mag-w-rap-2025",
     "/work/the-vsx-sports-bra",
     "/work/valkaai",
+    "/work/outpost-fantasy",
+    "/work/vojta-zizka",
     "/services/3d-environments",
     "/services/mixed-reality",
     "/other/work",
@@ -261,7 +272,7 @@ try {
       route,
     );
   }
-  console.log("PASS: all six cases, services and other public page families");
+  console.log("PASS: current cases, services and other public page families");
 
   for (const width of [834, 390]) {
     await page.setViewportSize({ width, height: 844 });

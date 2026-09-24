@@ -39,7 +39,9 @@ function Narrative({ items, className = "", sourced = false }) {
           <h2 className="label">{item.label}</h2>
           {item.paragraphs.map((text, index) => (
             <p key={index}>
-              {sourced && text.startsWith("About 407k views") ? (
+              {typeof text !== "string" ? (
+                <>{text.before}<SourceNote note={text.note} />{text.after}</>
+              ) : sourced && text.startsWith("About 407k views") ? (
                 <>
                   <SourceNote />
                   {text.slice("About 407k views".length)}
@@ -86,10 +88,12 @@ export default function CaseStudy({ project }) {
             ))}
           </ul>
         </header>
-        <div className="case-hero">
-          <Media media={project.hero} priority sizes="calc(100vw - 10px)" />
-        </div>
-        <p className="film-caption label">{project.caption}</p>
+        {project.hero && <>
+          <div className="case-hero">
+            <Media media={project.hero} priority sizes="calc(100vw - 10px)" />
+          </div>
+          <p className="film-caption label">{project.caption}</p>
+        </>}
         {project.specs.length > 0 && (
           <Specifications
             items={project.specs}
@@ -97,6 +101,24 @@ export default function CaseStudy({ project }) {
           />
         )}
         <Narrative items={project.approach} />
+        {project.chapters?.map((chapter, index) => (
+          <section className="case-chapter" key={chapter.id} aria-labelledby={chapter.id}>
+            <div className="case-chapter-intro">
+              <div>
+                <p className="label">Project {String(index + 1).padStart(2, "0")}</p>
+                <h2 id={chapter.id}>{chapter.title}</h2>
+              </div>
+              <div>
+                <p>{chapter.description}</p>
+                <ExternalLink href={chapter.explainer} className="button"><span className="button-content">Watch {chapter.linkLabel} on YouTube</span></ExternalLink>
+              </div>
+            </div>
+            <div className="case-media">
+              <Media media={chapter.media} sizes="calc(100vw - 10px)" />
+            </div>
+            <p className="film-caption label">{chapter.caption}</p>
+          </section>
+        ))}
         {project.rows.length > 0 && (
           <div className="case-media">
             {project.rows.map((row, index) => (

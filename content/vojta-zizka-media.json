@@ -1,0 +1,204 @@
+{
+  "prepared": "2026-09-24",
+  "completed": "2025",
+  "note": "Completion year supplied by owner. Patreon source supplied in Downloads; market-chart source downloaded from the owner-supplied ProductionBot site and retained in Downloads. Preserve original dimensions, frame rate and duration; no audio or metadata in deliveries. First-frame posters. Card and Automated Patreon section share the Patreon delivery. No header media. The extracted credits still is prepared but not displayed.",
+  "encoding": {
+    "h264": "High, yuv420p, CRF 20, slow, faststart",
+    "h265": "Main, yuv420p, CRF 24, slow, hvc1, faststart",
+    "av1": "Main, yuv420p10le, CRF 30, SVT-AV1 preset 6"
+  },
+  "assets": [
+    {
+      "source": "https://cdn.prod.website-files.com/67acce06ef7df791d3b977a4%2F67c33a795d9fa1f918957701_patreon-end-screen-transcode.mp4",
+      "sourceFile": "67acce06ef7df791d3b977a4_67c33a795d9fa1f918957701_patreon-end-screen-transcode.mp4",
+      "sourceSha256": "61e2e902e1ce75b915541da456d9bbacf5b2ad61556ceb77782e51f0781ad383",
+      "files": [
+        {
+          "path": "/videos/h264/vojta-zizka-patreon-v1-fallback.mp4",
+          "bytes": 3039908,
+          "sha256": "f5bd37f079192bf040d9e2e29e97e4255fc9eed2941323bb2ad52f9d9b578028",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "12.933008"
+          }
+        },
+        {
+          "path": "/videos/h265/vojta-zizka-patreon-v1-web.mp4",
+          "bytes": 2485167,
+          "sha256": "0b232199d04e10fe1f24be0c1f0db3ee64c50ca11fba4af52d8dc82cb9f91d16",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "12.933008"
+          }
+        },
+        {
+          "path": "/videos/av1/vojta-zizka-patreon-v1.webm",
+          "bytes": 3340953,
+          "sha256": "97c4593fa8cbb9ed713fce732fd4cb1f60d1dae9a86a697de1b3bde0b84c8d4c",
+          "contentType": "video/webm",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "12.933000"
+          }
+        },
+        {
+          "path": "/videos/posters/vojta-zizka-patreon-v1.jpg",
+          "bytes": 50419,
+          "sha256": "0bb19e948fb19e7bb1476d4a63055eb5f87214cc2e2935e8c3ff3e15234d0605",
+          "contentType": "image/jpeg",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 720,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ]
+    },
+    {
+      "source": "https://cdn.prod.website-files.com/67acce06ef7df791d3b977a4%2F681f4517bd0281e5cfb7640b_Screen%20Recording%202025-05-10%20at%20141734-transcode.mp4",
+      "sourceFile": "vojta-market-charts-productionbot-source.mp4",
+      "sourceSha256": "6dbf0b4dd0b29c275f1d6f1893caa56b3b11ef14a62265aad41a50de139fe6c9",
+      "files": [
+        {
+          "path": "/videos/h264/vojta-zizka-market-charts-v1-fallback.mp4",
+          "bytes": 1300135,
+          "sha256": "2bd7dedfaa8af20e25bd89e11958717b94f0460342b0305a2547606382c3b280",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 716,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "8.366016"
+          }
+        },
+        {
+          "path": "/videos/h265/vojta-zizka-market-charts-v1-web.mp4",
+          "bytes": 791497,
+          "sha256": "71b70748eb326d415fd3e4ab3338195e0e052216bcb6dd57c7f1805fda4e5ec9",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 716,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "8.366667"
+          }
+        },
+        {
+          "path": "/videos/av1/vojta-zizka-market-charts-v1.webm",
+          "bytes": 946905,
+          "sha256": "d508c6c0a27a4db58465ccee774d61d107c1e799d4d5d15ea52055f61a37caf4",
+          "contentType": "video/webm",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 716,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "8.366000"
+          }
+        },
+        {
+          "path": "/videos/posters/vojta-zizka-market-charts-v1.jpg",
+          "bytes": 147015,
+          "sha256": "b686709dbae3c7b844825cc4a9c9a4798b835332d1565f9af416f25a61cf7056",
+          "contentType": "image/jpeg",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 1280,
+              "height": 716,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Patreon source clip at 6 seconds",
+      "files": [
+        {
+          "path": "/images/vojta-zizka-patreon-credits-v1.webp",
+          "width": 1280,
+          "height": 720,
+          "bytes": 113288,
+          "sha256": "cbeac64330241234f408269c0af5575771dd87aabb08c6f1f2b8e23cdab34bcf"
+        }
+      ]
+    }
+  ],
+  "explainers": [
+    {
+      "project": "Automated Patreon \"Thank You\"",
+      "url": "https://www.youtube.com/watch?v=lvB0eOoDT_E",
+      "title": "Patreon End Screen Automation - ProductionBot",
+      "published": "2025-05-09"
+    },
+    {
+      "project": "Automated Market Charts",
+      "url": "https://www.youtube.com/watch?v=uLsedHtZuzY",
+      "title": "Automated Creation of Market Charts - ProductionBot",
+      "published": "2025-05-10"
+    }
+  ]
+}

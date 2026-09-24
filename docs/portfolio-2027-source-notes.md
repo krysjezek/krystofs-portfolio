@@ -70,6 +70,12 @@ The canonical Result at desktop, tablet and mobile widths reads:
 
 The black first phrase opens the shared panel with the four separately clickable source rows, the arithmetic, rounding explanation and observation date. Neither the trigger nor source links are underlined. [Monopo’s project case study](https://monopo.london/work/barbour-icons-in-quilting/) corroborates the four-city campaign and two additional department-store films, but is not used as evidence of audience numbers.
 
+## Vojta Zizka automation estimates — 24 September 2026
+
+The owner identified both [ProductionBot](https://www.productionbot.xyz/) examples as Vojta Zizka projects and confirmed completion during 2025. The page reports Patreon end-screen preparation falling from 2 hours to 30 seconds per video and market-chart preparation from 1 hour to 2 minutes. These are attributed workflow estimates from the creator's own project description, not independently timed benchmarks. The source supplies neither a test protocol nor a measurement period; both limitations are stated in the inline Result notes. No percentage or audience-growth claim is inferred.
+
+The site's separate explainers were verified on YouTube: [Patreon End Screen Automation](https://www.youtube.com/watch?v=lvB0eOoDT_E), published 9 May 2025, and [Automated Creation of Market Charts](https://www.youtube.com/watch?v=uLsedHtZuzY), published 10 May 2025. These publication dates do not narrow the owner's whole-year completion date. Each project section links its own explainer; background-video previews stay self-hosted.
+
 ## Verification
 
 The panel and inline-figure variants reuse the current tokens and styles. A temporary padding change propagated through main panel → nested variant → Barbour screen instance, then the exact 16px token binding was restored. Review covers desktop default/open/focus, compact default/open, above/below placement, source links, paragraph alignment and panel bounds. No website accessibility or runtime playback claim is made by this Figma work.

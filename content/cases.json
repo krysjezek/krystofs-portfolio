@@ -1082,5 +1082,128 @@
         "icon": null
       }
     ]
+  },
+  {
+    "slug": "vojta-zizka",
+    "path": "/work/vojta-zizka",
+    "title": "Vojta Zizka",
+    "subtitle": "Automated Patreon \"Thank You\" & Market Charts",
+    "date": "Fun · 2025",
+    "category": "fun",
+    "overview": [
+      "I built two tools for Vojta Zizka that turn changing data into finished video graphics.",
+      "Patreon supporter lists become animated credits. Market data becomes branded charts, ready for the edit."
+    ],
+    "specs": [],
+    "tags": [
+      "Automation",
+      "Scripting",
+      "Motion Design"
+    ],
+    "hero": null,
+    "caption": "",
+    "approach": [
+      {
+        "label": "Brief",
+        "paragraphs": [
+          "I wanted to make recurring graphics easier to update while keeping their custom design. Supporter names and market data change with every episode."
+        ]
+      },
+      {
+        "label": "Process",
+        "paragraphs": [
+          "I connected structured data to reusable graphics: a Patreon CSV feeds an After Effects script, while a web app fetches market data for the charts."
+        ]
+      }
+    ],
+    "chapters": [
+      {
+        "id": "automated-patreon",
+        "title": "Automated Patreon \"Thank You\"",
+        "description": "A custom After Effects script turns the Patreon CSV export into an animated thank-you screen. I designed the graphics and animation around the supporter list.",
+        "explainer": "https://www.youtube.com/watch?v=lvB0eOoDT_E",
+        "linkLabel": "the Patreon explainer",
+        "media": {
+          "poster": "/videos/posters/vojta-zizka-patreon-v1.jpg",
+          "alt": "Vojta Zizka podcast end screen with animated Patreon supporter credits",
+          "aspect": 1.7777777777777777,
+          "srcH265": "/videos/h265/vojta-zizka-patreon-v1-web.mp4",
+          "srcAv1": "/videos/av1/vojta-zizka-patreon-v1.webm",
+          "srcMp4": "/videos/h264/vojta-zizka-patreon-v1-fallback.mp4"
+        },
+        "caption": "CSV to animated supporter credits"
+      },
+      {
+        "id": "automated-market-charts",
+        "title": "Automated Market Charts",
+        "description": "The web app fetches current market data and generates seven-day charts in the show’s visual style. The graphics can be exported as still images or animations.",
+        "explainer": "https://www.youtube.com/watch?v=uLsedHtZuzY",
+        "linkLabel": "the market charts explainer",
+        "media": {
+          "poster": "/videos/posters/vojta-zizka-market-charts-v1.jpg",
+          "alt": "Branded market charts beneath a Vojta Zizka video conversation",
+          "aspect": 1.7877094972067038,
+          "srcH265": "/videos/h265/vojta-zizka-market-charts-v1-web.mp4",
+          "srcAv1": "/videos/av1/vojta-zizka-market-charts-v1.webm",
+          "srcMp4": "/videos/h264/vojta-zizka-market-charts-v1-fallback.mp4"
+        },
+        "caption": "Automated charts in the finished video"
+      }
+    ],
+    "outcome": [
+      {
+        "label": "My role",
+        "paragraphs": [
+          "I built the automation, designed the graphics and created the motion. Both tools bring software development into the editing workflow."
+        ]
+      },
+      {
+        "label": "Result",
+        "paragraphs": [
+          "ProductionBot reports the following preparation times per video:",
+          {
+            "before": "",
+            "note": {
+              "figure": "Patreon: 2 hours to 30 seconds",
+              "title": "Patreon preparation time",
+              "paragraphs": [
+                "Reported time to prepare the supporter end screen before and after automation: 2 hours and 30 seconds.",
+                "These are ProductionBot’s published workflow estimates per video. The page does not provide a timed test protocol or measurement period; they are not an independent benchmark."
+              ],
+              "sources": [
+                [
+                  "ProductionBot project description",
+                  "https://www.productionbot.xyz/"
+                ]
+              ],
+              "date": "Source checked 24 September 2026"
+            },
+            "after": ""
+          },
+          {
+            "before": "",
+            "note": {
+              "figure": "Charts: 1 hour to 2 minutes",
+              "title": "Market chart preparation time",
+              "paragraphs": [
+                "Reported time to prepare the branded charts before and after automation: 1 hour and 2 minutes.",
+                "These are ProductionBot’s published workflow estimates per video. The page does not provide a timed test protocol or measurement period; they are not an independent benchmark."
+              ],
+              "sources": [
+                [
+                  "ProductionBot project description",
+                  "https://www.productionbot.xyz/"
+                ]
+              ],
+              "date": "Source checked 24 September 2026"
+            },
+            "after": ""
+          }
+        ]
+      }
+    ],
+    "media": [],
+    "rows": [],
+    "credits": []
   }
 ]
