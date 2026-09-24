@@ -8,7 +8,9 @@ Owner-approved scope, 24 September 2026: use only the supplied **Line Awesome** 
 
 ## Source and shape
 
-Use the linked `UI Icon / Line Awesome` component in Figma and `components/portfolio/Icon.jsx` on the web. Each curated Figma component contains an instance of the supplied source component. Preserve the native 24×24 canvas, proportions and path weight. Do not trim the canvas to the vector bounds, redraw a glyph, add a stroke, substitute another pack, or apply individual optical scale factors.
+Use the linked `UI Icon / Line Awesome` component in Figma and `components/portfolio/Icon.jsx` on the web. Each curated Figma component contains an instance of the supplied source component. Preserve the native SVG canvas, proportions and paths. Do not trim the exported canvas, redraw a glyph, add a stroke, substitute another pack, or adjust individual instances.
+
+The envelope has one shared optical correction, requested on 24 September 2026: scale its artwork uniformly by 4/3 and center its visible bounds inside the unchanged square slot. Its native 13.5-unit height becomes 18 units, matching the copy icon (9px visible height in a 12px slot; 11.25px in a 15px slot). In Figma the linked source is 32×32 at (-4, -5) inside the 24×24 component. On the web a pseudo-element applies the same correction to the original SVG mask. Allow its small horizontal overhang; never stretch the envelope vertically.
 
 The pack contains names with and without `-solid`; use the exact approved symbols below. The suffix alone is not a reason to switch to a different drawing. Transparent backplates and semantic color overrides belong to the component wrapper; source paths remain unchanged.
 

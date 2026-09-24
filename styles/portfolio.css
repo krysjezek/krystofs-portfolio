@@ -18,6 +18,10 @@
   --ink: #05070a;
   --muted: #707681;
   --line: #ededed;
+  --shadow-floating: 0 2px 4px rgb(5 7 10 / 4%),
+    0 8px 24px rgb(5 7 10 / 8%);
+  --shadow-modal: 0 4px 12px rgb(5 7 10 / 6%),
+    0 24px 64px rgb(5 7 10 / 12%);
   --inset: 35px;
   --gutter: 5px;
   --radius: 5px;
@@ -282,6 +286,26 @@ button {
   -webkit-mask: var(--icon-source) center / contain no-repeat;
   mask: var(--icon-source) center / contain no-repeat;
 }
+/* Match copy's visible height by scaling the envelope proportionally.
+   Keep its layout slot and center the artwork's visible bounds. */
+.ui-icon[data-ui-icon="email"] {
+  position: relative;
+  background: none;
+  -webkit-mask: none;
+  mask: none;
+}
+.ui-icon[data-ui-icon="email"]::before {
+  content: "";
+  position: absolute;
+  width: calc(100% * 4 / 3);
+  height: calc(100% * 4 / 3);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -53.125%);
+  background-color: currentColor;
+  -webkit-mask: var(--icon-source) center / contain no-repeat;
+  mask: var(--icon-source) center / contain no-repeat;
+}
 .copy-email {
   position: relative;
 }
@@ -302,7 +326,7 @@ button {
   top: 44px;
   padding: 16px;
   background: var(--surface);
-  box-shadow: 0 4px 24px #0002;
+  box-shadow: var(--shadow-floating);
   border: 0.5px solid var(--line);
   z-index: 30;
   width: 240px;
@@ -681,6 +705,7 @@ button {
   max-height: none;
   max-width: none;
   margin: auto;
+  box-shadow: var(--shadow-modal);
 }
 .recognition-dialog::backdrop {
   background: rgb(5 7 10 / 32%);
@@ -916,6 +941,7 @@ button {
   font-size: 12px;
   line-height: 18px;
   z-index: 80;
+  box-shadow: var(--shadow-floating);
 }
 .source-region {
   display: inline;
@@ -941,7 +967,7 @@ button {
   background: var(--surface);
   border: 0.5px solid var(--line);
   border-radius: 3px;
-  box-shadow: 0 8px 30px #0001;
+  box-shadow: var(--shadow-floating);
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0;
@@ -1368,6 +1394,7 @@ button {
     border: 0;
     border-radius: 0;
     margin: 0;
+    box-shadow: none;
   }
   .recognition-shell > header {
     padding: calc(20px + env(safe-area-inset-top)) 20px 20.5px;
@@ -1686,6 +1713,7 @@ button {
   border-radius: 3px;
   background: var(--ink);
   color: var(--surface);
+  box-shadow: var(--shadow-floating);
   transform: translateY(4px) scale(0.97);
   transition: transform 240ms var(--arrive);
 }
