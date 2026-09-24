@@ -7,6 +7,7 @@ interaction as an editable Figma study; it does not restore the website module.
 - [Desktop selected state](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=375-7432)
 - [Desktop hover preview](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=391-1504)
 - [Live / Simulation hover variants](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=402-9038)
+- [Shared status colour guidelines](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=411-2)
 - [Simulation hover screen](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=402-9043)
 - [Interaction contract](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=377-8525)
 - [Feedback states and editing guide](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=377-8584)
@@ -35,8 +36,8 @@ were reused without modification. A new directory entry links to the study.
 ## Design
 
 Reuse Roobert PRO text styles, existing semantic colours, 0.5px subtle dividers,
-3px control corners, Project Tag and Button / Secondary components. New colour
-or type tokens were unnecessary. Original Natural Earth geography and LKPR
+3px control corners, Project Tag and Button / Secondary components. Status colour
+tokens extend the neutral foundation; typography is unchanged. Original Natural Earth geography and LKPR
 runway geometry are editable vectors. Existing portfolio photos remain image
 fills in the contextual background screens.
 
@@ -48,7 +49,7 @@ fills in the contextual background screens.
 - Live uses a solid dot, report age, nearby aircraft count and radius, followed
   by LKPR temperature, wind and visibility. Simulation uses a hollow dot,
   “SIMULATION / DEMO DATA”, simulated count and coverage; weather is unavailable.
-  Both are 401.5px tall. Simulation has its own title without the word “Live”.
+  Both are 409.5px tall with 24px status badges. Simulation has its own title without the word “Live”.
 - A 12px plane replaces the location pin in the proposal's screen instances.
   The canonical header component remains unchanged.
 - Tablet 834: 440px panel, right inset 24px, top 80px.
@@ -72,6 +73,28 @@ The editable chain is Aircraft marker → Map → Panel → Screen. Component fa
 The panel exposes Traffic count and Feed status text properties. Source credits
 include real hyperlinks. The new page ID is `371:2`; the Start here directory
 entry is `382:2`.
+
+### Status colours
+
+Use vivid accents in small status badges, with an 8px marker, 3px corners,
+4px vertical / 8px horizontal padding and a pale tinted background. Keep the
+map, large surfaces, values and ordinary text neutral. Explicit labels and
+solid/hollow markers preserve meaning without colour. Live uses green;
+Simulation uses blue. The feedback guide uses amber for delayed/partial
+availability and red for unavailable traffic; empty and connecting stay neutral.
+
+| Role | Indicator | Text | Badge background | Text contrast |
+| --- | --- | --- | --- | --- |
+| Positive / Live | `#45CD62` | `#147A35` | `#E8FAED` | 5.00:1 |
+| Informative / Simulation | `#397CFB` | `#2459C7` | `#EBF2FF` | 5.61:1 |
+| Warning / delayed | `#F4AC20` | `#935700` | `#FFF4D9` | 5.33:1 |
+| Negative / unavailable | `#FA4D5B` | `#C62839` | `#FFF0F2` | 5.05:1 |
+
+Figma semantic tokens are `status/{positive,informative,warning,negative}` for
+readable foregrounds, with `-indicator` and `-surface` companions. They alias
+the corresponding `palette/{green,blue,amber,red}/{foreground,accent,surface}`
+primitives. The brighter badge treatment replaces the earlier muted palette.
+These tokens and specimens currently live in Figma; no website CSS changed.
 
 ## Behaviour contract
 
@@ -147,6 +170,11 @@ Resized the Live hover region and click target to cover the expanded card.
 The Simulation screen is a visual specimen; its detail navigation is unwired
 so it cannot misleadingly open a Live detail example. The existing Live detail
 connections are preserved. No simulation playback engine was implemented.
+
+Colour refinement: checked both linked screen instances, the comparison cards
+and the Foundations guide. Confirmed variable inheritance through the semantic
+alias into the screen, and measured text contrast against each badge tint.
+Expanded hover/click bounds match the 409.5px cards. Colour does not animate.
 
 Temporarily changed the observed marker's semantic colour and the selected
 desktop panel's radius. A subsequent read confirmed colour inheritance through
