@@ -201,27 +201,28 @@ try {
 
   await tab("About").click();
   await settle();
-  await page.getByRole("button", { name: "More info" }).click();
-  assert.equal(
-    await page.evaluate(() => document.activeElement.id),
-    "recognition-title",
-  );
-  await page.keyboard.press("Shift+Tab");
-  assert(
-    await page.evaluate(() =>
-      document.querySelector("dialog").contains(document.activeElement),
-    ),
-  );
-  await page.keyboard.press("Escape");
-  await page.locator("dialog").waitFor({ state: "hidden" });
-  assert.equal(
-    await page.evaluate(() => document.activeElement.textContent),
-    "More info",
-  );
+  const recognitionTrigger = page.getByRole("button", { name: "Mentions and credits", exact: true });
+  const recognition = page.locator(".recognition-popover");
+  await recognitionTrigger.click();
+  await page.waitForFunction(() => document.activeElement === document.querySelector(".recognition-popover h2"));
+  assert.equal(await recognition.locator("article").count(), 18);
+  assert.equal(await recognition.getAttribute("aria-modal"), null);
+  assert.equal(await recognition.getByText("View resume").count(), 0);
   assert.equal(await page.evaluate(() => document.body.style.overflow), "");
-  console.log(
-    "PASS: modal focus trap, fade dismissal, focus and scroll unlocking",
-  );
+  await page.keyboard.press("Shift+Tab");
+  assert(await recognitionTrigger.evaluate(n => n === document.activeElement), "Tab can leave the popover");
+  await page.keyboard.press("Escape");
+  await recognition.waitFor({ state: "hidden" });
+  assert(await recognitionTrigger.evaluate(n => n === document.activeElement));
+  await recognitionTrigger.click();
+  await recognition.getByRole("button", { name: "Close", exact: true }).click();
+  await recognition.waitFor({ state: "hidden" });
+  assert(await recognitionTrigger.evaluate(n => n === document.activeElement));
+  await recognitionTrigger.click();
+  await tab("Work").click();
+  await recognition.waitFor({ state: "hidden" });
+  assert.equal(await tab("Work").getAttribute("aria-selected"), "true");
+  console.log("PASS: non-modal recognition, all records, keyboard exit, Close/Escape and outside interaction");
 
   // Slow navigation retains context; native Link makes no blocking HEAD preflight.
   await tab("Work").click();
@@ -354,9 +355,9 @@ try {
     "none",
   );
   await touchPage.getByRole("tab", { name: "About", exact: true }).tap();
-  await touchPage.getByRole("button", { name: "More info" }).tap();
+  await touchPage.getByRole("button", { name: "Mentions and credits" }).tap();
   await touchPage.getByRole("button", { name: "Close", exact: true }).tap();
-  await touchPage.locator("dialog").waitFor({ state: "hidden" });
+  await touchPage.locator(".recognition-popover").waitFor({ state: "hidden" });
   await touch.close();
 
   const saver = await browser.newContext();

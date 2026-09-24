@@ -15,12 +15,12 @@ Figma effect styles are `Portfolio / Elevation / Floating` and
 `Portfolio / Elevation / Modal`. They match the CSS tokens in
 `styles/portfolio.css`.
 
-Apply Floating to cursor-hint surfaces, source-note popovers, copy-error messages
+Apply Floating to cursor-hint surfaces, mentions-and-credits and source-note popovers, copy-error messages
 and route-status messages. The Prague hover preview and desktop detail popover
 also use it in Figma; the airspace feature remains a design proposal.
-Apply Modal to bounded recognition dialogs on desktop and tablet. Retain the
-existing 32% ink backdrop. Full-screen mobile dialogs have no exterior shadow;
-bounded mobile popovers retain Floating.
+Reserve Modal for bounded modal dialogs. Mentions and credits now uses a compact
+non-modal popover at every breakpoint, with Floating and no scrim. Full-screen
+mobile dialogs have no exterior shadow; bounded mobile popovers retain Floating.
 
 Apply the effect once to the outer surface. Keep existing thin borders, radii,
 padding and hit areas. Ordinary cards, sections and buttons remain flat. Inset
@@ -31,7 +31,7 @@ unchanged.
 
 ## Verification
 
-- Browser review of the recognition modal, Barbour source note and cursor hint.
+- Browser review of the mentions-and-credits popover, Barbour source note and cursor hint.
 - Figma guide and linked airspace preview inspected; effect styles inherit into
   screen instances without adding a second shadow to the container.
 - Lint, production build, portfolio verification, tooltip checks and interaction

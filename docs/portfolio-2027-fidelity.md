@@ -42,3 +42,17 @@ Page-level horizontal dividers extend across the viewport beyond the 1440px canv
 The original gallery's 5px outer padding and 5px gaps put its gap centers off the page thirds. Work and Fun now use equal structural columns with half-gutters inside each column, retaining 5px outer insets and 5px between cards. Interior rules are centered on exact thirds (halves on tablet). This supersedes the unequal desktop Fun columns: card widths and masonry heights intentionally differ slightly from the original Figma measurements. The original fixture is retained; those desktop width/height comparisons are replaced by assertions for gutter width, line centering and structural column alignment. Mobile dimensions are unchanged.
 
 Work and Fun columns also finish at a shared bottom edge. On desktop and tablet, the final card fills any remaining height in its column, with cover cropping inside its frame. Earlier cards retain their authored ratios and all gaps stay 5px. Browser checks cover both galleries at nine widths from 390 to 1920px; the layout suite asserts matching card/media bottom edges and unchanged vertical gaps.
+
+## Follow-up: compact Mentions and credits popover
+
+Owner-approved on 24 September 2026: replace the recognition modal with a compact
+popover. Its trigger remains beneath the third, personal biography paragraph.
+The trigger and heading read "Mentions and credits"; the resume footer is removed.
+The label has 22px of space above it (8px margin plus 14px hit-area padding).
+
+The three updated mobile About fixture values were measured from edited Figma
+frame `25:448`, not recorded from application output: the frame is 2209.86px high,
+content `25:466` is 1633.86px high, and photos start at 900.5px. Desktop and tablet
+page/photo geometry is unchanged. Popover checks cover 320, 390, 834 and 1440px
+viewports, classic scrollbar gutters, bounds, header stability, all 18 records,
+dismissal and restored focus.

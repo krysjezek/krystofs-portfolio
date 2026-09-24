@@ -1,108 +1,96 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useId, useRef, useState } from "react";
 import records from "@/content/recognition.json";
-import { ExternalLink, RouteLink } from "./Links";
+import { ExternalLink } from "./Links";
 
 export default function Recognition() {
-  const dialog = useRef(null);
+  const id = useId();
+  const panel = useRef(null);
   const trigger = useRef(null);
   const heading = useRef(null);
   const [open, setOpen] = useState(false);
-  const [closing, setClosing] = useState(false);
-  const backdropPress = useRef(false);
-  function dismiss() {
-    setClosing(true);
-  }
-  useEffect(() => {
-    if (!closing) return;
-    const preference = matchMedia("(prefers-reduced-motion:reduce)");
-    function finish() {
-      setOpen(false);
-      setClosing(false);
-    }
-    const timer = setTimeout(finish, preference.matches ? 0 : 150);
-    preference.addEventListener("change", finish);
-    return () => {
-      clearTimeout(timer);
-      preference.removeEventListener("change", finish);
-    };
-  }, [closing]);
+
+  const positionPanel = useCallback(() => {
+    const anchor = trigger.current.getBoundingClientRect();
+    const inset = 16;
+    const gap = 10;
+    const viewport = document.documentElement.getBoundingClientRect();
+    const width = Math.min(420, viewport.width - inset * 2);
+    const below = innerHeight - anchor.bottom - gap - inset;
+    const above = anchor.top - gap - inset;
+    const useAbove = below < 480 && above > below;
+    const height = Math.max(0, Math.min(480, useAbove ? above : below));
+    Object.assign(panel.current.style, {
+      width: `${width}px`,
+      left: `${Math.max(inset, Math.min(anchor.left - viewport.left, viewport.width - width - inset))}px`,
+      top: `${useAbove ? anchor.top - gap - height : anchor.bottom + gap}px`,
+      height: `${height}px`,
+    });
+  }, []);
+
   useEffect(() => {
     if (!open) return;
-    const el = dialog.current;
-    const opener = trigger.current;
-    const previous = document.body.style.overflow;
-    el.showModal();
-    document.body.style.overflow = "hidden";
-    heading.current.focus();
+    function update(event) {
+      if (event.target instanceof Node && panel.current.contains(event.target)) return;
+      const anchor = trigger.current.getBoundingClientRect();
+      if (anchor.bottom < 0 || anchor.top > innerHeight) {
+        panel.current.hidePopover();
+      } else {
+        positionPanel();
+      }
+    }
+    window.addEventListener("resize", update);
+    window.addEventListener("scroll", update, true);
     return () => {
-      el.close();
-      document.body.style.overflow = previous;
-      opener?.focus({ preventScroll: true });
+      window.removeEventListener("resize", update);
+      window.removeEventListener("scroll", update, true);
     };
-  }, [open]);
+  }, [open, positionPanel]);
+
   return (
     <>
       <button
-        className="more-info"
+        className="recognition-trigger"
         ref={trigger}
         type="button"
+        popoverTarget={id}
         aria-haspopup="dialog"
-        onClick={() => setOpen(true)}
+        aria-expanded={open}
+        aria-controls={id}
       >
-        More info
+        Mentions and credits
       </button>
-      <dialog
-        ref={dialog}
-        className="recognition-dialog"
-        data-closing={closing || undefined}
-        aria-labelledby="recognition-title"
-        onKeyDown={(event) => {
-          if (event.key !== "Tab") return;
-          const controls = [
-            ...dialog.current.querySelectorAll(
-              'a[href],button:not([disabled]),[tabindex="0"]',
-            ),
-          ];
-          const first = controls[0];
-          const last = controls.at(-1);
-          if (
-            event.shiftKey &&
-            (document.activeElement === first ||
-              document.activeElement === heading.current)
-          ) {
-            event.preventDefault();
-            last?.focus();
-          } else if (!event.shiftKey && document.activeElement === last) {
-            event.preventDefault();
-            first?.focus();
-          }
+      <div
+        ref={panel}
+        id={id}
+        popover="auto"
+        role="dialog"
+        className="recognition-popover"
+        aria-labelledby={`${id}-title`}
+        onBeforeToggle={(event) => {
+          if (event.newState === "open") positionPanel();
         }}
-        onCancel={(event) => {
-          event.preventDefault();
-          dismiss();
-        }}
-        onPointerDown={(event) => {
-          backdropPress.current = event.target === dialog.current;
-        }}
-        onPointerCancel={() => {
-          backdropPress.current = false;
-        }}
-        onClick={(event) => {
-          if (backdropPress.current && event.target === dialog.current)
-            dismiss();
+        onToggle={(event) => {
+          const visible = event.newState === "open";
+          setOpen(visible);
+          if (visible) heading.current.focus({ preventScroll: true });
         }}
       >
         <div className="recognition-shell">
           <header>
             <div>
-              <h2 id="recognition-title" tabIndex={-1} ref={heading}>
-                Selected recognitions
+              <h2 id={`${id}-title`} tabIndex={-1} ref={heading}>
+                Mentions and credits
               </h2>
-              <p>Krystof Jezek · Designer + Engineer</p>
+              <p>{records.length} mentions &amp; credits</p>
             </div>
-            <button type="button" className="button" onClick={dismiss}>
+            <button
+              type="button"
+              className="button"
+              popoverTarget={id}
+              popoverTargetAction="hide"
+            >
               <span className="button-content">Close</span>
             </button>
           </header>
@@ -110,20 +98,17 @@ export default function Recognition() {
             {records.map((record) => (
               <article key={record.href}>
                 <p>{record.description}</p>
-                <ExternalLink href={record.href} icon={record.favicon}>
-                  {record.source}
-                </ExternalLink>
-                <time dateTime={record.dateTime}>{record.date}</time>
+                <div className="recognition-meta">
+                  <ExternalLink href={record.href} icon={record.favicon}>
+                    {record.source}
+                  </ExternalLink>
+                  <time dateTime={record.dateTime}>{record.date}</time>
+                </div>
               </article>
             ))}
           </div>
-          <footer>
-            <RouteLink href="/other/cv" onClick={() => setOpen(false)}>
-              View resume
-            </RouteLink>
-          </footer>
         </div>
-      </dialog>
+      </div>
     </>
   );
 }

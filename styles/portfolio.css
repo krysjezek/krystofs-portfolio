@@ -632,17 +632,18 @@ button {
 .biography p {
   color: var(--muted);
 }
-.more-info {
+.recognition-trigger {
   display: block;
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--muted);
   min-height: 44px;
-  padding: 5px 0 23px;
+  margin-top: 8px;
+  padding: 14px 0;
   text-align: left;
 }
-.more-info:hover {
+.recognition-trigger:hover {
   text-decoration: underline;
 }
 .about-photos {
@@ -702,21 +703,34 @@ button {
 .site-footer a:hover {
   color: var(--ink);
 }
-.recognition-dialog {
+.recognition-popover {
+  position: fixed;
+  inset: auto;
+  left: 16px;
+  top: 16px;
   padding: 0;
-  border: 0;
-  border-radius: 5px;
+  border: 0.5px solid var(--line);
+  border-radius: 3px;
   background: var(--surface);
   color: var(--ink);
-  width: min(1000px, calc(100vw - 48px));
-  height: min(850px, calc(100dvh - 48px));
-  max-height: none;
+  width: min(420px, calc(100vw - 32px));
+  height: min(480px, calc(100dvh - 32px));
+  max-height: calc(100dvh - 32px);
   max-width: none;
-  margin: auto;
-  box-shadow: var(--shadow-modal);
+  margin: 0;
+  overflow: hidden;
+  box-shadow: var(--shadow-floating);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms ease-out,
+    display 150ms allow-discrete, overlay 150ms allow-discrete;
 }
-.recognition-dialog::backdrop {
-  background: rgb(5 7 10 / 32%);
+.recognition-popover:popover-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.recognition-popover::backdrop {
+  background: transparent;
 }
 .recognition-shell {
   height: 100%;
@@ -725,56 +739,60 @@ button {
 }
 .recognition-shell > header {
   display: flex;
+  flex: none;
   justify-content: space-between;
-  gap: 24px;
-  padding: 35px 35px 35.5px;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
   box-shadow: inset 0 -0.5px var(--line);
+}
+.recognition-shell h2 {
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
 }
 .recognition-shell > header p {
   color: var(--muted);
-  margin-top: 5px;
-  font-size: 16px;
-  line-height: 24px;
-}
-.recognition-shell h2 {
-  outline: none;
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 16px;
 }
 .recognition-list {
   overflow: auto;
   overscroll-behavior: contain;
+  min-height: 0;
   flex: 1;
-  padding: 0 35px;
+  padding: 0 16px;
 }
 .recognition-list article {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 190px 120px;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   box-shadow: inset 0 -0.5px var(--line);
-  padding: 16px 0;
+  padding: 12px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+.recognition-list p {
+  color: var(--ink);
+}
+.recognition-meta {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
+  column-gap: 12px;
 }
-.recognition-list p,
-.recognition-list time {
+.recognition-meta time,
+.recognition-meta .external-link {
+  font-size: 12px;
+  line-height: 18px;
+}
+.recognition-meta time {
   color: var(--muted);
 }
-.recognition-list time {
-  font-size: 16px;
-  line-height: 24px;
-  text-align: right;
-}
-.recognition-list .external-link {
-  font-size: 16px;
-  line-height: 24px;
-}
-.recognition-shell > footer {
-  padding: 24.5px 35px 24px;
-  box-shadow: inset 0 0.5px var(--line);
-  color: var(--muted);
-}
-.recognition-shell > footer a {
-  display: inline-flex;
+.recognition-meta .external-link {
   min-height: 28px;
-  align-items: center;
 }
 .case-introduction {
   padding: 70px 0 35px;
@@ -1229,14 +1247,6 @@ button {
   .site-footer nav a {
     font-size: 12px;
   }
-  .recognition-list article {
-    grid-template-columns: minmax(0, 1fr) 170px 105px;
-    gap: 12px;
-  }
-  .recognition-list time,
-  .recognition-list .external-link {
-    font-size: 14px;
-  }
   .case-introduction {
     padding-top: 40px;
   }
@@ -1392,46 +1402,6 @@ button {
   }
   .site-footer nav a {
     font-size: 12px;
-  }
-  .recognition-dialog {
-    width: 100vw;
-    height: 100dvh;
-    border: 0;
-    border-radius: 0;
-    margin: 0;
-    box-shadow: none;
-  }
-  .recognition-shell > header {
-    padding: calc(20px + env(safe-area-inset-top)) 20px 20.5px;
-    gap: 10px;
-  }
-  .recognition-shell > header p {
-    margin-top: 5px;
-  }
-  .recognition-shell h2 {
-    font-size: 17.5px;
-    line-height: 28px;
-  }
-  .recognition-list {
-    padding: 0 20px;
-  }
-  .recognition-list article {
-    grid-template-columns: max-content 1fr;
-    padding: 16px 0;
-    gap: 10px 20px;
-  }
-  .recognition-list article > p {
-    grid-column: 1/3;
-  }
-  .recognition-list time {
-    text-align: left;
-  }
-  .recognition-list time,
-  .recognition-list .external-link {
-    font-size: 16px;
-  }
-  .recognition-shell > footer {
-    padding: 24.5px 20px calc(24px + env(safe-area-inset-bottom));
   }
   .case-introduction {
     gap: 24px;
@@ -1881,19 +1851,14 @@ h1 {
 .copy-email > button {
   white-space: nowrap;
 }
-.recognition-dialog[open],
-.recognition-dialog[open]::backdrop {
-  opacity: 1;
-  transition: opacity 150ms ease-out;
-}
-.recognition-dialog[data-closing],
-.recognition-dialog[data-closing]::backdrop {
-  opacity: 0;
-}
 @starting-style {
-  .recognition-dialog[open],
-  .recognition-dialog[open]::backdrop {
+  .recognition-popover:popover-open {
     opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .recognition-popover {
+    transition: none;
   }
 }
 /* CSS owns first paint. Do not restart these entrances after hydration. */

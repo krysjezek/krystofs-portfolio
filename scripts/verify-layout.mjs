@@ -246,41 +246,34 @@ try {
     }
   }
 
-  // Modal layout and keyboard dismissal remain usable after font/grid changes.
-  for (const width of [1440, 390]) {
+  // Owner-approved compact recognition popover, separate from page geometry.
+  for (const width of [1440, 834, 390, 320]) {
     await page.setViewportSize({ width, height: 844 });
     await page.goto(base);
-    const gutter = await page.evaluate(
-      () => innerWidth - document.body.clientWidth,
-    );
-    if (gutter)
-      await page.setViewportSize({ width: width + gutter, height: 844 });
     await page.getByRole("tab", { name: "About", exact: true }).click();
-    await page.getByRole("button", { name: "More info", exact: true }).click();
-    const dialog = page.getByRole("dialog");
-    assert.equal(await dialog.locator("article").count(), 18);
-    assert.equal(
-      (await dialog.boundingBox()).width,
-      width === 390 ? 390 : 1000,
-    );
-    assert.equal(
-      await dialog
-        .locator("header")
-        .evaluate((n) => n.getBoundingClientRect().height),
-      width === 390 ? 97.5 : 127.5,
-    );
+    const trigger = page.getByRole("button", { name: "Mentions and credits", exact: true });
+    await trigger.click();
+    const popover = page.getByRole("dialog");
+    assert.equal(await popover.locator("article").count(), 18);
+    const bounds = await popover.boundingBox();
+    assert.equal(bounds.width, await page.evaluate(() => Math.min(420, document.documentElement.getBoundingClientRect().width - 32)));
+    assert(bounds.height <= 480 && bounds.height > 200);
+    assert(bounds.x >= 0 && bounds.x + bounds.width <= width);
+    assert(bounds.y >= 16 && bounds.y + bounds.height <= 828);
+    assert((await popover.locator("header").boundingBox()).height >= 76);
+    const headerY = (await popover.locator("header").boundingBox()).y;
+    await popover.locator(".recognition-list").evaluate(n => { n.scrollTop = n.scrollHeight; });
+    assert.equal((await popover.locator("header").boundingBox()).y, headerY);
+    assert(await popover.locator("article").last().isVisible());
     await page.keyboard.press("Escape");
-    await dialog.waitFor({ state: "hidden" });
-    assert.equal(
-      await page.evaluate(() => document.activeElement.textContent),
-      "More info",
-    );
+    await popover.waitFor({ state: "hidden" });
+    assert(await trigger.evaluate(n => n === document.activeElement));
   }
 
   assert.deepEqual(errors, [], "Browser runtime errors");
   assert.deepEqual(failures, [], "Figma coordinate differences");
   console.log(
-    `PASS: ${reference.screens.length} Figma screens, ${checks} coordinate checks (±${reference.tolerance}px), stable tab layout, bottom-aligned footer, 1920px canvas, and recognition dialog.`,
+    `PASS: ${reference.screens.length} Figma screens, ${checks} coordinate checks (±${reference.tolerance}px), stable tab layout, bottom-aligned footer, 1920px canvas, and recognition popover.`,
   );
 } finally {
   await context.close();

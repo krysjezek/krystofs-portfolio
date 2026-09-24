@@ -187,7 +187,7 @@
           "x": 0,
           "y": 0,
           "width": 390,
-          "height": 2201.86
+          "height": 2209.86
         },
         {
           "selector": ".practice-copy",
@@ -203,13 +203,13 @@
           "x": 0,
           "y": 424.5,
           "width": 390,
-          "height": 1625.86
+          "height": 1633.86
         },
         {
           "selector": ".about-photos",
           "index": 0,
           "x": 0,
-          "y": 892.5,
+          "y": 900.5,
           "width": 390,
           "height": 1157.86
         }
