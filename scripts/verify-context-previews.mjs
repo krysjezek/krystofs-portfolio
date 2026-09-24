@@ -52,30 +52,36 @@ try {
   assert.equal(await hint.getAttribute("data-icon"), "email");
   const weather = page.locator('.prague-temperature');
   await hover(weather);
-  assert.match(await hint.textContent(), /Partly cloudy.*14:00.*MET Norway/s);
+  assert.match(await hint.textContent(), /Prague Live weather.*18°C • Partly Cloudy.*Source: MET Norway/s);
+  assert.doesNotMatch(await hint.textContent(), /forecast|Prague time|14:00/);
   await page.screenshot({ path: join(output, "weather-desktop.png") });
   await weather.click(); await pause();
-  assert.equal(await hint.getAttribute('data-visible'), null);
-  assert.match(await page.locator('.context-popover:popover-open').textContent(), /Weather source & license/);
-  await page.keyboard.press('Escape');
   assert.equal(await page.locator('.context-popover:popover-open').count(), 0);
+  assert.equal(await weather.evaluate(n => n.tagName), 'SPAN');
+  assert.equal(await weather.evaluate(n => getComputedStyle(n).cursor), 'default');
+  assert.equal(await hint.getAttribute('data-pressed'), null);
 
   await page.getByRole('tab', { name: 'About', exact: true }).click();
   await page.waitForTimeout(650);
-  const education = page.getByRole('button', { name: 'software engineering', exact: true });
+  const education = page.locator('.biography-emphasis[data-informational]');
   await hover(education);
   assert.match(await hint.textContent(), /Czech Technical University.*Sep 2022–Jun 2025/s);
   assert.deepEqual(await hint.locator('.context-image img').evaluate(n => [n.getBoundingClientRect().width, n.getBoundingClientRect().height]), [15,15]);
   await hint.locator('.context-image img').evaluate(n => n.decode());
   await page.screenshot({ path: join(output, 'education-desktop.png') });
+  await education.click(); await pause();
+  assert.equal(await page.locator('.context-popover:popover-open').count(), 0);
   await page.keyboard.press('Tab');
   assert.equal(await hint.getAttribute('data-visible'), null);
   await education.focus(); await page.keyboard.press('Enter'); await pause();
   const panel = page.locator('.context-popover:popover-open');
-  assert.match(await panel.textContent(), /University website/);
-  assert(await panel.evaluate(n => n.contains(document.activeElement)));
+  assert.equal(await panel.getAttribute('role'), 'tooltip');
+  assert.match(await panel.textContent(), /Czech Technical University/);
+  assert.equal(await panel.locator('a,button').count(), 0);
+  assert(await education.evaluate(n => n === document.activeElement));
   await page.keyboard.press('Escape');
   assert(await education.evaluate(n => n === document.activeElement));
+  assert.equal(await panel.count(), 0);
 
   await page.goto(`${base}/work/barbour`);
   const stella = page.getByRole('button', { name: 'Stella Grotti', exact: true });
@@ -87,6 +93,11 @@ try {
   await stella.click(); await pause();
   assert.equal(await panel.getByRole('link', { name: /View profile/ }).getAttribute('href'), 'https://monopo.london/team/stella-grotti/');
   await panel.getByRole('button', { name: 'Close' }).click();
+
+  const unlinked = page.locator('.context-trigger[data-hint="Josef Talač"]');
+  assert.equal(await unlinked.evaluate(n => n.tagName), 'SPAN');
+  await unlinked.click(); await pause();
+  assert.equal(await panel.count(), 0);
 
   // Long URLs wrap, dynamic text updates without moving the pointer, edge flip.
   const link = page.locator('.site-footer a[href^="https:"]').first();
@@ -105,14 +116,18 @@ try {
   const touch = await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
   const mobile = await touch.newPage();
   await mobile.goto(base); await mobile.getByRole('tab',{name:'About',exact:true}).click();
-  await mobile.getByRole('button',{name:'software engineering',exact:true}).tap();
+  await mobile.locator('.biography-emphasis[data-informational]').tap();
   await mobile.waitForTimeout(300);
   const mobilePanel = mobile.locator('.context-popover:popover-open');
-  assert.match(await mobilePanel.textContent(), /Czech Technical University/);
-  const mobileBounds=await mobilePanel.boundingBox();
-  assert(mobileBounds.x>=12 && mobileBounds.x+mobileBounds.width<=378 && mobileBounds.y>=12 && mobileBounds.y+mobileBounds.height<=832);
+  assert.equal(await mobilePanel.count(), 0, 'Informational text does not open on tap');
   assert.equal(await mobile.locator('.cursor-hint').evaluate(n=>getComputedStyle(n).display),'none');
   await mobile.screenshot({path:join(output,'education-mobile.png')});
+  await mobile.goto(`${base}/work/barbour`);
+  await mobile.getByRole('button',{name:'Stella Grotti',exact:true}).tap();
+  await mobile.waitForTimeout(300);
+  assert.match(await mobilePanel.textContent(), /philosophy/);
+  const mobileBounds=await mobilePanel.boundingBox();
+  assert(mobileBounds.x>=12 && mobileBounds.x+mobileBounds.width<=378 && mobileBounds.y>=12 && mobileBounds.y+mobileBounds.height<=832);
   await mobilePanel.getByRole('button',{name:'Close'}).tap();
   await touch.close();
 

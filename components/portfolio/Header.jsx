@@ -13,15 +13,14 @@ export default function Header({
   const [time, setTime] = useState("");
   const [weather, setWeather] = useState(undefined);
   const temperature = weather?.temperature ?? null;
-  const forecastTime = weather?.time && Number.isFinite(Date.parse(weather.time))
-    ? new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Prague", hour: "2-digit", minute: "2-digit" }).format(new Date(weather.time))
-    : null;
+  const condition = weather?.condition?.replace(/\b\w/g, (letter) => letter.toUpperCase());
   const weatherPreview = {
-    title: temperature === null ? "Weather in Prague" : `Prague · ${temperature}°C`,
-    detail: weather === undefined ? "Loading the hourly forecast."
-      : temperature === null ? "The forecast is temporarily unavailable."
-        : `${weather.condition || "Conditions unavailable"} · hourly forecast${forecastTime ? ` for ${forecastTime} (Prague time)` : ""}.`,
-    meta: "MET Norway · CC BY 4.0",
+    informational: true,
+    title: "Prague Live weather",
+    detail: weather === undefined ? "Loading weather."
+      : temperature === null ? "Weather is temporarily unavailable."
+        : `${temperature}°C • ${condition || "Conditions unavailable"}`,
+    meta: "Source: MET Norway · CC BY 4.0",
     icon: "location",
     href: "https://api.met.no/doc/License",
     linkLabel: "Weather source & license",

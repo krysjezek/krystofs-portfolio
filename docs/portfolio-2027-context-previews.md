@@ -14,11 +14,13 @@ Designed in Figma first, then implemented on 24 September 2026. Extends the comp
 | External / social link | Actual host and path, plus whether it opens a new tab. No duplicate “Visit site” or “Follow” label. Query strings are omitted from the display; the link destination is unchanged. |
 | Email link | Actual email address and email-app behavior. This remains a mailto action. |
 | Published project card | A short authored explanation of what is inside; identifies personal projects separately. Unlinked cards remain informational. |
-| Prague temperature | Temperature, readable condition, Prague forecast hour and MET Norway / CC BY 4.0 attribution. Explicit loading and unavailable states. |
+| Prague temperature | “Prague Live weather”, then temperature • condition, then source: MET Norway / CC BY 4.0. No forecast timestamp or forecast explanation in the tooltip. Explicit loading and unavailable states. |
 | About: software engineering | Czech Technical University, original university identity, subject, Sep 2022–Jun 2025 and Prague. No added graduation or grade claim. |
 | Case-study person | Short sourced bio or documented project context, plus source where available. Repeat the existing affiliation mark using the shared 15px Identity tile; no profile photos. |
 
-Weather, education and credits are dotted-underlined buttons. Hover previews the context; click, Enter, Space or touch opens an anchored native popover with the same information and a source link where available. Escape, Close or outside activation dismisses it. The cursor preview hides while a context popover is open. Opening focuses its content, and keyboard dismissal restores the trigger. Ordinary external links and email keep native navigation.
+Weather, education and credits without a destination are informational text with a normal cursor. Hover shows context; keyboard focus shows an anchored tooltip with no actions. Escape or blur dismisses it. Clicking or tapping does not pin anything. Their descriptions remain associated with the text for assistive technology. CTU and weather source URLs are provenance, not reasons to turn the text into a button.
+
+Credits with a destination retain a disclosure button: click, Enter, Space or touch opens the same information with its source link. Escape, Close or outside activation dismisses it. Opening focuses its content, and keyboard dismissal restores the trigger. The cursor preview hides while an anchored preview is open. Ordinary external links and email keep native navigation.
 
 ## Design system
 

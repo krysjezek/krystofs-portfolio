@@ -104,7 +104,7 @@ export default function CursorHint({ pathname }) {
 
     function press(event) {
       if (event.pointerType === "touch") return hide();
-      if (target && target.contains(event.target))
+      if (target && !target.hasAttribute("data-informational") && target.contains(event.target))
         node.setAttribute("data-pressed", "");
     }
 

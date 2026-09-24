@@ -21,7 +21,7 @@ On the website, use `IdentityTile` for brand, app, publication, social, universi
 
 Action symbols still use `Icon` from the supplied Unicons Line pack. Large artwork within case-study media is not an inline identity tile.
 
-The shared size remains fixed in cursor previews and pinned keyboard/touch previews. Escape, source links and Close actions retain their existing behavior. Pointer tracking updates position without rerendering on every pointer move; React updates preview content only when the target or its content changes.
+The shared size remains fixed in every preview. CTU, weather and credits without a destination use hover/focus information tooltips with no click action. Linked credit disclosures retain source links, Close and keyboard/touch activation. Pointer tracking updates position without rerendering on every pointer move; React updates preview content only when the target or its content changes.
 
 Tooltips hug their content up to 280px wide, including padding. Short destinations stay compact; longer bios wrap. The same sizing rule applies to pinned previews.
 

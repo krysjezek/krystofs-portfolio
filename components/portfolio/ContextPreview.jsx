@@ -5,8 +5,10 @@ import PreviewContent, { previewAttributes } from "./PreviewContent";
 import { RouteLink } from "./Links";
 import Icon from "./Icon";
 
-// Hover is a preview; activation pins the same information for every input type.
+// Information reveals on hover/focus; only actionable previews can be pinned.
 export default function ContextPreview({ preview, children, className = "" }) {
+  const informational = preview.informational || !preview.href;
+  const Trigger = informational ? "span" : "button";
   const id = useId();
   const trigger = useRef(null);
   const panel = useRef(null);
@@ -46,23 +48,33 @@ export default function ContextPreview({ preview, children, className = "" }) {
 
   return (
     <>
-      <button
+      <Trigger
         ref={trigger}
-        type="button"
+        type={informational ? undefined : "button"}
         className={`context-trigger ${className}`}
+        data-informational={informational ? "" : undefined}
         {...previewAttributes(preview)}
-        popoverTarget={id}
-        aria-haspopup="dialog"
-        aria-expanded={open}
-        aria-controls={id}
+        tabIndex={informational ? 0 : undefined}
+        popoverTarget={informational ? undefined : id}
+        aria-haspopup={informational ? undefined : "dialog"}
+        aria-expanded={informational ? undefined : open}
+        aria-controls={informational ? undefined : id}
+        aria-describedby={informational ? id : undefined}
         aria-label={preview.accessibleLabel}
-      >{children}</button>
+        onFocus={informational ? (event) => {
+          if (event.currentTarget.matches(":focus-visible")) panel.current.showPopover();
+        } : undefined}
+        onBlur={informational ? () => panel.current.hidePopover() : undefined}
+        onKeyDown={informational ? (event) => {
+          if (event.key === "Escape") panel.current.hidePopover();
+        } : undefined}
+      >{children}</Trigger>
       <span
         id={id}
         ref={panel}
-        popover="auto"
-        role="dialog"
-        aria-label={preview.title}
+        popover={informational ? "manual" : "auto"}
+        role={informational ? "tooltip" : "dialog"}
+        aria-label={informational ? undefined : preview.title}
         className="context-popover"
         onBeforeToggle={(event) => {
           if (event.newState === "open") window.dispatchEvent(new Event("portfolio:preview-open"));
@@ -72,17 +84,17 @@ export default function ContextPreview({ preview, children, className = "" }) {
           setOpen(visible);
           if (visible) {
             position();
-            heading.current.focus({ preventScroll: true });
+            if (!informational) heading.current.focus({ preventScroll: true });
           }
         }}
       >
-        <span tabIndex={-1} ref={heading} className="context-focus">
+        <span tabIndex={informational ? undefined : -1} ref={heading} className="context-focus">
           <PreviewContent preview={preview} />
         </span>
-        <span className="context-actions">
+        {!informational && <span className="context-actions">
           {link}
           <button type="button" popoverTarget={id} popoverTargetAction="hide">Close</button>
-        </span>
+        </span>}
       </span>
     </>
   );
