@@ -12,7 +12,7 @@ function actionIcon(label) {
 }
 
 function previewFor(target) {
-  const authored = target.hasAttribute("data-hint-detail") || target.hasAttribute("data-hint-meta");
+  const authored = target.hasAttribute("data-hint-detail") || target.hasAttribute("data-hint-meta") || target.hasAttribute("data-hint-icon");
   const title = target.dataset.hint;
   if (authored) return {
     title, detail: target.dataset.hintDetail, meta: target.dataset.hintMeta,
