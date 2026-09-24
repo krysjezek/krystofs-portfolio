@@ -1309,6 +1309,96 @@
         }
       ],
       "displayPoster": "/videos/posters/portfolio-card-renders-v1.jpg"
+    },
+    {
+      "id": "custom-mockups",
+      "name": "3D Worlds",
+      "prepared": "2026-09-24",
+      "sources": {
+        "srcH265": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/videos/h265/cgi-environments-web.mp4",
+        "srcAv1": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/videos/av1/cgi-environments.webm",
+        "srcMp4": "https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com/videos/h264/cgi-environments-fallback.mp4"
+      },
+      "preparation": "Reused the original 3D Worlds reel video streams without re-encoding; removed audio and metadata. Original 1080x1080 frames and 24 fps preserved. Card displays a centered 4:3 cover crop at every breakpoint. Poster generated from the first H.264 frame.",
+      "files": [
+        {
+          "role": "srcH265",
+          "path": "/videos/h265/portfolio-card-3d-worlds-v1-web.mp4",
+          "bytes": 3630072,
+          "sha256": "14a5a12c08c7343d325aa38ab9b0a5859724cf77c8a60db42d95f65d8ab31042",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "52.500000"
+          }
+        },
+        {
+          "role": "srcAv1",
+          "path": "/videos/av1/portfolio-card-3d-worlds-v1.webm",
+          "bytes": 5131370,
+          "sha256": "860749415a39dd852621a1a4a38a0dd703b036d4afba7fd81d0d81c179a1bffb",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "52.506000"
+          }
+        },
+        {
+          "role": "srcMp4",
+          "path": "/videos/h264/portfolio-card-3d-worlds-v1-fallback.mp4",
+          "bytes": 8731403,
+          "sha256": "4774cdf68828c62fc34ec23fcb2ae04e8559ecd1346ce6bf453123d0d14de0b4",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "52.500000"
+          }
+        },
+        {
+          "role": "poster",
+          "path": "/videos/posters/portfolio-card-3d-worlds-v1.jpg",
+          "bytes": 125518,
+          "sha256": "29e63174cb42f4c0670369af4362f98689f4648d354819c805aca00194163d3b",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "displayPoster": "/videos/posters/portfolio-card-3d-worlds-v1.jpg"
     }
   ]
 }

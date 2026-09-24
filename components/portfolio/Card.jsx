@@ -53,7 +53,7 @@ export default function Card({
     "data-hint": card.name,
     "data-hint-image": card.icon,
     "data-hint-icon": card.href.startsWith("/") ? "eye" : undefined,
-    "data-hint-meta": card.href.startsWith("/") ? "View case study" : undefined,
+    "data-hint-meta": card.hintMeta || (card.href.startsWith("/") ? "View case study" : undefined),
     onClick: () => onOpen?.(card.id),
   };
   return card.href.startsWith("/") ? (
