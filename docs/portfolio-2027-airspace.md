@@ -18,8 +18,10 @@ These settings live in Railway service configuration; new services no longer rea
 the retired `railway.json` format. The portfolio rollout is **staging only**.
 `AIRSPACE_SERVICE_URL` is configured for Vercel Preview and removed from Production.
 The staging deployment is
-[`krystofs-portfolio-f0gtxm252-krystofjezeks-projects.vercel.app`](https://krystofs-portfolio-f0gtxm252-krystofjezeks-projects.vercel.app)
-(`dpl_F89PRGJ8M64EXHjNkHm2BX9rxzFB`). Production promotion requires a separate
+[`krystofs-portfolio-la65bq8da-krystofjezeks-projects.vercel.app`](https://krystofs-portfolio-la65bq8da-krystofjezeks-projects.vercel.app)
+(`dpl_BjhgL5NapySUoAU7FcCryAXWA7Uh`). The map is zoomed to 135% in both preview and detail views, with matching map
+height, original label/icon sizes, and the full 30 km collection radius.
+Production promotion requires a separate
 explicit request. An earlier mistaken promotion was rolled back: both production
 domains resolve to the original `dpl_H1q5FoZSoocBHtKRBc9f2wVEgyRz` deployment.
 
