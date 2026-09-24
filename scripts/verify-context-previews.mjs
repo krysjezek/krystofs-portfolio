@@ -96,7 +96,14 @@ try {
     await logo.evaluate(n => n.decode());
     assert.deepEqual(await logo.evaluate(n => [n.width, n.height]), [15, 15]);
     assert.equal(await hint.locator('.cursor-hint-icon').isVisible(), false);
-    assert.equal(await hint.locator('.context-meta').textContent(), id === 'motion-mockups' ? 'View project' : 'View case study');
+    if (id === 'motion-mockups') {
+      assert.equal(await hint.locator('.cursor-hint-label').textContent(), 'motionmockups.com');
+      assert.equal(await hint.locator('.context-detail').textContent(), 'Opens in a new tab.');
+      assert.equal(await hint.locator('.context-meta').isVisible(), false);
+      await page.screenshot({ path: join(output, 'external-project-tooltip.png') });
+    } else {
+      assert.equal(await hint.locator('.context-meta').textContent(), 'View case study');
+    }
   }
   await page.screenshot({ path: join(output, 'valkaai-brand-tooltip.png') });
 

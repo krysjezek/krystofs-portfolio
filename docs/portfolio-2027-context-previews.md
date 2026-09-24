@@ -13,7 +13,7 @@ Designed in Figma first, then implemented on 24 September 2026. Extends the comp
 | --- | --- |
 | External / social link | Actual host and path, plus whether it opens a new tab. No duplicate “Visit site” or “Follow” label. Query strings are omitted from the display; the link destination is unchanged. |
 | Email link | Actual email address and email-app behavior. This remains a mailto action. |
-| Published project card | Project name and shared 15px brand Identity tile when available, otherwise the existing action icon; “View case study” in grey on the second line. No project description. External project links use “View project”. Unlinked cards remain informational. |
+| Published project card | Internal case studies show the project name and shared 15px brand Identity tile when available, otherwise the existing action icon; “View case study” in grey on the second line. External project cards reuse the external-link tooltip: destination URL and “Opens in a new tab.”, retaining the brand tile when available. No project description. Unlinked cards remain informational. |
 | Prague temperature | “Prague Live weather”, then temperature • condition, then source: MET Norway / CC BY 4.0. No forecast timestamp or forecast explanation in the tooltip. Explicit loading and unavailable states. |
 | About: software engineering | Czech Technical University, original university identity, subject, Sep 2022–Jun 2025 and Prague. No added graduation or grade claim. |
 | Case-study person | Short sourced bio or documented project context, plus source where available. Repeat the existing affiliation mark using the shared 15px Identity tile; no profile photos. |
