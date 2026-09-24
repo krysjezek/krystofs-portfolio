@@ -38,10 +38,10 @@ try {
     assert(response.ok(), icon.src);
     assert.match(response.headers()["content-type"], /image\/svg\+xml/);
   }
-  assert.equal(await page.locator('.header-utility .ui-icon, .header-utility .identity-icon').count(), 0, "Header is location, time and temperature only");
+  assert.equal(await page.locator('.header-utility .ui-icon:visible, .header-utility .identity-tile:visible').count(), 0, "Header is location, time and temperature only");
   const email = page.locator('.contact-copy [data-ui-icon="email"]');
   assert.equal(await email.evaluate(node => node.getBoundingClientRect().width), 15);
-  assert(await page.locator('.contact-copy img.identity-icon').count() > 0, "Keep inline X identity artwork");
+  assert(await page.locator('.contact-copy .identity-tile img').count() > 0, "Keep inline X identity artwork");
   await email.hover();
   assert.equal(await page.locator('.cursor-hint').getAttribute('data-icon'), 'email');
   const inverse = await page.locator('.cursor-hint [data-ui-icon="email"]').evaluate(node => ({
@@ -53,7 +53,7 @@ try {
   assert.equal(inverse.color, 'rgb(255, 255, 255)');
   assert(inverse.mask.includes('/icons/unicons/email.svg'));
   await page.goto(new URL("/work/vizcom", page.url()).href);
-  assert(await page.locator(".identity-icon").count() >= 5, "Keep case-study client and credit logos");
+  assert(await page.locator(".identity-tile").count() >= 5, "Keep case-study client and credit logos");
   assert.deepEqual(errors, []);
   console.log("PASS: six exact Unicons Line exports, source-only UI icons, shared sizes/colors, inverse state, and preserved identity marks");
 } finally {

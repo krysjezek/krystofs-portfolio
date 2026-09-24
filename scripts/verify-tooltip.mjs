@@ -37,9 +37,8 @@ try {
     const css = getComputedStyle(node);
     return [css.backgroundColor, css.color, css.borderRadius, node.offsetHeight, css.fontSize, css.lineHeight, css.letterSpacing];
   }), ["rgb(5, 7, 10)", "rgb(255, 255, 255)", "3px", 44, "11px", "16px", "0.22px"]);
-  assert(await hint.locator('[data-ui-icon="arrow"]').evaluate(
-    (node) => getComputedStyle(node).maskImage.includes("/icons/unicons/arrow.svg") && node.getBoundingClientRect().width === 12,
-  ));
+  assert.equal(await hint.locator('.identity-tile').evaluate(node => node.getBoundingClientRect().width), 15);
+  assert.equal(await hint.locator('.cursor-hint-icon').isVisible(), false);
   await page.screenshot({ path: join(output, "browser-rest.png") });
 
   // Moving within the same semantic link must never replay its entrance.

@@ -16,25 +16,25 @@ Designed in Figma first, then implemented on 24 September 2026. Extends the comp
 | Published project card | A short authored explanation of what is inside; identifies personal projects separately. Unlinked cards remain informational. |
 | Prague temperature | Temperature, readable condition, Prague forecast hour and MET Norway / CC BY 4.0 attribution. Explicit loading and unavailable states. |
 | About: software engineering | Czech Technical University, original university identity, subject, Sep 2022–Jun 2025 and Prague. No added graduation or grade claim. |
-| Case-study person | Short sourced bio or documented project context, plus source where available. Text only: no profile photos. Existing affiliation marks stay in the credit list. |
+| Case-study person | Short sourced bio or documented project context, plus source where available. Repeat the existing affiliation mark using the shared 15px Identity tile; no profile photos. |
 
 Weather, education and credits are dotted-underlined buttons. Hover previews the context; click, Enter, Space or touch opens an anchored native popover with the same information and a source link where available. Escape, Close or outside activation dismisses it. The cursor preview hides while a context popover is open. Opening focuses its content, and keyboard dismissal restores the trigger. Ordinary external links and email keep native navigation.
 
 ## Design system
 
-The original Cursor Tooltip set and four state IDs are retained. Added optional Detail, Source, Show detail, Show source, Image and Show image properties. Reuses existing tooltip color, padding, gap and radius variables, Portfolio / Label (Roobert PRO 11/16, 2% tracking), supplied Unicons Line and Floating elevation. Image swaps are for university identity, not people.
+The original Cursor Tooltip set and four state IDs are retained. Added optional Detail, Source, Show detail, Show source, Image and Show image properties. Reuses existing tooltip color, padding, gap and radius variables, Portfolio / Label (Roobert PRO 11/16, 2% tracking), supplied Unicons Line and Floating elevation. Image swaps use the shared [Identity tile](portfolio-2027-identity-tiles.md) for brands, apps, schools and affiliations.
 
-Compact height remains 24px; rich previews are 280px wide with content-driven height, 260px content width, 4px vertical gap and original 4px/10px padding. University logo is 32×32 with contain fit. Source is white at 75% opacity. Wrapping never truncates a long URL. Native popovers add 44px source/Close hit areas.
+Compact height remains 24px. All previews hug their content up to a 280px outer maximum, with content-driven height, 4px vertical gap and original 4px/10px padding. Every identity logo is 15×15 with contain fit and a 3px radius, including the university. Source is white at 75% opacity. Wrapping never truncates a long URL. Native popovers also hug their content and add 44px source/Close hit areas.
 
 Original 160ms fade, 240ms rise/press and 150ms whole-content update remain. Position follows the pointer immediately, flips at viewport edges and keeps a 12px inset. Touch/narrow screens hide only the cursor decoration. Reduced motion changes states instantly. Native pointer stays visible.
 
-Figma propagation was verified by temporarily changing the inline-padding semantic alias from dimension/10 to dimension/20: the main, education specimen and About screen instance all updated (rich width 280 → 300). Restored the exact original alias and re-read all three at 10px / 280px. Actual examples, screen and anchored-state renders were inspected. Figma scenes illustrate states; free pointer tracking and data fetching are verified in the browser.
+Figma padding propagation was verified before the content-hugging refinement; the original 10px alias was restored. The shared identity radius also passed a main-to-nested-instance propagation probe and was restored to 3px. Actual examples, screen and anchored-state renders were inspected. Figma scenes illustrate states; free pointer tracking and data fetching are verified in the browser.
 
 ## Sources and content ownership
 
 `content/context-previews.json` owns education and person context. `content/gallery.json` owns project preview copy. Do not manufacture personal history for people without a verified biography. Use the explicitly labelled project-credit summary until a better source is supplied.
 
-Education: `checkpoint/pre-rebuild-2026-09-23:app/page.jsx` lists CTU, Software Engineering, 22–25 and `/images/cvutlogo-2.png`. The archived `app/other/cv/page.jsx` gives Sep 2022–Jun 2025 and Prague. Existing 704×704 PNG is reused from the published CDN; inspected with ffprobe and rendered at 32px. No new media upload or conversion was needed.
+Education: `checkpoint/pre-rebuild-2026-09-23:app/page.jsx` lists CTU, Software Engineering, 22–25 and `/images/cvutlogo-2.png`. The archived `app/other/cv/page.jsx` gives Sep 2022–Jun 2025 and Prague. Existing 704×704 PNG is reused from the published CDN; inspected with ffprobe and rendered in the shared 15px tile. No new media upload or conversion was needed.
 
 Person sources inspected 24 September 2026:
 

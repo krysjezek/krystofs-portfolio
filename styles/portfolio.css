@@ -34,6 +34,9 @@
   --icon-compact: 12px;
   --icon-inline: 15px;
   --icon-gap: 5px;
+  --identity-size: 15px;
+  --identity-radius: 3px;
+  --identity-surface: #fff;
   --tooltip-surface: var(--ink);
   --tooltip-ink: var(--surface);
   --tooltip-padding: 10px;
@@ -399,12 +402,19 @@ button {
 }
 @media (prefers-reduced-motion: reduce) { .airspace-panel { animation: none; } }
 @media print { .airspace-layer { display: none; } }
-.identity-icon {
+.identity-tile {
+  position: relative;
   display: inline-block;
-  object-fit: contain;
+  width: var(--identity-size);
+  height: var(--identity-size);
+  overflow: hidden;
+  border-radius: var(--identity-radius);
+  background: var(--identity-surface);
   flex: none;
   vertical-align: -1px;
 }
+.identity-tile[data-designer] { background: #a4f683; }
+.identity-tile img { object-fit: contain; }
 .ui-icon {
   display: inline-block;
   width: var(--icon-size);
@@ -465,8 +475,8 @@ button {
   white-space: nowrap;
   color: var(--ink);
 }
-.external-link > .identity-icon {
-  margin-right: 5px;
+.external-link > .identity-tile {
+  margin-right: var(--icon-gap);
 }
 .external-arrow {
   display: inline-flex;
@@ -1016,13 +1026,6 @@ button {
   display: flex;
   align-items: center;
   gap: 5px;
-}
-.designer-mark {
-  width: 15px;
-  height: 15px;
-  border-radius: 3px;
-  background: #a4f683;
-  flex: none;
 }
 .recommendations {
   display: grid;
@@ -1818,9 +1821,6 @@ button {
   overflow-wrap: anywhere;
   text-align: left;
 }
-.context-content[data-rich] {
-  width: 260px;
-}
 .context-heading {
   display: flex;
   gap: var(--tooltip-gap);
@@ -1828,17 +1828,6 @@ button {
 }
 .cursor-hint-label {
   min-width: 0;
-}
-.context-image {
-  flex: none;
-  width: 32px;
-  height: 32px;
-}
-.context-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 .context-content [hidden] {
   display: none !important;
@@ -1868,8 +1857,8 @@ button {
   margin: 0;
   border: 0;
   padding: var(--tooltip-padding-block) var(--tooltip-padding);
-  width: 280px;
-  max-width: calc(100vw - 48px);
+  width: max-content;
+  max-width: min(280px, calc(100vw - 48px));
   max-height: calc(100dvh - 24px);
   overflow-y: auto;
   border-radius: var(--tooltip-radius);

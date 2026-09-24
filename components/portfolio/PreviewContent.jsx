@@ -1,6 +1,5 @@
-import Image from "next/image";
 import Icon from "./Icon";
-import { mediaUrl } from "@/lib/media";
+import IdentityTile from "./IdentityTile";
 
 export const previewIcons = ["eye", "arrow", "email", "copy", "check", "location"];
 
@@ -18,9 +17,7 @@ export default function PreviewContent({ preview = {}, cursor = false }) {
   return (
     <span className="context-content" data-rich={preview.detail || preview.meta ? "" : undefined}>
       <span className="context-heading">
-        <span className="context-image" hidden={preview.image !== "university"}>
-          <Image src={mediaUrl("/images/cvutlogo-2.png")} width={704} height={704} sizes="32px" alt="" />
-        </span>
+        {preview.image && <IdentityTile src={preview.image} className="context-image" />}
         <span className="cursor-hint-icon" hidden={!!preview.image}>
           {cursor ? previewIcons.map((name) => <Icon key={name} name={name} data-icon={name} size="compact" />) : <Icon name={preview.icon || "eye"} size="compact" />}
         </span>

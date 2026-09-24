@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Media from "./Media";
-import { ExternalLink, IdentityIcon } from "./Links";
+import { ExternalLink } from "./Links";
+import IdentityTile from "./IdentityTile";
 import ContextPreview from "./ContextPreview";
 import previews from "@/content/context-previews.json";
 import Recommendations from "./Recommendations";
@@ -127,17 +128,14 @@ export default function CaseStudy({ project }) {
                 <div key={index}>
                   <dt>{credit.role}</dt>
                   <dd>
-                    {credit.icon ? (
-                      <IdentityIcon src={credit.icon} />
-                    ) : (
-                      <span className="designer-mark" aria-hidden="true" />
-                    )}
+                    <IdentityTile src={credit.icon || "designer"} />
                     <ContextPreview preview={{
                       title: credit.name,
                       detail: `${credit.role} on ${project.title}.`,
                       href: credit.href,
                       ...previews.people[credit.name],
                       icon: (previews.people[credit.name]?.href || credit.href) ? "arrow" : "eye",
+                      image: credit.icon || "designer",
                     }}>
                       {previews.people[credit.name]?.title || credit.name}
                     </ContextPreview>

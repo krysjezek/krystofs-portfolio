@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import PreviewContent from "./PreviewContent";
 
 function actionIcon(label) {
@@ -27,6 +27,7 @@ function previewFor(target) {
     return {
       title: url.host.replace(/^www\./, "") + (url.pathname === "/" ? "" : url.pathname.replace(/\/$/, "")),
       detail: target.target === "_blank" ? "Opens in a new tab." : "Opens this website.", icon: "arrow",
+      image: target.dataset.hintImage,
     };
   }
   return { title, icon: actionIcon(title) };
@@ -34,17 +35,16 @@ function previewFor(target) {
 
 export default function CursorHint({ pathname }) {
   const hint = useRef(null);
+  const reposition = useRef(null);
+  const [preview, setPreview] = useState({});
+
+  useLayoutEffect(() => { reposition.current?.(); }, [preview]);
 
   useEffect(() => {
     const fine = matchMedia("(hover:hover) and (pointer:fine)");
     const motion = matchMedia("(prefers-reduced-motion: reduce)");
     const node = hint.current;
-    const label = node.querySelector(".cursor-hint-label");
     const content = node.querySelector(".context-content");
-    const detail = node.querySelector(".context-detail");
-    const meta = node.querySelector(".context-meta");
-    const identity = node.querySelector(".context-image");
-    const icon = node.querySelector(".cursor-hint-icon");
     let signature = "";
     let target = null;
     let pointer = null;
@@ -83,16 +83,7 @@ export default function CursorHint({ pathname }) {
           easing: "ease-out",
         });
       }
-      label.textContent = preview.title;
-      detail.textContent = preview.detail || "";
-      meta.textContent = preview.meta || "";
-      detail.hidden = !preview.detail;
-      meta.hidden = !preview.meta;
-      identity.hidden = preview.image !== "university";
-      icon.hidden = !identity.hidden;
-      content.toggleAttribute("data-rich", !!(preview.detail || preview.meta));
-      node.dataset.icon = preview.icon;
-      position();
+      setPreview(preview);
     }
 
     function move(event) {
@@ -121,6 +112,7 @@ export default function CursorHint({ pathname }) {
       node.removeAttribute("data-pressed");
     }
 
+    reposition.current = position;
     const mutations = new MutationObserver(() => {
       if (
         target &&
@@ -151,6 +143,7 @@ export default function CursorHint({ pathname }) {
     fine.addEventListener("change", hide);
     motion.addEventListener("change", hide);
     return () => {
+      reposition.current = null;
       hide();
       mutations.disconnect();
       document.removeEventListener("pointermove", move);
@@ -168,10 +161,10 @@ export default function CursorHint({ pathname }) {
   }, [pathname]);
 
   return (
-    <div ref={hint} className="cursor-hint" aria-hidden="true">
+    <div ref={hint} className="cursor-hint" data-icon={preview.icon} aria-hidden="true">
       <span className="cursor-hint-press">
         <span className="cursor-hint-surface">
-          <PreviewContent cursor />
+          <PreviewContent preview={preview} cursor />
         </span>
       </span>
     </div>

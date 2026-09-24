@@ -42,7 +42,11 @@ try {
   await page.waitForTimeout(800);
   await hover(page.locator('.mockups-copy a'));
   assert.equal(await hint.locator('.cursor-hint-label').textContent(), "motionmockups.com");
-  assert.equal((await hint.boundingBox()).width, 280);
+  assert((await hint.boundingBox()).width < 200, "Short previews hug their content");
+  assert.deepEqual(await hint.locator('.identity-tile').evaluate(n => {
+    const rect = n.getBoundingClientRect();
+    return [rect.width, rect.height, getComputedStyle(n).borderRadius];
+  }), [15, 15, '3px']);
   await hover(page.locator('.contact-copy a[href^="mailto:"]'));
   assert.equal(await hint.locator('.cursor-hint-label').textContent(), "krystof@jezek.me");
   assert.equal(await hint.getAttribute("data-icon"), "email");
@@ -61,7 +65,7 @@ try {
   const education = page.getByRole('button', { name: 'software engineering', exact: true });
   await hover(education);
   assert.match(await hint.textContent(), /Czech Technical University.*Sep 2022–Jun 2025/s);
-  assert.deepEqual(await hint.locator('.context-image img').evaluate(n => [n.getBoundingClientRect().width, n.getBoundingClientRect().height]), [32,32]);
+  assert.deepEqual(await hint.locator('.context-image img').evaluate(n => [n.getBoundingClientRect().width, n.getBoundingClientRect().height]), [15,15]);
   await hint.locator('.context-image img').evaluate(n => n.decode());
   await page.screenshot({ path: join(output, 'education-desktop.png') });
   await page.keyboard.press('Tab');
@@ -77,7 +81,8 @@ try {
   const stella = page.getByRole('button', { name: 'Stella Grotti', exact: true });
   await hover(stella);
   assert.match(await hint.textContent(), /philosophy/);
-  assert.equal(await hint.locator('.context-image').isVisible(), false);
+  assert.equal(await hint.locator('.context-image').isVisible(), true);
+  assert.match(await hint.locator('.context-image img').getAttribute('src'), /monopo/);
   await page.screenshot({ path: join(output, 'credits-desktop.png') });
   await stella.click(); await pause();
   assert.equal(await panel.getByRole('link', { name: /View profile/ }).getAttribute('href'), 'https://monopo.london/team/stella-grotti/');

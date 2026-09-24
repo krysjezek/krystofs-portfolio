@@ -1,26 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useLinkStatus } from "next/link";
 import { useEffect, useState } from "react";
-import icons from "@/content/icons.json";
-import { mediaUrl } from "@/lib/media";
 import Icon from "./Icon";
-
-export function IdentityIcon({ name, src, size = 15 }) {
-  return (
-    <Image
-      className="identity-icon"
-      src={mediaUrl(src || icons[name])}
-      alt=""
-      aria-hidden="true"
-      width={size}
-      height={size}
-      unoptimized
-    />
-  );
-}
+import IdentityTile from "./IdentityTile";
 
 export function ExternalLink({
   href,
@@ -35,10 +19,11 @@ export function ExternalLink({
       target="_blank"
       rel="noopener noreferrer"
       data-hint="Visit site"
+      data-hint-image={icon}
       className={`external-link ${className}`}
       {...props}
     >
-      {icon && <IdentityIcon src={icon} />}
+      {icon && <IdentityTile src={icon} />}
       {children}
       <span className="external-arrow" aria-hidden="true">
         <Icon name="arrow" size="compact" />
