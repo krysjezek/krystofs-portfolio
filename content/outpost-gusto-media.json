@@ -1,0 +1,838 @@
+{
+  "prepared": "2026-09-25",
+  "sourceDirectory": "Dropbox/Work/2026/00 Case Studies 2026/Outpost Gusto",
+  "note": "All 17 supplied video masters were probed and sampled before selecting these eight. Full 16:9 showreel for the hero, Card BCG for the homepage, and six motion details in three mixed rows. Preserve the full showreel, card and device clips. Themes, modules, customization and templates trim 1.2s, 1s, 1s and 0.5s respectively from blank/assembling lead-ins so first-frame posters show visible content. Preserve source proportions; delivery caps landscape at 1440px and portrait at 1080px, 60fps sources become 30fps, audio and metadata removed. Posters are frame 1 of the H.264 deliveries. Portrait display crops are 3:4; the underlying deliveries retain 4:5. Original masters remain in Dropbox. Gusto identity is the unmodified official SVG, visually inspected; Outpost identity reuses the verified Fantasy asset. Chris Wilcock spelling and affiliation verified at https://outpost.design/about/. Case copy is an editorial description of the supplied footage and owner brief, without audience or performance claims.",
+  "encoding": {
+    "h264": "High, yuv420p, CRF 20, slow, faststart",
+    "h265": "Main, yuv420p, CRF 24, slow, hvc1, faststart",
+    "av1": "Main, yuv420p10le, CRF 30, SVT-AV1 preset 6"
+  },
+  "assets": [
+    {
+      "source": "Card BCG.mp4",
+      "slug": "outpost-gusto-card-v1",
+      "files": [
+        {
+          "path": "/videos/h264/outpost-gusto-card-v1-fallback.mp4",
+          "bytes": 3660665,
+          "sha256": "c028a8f5935494f90b3bd5b4b21d38b5f5e6651c1b0451ab3560200c375915bb",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "15.000000"
+          }
+        },
+        {
+          "path": "/videos/h265/outpost-gusto-card-v1-web.mp4",
+          "bytes": 2053621,
+          "sha256": "c637cd0504c96c54a97fb725c50daee9bedc0487b527a84755dadc9188b89f4e",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "15.000000"
+          }
+        },
+        {
+          "path": "/videos/av1/outpost-gusto-card-v1.webm",
+          "bytes": 1937201,
+          "sha256": "c422b9282ba758706d4ef1f18ae7e90342c11b0ef0dab3781a140e1f10417b1b",
+          "contentType": "video/webm",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "15.000000"
+          }
+        },
+        {
+          "path": "/videos/posters/outpost-gusto-card-v1.jpg",
+          "bytes": 76260,
+          "sha256": "e20c6f0e374c71cdc8c66443cdd63d2fc6f4127a3970d69c4be241f7c7c2a9c8",
+          "contentType": "image/jpeg",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "sourceProperties": {
+        "codec_name": "h264",
+        "width": 3072,
+        "height": 3840,
+        "r_frame_rate": "60/1",
+        "duration": "15.000000"
+      }
+    },
+    {
+      "source": "Gusto Showreel 16x9.mp4",
+      "slug": "outpost-gusto-reel-v1",
+      "files": [
+        {
+          "path": "/videos/h264/outpost-gusto-reel-v1-fallback.mp4",
+          "bytes": 9278781,
+          "sha256": "4ff7d941e165df834d2180e2b35bdfed2a0495f01961ee2051dbcd505e7373c6",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "73.233333"
+          }
+        },
+        {
+          "path": "/videos/h265/outpost-gusto-reel-v1-web.mp4",
+          "bytes": 7028879,
+          "sha256": "bc11919dc6a22683f6bce9672fe02d5cb53f240c541f18bbddfcfdf3054bb31b",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "73.233333"
+          }
+        },
+        {
+          "path": "/videos/av1/outpost-gusto-reel-v1.webm",
+          "bytes": 6668245,
+          "sha256": "ce4174313ce4a23de9b0bbcb40a677e9991b04b35b93e3e992dda5dd6291de58",
+          "contentType": "video/webm",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "73.233000"
+          }
+        },
+        {
+          "path": "/videos/posters/outpost-gusto-reel-v1.jpg",
+          "bytes": 53778,
+          "sha256": "c65338df863c4c145b1ede00ca6e3be1b96cf7a40244672210b58f76347dbcab",
+          "contentType": "image/jpeg",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "sourceProperties": {
+        "codec_name": "hevc",
+        "width": 3840,
+        "height": 2160,
+        "r_frame_rate": "60/1",
+        "duration": "73.216667"
+      }
+    },
+    {
+      "source": "16x9 Motion Bits/02 Themes 16x9.mp4",
+      "slug": "outpost-gusto-themes-v2",
+      "trimStart": 1.2,
+      "files": [
+        {
+          "path": "/videos/h264/outpost-gusto-themes-v2-fallback.mp4",
+          "bytes": 688854,
+          "sha256": "17c65136c4b827e440e59d41301be31702f59fb43f548a95a67944e6573333eb",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "8.800000"
+          }
+        },
+        {
+          "path": "/videos/h265/outpost-gusto-themes-v2-web.mp4",
+          "bytes": 626654,
+          "sha256": "3abde8dcc7fe95f59bd093ada1a923da825efc0dfc6960be513ace1f1bb069b4",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "8.800000"
+          }
+        },
+        {
+          "path": "/videos/av1/outpost-gusto-themes-v2.webm",
+          "bytes": 657028,
+          "sha256": "6a38900219bfa0838a88ba8fc645a5211e715ffacffa9e435edfc8dc4e64724d",
+          "contentType": "video/webm",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "8.800000"
+          }
+        },
+        {
+          "path": "/videos/posters/outpost-gusto-themes-v2.jpg",
+          "bytes": 37970,
+          "sha256": "21ca54c841d62d570e2704082d8898930c0187c9535e2e930a2ff397cd275788",
+          "contentType": "image/jpeg",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "sourceProperties": {
+        "codec_name": "h264",
+        "width": 3840,
+        "height": 2160,
+        "r_frame_rate": "60/1",
+        "duration": "9.983333"
+      }
+    },
+    {
+      "source": "4x5 Motion Bits/03 Modules Full Comp Vertical.mp4",
+      "slug": "outpost-gusto-modules-v2",
+      "trimStart": 1,
+      "files": [
+        {
+          "path": "/videos/h264/outpost-gusto-modules-v2-fallback.mp4",
+          "bytes": 411463,
+          "sha256": "3cada03f5af43ae2d285ea4afb4c73df095cfc4e8fc8e671a01f2d733fc6384e",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "11.100000"
+          }
+        },
+        {
+          "path": "/videos/h265/outpost-gusto-modules-v2-web.mp4",
+          "bytes": 423298,
+          "sha256": "4d111841daeaae5346fa7fc8e7ac71abb0c58c092bf3785f2d6d841a90a26af3",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "11.100000"
+          }
+        },
+        {
+          "path": "/videos/av1/outpost-gusto-modules-v2.webm",
+          "bytes": 325959,
+          "sha256": "590444d3f014b472a115e1965ecf7ff48f1ff82e87ab71ea664a2a5336eb313c",
+          "contentType": "video/webm",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "11.100000"
+          }
+        },
+        {
+          "path": "/videos/posters/outpost-gusto-modules-v2.jpg",
+          "bytes": 29385,
+          "sha256": "b05d8754b06e0ac0f9be972e8dd7852adb4dc663873152b6c64d195d344a8fad",
+          "contentType": "image/jpeg",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "sourceProperties": {
+        "codec_name": "h264",
+        "width": 3072,
+        "height": 3840,
+        "r_frame_rate": "60/1",
+        "duration": "12.100000"
+      }
+    },
+    {
+      "source": "16x9 Motion Bits/04 UI Customization 16x9.mp4",
+      "slug": "outpost-gusto-customization-v2",
+      "trimStart": 1,
+      "files": [
+        {
+          "path": "/videos/h264/outpost-gusto-customization-v2-fallback.mp4",
+          "bytes": 1253080,
+          "sha256": "41e31430ab166ae982a232e091071120606d2c8bee88e9307a5d63bdd9443c6d",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "16.733333"
+          }
+        },
+        {
+          "path": "/videos/h265/outpost-gusto-customization-v2-web.mp4",
+          "bytes": 1001476,
+          "sha256": "9a52daad55fbbdc734c0638c38337cb7646eac9a95736f45397a32b96ae009fa",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "16.733333"
+          }
+        },
+        {
+          "path": "/videos/av1/outpost-gusto-customization-v2.webm",
+          "bytes": 1016065,
+          "sha256": "70ef972ab67334b0435b3cd41a66bdbd383ff0ca512cdc813a499feb769c4d69",
+          "contentType": "video/webm",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "16.733000"
+          }
+        },
+        {
+          "path": "/videos/posters/outpost-gusto-customization-v2.jpg",
+          "bytes": 101819,
+          "sha256": "3cb2ec3a157a60b2e87bdcbf03140fa2ccbad5d23bd303d835dae742aefbca56",
+          "contentType": "image/jpeg",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "sourceProperties": {
+        "codec_name": "h264",
+        "width": 3840,
+        "height": 2160,
+        "r_frame_rate": "60/1",
+        "duration": "17.716667"
+      }
+    },
+    {
+      "source": "4x5 Motion Bits/05 Macbook Vertical.mp4",
+      "slug": "outpost-gusto-macbook-v1",
+      "files": [
+        {
+          "path": "/videos/h264/outpost-gusto-macbook-v1-fallback.mp4",
+          "bytes": 2247728,
+          "sha256": "640303045963d3392369218f6e99c53a852ea7dd5b7ffcbb2e58a95cfbb605ff",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.000000"
+          }
+        },
+        {
+          "path": "/videos/h265/outpost-gusto-macbook-v1-web.mp4",
+          "bytes": 1584464,
+          "sha256": "32ede517caa3d18b5ac480f2fd4818b9c5f98af44959985899b89ef96e189db8",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.000000"
+          }
+        },
+        {
+          "path": "/videos/av1/outpost-gusto-macbook-v1.webm",
+          "bytes": 1487971,
+          "sha256": "2371e9f183f3846c2ec2610049bebd83dd1041e5da14ed2b02f345f7f61eecfb",
+          "contentType": "video/webm",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.000000"
+          }
+        },
+        {
+          "path": "/videos/posters/outpost-gusto-macbook-v1.jpg",
+          "bytes": 127951,
+          "sha256": "fde2b52129db9d50d866791890e904e1784d72932f1fa972860f93ac6a412adf",
+          "contentType": "image/jpeg",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "sourceProperties": {
+        "codec_name": "h264",
+        "width": 3072,
+        "height": 3840,
+        "r_frame_rate": "60/1",
+        "duration": "5.000000"
+      }
+    },
+    {
+      "source": "4x5 Motion Bits/06 Templates Vertical.mp4",
+      "slug": "outpost-gusto-templates-v2",
+      "trimStart": 0.5,
+      "files": [
+        {
+          "path": "/videos/h264/outpost-gusto-templates-v2-fallback.mp4",
+          "bytes": 1568518,
+          "sha256": "9ad540a0b6f4b620d994d7c4d44b60f1bd9c7a7130d47d09a9454c8f0efbcfef",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "9.066667"
+          }
+        },
+        {
+          "path": "/videos/h265/outpost-gusto-templates-v2-web.mp4",
+          "bytes": 1824173,
+          "sha256": "5b700525ad1035243db5ad96eec010f7e7ccda31c588e1cf52c56d7a9f53ba40",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "9.066667"
+          }
+        },
+        {
+          "path": "/videos/av1/outpost-gusto-templates-v2.webm",
+          "bytes": 1223938,
+          "sha256": "0b595bdae59d1a71833595adf081be9831d7c8da5e55fdad8c06113509dabae6",
+          "contentType": "video/webm",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "9.066000"
+          }
+        },
+        {
+          "path": "/videos/posters/outpost-gusto-templates-v2.jpg",
+          "bytes": 129303,
+          "sha256": "2144414d47026cd986a7ff8ba827e990cf71ad9b2fb1931ffa9a2dcc04464b9b",
+          "contentType": "image/jpeg",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1350,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "sourceProperties": {
+        "codec_name": "h264",
+        "width": 3072,
+        "height": 3840,
+        "r_frame_rate": "60/1",
+        "duration": "9.566667"
+      }
+    },
+    {
+      "source": "16x9 Motion Bits/07 Outro iPhone + Closeup XDR 16x9.mp4",
+      "slug": "outpost-gusto-devices-v1",
+      "files": [
+        {
+          "path": "/videos/h264/outpost-gusto-devices-v1-fallback.mp4",
+          "bytes": 1529119,
+          "sha256": "40ad9a249aada0632c191165961499e32c3f61c62bdc813c241b7f984f1acc04",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "4.933333"
+          }
+        },
+        {
+          "path": "/videos/h265/outpost-gusto-devices-v1-web.mp4",
+          "bytes": 730910,
+          "sha256": "34e14e817b492b5b17ce30b2bdb7e5c50548a1bec45ff2a3bb9f12ea40241b93",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "4.933333"
+          }
+        },
+        {
+          "path": "/videos/av1/outpost-gusto-devices-v1.webm",
+          "bytes": 688989,
+          "sha256": "a3c7e7dfc0bd233d927bf869a581cb5ed5f5a5c31de692b8b086f2996d488c81",
+          "contentType": "video/webm",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "av1",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "4.933000"
+          }
+        },
+        {
+          "path": "/videos/posters/outpost-gusto-devices-v1.jpg",
+          "bytes": 122887,
+          "sha256": "794470a25a55a197302334328e116805964984d46135f0474104b551ccae4114",
+          "contentType": "image/jpeg",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ],
+      "sourceProperties": {
+        "codec_name": "h264",
+        "width": 3840,
+        "height": 2160,
+        "r_frame_rate": "60/1",
+        "duration": "4.933333"
+      }
+    },
+    {
+      "source": "https://cms-media.gusto-cdn.com/image/upload/v1787676645/Logo_g0dvqp.svg",
+      "sourcePage": "https://gusto.com/partner-resources/gusto-marketing-materials",
+      "files": [
+        {
+          "path": "/images/outpost-gusto-identity-v1.svg",
+          "bytes": 2492,
+          "sha256": "7ab48b8508cb1e9e6ae2da7da79c015978f8e5668984198908965924e70c0ee3",
+          "contentType": "image/svg+xml",
+          "width": 981.93,
+          "height": 371.84
+        }
+      ]
+    }
+  ]
+}

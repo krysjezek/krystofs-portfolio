@@ -6,6 +6,10 @@ export const WEBSITE_ID = `${SITE_URL}/#website`
 export const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com'
 
 const pageSocialImages = {
+  '/work/outpost-gusto': {
+    url: '/videos/posters/outpost-gusto-reel-v1.jpg',
+    alt: 'Gusto UI design showreel with interface animation and 3D device scenes for Outpost Studio',
+  },
   '/work/vojta-zizka': {
     url: '/videos/posters/vojta-zizka-patreon-v1.jpg',
     alt: 'Automated Patreon supporter credits and branded market charts for Vojta Zizka',
@@ -102,6 +106,12 @@ export const noIndex = {
 
 export const portfolioRoutes = [
   {
+    path: '/work/outpost-gusto',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+    lastModified: '2026-09-25',
+  },
+  {
     path: '/work/vojta-zizka',
     priority: 0.8,
     changeFrequency: 'monthly',
@@ -189,6 +199,14 @@ export const portfolioRoutes = [
 
 export const featuredCreativeWorks = [
   {
+    name: 'Gusto',
+    path: '/work/outpost-gusto',
+    description: 'A showreel for Outpost Studio’s new Gusto UI design, combining interface animation, playful transitions and 3D device scenes.',
+    keywords: ['UI animation', '2D motion design', '3D motion design', 'website showcase reel'],
+    dateCreated: '2026',
+    datePublished: '2026-09-25',
+  },
+  {
     name: 'Vojta Zizka — Automated Patreon "Thank You" & Market Charts',
     path: '/work/vojta-zizka',
     description: 'Two video-production tools for Vojta Zizka: automated Patreon supporter credits in After Effects and a web app for branded market charts.',
@@ -255,6 +273,16 @@ export const featuredCreativeWorks = [
 ]
 
 export const videoAssets = [
+  {
+    name: 'Gusto UI design showreel',
+    page: '/work/outpost-gusto',
+    description: 'Gusto’s new UI design presented through animated themes, modules, customization and templates, alongside 3D device scenes. Created with Chris Wilcock from Outpost Studio.',
+    thumbnailUrl: '/videos/posters/outpost-gusto-reel-v1.jpg',
+    contentUrl: '/videos/h264/outpost-gusto-reel-v1-fallback.mp4',
+    dateCreated: '2026',
+    uploadDate: '2026-09-25',
+    keywords: ['Gusto', 'Outpost Studio', 'UI animation', '2D motion', '3D motion'],
+  },
   {
     name: 'Vojta Zizka automated Patreon end screen',
     page: '/work/vojta-zizka',

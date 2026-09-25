@@ -1072,6 +1072,11 @@ button {
   height: auto;
   aspect-ratio: auto !important;
 }
+/* Mixed landscape/portrait pairs share a height without widening portrait crops. */
+.case-media-row-mixed > .media {
+  flex: var(--media-weight) 1 0%;
+  min-width: 0;
+}
 .vizcom-detail-row > .media:first-child {
   flex: 0 0 calc((100% + 10px) * 2 / 3 - 7.5px);
 }

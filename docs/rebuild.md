@@ -43,7 +43,8 @@ airport experiment is not a requirement of the new homepage.
 ## Implementation map
 
 - content/gallery.json holds 24 cards and the authored desktop/tablet/mobile orders.
-- content/cases.json holds the eight case studies, specifications, credits, evidence copy and media rows. Outpost Fantasy was added on 24 September 2026 at `/work/outpost-fantasy`, linked from the existing Fantasy homepage card, with owner-confirmed May 2026 completion and credits. Vojta Zizka at `/work/vojta-zizka` remains in Fun, covers both ProductionBot automation projects, links the two YouTube explainers and uses the owner-confirmed completion year 2025.
+- content/cases.json holds the nine case studies, specifications, credits, evidence copy and media rows. Outpost Fantasy was added on 24 September 2026 at `/work/outpost-fantasy`, linked from the existing Fantasy homepage card, with owner-confirmed May 2026 completion and credits. Vojta Zizka at `/work/vojta-zizka` remains in Fun, covers both ProductionBot automation projects, links the two YouTube explainers and uses the owner-confirmed completion year 2025.
+- Gusto was added on 25 September 2026 at `/work/outpost-gusto`, linked from the existing Work card. It uses Card BCG, the full 16:9 showreel and six mixed landscape/portrait motion details. The delivery/provenance record is `content/outpost-gusto-media.json`.
 - content/profile.json, recognition.json, worlds.json and pages.json separate reusable content from presentation.
 - components/portfolio contains the new React components; styles/portfolio.css is the sole application stylesheet.
 - Legacy Webflow markup/styles, obsolete interaction components, GSAP/Sass/Three.js dependencies, unused fonts, experiment routes/APIs and stale implementation notes were removed. They remain recoverable from the checkpoint; no legacy runtime is imported.
@@ -72,3 +73,9 @@ Behavior verified: manual keyboard tabs; browser Back restoring Fun/card focus/s
 The media rewrite fixes two inherited failure modes: shorthand AV1 declarations rejected by Chromium, and bubbling errors from an unsupported source being mistaken for failure of the entire video.
 
 Dependency maintenance remains separate from this redesign. npm audit --omit=dev reports 6 advisories (2 moderate, 3 high, 1 critical), including the retained Next.js version. No production deployment was performed. Resolve the framework/dependency upgrade before production release.
+
+## Gusto verification ? 25 September 2026
+
+Lint, production build, portfolio verification and the 33-screen Figma layout suite pass. Gusto was also checked at 1440, 834 and 390px: 16:9 hero, equal-height mixed rows with 5px gaps, 3:4 portraits, mobile stacking and no overflow. All 24 video deliveries and eight posters were remotely probed for codec, dimensions, frame rate, duration and absence of audio; all 33 active CDN assets returned the expected content types.
+
+Browser checks confirmed all seven case videos and the homepage card play, AV1 selection in Chromium, poster-first requests, deferred below-fold videos, reduced-motion/data-saver posters, the card link and Back to Work, visible linked identities and credits, and no asset/runtime errors. Canonical metadata, CreativeWork/VideoObject data and both sitemaps include Gusto. No deployment was performed.

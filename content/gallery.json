@@ -130,12 +130,16 @@
         "id": "gusto",
         "name": "Gusto",
         "category": "work",
-        "disciplines": "3D, Motion, Art Direction",
-        "href": null,
-        "poster": "/images/portfolio-2027-gallery-gusto.webp",
+        "disciplines": "2D, 3D, Motion",
+        "href": "/work/outpost-gusto",
+        "poster": "/videos/posters/outpost-gusto-card-v1.jpg",
         "aspect": 0.75,
         "tabletAspect": 0.75,
-        "mobileAspect": 0.75
+        "mobileAspect": 0.75,
+        "srcH265": "/videos/h265/outpost-gusto-card-v1-web.mp4",
+        "srcAv1": "/videos/av1/outpost-gusto-card-v1.webm",
+        "srcMp4": "/videos/h264/outpost-gusto-card-v1-fallback.mp4",
+        "preview": "A UI design showreel for Gusto, created with Chris from Outpost Studio."
       },
       {
         "id": "trezor",

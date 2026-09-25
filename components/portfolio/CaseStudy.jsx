@@ -124,13 +124,14 @@ export default function CaseStudy({ project }) {
             {project.rows.map((row, index) => (
               <div
                 key={index}
-                className={`case-media-row ${project.slug === "vizcom" && index === 1 ? "vizcom-detail-row" : ""}`}
+                className={`case-media-row ${project.mediaLayout === "mixed" ? "case-media-row-mixed" : ""} ${project.slug === "vizcom" && index === 1 ? "vizcom-detail-row" : ""}`}
               >
                 {row.map((mediaIndex) => (
                   <Media
                     key={mediaIndex}
                     media={project.media[mediaIndex]}
-                    sizes={`(max-width:599px) calc(100vw - 10px), ${Math.round(100 / row.length)}vw`}
+                    style={project.mediaLayout === "mixed" ? { "--media-weight": project.media[mediaIndex].aspect } : undefined}
+                    sizes={`(max-width:599px) calc(100vw - 10px), ${Math.ceil(100 * (project.mediaLayout === "mixed" ? project.media[mediaIndex].aspect / row.reduce((sum, item) => sum + project.media[item].aspect, 0) : 1 / row.length))}vw`}
                   />
                 ))}
               </div>

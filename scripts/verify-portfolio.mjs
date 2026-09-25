@@ -9,6 +9,7 @@ const [cases, gallery, recognition, pages, assets] = await Promise.all(
 const routes = new Set(cases.map((project) => project.path));
 assert.equal(routes.size, cases.length, 'Case routes must be unique');
 assert(routes.has('/work/outpost-fantasy'));
+assert(routes.has('/work/outpost-gusto'));
 assert(routes.has('/work/vojta-zizka'));
 const vojta = cases.find(project => project.slug === 'vojta-zizka');
 assert.equal(vojta.date, 'Fun · 2025');
@@ -35,7 +36,7 @@ for (const project of cases) {
     assert.equal(project.credits.length, 0);
   }
   // Owner-approved 16:9 opening reels; other cases retain 16:10.
-  if (project.hero) assert.equal(project.hero.aspect, project.slug === 'outpost-fantasy' ? 16 / 9 : 1.6);
+  if (project.hero) assert.equal(project.hero.aspect, ['outpost-fantasy', 'outpost-gusto'].includes(project.slug) ? 16 / 9 : 1.6);
   else assert(project.chapters?.length > 0, 'Cases without a hero need project media');
   for (const index of project.rows.flat()) assert(project.media[index]);
   for (const media of [project.hero, ...project.media, ...(project.chapters || []).map(chapter => chapter.media)].filter(Boolean))

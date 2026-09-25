@@ -1205,5 +1205,168 @@
     "media": [],
     "rows": [],
     "credits": []
+  },
+  {
+    "slug": "outpost-gusto",
+    "path": "/work/outpost-gusto",
+    "title": "Gusto",
+    "subtitle": "UI Design Showreel",
+    "date": "Work · 2026",
+    "category": "work",
+    "overview": [
+      "I worked with Chris Wilcock from Outpost Studio on a showreel for their new UI design for Gusto.",
+      "The film moves between interface details and warm 3D device scenes, with playful transitions connecting the two."
+    ],
+    "specs": [
+      {
+        "label": "Client",
+        "name": "Outpost Studio",
+        "href": "https://outpost.design/",
+        "icon": "/images/outpost-fantasy-identity-outpost-v1.webp",
+        "lines": [
+          "UI design"
+        ]
+      },
+      {
+        "label": "Brand",
+        "name": "Gusto",
+        "href": "https://gusto.com/",
+        "icon": "/images/outpost-gusto-identity-v1.svg",
+        "lines": [
+          "Payroll, benefits and HR"
+        ]
+      },
+      {
+        "label": "Deliverable",
+        "name": null,
+        "href": null,
+        "icon": null,
+        "lines": [
+          "UI design showreel",
+          "Landscape and portrait motion"
+        ]
+      }
+    ],
+    "tags": [
+      "2D Motion",
+      "3D Motion",
+      "UI Animation"
+    ],
+    "hero": {
+      "poster": "/videos/posters/outpost-gusto-reel-v1.jpg",
+      "alt": "Gusto UI design showreel combining animated layouts with warm desktop, laptop and phone scenes",
+      "aspect": 1.7777777777777777,
+      "srcH265": "/videos/h265/outpost-gusto-reel-v1-web.mp4",
+      "srcAv1": "/videos/av1/outpost-gusto-reel-v1.webm",
+      "srcMp4": "/videos/h264/outpost-gusto-reel-v1-fallback.mp4"
+    },
+    "caption": "Gusto · UI design showreel",
+    "approach": [
+      {
+        "label": "Brief",
+        "paragraphs": [
+          "Show the new Gusto UI as a connected experience. The reel needed to make room for the design’s themes, modules and page layouts, as well as the smaller interactions that give it personality."
+        ]
+      },
+      {
+        "label": "Process",
+        "paragraphs": [
+          "I moved between close views of the interface and wider device scenes. Colour changes, stacking layouts and cursor movements carry the UI sequences, while warm light and everyday desk details give the film a more human feel."
+        ]
+      }
+    ],
+    "outcome": [
+      {
+        "label": "My role",
+        "paragraphs": [
+          "I created the 2D and 3D motion for the showreel, working with Chris from Outpost. My focus was on bringing their UI design into motion and connecting the screen sequences with the device scenes."
+        ]
+      },
+      {
+        "label": "Result",
+        "paragraphs": [
+          "The finished showreel brings the new UI together in one film. The landscape and portrait sequences also let individual moments stand on their own, from changing themes to a close-up of the site on a phone."
+        ]
+      }
+    ],
+    "mediaLayout": "mixed",
+    "media": [
+      {
+        "poster": "/videos/posters/outpost-gusto-themes-v2.jpg",
+        "alt": "Gusto colour and typography themes changing across a testimonial card",
+        "aspect": 1.7777777777777777,
+        "srcH265": "/videos/h265/outpost-gusto-themes-v2-web.mp4",
+        "srcAv1": "/videos/av1/outpost-gusto-themes-v2.webm",
+        "srcMp4": "/videos/h264/outpost-gusto-themes-v2-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/outpost-gusto-modules-v2.jpg",
+        "alt": "Gusto interface modules stacking and reassembling on mint and teal backgrounds",
+        "aspect": 0.75,
+        "srcH265": "/videos/h265/outpost-gusto-modules-v2-web.mp4",
+        "srcAv1": "/videos/av1/outpost-gusto-modules-v2.webm",
+        "srcMp4": "/videos/h264/outpost-gusto-modules-v2-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/outpost-gusto-customization-v2.jpg",
+        "alt": "Gusto page layouts changing through UI customization controls",
+        "aspect": 1.7777777777777777,
+        "srcH265": "/videos/h265/outpost-gusto-customization-v2-web.mp4",
+        "srcAv1": "/videos/av1/outpost-gusto-customization-v2.webm",
+        "srcMp4": "/videos/h264/outpost-gusto-customization-v2-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/outpost-gusto-macbook-v1.jpg",
+        "alt": "Gusto website on a MacBook in a warmly lit workspace",
+        "aspect": 0.75,
+        "srcH265": "/videos/h265/outpost-gusto-macbook-v1-web.mp4",
+        "srcAv1": "/videos/av1/outpost-gusto-macbook-v1.webm",
+        "srcMp4": "/videos/h264/outpost-gusto-macbook-v1-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/outpost-gusto-templates-v2.jpg",
+        "alt": "Gusto page templates transitioning through layouts and colourful cursor interactions",
+        "aspect": 0.75,
+        "srcH265": "/videos/h265/outpost-gusto-templates-v2-web.mp4",
+        "srcAv1": "/videos/av1/outpost-gusto-templates-v2.webm",
+        "srcMp4": "/videos/h264/outpost-gusto-templates-v2-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/outpost-gusto-devices-v1.jpg",
+        "alt": "Gusto phone close-up and desktop display in a warm studio scene",
+        "aspect": 1.7777777777777777,
+        "srcH265": "/videos/h265/outpost-gusto-devices-v1-web.mp4",
+        "srcAv1": "/videos/av1/outpost-gusto-devices-v1.webm",
+        "srcMp4": "/videos/h264/outpost-gusto-devices-v1-fallback.mp4"
+      }
+    ],
+    "rows": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "credits": [
+      {
+        "role": "Creative Direction",
+        "name": "Chris Wilcock",
+        "href": "https://outpost.design/about/",
+        "icon": "/images/outpost-fantasy-identity-outpost-v1.webp"
+      },
+      {
+        "role": "3D & 2D Motion",
+        "name": "Kryštof Ježek",
+        "href": "/",
+        "icon": null
+      }
+    ]
   }
 ]

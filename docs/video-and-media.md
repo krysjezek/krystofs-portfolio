@@ -14,6 +14,7 @@ Reduced-motion and data-saver preferences keep the poster. Preference changes ar
 
 - content/cases.json: current case media and explicit source-master-needed records.
 - content/outpost-fantasy-media.json: owner-supplied Fantasy reel excerpt, homepage CARD BCG, three device stills and official identity marks, with delivery hashes and remotely verified media properties. Original masters remain in the supplied Dropbox folder.
+- content/outpost-gusto-media.json: owner-supplied Card BCG, full 16:9 Gusto showreel and six selected motion details. Landscape deliveries use 1440×810 and portrait deliveries 1080×1350, at 30 fps without audio. The case pairs landscape and 3:4 display crops at equal heights, then stacks them on mobile. Original masters remain in the supplied Outpost Gusto Dropbox folder; the Gusto wordmark comes from the official site.
 - content/vojta-zizka-media.json: supplied Patreon card/section clip, ProductionBot market-chart demo, prepared credits still and verified explainer links. Both videos retain their source dimensions and 30 fps; masters remain in Downloads. The case has no header media; the Patreon section uses the owner-requested 16:9 video.
 - content/worlds.json: original service video deliveries.
 - content/design-assets.json: prepared Figma assets, node IDs, dimensions and SHA-256 hashes.
