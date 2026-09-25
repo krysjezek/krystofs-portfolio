@@ -12,6 +12,8 @@ Reduced-motion and data-saver preferences keep the poster. Preference changes ar
 
 ## Records and provenance
 
+- content/outland-rounds-media.json: owner-supplied Card BCG, Wide Indoor 16x9 hero and seven distinct device, merchandise and course clips. Full-duration 30fps deliveries preserve the selected 16:9, 3:4 and square source compositions. The case uses equal-height mixed rows and stacks each composition on mobile. Original masters remain in the supplied Outland Rounds Dropbox folder. Rounds uses the visually inspected official SVG wordmark from rounds.cc; Outland marks reuse the verified Vizcom assets.
+
 - content/shelby-media.json: owner-supplied April 2026 device and merch mockups for Ashfall Studio, square homepage card, phone still and official identity marks. Full-duration videos retain 30 fps, with 1440x810 landscape, 1080x1440 portrait and 1080x1080 square deliveries. The MacBook opens the case in the standard 16:10 display crop; mixed rows pair iPad/pin, badge/phone and bottle/clothing. Original masters remain in the supplied Shelby Dropbox folder.
 - content/cases.json: current case media and explicit source-master-needed records.
 - content/outpost-fantasy-media.json: owner-supplied Fantasy reel excerpt, homepage CARD BCG, three device stills and official identity marks, with delivery hashes and remotely verified media properties. Original masters remain in the supplied Dropbox folder.

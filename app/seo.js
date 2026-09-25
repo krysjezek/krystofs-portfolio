@@ -6,6 +6,10 @@ export const WEBSITE_ID = `${SITE_URL}/#website`
 export const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com'
 
 const pageSocialImages = {
+  '/work/outland-rounds': {
+    url: '/videos/posters/outland-rounds-wide-indoor-v1.jpg',
+    alt: 'Rounds clubhouse brand world overlooking a golf course, created for Outland',
+  },
   '/work/shelby': {
     url: '/videos/posters/shelby-macbook-v1.jpg',
     alt: 'Custom Shelby MacBook mockup in a sunlit workspace, created for Ashfall Studio',
@@ -110,6 +114,12 @@ export const noIndex = {
 
 export const portfolioRoutes = [
   {
+    path: '/work/outland-rounds',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+    lastModified: '2026-09-25',
+  },
+  {
     path: '/work/shelby',
     priority: 0.8,
     changeFrequency: 'monthly',
@@ -209,6 +219,14 @@ export const portfolioRoutes = [
 
 export const featuredCreativeWorks = [
   {
+    name: 'Rounds — Golf App Brand World & Mockups',
+    path: '/work/outland-rounds',
+    description: 'Custom 3D environments, device and merchandise mockups for Outland’s Rounds golf app identity, from a clubhouse and golf course to phones, a watch, a flask and a keychain.',
+    keywords: ['Rounds', 'Outland', '3D environments', 'custom mockups', 'golf app', 'merch visualization'],
+    dateCreated: '2026',
+    datePublished: '2026-09-25',
+  },
+  {
     name: 'Shelby — Custom Device & Merch Mockups',
     path: '/work/shelby',
     description: 'Custom 3D device and merch mockups for Ashfall Studio’s Shelby brand case study, from MacBook and iPad scenes to pins, badges, bottles and clothing.',
@@ -291,6 +309,17 @@ export const featuredCreativeWorks = [
 ]
 
 export const videoAssets = [
+  {
+    name: 'Rounds clubhouse brand world',
+    page: '/work/outland-rounds',
+    description: 'A custom 3D clubhouse presenting Outland’s Rounds identity through branded objects, warm interiors and a view onto the golf course.',
+    thumbnailUrl: '/videos/posters/outland-rounds-wide-indoor-v1.jpg',
+    contentUrl: '/videos/h264/outland-rounds-wide-indoor-v1-fallback.mp4',
+    dateCreated: '2026',
+    uploadDate: '2026-09-25',
+    keywords: ['Rounds', 'Outland', '3D environment', 'brand world', 'custom mockups'],
+    transcript: 'No spoken dialogue. A camera moves through a sunlit clubhouse with curved seating, branded merchandise and a view across a golf course.',
+  },
   {
     name: 'Shelby custom MacBook mockup',
     page: '/work/shelby',

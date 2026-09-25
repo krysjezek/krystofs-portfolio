@@ -1,0 +1,1349 @@
+{
+  "prepared": "2026-09-25",
+  "sourceDirectory": "C:\\Users\\kryst\\Dropbox\\Work\\2026\\00 Case Studies 2026\\Outland Rounds",
+  "note": "All 25 supplied videos inspected with ffprobe and sampled. Nine distinct clips selected, preserving full duration, original composition and 30fps. Silent H.264 CRF20 slow, H.265 CRF24 slow hvc1, AV1 10-bit CRF30 preset6; landscape capped at 1440px, square/portrait at 1080px, no upscaling. Posters are frame 1 of H.264 delivery. Original masters remain in Dropbox. Case narrative is an editorial description of supplied scenes and owner brief; project month not supplied.",
+  "assets": [
+    {
+      "source": "Card BCG.mp4",
+      "slug": "outland-rounds-card-v1",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 3840,
+            "height": 2160,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "12.000000"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/outland-rounds-card-v1-fallback.mp4",
+          "bytes": 3660956,
+          "sha256": "1374af9a472b1e9f531a9b6afe6833941128caeb1bc416dea567e681d072ba99",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "12.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/outland-rounds-card-v1-web.mp4",
+          "bytes": 1672816,
+          "sha256": "b85286b44a84250fd45a3b757844715d5bb4c3e55df52d12feafe18a2635a19c",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "12.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/outland-rounds-card-v1.webm",
+          "bytes": 1329907,
+          "sha256": "1199cd66e2900cebdc130a17bbac19449cbf60d44e19286066a8ce76f9c2f1a9",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "12.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/outland-rounds-card-v1.jpg",
+          "bytes": 208346,
+          "sha256": "b550556d851e9e9f780afd9beccf9d9dee1ff73ba5bf85b8c5e5e4650b61ffcb",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "Wide Indoor 16x9.mp4",
+      "slug": "outland-rounds-wide-indoor-v1",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 3840,
+            "height": 2160,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "4.933333"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/outland-rounds-wide-indoor-v1-fallback.mp4",
+          "bytes": 1632337,
+          "sha256": "8e7dc116bcc98e5b5f4c4a45ea64d9b8f0626e8ec258f4c0018e7218ccee36f8",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "4.933333"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/outland-rounds-wide-indoor-v1-web.mp4",
+          "bytes": 759844,
+          "sha256": "ccac754152ae6016df45eb3c68d5ac3018da03cef83852bf5bf8dfce5e5ba82e",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "4.933333"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/outland-rounds-wide-indoor-v1.webm",
+          "bytes": 503182,
+          "sha256": "1a052b84144f70b30f68c650ddfa59ec284b6284205f832b0909e7db8eab095c",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "4.933000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/outland-rounds-wide-indoor-v1.jpg",
+          "bytes": 208346,
+          "sha256": "b550556d851e9e9f780afd9beccf9d9dee1ff73ba5bf85b8c5e5e4650b61ffcb",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "iPhone Indoor 16x9.mp4",
+      "slug": "outland-rounds-phone-indoor-v1",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 3840,
+            "height": 2160,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "5.000000"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/outland-rounds-phone-indoor-v1-fallback.mp4",
+          "bytes": 1495827,
+          "sha256": "f725912e5d9f9e678929a231ab6c2684fdfa20d13cae0749a7f34651e709e76e",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "5.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/outland-rounds-phone-indoor-v1-web.mp4",
+          "bytes": 475976,
+          "sha256": "e87f126c42018376c51db88363d48d71dee25ad07b68420f88bc76fe4063ccbf",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "5.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/outland-rounds-phone-indoor-v1.webm",
+          "bytes": 362935,
+          "sha256": "4736bd16ac5957c17015e6ed2d2729637b31eb413ff0aa078df8e32a531e91f0",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "5.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/outland-rounds-phone-indoor-v1.jpg",
+          "bytes": 120452,
+          "sha256": "63c0fe2bf2cbac5b6281809f3aa95afc9dd35935a6a3118a4a0367a31f303e24",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "Poster 3x4.mp4",
+      "slug": "outland-rounds-poster-v1",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 1800,
+            "height": 2400,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "6.633333"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/outland-rounds-poster-v1-fallback.mp4",
+          "bytes": 3803133,
+          "sha256": "f4499a44fdc1a81060de39cd85ed0e06c3009277af23337e3ef6b1b1bb18977f",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1080,
+                "height": 1440,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "6.633333"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/outland-rounds-poster-v1-web.mp4",
+          "bytes": 1560139,
+          "sha256": "ef89cd33c28bee5d7cafd0a86e68c228a47cf2eb0935755ec3b01c2f91ad165a",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1080,
+                "height": 1440,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "6.633333"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/outland-rounds-poster-v1.webm",
+          "bytes": 1387616,
+          "sha256": "b1bdf479cf6df99805df5bbc3c87a8d7f989b2c4f3da55efdb79f025b24205a7",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1440,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "6.633000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/outland-rounds-poster-v1.jpg",
+          "bytes": 208016,
+          "sha256": "167ca10048996ccd9091be209e8aad9b5ee6313d9262a2edbcd70a734526ced0",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1440,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "Keychain 3x4.mp4",
+      "slug": "outland-rounds-keychain-v1",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 2880,
+            "height": 3840,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "8.000000"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/outland-rounds-keychain-v1-fallback.mp4",
+          "bytes": 2891840,
+          "sha256": "1aa2ec3cfc5e1ad3fba67e6ce5c7e2da925d686d5d6e82af3cb85ca0d45fb574",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1080,
+                "height": 1440,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "8.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/outland-rounds-keychain-v1-web.mp4",
+          "bytes": 1971786,
+          "sha256": "90fe150043641e6c09e4ff26c5c0e65c2bfc8ce5bd93133960f865726146abcc",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1080,
+                "height": 1440,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "8.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/outland-rounds-keychain-v1.webm",
+          "bytes": 2214462,
+          "sha256": "415e62d1fdc18edf4a676e9cffbd473ccf157837dbd975ae9bd8cf6060e612d3",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1440,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "8.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/outland-rounds-keychain-v1.jpg",
+          "bytes": 64834,
+          "sha256": "d0bb010402b921c8768a88ab3d8f9b9dfcd1076a069b2c75f187fdbc48d8bacc",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1440,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "iPhone Outdoor 16x9.mp4",
+      "slug": "outland-rounds-phone-outdoor-v1",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 3840,
+            "height": 2160,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "16.333333"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/outland-rounds-phone-outdoor-v1-fallback.mp4",
+          "bytes": 7532917,
+          "sha256": "03859f33ad2a41f3922f7af7785c5204005d986e81faf27c605ad225783491f5",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "16.333333"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/outland-rounds-phone-outdoor-v1-web.mp4",
+          "bytes": 3736809,
+          "sha256": "bbded487a6d980d46c66e5a6889ae9f514e0e3cf86ba6ddd101c473a4a39df17",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "16.333333"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/outland-rounds-phone-outdoor-v1.webm",
+          "bytes": 2632087,
+          "sha256": "94ba02ba85cce02b8981e84e93fc010836a4468a4f08891269e47df5326a8e4f",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "16.333000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/outland-rounds-phone-outdoor-v1.jpg",
+          "bytes": 183065,
+          "sha256": "d4fef9bcc295d74b3d85b3802e76eaebd7d6a767886596d1ab35217a24ed64c0",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "Flask Mockup 1x1.mp4",
+      "slug": "outland-rounds-flask-v1",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 3840,
+            "height": 3840,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "8.000000"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/outland-rounds-flask-v1-fallback.mp4",
+          "bytes": 1831945,
+          "sha256": "ad0afa82354d31f62254638187521a031fe15d0fd773a58f5bbd4f7fd67c5bb4",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "8.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/outland-rounds-flask-v1-web.mp4",
+          "bytes": 921118,
+          "sha256": "d2cf592cf1ea47015e0c20956f89407efaefff020812750350b4a1e3a80abe54",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "8.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/outland-rounds-flask-v1.webm",
+          "bytes": 855524,
+          "sha256": "ee3592a1fc0e402163452011bc0b3b2dac06eef632a025555e312e2c43b74f9c",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "8.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/outland-rounds-flask-v1.jpg",
+          "bytes": 67400,
+          "sha256": "ad66760f653bd49472603972bb9d295676073523b6c467e9b12ce1466d70ab42",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "Watch Mockup 1x1.mp4",
+      "slug": "outland-rounds-watch-v1",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 3840,
+            "height": 3840,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "19.000000"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/outland-rounds-watch-v1-fallback.mp4",
+          "bytes": 3055400,
+          "sha256": "c1e4cecb3acfc51434d4d90163b0f52cbc8642a3d620575f57637cefcb6d2f80",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "19.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/outland-rounds-watch-v1-web.mp4",
+          "bytes": 1419373,
+          "sha256": "fb884c9165ff5a5cfa69d70b63f0d9986fd41a3b2fc591f5cf32556fe49c6a11",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "19.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/outland-rounds-watch-v1.webm",
+          "bytes": 1466298,
+          "sha256": "276c5ccb32f0765065748e762bc7e226faf385e3753816889333a5f2435a72d9",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "19.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/outland-rounds-watch-v1.jpg",
+          "bytes": 51847,
+          "sha256": "decd04add9f9729fbea0b9b5febd23c038d7cc8940eb31424352d18243508d24",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "Aerial Golf Course 16x9.mp4",
+      "slug": "outland-rounds-aerial-v1",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 3840,
+            "height": 2160,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "10.000000"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/outland-rounds-aerial-v1-fallback.mp4",
+          "bytes": 6936484,
+          "sha256": "b9f510ef4e1f95f3d23d17e805d9011b6e9982997e0c733dcc7f8b26ec46b203",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "10.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/outland-rounds-aerial-v1-web.mp4",
+          "bytes": 4369177,
+          "sha256": "463d71d2278697aadcb0ef6481a390c680072f643790899dc8035ea8b5482604",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "10.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/outland-rounds-aerial-v1.webm",
+          "bytes": 3190645,
+          "sha256": "b96665ed740af3d4cbf207b6d140c72673dff334e3fec6ddfc85816ff3e13b44",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "10.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/outland-rounds-aerial-v1.jpg",
+          "bytes": 256981,
+          "sha256": "6fed8a9c6eae959fe7520d7c221d693e7509eb5d90eba4bbda4277f2f24577d8",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    }
+  ],
+  "identity": {
+    "source": "https://rounds.cc/brand/rounds-core-logo-black.svg",
+    "sourcePage": "https://rounds.cc/",
+    "path": "/images/outland-rounds-identity-v1.svg",
+    "width": 1299,
+    "height": 793,
+    "sha256": "9f3d6cb26019075e49a2dc9b80450cc5b83ba35c31fc09ee3bfa6a228af8ade4",
+    "note": "Official SVG wordmark inspected visually and reused unmodified. The site favicon still uses a different mark, so it was not used.",
+    "remoteVerified": true
+  }
+}
