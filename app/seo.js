@@ -6,6 +6,10 @@ export const WEBSITE_ID = `${SITE_URL}/#website`
 export const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com'
 
 const pageSocialImages = {
+  '/work/trezor': {
+    url: '/videos/posters/trezor-hero-v1.jpg',
+    alt: 'Green Trezor hardware wallet product animation, created with Yiskra',
+  },
   '/work/outland-rounds': {
     url: '/videos/posters/outland-rounds-wide-indoor-v1.jpg',
     alt: 'Rounds clubhouse brand world overlooking a golf course, created for Outland',
@@ -114,6 +118,12 @@ export const noIndex = {
 
 export const portfolioRoutes = [
   {
+    path: '/work/trezor',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+    lastModified: '2026-09-25',
+  },
+  {
     path: '/work/outland-rounds',
     priority: 0.8,
     changeFrequency: 'monthly',
@@ -219,6 +229,14 @@ export const portfolioRoutes = [
 
 export const featuredCreativeWorks = [
   {
+    name: 'Trezor — Hardware Wallet Product Animation',
+    path: '/work/trezor',
+    description: '3D product animations for Trezor’s online store, created with Yiskra. Realistic lighting and intricate motion showcase the hardware wallet in three colours.',
+    keywords: ['Trezor', 'Yiskra', '3D product animation', 'product visualization', 'lighting', 'motion design'],
+    dateCreated: '2025-09',
+    datePublished: '2026-09-25',
+  },
+  {
     name: 'Rounds — Golf App Brand World & Mockups',
     path: '/work/outland-rounds',
     description: 'Custom 3D environments, device and merchandise mockups for Outland’s Rounds golf app identity, from a clubhouse and golf course to phones, a watch, a flask and a keychain.',
@@ -309,6 +327,16 @@ export const featuredCreativeWorks = [
 ]
 
 export const videoAssets = [
+  {
+    name: 'Trezor hardware wallet product animation',
+    page: '/work/trezor',
+    description: 'A green Trezor hardware wallet presented through intricate motion and realistic lighting, created with Yiskra.',
+    thumbnailUrl: '/videos/posters/trezor-hero-v1.jpg',
+    contentUrl: '/videos/h264/trezor-hero-v1-fallback.mp4',
+    dateCreated: '2025-09',
+    uploadDate: '2026-09-25',
+    keywords: ['Trezor', 'Yiskra', '3D product animation', 'lighting', 'motion design'],
+  },
   {
     name: 'Rounds clubhouse brand world',
     page: '/work/outland-rounds',

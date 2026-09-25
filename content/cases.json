@@ -1708,5 +1708,135 @@
         "icon": null
       }
     ]
+  },
+  {
+    "slug": "trezor",
+    "path": "/work/trezor",
+    "title": "Trezor",
+    "subtitle": "Hardware Wallet Product Animation",
+    "date": "Work · September 2025",
+    "category": "work",
+    "overview": [
+      "I worked with Yiskra to create dynamic product animations for Trezor’s online store. The brief was to match Trezor’s aesthetic while showing the hardware wallet through realistic lighting and intricate motion.",
+      "The animations bring out the shape, surface details and colour of the product, keeping the wallet at the centre of each shot."
+    ],
+    "specs": [
+      {
+        "label": "Client",
+        "name": "Trezor",
+        "href": "https://trezor.io/",
+        "icon": "/images/trezor-identity-v1.webp",
+        "lines": [
+          "Hardware wallets"
+        ]
+      },
+      {
+        "label": "Agency",
+        "name": "Yiskra",
+        "href": "https://www.yiskra.studio/",
+        "icon": "/images/trezor-yiskra-identity-v1.webp",
+        "lines": [
+          "Creative studio"
+        ]
+      },
+      {
+        "label": "Deliverable",
+        "name": null,
+        "href": null,
+        "icon": null,
+        "lines": [
+          "3D product animations",
+          "Three colour variations"
+        ]
+      }
+    ],
+    "tags": [
+      "3D",
+      "Motion",
+      "Lighting"
+    ],
+    "hero": {
+      "poster": "/videos/posters/trezor-hero-v1.jpg",
+      "alt": "Green Trezor hardware wallet rotating against a light background",
+      "aspect": 1.7777777777777777,
+      "srcH265": "/videos/h265/trezor-hero-v1-web.mp4",
+      "srcAv1": "/videos/av1/trezor-hero-v1.webm",
+      "srcMp4": "/videos/h264/trezor-hero-v1-fallback.mp4"
+    },
+    "caption": "Trezor · Product animation",
+    "approach": [
+      {
+        "label": "Brief",
+        "paragraphs": [
+          "Create dynamic animations for Trezor’s product page in the store. The visuals needed to fit the brand’s aesthetic and show the hardware wallet clearly across three colours."
+        ]
+      },
+      {
+        "label": "Process",
+        "paragraphs": [
+          "I paired intricate rotations with controlled lighting to reveal the wallet’s profile, screen and textured back. Reflections help describe the surfaces, while the light background keeps attention on the product."
+        ]
+      }
+    ],
+    "outcome": [
+      {
+        "label": "My role",
+        "paragraphs": [
+          "I handled the 3D work, motion and lighting. Tomas Gnosis Snop managed the project at Yiskra."
+        ]
+      },
+      {
+        "label": "Result",
+        "paragraphs": [
+          "A set of product animations in black, green and orange, with a consistent approach to lighting and motion across the three versions. The close views show the wallet’s surface details, while the wider sequence follows its shape through a gradual rotation."
+        ]
+      }
+    ],
+    "media": [
+      {
+        "poster": "/videos/posters/trezor-black-v1.jpg",
+        "alt": "Black Trezor hardware wallet rotating to reveal its screen and textured back",
+        "aspect": 0.75,
+        "srcH265": "/videos/h265/trezor-black-v1-web.mp4",
+        "srcAv1": "/videos/av1/trezor-black-v1.webm",
+        "srcMp4": "/videos/h264/trezor-black-v1-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/trezor-green-v1.jpg",
+        "alt": "Green Trezor hardware wallet rotating to reveal its screen and textured back",
+        "aspect": 0.75,
+        "srcH265": "/videos/h265/trezor-green-v1-web.mp4",
+        "srcAv1": "/videos/av1/trezor-green-v1.webm",
+        "srcMp4": "/videos/h264/trezor-green-v1-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/trezor-orange-v1.jpg",
+        "alt": "Orange Trezor hardware wallet rotating to reveal its screen and textured back",
+        "aspect": 0.75,
+        "srcH265": "/videos/h265/trezor-orange-v1-web.mp4",
+        "srcAv1": "/videos/av1/trezor-orange-v1.webm",
+        "srcMp4": "/videos/h264/trezor-orange-v1-fallback.mp4"
+      }
+    ],
+    "rows": [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "credits": [
+      {
+        "role": "Project Management",
+        "name": "Tomas Gnosis Snop",
+        "icon": "/images/trezor-yiskra-identity-v1.webp",
+        "href": "https://www.yiskra.studio/"
+      },
+      {
+        "role": "3D, Motion, Lighting",
+        "name": "Kryštof Ježek",
+        "icon": "designer"
+      }
+    ]
   }
 ]

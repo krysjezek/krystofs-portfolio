@@ -12,6 +12,8 @@ Reduced-motion and data-saver preferences keep the poster. Preference changes ar
 
 ## Records and provenance
 
+- content/trezor-media.json: four owner-supplied product animations for Yiskra and Trezor, dated September 2025. The black, green and orange deliveries preserve 24fps at 1080?1080 and display together in 3:4 crops; the black clip also supplies the homepage card. The hero retains 30fps at 1440?810 and the owner-requested 16:9 frame. All clips have silent H.265, AV1 and H.264 deliveries and first-frame JPEG posters. Original masters remain in the supplied Dropbox folder. Official Trezor and Yiskra identity marks were visually inspected; uploaded assets are verified by remote probes and hashes.
+
 - content/motion-mockups-media.json: homepage card combines the owner-supplied square XDR display and portrait MacBook clips, in that order, into a 16-second silent loop. Both retain all eight seconds at 30fps. A common 1080x1350 canvas crops the square scene horizontally and scales the portrait scene proportionally. The card keeps its existing responsive display crops. Original masters remain in Downloads.
 
 - content/vsx-knitting-media.json: refreshed VSX delivery set from the owner-supplied VSX Knitting folder. The header uses `vsx-upscaled_265.mp4`, and the homepage uses `Card BCG.mp4`. A 20:13 product view pairs with a 3:4 fabric detail; square knit and weave breakdowns follow. All clips retain 30fps, with silent H.265, AV1 and H.264 delivery under cache-safe `vsx-knitting-*-v2` paths. Header and card use `v3` paths and trim 0.7 seconds of empty lead-in so first-frame posters show yarn; the other four clips retain full duration. The header retains the shared 16:10 display crop.

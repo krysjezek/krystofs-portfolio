@@ -1,0 +1,629 @@
+{
+  "prepared": "2026-09-25",
+  "sourceDirectory": "C:\\Users\\kryst\\Dropbox\\Work\\2026\\00 Case Studies 2026\\Trezor",
+  "note": "Four supplied masters inspected with ffprobe and visually sampled. Full-duration silent deliveries: H.264 High CRF20 slow, H.265 Main CRF24 slow hvc1, AV1 Main 10-bit CRF30 preset6. Square colour clips retain 24fps at 1080x1080, hero retains 30fps at 1440x810; no upscaling. Posters use frame 1 of H.264 delivery. Hero displays at owner-requested 16:9, three colours at 3:4; black clip also supplies the existing homepage card. Masters remain in Dropbox. Project date September 2025 and credits provided by owner.",
+  "assets": [
+    {
+      "source": "trezor-anim02-1x1-black_F3F5F7.mp4",
+      "slug": "trezor-black-v1",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 1920,
+            "height": 1920,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "5.833333"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/trezor-black-v1-fallback.mp4",
+          "bytes": 1044458,
+          "sha256": "50ec7ac5d52b87b57aa91aa4ba4a19b29391cdf957cb6cc5219a8db3933072bf",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              }
+            ],
+            "format": {
+              "duration": "5.833333"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/h265/trezor-black-v1-web.mp4",
+          "bytes": 642976,
+          "sha256": "a07c39eb81000f57dacf2331382852d6cdafff5eda95648d9f877ca761b388f7",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              }
+            ],
+            "format": {
+              "duration": "5.833333"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/av1/trezor-black-v1.webm",
+          "bytes": 643110,
+          "sha256": "e8a9a6482b921ab6b1bb24086a4ee18bc1c1bcd1bafddb128949a4118e956db4",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "24/1"
+              }
+            ],
+            "format": {
+              "duration": "5.834000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/posters/trezor-black-v1.jpg",
+          "bytes": 196634,
+          "sha256": "6dd32590c579537da747c9b9b52f3cb6028528ff097f87f6f71fa19915902721",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "trezor-anim02-1x1-green_F3F5F7.mp4",
+      "slug": "trezor-green-v1",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 1920,
+            "height": 1920,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "5.833333"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/trezor-green-v1-fallback.mp4",
+          "bytes": 1011813,
+          "sha256": "be729dea43c9392ea149d1b6cc065b0124c444a2e4ff269a12081df7cbee6283",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              }
+            ],
+            "format": {
+              "duration": "5.833333"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/h265/trezor-green-v1-web.mp4",
+          "bytes": 651882,
+          "sha256": "1dcd6706b324cd5cba90442be3736cb84e206d246a44e29ee51f5fa93a9d7cf7",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              }
+            ],
+            "format": {
+              "duration": "5.833333"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/av1/trezor-green-v1.webm",
+          "bytes": 675022,
+          "sha256": "b28e1e7ea6aad272b3dfaa32051b692c214b715af237f5a069bbb85a7aaca74c",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "24/1"
+              }
+            ],
+            "format": {
+              "duration": "5.834000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/posters/trezor-green-v1.jpg",
+          "bytes": 206519,
+          "sha256": "72cb9396749452257f2ff944509eb719daa297bdda498a3df7e392ddcdf5c5f3",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "trezor-anim02-1x1-orange_F3F5F7.mp4",
+      "slug": "trezor-orange-v1",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 1918,
+            "height": 1918,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "5.833333"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/trezor-orange-v1-fallback.mp4",
+          "bytes": 1125066,
+          "sha256": "cc4354e68b48003f505817b473739fe2be2a9df0763434c5111be9795bd9faa9",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              }
+            ],
+            "format": {
+              "duration": "5.833333"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/h265/trezor-orange-v1-web.mp4",
+          "bytes": 667970,
+          "sha256": "5d6c604f87f82c935ac86cae696ffe5c6d4ca82a9d3613e74e28845320243949",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "24/1"
+              }
+            ],
+            "format": {
+              "duration": "5.833333"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/av1/trezor-orange-v1.webm",
+          "bytes": 704828,
+          "sha256": "fcc046a52c885abe68f2ae10de05be6a6994b256e90a7a4b05f16e26594851bc",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "24/1"
+              }
+            ],
+            "format": {
+              "duration": "5.834000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/posters/trezor-orange-v1.jpg",
+          "bytes": 226367,
+          "sha256": "a8c254ee67a9166ffcea01e8286307bff69c0325e043b920cba7477bfe2ead4e",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "trezor-export-16x9-v4.mp4",
+      "slug": "trezor-hero-v1",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 2560,
+            "height": 1440,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "5.000000"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/trezor-hero-v1-fallback.mp4",
+          "bytes": 364234,
+          "sha256": "39222291ebf96a863ddec2b4cb0946bf9da68cb0523d7757af74649cab968366",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "5.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/h265/trezor-hero-v1-web.mp4",
+          "bytes": 298331,
+          "sha256": "92571ffbb52a1160d503f262c9f45b4dc3426f5df3a7c6cad1bcbb4c1ce6b888",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "5.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/av1/trezor-hero-v1.webm",
+          "bytes": 232072,
+          "sha256": "e3c2a5f3e06de061d06b6e064e1e857d78128f2eaa7f2f132601a093e7e691ef",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "5.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/posters/trezor-hero-v1.jpg",
+          "bytes": 44663,
+          "sha256": "b8a4437f52d733deda32b57c0e38b8c8cd0f6b3dcee3b2f06f920ad6888cd838",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 810,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        }
+      ]
+    }
+  ],
+  "identities": [
+    {
+      "path": "/images/trezor-identity-v1.webp",
+      "source": "https://trezor.io/favicon.ico",
+      "sha256": "c34a71382d77fe0511428c0ee1a6a5d5abf54e73339ea80767cf906b13aed8e2",
+      "remoteVerified": "2026-09-25"
+    },
+    {
+      "path": "/images/trezor-yiskra-identity-v1.webp",
+      "source": "https://www.yiskra.studio/apple-touch-icon.png",
+      "sha256": "dc7fb21922ea5333b994c427465b725f70b6fce98fe74258780adb286a22b6e8",
+      "remoteVerified": "2026-09-25"
+    }
+  ]
+}

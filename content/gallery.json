@@ -157,12 +157,18 @@
         "id": "trezor",
         "name": "Trezor",
         "category": "work",
-        "disciplines": "3D, Motion, Art Direction",
-        "href": null,
-        "poster": "/images/portfolio-2027-gallery-trezor.webp",
+        "disciplines": "3D, Motion, Lighting",
+        "href": "/work/trezor",
+        "poster": "/videos/posters/trezor-black-v1.jpg",
         "aspect": 1.33333,
         "tabletAspect": 1.33333,
-        "mobileAspect": 1.33333
+        "mobileAspect": 1.33333,
+        "alt": "Black Trezor hardware wallet rotating to reveal its screen and textured back",
+        "srcH265": "/videos/h265/trezor-black-v1-web.mp4",
+        "srcAv1": "/videos/av1/trezor-black-v1.webm",
+        "srcMp4": "/videos/h264/trezor-black-v1-fallback.mp4",
+        "icon": "/images/trezor-identity-v1.webp",
+        "preview": "Product animations for Trezor’s online store, created with Yiskra."
       },
       {
         "id": "fantasy",
