@@ -1734,7 +1734,7 @@
         "label": "Agency",
         "name": "Yiskra",
         "href": "https://www.yiskra.studio/",
-        "icon": "/images/trezor-yiskra-identity-v1.webp",
+        "icon": "/images/trezor-yiskra-identity-v2.svg",
         "lines": [
           "Creative studio"
         ]
@@ -1829,7 +1829,7 @@
       {
         "role": "Project Management",
         "name": "Tomas Gnosis Snop",
-        "icon": "/images/trezor-yiskra-identity-v1.webp",
+        "icon": "/images/trezor-yiskra-identity-v2.svg",
         "href": "https://www.yiskra.studio/"
       },
       {

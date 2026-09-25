@@ -620,10 +620,11 @@
       "remoteVerified": "2026-09-25"
     },
     {
-      "path": "/images/trezor-yiskra-identity-v1.webp",
-      "source": "https://www.yiskra.studio/apple-touch-icon.png",
-      "sha256": "dc7fb21922ea5333b994c427465b725f70b6fce98fe74258780adb286a22b6e8",
-      "remoteVerified": "2026-09-25"
+      "path": "/images/trezor-yiskra-identity-v2.svg",
+      "source": "https://www.yiskra.studio/safari-pinned-tab.svg",
+      "sha256": "41fb76277663635c8c1b8b070ba140dfca6125438583363683272a784ddd1469",
+      "remoteVerified": "2026-09-25",
+      "note": "Official square SVG replaces the raster apple-touch icon for crisp rendering at 15px. Original viewBox and aspect ratio preserved."
     }
   ]
 }
