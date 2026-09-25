@@ -43,7 +43,13 @@ export default function Card({
   );
   if (!card.href)
     return (
-      <article {...props} aria-label={card.name}>
+      <article
+        {...props}
+        aria-label={card.hint ? `${card.name}: ${card.hint}` : card.name}
+        data-hint={card.hint}
+        data-hint-icon={card.hint ? "eye" : undefined}
+        data-informational={card.hint ? "" : undefined}
+      >
         {content}
       </article>
     );
