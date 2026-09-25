@@ -64,9 +64,11 @@ Calculation: `69,800 + 100,000 + 163,000 + 74,600 = 407,400` using the abbreviat
 
 Scope: only these four posts on Barbour’s Instagram, observed on that date. This is not unique viewers, an organic-only audience, or total reach across all campaign assets, accounts or platforms. The paid/organic split is unknown. Do not imply that Kryštof’s contribution alone caused the audience result. Counters can change after the observation date.
 
-The canonical Result at desktop, tablet and mobile widths reads:
+The Result was revised in the editorial pass of 26 September 2026. It first describes the delivered films, then gives the historical figure:
 
-> About 407k views across the four city Reels on Barbour’s Instagram. CGI quilting and procedural nature brought the campaign into London, New York, Seoul and Shanghai.
+> The campaign includes four city films and two department-store sequences. Each uses the same quilting idea in a different location.
+>
+> About 407k views were recorded across the four city Reels on Barbour’s Instagram on 23 September 2026. This is a combined count for those posts.
 
 The black first phrase opens the shared panel with the four separately clickable source rows, the arithmetic, rounding explanation and observation date. Neither the trigger nor source links are underlined. [Monopo’s project case study](https://monopo.london/work/barbour-icons-in-quilting/) corroborates the four-city campaign and two additional department-store films, but is not used as evidence of audience numbers.
 

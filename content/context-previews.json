@@ -33,14 +33,8 @@
       "meta": "Less and Better · ValkaAI project credits"
     },
     "Mary Wu": {
-      "detail": "Project manager with a background in anthropology, public relations and visual effects, bringing creative teams and ambitious ideas together.",
+      "detail": "Project manager at Monopo London with a background in anthropology, public relations and visual effects.",
       "href": "https://monopo.london/team/mary-wu/",
-      "meta": "Profile · monopo london"
-    },
-    "Maud Dedrecked": {
-      "title": "Maud Dedecker",
-      "detail": "Creative producer whose experience spans films, integrated campaigns and digital content. Connects clients and creative teams at monopo london.",
-      "href": "https://monopo.london/team/maud-dedecker/",
       "meta": "Profile · monopo london"
     },
     "Stella Grotti": {
@@ -54,7 +48,7 @@
       "meta": "Profile · monopo london"
     },
     "Josef Talač": {
-      "detail": "3D and VFX collaborator on Barbour’s Icons in Quilting campaign, helping bring the CGI sequences to life.",
+      "detail": "3D and VFX collaborator on Barbour’s Icons in Quilting campaign.",
       "meta": "Barbour · project credits"
     },
     "David Hájek": {
@@ -80,6 +74,11 @@
       "detail": "2D motion design collaborator at Outland on the Rounds brand project.",
       "href": "https://enteroutland.com/",
       "meta": "Outland · Rounds"
+    },
+    "Maud Dedecker": {
+      "detail": "Creative producer whose experience spans films, integrated campaigns and digital content. Connects clients and creative teams at monopo london.",
+      "href": "https://monopo.london/team/maud-dedecker/",
+      "meta": "Profile · monopo london"
     }
   }
 }

@@ -15,7 +15,7 @@
         "srcH265": "/videos/h265/vizcom-card-v2-web.mp4",
         "srcAv1": "/videos/av1/vizcom-card-v2.webm",
         "srcMp4": "/videos/h264/vizcom-card-v2-fallback.mp4",
-        "preview": "A 3D brand world and short 2D animations for Vizcom, created with Outland."
+        "preview": "A 3D studio film, stills and short 2D animations for Vizcom, created with Outland."
       },
       {
         "id": "shelby",
@@ -31,7 +31,8 @@
         "srcH265": "/videos/h265/shelby-card-v1-web.mp4",
         "srcAv1": "/videos/av1/shelby-card-v1.webm",
         "srcMp4": "/videos/h264/shelby-card-v1-fallback.mp4",
-        "preview": "Custom device and merch mockups for Ashfall Studio’s Shelby brand case study."
+        "preview": "Custom 3D device and merchandise mockups for Ashfall Studio’s Shelby case study.",
+        "icon": "/images/shelby-identity-v1.webp"
       },
       {
         "id": "victoria-s-secret",
@@ -47,7 +48,7 @@
         "srcH265": "/videos/h265/vsx-knitting-card-v3-web.mp4",
         "srcAv1": "/videos/av1/vsx-knitting-card-v3.webm",
         "srcMp4": "/videos/h264/vsx-knitting-card-v3-fallback.mp4",
-        "preview": "Houdini knit and weave simulations, product animation and look development for the VSX Sports Bra."
+        "preview": "A CGI product film exploring the knit, weave and construction of the VSX Sports Bra."
       },
       {
         "id": "barbour",
@@ -63,7 +64,7 @@
         "srcH265": "/videos/h265/portfolio-card-barbour-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-barbour-v1.webm",
         "srcMp4": "/videos/h264/portfolio-card-barbour-v1-fallback.mp4",
-        "preview": "Oversized quilted jackets meet city streets in a CGI campaign for Barbour."
+        "preview": "Quilted fabric and countryside details added to city footage for Barbour’s Icons in Quilting campaign."
       },
       {
         "id": "motion-mockups",
@@ -123,7 +124,8 @@
         "srcH265": "/videos/h265/outland-rounds-card-v2-web.mp4",
         "srcAv1": "/videos/av1/outland-rounds-card-v2.webm",
         "srcMp4": "/videos/h264/outland-rounds-card-v2-fallback.mp4",
-        "alt": "Rounds brand world and device mockups, from the clubhouse to a watch and phones"
+        "alt": "Rounds brand world and device mockups, from the clubhouse to a watch and phones",
+        "preview": "A clubhouse, golf course and custom mockups for Outland’s Rounds identity."
       },
       {
         "id": "valkaai",
@@ -139,7 +141,7 @@
         "srcH265": "/videos/h265/portfolio-card-valkaai-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-valkaai-v1.webm",
         "srcMp4": "/videos/h264/portfolio-card-valkaai-v1-fallback.mp4",
-        "preview": "Glass, prisms and a mirrored butterfly brought to life with Less and Better."
+        "preview": "A glass prism animation of ValkaAI’s mirrored butterfly logo, created with Less and Better."
       },
       {
         "id": "gusto",
@@ -154,7 +156,8 @@
         "srcH265": "/videos/h265/outpost-gusto-card-v3-web.mp4",
         "srcAv1": "/videos/av1/outpost-gusto-card-v3.webm",
         "srcMp4": "/videos/h264/outpost-gusto-card-v3-fallback.mp4",
-        "preview": "A UI design showreel for Gusto, created with Chris from Outpost Studio."
+        "preview": "Interface animation and 3D device scenes for Outpost Studio’s Gusto showreel.",
+        "icon": "/images/outpost-gusto-identity-v1.svg"
       },
       {
         "id": "trezor",
@@ -171,7 +174,7 @@
         "srcAv1": "/videos/av1/trezor-black-v1.webm",
         "srcMp4": "/videos/h264/trezor-black-v1-fallback.mp4",
         "icon": "/images/trezor-identity-v1.webp",
-        "preview": "Product animations for Trezor’s online store, created with Yiskra."
+        "preview": "Hardware wallet animations in three colours for Trezor’s online store, created with Yiskra."
       },
       {
         "id": "fantasy",
@@ -186,7 +189,8 @@
         "srcH265": "/videos/h265/outpost-fantasy-card-v2-web.mp4",
         "srcAv1": "/videos/av1/outpost-fantasy-card-v2.webm",
         "srcMp4": "/videos/h264/outpost-fantasy-card-v2-fallback.mp4",
-        "preview": "2D and 3D motion with custom device mockups for Outpost’s Fantasy website redesign."
+        "preview": "A reel and custom device mockups presenting Outpost Studio’s Fantasy website redesign.",
+        "icon": "/images/outpost-fantasy-identity-fantasy-v1.svg"
       }
     ],
     "desktop": [
@@ -276,7 +280,7 @@
         "srcH265": "/videos/h265/portfolio-card-the-mag-wrap-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-the-mag-wrap-v1.webm",
         "srcMp4": "/videos/h264/portfolio-card-the-mag-wrap-v1-fallback.mp4",
-        "preview": "A personal motion project exploring 3D and broadcast graphics."
+        "preview": "3D animation, loops and reusable show graphics for The Mag Wrap 2025."
       },
       {
         "id": "blender-addon",
@@ -307,7 +311,7 @@
         "srcH265": "/videos/h265/portfolio-card-chainer-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-chainer-v1.webm",
         "srcMp4": "/videos/h264/portfolio-card-chainer-v1-fallback.mp4",
-        "preview": "A personal exploration of 3D product visuals, art direction and web design."
+        "preview": "Jewellery scenes in 3D, carried into animation, sound and a website."
       },
       {
         "id": "relivear",
@@ -392,7 +396,8 @@
         "mobileAspect": 1.77778,
         "srcH265": "/videos/h265/vojta-zizka-patreon-v1-web.mp4",
         "srcAv1": "/videos/av1/vojta-zizka-patreon-v1.webm",
-        "srcMp4": "/videos/h264/vojta-zizka-patreon-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/vojta-zizka-patreon-v1-fallback.mp4",
+        "preview": "Tools for generating Patreon supporter credits and market charts for Vojta Zizka’s videos."
       },
       {
         "id": "cgi-karlin",

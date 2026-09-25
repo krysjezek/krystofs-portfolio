@@ -121,37 +121,37 @@ export const portfolioRoutes = [
     path: '/work/trezor',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-09-25',
+    lastModified: '2026-09-26',
   },
   {
     path: '/work/outland-rounds',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-09-25',
+    lastModified: '2026-09-26',
   },
   {
     path: '/work/shelby',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-09-25',
+    lastModified: '2026-09-26',
   },
   {
     path: '/work/outpost-gusto',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-09-25',
+    lastModified: '2026-09-26',
   },
   {
     path: '/work/vojta-zizka',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-09-24',
+    lastModified: '2026-09-26',
   },
   {
     path: '/work/outpost-fantasy',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-09-24',
+    lastModified: '2026-09-26',
   },
   {
     path: '/',
@@ -181,31 +181,31 @@ export const portfolioRoutes = [
     path: '/work/valkaai',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-09-23',
+    lastModified: '2026-09-26',
   },
   {
     path: '/work/the-mag-w-rap-2025',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-09-23',
+    lastModified: '2026-09-26',
   },
   {
     path: '/work/barbour',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-09-23',
+    lastModified: '2026-09-26',
   },
   {
     path: '/work/the-vsx-sports-bra',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-09-25',
+    lastModified: '2026-09-26',
   },
   {
     path: '/work/chainer',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-09-23',
+    lastModified: '2026-09-26',
   },
   {
     path: '/other/cv',
@@ -231,7 +231,7 @@ export const featuredCreativeWorks = [
   {
     name: 'Trezor — Hardware Wallet Product Animation',
     path: '/work/trezor',
-    description: '3D product animations for Trezor’s online store, created with Yiskra. Realistic lighting and intricate motion showcase the hardware wallet in three colours.',
+    description: '3D hardware wallet animations in black, green and orange for Trezor’s online store, created with Yiskra.',
     keywords: ['Trezor', 'Yiskra', '3D product animation', 'product visualization', 'lighting', 'motion design'],
     dateCreated: '2025-09',
     datePublished: '2026-09-25',
@@ -239,7 +239,7 @@ export const featuredCreativeWorks = [
   {
     name: 'Rounds — Golf App Brand World & Mockups',
     path: '/work/outland-rounds',
-    description: 'Custom 3D environments, device and merchandise mockups for Outland’s Rounds golf app identity, from a clubhouse and golf course to phones, a watch, a flask and a keychain.',
+    description: 'A 3D clubhouse, golf course and custom device and merchandise mockups for Outland’s Rounds identity.',
     keywords: ['Rounds', 'Outland', '3D environments', 'custom mockups', 'golf app', 'merch visualization'],
     dateCreated: '2026-08',
     datePublished: '2026-09-25',
@@ -247,7 +247,7 @@ export const featuredCreativeWorks = [
   {
     name: 'Shelby — Custom Device & Merch Mockups',
     path: '/work/shelby',
-    description: 'Custom 3D device and merch mockups for Ashfall Studio’s Shelby brand case study, from MacBook and iPad scenes to pins, badges, bottles and clothing.',
+    description: 'Custom 3D device and merchandise mockups for Ashfall Studio’s Shelby case study, from website views to pins, badges, bottles and clothing.',
     keywords: ['custom mockups', '3D device mockups', 'merch visualization', '3D motion design', 'Shelby', 'Ashfall Studio'],
     dateCreated: '2026-04',
     datePublished: '2026-09-25',
@@ -255,7 +255,7 @@ export const featuredCreativeWorks = [
   {
     name: 'Gusto',
     path: '/work/outpost-gusto',
-    description: 'A showreel for Outpost Studio’s new Gusto UI design, combining interface animation, playful transitions and 3D device scenes.',
+    description: 'A showreel for Outpost Studio’s Gusto UI design, combining interface animation, transitions and 3D device scenes.',
     keywords: ['UI animation', '2D motion design', '3D motion design', 'website showcase reel'],
     dateCreated: '2026-09',
     datePublished: '2026-09-25',
@@ -263,7 +263,7 @@ export const featuredCreativeWorks = [
   {
     name: 'Vojta Zizka — Automated Patreon "Thank You" & Market Charts',
     path: '/work/vojta-zizka',
-    description: 'Two video-production tools for Vojta Zizka: automated Patreon supporter credits in After Effects and a web app for branded market charts.',
+    description: 'Two tools for Vojta Zizka’s videos: an After Effects script for Patreon supporter credits and a web app for branded market charts.',
     keywords: ['video production automation', 'After Effects scripting', 'Patreon credits', 'automated market charts', 'motion design'],
     dateCreated: '2025',
     datePublished: '2026-09-24',
@@ -271,7 +271,7 @@ export const featuredCreativeWorks = [
   {
     name: 'Outpost Fantasy',
     path: '/work/outpost-fantasy',
-    description: '2D and 3D motion and custom device mockups for a reel showcasing Outpost Studio’s redesign of the Fantasy website.',
+    description: 'A reel presenting Outpost Studio’s Fantasy website redesign through interface animation and custom 3D device mockups.',
     keywords: ['2D motion design', '3D motion design', 'custom device mockups', 'website showcase reel'],
     dateCreated: '2026-05',
     datePublished: '2026-09-24',
@@ -287,7 +287,7 @@ export const featuredCreativeWorks = [
   {
     name: 'ValkaAI',
     path: '/work/valkaai',
-    description: 'Art direction, 3D, and motion graphics for ValkaAI’s glass-prism mirrored-butterfly logo animation, created with Less and Better.',
+    description: 'A glass prism animation of ValkaAI’s mirrored butterfly logo, created with Less and Better using light, colour and persona imagery.',
     keywords: ['3D logo animation', 'glass prism animation', 'art direction', 'motion graphics', 'AI brand identity'],
     dateCreated: '2026',
     datePublished: '2026-07',
@@ -295,7 +295,7 @@ export const featuredCreativeWorks = [
   {
     name: 'The Mag Wrap 2025',
     path: '/work/the-mag-w-rap-2025',
-    description: '3D motion design, art direction, and broadcast graphics package for The Mag Wrap 2025.',
+    description: '3D animation, looping backgrounds, show IDs and reusable on-screen graphics for The Mag Wrap 2025.',
     keywords: ['3D motion design', 'motion graphics', 'broadcast design', 'brand campaign'],
     dateCreated: '2025',
     datePublished: '2025-08',
@@ -303,7 +303,7 @@ export const featuredCreativeWorks = [
   {
     name: 'Barbour Quilt FOOH',
     path: '/work/barbour',
-    description: 'FOOH campaign and fake out-of-home CGI/VFX work with cloth simulation for Barbour.',
+    description: 'CGI direction, cloth animation and VFX for Barbour’s Icons in Quilting campaign, created with Monopo London across four city settings.',
     keywords: ['FOOH campaign', 'fake out-of-home', 'CGI advertising', 'VFX', 'cloth simulation'],
     dateCreated: '2024',
     datePublished: '2024-09',
@@ -311,7 +311,7 @@ export const featuredCreativeWorks = [
   {
     name: 'The VSX Sports Bra',
     path: '/work/the-vsx-sports-bra',
-    description: 'Houdini knit, weave and cloth simulations for the VSX Sports Bra, combined with 3D product animation and look development.',
+    description: 'A CGI film for the VSX Sports Bra, with Houdini knit and weave simulations and 3D product animation, created with TMRZV Studio.',
     keywords: ['Houdini simulation', 'knit simulation', 'weave simulation', '3D product visualization', 'CGI product animation', 'cloth simulation', 'look development'],
     dateCreated: '2025',
     datePublished: '2025-04',
@@ -319,7 +319,7 @@ export const featuredCreativeWorks = [
   {
     name: 'Chainer',
     path: '/work/chainer',
-    description: '3D product visualization, art direction, and web design for Chainer.',
+    description: '3D jewellery scenes, animation, sound and a website for Chainer, exploring reflective materials, lighting and landscapes.',
     keywords: ['3D product visualization', 'art direction', 'web design', 'CGI visuals'],
     dateCreated: '2023',
     datePublished: '2023-09',
@@ -330,7 +330,7 @@ export const videoAssets = [
   {
     name: 'Trezor hardware wallet product animation',
     page: '/work/trezor',
-    description: 'A green Trezor hardware wallet presented through intricate motion and realistic lighting, created with Yiskra.',
+    description: 'A green Trezor hardware wallet rotating against a light background, showing its shape, screen and textured back. Created with Yiskra.',
     thumbnailUrl: '/videos/posters/trezor-hero-v1.jpg',
     contentUrl: '/videos/h264/trezor-hero-v1-fallback.mp4',
     dateCreated: '2025-09',
@@ -461,13 +461,13 @@ export const videoAssets = [
   {
     name: 'The VSX Sports Bra 3D product visualization',
     page: '/work/the-vsx-sports-bra',
-    description: 'The VSX Sports Bra 3D product visualization showing photoreal fabric and knit simulations for a social launch asset.',
+    description: 'A CGI sequence moving from yarn loops and a woven VSX logo to close views of the finished sports bra.',
     thumbnailUrl: '/videos/posters/vsx-knitting-header-v3.jpg',
     contentUrl: '/videos/h264/vsx-knitting-header-v3-fallback.mp4',
     dateCreated: '2025-04',
     uploadDate: '2026-09-25',
     keywords: ['3D product visualization', 'CGI product animation', 'cloth simulation'],
-    transcript: 'No spoken dialogue. Visual sequence showing close-up CGI fabric, knit detail, stretch, and support simulations for the VSX Sports Bra.',
+    transcript: 'No spoken dialogue. Yarn loops form the knit fabric and woven VSX logo before the sequence moves to the finished sports bra.',
   },
   {
     name: 'The VSX Sports Bra cloth simulation breakdown',
@@ -483,7 +483,7 @@ export const videoAssets = [
   {
     name: 'The Mag Wrap 2025 3D motion design package',
     page: '/work/the-mag-w-rap-2025',
-    description: 'The Mag Wrap 2025 motion design asset showing 2D and 3D show graphics, looping backgrounds, sponsor visuals, and broadcast IDs.',
+    description: 'A selection of 2D and 3D show graphics, looping backgrounds, sponsor visuals and show IDs for The Mag Wrap 2025.',
     thumbnailUrl: '/videos/posters/w25_injektaz.jpg',
     embedUrl: 'https://www.youtube.com/embed/-s2ly4Fgu5c',
     dateCreated: '2025',

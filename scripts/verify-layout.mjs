@@ -63,9 +63,10 @@ try {
       });
       for (const key of ["x", "y", "width", "height"]) {
         if (anchor[key] === undefined) continue;
-        // Revised Vizcom copy changes text wrapping and subsequent positions.
-        // Keep the original top inset, hero ratio, caption and credits heights.
-        if (screen.route === "/work/vizcom" && (
+        // The approved editorial pass changes case text wrapping and positions.
+        // Retain Figma's top inset, media geometry, caption and credits heights;
+        // verify content-driven section flow and padding separately below.
+        if (screen.anchors.some(item => item.selector === ".case-introduction") && (
           (key === "y" && anchor.selector !== ".case-introduction") ||
           (key === "height" && [".case-introduction", ".case-narrative"].includes(anchor.selector))
         )) continue;
@@ -108,6 +109,23 @@ try {
       for (const [id, ratio] of [["blender-addon", 1], ["the-mag-wrap", 16 / 9]]) {
         const card = await page.locator(`#panel-fun [data-project="${id}"]`).boundingBox();
         assert(Math.abs(card.width / card.height - ratio) < 0.001, `${id} keeps its requested ratio at ${screen.width}px`);
+        checks++;
+      }
+    }
+    if (screen.anchors.some(item => item.selector === ".case-introduction")) {
+      const sections = await page.locator(".case-study > :is(header, .case-hero, .film-caption, .mobile-specifications, .case-narrative, .case-media, .case-credits):visible").evaluateAll(nodes =>
+        nodes.map(node => {
+          const rect = node.getBoundingClientRect();
+          const style = getComputedStyle(node);
+          return { top: rect.top, bottom: rect.bottom, className: node.className, paddingTop: parseFloat(style.paddingTop), paddingBottom: parseFloat(style.paddingBottom) };
+        }),
+      );
+      for (const [index, section] of sections.entries()) {
+        if (index) assert(Math.abs(section.top - sections[index - 1].bottom) <= reference.tolerance, "Case sections follow revised copy without gaps or overlaps");
+        if (section.className.includes("case-narrative")) {
+          assert.equal(section.paddingTop, screen.width >= 1100 ? 70 : 40);
+          assert.equal(section.paddingBottom, section.className.includes("case-outcome") ? 35 : screen.width >= 1100 ? 70 : 40);
+        }
         checks++;
       }
     }

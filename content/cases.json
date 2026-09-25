@@ -180,8 +180,8 @@
     "date": "Work · July 2026",
     "category": "work",
     "overview": [
-      "Less and Better invited me to translate its mirrored-butterfly mark for ValkaAI into motion.",
-      "A glass prism refracts blue and orange accents through AI persona imagery, bridging real and digital realities."
+      "I worked with Less and Better on a 3D animation of the ValkaAI logo.",
+      "The mirrored butterfly becomes a glass prism, with blue and orange light and images of AI personas passing through its surfaces."
     ],
     "specs": [
       {
@@ -190,8 +190,7 @@
         "href": "https://valka.ai/",
         "icon": "/images/portfolio-2027-identity-valkaai.webp",
         "lines": [
-          "AI-native entertainment",
-          "Real-time AI personas"
+          "AI entertainment and personas"
         ]
       },
       {
@@ -200,8 +199,7 @@
         "href": "https://www.l-ab.eu/work/valkaai",
         "icon": "/images/portfolio-2027-identity-less-and-better.webp",
         "lines": [
-          "Brand identity and creative direction",
-          "Brno, Czech Republic"
+          "Brand identity and creative direction"
         ]
       },
       {
@@ -210,9 +208,8 @@
         "href": null,
         "icon": null,
         "lines": [
-          "1 × 36-second 3D logo animation",
-          "4K master delivery",
-          "Web-ready 16:9 loop"
+          "3D logo animation",
+          "Loop for web"
         ]
       }
     ],
@@ -232,18 +229,18 @@
       "srcAv1": "/videos/av1/valkaai-logo-glass-prism.webm",
       "srcMp4": "/videos/h264/valkaai-logo-glass-prism-fallback.mp4"
     },
-    "caption": "Glass-prism logo animation · 36 seconds",
+    "caption": "ValkaAI · Glass prism logo animation",
     "approach": [
       {
         "label": "Brief",
         "paragraphs": [
-          "Translate Less and Better’s identity into a distinctive motion asset that presents ValkaAI as serious AI infrastructure while retaining the emotion and transformation built into the logo."
+          "Animate the mirrored butterfly from Less and Better’s identity. The sequence needed to show the shape of the mark and make room for ValkaAI’s persona imagery."
         ]
       },
       {
         "label": "Process",
         "paragraphs": [
-          "I developed a transparent, refractive 3D prism and used light, colour, and AI persona imagery to reveal the mirrored geometry as a bridge between real and digital realities."
+          "I gave the logo depth and a refractive glass material. Moving light and imagery through the prism let me explore its symmetry, edges and reflections."
         ]
       }
     ],
@@ -251,13 +248,13 @@
       {
         "label": "My role",
         "paragraphs": [
-          "Art direction, 3D, and motion graphics for a glass-prism animation of the ValkaAI mirrored-butterfly logo."
+          "I handled the art direction, 3D work and motion graphics for the animation, working with Dominik Smuchar and Petr Skovajsa from Less and Better."
         ]
       },
       {
         "label": "Result",
         "paragraphs": [
-          "The final 4K loop extends the brand into motion with a tactile hero asset that keeps ValkaAI’s personas at the centre of the visual story."
+          "The finished loop shows the logo as a glass object, with the persona imagery visible through it. Blue and orange light carry the identity’s colours through the sequence."
         ]
       }
     ],
@@ -301,12 +298,12 @@
     "path": "/work/the-mag-w-rap-2025",
     "figma": "277:6763",
     "title": "The Mag Wrap 2025",
-    "subtitle": "A motion system for The Mag Wrap",
+    "subtitle": "3D Motion & Show Graphics",
     "date": "Fun · August 2025",
     "category": "fun",
     "overview": [
-      "This is where I got to play with 3D, motion and the slightly chaotic energy of a rap show.",
-      "I built an intro, loops and reusable graphics that could feel like one world without repeating the same shot."
+      "For The Mag Wrap 2025, I explored how a set of 3D shapes and materials could carry a rap show’s graphics.",
+      "The package includes an intro, looping backgrounds, show IDs and reusable on-screen graphics."
     ],
     "specs": [],
     "tags": [
@@ -316,24 +313,24 @@
     ],
     "hero": {
       "poster": "/images/portfolio-2027-the-mag-w-rap-2025-hero.webp",
-      "alt": "The Mag Wrap 2025 — A motion system for The Mag Wrap",
+      "alt": "The Mag Wrap judges displayed above red team labels in a dark 3D arena",
       "aspect": 1.6,
       "sourceEmbed": "https://www.youtube.com/embed/-s2ly4Fgu5c",
       "deliveryStatus": "source-master-needed"
     },
-    "caption": "The Mag Wrap 2025 · Main motion package",
+    "caption": "The Mag Wrap 2025 · Motion package",
     "approach": [
       {
         "label": "Brief / Why I did it",
         "paragraphs": [
-          "I wanted to see how far I could push one visual idea across a whole motion package. Something loud and recognisable, with enough room to keep trying things."
+          "I wanted to develop a visual approach that could work across a whole show: from an opening sequence to smaller graphics for names, judges and standings."
         ]
       },
       {
         "label": "Process / Tools & thinking process",
         "paragraphs": [
-          "I used Blender and Houdini for the 3D work, Nuke and After Effects for compositing and motion, and DaVinci Resolve to bring it together.",
-          "I started with a few shapes, materials and movements, then treated them as a kit. The question was always: can this idea work as an intro, a loop and a small on-screen graphic?"
+          "I used Blender and Houdini for 3D, Nuke and After Effects for compositing and motion, and DaVinci Resolve for the edit.",
+          "I reused shapes, materials and movements across the package, adapting the compositions and timing to each format."
         ]
       }
     ],
@@ -341,34 +338,34 @@
       {
         "label": "My role / What I made",
         "paragraphs": [
-          "I worked on the art direction, 3D animation and motion design: the intro, show IDs, looping backgrounds and reusable graphics. A mix of making individual shots and figuring out how the pieces should fit together."
+          "I developed the art direction, 3D animation and motion graphics. That included the intro, show IDs, loops and templates for recurring on-screen information."
         ]
       },
       {
         "label": "Result / What I learned",
         "paragraphs": [
-          "The useful part was learning to build a system that still left room to play. Reusing the same visual ingredients made the package more coherent, and gave me more time to spend on the moments that needed something different."
+          "The finished package uses the same visual elements at different scales. Building the pieces together helped me see which ideas worked as a full-screen sequence and which stayed clear in a small graphic."
         ]
       }
     ],
     "media": [
       {
         "poster": "/videos/posters/w25_injektaz.jpg",
-        "alt": "The Mag Wrap 2025 3D motion design show injection graphic",
+        "alt": "Metallic Wrap logo floating above a dark arena with red lights",
         "aspect": 1.7777777777777777,
         "type": "EmbedVideo",
-        "posterAlt": "The Mag Wrap 2025 3D motion design show injection graphic",
-        "title": "The Mag Wrap 2025 show injection motion design",
+        "posterAlt": "Metallic Wrap logo floating above a dark arena with red lights",
+        "title": "The Mag Wrap 2025 show ident",
         "srcH265": "/videos/h265/w25_injektaz-web.mp4",
         "srcAv1": "/videos/av1/w25_injektaz.webm",
         "srcMp4": "/videos/h264/w25_injektaz-fallback.mp4"
       },
       {
         "poster": "/videos/posters/w25_loop_bcg.jpg",
-        "alt": "The Mag Wrap 2025 looping 3D motion design background",
+        "alt": "The Wrap logo above a circular stage in a dark city scene",
         "aspect": 1.7777777777777777,
         "type": "EmbedVideo",
-        "posterAlt": "The Mag Wrap 2025 looping 3D motion design background",
+        "posterAlt": "The Wrap logo above a circular stage in a dark city scene",
         "title": "The Mag Wrap 2025 looping 3D background",
         "srcH265": "/videos/h265/w25_loop_bcg-web.mp4",
         "srcAv1": "/videos/av1/w25_loop_bcg.webm",
@@ -376,10 +373,10 @@
       },
       {
         "poster": "/videos/posters/w25_ledka.jpg",
-        "alt": "The Mag Wrap 2025 LED screen motion graphics",
+        "alt": "Wrap stage graphics with a metallic logo and red light trails",
         "aspect": 1.7777777777777777,
         "type": "EmbedVideo",
-        "posterAlt": "The Mag Wrap 2025 LED screen motion graphics",
+        "posterAlt": "Wrap stage graphics with a metallic logo and red light trails",
         "title": "The Mag Wrap 2025 LED show graphics",
         "srcH265": "/videos/h265/w25_ledka-web.mp4",
         "srcAv1": "/videos/av1/w25_ledka.webm",
@@ -387,10 +384,10 @@
       },
       {
         "poster": "/videos/posters/w25_rytmus.jpg",
-        "alt": "The Mag Wrap 2025 broadcast motion graphic for judges",
+        "alt": "The Mag Wrap judge in front of blue and red show graphics",
         "aspect": 1.7777777777777777,
         "type": "EmbedVideo",
-        "posterAlt": "The Mag Wrap 2025 broadcast motion graphic for judges",
+        "posterAlt": "The Mag Wrap judge in front of blue and red show graphics",
         "title": "The Mag Wrap 2025 broadcast motion graphics",
         "srcH265": "/videos/h265/w25_rytmus-web.mp4",
         "srcAv1": "/videos/av1/w25_rytmus.webm",
@@ -398,10 +395,10 @@
       },
       {
         "poster": "/videos/posters/w25_aneta_greenscreen.jpg",
-        "alt": "The Mag Wrap 2025 greenscreen motion design asset",
+        "alt": "The Mag Wrap presenter beside an illuminated show logo",
         "aspect": 1.7777777777777777,
         "type": "EmbedVideo",
-        "posterAlt": "The Mag Wrap 2025 greenscreen motion design asset",
+        "posterAlt": "The Mag Wrap presenter beside an illuminated show logo",
         "title": "The Mag Wrap 2025 greenscreen show graphic",
         "srcH265": "/videos/h265/w25_aneta_greenscreen-web.mp4",
         "srcAv1": "/videos/av1/w25_aneta_greenscreen.webm",
@@ -409,20 +406,20 @@
       },
       {
         "poster": "/videos/posters/w25_nametag.jpg",
-        "alt": "The Mag Wrap 2025 name tag motion graphics template",
+        "alt": "Dark 3D arena used behind The Mag Wrap name graphics",
         "aspect": 1.7777777777777777,
         "type": "EmbedVideo",
-        "posterAlt": "The Mag Wrap 2025 name tag motion graphics template",
+        "posterAlt": "Dark 3D arena used behind The Mag Wrap name graphics",
         "title": "The Mag Wrap 2025 name tag motion template",
         "srcH265": "/videos/h265/w25_nametag-web.mp4",
         "srcMp4": "/videos/h264/w25_nametag-fallback.mp4"
       },
       {
         "poster": "/videos/posters/w25_postupujici.jpg",
-        "alt": "The Mag Wrap 2025 standings and progression motion graphics",
+        "alt": "Wrap arena background used for standings graphics",
         "aspect": 1.7777777777777777,
         "type": "EmbedVideo",
-        "posterAlt": "The Mag Wrap 2025 standings and progression motion graphics",
+        "posterAlt": "Wrap arena background used for standings graphics",
         "title": "The Mag Wrap 2025 standings motion graphics",
         "srcH265": "/videos/h265/w25_postupujici-web.mp4",
         "srcAv1": "/videos/av1/w25_postupujici.webm",
@@ -430,7 +427,7 @@
       },
       {
         "poster": "/images/portfolio-2027-the-mag-w-rap-2025-media-09.webp",
-        "alt": "The Mag Wrap 2025 — project detail 8",
+        "alt": "Team symbols and player silhouettes in The Mag Wrap standings graphic",
         "aspect": 1.7777777777777777,
         "sourceEmbed": "https://www.youtube.com/embed/poEZ7qcoZXI",
         "deliveryStatus": "source-master-needed"
@@ -467,8 +464,8 @@
     "date": "Work · September 2024",
     "category": "work",
     "overview": [
-      "Monopo London invited me to direct CGI and VFX for Barbour’s Icons in Quilting campaign.",
-      "The iconic quilt spreads across London, New York, Shanghai and Seoul, followed by a trail of British countryside."
+      "I directed the CGI and VFX for Barbour’s Icons in Quilting campaign with Monopo London.",
+      "Quilted fabric spreads through footage of London, New York, Seoul and Shanghai, followed by plants and countryside details."
     ],
     "specs": [
       {
@@ -477,8 +474,7 @@
         "href": "https://www.barbour.com/",
         "icon": "/images/portfolio-2027-identity-barbour.webp",
         "lines": [
-          "British clothing and outerwear",
-          "Icons in Quilting"
+          "British clothing and outerwear"
         ]
       },
       {
@@ -496,9 +492,8 @@
         "href": null,
         "icon": null,
         "lines": [
-          "4 cities · 3 scenes per city",
-          "2 additional films",
-          "CGI, simulation and compositing"
+          "CGI campaign films",
+          "City and department-store sequences"
         ]
       }
     ],
@@ -509,7 +504,7 @@
     ],
     "hero": {
       "poster": "/images/portfolio-2027-barbour-hero.webp",
-      "alt": "Barbour — Icons in Quilting · FOOH Campaign",
+      "alt": "CGI ferns growing along a city pavement in Barbour’s Icons in Quilting campaign",
       "aspect": 1.6,
       "sourceEmbed": "https://www.youtube.com/embed/oeVS_Q1VsKU",
       "deliveryStatus": "source-master-needed"
@@ -519,13 +514,13 @@
       {
         "label": "Brief",
         "paragraphs": [
-          "Translate Barbour's Icons in Quilting platform into scroll-stopping fake out-of-home films for London, New York, Seoul, and Shanghai while carrying the British countryside into each city."
+          "Bring Barbour’s quilted fabric into city scenes for the Icons in Quilting campaign. The films combine real locations with oversized fabric and elements of the British countryside."
         ]
       },
       {
         "label": "Process",
         "paragraphs": [
-          "I directed the CGI production, reconstructing and tracking live-action city plates, animating the signature quilt, and building procedural nature trails in Blender and Houdini before compositing each scene for a convincing mixed-reality finish."
+          "We tracked the camera footage and reconstructed the parts of each location that the CGI needed to interact with. Cloth animation and procedural plants were built in Blender and Houdini, then composited into the filmed scenes."
         ]
       }
     ],
@@ -533,34 +528,35 @@
       {
         "label": "My role",
         "paragraphs": [
-          "CGI direction, 3D animation, VFX, and Houdini simulation for Barbour's multi-market FOOH advertising campaign."
+          "I led the CGI production and worked on animation, VFX and Houdini simulation. Josef Talač and David Hájek contributed 3D, VFX, animation and modelling, alongside Monopo’s creative and production team."
         ]
       },
       {
         "label": "Result",
         "paragraphs": [
-          "About 407k views across the four city Reels on Barbour’s Instagram. CGI quilting and procedural nature brought the campaign into London, New York, Seoul and Shanghai."
+          "The campaign includes four city films and two department-store sequences. Each uses the same quilting idea in a different location.",
+          "About 407k views were recorded across the four city Reels on Barbour’s Instagram on 23 September 2026. This is a combined count for those posts."
         ]
       }
     ],
     "media": [
       {
         "poster": "/images/portfolio-2027-barbour-media-02.webp",
-        "alt": "Barbour — project detail 1",
+        "alt": "Quilted fabric covering buildings beside a city bridge",
         "aspect": 0.75,
         "sourceEmbed": "https://www.youtube.com/embed/12xJ6Qkvtxw",
         "deliveryStatus": "source-master-needed"
       },
       {
         "poster": "/images/portfolio-2027-barbour-media-03.webp",
-        "alt": "Barbour — project detail 2",
+        "alt": "Oversized ferns and quilted surfaces added to a city square",
         "aspect": 0.75,
         "sourceEmbed": "https://www.youtube.com/embed/mzHQ8lmL7BA",
         "deliveryStatus": "source-master-needed"
       },
       {
         "poster": "/images/portfolio-2027-barbour-media-04.webp",
-        "alt": "Barbour — project detail 3",
+        "alt": "Quilted fabric and ferns surrounding a courtyard entrance",
         "aspect": 0.75,
         "sourceEmbed": "https://www.youtube.com/embed/6U9uTPf64nU",
         "deliveryStatus": "source-master-needed"
@@ -652,7 +648,7 @@
       },
       {
         "role": "Creative Producer",
-        "name": "Maud Dedrecked",
+        "name": "Maud Dedecker",
         "href": null,
         "icon": "/images/portfolio-2027-credit-icon-credit-icon-monopo-london.webp"
       },
@@ -697,8 +693,8 @@
     "date": "Work · April 2025",
     "category": "work",
     "overview": [
-      "TMRZV Studio brought me in to create a quick-turn CGI product animation for the VSX Sports Bra.",
-      "Houdini simulations reveal the knit structure, woven VSX logo and the way the fabric forms and stretches."
+      "I worked with TMRZV Studio on a CGI product film for the VSX Sports Bra.",
+      "The sequence moves from individual yarn loops and the woven VSX logo to close views of the finished fabric and bra."
     ],
     "specs": [
       {
@@ -707,8 +703,7 @@
         "href": "https://www.victoriassecret.com/",
         "icon": "/images/portfolio-2027-identity-victoria-s-secret.webp",
         "lines": [
-          "VSX activewear",
-          "Sports Bra"
+          "VSX activewear"
         ]
       },
       {
@@ -717,8 +712,7 @@
         "href": "https://tmrzv.com/",
         "icon": "/images/portfolio-2027-identity-tmrzv-studio-v2.webp",
         "lines": [
-          "Creative direction, sound",
-          "and compositing"
+          "Creative direction, sound and compositing"
         ]
       },
       {
@@ -727,9 +721,8 @@
         "href": null,
         "icon": null,
         "lines": [
-          "15-second Instagram Reel",
-          "3 Houdini fabric simulations",
-          "CGI product animation"
+          "CGI product film",
+          "Knit and weave simulations"
         ]
       }
     ],
@@ -751,13 +744,13 @@
       {
         "label": "Brief",
         "paragraphs": [
-          "Create a short-form product film that makes the bra feel technical, tactile, and performance-led while staying fast enough for a one-week campaign sprint."
+          "Show the construction of the VSX Sports Bra in a short product film. The animation needed to connect the small details of the knit with the shape of the finished product."
         ]
       },
       {
         "label": "Process",
         "paragraphs": [
-          "I built the knit and weave simulations in Houdini, from interlocking yarn loops to the raised VSX logo. In Blender, I refined the materials, lighting and final product views."
+          "I built the knit and weave simulations in Houdini, from interlocking yarn loops to the raised VSX logo. In Blender, I refined the materials, lighting and product views."
         ]
       }
     ],
@@ -765,13 +758,13 @@
       {
         "label": "My role",
         "paragraphs": [
-          "3D product visualization, CGI product animation, look development, and Houdini cloth simulation for a VSX Sports Bra social launch asset."
+          "I created the 3D product animation, materials and lighting, along with the Houdini simulations. TMRZV Studio handled creative direction, sound and compositing."
         ]
       },
       {
         "label": "Result",
         "paragraphs": [
-          "A short product film showing the bra’s fabric, stretch and support through close-up CGI and cloth simulation."
+          "The film brings the fabric details and product views into one sequence. The accompanying breakdowns show how the yarn loops and woven logo were built."
         ]
       }
     ],
@@ -846,12 +839,12 @@
     "path": "/work/chainer",
     "figma": "277:8929",
     "title": "Chainer",
-    "subtitle": "Small objects, strange worlds",
+    "subtitle": "Jewellery in 3D",
     "date": "Fun · September 2023",
     "category": "fun",
     "overview": [
-      "I used jewellery as a starting point for a series of 3D worlds. Small objects, strange landscapes, and a lot of playing with light and materials.",
-      "The experiment grew into animation, sound and a website. I wanted all of it to feel like it belonged to the same place."
+      "I used jewellery as a starting point for a series of 3D scenes, experimenting with landscapes, light and reflective materials.",
+      "The project grew to include stills, animation, sound and a website, all built around the same objects."
     ],
     "specs": [],
     "tags": [
@@ -861,24 +854,24 @@
     ],
     "hero": {
       "poster": "/images/portfolio-2027-chainer-hero.webp",
-      "alt": "Chainer — Small objects, strange worlds",
+      "alt": "A silver necklace above a sculpted display stand, blue landscape and orange sun",
       "aspect": 1.6,
       "sourceEmbed": "https://www.youtube.com/embed/vMFwsejYYaU",
       "deliveryStatus": "source-master-needed"
     },
-    "caption": "Chainer · Product visualization film",
+    "caption": "Chainer · Jewellery animation",
     "approach": [
       {
         "label": "Brief / Why I did it",
         "paragraphs": [
-          "I wanted to make jewellery feel interesting before you even looked at the product details. It was a chance to build a world around a small object and see how much atmosphere I could get out of it."
+          "I wanted to explore the setting around a small object. The jewellery needed to remain the focus, while the surroundings gave each image its own atmosphere."
         ]
       },
       {
         "label": "Process / Tools & thinking process",
         "paragraphs": [
-          "My toolkit was 3D modelling, materials, lighting and animation, alongside sound design and web development.",
-          "I started with the object and its material, then built a setting around it. I kept looking for a balance: enough of a world to make the image interesting, but not so much that the jewellery disappeared."
+          "I started with the object and its material, then built the lighting and setting around it.",
+          "I adjusted reflections, contrast and camera position to keep the jewellery visible within the larger scene, then carried those choices into the animation and website."
         ]
       }
     ],
@@ -886,67 +879,67 @@
       {
         "label": "My role / What I made",
         "paragraphs": [
-          "I shaped the art direction, animated the product scenes, worked on the sound and carried the visual direction into the website. The fun part was connecting the still images, moving shots and interactions."
+          "I developed the art direction, 3D scenes and animation, worked on the sound, and designed and built the website."
         ]
       },
       {
         "label": "Result / What I learned",
         "paragraphs": [
-          "A strong image does not need a complicated scene. A clear silhouette, a useful reflection and one good contrast can do a lot. Taking the same ideas into motion and the website also made me pay more attention to how the pieces connect."
+          "Working across stills, animation and web made me pay attention to how the scenes connected. A consistent use of light and materials helped the different formats feel like parts of the same project."
         ]
       }
     ],
     "media": [
       {
         "poster": "/images/portfolio-2027-chainer-media-02.webp",
-        "alt": "Chainer — project detail 1",
+        "alt": "Monochrome terrain and a column in a Chainer scene breakdown",
         "aspect": 1.7777777777777777,
         "sourceEmbed": "https://player.vimeo.com/video/881397523?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479",
         "deliveryStatus": "source-master-needed"
       },
       {
         "poster": "/images/chainer-case-0.webp",
-        "alt": "Chainer men's accessories art direction hero render",
+        "alt": "A ring and columns in a grey Chainer lighting and scene breakdown",
         "aspect": 1.7777777777777777
       },
       {
         "poster": "/images/chainer-case-1.webp",
-        "alt": "Chainer jewelry 3D product scene",
+        "alt": "A reflective ring floating between columns above a grassy landscape",
         "aspect": 1.7777777777777777
       },
       {
         "poster": "/images/chainer-case-2.webp",
-        "alt": "Chainer product visualization web design mockup",
+        "alt": "A necklace on a dark display stand against an orange sun and blue landscape",
         "aspect": 1.7777777777777777
       },
       {
         "poster": "/images/chainer-case-3-2.webp",
-        "alt": "Chainer accessory campaign render",
+        "alt": "Silver rings arranged in a circle above a red landscape",
         "aspect": 1.7777777777777777
       },
       {
         "poster": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-poster-00001.jpg",
-        "alt": "Chainer 3D product visualization and CGI jewelry launch visual",
+        "alt": "A square-faced ring rotating above a dark textured surface",
         "aspect": 1,
         "type": "BackgroundVideo",
-        "posterAlt": "Chainer 3D product visualization and CGI jewelry launch visual",
+        "posterAlt": "A square-faced ring rotating above a dark textured surface",
         "title": "Chainer 3D product visualization launch visual",
         "srcMp4": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-transcode.mp4",
         "srcWebm": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-transcode.webm"
       },
       {
         "poster": "/images/chainer-case-3.webp",
-        "alt": "Chainer ring product visualization",
+        "alt": "A silver square-faced ring above a dark textured surface",
         "aspect": 1
       },
       {
         "poster": "/images/chainer-case-4.webp",
-        "alt": "Chainer bracelet 3D product visualization",
+        "alt": "A reflective ring suspended above green terrain beside bare trees",
         "aspect": 1
       },
       {
         "poster": "/images/chainer-case-5.webp",
-        "alt": "Chainer campaign visual detail",
+        "alt": "A silver band floating above a red landscape and low clouds",
         "aspect": 1
       }
     ],
@@ -981,8 +974,8 @@
     "date": "Work · May 2026",
     "category": "work",
     "overview": [
-      "Outpost Studio invited me to turn its redesign of the Fantasy website into a reel showcasing the pages, elements and interactions.",
-      "I combined 2D and 3D motion with custom device mockups to present the work across desktop, tablet and mobile."
+      "I worked with Outpost Studio on a reel presenting their redesign of the Fantasy website.",
+      "Interface animation moves between full-screen layouts and custom 3D mockups of desktop, tablet and phone screens."
     ],
     "specs": [
       {
@@ -1032,13 +1025,13 @@
       {
         "label": "Brief",
         "paragraphs": [
-          "My brief was to create a reel that showed the elements and interactions Outpost had built for Fantasy’s redesigned website. The motion needed to bring the web experience into a film."
+          "Present the redesigned website in a film, showing its layouts, elements and interactions across desktop, tablet and mobile."
         ]
       },
       {
         "label": "Process",
         "paragraphs": [
-          "Working from Chris Willcock’s storyboard and creative direction, I animated the interface sequences and built custom 3D device mockups. I used a clean, light setting for the devices to give the dark website layouts room to stand out."
+          "Working from Chris Wilcock’s storyboard, I animated the interface sequences and built the device scenes. Light backgrounds and simple materials gave the dark website layouts a clear frame."
         ]
       }
     ],
@@ -1046,13 +1039,13 @@
       {
         "label": "My role",
         "paragraphs": [
-          "I created the 2D and 3D motion, including the custom desktop, tablet and phone mockups used to present the website. Chris led the storyboard and creative direction; Outpost created the website redesign."
+          "I created the 2D and 3D motion and the custom device mockups. Chris led the storyboard and creative direction; Outpost designed and developed the website."
         ]
       },
       {
         "label": "Result",
         "paragraphs": [
-          "The finished reel brings the redesign’s layouts, interactions and device views together in one sequence. The custom mockups give the website a physical setting across all three screen formats."
+          "The reel brings the layouts, interactions and device views into one sequence. The accompanying stills show the website on each of the three screen formats."
         ]
       }
     ],
@@ -1085,8 +1078,8 @@
     "credits": [
       {
         "role": "Storyboard & Creative Direction",
-        "name": "Chris Willcock",
-        "href": "https://outpost.design/",
+        "name": "Chris Wilcock",
+        "href": "https://outpost.design/about/",
         "icon": "/images/outpost-fantasy-identity-outpost-v1.webp"
       },
       {
@@ -1120,13 +1113,13 @@
       {
         "label": "Brief",
         "paragraphs": [
-          "I wanted to make recurring graphics easier to update while keeping their custom design. Supporter names and market data change with every episode."
+          "I wanted to make recurring graphics easier to update. Supporter names and market data change between episodes, while the design of the credits and charts stays consistent."
         ]
       },
       {
         "label": "Process",
         "paragraphs": [
-          "I connected structured data to reusable graphics: a Patreon CSV feeds an After Effects script, while a web app fetches market data for the charts."
+          "I connected the data to reusable graphics. A Patreon CSV feeds an After Effects script, while a web app fetches market data and turns it into charts."
         ]
       }
     ],
@@ -1134,7 +1127,7 @@
       {
         "id": "automated-patreon",
         "title": "Automated Patreon \"Thank You\"",
-        "description": "A custom After Effects script turns the Patreon CSV export into an animated thank-you screen. I designed the graphics and animation around the supporter list.",
+        "description": "An After Effects script reads a Patreon CSV export and generates animated supporter credits. I designed the layout and animation around the list of names.",
         "explainer": "https://www.youtube.com/watch?v=lvB0eOoDT_E",
         "linkLabel": "the Patreon explainer",
         "media": {
@@ -1150,7 +1143,7 @@
       {
         "id": "automated-market-charts",
         "title": "Automated Market Charts",
-        "description": "The web app fetches current market data and generates seven-day charts in the show’s visual style. The graphics can be exported as still images or animations.",
+        "description": "A web app fetches market data and generates seven-day charts in the show’s visual style. It exports the graphics as still images or animations.",
         "explainer": "https://www.youtube.com/watch?v=uLsedHtZuzY",
         "linkLabel": "the market charts explainer",
         "media": {
@@ -1168,13 +1161,13 @@
       {
         "label": "My role",
         "paragraphs": [
-          "I built the automation, designed the graphics and created the motion. Both tools bring software development into the editing workflow."
+          "I built both tools, designed the graphics and created the animation. The work combined scripting with the practical requirements of a video edit."
         ]
       },
       {
         "label": "Result",
         "paragraphs": [
-          "ProductionBot reports the following preparation times per video:",
+          "Both tools turn updated data into graphics for the edit. ProductionBot’s project description gives these estimates for preparation time per video:",
           {
             "before": "",
             "note": {
@@ -1391,8 +1384,8 @@
     "date": "Work · April 2026",
     "category": "work",
     "overview": [
-      "Ashfall Studio asked me to create custom mockups for their Shelby brand case study. Shelby is a decentralized storage platform, and Ashfall developed its brand identity and motion system.",
-      "I brought the identity into a set of 3D scenes, from MacBook and iPad mockups to branded pins, event badges, bottles and clothing."
+      "Ashfall Studio asked me to create custom mockups for their Shelby brand case study.",
+      "The scenes present the identity on screens and merchandise, from a MacBook in a sunlit workspace to pins, badges, bottles and clothing."
     ],
     "specs": [
       {
@@ -1442,13 +1435,13 @@
       {
         "label": "Brief",
         "paragraphs": [
-          "Create custom mockups for Ashfall’s presentation of the Shelby identity. The set needed to show the brand on screens and physical objects, with room for both the website’s motion and the details of the merchandise."
+          "Show Ashfall’s Shelby identity on devices and physical objects. The mockups needed to make room for the website’s animation as well as the materials and printed details of the merchandise."
         ]
       },
       {
         "label": "Process",
         "paragraphs": [
-          "I placed the devices in a warm workspace, using wood, a perforated backdrop and directional sunlight to frame the screens. For the merch, I used simple colour fields and close views so the materials, shapes and printed graphics could lead."
+          "I placed the devices against wood and a perforated backdrop, using directional sunlight to frame the screens. For the merchandise, I used simple colour fields and close views of the shapes, surfaces and graphics."
         ]
       }
     ],
@@ -1456,13 +1449,13 @@
       {
         "label": "My role",
         "paragraphs": [
-          "I created the custom 3D device and merch mockups for the case study. I worked with Martin Ehrlich, Ashfall’s founder, on creative direction and with motion designer Dominik Budimir to bring Ashfall’s identity into these scenes."
+          "I created the 3D device and merchandise mockups. Martin Ehrlich led creative direction at Ashfall, and Dominik Budimir contributed motion design."
         ]
       },
       {
         "label": "Result",
         "paragraphs": [
-          "The finished set presents Shelby across digital and physical applications: a website on devices, a rotating pin, an event badge, a bottle and clothing. Together, the scenes give Ashfall a range of still and animated views for their brand case study."
+          "The set gives Ashfall still and animated views for the Shelby case study. It ranges from the website on devices to close-ups of a rotating pin, an event badge, a bottle and clothing."
         ]
       }
     ],
@@ -1557,8 +1550,8 @@
     "date": "Work · August 2026",
     "category": "work",
     "overview": [
-      "Outland created the brand identity for Rounds, a golf app built around the social side of the game. I worked with Jordan Jenkins and Evan Place to bring that identity into a series of 3D environments and custom mockups.",
-      "From a clubhouse overlooking the course to phones, a watch and branded merchandise, the scenes connect the app to the places and objects around a round of golf."
+      "I worked with Outland on 3D environments and custom mockups for Rounds, a golf app built around the social side of the game.",
+      "The scenes move from a clubhouse overlooking the course to phones, a watch and branded merchandise."
     ],
     "specs": [
       {
@@ -1567,8 +1560,7 @@
         "href": "https://www.enteroutland.com/",
         "icon": "/images/portfolio-2027-identity-outland.webp",
         "lines": [
-          "Brand identity and creative direction",
-          "Independent design studio"
+          "Brand identity and creative direction"
         ]
       },
       {
@@ -1609,13 +1601,13 @@
       {
         "label": "Brief",
         "paragraphs": [
-          "Build a set of custom mockups and environments for Outland’s Rounds identity. The scenes needed to show the app on devices and carry the brand into physical objects, with golf as the setting."
+          "Build a setting for Outland’s Rounds identity, showing the app on devices and the brand on physical objects. The clubhouse and golf course provide the surroundings for those details."
         ]
       },
       {
         "label": "Process",
         "paragraphs": [
-          "I used warm wood, soft seating and a view onto the course to connect the indoor and outdoor scenes. Close views of screens, printed graphics and metal surfaces bring the focus back to the details of the brand."
+          "I used warm wood, soft seating and a view onto the course to connect the interiors with the landscape. Closer shots focus on screens, printed graphics and metal surfaces."
         ]
       }
     ],
@@ -1623,13 +1615,13 @@
       {
         "label": "My role",
         "paragraphs": [
-          "I created the 3D environments and custom device and merchandise mockups. Jordan Jenkins and Evan Place led the brand identity and creative direction at Outland, with Matko Mijić contributing 2D motion design."
+          "I created the 3D environments and custom mockups. Jordan Jenkins and Evan Place led the identity and creative direction at Outland, with Matko Mijić contributing 2D motion design."
         ]
       },
       {
         "label": "Result",
         "paragraphs": [
-          "A connected set of animated brand applications: a clubhouse, a golf course, phone and watch mockups, a flask, a keychain and a poster. The mix of wide scenes and close details gives Outland a range of views for presenting the Rounds identity."
+          "The animated scenes show the Rounds identity across a clubhouse, a golf course, devices and merchandise. Wide views establish the setting; closer views show the app, a flask, a keychain and a poster."
         ]
       }
     ],
@@ -1744,8 +1736,8 @@
     "date": "Work · September 2025",
     "category": "work",
     "overview": [
-      "I worked with Yiskra to create dynamic product animations for Trezor’s online store. The brief was to match Trezor’s aesthetic while showing the hardware wallet through realistic lighting and intricate motion.",
-      "The animations bring out the shape, surface details and colour of the product, keeping the wallet at the centre of each shot."
+      "I worked with Yiskra on 3D product animations for Trezor’s online store.",
+      "The sequences show the hardware wallet in black, green and orange, moving between its overall shape and details of the screen and textured back."
     ],
     "specs": [
       {
@@ -1795,13 +1787,13 @@
       {
         "label": "Brief",
         "paragraphs": [
-          "Create dynamic animations for Trezor’s product page in the store. The visuals needed to fit the brand’s aesthetic and show the hardware wallet clearly across three colours."
+          "Create product-page animations that show the hardware wallet clearly in each colour. The lighting and motion needed to fit Trezor’s existing visual style."
         ]
       },
       {
         "label": "Process",
         "paragraphs": [
-          "I paired intricate rotations with controlled lighting to reveal the wallet’s profile, screen and textured back. Reflections help describe the surfaces, while the light background keeps attention on the product."
+          "I used gradual rotations and changes in lighting to reveal the profile, screen and textured back. Reflections describe the surfaces against a light background."
         ]
       }
     ],
@@ -1809,13 +1801,13 @@
       {
         "label": "My role",
         "paragraphs": [
-          "I handled the 3D work, motion and lighting. Tomas Gnosis Snop managed the project at Yiskra."
+          "I handled the 3D work, animation and lighting, with Tomas Gnosis Snop managing the project at Yiskra."
         ]
       },
       {
         "label": "Result",
         "paragraphs": [
-          "A set of product animations in black, green and orange, with a consistent approach to lighting and motion across the three versions. The close views show the wallet’s surface details, while the wider sequence follows its shape through a gradual rotation."
+          "The finished set presents all three colours with consistent framing, lighting and movement. Close views show the surface details, while wider shots follow the shape of the wallet."
         ]
       }
     ],
