@@ -92,9 +92,9 @@
         "srcAv1": "/videos/av1/portfolio-card-3d-worlds-v1.webm",
         "srcMp4": "/videos/h264/portfolio-card-3d-worlds-v1-fallback.mp4",
         "alt": "Art-directed CGI worlds showreel",
-        "aspect": 1.33333,
-        "tabletAspect": 1.33333,
-        "mobileAspect": 1.33333
+        "aspect": 1.77778,
+        "tabletAspect": 0.75,
+        "mobileAspect": 0.75
       },
       {
         "id": "stnck",
@@ -113,14 +113,15 @@
         "category": "work",
         "disciplines": "3D Environments, Custom Mockups",
         "href": "/work/outland-rounds",
-        "poster": "/videos/posters/outland-rounds-card-v1.jpg",
-        "aspect": 1.77778,
-        "tabletAspect": 0.75,
-        "mobileAspect": 0.75,
+        "poster": "/videos/posters/outland-rounds-card-v2.jpg",
+        "aspect": 1.33333,
+        "tabletAspect": 1.33333,
+        "mobileAspect": 1.33333,
         "icon": "/images/outland-rounds-identity-v1.svg",
-        "srcH265": "/videos/h265/outland-rounds-card-v1-web.mp4",
-        "srcAv1": "/videos/av1/outland-rounds-card-v1.webm",
-        "srcMp4": "/videos/h264/outland-rounds-card-v1-fallback.mp4"
+        "srcH265": "/videos/h265/outland-rounds-card-v2-web.mp4",
+        "srcAv1": "/videos/av1/outland-rounds-card-v2.webm",
+        "srcMp4": "/videos/h264/outland-rounds-card-v2-fallback.mp4",
+        "alt": "Rounds brand world and device mockups, from the clubhouse to a watch and phones"
       },
       {
         "id": "valkaai",
@@ -189,10 +190,10 @@
     "desktop": [
       "outland-vizcom",
       "shelby",
-      "outland-rounds",
+      "custom-mockups",
       "barbour",
       "motion-mockups",
-      "custom-mockups",
+      "outland-rounds",
       "stnck",
       "victoria-s-secret",
       "valkaai",
@@ -209,9 +210,9 @@
       "victoria-s-secret",
       "motion-mockups",
       "barbour",
-      "custom-mockups",
-      "stnck",
       "outland-rounds",
+      "stnck",
+      "custom-mockups",
       "trezor"
     ],
     "mobile": [
@@ -220,11 +221,11 @@
       "valkaai",
       "barbour",
       "shelby",
-      "custom-mockups",
+      "outland-rounds",
       "fantasy",
       "stnck",
       "gusto",
-      "outland-rounds",
+      "custom-mockups",
       "victoria-s-secret",
       "trezor"
     ]

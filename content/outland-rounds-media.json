@@ -1334,6 +1334,159 @@
           }
         }
       ]
+    },
+    {
+      "source": "Card BCG 2.mp4",
+      "slug": "outland-rounds-card-v2",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 3840,
+            "height": 2880,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "12.000000"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/outland-rounds-card-v2-fallback.mp4",
+          "bytes": 4837763,
+          "sha256": "97224023dd9f276f15a2cc4183e3acf47060d537aaee7322bacdf4e8d54c2b09",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1440,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "12.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/h265/outland-rounds-card-v2-web.mp4",
+          "bytes": 2125398,
+          "sha256": "8509ea0f4fa1d0ab536977cc2272db31db723d1d904b1171206b4419c3d387a0",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1440,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "12.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/av1/outland-rounds-card-v2.webm",
+          "bytes": 1745116,
+          "sha256": "f6dbd4bf316014f697524388b0e0e8098fe860400cee7f8f5fd84a4e4c79c47f",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 1080,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "12.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        },
+        {
+          "path": "/videos/posters/outland-rounds-card-v2.jpg",
+          "bytes": 203062,
+          "sha256": "b99d1bea9fee21d9edfbc641406185d6ca9e95f067caf2c105d8c904075863d0",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 1080,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true,
+            "matchesLocalSha256": true
+          }
+        }
+      ],
+      "note": "Owner-supplied Card BCG 2.mp4 replaces the homepage card. Native 4:3 source delivered at 1440x1080, full 12 seconds at 30fps, silent. Rounds takes the previous 3D Worlds slot and 4:3 dimensions at every breakpoint; 3D Worlds takes the previous Rounds slot and responsive dimensions."
     }
   ],
   "identity": {
