@@ -2,7 +2,8 @@
 
 ## Live status pulse — 25 September 2026
 
-In both preview and details, the LIVE dot has a soft expanding halo every 2400ms.
+In both preview and details, the LIVE dot has a soft expanding halo every 4000ms
+(1–2.5 scale, 55%–0 opacity, followed by a short rest).
 The solid center and label stay still. The pulse only runs for active live traffic;
 delayed, empty, unavailable and test/simulation states remain static, as do all
 statuses when reduced motion is requested.
