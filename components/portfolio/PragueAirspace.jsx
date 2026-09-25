@@ -208,12 +208,12 @@ export default function PragueAirspace({ mode = "live" }) {
         onClick={view === "preview" ? details : undefined}>
         {view === "preview" ? <>
           <div className="airspace-status">{badge}<span className="airspace-label airspace-muted">{trafficLoading ? <AirspaceSkeleton width="9em" /> : age}</span></div>
-          <div className="airspace-preview-heading"><h2>{simulation ? "Air traffic over Prague" : status === "LIVE" ? "Live air traffic over Prague" : "Air traffic over Prague"}</h2><p className="airspace-label airspace-muted">{data ? `${aircraft.length} ${simulation ? "simulated aircraft" : "aircraft nearby"} · within 30 km` : "Within 30 km of Prague"}</p></div>
+          <div className="airspace-preview-heading"><h2>Air Traffic over Prague</h2><p className="airspace-label airspace-muted">{data ? `${aircraft.length} ${simulation ? "simulated aircraft" : "aircraft nearby"} · within 30 km` : "Within 30 km of Prague"}</p></div>
           {map}<Weather data={weather.data} compact unavailable={weatherUnavailable} loading={weatherLoading} />
           {weatherUnavailable && weather.error && <p className="airspace-label airspace-muted">Weather unavailable</p>}
           <hr /><button type="button" className="button" onClick={details}>Click for more details</button>
         </> : <>
-          <div className="airspace-title"><div><h2>Prague, overhead.</h2><p className="airspace-label airspace-muted">PRG / LKPR · 30 KM RADIUS</p></div><button type="button" className="button" onClick={() => close()}>Close</button></div>
+          <div className="airspace-title"><div><h2>Air Traffic over Prague</h2><p className="airspace-label airspace-muted">PRG / LKPR · 30 KM RADIUS</p></div><button type="button" className="button" onClick={() => close()}>Close</button></div>
           <div className="airspace-status">{badge}</div><hr />
           <Weather data={weather.data} unavailable={weatherUnavailable} loading={weatherLoading} />
           {(weather.error || (weatherUnavailable && !weatherLoading)) && <p className="airspace-label airspace-muted">{simulation ? "Weather unavailable in simulation" : "Weather unavailable"}</p>}
