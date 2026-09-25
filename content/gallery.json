@@ -158,13 +158,13 @@
         "category": "work",
         "disciplines": "2D, 3D, Motion",
         "href": "/work/outpost-fantasy",
-        "poster": "/videos/posters/outpost-fantasy-card-v1.jpg",
+        "poster": "/videos/posters/outpost-fantasy-card-v2.jpg",
         "aspect": 1.77778,
         "tabletAspect": 1.77778,
         "mobileAspect": 1.77778,
-        "srcH265": "/videos/h265/outpost-fantasy-card-v1-web.mp4",
-        "srcAv1": "/videos/av1/outpost-fantasy-card-v1.webm",
-        "srcMp4": "/videos/h264/outpost-fantasy-card-v1-fallback.mp4",
+        "srcH265": "/videos/h265/outpost-fantasy-card-v2-web.mp4",
+        "srcAv1": "/videos/av1/outpost-fantasy-card-v2.webm",
+        "srcMp4": "/videos/h264/outpost-fantasy-card-v2-fallback.mp4",
         "preview": "2D and 3D motion with custom device mockups for Outpost’s Fantasy website redesign."
       }
     ],

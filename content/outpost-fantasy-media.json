@@ -2,7 +2,7 @@
   "prepared": "2026-09-24",
   "completed": "2026-05",
   "sourceDirectory": "Dropbox/Work/2026/00 Case Studies 2026/Outpost Fantasy",
-  "note": "Owner-selected CARD BCG for the homepage and Fantasy Reel Compositoin 2 as the hero excerpt. Three finished device stills selected as supporting media. Original masters remain in the supplied Dropbox folder. Videos retain full duration and 30 fps at 1440x810, with audio and metadata stripped. Posters use frame 1. Stills are 1920x1200 WebP Q82. Identity marks come from the linked official-site favicons.",
+  "note": "Owner-selected CARD BCG for the homepage and Fantasy Reel Compositoin 2 as the hero excerpt. Three finished device stills selected as supporting media. Original masters remain in the supplied Dropbox folder. Videos retain full duration and 30 fps at 1440x810, with audio and metadata stripped. Posters use frame 1. Stills are 1920x1200 WebP Q82. Identity marks come from the linked official-site favicons. Homepage card replaced on 25 September 2026 with owner-supplied CARD BCG New.mp4 (9.433333s), delivered under the cache-safe outpost-fantasy-card-v2 slug at 1440x810/30fps without audio. All four uploaded assets were checked for content type, matching SHA-256 hashes and remote media properties.",
   "encoding": {
     "h264": "High, yuv420p, CRF 20, slow, faststart",
     "h265": "Main, yuv420p, CRF 24, slow, hvc1, faststart",
@@ -10,18 +10,20 @@
   },
   "assets": [
     {
-      "source": "CARD BCG.mp4",
-      "slug": "outpost-fantasy-card-v1",
+      "source": "CARD BCG New.mp4",
+      "slug": "outpost-fantasy-card-v2",
       "files": [
         {
-          "path": "/videos/h264/outpost-fantasy-card-v1-fallback.mp4",
-          "bytes": 3434317,
-          "sha256": "c2ce961ffa328c22d98df91e0e10db31d47f77ca2aa58a17174d9d9ae916010c",
+          "path": "/videos/h264/outpost-fantasy-card-v2-fallback.mp4",
+          "bytes": 1739234,
+          "sha256": "9d1704e8c27483b4999c197c12028425bb20b3cab0a3e943126498ce73bfbb8f",
           "contentType": "video/mp4",
           "streams": [
             {
               "codec_name": "h264",
+              "profile": "High",
               "codec_type": "video",
+              "codec_tag_string": "avc1",
               "width": 1440,
               "height": 810,
               "pix_fmt": "yuv420p",
@@ -29,18 +31,20 @@
             }
           ],
           "format": {
-            "duration": "15.200000"
+            "duration": "9.433333"
           }
         },
         {
-          "path": "/videos/h265/outpost-fantasy-card-v1-web.mp4",
-          "bytes": 2149130,
-          "sha256": "02fa47f9e8e4ecd36bd65f7bdf080bb88fe0113b902ffe21d9bf42d5c12fdf65",
+          "path": "/videos/h265/outpost-fantasy-card-v2-web.mp4",
+          "bytes": 775951,
+          "sha256": "39592e64c76f1bce85a162ffe7afde97f462470d9bb92d3a7765b83cf4609d27",
           "contentType": "video/mp4",
           "streams": [
             {
               "codec_name": "hevc",
+              "profile": "Main",
               "codec_type": "video",
+              "codec_tag_string": "hvc1",
               "width": 1440,
               "height": 810,
               "pix_fmt": "yuv420p",
@@ -48,18 +52,20 @@
             }
           ],
           "format": {
-            "duration": "15.200000"
+            "duration": "9.433333"
           }
         },
         {
-          "path": "/videos/av1/outpost-fantasy-card-v1.webm",
-          "bytes": 1893236,
-          "sha256": "e00fde3dc427e8da346ed8e68c4b8ea39d4fbdf2d7d8fe2ae631b82e4ab9f133",
+          "path": "/videos/av1/outpost-fantasy-card-v2.webm",
+          "bytes": 642000,
+          "sha256": "dd73ac5bd317e3ad20f54427a6c86ca548d47b851c6933247c8240d65e53c173",
           "contentType": "video/webm",
           "streams": [
             {
               "codec_name": "av1",
+              "profile": "Main",
               "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
               "width": 1440,
               "height": 810,
               "pix_fmt": "yuv420p10le",
@@ -67,18 +73,20 @@
             }
           ],
           "format": {
-            "duration": "15.200000"
+            "duration": "9.433000"
           }
         },
         {
-          "path": "/videos/posters/outpost-fantasy-card-v1.jpg",
-          "bytes": 59911,
-          "sha256": "74203ec0a632ab20c37190de43c6ea7afca161b65c97ddb53f2e8090b4031380",
+          "path": "/videos/posters/outpost-fantasy-card-v2.jpg",
+          "bytes": 60129,
+          "sha256": "1dd16974a54590e82012e139419881076e93fb0019374c031df91d63ca3f2a84",
           "contentType": "image/jpeg",
           "streams": [
             {
               "codec_name": "mjpeg",
+              "profile": "Baseline",
               "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
               "width": 1440,
               "height": 810,
               "pix_fmt": "yuvj420p",
@@ -274,5 +282,6 @@
         }
       ]
     }
-  ]
+  ],
+  "updated": "2026-09-25"
 }
