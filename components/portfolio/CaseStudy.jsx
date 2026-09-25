@@ -124,7 +124,7 @@ export default function CaseStudy({ project }) {
             {project.rows.map((row, index) => (
               <div
                 key={index}
-                className={`case-media-row ${project.mediaLayout === "mixed" ? "case-media-row-mixed" : ""} ${project.slug === "vizcom" && index === 1 ? "vizcom-detail-row" : ""}`}
+                className={`case-media-row ${project.mediaLayout === "mixed" ? "case-media-row-mixed" : ""}`}
               >
                 {row.map((mediaIndex) => (
                   <Media

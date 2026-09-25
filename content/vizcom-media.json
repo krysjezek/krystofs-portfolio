@@ -1,0 +1,524 @@
+{
+  "prepared": "2026-09-26",
+  "sourceDirectory": "Dropbox/Work/2026/00 Case Studies 2026/Outland Vizcom/Vizcom Mockup Shared",
+  "note": "All 37 videos in the supplied 16x10, 16x9, 1x1 and 3x4 folders were probed; the preferred chair, App Icon 01 and Patches variants and the new card were visually sampled. Selected the portrait chair, landscape App Icon 01 and square Patches. The owner clarified that all four existing 3D stills should remain instead of adding 3D video cuts. Header video and poster are unchanged. All four new deliveries retain full duration and 24fps, preserve source proportions, remove audio and metadata, and use first-frame JPEG posters. Landscape width is capped at 1440px; portrait and square at 1080px. The 16:10 card master retains its original composition in the file and uses the existing responsive gallery crops. Original masters remain in Dropbox. Remote content types, SHA-256 hashes and ffprobe properties verified for every delivery and poster. Copy describes the owner brief and visible footage, without audience or performance claims.",
+  "encoding": {
+    "h264": "High, yuv420p, CRF 20, slow, faststart",
+    "h265": "Main, yuv420p, CRF 24, slow, hvc1, faststart",
+    "av1": "Main, yuv420p10le, CRF 30, SVT-AV1 preset 6"
+  },
+  "assets": [
+    {
+      "source": "16x10/Vizcom Main Video 16x10.mp4",
+      "slug": "vizcom-card-v2",
+      "sourceProperties": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 3840,
+            "height": 2400,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "25.666667"
+        }
+      },
+      "files": [
+        {
+          "path": "/videos/h264/vizcom-card-v2-fallback.mp4",
+          "bytes": 11968034,
+          "sha256": "ed08fbbc77f301868b39a9c6fd8e1f592c944ea664ee98373c17599f80500127",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1440,
+              "height": 900,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "25.666667"
+          },
+          "remoteVerified": true
+        },
+        {
+          "path": "/videos/h265/vizcom-card-v2-web.mp4",
+          "bytes": 6211989,
+          "sha256": "3925e01b3838b918dfcfce0feab76fcc896594c1755ae11595a756ad6893bc9a",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1440,
+              "height": 900,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "25.666667"
+          },
+          "remoteVerified": true
+        },
+        {
+          "path": "/videos/av1/vizcom-card-v2.webm",
+          "bytes": 5869717,
+          "sha256": "c951ff8acda0aa3631f5453303181e63c970a9162958e1b3b9bd6fce25956bc5",
+          "contentType": "video/webm",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "av1",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 900,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "25.667000"
+          },
+          "remoteVerified": true
+        },
+        {
+          "path": "/videos/posters/vizcom-card-v2.jpg",
+          "bytes": 209904,
+          "sha256": "d0567fb311eae7419c6feed5ac87a0a26028e34971329fac6443298d13bc2a0e",
+          "contentType": "image/jpeg",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "profile": "Baseline",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 900,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          },
+          "remoteVerified": true
+        }
+      ]
+    },
+    {
+      "source": "3x4/00 Vizcom - 2D Motion - Chair Reveal 3x4.mp4",
+      "slug": "vizcom-chair-reveal-v1",
+      "sourceProperties": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 1080,
+            "height": 1440,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "10.000000"
+        }
+      },
+      "files": [
+        {
+          "path": "/videos/h264/vizcom-chair-reveal-v1-fallback.mp4",
+          "bytes": 1129499,
+          "sha256": "1a7920241ef013a6877438ea9745bfaf1d6d43eaa88add9fa0d5bb1c0ba159c9",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "10.000000"
+          },
+          "remoteVerified": true
+        },
+        {
+          "path": "/videos/h265/vizcom-chair-reveal-v1-web.mp4",
+          "bytes": 865672,
+          "sha256": "1575ee9e1f695f9663b161114e4d83a6d6588055bf87921a30939eb879bcc04b",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "10.000000"
+          },
+          "remoteVerified": true
+        },
+        {
+          "path": "/videos/av1/vizcom-chair-reveal-v1.webm",
+          "bytes": 1116793,
+          "sha256": "0a94bc4d26de489ee518b389e924cc6a48bd7ea0e731dfd230dbbde2f46ed335",
+          "contentType": "video/webm",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "av1",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "10.000000"
+          },
+          "remoteVerified": true
+        },
+        {
+          "path": "/videos/posters/vizcom-chair-reveal-v1.jpg",
+          "bytes": 194760,
+          "sha256": "be2d7c2f34bbc604173e0442ba8149a8ca6f94e9eb370f7840dcb72574e09294",
+          "contentType": "image/jpeg",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "profile": "Baseline",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          },
+          "remoteVerified": true
+        }
+      ]
+    },
+    {
+      "source": "16x9/00 Vizcom - 2D Motion - App Icon 01 16x9.mp4",
+      "slug": "vizcom-app-icon-01-v1",
+      "sourceProperties": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "4.166667"
+        }
+      },
+      "files": [
+        {
+          "path": "/videos/h264/vizcom-app-icon-01-v1-fallback.mp4",
+          "bytes": 175784,
+          "sha256": "75578d4e657353091410801baa9c5b596f15ad7076bfef19d5e6f94bb4a2e4cd",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "4.166667"
+          },
+          "remoteVerified": true
+        },
+        {
+          "path": "/videos/h265/vizcom-app-icon-01-v1-web.mp4",
+          "bytes": 157241,
+          "sha256": "1ae4dbb5b4c2b97ea009e22f4659dc25c5a38cb4110547ec06f68c3e46b0363f",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "4.166667"
+          },
+          "remoteVerified": true
+        },
+        {
+          "path": "/videos/av1/vizcom-app-icon-01-v1.webm",
+          "bytes": 137932,
+          "sha256": "47471c6c1a5ce87a27500d121bd228488eb2d38def8bd65ee3cd61fc33705ca9",
+          "contentType": "video/webm",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "av1",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "4.167000"
+          },
+          "remoteVerified": true
+        },
+        {
+          "path": "/videos/posters/vizcom-app-icon-01-v1.jpg",
+          "bytes": 115795,
+          "sha256": "12077cb1d28d15327dfaaa8b75b5403289723f75eb77c6066e87b5e76db9101f",
+          "contentType": "image/jpeg",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "profile": "Baseline",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          },
+          "remoteVerified": true
+        }
+      ]
+    },
+    {
+      "source": "1x1/Vizcom - 2D Motion - Patches 1x1.mp4",
+      "slug": "vizcom-motion-patches-v1",
+      "sourceProperties": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 1080,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "24/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "7.000000"
+        }
+      },
+      "files": [
+        {
+          "path": "/videos/h264/vizcom-motion-patches-v1-fallback.mp4",
+          "bytes": 1819039,
+          "sha256": "5b8769036db7bed0d279f9e0642672ea506893ad48941f8156b225ecec2e0ad0",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "h264",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "7.000000"
+          },
+          "remoteVerified": true
+        },
+        {
+          "path": "/videos/h265/vizcom-motion-patches-v1-web.mp4",
+          "bytes": 1378324,
+          "sha256": "b740ba917416afd8ea720c0730576e87891cd0840d848568c850e22fd63405ed",
+          "contentType": "video/mp4",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "7.000000"
+          },
+          "remoteVerified": true
+        },
+        {
+          "path": "/videos/av1/vizcom-motion-patches-v1.webm",
+          "bytes": 839344,
+          "sha256": "2d309d4719d41c82966941913c128a91b88be4694315ab6f855731ae139fa76c",
+          "contentType": "video/webm",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "av1",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "24/1"
+            }
+          ],
+          "format": {
+            "duration": "7.000000"
+          },
+          "remoteVerified": true
+        },
+        {
+          "path": "/videos/posters/vizcom-motion-patches-v1.jpg",
+          "bytes": 168525,
+          "sha256": "adc5127b64db25a4d5b3abdca9b127af123c01affef68778bb1fb288eb4b5f46",
+          "contentType": "image/jpeg",
+          "programs": [],
+          "stream_groups": [],
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "profile": "Baseline",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          },
+          "remoteVerified": true
+        }
+      ]
+    }
+  ]
+}

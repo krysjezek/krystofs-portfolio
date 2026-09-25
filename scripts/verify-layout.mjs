@@ -45,6 +45,9 @@ try {
       );
     }
     for (const anchor of screen.anchors) {
+      // Vizcom's owner-approved mixed grid replaces the old fixed detail pair.
+      // Retain the original Figma fixture; verify the authored rows below.
+      if (screen.route === "/work/vizcom" && anchor.selector === ".vizcom-detail-row") continue;
       const element = page.locator(anchor.selector).nth(anchor.index || 0);
       const actual = await element.evaluate((node) => {
         const rect = node.getBoundingClientRect();
@@ -60,6 +63,12 @@ try {
       });
       for (const key of ["x", "y", "width", "height"]) {
         if (anchor[key] === undefined) continue;
+        // Revised Vizcom copy changes text wrapping and subsequent positions.
+        // Keep the original top inset, hero ratio, caption and credits heights.
+        if (screen.route === "/work/vizcom" && (
+          (key === "y" && anchor.selector !== ".case-introduction") ||
+          (key === "height" && [".case-introduction", ".case-narrative"].includes(anchor.selector))
+        )) continue;
         // Approved follow-up: desktop gallery gutters now sit on exact thirds.
         // This changes card widths and therefore masonry/page heights from Figma.
         // Keep the original fixture; verify the new geometry separately below.
@@ -100,6 +109,36 @@ try {
         const card = await page.locator(`#panel-fun [data-project="${id}"]`).boundingBox();
         assert(Math.abs(card.width / card.height - ratio) < 0.001, `${id} keeps its requested ratio at ${screen.width}px`);
         checks++;
+      }
+    }
+    if (screen.route === "/work/vizcom") {
+      const rowRatios = [[16 / 9, 3 / 4], [16 / 9, 8 / 9], [1, 16 / 9], [16 / 9]];
+      const rows = page.locator(".case-media-row");
+      assert.equal(await rows.count(), rowRatios.length);
+      let previous;
+      for (const [index, ratios] of rowRatios.entries()) {
+        const row = rows.nth(index);
+        const bounds = await row.boundingBox();
+        const media = row.locator(":scope > .media");
+        assert.equal(await media.count(), ratios.length);
+        assert(Math.abs(bounds.width - (screen.width - 10)) < 0.1, "Vizcom keeps 5px outer gutters");
+        const expectedHeight = screen.width < 600
+          ? ratios.reduce((sum, ratio) => sum + (screen.width - 10) / ratio, 0) + 5 * (ratios.length - 1)
+          : (screen.width - 10 - 5 * (ratios.length - 1)) / ratios.reduce((sum, ratio) => sum + ratio, 0);
+        assert(Math.abs(bounds.height - expectedHeight) < 0.1, "Vizcom row height follows authored ratios");
+        if (previous) assert(Math.abs(bounds.y - previous.y - previous.height - 5) < 0.1, "Vizcom row gaps stay 5px");
+        let previousTile;
+        for (const [tileIndex, ratio] of ratios.entries()) {
+          const tile = await media.nth(tileIndex).boundingBox();
+          assert(Math.abs(tile.width / tile.height - ratio) < 0.001, "Vizcom tile keeps its display ratio");
+          if (screen.width >= 600) assert(Math.abs(tile.height - bounds.height) < 0.1, "Vizcom tiles share a row height");
+          if (previousTile) assert(Math.abs(screen.width < 600
+            ? tile.y - previousTile.y - previousTile.height - 5
+            : tile.x - previousTile.x - previousTile.width - 5) < 0.1, "Vizcom tile gaps stay 5px");
+          previousTile = tile;
+          checks++;
+        }
+        previous = bounds;
       }
     }
     assert(

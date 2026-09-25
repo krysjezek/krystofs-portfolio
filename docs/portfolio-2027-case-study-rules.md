@@ -19,7 +19,7 @@ Work uses **Client | Agency | Deliverable**, in that order. For a mockup the mid
 
 | Case | Client | Agency / Brand | Deliverable |
 | --- | --- | --- | --- |
-| Vizcom | Outland | Brand: Vizcom | Animated brand mockup and stills |
+| Vizcom | Outland | Brand: Vizcom | 3D brand film and stills; 2D brand animations |
 | ValkaAI | ValkaAI | Agency: Less and Better | Glass-prism logo animation |
 | Barbour | Barbour | Agency: Monopo London | CGI campaign films |
 | VSX Sports Bra | Victoria’s Secret | Agency: TMRZV Studio | CGI product film |
@@ -60,7 +60,7 @@ The VS source credits “TMRZV Studio” for sound design/compositing without an
 
 - Opening images/videos use a **16:10** frame at every breakpoint. Crop with cover/fill; never stretch. Barbour uses its current header poster, cropped into that frame. VSX uses the owner-supplied knitting header clip with the same 16:10 display crop. **Outpost Fantasy (24 September 2026), Gusto (25 September 2026), Rounds (25 September 2026), and Trezor (25 September 2026) are owner-approved exceptions: their opening videos use 16:9 at every breakpoint. Vojta Zizka omits the header video at the owner's request; its Patreon video sits within the Automated Patreon section in 16:9.**
 - Portrait videos use **3:4** frames with cover/fill. Barbour uses three portrait tiles per row on desktop/tablet and a single stack on mobile.
-- Items in a media row have the same rendered height. Use 16:9 landscape rows or 1:1 square rows where authored; crop mixed source shapes to the row frame. Remove empty pockets caused by mismatched heights. Preserve source order. Gusto, Shelby, Rounds and VSX use owner-requested mixed-ratio rows: widths follow the display aspect ratios to keep equal heights without empty cells; mobile stacks each clip at its own display ratio.
+- Items in a media row have the same rendered height. Use 16:9 landscape rows or 1:1 square rows where authored; crop mixed source shapes to the row frame. Remove empty pockets caused by mismatched heights. Preserve source order. Gusto, Shelby, Rounds, VSX and Vizcom use owner-requested mixed-ratio rows: widths follow the display aspect ratios to keep equal heights without empty cells; mobile stacks each item at its own display ratio. Vizcom retains its four 3D stills and adds the portrait chair reveal, landscape App Icon 01 and square Motion Patches; the original header video stays unchanged.
 - Keep the intentional **5px** outer media gutters and gaps. “No white spaces” means no vacant cells or letterboxing inside the grid, not removing those gutters.
 - Case media is either a photo or a **background video on the page**. No YouTube/Vimeo player cards, play overlays or media click-through links. Figma posters represent the background-video state.
 - Keep the existing poster-first `EmbedVideo` / `BackgroundVideo` pipeline: **H.265 → AV1 → H.264**, muted loop, `playsInline`, `preload="none"`, viewport mounting, and poster-only reduced-motion/data-saver behaviour. Loading reserves geometry; actual failure retains the poster and the defined retry feedback.

@@ -6,16 +6,16 @@
         "icon": "/images/portfolio-2027-identity-vizcom.webp",
         "name": "Outland, Vizcom",
         "category": "work",
-        "disciplines": "3D, Art Direction",
+        "disciplines": "3D, 2D Motion, Art Direction",
         "href": "/work/vizcom",
-        "poster": "/videos/posters/portfolio-card-outland-vizcom-v1.jpg",
+        "poster": "/videos/posters/vizcom-card-v2.jpg",
         "aspect": 1.33333,
         "tabletAspect": 1.33333,
         "mobileAspect": 1.33333,
-        "srcH265": "/videos/h265/portfolio-card-outland-vizcom-v1-web.mp4",
-        "srcAv1": "/videos/av1/portfolio-card-outland-vizcom-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-outland-vizcom-v1-fallback.mp4",
-        "preview": "An animated 3D brand world for Vizcom, created with Outland."
+        "srcH265": "/videos/h265/vizcom-card-v2-web.mp4",
+        "srcAv1": "/videos/av1/vizcom-card-v2.webm",
+        "srcMp4": "/videos/h264/vizcom-card-v2-fallback.mp4",
+        "preview": "A 3D brand world and short 2D animations for Vizcom, created with Outland."
       },
       {
         "id": "shelby",
@@ -190,12 +190,12 @@
       }
     ],
     "desktop": [
-      "outland-vizcom",
+      "outland-rounds",
       "shelby",
       "custom-mockups",
       "barbour",
       "motion-mockups",
-      "outland-rounds",
+      "outland-vizcom",
       "stnck",
       "victoria-s-secret",
       "valkaai",
@@ -204,7 +204,7 @@
       "fantasy"
     ],
     "tablet": [
-      "outland-vizcom",
+      "outland-rounds",
       "valkaai",
       "shelby",
       "fantasy",
@@ -212,18 +212,18 @@
       "victoria-s-secret",
       "motion-mockups",
       "barbour",
-      "outland-rounds",
+      "outland-vizcom",
       "stnck",
       "custom-mockups",
       "trezor"
     ],
     "mobile": [
-      "outland-vizcom",
+      "outland-rounds",
       "motion-mockups",
       "valkaai",
       "barbour",
       "shelby",
-      "outland-rounds",
+      "outland-vizcom",
       "fantasy",
       "stnck",
       "gusto",

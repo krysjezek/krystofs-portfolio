@@ -4,12 +4,12 @@
     "path": "/work/vizcom",
     "figma": "92:1937",
     "title": "Vizcom",
-    "subtitle": "Dynamic 3D Brand World Mockup",
+    "subtitle": "3D Brand World & Motion",
     "date": "Work · August 2026",
     "category": "work",
     "overview": [
-      "Outland invited me to bring Vizcom’s new identity into motion through a dynamic 3D mockup of a working design studio.",
-      "Branded tools, screens, stationery and merchandise make the space feel tactile, lived-in and always in process."
+      "I worked with Outland on a 3D brand film and a series of short 2D animations for Vizcom’s new identity.",
+      "The main film explores a working design studio, with branded tools, screens and objects throughout. The shorter pieces focus on the chair, app icon and graphic patches."
     ],
     "specs": [
       {
@@ -18,8 +18,7 @@
         "href": "https://www.enteroutland.com/",
         "icon": "/images/portfolio-2027-identity-outland.webp",
         "lines": [
-          "Brand identity and creative direction",
-          "Independent design studio"
+          "Brand identity and creative direction"
         ]
       },
       {
@@ -28,8 +27,7 @@
         "href": "https://vizcom.com/",
         "icon": "/images/portfolio-2027-identity-vizcom.webp",
         "lines": [
-          "AI-powered design platform",
-          "Product and industrial design"
+          "AI-powered design platform"
         ]
       },
       {
@@ -38,16 +36,15 @@
         "href": null,
         "icon": null,
         "lines": [
-          "1 × 32-second brand-world animation",
-          "4 × high-resolution stills",
-          "Dynamic 3D brand mockup"
+          "3D brand film and stills",
+          "2D brand animations"
         ]
       }
     ],
     "tags": [
       "3D Environment",
       "Motion Mockup",
-      "Look Development"
+      "2D Motion"
     ],
     "hero": {
       "poster": "/videos/posters/vizcom-brand-world.jpg",
@@ -65,13 +62,13 @@
       {
         "label": "Brief",
         "paragraphs": [
-          "Extend Outland's identity into a dynamic workshop world where Vizcom feels actively used, with branded tools, stationery, screens, and merchandise woven through the space."
+          "Bring Outland’s new identity for Vizcom into a space that feels like a designer’s studio. The 3D film was the main piece, with shorter 2D animations exploring individual parts of the identity."
         ]
       },
       {
         "label": "Process",
         "paragraphs": [
-          "I built a detailed studio and tabletop environment, translated the identity across tactile objects, and choreographed the camera from wide spatial views into close product moments."
+          "I built the studio around a workbench, moving from wide views of the room into close-ups of stationery, screens and materials. For the 2D pieces, I focused on simple changes: a chair moving from sketch to colour, a shifting app icon, and patches moving through repeating type."
         ]
       }
     ],
@@ -79,16 +76,17 @@
       {
         "label": "My role",
         "paragraphs": [
-          "3D environment design, look development, animation, and rendering for a moving Vizcom brand mockup."
+          "I created the 3D environment, materials, lighting and camera animation, and rendered the film and stills. I also animated the 2D pieces, working from Outland’s identity and creative direction."
         ]
       },
       {
         "label": "Result",
         "paragraphs": [
-          "A 32-second animated mockup and still-image set that presents Vizcom as a living creative system rather than a collection of static applications."
+          "The finished film and stills show the identity across a complete studio, from the room itself to the objects on the desk. The shorter animations give the chair, app icon and graphic details their own moments in landscape, square and portrait formats."
         ]
       }
     ],
+    "mediaLayout": "mixed",
     "media": [
       {
         "poster": "/images/vizcom-brand-world-overhead.webp",
@@ -109,15 +107,44 @@
         "poster": "/images/vizcom-brand-world-studio.webp",
         "alt": "Wide view of the Vizcom studio",
         "aspect": 1.7777777777777777
+      },
+      {
+        "poster": "/videos/posters/vizcom-chair-reveal-v1.jpg",
+        "alt": "Vizcom chair changing from a monochrome sketch to orange upholstery and a blue frame",
+        "aspect": 0.75,
+        "srcH265": "/videos/h265/vizcom-chair-reveal-v1-web.mp4",
+        "srcAv1": "/videos/av1/vizcom-chair-reveal-v1.webm",
+        "srcMp4": "/videos/h264/vizcom-chair-reveal-v1-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/vizcom-app-icon-01-v1.jpg",
+        "alt": "Vizcom app icon changing through drawn and pixelated forms on a blue grid",
+        "aspect": 1.7777777777777777,
+        "srcH265": "/videos/h265/vizcom-app-icon-01-v1-web.mp4",
+        "srcAv1": "/videos/av1/vizcom-app-icon-01-v1.webm",
+        "srcMp4": "/videos/h264/vizcom-app-icon-01-v1-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/vizcom-motion-patches-v1.jpg",
+        "alt": "Coloured graphic patches moving through repeating Make it real typography",
+        "aspect": 1,
+        "srcH265": "/videos/h265/vizcom-motion-patches-v1-web.mp4",
+        "srcAv1": "/videos/av1/vizcom-motion-patches-v1.webm",
+        "srcMp4": "/videos/h264/vizcom-motion-patches-v1-fallback.mp4"
       }
     ],
     "rows": [
       [
-        0
+        0,
+        4
       ],
       [
         1,
         2
+      ],
+      [
+        6,
+        5
       ],
       [
         3
@@ -137,7 +164,7 @@
         "icon": "/images/portfolio-2027-credit-icon-credit-icon-outland.webp"
       },
       {
-        "role": "3D Design & Animation",
+        "role": "3D & 2D Motion",
         "name": "Kryštof Ježek",
         "href": "/",
         "icon": null

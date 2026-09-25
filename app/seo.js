@@ -175,7 +175,7 @@ export const portfolioRoutes = [
     path: '/work/vizcom',
     priority: 0.8,
     changeFrequency: 'monthly',
-    lastModified: '2026-09-23',
+    lastModified: '2026-09-26',
   },
   {
     path: '/work/valkaai',
@@ -279,8 +279,8 @@ export const featuredCreativeWorks = [
   {
     name: 'Vizcom Brand World',
     path: '/work/vizcom',
-    description: 'A dynamic 3D environment and animated brand mockup for Vizcom, created for design studio Outland.',
-    keywords: ['3D environment design', 'animated mockup', 'brand world', 'look development', 'motion design'],
+    description: 'A 3D brand film, studio stills and short 2D animations for Vizcom’s new identity, created with design studio Outland.',
+    keywords: ['3D environment design', 'animated mockup', 'brand world', '2D animation', 'motion design'],
     dateCreated: '2026',
     datePublished: '2026-08',
   },

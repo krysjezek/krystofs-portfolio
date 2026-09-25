@@ -12,6 +12,8 @@ Reduced-motion and data-saver preferences keep the poster. Preference changes ar
 
 ## Records and provenance
 
+- content/vizcom-media.json: the owner-supplied 16:10 main film replaces only the homepage card background; the case header and all four existing 3D stills remain. The case adds a portrait chair reveal, landscape App Icon 01 and square Motion Patches in equal-height mixed rows. New deliveries preserve full duration and 24fps, without audio, at up to 1440px landscape or 1080px portrait/square width. All include H.265, AV1, H.264 and first-frame JPEG posters. Original masters remain in the supplied Dropbox folder; every uploaded file has verified remote properties and a SHA-256 hash.
+
 - `/images/apple-eyes-emoji-v1.webp`: STNCK's Coming soon tooltip uses the owner-requested [Apple iOS 18.4 Eyes artwork](https://emojipedia.org/apple/ios-18.4/eyes), sourced from `https://em-content.zobj.net/source/apple/419/eyes_1f440.png`. The 160x160 transparent source is prepared as 64x64 WebP at quality 85 and displayed in the shared 15px image slot, giving it the same appearance on every platform.
 
 - content/trezor-media.json: four owner-supplied product animations for Yiskra and Trezor, dated September 2025. The black, green and orange deliveries preserve 24fps at 1080?1080 and display together in 3:4 crops; the black clip also supplies the homepage card. The hero retains 30fps at 1440?810 and the owner-requested 16:9 frame. All clips have silent H.265, AV1 and H.264 deliveries and first-frame JPEG posters. Original masters remain in the supplied Dropbox folder. Official Trezor and Yiskra identity marks were visually inspected; uploaded assets are verified by remote probes and hashes.

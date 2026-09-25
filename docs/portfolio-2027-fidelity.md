@@ -70,3 +70,9 @@ dismissal and restored focus.
 ## VSX media refresh: 25 September 2026
 
 The owner requested media pacing similar to Gusto, using new VSX Knitting sources. The header retains 16:10. The first media row now pairs a 20:13 product view with a 3:4 fabric close-up, followed by two square breakdowns. The original Figma fixture is retained: the layout check derives the media-height and subsequent vertical-position changes from these authored ratios and the existing 5px gutters. No Figma measurements were replaced with application output.
+
+## Vizcom motion additions: 25 September 2026
+
+The owner requested broader copy, a new card background and mixed-ratio rows like Gusto, then clarified that the four existing 3D stills should stay instead of adding 3D video cuts. The header video is unchanged. The grid pairs the overhead still with the 3:4 chair reveal, retains the laptop and mug pair at 16:9 and 8:9, pairs square Motion Patches with landscape App Icon 01, and closes with the wide studio still. Mobile stacks every item at its authored display ratio.
+
+The original Figma fixture is retained. Its old Vizcom detail-pair and text-dependent vertical positions no longer describe the approved content. The layout check preserves the introduction's top inset, hero geometry, caption and credits heights, and verifies the new row heights mathematically from the authored ratios, equal-height desktop/tablet tiles, mobile stacking and 5px gutters. No reference measurements were replaced with application output.
