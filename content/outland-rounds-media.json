@@ -1,7 +1,7 @@
 {
   "prepared": "2026-09-25",
   "sourceDirectory": "C:\\Users\\kryst\\Dropbox\\Work\\2026\\00 Case Studies 2026\\Outland Rounds",
-  "note": "All 25 supplied videos inspected with ffprobe and sampled. Nine distinct clips selected, preserving full duration, original composition and 30fps. Silent H.264 CRF20 slow, H.265 CRF24 slow hvc1, AV1 10-bit CRF30 preset6; landscape capped at 1440px, square/portrait at 1080px, no upscaling. Posters are frame 1 of H.264 delivery. Original masters remain in Dropbox. Case narrative is an editorial description of supplied scenes and owner brief; project month not supplied.",
+  "note": "All 25 supplied videos inspected with ffprobe and sampled. Nine distinct clips selected, preserving full duration, original composition and 30fps. Silent H.264 CRF20 slow, H.265 CRF24 slow hvc1, AV1 10-bit CRF30 preset6; landscape capped at 1440px, square/portrait at 1080px, no upscaling. Posters are frame 1 of H.264 delivery. Original masters remain in Dropbox. Case narrative is an editorial description of supplied scenes and owner brief; project completion confirmed by the owner as August 2026.",
   "assets": [
     {
       "source": "Card BCG.mp4",
