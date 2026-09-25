@@ -6,6 +6,10 @@ export const WEBSITE_ID = `${SITE_URL}/#website`
 export const CDN_URL = process.env.NEXT_PUBLIC_CDN_URL || 'https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com'
 
 const pageSocialImages = {
+  '/work/shelby': {
+    url: '/videos/posters/shelby-macbook-v1.jpg',
+    alt: 'Custom Shelby MacBook mockup in a sunlit workspace, created for Ashfall Studio',
+  },
   '/work/outpost-gusto': {
     url: '/videos/posters/outpost-gusto-reel-v1.jpg',
     alt: 'Gusto UI design showreel with interface animation and 3D device scenes for Outpost Studio',
@@ -106,6 +110,12 @@ export const noIndex = {
 
 export const portfolioRoutes = [
   {
+    path: '/work/shelby',
+    priority: 0.8,
+    changeFrequency: 'monthly',
+    lastModified: '2026-09-25',
+  },
+  {
     path: '/work/outpost-gusto',
     priority: 0.8,
     changeFrequency: 'monthly',
@@ -199,6 +209,14 @@ export const portfolioRoutes = [
 
 export const featuredCreativeWorks = [
   {
+    name: 'Shelby — Custom Device & Merch Mockups',
+    path: '/work/shelby',
+    description: 'Custom 3D device and merch mockups for Ashfall Studio’s Shelby brand case study, from MacBook and iPad scenes to pins, badges, bottles and clothing.',
+    keywords: ['custom mockups', '3D device mockups', 'merch visualization', '3D motion design', 'Shelby', 'Ashfall Studio'],
+    dateCreated: '2026-04',
+    datePublished: '2026-09-25',
+  },
+  {
     name: 'Gusto',
     path: '/work/outpost-gusto',
     description: 'A showreel for Outpost Studio’s new Gusto UI design, combining interface animation, playful transitions and 3D device scenes.',
@@ -273,6 +291,17 @@ export const featuredCreativeWorks = [
 ]
 
 export const videoAssets = [
+  {
+    name: 'Shelby custom MacBook mockup',
+    page: '/work/shelby',
+    description: 'A custom MacBook scene presenting the Shelby website in a warm, sunlit workspace, created for Ashfall Studio’s brand case study.',
+    thumbnailUrl: '/videos/posters/shelby-macbook-v1.jpg',
+    contentUrl: '/videos/h264/shelby-macbook-v1-fallback.mp4',
+    dateCreated: '2026-04',
+    uploadDate: '2026-09-25',
+    keywords: ['Shelby', 'Ashfall Studio', 'custom mockups', '3D motion', 'MacBook'],
+    transcript: 'No spoken dialogue. The Shelby website animates on a MacBook framed by warm wood, a perforated wall and directional sunlight.',
+  },
   {
     name: 'Gusto UI design showreel',
     page: '/work/outpost-gusto',

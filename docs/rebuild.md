@@ -43,7 +43,8 @@ airport experiment is not a requirement of the new homepage.
 ## Implementation map
 
 - content/gallery.json holds 24 cards and the authored desktop/tablet/mobile orders.
-- content/cases.json holds the nine case studies, specifications, credits, evidence copy and media rows. Outpost Fantasy was added on 24 September 2026 at `/work/outpost-fantasy`, linked from the existing Fantasy homepage card, with owner-confirmed May 2026 completion and credits. Vojta Zizka at `/work/vojta-zizka` remains in Fun, covers both ProductionBot automation projects, links the two YouTube explainers and uses the owner-confirmed completion year 2025.
+- content/cases.json holds the ten case studies, specifications, credits, evidence copy and media rows. Outpost Fantasy was added on 24 September 2026 at `/work/outpost-fantasy`, linked from the existing Fantasy homepage card, with owner-confirmed May 2026 completion and credits. Vojta Zizka at `/work/vojta-zizka` remains in Fun, covers both ProductionBot automation projects, links the two YouTube explainers and uses the owner-confirmed completion year 2025.
+- Shelby was added on 25 September 2026 at `/work/shelby`, linked from the existing Work card, with owner-confirmed April 2026 completion. It presents custom device and merch mockups for Ashfall Studio, with Martin Ehrlich credited for Creative Direction and Dominik Budimir for Motion Design. The delivery/provenance record is `content/shelby-media.json`.
 - Gusto was added on 25 September 2026 at `/work/outpost-gusto`, linked from the existing Work card. It uses Card BCG, the full 16:9 showreel and six mixed landscape/portrait motion details. The delivery/provenance record is `content/outpost-gusto-media.json`.
 - content/profile.json, recognition.json, worlds.json and pages.json separate reusable content from presentation.
 - components/portfolio contains the new React components; styles/portfolio.css is the sole application stylesheet.

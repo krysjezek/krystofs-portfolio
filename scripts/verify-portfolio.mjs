@@ -11,6 +11,7 @@ assert.equal(routes.size, cases.length, 'Case routes must be unique');
 assert(routes.has('/work/outpost-fantasy'));
 assert(routes.has('/work/outpost-gusto'));
 assert(routes.has('/work/vojta-zizka'));
+assert(routes.has('/work/shelby'));
 const vojta = cases.find(project => project.slug === 'vojta-zizka');
 assert.equal(vojta.date, 'Fun · 2025');
 assert.equal(vojta.hero, null);

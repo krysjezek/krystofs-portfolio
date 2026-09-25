@@ -1,0 +1,745 @@
+{
+  "prepared": "2026-09-25",
+  "completed": "2026-04",
+  "sourceDirectory": "Dropbox/Work/2026/00 Case Studies 2026/Shelby/Web Case",
+  "note": "All eight owner-supplied assets probed and visually sampled. Preserve full duration and 30fps; landscape videos delivered at 1440x810, portrait at 1080x1440 and square card at 1080x1080. Audio and metadata removed. Posters use frame 1 of H.264. Phone still delivered at 1920x1080 WebP Q82. MacBook hero displays at the standard 16:10 crop; mixed rows pair iPad with pin, badge with phone still, then bottle with clothing. Credit roles and April 2026 completion supplied by owner. Original masters remain in Dropbox. Brand context verified from official sources; no campaign results attributed to this contribution. Official identity marks visually inspected. Uploaded files verified by content type, SHA-256 and remote ffprobe.",
+  "sources": [
+    "https://ashfall.studio/work/shelby/",
+    "https://ashfall.studio/about/",
+    "https://shelby.xyz/",
+    "https://docs.shelby.xyz/"
+  ],
+  "encoding": {
+    "h264": "High, yuv420p, CRF 20, slow, faststart",
+    "h265": "Main, yuv420p, CRF 24, slow, hvc1, faststart",
+    "av1": "Main, yuv420p10le, CRF 30, SVT-AV1 preset 6"
+  },
+  "assets": [
+    {
+      "source": "00 Shelby Mockup iPad.mp4",
+      "slug": "shelby-ipad-v1",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "sourceDuration": "12.666667",
+      "files": [
+        {
+          "path": "/videos/h264/shelby-ipad-v1-fallback.mp4",
+          "bytes": 6394986,
+          "sha256": "324cd5e9f2f1c50c457b733e8d0709c16fc115d6666256bef166ef85fef5cf3c",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "12.666667"
+          }
+        },
+        {
+          "path": "/videos/h265/shelby-ipad-v1-web.mp4",
+          "bytes": 3101117,
+          "sha256": "5e46e34e8a012204bd929c67a15a0fb512f63698a64f78bc6126fc633b772aea",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "12.666667"
+          }
+        },
+        {
+          "path": "/videos/av1/shelby-ipad-v1.webm",
+          "bytes": 3187885,
+          "sha256": "4090803df4c363d65e7a5ec7acf91006c0c0a3059f8bbfcc05f7e7c90a7323ae",
+          "contentType": "video/webm",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "12.666000"
+          }
+        },
+        {
+          "path": "/videos/posters/shelby-ipad-v1.jpg",
+          "bytes": 197365,
+          "sha256": "02b35d6be12c2ed57e1b6222451454bc44b58e66f36e8ebb1d399f6dc3537bee",
+          "contentType": "image/jpeg",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "profile": "Baseline",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ]
+    },
+    {
+      "source": "00 Shelby Mockup Macbook Part IG.mp4",
+      "slug": "shelby-macbook-v1",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "sourceDuration": "11.666667",
+      "files": [
+        {
+          "path": "/videos/h264/shelby-macbook-v1-fallback.mp4",
+          "bytes": 5421282,
+          "sha256": "e2a9cefcb1505f3f9677caca132ef1ad97886e931ce32a940737fd32185f55a5",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "11.666667"
+          }
+        },
+        {
+          "path": "/videos/h265/shelby-macbook-v1-web.mp4",
+          "bytes": 2930431,
+          "sha256": "3371356b4371bef60dce79bb8ab9ec8c11420f11e6ac7c07b42dcefc3ef34d23",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "11.666667"
+          }
+        },
+        {
+          "path": "/videos/av1/shelby-macbook-v1.webm",
+          "bytes": 2634215,
+          "sha256": "6bf82b5f2b2cb48082fa59e3dac8143e2bbcd460194eba936fd62089319b8322",
+          "contentType": "video/webm",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "11.666000"
+          }
+        },
+        {
+          "path": "/videos/posters/shelby-macbook-v1.jpg",
+          "bytes": 173907,
+          "sha256": "b1e36873a4a57c634d5c48ce01c5414408e8b3c2e9d372e42aa1f6096488b9e2",
+          "contentType": "image/jpeg",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "profile": "Baseline",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1440,
+              "height": 810,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ]
+    },
+    {
+      "source": "00 shelbyPin No Bcg.mp4",
+      "slug": "shelby-pin-v1",
+      "sourceWidth": 2160,
+      "sourceHeight": 2880,
+      "sourceDuration": "5.333333",
+      "files": [
+        {
+          "path": "/videos/h264/shelby-pin-v1-fallback.mp4",
+          "bytes": 590728,
+          "sha256": "4d88c3885b62e58625032fff42cc95e9b699a2881156b7e5c6c075f1c6c3b622",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.333333"
+          }
+        },
+        {
+          "path": "/videos/h265/shelby-pin-v1-web.mp4",
+          "bytes": 290498,
+          "sha256": "62ff4dd726a0acbc90e3a21397bb6b9a9e6486e963f9b10a92ec76b2aef05e76",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.333333"
+          }
+        },
+        {
+          "path": "/videos/av1/shelby-pin-v1.webm",
+          "bytes": 203686,
+          "sha256": "5e4c4281aa7421ef6f7a464847b0d06b7615170832659d8cf0289e5094bb2a98",
+          "contentType": "video/webm",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.333000"
+          }
+        },
+        {
+          "path": "/videos/posters/shelby-pin-v1.jpg",
+          "bytes": 48523,
+          "sha256": "46b1442c73f8cb2670bfbac3a33b30ddfeae642038a2ee2bcb11a84bea34d355",
+          "contentType": "image/jpeg",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "profile": "Baseline",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ]
+    },
+    {
+      "source": "01 shelbyKarta No Bcg.mp4",
+      "slug": "shelby-badge-v1",
+      "sourceWidth": 2160,
+      "sourceHeight": 2880,
+      "sourceDuration": "5.333333",
+      "files": [
+        {
+          "path": "/videos/h264/shelby-badge-v1-fallback.mp4",
+          "bytes": 869400,
+          "sha256": "b014c6ab8b12d78e6637e47850d0fa49fda2381c9a524a05bed607ac16e77848",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.333333"
+          }
+        },
+        {
+          "path": "/videos/h265/shelby-badge-v1-web.mp4",
+          "bytes": 645580,
+          "sha256": "d314f2b122dfb3535150223b68482575432d97b8404d4f57be0bf19e9ad3fd67",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.333333"
+          }
+        },
+        {
+          "path": "/videos/av1/shelby-badge-v1.webm",
+          "bytes": 553905,
+          "sha256": "6b45ec9629b63ce12878fc2d2defe9772a4c5d91951b594eb966fde663f8104e",
+          "contentType": "video/webm",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.333000"
+          }
+        },
+        {
+          "path": "/videos/posters/shelby-badge-v1.jpg",
+          "bytes": 58339,
+          "sha256": "4a25703dbe83abfc14d9a34375b61f32c63010ce42a9375ffd9692e7c4334f85",
+          "contentType": "image/jpeg",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "profile": "Baseline",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ]
+    },
+    {
+      "source": "02 shelbyFlask No Bcg.mp4",
+      "slug": "shelby-flask-v1",
+      "sourceWidth": 2160,
+      "sourceHeight": 2880,
+      "sourceDuration": "5.333333",
+      "files": [
+        {
+          "path": "/videos/h264/shelby-flask-v1-fallback.mp4",
+          "bytes": 1778852,
+          "sha256": "51414c426a8afe70e967b4259f549232e5910d445d876c2f5666b9a5fb02aa3a",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.333333"
+          }
+        },
+        {
+          "path": "/videos/h265/shelby-flask-v1-web.mp4",
+          "bytes": 987377,
+          "sha256": "4a783737b37146c3c73c57a44a5ff4ba86ebd3ad1f8701457dc25591897b980e",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.333333"
+          }
+        },
+        {
+          "path": "/videos/av1/shelby-flask-v1.webm",
+          "bytes": 969746,
+          "sha256": "3bdb0acdb6a68ebf8e39db7c9437f02dfeec835b6866294df3baaf82e1ba302a",
+          "contentType": "video/webm",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.333000"
+          }
+        },
+        {
+          "path": "/videos/posters/shelby-flask-v1.jpg",
+          "bytes": 55339,
+          "sha256": "72da654c834bb1f78b53bd451f045cd8c3725ae9472e9e75b23d73b4d363bd72",
+          "contentType": "image/jpeg",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "profile": "Baseline",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ]
+    },
+    {
+      "source": "03 shelbyMerch No Bcg.mp4",
+      "slug": "shelby-merch-v1",
+      "sourceWidth": 2160,
+      "sourceHeight": 2880,
+      "sourceDuration": "5.333333",
+      "files": [
+        {
+          "path": "/videos/h264/shelby-merch-v1-fallback.mp4",
+          "bytes": 2093030,
+          "sha256": "fddfc5777c0c987a81f31a1bf54215d5ee3934730d91f38dd808f08bd8a3b75a",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.333008"
+          }
+        },
+        {
+          "path": "/videos/h265/shelby-merch-v1-web.mp4",
+          "bytes": 1343170,
+          "sha256": "5d550758e7e3289196f5eb1e1fa889a451a4fbf5bc27f675c4d1a508c74d108c",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.333333"
+          }
+        },
+        {
+          "path": "/videos/av1/shelby-merch-v1.webm",
+          "bytes": 1250747,
+          "sha256": "7907a1965d7f1898b4bca676b93ab6a3a40ed634c9d641a7c38143ce88d94268",
+          "contentType": "video/webm",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "5.333000"
+          }
+        },
+        {
+          "path": "/videos/posters/shelby-merch-v1.jpg",
+          "bytes": 87763,
+          "sha256": "fd7e9cbd72d1d509ce7dd0d5cffc974618084f3792ab980921dcd22656b5a722",
+          "contentType": "image/jpeg",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "profile": "Baseline",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1440,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ]
+    },
+    {
+      "source": "Card BCG.mp4",
+      "slug": "shelby-card-v1",
+      "sourceWidth": 2880,
+      "sourceHeight": 2880,
+      "sourceDuration": "9.333333",
+      "files": [
+        {
+          "path": "/videos/h264/shelby-card-v1-fallback.mp4",
+          "bytes": 1954471,
+          "sha256": "de635e64ba620e54a38c52dafbb8bf886f56cc7901c113ae3ec3f4cc1429afa7",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "h264",
+              "profile": "High",
+              "codec_type": "video",
+              "codec_tag_string": "avc1",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "9.333333"
+          }
+        },
+        {
+          "path": "/videos/h265/shelby-card-v1-web.mp4",
+          "bytes": 1210004,
+          "sha256": "8c5976d793ba7b9d4f678c3a653efb5133a40b6274b070bcb83bc06bb0c98fd6",
+          "contentType": "video/mp4",
+          "streams": [
+            {
+              "codec_name": "hevc",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "hvc1",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "9.333333"
+          }
+        },
+        {
+          "path": "/videos/av1/shelby-card-v1.webm",
+          "bytes": 1153352,
+          "sha256": "60c8a03c573bb0b949954cd33f3e68c898a0b89ca76bcc3794fab86604b8b7d4",
+          "contentType": "video/webm",
+          "streams": [
+            {
+              "codec_name": "av1",
+              "profile": "Main",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuv420p10le",
+              "r_frame_rate": "30/1"
+            }
+          ],
+          "format": {
+            "duration": "9.333000"
+          }
+        },
+        {
+          "path": "/videos/posters/shelby-card-v1.jpg",
+          "bytes": 37807,
+          "sha256": "dc96689649ce56ed4ac5e972430314bf021e52b9474938bf16f00a74295ea2ff",
+          "contentType": "image/jpeg",
+          "streams": [
+            {
+              "codec_name": "mjpeg",
+              "profile": "Baseline",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1080,
+              "height": 1080,
+              "pix_fmt": "yuvj420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {
+            "duration": "0.040000"
+          }
+        }
+      ]
+    },
+    {
+      "source": "image2.png",
+      "sourceWidth": 3840,
+      "sourceHeight": 2160,
+      "files": [
+        {
+          "path": "/images/shelby-phone-v1.webp",
+          "bytes": 266088,
+          "sha256": "bfd289c4d689bf40023f94ebe3b275c7996798a8517c61da4d74036789268410",
+          "contentType": "image/webp",
+          "streams": [
+            {
+              "codec_name": "webp",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 1920,
+              "height": 1080,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {}
+        }
+      ]
+    },
+    {
+      "source": "https://ashfall.studio/favicons/apple-touch-icon.png",
+      "sourceWidth": 180,
+      "sourceHeight": 180,
+      "files": [
+        {
+          "path": "/images/shelby-identity-ashfall-v1.webp",
+          "bytes": 808,
+          "sha256": "6b06faee3b5ba003ba14686ef3f60c0b0f888d0e26e6d9db8d8023762fa4b232",
+          "contentType": "image/webp",
+          "streams": [
+            {
+              "codec_name": "webp",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 180,
+              "height": 180,
+              "pix_fmt": "yuv420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {}
+        }
+      ]
+    },
+    {
+      "source": "https://www.datocms-assets.com/216141/1782998177-favicon.png",
+      "sourceWidth": 512,
+      "sourceHeight": 512,
+      "files": [
+        {
+          "path": "/images/shelby-identity-v1.webp",
+          "bytes": 6706,
+          "sha256": "5b2af9fbfec6bdb464efeebb0c33df89b58ef40826d08b4c9356e7a8fcc782a3",
+          "contentType": "image/webp",
+          "streams": [
+            {
+              "codec_name": "webp",
+              "codec_type": "video",
+              "codec_tag_string": "[0][0][0][0]",
+              "width": 512,
+              "height": 512,
+              "pix_fmt": "yuva420p",
+              "r_frame_rate": "25/1"
+            }
+          ],
+          "format": {}
+        }
+      ]
+    }
+  ]
+}

@@ -12,6 +12,7 @@ Reduced-motion and data-saver preferences keep the poster. Preference changes ar
 
 ## Records and provenance
 
+- content/shelby-media.json: owner-supplied April 2026 device and merch mockups for Ashfall Studio, square homepage card, phone still and official identity marks. Full-duration videos retain 30 fps, with 1440x810 landscape, 1080x1440 portrait and 1080x1080 square deliveries. The MacBook opens the case in the standard 16:10 display crop; mixed rows pair iPad/pin, badge/phone and bottle/clothing. Original masters remain in the supplied Shelby Dropbox folder.
 - content/cases.json: current case media and explicit source-master-needed records.
 - content/outpost-fantasy-media.json: owner-supplied Fantasy reel excerpt, homepage CARD BCG, three device stills and official identity marks, with delivery hashes and remotely verified media properties. Original masters remain in the supplied Dropbox folder.
 - content/outpost-gusto-media.json: owner-supplied Card BCG, full 16:9 Gusto showreel and six selected motion details. Landscape deliveries use 1440×810 and portrait deliveries 1080×1350, at 30 fps without audio. The case pairs landscape and 3:4 display crops at equal heights, then stacks them on mobile. Original masters remain in the supplied Outpost Gusto Dropbox folder; the Gusto wordmark comes from the official site.

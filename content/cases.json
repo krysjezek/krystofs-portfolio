@@ -1368,5 +1368,171 @@
         "icon": null
       }
     ]
+  },
+  {
+    "slug": "shelby",
+    "path": "/work/shelby",
+    "title": "Shelby",
+    "subtitle": "Custom Device & Merch Mockups",
+    "date": "Work · April 2026",
+    "category": "work",
+    "overview": [
+      "Ashfall Studio asked me to create custom mockups for their Shelby brand case study. Shelby is a decentralized storage platform, and Ashfall developed its brand identity and motion system.",
+      "I brought the identity into a set of 3D scenes, from MacBook and iPad mockups to branded pins, event badges, bottles and clothing."
+    ],
+    "specs": [
+      {
+        "label": "Client",
+        "name": "Ashfall Studio",
+        "href": "https://ashfall.studio/",
+        "icon": "/images/shelby-identity-ashfall-v1.webp",
+        "lines": [
+          "Brand identity and motion"
+        ]
+      },
+      {
+        "label": "Brand",
+        "name": "Shelby",
+        "href": "https://shelby.xyz/",
+        "icon": "/images/shelby-identity-v1.webp",
+        "lines": [
+          "Decentralized storage"
+        ]
+      },
+      {
+        "label": "Deliverable",
+        "name": null,
+        "href": null,
+        "icon": null,
+        "lines": [
+          "Custom device mockups",
+          "Merch mockups and animation"
+        ]
+      }
+    ],
+    "tags": [
+      "3D",
+      "Motion",
+      "Custom Mockups"
+    ],
+    "hero": {
+      "poster": "/videos/posters/shelby-macbook-v1.jpg",
+      "alt": "Shelby website on a MacBook in a sunlit workspace with wood surfaces and a perforated wall",
+      "aspect": 1.6,
+      "srcH265": "/videos/h265/shelby-macbook-v1-web.mp4",
+      "srcAv1": "/videos/av1/shelby-macbook-v1.webm",
+      "srcMp4": "/videos/h264/shelby-macbook-v1-fallback.mp4"
+    },
+    "caption": "Shelby · Custom MacBook mockup",
+    "approach": [
+      {
+        "label": "Brief",
+        "paragraphs": [
+          "Create custom mockups for Ashfall’s presentation of the Shelby identity. The set needed to show the brand on screens and physical objects, with room for both the website’s motion and the details of the merchandise."
+        ]
+      },
+      {
+        "label": "Process",
+        "paragraphs": [
+          "I placed the devices in a warm workspace, using wood, a perforated backdrop and directional sunlight to frame the screens. For the merch, I used simple colour fields and close views so the materials, shapes and printed graphics could lead."
+        ]
+      }
+    ],
+    "outcome": [
+      {
+        "label": "My role",
+        "paragraphs": [
+          "I created the custom 3D device and merch mockups for the case study. I worked with Martin Ehrlich, Ashfall’s founder, on creative direction and with motion designer Dominik Budimir to bring Ashfall’s identity into these scenes."
+        ]
+      },
+      {
+        "label": "Result",
+        "paragraphs": [
+          "The finished set presents Shelby across digital and physical applications: a website on devices, a rotating pin, an event badge, a bottle and clothing. Together, the scenes give Ashfall a range of still and animated views for their brand case study."
+        ]
+      }
+    ],
+    "mediaLayout": "mixed",
+    "media": [
+      {
+        "poster": "/videos/posters/shelby-ipad-v1.jpg",
+        "alt": "Shelby interface on an iPad resting on a sunlit wooden desk",
+        "aspect": 1.7777777777777777,
+        "srcH265": "/videos/h265/shelby-ipad-v1-web.mp4",
+        "srcAv1": "/videos/av1/shelby-ipad-v1.webm",
+        "srcMp4": "/videos/h264/shelby-ipad-v1-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/shelby-pin-v1.jpg",
+        "alt": "Rotating coral Shelby pin showing the geometric mark and metal clasp",
+        "aspect": 0.75,
+        "srcH265": "/videos/h265/shelby-pin-v1-web.mp4",
+        "srcAv1": "/videos/av1/shelby-pin-v1.webm",
+        "srcMp4": "/videos/h264/shelby-pin-v1-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/shelby-badge-v1.jpg",
+        "alt": "Pink Shelby event badge and lanyard rotating to show both sides",
+        "aspect": 0.75,
+        "srcH265": "/videos/h265/shelby-badge-v1-web.mp4",
+        "srcAv1": "/videos/av1/shelby-badge-v1.webm",
+        "srcMp4": "/videos/h264/shelby-badge-v1-fallback.mp4"
+      },
+      {
+        "src": "/images/shelby-phone-v1.webp",
+        "alt": "Shelby website on a phone on a wooden desk beneath a perforated wall",
+        "aspect": 1.7777777777777777
+      },
+      {
+        "poster": "/videos/posters/shelby-flask-v1.jpg",
+        "alt": "Metal Shelby bottle with a purple lid and printed branding rotating on a lilac background",
+        "aspect": 0.75,
+        "srcH265": "/videos/h265/shelby-flask-v1-web.mp4",
+        "srcAv1": "/videos/av1/shelby-flask-v1.webm",
+        "srcMp4": "/videos/h264/shelby-flask-v1-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/shelby-merch-v1.jpg",
+        "alt": "Green Shelby beanie and T-shirt presented on a dark green background",
+        "aspect": 0.75,
+        "srcH265": "/videos/h265/shelby-merch-v1-web.mp4",
+        "srcAv1": "/videos/av1/shelby-merch-v1.webm",
+        "srcMp4": "/videos/h264/shelby-merch-v1-fallback.mp4"
+      }
+    ],
+    "rows": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "credits": [
+      {
+        "role": "Creative Direction",
+        "name": "Martin Ehrlich",
+        "href": "https://ashfall.studio/about/",
+        "icon": "/images/shelby-identity-ashfall-v1.webp"
+      },
+      {
+        "role": "Motion Design",
+        "name": "Dominik Budimir",
+        "href": "https://ashfall.studio/work/shelby/",
+        "icon": "/images/shelby-identity-ashfall-v1.webp"
+      },
+      {
+        "role": "3D & Custom Mockups",
+        "name": "Kryštof Ježek",
+        "href": "/",
+        "icon": null
+      }
+    ]
   }
 ]

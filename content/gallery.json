@@ -21,12 +21,17 @@
         "id": "shelby",
         "name": "Shelby",
         "category": "work",
-        "disciplines": "AR, Interaction, Creative Development",
-        "href": null,
-        "poster": "/images/portfolio-2027-gallery-shelby.webp",
+        "disciplines": "3D, Motion, Custom Mockups",
+        "href": "/work/shelby",
+        "poster": "/videos/posters/shelby-card-v1.jpg",
         "aspect": 1,
         "tabletAspect": 1,
-        "mobileAspect": 1
+        "mobileAspect": 1,
+        "alt": "Animated Shelby merchandise with branded bottle and clothing",
+        "srcH265": "/videos/h265/shelby-card-v1-web.mp4",
+        "srcAv1": "/videos/av1/shelby-card-v1.webm",
+        "srcMp4": "/videos/h264/shelby-card-v1-fallback.mp4",
+        "preview": "Custom device and merch mockups for Ashfall Studio’s Shelby brand case study."
       },
       {
         "id": "victoria-s-secret",
