@@ -671,7 +671,7 @@
     "category": "work",
     "overview": [
       "TMRZV Studio brought me in to create a quick-turn CGI product animation for the VSX Sports Bra.",
-      "Photoreal fabric simulations and knit detail reveal the bra’s stretch, support and material performance."
+      "Houdini simulations reveal the knit structure, woven VSX logo and the way the fabric forms and stretches."
     ],
     "specs": [
       {
@@ -701,14 +701,14 @@
         "icon": null,
         "lines": [
           "15-second Instagram Reel",
-          "3 fabric and knit simulations",
+          "3 Houdini fabric simulations",
           "CGI product animation"
         ]
       }
     ],
     "tags": [
       "3D Simulation",
-      "CGI",
+      "Houdini Simulation",
       "Product Animation"
     ],
     "hero": {
@@ -730,7 +730,7 @@
       {
         "label": "Process",
         "paragraphs": [
-          "I built photoreal fabric, knit, stretch, and support moments in Blender and Houdini, then refined the lighting, material response, and simulation detail for a 15-second Instagram Reel."
+          "I built the knit and weave simulations in Houdini, from interlocking yarn loops to the raised VSX logo. In Blender, I refined the materials, lighting and final product views."
         ]
       }
     ],

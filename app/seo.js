@@ -293,8 +293,8 @@ export const featuredCreativeWorks = [
   {
     name: 'The VSX Sports Bra',
     path: '/work/the-vsx-sports-bra',
-    description: '3D product visualization, CGI product animation, and cloth simulation for the VSX Sports Bra.',
-    keywords: ['3D product visualization', 'CGI product animation', 'cloth simulation', 'look development'],
+    description: 'Houdini knit, weave and cloth simulations for the VSX Sports Bra, combined with 3D product animation and look development.',
+    keywords: ['Houdini simulation', 'knit simulation', 'weave simulation', '3D product visualization', 'CGI product animation', 'cloth simulation', 'look development'],
     dateCreated: '2025',
     datePublished: '2025-04',
   },
