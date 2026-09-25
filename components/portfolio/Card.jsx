@@ -48,6 +48,7 @@ export default function Card({
         aria-label={card.hint ? `${card.name}: ${card.hint}` : card.name}
         data-hint={card.hint}
         data-hint-icon={card.hint ? "eye" : undefined}
+        data-hint-image={card.hintImage}
         data-informational={card.hint ? "" : undefined}
       >
         {content}

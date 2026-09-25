@@ -12,6 +12,8 @@ Reduced-motion and data-saver preferences keep the poster. Preference changes ar
 
 ## Records and provenance
 
+- `/images/apple-eyes-emoji-v1.webp`: STNCK's Coming soon tooltip uses the owner-requested [Apple iOS 18.4 Eyes artwork](https://emojipedia.org/apple/ios-18.4/eyes), sourced from `https://em-content.zobj.net/source/apple/419/eyes_1f440.png`. The 160x160 transparent source is prepared as 64x64 WebP at quality 85 and displayed in the shared 15px image slot, giving it the same appearance on every platform.
+
 - content/trezor-media.json: four owner-supplied product animations for Yiskra and Trezor, dated September 2025. The black, green and orange deliveries preserve 24fps at 1080?1080 and display together in 3:4 crops; the black clip also supplies the homepage card. The hero retains 30fps at 1440?810 and the owner-requested 16:9 frame. All clips have silent H.265, AV1 and H.264 deliveries and first-frame JPEG posters. Original masters remain in the supplied Dropbox folder. Official Trezor and Yiskra identity marks were visually inspected; uploaded assets are verified by remote probes and hashes.
 
 - content/motion-mockups-media.json: homepage card combines the owner-supplied square XDR display and portrait MacBook clips, in that order, into a 16-second silent loop. Both retain all eight seconds at 30fps. A common 1080x1350 canvas crops the square scene horizontally and scales the portrait scene proportionally. The card keeps its existing responsive display crops. Original masters remain in Downloads.
