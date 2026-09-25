@@ -72,10 +72,13 @@
         "category": "work",
         "disciplines": "Product Design, Creative Development",
         "href": "https://www.motionmockups.com/",
-        "poster": "/images/portfolio-2027-gallery-motion-mockups.webp",
+        "poster": "/videos/posters/motion-mockups-card-v1.jpg",
         "aspect": 0.75,
         "tabletAspect": 1.33333,
-        "mobileAspect": 1.33333
+        "mobileAspect": 1.33333,
+        "srcH265": "/videos/h265/motion-mockups-card-v1-web.mp4",
+        "srcAv1": "/videos/av1/motion-mockups-card-v1.webm",
+        "srcMp4": "/videos/h264/motion-mockups-card-v1-fallback.mp4"
       },
       {
         "id": "custom-mockups",

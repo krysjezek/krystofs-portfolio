@@ -12,6 +12,8 @@ Reduced-motion and data-saver preferences keep the poster. Preference changes ar
 
 ## Records and provenance
 
+- content/motion-mockups-media.json: homepage card combines the owner-supplied square XDR display and portrait MacBook clips, in that order, into a 16-second silent loop. Both retain all eight seconds at 30fps. A common 1080x1350 canvas crops the square scene horizontally and scales the portrait scene proportionally. The card keeps its existing responsive display crops. Original masters remain in Downloads.
+
 - content/vsx-knitting-media.json: refreshed VSX delivery set from the owner-supplied VSX Knitting folder. The header uses `vsx-upscaled_265.mp4`, and the homepage uses `Card BCG.mp4`. A 20:13 product view pairs with a 3:4 fabric detail; square knit and weave breakdowns follow. All clips retain 30fps, with silent H.265, AV1 and H.264 delivery under cache-safe `vsx-knitting-*-v2` paths. Header and card use `v3` paths and trim 0.7 seconds of empty lead-in so first-frame posters show yarn; the other four clips retain full duration. The header retains the shared 16:10 display crop.
 
 - content/outland-rounds-media.json: owner-supplied Card BCG, Wide Indoor 16x9 hero and seven distinct device, merchandise and course clips. Full-duration 30fps deliveries preserve the selected 16:9, 3:4 and square source compositions. The case uses equal-height mixed rows and stacks each composition on mobile. Original masters remain in the supplied Outland Rounds Dropbox folder. Rounds uses the visually inspected official SVG wordmark from rounds.cc; Outland marks reuse the verified Vizcom assets.

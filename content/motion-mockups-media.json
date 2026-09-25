@@ -1,0 +1,179 @@
+{
+  "prepared": "2026-09-25",
+  "note": "Owner-requested homepage background: concatenate square XDR display scene first, portrait MacBook scene second, retaining each full 8-second clip and 30fps. Common 1080x1350 4:5 canvas: square source scales to 1350x1350 and crops 135px on each side, portrait source scales directly to 1080x1350. No stretching or upscaling; source masters remain in Downloads. Full-range source pixels converted to limited-range video during scaling. No audio or metadata. Card retains existing responsive display crops. H.264 CRF20 slow, H.265 CRF24 slow hvc1, AV1 10-bit CRF30 preset6, frame-1 JPEG poster.",
+  "sources": [
+    {
+      "source": "C:\\Users\\kryst\\Downloads\\motion-sequence-1x1-2160x2160.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 2160,
+            "height": 2160,
+            "pix_fmt": "yuvj420p",
+            "color_range": "pc",
+            "r_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "8.000000"
+        }
+      }
+    },
+    {
+      "source": "C:\\Users\\kryst\\Downloads\\motion-sequence-4x5-2160x2700.mp4",
+      "probe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "High",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 2160,
+            "height": 2700,
+            "pix_fmt": "yuvj420p",
+            "color_range": "pc",
+            "r_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "8.000000"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "slug": "motion-mockups-card-v1",
+      "outputs": [
+        {
+          "path": "/videos/h264/motion-mockups-card-v1-fallback.mp4",
+          "bytes": 4023367,
+          "sha256": "f8dea351b82858172ff5d44d0f3cbc9e28d22bcd7d05f05a77c9d04afacbdec1",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1080,
+                "height": 1350,
+                "pix_fmt": "yuv420p",
+                "color_range": "tv",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "16.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/motion-mockups-card-v1-web.mp4",
+          "bytes": 2530148,
+          "sha256": "23e47138009c63776bf83642dfd90e9ec8840b6ed50cd56b184fb20ce35e163b",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1080,
+                "height": 1350,
+                "pix_fmt": "yuv420p",
+                "color_range": "tv",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "16.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/motion-mockups-card-v1.webm",
+          "bytes": 2263854,
+          "sha256": "e749168ca540a5a4b789c353ccfe56a2f594fdb12faface97ef4428207f4817c",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1350,
+                "pix_fmt": "yuv420p10le",
+                "color_range": "tv",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "16.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/motion-mockups-card-v1.jpg",
+          "bytes": 74526,
+          "sha256": "6eedd428e67aea017c0e76e0b1403d589786825ede8f6993e29bbcc827c86fb0",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1350,
+                "pix_fmt": "yuvj420p",
+                "color_range": "pc",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    }
+  ]
+}
