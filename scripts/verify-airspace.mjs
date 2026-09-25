@@ -133,6 +133,12 @@ try {
     if (touch) await trigger.tap(); else await trigger.click();
     const first = page.locator('[data-aircraft-id="abc001"]');
     await until(() => first.getAttribute("style").then(style => style?.includes("translate(")), "separated markers positioned");
+    // Traffic can arrive before the popover's placement effect has settled.
+    // Read pointer coordinates only after this aircraft is actually on the map.
+    await until(() => first.evaluate(marker => {
+      const { x, y, width, height } = marker.getBoundingClientRect();
+      return marker.closest('.airspace-map').contains(document.elementFromPoint(x + width / 2, y + height / 2));
+    }), "separated marker is within the visible map");
     const target = await first.boundingBox();
     check(Math.abs(target.width - 44) < .1, "44px hit targets stay independent of map zoom");
     const x = target.x + target.width / 2, y = target.y + target.height / 2;

@@ -1,5 +1,19 @@
 # Prague airspace interaction
 
+## Phone map reference — 25 September 2026
+
+The map follows the owner's Apple Maps phone screenshot with deep green land,
+teal woodland, slate urban areas, blue water and pale blue-gray roads. Labels,
+attribution, runway contrast and loading/error overlays now suit this darker map.
+The geographic projection, map size and interactions are unchanged. The versioned
+`prague-map-v2.webp` is generated from the existing geographic sources at quality 82.
+No road-traffic information is invented from the reference screenshot.
+
+Default aircraft use CSS brightness and reduced saturation on the existing alpha
+artwork to appear icy white with a subtle blue tint; this also applies on keyboard
+focus. Selected aircraft retain their blue artwork. This supersedes the pale map
+and muted default appearance below. The Figma artwork has not been revised.
+
 ## Loading feedback — 24 September 2026
 
 The hover preview and details panel show neutral shimmer bars for initial weather,

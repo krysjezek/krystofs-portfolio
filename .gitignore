@@ -40,7 +40,7 @@ yarn-error.log*
 /public/images/
 /public/videos/
 /design/airspace/aircraft-icons/*-master.png
-/design/airspace/prague-map-v1.svg
+/design/airspace/prague-map-v*.svg
 
 # typescript
 *.tsbuildinfo

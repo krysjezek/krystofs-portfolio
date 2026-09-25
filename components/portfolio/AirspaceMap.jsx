@@ -13,7 +13,7 @@ export default function AirspaceMap({ data, now, active, reduced, frozen, previe
   const aircraft = (data?.aircraft || []).filter(a => now - a.observedAt < EXPIRE_MS);
   return <div className={`airspace-map${preview ? " is-preview" : ""}`} ref={ref} aria-label="Airborne aircraft within 30 kilometres of Prague" aria-busy={loading}>
     <div className="airspace-map-space">
-      <Image className="airspace-geography" src={mediaUrl('/images/airspace/prague-map-v1.webp')} width={1536} height={711} alt="" unoptimized />
+      <Image className="airspace-geography" src={mediaUrl('/images/airspace/prague-map-v2.webp')} width={1536} height={711} alt="" unoptimized />
       <Image className="airspace-runway runway-one" src="/airspace/runway-06-24.svg" width={9.58954} height={5.91609} alt="" unoptimized />
       <Image className="airspace-runway runway-two" src="/airspace/runway-12-30.svg" width={7.93643} height={6.65893} alt="" unoptimized />
       <svg className="airspace-trails" width="432" height="180" aria-hidden="true">
