@@ -4,6 +4,11 @@ Design proposal, 23 September 2026. Source: [Portfolio 2027](https://www.figma.c
 
 ## Runtime revision — 24 September 2026
 
+Owner-requested addition, 25 September: the air-traffic LIVE status dot has a
+2400ms ease-out halo (1–1.9 scale, 35%–0 opacity, then a short rest). Its solid
+center and text stay still. This status animation runs only while live traffic is
+active and visible, and is omitted for reduced motion and every non-live status.
+
 The implementation now uses the calmer pacing requested by the owner, including the explicitly requested grid draw from the old design. This section supersedes the original timing tables below for the website; the Figma studies remain the historical proposal.
 
 - Reference inspected: `checkpoint/pre-rebuild-2026-09-23`, especially `hooks/useScrollReveal.js`, `components/CustomCursor.jsx` and `docs/animations.md`. Preserve its deliberate sequencing, one-time reveals and immediate pointer positioning using CSS/WAAPI rather than restoring the old runtime dependencies.

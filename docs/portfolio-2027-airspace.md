@@ -1,5 +1,12 @@
 # Prague airspace interaction
 
+## Live status pulse — 25 September 2026
+
+In both preview and details, the LIVE dot has a soft expanding halo every 2400ms.
+The solid center and label stay still. The pulse only runs for active live traffic;
+delayed, empty, unavailable and test/simulation states remain static, as do all
+statuses when reduced motion is requested.
+
 ## Phone map reference — 25 September 2026
 
 The map follows the owner's Apple Maps phone screenshot with deep green land,

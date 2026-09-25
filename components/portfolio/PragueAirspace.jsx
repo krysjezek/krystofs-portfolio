@@ -193,7 +193,7 @@ export default function PragueAirspace({ mode = "live" }) {
   });
   const clearSelection = () => { setSelected(null); focusMarker(selected); };
   const map = <AirspaceMap data={data} now={now} active={active} reduced={reduced} frozen={delayed} preview={view === "preview"} selected={selected} onSelect={choose} message={message} loading={trafficLoading} />;
-  const badge = <span className={`airspace-badge status-${tone}`}><i className={simulation || fixture ? "is-hollow" : ""} />{status}</span>;
+  const badge = <span className={`airspace-badge status-${tone}${status === "LIVE" && active ? " is-live" : ""}`}><i className={simulation || fixture ? "is-hollow" : ""} aria-hidden="true" />{status}</span>;
   const age = data ? `UPDATED ${Math.max(0, Math.floor((now - data.observedAt) / 1000))} S AGO` : "WAITING FOR REPORTS";
 
   return <span className="prague-airspace">

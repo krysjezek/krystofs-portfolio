@@ -355,6 +355,18 @@ button {
 .status-negative { --status-foreground: #c62839; --status-indicator: #fa4d5b; --status-surface: #fff0f2; }
 .airspace-badge i { width: 8px; height: 8px; border-radius: 50%; background: var(--status-indicator, var(--muted)); flex: none; }
 .airspace-badge i.is-hollow { background: transparent; border: 1.5px solid var(--status-indicator); }
+@media (prefers-reduced-motion: no-preference) {
+  .airspace-badge.is-live i { position: relative; }
+  .airspace-badge.is-live i::after {
+    content: ""; position: absolute; inset: 0; border-radius: inherit;
+    background: var(--status-indicator); pointer-events: none;
+    animation: airspace-live-pulse 2400ms ease-out infinite;
+  }
+}
+@keyframes airspace-live-pulse {
+  0% { transform: scale(1); opacity: .35; }
+  65%, 100% { transform: scale(1.9); opacity: 0; }
+}
 .airspace-weather { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .airspace-weather.is-compact dt { margin-bottom: 4px; }
 .airspace-weather dd { overflow-wrap: anywhere; }
