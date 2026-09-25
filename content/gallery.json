@@ -132,13 +132,13 @@
         "category": "work",
         "disciplines": "2D, 3D, Motion",
         "href": "/work/outpost-gusto",
-        "poster": "/videos/posters/outpost-gusto-card-v2.jpg",
+        "poster": "/videos/posters/outpost-gusto-card-v3.jpg",
         "aspect": 0.75,
         "tabletAspect": 0.75,
         "mobileAspect": 0.75,
-        "srcH265": "/videos/h265/outpost-gusto-card-v2-web.mp4",
-        "srcAv1": "/videos/av1/outpost-gusto-card-v2.webm",
-        "srcMp4": "/videos/h264/outpost-gusto-card-v2-fallback.mp4",
+        "srcH265": "/videos/h265/outpost-gusto-card-v3-web.mp4",
+        "srcAv1": "/videos/av1/outpost-gusto-card-v3.webm",
+        "srcMp4": "/videos/h264/outpost-gusto-card-v3-fallback.mp4",
         "preview": "A UI design showreel for Gusto, created with Chris from Outpost Studio."
       },
       {

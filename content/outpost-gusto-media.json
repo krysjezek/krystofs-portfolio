@@ -1,7 +1,7 @@
 {
   "prepared": "2026-09-25",
   "sourceDirectory": "Dropbox/Work/2026/00 Case Studies 2026/Outpost Gusto",
-  "note": "All 17 supplied video masters were probed and sampled before selecting these eight. Full 16:9 showreel for the hero, Card BCG for the homepage, and six motion details in three mixed rows. Preserve the full showreel, card and device clips. Themes, modules, customization and templates trim 1.2s, 1s, 1s and 0.5s respectively from blank/assembling lead-ins so first-frame posters show visible content. Preserve source proportions; delivery caps landscape at 1440px and portrait at 1080px, 60fps sources become 30fps, audio and metadata removed. Posters are frame 1 of the H.264 deliveries. Portrait display crops are 3:4; the underlying deliveries retain 4:5. Original masters remain in Dropbox. Gusto identity is the unmodified official SVG, visually inspected; Outpost identity reuses the verified Fantasy asset. Chris Wilcock spelling and affiliation verified at https://outpost.design/about/. Case copy is an editorial description of the supplied footage and owner brief, without audience or performance claims. Homepage card replaced on 25 September 2026 with owner-supplied Card BCG New.mp4 (14.016667s), delivered under the cache-safe outpost-gusto-card-v2 slug at 1080x1350/30fps with no audio.",
+  "note": "All 17 supplied video masters were probed and sampled before selecting these eight. Full 16:9 showreel for the hero, Card BCG for the homepage, and six motion details in three mixed rows. Preserve the full showreel, card and device clips. Themes, modules, customization and templates trim 1.2s, 1s, 1s and 0.5s respectively from blank/assembling lead-ins so first-frame posters show visible content. Preserve source proportions; delivery caps landscape at 1440px and portrait at 1080px, 60fps sources become 30fps, audio and metadata removed. Posters are frame 1 of the H.264 deliveries. Portrait display crops are 3:4; the underlying deliveries retain 4:5. Original masters remain in Dropbox. Gusto identity is the unmodified official SVG, visually inspected; Outpost identity reuses the verified Fantasy asset. Chris Wilcock spelling and affiliation verified at https://outpost.design/about/. Case copy is an editorial description of the supplied footage and owner brief, without audience or performance claims. Homepage card replaced on 25 September 2026 with owner-supplied Card BCG New 2.mp4 (9.166667s), delivered under the cache-safe outpost-gusto-card-v3 slug at 1080x1350/30fps with no audio.",
   "encoding": {
     "h264": "High, yuv420p, CRF 20, slow, faststart",
     "h265": "Main, yuv420p, CRF 24, slow, hvc1, faststart",
@@ -9,13 +9,13 @@
   },
   "assets": [
     {
-      "source": "Card BCG New.mp4",
-      "slug": "outpost-gusto-card-v2",
+      "source": "Card BCG New 2.mp4",
+      "slug": "outpost-gusto-card-v3",
       "files": [
         {
-          "path": "/videos/h264/outpost-gusto-card-v2-fallback.mp4",
-          "bytes": 3222354,
-          "sha256": "b21d13e3c79bee33d3fe596707f8af5a5d27aa1b8d5fc7b14b61f016ad82fe23",
+          "path": "/videos/h264/outpost-gusto-card-v3-fallback.mp4",
+          "bytes": 2614833,
+          "sha256": "0b982efc5746cc86002a8e374ad6b4014eb1b0b923515291419d536ee5e4ecb6",
           "contentType": "video/mp4",
           "programs": [],
           "stream_groups": [],
@@ -31,13 +31,13 @@
             }
           ],
           "format": {
-            "duration": "14.033008"
+            "duration": "9.166667"
           }
         },
         {
-          "path": "/videos/h265/outpost-gusto-card-v2-web.mp4",
-          "bytes": 1970722,
-          "sha256": "fb0deb7619effe125f4bd08ed34fe74c42f60d4158da57c5a8eb511a44685d49",
+          "path": "/videos/h265/outpost-gusto-card-v3-web.mp4",
+          "bytes": 1502298,
+          "sha256": "752b8cb9192829fdae295762924af23f654514fe6d2d79f191d75fa51e0ff457",
           "contentType": "video/mp4",
           "programs": [],
           "stream_groups": [],
@@ -53,13 +53,13 @@
             }
           ],
           "format": {
-            "duration": "14.033333"
+            "duration": "9.166667"
           }
         },
         {
-          "path": "/videos/av1/outpost-gusto-card-v2.webm",
-          "bytes": 2025089,
-          "sha256": "808b99585cacffca98d4b0512cdecee8f8ce11c2bd80caa898f66c8c8a9210fe",
+          "path": "/videos/av1/outpost-gusto-card-v3.webm",
+          "bytes": 1536922,
+          "sha256": "2523594c7e8850246e7c4b14897da289641f1c6fd15506484bde171c2a05c327",
           "contentType": "video/webm",
           "programs": [],
           "stream_groups": [],
@@ -75,13 +75,13 @@
             }
           ],
           "format": {
-            "duration": "14.033000"
+            "duration": "9.166000"
           }
         },
         {
-          "path": "/videos/posters/outpost-gusto-card-v2.jpg",
-          "bytes": 157179,
-          "sha256": "e3ff28ab122547ced0acc5eb190b91afad892e269fef6c0687248cd06203a185",
+          "path": "/videos/posters/outpost-gusto-card-v3.jpg",
+          "bytes": 140753,
+          "sha256": "3e01be49e7a8b8c3f2735fab1f056d594cad4e90f83a1d0dd6aa1d7351083762",
           "contentType": "image/jpeg",
           "programs": [],
           "stream_groups": [],
@@ -106,7 +106,7 @@
         "width": 3072,
         "height": 3840,
         "r_frame_rate": "60/1",
-        "duration": "14.016667"
+        "duration": "9.166667"
       }
     },
     {
