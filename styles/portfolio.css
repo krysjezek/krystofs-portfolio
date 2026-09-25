@@ -360,7 +360,7 @@ button {
   .airspace-badge.is-live i::after {
     content: ""; position: absolute; inset: 0; border-radius: inherit;
     background: var(--status-indicator); pointer-events: none;
-    animation: airspace-live-pulse 4000ms ease-out infinite;
+    animation: airspace-live-pulse 2000ms ease-out infinite;
   }
 }
 @keyframes airspace-live-pulse {

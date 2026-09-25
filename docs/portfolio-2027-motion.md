@@ -5,7 +5,7 @@ Design proposal, 23 September 2026. Source: [Portfolio 2027](https://www.figma.c
 ## Runtime revision — 24 September 2026
 
 Owner-requested addition, 25 September: the air-traffic LIVE status dot has a
-4000ms ease-out halo (1–2.5 scale, 55%–0 opacity, then a short rest). Its solid
+2000ms ease-out halo (1–2.5 scale, 55%–0 opacity, then a short rest). Its solid
 center and text stay still. This status animation runs only while live traffic is
 active and visible, and is omitted for reduced motion and every non-live status.
 
