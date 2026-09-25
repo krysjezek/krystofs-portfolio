@@ -40,13 +40,13 @@
         "category": "work",
         "disciplines": "3D, Motion, Art Direction",
         "href": "/work/the-vsx-sports-bra",
-        "poster": "/videos/posters/portfolio-card-victoria-s-secret-v1.jpg",
+        "poster": "/videos/posters/vsx-knitting-card-v3.jpg",
         "aspect": 1.77778,
         "tabletAspect": 0.75,
         "mobileAspect": 0.75,
-        "srcH265": "/videos/h265/portfolio-card-victoria-s-secret-v1-web.mp4",
-        "srcAv1": "/videos/av1/portfolio-card-victoria-s-secret-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-victoria-s-secret-v1-fallback.mp4",
+        "srcH265": "/videos/h265/vsx-knitting-card-v3-web.mp4",
+        "srcAv1": "/videos/av1/vsx-knitting-card-v3.webm",
+        "srcMp4": "/videos/h264/vsx-knitting-card-v3-fallback.mp4",
         "preview": "Product animation, cloth simulation and look development for the VSX Sports Bra."
       },
       {

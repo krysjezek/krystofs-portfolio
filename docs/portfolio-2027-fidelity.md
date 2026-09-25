@@ -66,3 +66,7 @@ content `25:466` is 1633.86px high, and photos start at 900.5px. Desktop and tab
 page/photo geometry is unchanged. Popover checks cover 320, 390, 834 and 1440px
 viewports, classic scrollbar gutters, bounds, header stability, all 18 records,
 dismissal and restored focus.
+
+## VSX media refresh: 25 September 2026
+
+The owner requested media pacing similar to Gusto, using new VSX Knitting sources. The header retains 16:10. The first media row now pairs a 20:13 product view with a 3:4 fabric close-up, followed by two square breakdowns. The original Figma fixture is retained: the layout check derives the media-height and subsequent vertical-position changes from these authored ratios and the existing 5px gutters. No Figma measurements were replaced with application output.

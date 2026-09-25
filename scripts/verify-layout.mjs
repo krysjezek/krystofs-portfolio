@@ -70,6 +70,18 @@ try {
             (key === "width" && anchor.selector.includes(".project-card")))
         ) continue;
         let expected = anchor[key];
+        // Owner-requested VSX media refresh: a 20:13 product view replaces the
+        // first 3:4 tile. Preserve Figma measurements and derive the height delta
+        // from those authored ratios; the second square row is unchanged.
+        if (screen.route === "/work/the-vsx-sports-bra") {
+          const mediaDelta = screen.width < 600
+            ? (screen.width - 10) * (13 / 20 - 4 / 3)
+            : (screen.width - 15) * (1 / (20 / 13 + 3 / 4) - 1 / (3 / 4 + 3 / 4));
+          if (
+            (anchor.selector === ".case-media" && key === "height") ||
+            (key === "y" && ((anchor.selector === ".case-narrative" && anchor.index === 1) || anchor.selector === ".case-credits"))
+          ) expected += mediaDelta;
+        }
         // Owner-approved Fun crops: Handheld 4:3 -> 1:1, Mag 4:3 -> 16:9.
         // Keep Figma's fixture and calculate only the resulting height delta.
         if (screen.tab === "fun" && key === "height" && anchor.selector === ".portfolio-shell") {

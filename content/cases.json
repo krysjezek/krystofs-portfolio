@@ -712,17 +712,14 @@
       "Product Animation"
     ],
     "hero": {
-      "poster": "/videos/posters/vsx_main-01.jpg",
-      "alt": "The VSX Sports Bra 3D product visualization with cloth simulation",
+      "poster": "/videos/posters/vsx-knitting-header-v3.jpg",
+      "alt": "Lime knit loops forming fabric and the VSX logo before a close view of the sports bra",
       "aspect": 1.6,
-      "type": "EmbedVideo",
-      "posterAlt": "The VSX Sports Bra 3D product visualization with cloth simulation",
-      "title": "The VSX Sports Bra CGI product animation",
-      "srcH265": "/videos/h265/vsx_main-01-web.mp4",
-      "srcAv1": "/videos/av1/vsx_main-01.webm",
-      "srcMp4": "/videos/h264/vsx_main-01-fallback.mp4"
+      "srcH265": "/videos/h265/vsx-knitting-header-v3-web.mp4",
+      "srcAv1": "/videos/av1/vsx-knitting-header-v3.webm",
+      "srcMp4": "/videos/h264/vsx-knitting-header-v3-fallback.mp4"
     },
-    "caption": "VSX Sports Bra · Product animation · 15 seconds",
+    "caption": "VSX Sports Bra · Knit and fabric detail",
     "approach": [
       {
         "label": "Brief",
@@ -753,47 +750,36 @@
     ],
     "media": [
       {
-        "poster": "/videos/posters/vsx_main-02.jpg",
-        "alt": "The VSX Sports Bra photoreal CGI fabric simulation",
+        "poster": "/videos/posters/vsx-knitting-product-v2.jpg",
+        "alt": "Wide product view moving from the embroidered VSX band to the complete sports bra",
+        "aspect": 1.5384615384615385,
+        "srcH265": "/videos/h265/vsx-knitting-product-v2-web.mp4",
+        "srcAv1": "/videos/av1/vsx-knitting-product-v2.webm",
+        "srcMp4": "/videos/h264/vsx-knitting-product-v2-fallback.mp4"
+      },
+      {
+        "poster": "/videos/posters/vsx-knitting-fabric-v2.jpg",
+        "alt": "Portrait close-up of woven lime fabric and the raised VSX logo",
         "aspect": 0.75,
-        "type": "EmbedVideo",
-        "posterAlt": "The VSX Sports Bra photoreal CGI fabric simulation",
-        "title": "The VSX Sports Bra fabric simulation detail",
-        "srcH265": "/videos/h265/vsx_main-02-web.mp4",
-        "srcAv1": "/videos/av1/vsx_main-02.webm",
-        "srcMp4": "/videos/h264/vsx_main-02-fallback.mp4"
+        "srcH265": "/videos/h265/vsx-knitting-fabric-v2-web.mp4",
+        "srcAv1": "/videos/av1/vsx-knitting-fabric-v2.webm",
+        "srcMp4": "/videos/h264/vsx-knitting-fabric-v2-fallback.mp4"
       },
       {
-        "poster": "/videos/posters/vsx_main-03.jpg",
-        "alt": "The VSX Sports Bra CGI knit and stretch visualization",
-        "aspect": 0.75,
-        "type": "EmbedVideo",
-        "posterAlt": "The VSX Sports Bra CGI knit and stretch visualization",
-        "title": "The VSX Sports Bra knit simulation",
-        "srcH265": "/videos/h265/vsx_main-03-web.mp4",
-        "srcAv1": "/videos/av1/vsx_main-03.webm",
-        "srcMp4": "/videos/h264/vsx_main-03-fallback.mp4"
-      },
-      {
-        "poster": "/videos/posters/vsx_bts-01.jpg",
-        "alt": "Behind-the-scenes 3D cloth simulation for The VSX Sports Bra",
+        "poster": "/videos/posters/vsx-knitting-knit-breakdown-v2.jpg",
+        "alt": "Knitting simulation breakdown showing red yarn loops building across a purple guide mesh",
         "aspect": 1,
-        "type": "EmbedVideo",
-        "posterAlt": "Behind-the-scenes 3D cloth simulation for The VSX Sports Bra",
-        "title": "The VSX Sports Bra simulation breakdown",
-        "srcH265": "/videos/h265/vsx_bts-01-web.mp4",
-        "srcAv1": "/videos/av1/vsx_bts-01.webm",
-        "srcMp4": "/videos/h264/vsx_bts-01-fallback.mp4"
+        "srcH265": "/videos/h265/vsx-knitting-knit-breakdown-v2-web.mp4",
+        "srcAv1": "/videos/av1/vsx-knitting-knit-breakdown-v2.webm",
+        "srcMp4": "/videos/h264/vsx-knitting-knit-breakdown-v2-fallback.mp4"
       },
       {
-        "poster": "/videos/posters/vsx_bts-02.jpg",
-        "alt": "The VSX Sports Bra CGI look development and cloth simulation breakdown",
+        "poster": "/videos/posters/vsx-knitting-weave-breakdown-v2.jpg",
+        "alt": "Weave simulation breakdown showing the purple VSX logo forming in the 3D viewport",
         "aspect": 1,
-        "type": "EmbedVideo",
-        "posterAlt": "The VSX Sports Bra CGI look development and cloth simulation breakdown",
-        "title": "The VSX Sports Bra CGI breakdown",
-        "srcH265": "/videos/h265/vsx_bts-02-web.mp4",
-        "srcMp4": "/videos/h264/vsx_bts-02-fallback.mp4"
+        "srcH265": "/videos/h265/vsx-knitting-weave-breakdown-v2-web.mp4",
+        "srcAv1": "/videos/av1/vsx-knitting-weave-breakdown-v2.webm",
+        "srcMp4": "/videos/h264/vsx-knitting-weave-breakdown-v2-fallback.mp4"
       }
     ],
     "rows": [
@@ -825,7 +811,8 @@
         "href": "/",
         "icon": null
       }
-    ]
+    ],
+    "mediaLayout": "mixed"
   },
   {
     "slug": "chainer",

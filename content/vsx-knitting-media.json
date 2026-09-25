@@ -1,0 +1,897 @@
+{
+  "prepared": "2026-09-25",
+  "sourceDirectory": "C:\\Users\\kryst\\Dropbox\\Work\\2026\\00 Case Studies 2026\\VSX Knitting",
+  "note": "All 14 supplied clips probed and visually sampled. Six selected: owner-requested vsx-upscaled_265.mp4 header and Card BCG.mp4 card, wide product detail, portrait fabric detail and square knitting/weave breakdowns. Header and card trim 0.7 seconds of near-empty blue lead-in so first-frame posters show yarn; all other clips retain full source duration. All deliveries retain 30fps; no upscaling. Audio and metadata stripped. H.264 CRF20 slow, H.265 CRF24 slow hvc1, AV1 10-bit CRF30 preset6. Posters are frame 1 of H.264 delivery. Versioned v2 paths (v3 for the trimmed header and card) replace the older VSX assets without cache collisions. Original masters remain in Dropbox.",
+  "assets": [
+    {
+      "source": "Card BCG.mp4",
+      "trimStartSeconds": 0.7,
+      "slug": "vsx-knitting-card-v3",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          },
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 1440,
+            "height": 936,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          }
+        ],
+        "format": {
+          "duration": "2.666667"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/vsx-knitting-card-v3-fallback.mp4",
+          "bytes": 1102789,
+          "sha256": "3698ce68337383c1688ca045cf99a542b574d1f54056561c93daf946e89b15e0",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1440,
+                "height": 936,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "1.966667"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/vsx-knitting-card-v3-web.mp4",
+          "bytes": 600438,
+          "sha256": "c82b6244b27e67966c6368b450724b4685579a544853b9d0e31cb0bd93326abe",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1440,
+                "height": 936,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "1.966667"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/vsx-knitting-card-v3.webm",
+          "bytes": 636053,
+          "sha256": "f5075e8f59e10b903a265da8d43629cae2a1cb42905d0245030d53740c798991",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 936,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "1.966000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/vsx-knitting-card-v3.jpg",
+          "bytes": 49619,
+          "sha256": "3265dd4ceadb9d92a6c13c675ca3f8a989e9c8b112acf643cfbd921202e3fb67",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 936,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "vsx-upscaled_265.mp4",
+      "trimStartSeconds": 0.7,
+      "slug": "vsx-knitting-header-v3",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 1440,
+            "height": 936,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "7.533333"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/vsx-knitting-header-v3-fallback.mp4",
+          "bytes": 4761025,
+          "sha256": "735f6d40022c5f6545076326394cff6a52aa4276ea8d8f09974f9271ad6ae99e",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1440,
+                "height": 936,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "6.833008"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/vsx-knitting-header-v3-web.mp4",
+          "bytes": 2648423,
+          "sha256": "219ef3fa980d532ce9def5e1bb82ba66db1d389790218a283ec3c5af79973903",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1440,
+                "height": 936,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "6.833333"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/vsx-knitting-header-v3.webm",
+          "bytes": 2656231,
+          "sha256": "51045cbbc45b4471a4b0c5a105f2e61a02a156c80e58febc052413c35f24fa9d",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 936,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "6.833000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/vsx-knitting-header-v3.jpg",
+          "bytes": 50182,
+          "sha256": "686365b445e1c8c221cd3ae3b94ad013fcd2c1305ae5afc46bf64abd5239eb88",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 936,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "vsx-upscaled_165.mp4",
+      "slug": "vsx-knitting-product-v2",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 1440,
+            "height": 936,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "6.066667"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/vsx-knitting-product-v2-fallback.mp4",
+          "bytes": 2860517,
+          "sha256": "c1df2749baa81cfab743ee33d206081032e412e97932d5af3284a3fee695d995",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1440,
+                "height": 936,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "6.066667"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/vsx-knitting-product-v2-web.mp4",
+          "bytes": 1643471,
+          "sha256": "514cedf7cfe40d7c4434ddf90e5cbec47346f86678f0146bd14658d901d96d83",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1440,
+                "height": 936,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "6.066667"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/vsx-knitting-product-v2.webm",
+          "bytes": 1525940,
+          "sha256": "9b3a9c36e41b45668807f76d2a1ec72e08d6e09906a543aa51f8d45eb2e944fc",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 936,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "6.066000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/vsx-knitting-product-v2.jpg",
+          "bytes": 104777,
+          "sha256": "4cd0f833e4645fc57cb0047f3300794ae5c054ba5201aab7689a43dc8718f53d",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1440,
+                "height": 936,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "vsx-upscaled 3.mp4",
+      "slug": "vsx-knitting-fabric-v2",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 1080,
+            "height": 1350,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "5.600000"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/vsx-knitting-fabric-v2-fallback.mp4",
+          "bytes": 3760370,
+          "sha256": "2ad0ff4e75e405bafc3da5c2200e9e036dfc03d740378d1280033bd7f7ecfef6",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1080,
+                "height": 1350,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "5.600000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/vsx-knitting-fabric-v2-web.mp4",
+          "bytes": 1816492,
+          "sha256": "981ecdf4ae5a169e7adccc66899f0152eb30d1c4a58453446d72a95e9330c65c",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1080,
+                "height": 1350,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "5.600000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/vsx-knitting-fabric-v2.webm",
+          "bytes": 1583163,
+          "sha256": "308c9935ce852ec310a02fce34641fefbe38fe9f68865d15905ddc2e75115977",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1350,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "5.600000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/vsx-knitting-fabric-v2.jpg",
+          "bytes": 46114,
+          "sha256": "47aac8b50e5a067a416a9fd99b06a9baee44f82b32d485c6aed9be78557793b8",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1350,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "Knit_1x1.mp4",
+      "slug": "vsx-knitting-knit-breakdown-v2",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 1080,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "10.000000"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/vsx-knitting-knit-breakdown-v2-fallback.mp4",
+          "bytes": 9254690,
+          "sha256": "1f21c57b1e265f0ec3d88873011468f7c7296c4465ebfbfd29521afa1ab15288",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "10.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/vsx-knitting-knit-breakdown-v2-web.mp4",
+          "bytes": 6167799,
+          "sha256": "adfafffe05534f4b977adf0eeafd4453e02e9fe1115fab0fc02a0349c685a240",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "10.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/vsx-knitting-knit-breakdown-v2.webm",
+          "bytes": 8723397,
+          "sha256": "507c4f89fccbe728ea3b0f37eadfb0426d538d7f34d3ad41bf0df205874d95be",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "10.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/vsx-knitting-knit-breakdown-v2.jpg",
+          "bytes": 273100,
+          "sha256": "8d3a70442fb4cfb6104ac4cf166fa6503e3c4a7b422c5144716ec48e35ae5922",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    },
+    {
+      "source": "Weave_1x1.mp4",
+      "slug": "vsx-knitting-weave-breakdown-v2",
+      "sourceProbe": {
+        "programs": [],
+        "stream_groups": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "profile": "Main",
+            "codec_type": "video",
+            "codec_tag_string": "avc1",
+            "width": 1080,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "r_frame_rate": "30/1"
+          },
+          {
+            "codec_name": "aac",
+            "profile": "LC",
+            "codec_type": "audio",
+            "codec_tag_string": "mp4a",
+            "r_frame_rate": "0/0"
+          }
+        ],
+        "format": {
+          "duration": "6.000000"
+        }
+      },
+      "outputs": [
+        {
+          "path": "/videos/h264/vsx-knitting-weave-breakdown-v2-fallback.mp4",
+          "bytes": 691737,
+          "sha256": "f88ea124aee75b9886ae3df90139a0064ca6ca2e79177e78ddfd8b7f116a97fd",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "h264",
+                "profile": "High",
+                "codec_type": "video",
+                "codec_tag_string": "avc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "6.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/h265/vsx-knitting-weave-breakdown-v2-web.mp4",
+          "bytes": 385121,
+          "sha256": "7d3499bebab39aa402cf814ba8884a16a795a5e40fc5407d1565f169dd0caa30",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "hevc",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "hvc1",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "6.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/mp4",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/av1/vsx-knitting-weave-breakdown-v2.webm",
+          "bytes": 575507,
+          "sha256": "788c4c9d2632228cdb9737ffb75f425c77a6c97db6e5156142279163e7bceddf",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "av1",
+                "profile": "Main",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuv420p10le",
+                "r_frame_rate": "30/1"
+              }
+            ],
+            "format": {
+              "duration": "6.000000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "video/webm",
+            "matchesLocalProbe": true
+          }
+        },
+        {
+          "path": "/videos/posters/vsx-knitting-weave-breakdown-v2.jpg",
+          "bytes": 87870,
+          "sha256": "85d7df5afce4b84a1b1d4be2d928703b96105c659e95af4c10fdac73a3fb2bf7",
+          "probe": {
+            "programs": [],
+            "stream_groups": [],
+            "streams": [
+              {
+                "codec_name": "mjpeg",
+                "profile": "Baseline",
+                "codec_type": "video",
+                "codec_tag_string": "[0][0][0][0]",
+                "width": 1080,
+                "height": 1080,
+                "pix_fmt": "yuvj420p",
+                "r_frame_rate": "25/1"
+              }
+            ],
+            "format": {
+              "duration": "0.040000"
+            }
+          },
+          "remoteVerified": {
+            "date": "2026-09-25",
+            "contentType": "image/jpeg",
+            "matchesLocalProbe": true
+          }
+        }
+      ]
+    }
+  ]
+}
