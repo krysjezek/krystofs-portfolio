@@ -166,8 +166,7 @@
       {
         "role": "3D & 2D Motion",
         "name": "Kryštof Ježek",
-        "href": "/",
-        "icon": null
+        "plain": true
       }
     ]
   },
@@ -276,20 +275,17 @@
       {
         "role": "Art Direction",
         "name": "Kryštof Ježek",
-        "href": "/",
-        "icon": null
+        "plain": true
       },
       {
         "role": "3D",
         "name": "Kryštof Ježek",
-        "href": "/",
-        "icon": null
+        "plain": true
       },
       {
         "role": "Motion Graphics",
         "name": "Kryštof Ježek",
-        "href": "/",
-        "icon": null
+        "plain": true
       }
     ]
   },
@@ -667,8 +663,7 @@
       {
         "role": "CGI Director",
         "name": "Kryštof Ježek",
-        "href": "/",
-        "icon": null
+        "plain": true
       },
       {
         "role": "3D, VFX",
@@ -822,14 +817,12 @@
       {
         "role": "3D & Look Development",
         "name": "Kryštof Ježek",
-        "href": "/",
-        "icon": null
+        "plain": true
       },
       {
         "role": "Houdini Simulation",
         "name": "Kryštof Ježek",
-        "href": "/",
-        "icon": null
+        "plain": true
       }
     ],
     "mediaLayout": "mixed"
@@ -1085,8 +1078,7 @@
       {
         "role": "3D & 2D Motion",
         "name": "Kryštof Ježek",
-        "href": "/",
-        "icon": null
+        "plain": true
       }
     ]
   },
@@ -1371,8 +1363,7 @@
       {
         "role": "3D & 2D Motion",
         "name": "Kryštof Ježek",
-        "href": "/",
-        "icon": null
+        "plain": true
       }
     ]
   },
@@ -1537,8 +1528,7 @@
       {
         "role": "3D & Custom Mockups",
         "name": "Kryštof Ježek",
-        "href": "/",
-        "icon": null
+        "plain": true
       }
     ]
   },
@@ -1723,8 +1713,7 @@
       {
         "role": "3D Environments & Mockups",
         "name": "Kryštof Ježek",
-        "href": "/",
-        "icon": null
+        "plain": true
       }
     ]
   },
@@ -1854,7 +1843,7 @@
       {
         "role": "3D, Motion, Lighting",
         "name": "Kryštof Ježek",
-        "icon": "designer"
+        "plain": true
       }
     ]
   }

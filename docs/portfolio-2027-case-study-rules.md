@@ -49,7 +49,7 @@ Verified numbers may appear **inside the Result paragraph**, in black, with the 
 
 Work credit rows use role plus **[Icon] Person name**. Do not append or repeat the company/brand in the name. Keep the existing shared icon sizing and spacing.
 
-- Kryštof Ježek uses the existing green designer mark.
+- Kryštof Ježek is plain text, without an icon, link or tooltip.
 - Less and Better contributors, including **Dominik Smuchar**, use the LAB mark.
 - Vizcom has separate **Jordan Jenkins** and **Evan Place** entries, each using the Outland mark, plus Kryštof Ježek.
 - Monopo contributors use the Monopo mark; Artem Morozov uses TMRZV’s mark.

@@ -204,7 +204,10 @@ try {
 
   await page.goto(`${base}/work/outpost-fantasy`);
   assert.equal(await page.locator('.context-trigger[popovertarget], .context-trigger[aria-haspopup], .context-actions').count(), 0);
-  await page.locator('.case-credits a[href="/"]').click();
+  const ownerCredit = page.locator('.case-credits dd').filter({hasText: 'Kryštof Ježek'});
+  assert.ok(await ownerCredit.count() > 0);
+  assert.equal(await ownerCredit.locator('a, .context-trigger, .identity-tile').count(), 0);
+  await page.locator('.site-name').click();
   await page.waitForURL(base + '/');
 
   await page.unroute('**/api/weather');

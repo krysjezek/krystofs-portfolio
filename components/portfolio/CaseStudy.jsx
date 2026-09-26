@@ -151,17 +151,21 @@ export default function CaseStudy({ project }) {
                 <div key={index}>
                   <dt>{credit.role}</dt>
                   <dd>
-                    <IdentityTile src={credit.icon || "designer"} />
-                    <ContextPreview preview={{
-                      title: credit.name,
-                      detail: `${credit.role} on ${project.title}.`,
-                      href: credit.href,
-                      ...previews.people[credit.name],
-                      icon: (previews.people[credit.name]?.href || credit.href) ? "arrow" : "eye",
-                      image: credit.icon || "designer",
-                    }}>
-                      {previews.people[credit.name]?.title || credit.name}
-                    </ContextPreview>
+                    {credit.plain ? credit.name : (
+                      <>
+                        <IdentityTile src={credit.icon || "designer"} />
+                        <ContextPreview preview={{
+                          title: credit.name,
+                          detail: `${credit.role} on ${project.title}.`,
+                          href: credit.href,
+                          ...previews.people[credit.name],
+                          icon: (previews.people[credit.name]?.href || credit.href) ? "arrow" : "eye",
+                          image: credit.icon || "designer",
+                        }}>
+                          {previews.people[credit.name]?.title || credit.name}
+                        </ContextPreview>
+                      </>
+                    )}
                   </dd>
                 </div>
               ))}

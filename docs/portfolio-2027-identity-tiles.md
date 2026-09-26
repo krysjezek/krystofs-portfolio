@@ -17,7 +17,7 @@ The tile has a 3px clipped radius, white matte and contained artwork. Preserve o
 
 Figma preserves 22 existing logo preset IDs and links them through the shared tile. The `Artwork` instance-swap property selects the verified mark. School, social, app and credit tooltip presets use the same tile. The guide shows actual linked tooltip instances, not flattened screenshots.
 
-On the website, use `IdentityTile` for brand, app, publication, social, university and credit affiliation marks. `ExternalLink` passes its existing logo into the contextual cursor preview. Credit previews repeat the row's affiliation mark with the short bio; preserve the green designer mark for existing rows without an affiliation image. No profile photos are introduced. The school preview resolves the existing university artwork.
+On the website, use `IdentityTile` for brand, app, publication, social, university and credit affiliation marks. `ExternalLink` passes its existing logo into the contextual cursor preview. Credit previews repeat the row's affiliation mark with the short bio; preserve the green designer mark for existing collaborator rows without an affiliation image. Kryštof Ježek's credit rows are plain text without a tile, link or preview. No profile photos are introduced. The school preview resolves the existing university artwork.
 
 Action symbols still use `Icon` from the supplied Unicons Line pack. Large artwork within case-study media is not an inline identity tile.
 

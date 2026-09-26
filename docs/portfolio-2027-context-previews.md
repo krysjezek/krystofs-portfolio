@@ -46,7 +46,6 @@ Person sources inspected 24 September 2026:
 
 | Person | Source / scope |
 | --- | --- |
-| Kryštof Ježek | Existing portfolio introduction and `content/profile.json`. |
 | Jordan Jenkins | Existing Vizcom credits and [Outland](https://enteroutland.com/). Summary is project context, not an inferred founder biography. |
 | Evan Place | [Personal website](https://evanplace.com/) and [professional profile](https://www.linkedin.com/in/evanplace). |
 | Dominik Smuchar, Petr Skovajsa | Existing ValkaAI credits. No personal biography asserted beyond this collaboration. |
