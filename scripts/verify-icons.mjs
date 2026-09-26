@@ -21,7 +21,9 @@ for (const [name, icon] of Object.entries(icons)) {
 const files = await readdir(new URL("components/portfolio/", root));
 for (const file of files.filter((name) => name.endsWith(".jsx"))) {
   const source = await readFile(new URL(`components/portfolio/${file}`, root), "utf8");
-  assert(!/<svg\b|cursor-eye\.svg|cursor-message\.svg|arrow-leftup\.svg|CheckIcon/.test(source), `${file}: no mixed or handwritten UI icons`);
+  // The airspace polyline draws geographic telemetry, not an interface icon.
+  const uiSource = file === "AirspaceMap.jsx" ? source.replace(/<svg className="airspace-trails"[\s\S]*?<\/svg>/, "") : source;
+  assert(!/<svg\b|cursor-eye\.svg|cursor-message\.svg|arrow-leftup\.svg|CheckIcon/.test(uiSource), `${file}: no mixed or handwritten UI icons`);
   for (const match of source.matchAll(/<Icon\b[^>]*\bname="([^"]+)"/g))
     assert(icons[match[1]], `${file}: registered interface icon ${match[1]}`);
 }
@@ -38,7 +40,8 @@ try {
     assert(response.ok(), icon.src);
     assert.match(response.headers()["content-type"], /image\/svg\+xml/);
   }
-  assert.equal(await page.locator('.header-utility .ui-icon:visible, .header-utility .identity-tile:visible').count(), 0, "Header is location, time and temperature only");
+  assert.equal(await page.locator('.header-utility .ui-icon:visible').count(), 2, "Header shows plane and weather symbols");
+  assert.deepEqual(await page.locator('.header-utility .ui-icon:visible').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().width)), [12, 12]);
   const email = page.locator('.contact-copy [data-ui-icon="email"]');
   assert.equal(await email.evaluate(node => node.getBoundingClientRect().width), 15);
   assert(await page.locator('.contact-copy .identity-tile img').count() > 0, "Keep inline X identity artwork");
@@ -55,7 +58,7 @@ try {
   await page.goto(new URL("/work/vizcom", page.url()).href);
   assert(await page.locator(".identity-tile").count() >= 5, "Keep case-study client and credit logos");
   assert.deepEqual(errors, []);
-  console.log("PASS: six exact Unicons Line exports, source-only UI icons, shared sizes/colors, inverse state, and preserved identity marks");
+  console.log(`PASS: ${Object.keys(icons).length} exact Unicons Line exports, source-only UI icons, shared sizes/colors, inverse state, and preserved identity marks`);
 } finally {
   await browser.close();
 }

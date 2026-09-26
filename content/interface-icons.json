@@ -52,5 +52,104 @@
     "componentNode": "399:29",
     "viewBox": "0 0 24 24",
     "sha256": "16cdf560b23133dfbbb7f1e9d8a8d9d5dc38c7a3f7de3296dcf78eef77d45513"
+  },
+  "plane": {
+    "src": "/icons/unicons/plane.svg",
+    "library": "Unicons Line",
+    "sourceName": "plane",
+    "sourceNode": "408:3660",
+    "componentNode": "582:1364",
+    "viewBox": "0 0 24 24",
+    "sha256": "58093fb8f16077fac1ba54e014c61cbe7b58cf2239cf85adc66fb6530be1893d"
+  },
+  "sun": {
+    "src": "/icons/unicons/sun.svg",
+    "library": "Unicons Line",
+    "sourceName": "sun",
+    "sourceNode": "408:4034",
+    "componentNode": "582:1367",
+    "viewBox": "0 0 24 24",
+    "sha256": "cce2284b892512ce6d731501601c196326f040dc167b8d3b9f8f150d9fa7956c"
+  },
+  "moon": {
+    "src": "/icons/unicons/moon.svg",
+    "library": "Unicons Line",
+    "sourceName": "moon",
+    "sourceNode": "408:3544",
+    "componentNode": "582:1370",
+    "viewBox": "0 0 24 24",
+    "sha256": "3686a3a2440395f18f33380252c3887cc6f872887b095d0064ad289b9e0fa344"
+  },
+  "cloud-sun": {
+    "src": "/icons/unicons/cloud-sun.svg",
+    "library": "Unicons Line",
+    "sourceName": "cloud-sun",
+    "sourceNode": "408:2498",
+    "componentNode": "582:1373",
+    "viewBox": "0 0 24 24",
+    "sha256": "3677946110c2b2a36a1a9c51b386012b14fe9955c8a31249a40a2ad55e573b8a"
+  },
+  "cloud-moon": {
+    "src": "/icons/unicons/cloud-moon.svg",
+    "library": "Unicons Line",
+    "sourceName": "cloud-moon",
+    "sourceNode": "408:2468",
+    "componentNode": "582:1376",
+    "viewBox": "0 0 24 24",
+    "sha256": "09fd46880be0bc4b0b46d69746959d8a20f9f0a3b2dc1a1395634e91757a688c"
+  },
+  "cloud": {
+    "src": "/icons/unicons/cloud.svg",
+    "library": "Unicons Line",
+    "sourceName": "cloud",
+    "sourceNode": "408:2438",
+    "componentNode": "399:35",
+    "viewBox": "0 0 24 24",
+    "sha256": "21cd5d08a53e4bfaaf335c5bbd1dc116afa64c6cd755a03005895428be5b0efe"
+  },
+  "cloud-rain": {
+    "src": "/icons/unicons/cloud-rain.svg",
+    "library": "Unicons Line",
+    "sourceName": "cloud-rain",
+    "sourceNode": "408:2480",
+    "componentNode": "582:1379",
+    "viewBox": "0 0 24 24",
+    "sha256": "8a5a7a0d3ce9fc0aa6ab919134dd550179250e92ac4a1e04f527f0b78a2988b1"
+  },
+  "snowflake": {
+    "src": "/icons/unicons/snowflake.svg",
+    "library": "Unicons Line",
+    "sourceName": "snowflake",
+    "sourceNode": "408:3958",
+    "componentNode": "582:1382",
+    "viewBox": "0 0 24 24",
+    "sha256": "22c71d13d2e1441094390f31db9e787dbfa305ab9f57fd9bead09efe96c9dc46"
+  },
+  "thunderstorm": {
+    "src": "/icons/unicons/thunderstorm.svg",
+    "library": "Unicons Line",
+    "sourceName": "thunderstorm",
+    "sourceNode": "408:4118",
+    "componentNode": "582:1385",
+    "viewBox": "0 0 24 24",
+    "sha256": "a1954dabaec3f1d168b9b2672c835105be32e7d821c3ccc4507237c4e52d5ccb"
+  },
+  "cloud-wind": {
+    "src": "/icons/unicons/cloud-wind.svg",
+    "library": "Unicons Line",
+    "sourceName": "cloud-wind",
+    "sourceNode": "408:2518",
+    "componentNode": "582:1388",
+    "viewBox": "0 0 24 24",
+    "sha256": "8f529e9622053011160d511be1542cca09bd3fd88dcecd228f072152a14a27e7"
+  },
+  "temperature": {
+    "src": "/icons/unicons/temperature.svg",
+    "library": "Unicons Line",
+    "sourceName": "temperature",
+    "sourceNode": "408:4082",
+    "componentNode": "582:1391",
+    "viewBox": "0 0 24 24",
+    "sha256": "fa4ecd8300aabc63e6d49bffd3715d29da6028d7cceff74df486c93cb69a0548"
   }
 }

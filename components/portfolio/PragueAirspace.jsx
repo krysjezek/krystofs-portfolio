@@ -8,6 +8,7 @@ import AirspaceMap from "./AirspaceMap";
 import AirspaceDetails from "./AirspaceDetails";
 import AirlineIdentity from "./AirlineIdentity";
 import AirspaceSkeleton from "./AirspaceSkeleton";
+import Icon from "./Icon";
 
 const utc = time => new Date(time).toISOString().slice(11, 19) + "Z";
 const reading = (value, unit) => Number.isFinite(value) ? `${value}${unit}` : "—";
@@ -199,7 +200,7 @@ export default function PragueAirspace({ mode = "live" }) {
   return <span className="prague-airspace">
     <button ref={trigger} type="button" className="prague-airspace-trigger" aria-label="Prague airspace" aria-haspopup="dialog" aria-expanded={open} aria-controls={open ? id : undefined}
       onPointerEnter={event => { if (event.pointerType !== "touch") enter(); }} onPointerLeave={leave}
-      onFocus={() => { if (!mobile) enter(true); }} onBlur={event => { if (!panel.current?.contains(event.relatedTarget)) leave(); }} onClick={details}>Prague</button>
+      onFocus={() => { if (!mobile) enter(true); }} onBlur={event => { if (!panel.current?.contains(event.relatedTarget)) leave(); }} onClick={details}><span className="utility-icon"><Icon name="plane" size="compact" /></span><span>Prague</span></button>
     {view !== "closed" && createPortal(<div className={`airspace-layer${mobile && view === "details" ? " is-sheet" : ""}${closing ? " is-closing" : ""}`} inert={closing}>
       <section ref={panel} id={id} role="dialog" aria-label={view === "preview" ? "Prague air traffic preview" : "Prague airspace details"} aria-modal={mobile && view === "details" ? true : undefined}
         className={`airspace-panel airspace-${view}${closing ? " is-closing" : ""}`} style={mobile && view === "details" ? undefined : placement}

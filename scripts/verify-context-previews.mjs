@@ -14,7 +14,7 @@ assert.equal(describeWeather("clearsky_night"), "Clear sky");
 assert.equal(describeWeather("clearsky_day"), "Sunny");
 assert.equal(describeWeather("lightssnowshowersandthunder_day"), "Light snow showers and thunder");
 assert.equal(describeWeather("unknown"), null);
-assert.deepEqual(currentForecast(fixture(), now), { temperature: 18, time: new Date(now).toISOString(), condition: "Partly cloudy" });
+assert.deepEqual(currentForecast(fixture(), now), { temperature: 18, time: new Date(now).toISOString(), condition: "Partly cloudy", symbol: "partlycloudy_day" });
 assert.throws(() => currentForecast(fixture(), now + 2 * 60 * 60 * 1000), /No current forecast/);
 const partial = fixture(); delete partial.properties.timeseries[0].data.next_1_hours;
 assert.equal(currentForecast(partial, now).condition, null);
@@ -78,10 +78,11 @@ try {
   await airspace.waitFor({state:'hidden'});
   await hover(weather);
   await weather.click(); await pause();
-  assert.equal(await page.locator('.context-popover:popover-open').count(), 0);
-  assert.equal(await weather.evaluate(n => n.tagName), 'SPAN');
-  assert.equal(await weather.evaluate(n => getComputedStyle(n).cursor), 'default');
+  assert.equal(await page.locator('.context-popover:popover-open').count(), 1);
+  assert.equal(await weather.evaluate(n => n.tagName), 'BUTTON');
+  assert.equal(await weather.evaluate(n => getComputedStyle(n).cursor), 'pointer');
   assert.equal(await hint.getAttribute('data-pressed'), null);
+  await page.keyboard.press('Escape');
 
   for (const [id, artwork] of [
     ['outland-vizcom', 'identity-vizcom'],

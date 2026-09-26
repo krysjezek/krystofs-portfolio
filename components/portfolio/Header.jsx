@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { HomeLink, RouteLink } from "./Links";
 import ContextPreview from "./ContextPreview";
 import PragueAirspace from "./PragueAirspace";
+import Icon from "./Icon";
+import { weatherIcon } from "@/lib/weather";
 
 export default function Header({
   home = false,
@@ -16,6 +18,7 @@ export default function Header({
   const condition = weather?.condition?.replace(/\b\w/g, (letter) => letter.toUpperCase());
   const weatherPreview = {
     informational: true,
+    interactive: true,
     title: "Prague Live weather",
     detail: weather === undefined ? "Loading weather."
       : temperature === null ? "Weather is temporarily unavailable."
@@ -72,15 +75,16 @@ export default function Header({
         <div className="header-utility">
           <span className="prague-clock">
             <PragueAirspace />
-            <time aria-label={time ? `Time in Prague: ${time}` : "Prague time"}>
-              {time || "—:—"}
-            </time>
             <ContextPreview
               className="prague-temperature"
               preview={weatherPreview}
             >
-              {temperature === null ? "—" : temperature}°C
+              <span className="utility-icon"><Icon name={weatherIcon(weather?.symbol)} size="compact" /></span>
+              <span className="temperature-value">{temperature === null ? "—" : temperature}°C</span>
             </ContextPreview>
+            <time aria-label={time ? `Time in Prague: ${time}` : "Prague time"}>
+              {time || "—:—"}
+            </time>
           </span>
         </div>
       ) : (

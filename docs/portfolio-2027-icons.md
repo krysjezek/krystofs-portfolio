@@ -36,9 +36,20 @@ Icons inherit `currentColor`: primary ink beside ordinary text and inside the wh
 | Compose email / `email` | `envelope` | `408:2818` | Mailto link and Email me tooltip |
 | Copy email / `copy` | `copy` | `408:2666` | Header copy button and Copy email tooltip |
 | Completed action / `check` | `check` | `408:2394` | Successful clipboard confirmation only |
-| Location / `location` | `map-marker` | `408:3440` | Prague utility |
+| Location / `location` | `map-marker` | `408:3440` | Weather detail preview |
+| Airspace / `plane` | `plane` | `408:3660` | Prague action |
+| Clear day / `sun` | `sun` | `408:4034` | Weather utility |
+| Clear night / `moon` | `moon` | `408:3544` | Weather utility |
+| Partly cloudy day / `cloud-sun` | `cloud-sun` | `408:2498` | Weather utility |
+| Partly cloudy night / `cloud-moon` | `cloud-moon` | `408:2468` | Weather utility |
+| Overcast / `cloud` | `cloud` | `408:2438` | Weather utility |
+| Rain / `cloud-rain` | `cloud-rain` | `408:2480` | Weather utility |
+| Snow or sleet / `snowflake` | `snowflake` | `408:3958` | Weather utility |
+| Thunder / `thunderstorm` | `thunderstorm` | `408:4118` | Weather utility |
+| Fog / `cloud-wind` | `cloud-wind` | `408:2518` | Weather utility |
+| Unknown / `temperature` | `temperature` | `408:4082` | Loading or unavailable conditions |
 
-Figma also maps its existing calendar and cloud specimens to `calendar-alt` (`408:2328`) and `cloud` (`408:2438`). They are not shipped as new booking or weather features.
+Figma also retains a calendar specimen linked to `calendar-alt` (`408:2328`); no booking feature is implied. Header utility icons use transparent 20px alignment slots, without backplates. Their native 12px artwork stays unchanged while weather conditions update.
 
 The same action uses the same symbol wherever it appears. An envelope means compose/send email; two sheets mean copy. A check indicates confirmed completion, never a pending or failed request. Keep text-only controls, including Back and Close, text-only unless their design is intentionally revised.
 
@@ -72,4 +83,4 @@ Decorative icons have `aria-hidden="true"`. Buttons and links retain visible tex
 
 ## Verification
 
-`node scripts/verify-icons.mjs` checks the six source exports, exact hashes, native canvases, allowed callsites, delivered SVGs, compact/inline geometry, inherited colors, and preserved identity assets. `node scripts/verify-tooltip.mjs` checks the compact design and its hover, copy, edge and reduced-motion behavior. Run the regular layout suite after changing icon slots; do not change Figma measurements just to accommodate an inconsistent glyph.
+`node scripts/verify-icons.mjs` checks all registered source exports, exact hashes, native canvases, allowed callsites, delivered SVGs, compact/inline geometry, inherited colors, and preserved identity assets. `node scripts/verify-header-utility.mjs` checks changing weather/clock values, fixed bounds, icon states, color hierarchy and touch/keyboard disclosures. `node scripts/verify-tooltip.mjs` checks the compact design and its hover, copy, edge and reduced-motion behavior. Run the regular layout suite after changing icon slots; do not change Figma measurements just to accommodate an inconsistent glyph.

@@ -4,11 +4,12 @@ import { useCallback, useEffect, useId, useRef, useState } from "react";
 import PreviewContent, { previewAttributes } from "./PreviewContent";
 import { RouteLink } from "./Links";
 
-// Cursor previews never capture clicks. Destinations use native link behavior.
+// Links keep native navigation; explicit disclosures also support touch.
 export default function ContextPreview({ preview, children, className = "" }) {
   const informational = preview.informational || !preview.href;
+  const interactive = informational && preview.interactive;
   const internal = !informational && preview.href.startsWith("/");
-  const Trigger = informational ? "span" : internal ? RouteLink : "a";
+  const Trigger = interactive ? "button" : informational ? "span" : internal ? RouteLink : "a";
   const id = useId();
   const trigger = useRef(null);
   const panel = useRef(null);
@@ -43,20 +44,25 @@ export default function ContextPreview({ preview, children, className = "" }) {
     <>
       <Trigger
         ref={trigger}
+        type={interactive ? "button" : undefined}
         href={informational ? undefined : preview.href}
         target={!informational && !internal ? "_blank" : undefined}
         rel={!informational && !internal ? "noopener noreferrer" : undefined}
         className={`context-trigger ${className}`}
         data-informational={informational ? "" : undefined}
+        data-disclosure={interactive ? "" : undefined}
         {...previewAttributes(preview)}
         tabIndex={informational ? 0 : undefined}
         aria-describedby={id}
         aria-label={preview.accessibleLabel}
+        aria-expanded={interactive ? open : undefined}
+        aria-controls={interactive ? id : undefined}
         onFocus={(event) => {
-          if (event.currentTarget.matches(":focus-visible")) panel.current.showPopover();
+          if (!interactive && event.currentTarget.matches(":focus-visible")) panel.current.showPopover();
         }}
         onBlur={() => panel.current.hidePopover()}
-        onPointerDown={() => panel.current.hidePopover()}
+        onPointerDown={() => { if (!interactive) panel.current.hidePopover(); }}
+        onClick={interactive ? () => panel.current.togglePopover() : undefined}
         onKeyDown={(event) => {
           if (event.key === "Escape") panel.current.hidePopover();
         }}
@@ -64,7 +70,7 @@ export default function ContextPreview({ preview, children, className = "" }) {
       <span
         id={id}
         ref={panel}
-        popover="manual"
+        popover={interactive ? "auto" : "manual"}
         role="tooltip"
         className="context-popover"
         onBeforeToggle={(event) => {

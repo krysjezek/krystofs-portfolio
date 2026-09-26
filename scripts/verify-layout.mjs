@@ -80,6 +80,13 @@ try {
             (key === "width" && anchor.selector.includes(".project-card")))
         ) continue;
         let expected = anchor[key];
+        // Header utility redesign: Figma Mobile Identity 23:237 grows from
+        // 70px to 104px for the second row below 480px. Keep the original
+        // fixture and derive only its 34px effect on downstream content.
+        if (screen.route === "/" && screen.width < 480 && (
+          (key === "y" && anchor.selector !== ".portfolio-shell") ||
+          (key === "height" && anchor.selector === ".portfolio-shell")
+        )) expected += 34;
         // Owner-requested VSX media refresh: a 20:13 product view replaces the
         // first 3:4 tile. Preserve Figma measurements and derive the height delta
         // from those authored ratios; the second square row is unchanged.

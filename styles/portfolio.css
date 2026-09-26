@@ -263,7 +263,9 @@ button {
 .prague-clock {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
+  font-size: 14px;
+  line-height: 20px;
   color: var(--muted);
   white-space: nowrap;
 }
@@ -272,23 +274,49 @@ button {
   flex: none;
 }
 .prague-clock time {
-  color: var(--ink);
+  width: 54px;
+  padding-left: 12px;
+  margin-left: 6px;
+  border-left: 0.5px solid var(--line);
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  text-align: right;
 }
-.prague-temperature {
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-}
-.prague-temperature:hover {
-  color: var(--ink);
-}
+.context-trigger.prague-temperature,
 .prague-airspace-trigger {
   min-height: 44px;
-  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 6px;
+  border-radius: 3px;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background-color 150ms ease-out;
 }
+.utility-icon {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  flex: none;
+}
+.temperature-value {
+  width: 39px;
+  flex: none;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+.context-trigger.prague-temperature:hover,
+.context-trigger.prague-temperature[aria-expanded="true"],
 .prague-airspace-trigger:hover,
 .prague-airspace-trigger[aria-expanded="true"] {
-  color: var(--ink);
+  background: var(--tag);
+}
+.prague-temperature:focus-visible,
+.prague-airspace-trigger:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
 }
 .airspace-layer {
   position: fixed;
@@ -450,7 +478,6 @@ button {
   .airspace-layer.is-sheet .airspace-panel { position: relative; inset: auto; width: auto; max-width: none; margin: 0 20px; padding: 20px; max-height: calc(100dvh - 60px); box-shadow: none; }
 }
 @media (max-width: 359px) {
-  .prague-airspace-trigger { min-height: 24px; }
   .airspace-title { align-items: flex-start; }
   .airspace-weather { column-gap: 6px; }
   .airspace-weather dt { font-size: 10px; }
@@ -1932,6 +1959,9 @@ button {
 .context-trigger[data-informational] {
   cursor: default;
 }
+.context-trigger[data-disclosure] {
+  cursor: pointer;
+}
 .context-trigger.prague-temperature {
   display: flex;
 }
@@ -2265,18 +2295,21 @@ html[data-history-restoring] .portfolio-shell *::after {
   }
 }
 
-@media (max-width: 359px) {
-  .prague-clock {
-    display: grid;
-    grid-template-columns: max-content max-content;
-    column-gap: 12px;
-    row-gap: 0;
-    line-height: 24px;
+@media (max-width: 599px) {
+  .prague-clock time {
+    width: 50px;
+    margin-left: 0;
+    padding-left: 8px;
   }
-  .prague-clock > span {
-    grid-column: 1 / -1;
+}
+@media (max-width: 479px) {
+  .site-header.home-header {
+    height: 104.5px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 4px;
   }
-  .prague-temperature {
-    min-height: 24px;
-  }
+  .prague-clock { justify-content: space-between; }
+  .prague-clock time { margin-left: 0; }
 }
