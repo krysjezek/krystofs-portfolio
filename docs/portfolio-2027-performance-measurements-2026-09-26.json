@@ -1,0 +1,424 @@
+{
+  "date": "2026-09-26",
+  "baseline": "Live previous design at https://www.krystofjezek.com (not an exact checkout of the archived checkpoint)",
+  "candidate": "Local production build http://localhost:3001; Next.js 16.3.6; CDN media",
+  "lighthouseVersion": "13.5.0",
+  "chromeVersion": "153.0.0.0",
+  "method": "Sequential default Lighthouse simulated mobile and desktop navigation; 3 runs per homepage/device; 1 per additional page. Browser storage reset by Lighthouse; server/CDN caches not purged.",
+  "profiles": {
+    "mobile": {
+      "throttling": {
+        "rttMs": 150,
+        "throughputKbps": 1638.4,
+        "requestLatencyMs": 562.5,
+        "downloadThroughputKbps": 1474.5600000000002,
+        "uploadThroughputKbps": 675,
+        "cpuSlowdownMultiplier": 4
+      },
+      "screenEmulation": {
+        "mobile": true,
+        "width": 412,
+        "height": 823,
+        "deviceScaleFactor": 1.75,
+        "disabled": false
+      }
+    },
+    "desktop": {
+      "throttling": {
+        "rttMs": 40,
+        "throughputKbps": 10240,
+        "requestLatencyMs": 0,
+        "downloadThroughputKbps": 0,
+        "uploadThroughputKbps": 0,
+        "cpuSlowdownMultiplier": 1
+      },
+      "screenEmulation": {
+        "mobile": false,
+        "width": 1350,
+        "height": 940,
+        "deviceScaleFactor": 1,
+        "disabled": false
+      }
+    }
+  },
+  "runs": [
+    {
+      "report": "new-desktop-1.report.json",
+      "fetchTime": "2026-09-26T07:52:55.554Z",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 245.95810000000003,
+        "largest-contentful-paint": 898.0334249999999,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.00001292193030287565,
+        "total-byte-weight": 11369411
+      },
+      "bytesByType": {
+        "total": 11369411,
+        "media": 10723289,
+        "image": 267191,
+        "script": 192814,
+        "font": 122496,
+        "other": 38198,
+        "document": 16150,
+        "stylesheet": 9273
+      }
+    },
+    {
+      "report": "new-desktop-2.report.json",
+      "fetchTime": "2026-09-26T07:53:58.971Z",
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 245.71200000000005,
+        "largest-contentful-paint": 872.7514999999999,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.00001292193030287565,
+        "total-byte-weight": 11317632
+      },
+      "bytesByType": {
+        "total": 11317632,
+        "media": 10671513,
+        "image": 267188,
+        "script": 192814,
+        "font": 122496,
+        "other": 38198,
+        "document": 16150,
+        "stylesheet": 9273
+      }
+    },
+    {
+      "report": "new-desktop-3.report.json",
+      "fetchTime": "2026-09-26T07:55:01.562Z",
+      "scores": {
+        "performance": 90,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 245.52679999999998,
+        "largest-contentful-paint": 912.0804000000005,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0.00001292193030287565,
+        "total-byte-weight": 11302221
+      },
+      "bytesByType": {
+        "total": 11302221,
+        "media": 10656124,
+        "image": 267166,
+        "script": 192814,
+        "font": 122496,
+        "other": 38198,
+        "document": 16150,
+        "stylesheet": 9273
+      }
+    },
+    {
+      "report": "new-mobile-1.report.json",
+      "fetchTime": "2026-09-26T07:49:18.933Z",
+      "scores": {
+        "performance": 86,
+        "accessibility": 96,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 961.5983000000001,
+        "largest-contentful-paint": 4131.995749999999,
+        "total-blocking-time": 26.5,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 4366108
+      },
+      "bytesByType": {
+        "total": 4366108,
+        "media": 3753307,
+        "image": 258928,
+        "script": 192814,
+        "font": 122496,
+        "document": 16150,
+        "other": 13140,
+        "stylesheet": 9273
+      }
+    },
+    {
+      "report": "new-mobile-2.report.json",
+      "fetchTime": "2026-09-26T07:53:30.373Z",
+      "scores": {
+        "performance": 86,
+        "accessibility": 96,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 905.6546000000002,
+        "largest-contentful-paint": 4229.3822,
+        "total-blocking-time": 28,
+        "cumulative-layout-shift": 0.00007757484076481051,
+        "total-byte-weight": 4624156
+      },
+      "bytesByType": {
+        "total": 4624156,
+        "media": 4011571,
+        "image": 258712,
+        "script": 192814,
+        "font": 122496,
+        "document": 16150,
+        "other": 13140,
+        "stylesheet": 9273
+      }
+    },
+    {
+      "report": "new-mobile-3.report.json",
+      "fetchTime": "2026-09-26T07:54:33.284Z",
+      "scores": {
+        "performance": 86,
+        "accessibility": 96,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 907.0803000000001,
+        "largest-contentful-paint": 4168.350450000001,
+        "total-blocking-time": 37,
+        "cumulative-layout-shift": 0.00007804785808654718,
+        "total-byte-weight": 3935817
+      },
+      "bytesByType": {
+        "total": 3935817,
+        "media": 3323174,
+        "image": 258770,
+        "script": 192814,
+        "font": 122496,
+        "document": 16150,
+        "other": 13140,
+        "stylesheet": 9273
+      }
+    },
+    {
+      "report": "old-desktop-1.report.json",
+      "fetchTime": "2026-09-26T07:51:16.156Z",
+      "scores": {
+        "performance": 98,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 359.856,
+        "largest-contentful-paint": 1100.856,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 8752244
+      },
+      "bytesByType": {
+        "total": 8752244,
+        "media": 7616157,
+        "image": 641876,
+        "script": 244048,
+        "font": 188537,
+        "stylesheet": 36535,
+        "document": 18001,
+        "other": 7090
+      }
+    },
+    {
+      "report": "old-desktop-2.report.json",
+      "fetchTime": "2026-09-26T07:53:43.347Z",
+      "scores": {
+        "performance": 97,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 337.9932,
+        "largest-contentful-paint": 1223.3188,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 8246399
+      },
+      "bytesByType": {
+        "total": 8246399,
+        "media": 7110665,
+        "image": 641730,
+        "script": 244175,
+        "font": 188482,
+        "stylesheet": 36677,
+        "document": 17793,
+        "other": 6877
+      }
+    },
+    {
+      "report": "old-desktop-3.report.json",
+      "fetchTime": "2026-09-26T07:54:46.184Z",
+      "scores": {
+        "performance": 97,
+        "accessibility": 96,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 347.2786,
+        "largest-contentful-paint": 1192.0789000000002,
+        "total-blocking-time": 0,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 7451741
+      },
+      "bytesByType": {
+        "total": 7451741,
+        "media": 6315668,
+        "image": 641873,
+        "script": 244389,
+        "font": 188319,
+        "stylesheet": 36564,
+        "document": 17917,
+        "other": 7011
+      }
+    },
+    {
+      "report": "old-mobile-1.report.json",
+      "fetchTime": "2026-09-26T07:46:35.777Z",
+      "scores": {
+        "performance": 73,
+        "accessibility": 91,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 2646.017,
+        "largest-contentful-paint": 5583.644999999999,
+        "total-blocking-time": 7,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 1788488
+      },
+      "bytesByType": {
+        "total": 1788488,
+        "media": 761350,
+        "image": 533163,
+        "script": 244198,
+        "font": 188360,
+        "stylesheet": 36529,
+        "document": 18000,
+        "other": 6888
+      }
+    },
+    {
+      "report": "old-mobile-2.report.json",
+      "fetchTime": "2026-09-26T07:53:13.254Z",
+      "scores": {
+        "performance": 79,
+        "accessibility": 91,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1152.9755999999998,
+        "largest-contentful-paint": 5594.204249999999,
+        "total-blocking-time": 9,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 1788340
+      },
+      "bytesByType": {
+        "total": 1788340,
+        "media": 761350,
+        "image": 533112,
+        "script": 244411,
+        "font": 188362,
+        "stylesheet": 36632,
+        "document": 17787,
+        "other": 6686
+      }
+    },
+    {
+      "report": "old-mobile-3.report.json",
+      "fetchTime": "2026-09-26T07:54:16.236Z",
+      "scores": {
+        "performance": 79,
+        "accessibility": 91,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 1145.2974000000002,
+        "largest-contentful-paint": 5661.3884,
+        "total-blocking-time": 25,
+        "cumulative-layout-shift": 0.002604519376631399,
+        "total-byte-weight": 1788294
+      },
+      "bytesByType": {
+        "total": 1788294,
+        "media": 761350,
+        "image": 533038,
+        "script": 244456,
+        "font": 188353,
+        "stylesheet": 36507,
+        "document": 17793,
+        "other": 6797
+      }
+    },
+    {
+      "report": "services-mobile-1.report.json",
+      "fetchTime": "2026-09-26T07:55:42.199Z",
+      "scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 755.7217500000002,
+        "largest-contentful-paint": 3312.5096000000003,
+        "total-blocking-time": 24.5,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 3432756
+      },
+      "bytesByType": {
+        "total": 3432756,
+        "media": 2984952,
+        "script": 188393,
+        "font": 122496,
+        "image": 110758,
+        "document": 10917,
+        "stylesheet": 9273,
+        "other": 5967
+      }
+    },
+    {
+      "report": "vizcom-mobile-1.report.json",
+      "fetchTime": "2026-09-26T07:55:28.930Z",
+      "scores": {
+        "performance": 93,
+        "accessibility": 96,
+        "best-practices": 96,
+        "seo": 100
+      },
+      "metrics": {
+        "first-contentful-paint": 755.5205000000001,
+        "largest-contentful-paint": 3175.2807499999994,
+        "total-blocking-time": 21,
+        "cumulative-layout-shift": 0,
+        "total-byte-weight": 4334046
+      },
+      "bytesByType": {
+        "total": 4334046,
+        "media": 3804175,
+        "script": 192814,
+        "image": 187791,
+        "font": 122496,
+        "document": 11530,
+        "stylesheet": 9273,
+        "other": 5967
+      }
+    }
+  ]
+}
