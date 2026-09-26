@@ -16,6 +16,8 @@ export default function Media({
   const [canAnimate, setCanAnimate] = useState(false);
   const [nearby, setNearby] = useState(false);
   const [inView, setInView] = useState(false);
+  const [posterLoaded, setPosterLoaded] = useState(false);
+  const [startVideo, setStartVideo] = useState(false);
   const [ready, setReady] = useState(false);
   const [failed, setFailed] = useState(false);
   const [attempt, setAttempt] = useState(0);
@@ -48,13 +50,52 @@ export default function Media({
     const observer = new IntersectionObserver(
       ([entry]) => {
         setInView(entry.isIntersecting);
-        if (entry.isIntersecting) setNearby(true);
       },
       { threshold: 0 },
     );
     observer.observe(root.current);
     return () => observer.disconnect();
   }, []);
+
+  useEffect(() => {
+    if (!root.current || !sources.length) return;
+    let observer;
+    function observe() {
+      observer?.disconnect();
+      // Use viewport pixels, not a card percentage: tall artwork must still play.
+      const inset = Math.min(128, window.innerHeight / 4);
+      observer = new IntersectionObserver(([entry]) => {
+        if (entry.isIntersecting) {
+          setNearby(true);
+          observer.disconnect();
+        }
+      }, { rootMargin: `-${inset}px 0px` });
+      observer.observe(root.current);
+    }
+    observe();
+    window.addEventListener("resize", observe);
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("resize", observe);
+    };
+  }, [sources.length]);
+
+  useEffect(() => {
+    if (!nearby || !canAnimate || !posterLoaded) return;
+    let frame;
+    const start = () => {
+      // Give the decoded poster a paint before competing video downloads start.
+      frame = requestAnimationFrame(() => {
+        frame = requestAnimationFrame(() => setStartVideo(true));
+      });
+    };
+    if (document.readyState === "complete") start();
+    else window.addEventListener("load", start, { once: true });
+    return () => {
+      window.removeEventListener("load", start);
+      cancelAnimationFrame(frame);
+    };
+  }, [nearby, canAnimate, posterLoaded]);
 
   useEffect(() => {
     const element = video.current;
@@ -72,7 +113,7 @@ export default function Media({
       element.pause();
       document.removeEventListener("visibilitychange", updatePlayback);
     };
-  }, [nearby, inView, canAnimate, failed, attempt]);
+  }, [startVideo, inView, canAnimate, failed, attempt]);
 
   function retry() {
     setFailed(false);
@@ -95,14 +136,17 @@ export default function Media({
         fill
         sizes={sizes}
         quality={sources.length ? 90 : 75}
-        priority={priority}
+        loading={priority ? "eager" : "lazy"}
+        fetchPriority={priority ? "high" : "low"}
+        onLoad={() => setPosterLoaded(true)}
+        onError={() => setPosterLoaded(true)}
         unoptimized={(media.poster || media.src)?.endsWith(".svg")}
         style={{
           objectFit: "cover",
           objectPosition: media.position || "center",
         }}
       />
-      {sources.length > 0 && nearby && canAnimate && !failed && (
+      {sources.length > 0 && startVideo && canAnimate && !failed && (
         <video
           key={attempt}
           ref={video}

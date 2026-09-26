@@ -299,7 +299,7 @@ export default function Home() {
               ,
             </span>{" "}
             an app for turning screen recordings into polished,{" "}
-            <span className="no-wrap">art-directed</span>
+            <span className="no-wrap">art-directed</span>{" "}
             product visuals.
           </p>
           <div className="contact-copy">

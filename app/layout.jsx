@@ -49,13 +49,6 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
         <link
-          rel="preload"
-          href="/fonts/RoobertPRO-Light.woff"
-          as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
-        />
-        <link
           rel="preconnect"
           href="https://ziwvaiplle7bdzaz.public.blob.vercel-storage.com"
         />

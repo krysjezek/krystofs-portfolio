@@ -585,6 +585,9 @@ button {
 .secondary {
   color: var(--muted);
 }
+.tag.secondary {
+  color: #676d77;
+}
 .home-introduction {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -692,6 +695,18 @@ button {
 .project-card .media {
   height: 100%;
   width: 100%;
+}
+.project-touch-hint {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  max-width: calc(100% - 20px);
+  padding: var(--tooltip-padding-block) var(--tooltip-padding);
+  border-radius: var(--tooltip-radius);
+  background: var(--tooltip-surface);
+  color: var(--tooltip-ink);
+  box-shadow: var(--shadow-floating);
+  pointer-events: none;
 }
 .project-labels {
   position: absolute;

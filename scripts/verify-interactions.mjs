@@ -191,23 +191,28 @@ try {
   console.log("PASS: non-modal recognition, all records, keyboard exit, Close/Escape and outside interaction");
 
   // Slow navigation retains context; native Link makes no blocking HEAD preflight.
-  await tab("Work").click();
-  await settle();
   const methods = [];
-  page.on("request", (r) => {
-    if (r.url().includes("/work/vizcom")) methods.push(r.method());
-  });
-  await page.route("**/work/vizcom?*", async (route) => {
-    await new Promise((resolve) => setTimeout(resolve, 650));
+  let releaseNavigation;
+  const navigationGate = new Promise(resolve => { releaseNavigation = resolve; });
+  const delayedRoute = /\/work\/vizcom(?:\?|$)/;
+  await page.route(delayedRoute, async (route) => {
+    methods.push(route.request().method());
+    await navigationGate;
     await route.continue();
   });
-  await card.click();
-  await page.waitForTimeout(320);
-  assert(await page.locator(".home-introduction").isVisible());
-  assert(
-    await page.getByRole("status").filter({ hasText: "Opening" }).isVisible(),
-  );
+  // A fresh document avoids the router's prefetched cache bypassing the delay.
+  await page.goto(base);
+  const navigationCard = page.locator('#panel-work a[href="/work/vizcom"]');
+  try {
+    await navigationCard.click();
+    await page.getByRole("status").filter({ hasText: "Opening" }).waitFor();
+    assert(await page.locator(".home-introduction").isVisible());
+    assert(methods.includes("GET"), "Navigation requests its actual destination");
+  } finally {
+    releaseNavigation();
+  }
   await page.waitForURL("**/work/vizcom");
+  await page.unroute(delayedRoute);
   await settle();
   assert(!methods.includes("HEAD"));
   assert.equal(await page.evaluate(() => document.activeElement.tagName), "H1");
@@ -216,7 +221,7 @@ try {
   await settle();
   assert.equal(
     await page.evaluate(() => document.activeElement.id),
-    await card.getAttribute("id"),
+    await navigationCard.getAttribute("id"),
   );
   assert.equal(
     await page
@@ -316,6 +321,14 @@ try {
   });
   const touchPage = await touch.newPage();
   await touchPage.goto(base);
+  const comingSoon = touchPage.locator('#project-stnck');
+  assert.equal(await comingSoon.locator('.project-touch-hint').count(), 0);
+  await comingSoon.tap();
+  await comingSoon.locator('.project-touch-hint').waitFor();
+  assert.equal(await comingSoon.locator('.project-touch-hint').innerText(), 'Coming soon');
+  assert.equal(new URL(touchPage.url()).pathname, '/', 'Informational tap does not navigate');
+  await touchPage.locator('.site-name').tap();
+  assert.equal(await comingSoon.locator('.project-touch-hint').count(), 0);
   await touchPage.getByRole("tab", { name: "Fun", exact: true }).tap();
   await touchPage.waitForTimeout(700);
   assert.equal(
