@@ -281,7 +281,7 @@ export default function Home() {
     <>
       <Header home />
       <main id="main-content">
-        <h1 className="sr-only">Krystof Jezek — Independent CGI designer</h1>
+        <h1 className="sr-only">Kryštof Ježek — Design, Motion & Creative Technology</h1>
         <div className="home-introduction">
           <p className="practice-copy">
             I work with creative teams to turn strong visual ideas into polished

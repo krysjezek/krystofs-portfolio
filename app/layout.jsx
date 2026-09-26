@@ -14,16 +14,16 @@ import "@/styles/portfolio.css";
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Krystof Jezek, Independent CGI Designer",
-    template: "%s | Krystof Jezek",
+    default: "Kryštof Ježek — Design, Motion & Creative Technology",
+    template: "%s | Kryštof Ježek",
   },
   description:
-    "Independent CGI designer creating art-directed environments, motion visuals, and mixed reality campaigns for brands and studios.",
+    "Kryštof Ježek works with creative teams on design, 3D, motion and creative technology. Based in Prague, working worldwide.",
   ...pageSeo("/"),
   openGraph: {
     ...pageSeo("/").openGraph,
     type: "website",
-    siteName: "Krystof Jezek",
+    siteName: "Kryštof Ježek",
     locale: "en_US",
   },
   twitter: {

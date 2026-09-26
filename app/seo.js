@@ -157,7 +157,7 @@ export const portfolioRoutes = [
     path: '/',
     priority: 1.0,
     changeFrequency: 'weekly',
-    lastModified: '2026-09-23',
+    lastModified: '2026-09-26',
   },
   {
     path: '/services/3d-environments',
@@ -607,10 +607,10 @@ export function siteStructuredData() {
       {
         '@type': 'Person',
         '@id': PERSON_ID,
-        name: 'Krystof Jezek',
-        alternateName: ['Kryštof Ježek', 'Krystof Ježek'],
-        jobTitle: ['Independent CGI Designer', 'CGI Director'],
-        description: 'Independent CGI designer creating art-directed environments, motion visuals, and mixed reality campaigns for brands and studios. In his free time, he builds apps and creative tools that connect art and technology.',
+        name: 'Kryštof Ježek',
+        alternateName: ['Krystof Jezek', 'Krystof Ježek'],
+        jobTitle: ['Designer', 'Motion Designer', 'Creative Technologist'],
+        description: 'Kryštof Ježek works with creative teams on design, 3D, motion and creative technology. Based in Prague, working worldwide.',
         url: SITE_URL,
         image: absoluteUrl(OG_IMAGE),
         email: 'krystof@jezek.me',
@@ -640,7 +640,7 @@ export function siteStructuredData() {
       {
         '@type': 'WebSite',
         '@id': WEBSITE_ID,
-        name: 'Krystof Jezek',
+        name: 'Kryštof Ježek',
         url: SITE_URL,
         publisher: { '@id': PERSON_ID },
         inLanguage: 'en',
