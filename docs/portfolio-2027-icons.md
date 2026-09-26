@@ -50,7 +50,7 @@ Icons inherit `currentColor`: primary ink beside ordinary text and inside the wh
 | Fog / `cloud-wind` | `cloud-wind` | `408:2518` | Weather utility |
 | Unknown / `temperature` | `temperature` | `408:4082` | Loading or unavailable conditions |
 
-Figma also retains a calendar specimen linked to `calendar-alt` (`408:2328`); no booking feature is implied. Header utility icons use transparent 16px alignment slots, without backplates. Source paths and proportions stay unchanged while weather conditions update.
+Figma also retains a calendar specimen linked to `calendar-alt` (`408:2328`); no booking feature is implied. Header utility icons use transparent 16px alignment slots, without backplates. The header plane rotates 45° clockwise around its center at the owner's request. Source paths and proportions stay unchanged while weather conditions update.
 
 The same action uses the same symbol wherever it appears. An envelope means compose/send email; two sheets mean copy. A check indicates confirmed completion, never a pending or failed request. Keep text-only controls, including Back and Close, text-only unless their design is intentionally revised.
 

@@ -51,7 +51,7 @@ try {
     assert.equal(await page.locator(".prague-clock time").textContent(), "11:59");
     assert.deepEqual(await positions(), initial, "Clock digits keep the same outer bounds");
     const colors = await page.locator(".prague-airspace-trigger, .prague-temperature, .prague-clock time").evaluateAll(nodes => nodes.map(n => getComputedStyle(n).color));
-    assert.deepEqual(colors, ["rgb(5, 7, 10)", "rgb(5, 7, 10)", "rgb(112, 118, 129)"]);
+    assert.deepEqual(colors, ["rgb(5, 7, 10)", "rgb(112, 118, 129)", "rgb(112, 118, 129)"]);
     if (width < 600) await weather.tap();
     else { await weather.focus(); await page.keyboard.press("Enter"); }
     await page.waitForFunction(() => document.querySelector(".prague-temperature").getAttribute("aria-expanded") === "true");
