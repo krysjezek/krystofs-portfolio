@@ -207,7 +207,8 @@ try {
   assert.equal(await page.locator('.context-trigger[popovertarget], .context-trigger[aria-haspopup], .context-actions').count(), 0);
   const ownerCredit = page.locator('.case-credits dd').filter({hasText: 'Kryštof Ježek'});
   assert.ok(await ownerCredit.count() > 0);
-  assert.equal(await ownerCredit.locator('a, .context-trigger, .identity-tile').count(), 0);
+  assert.equal(await ownerCredit.locator('a, .context-trigger, [data-hint]').count(), 0);
+  assert.equal(await ownerCredit.locator('.identity-tile[data-designer]').count(), await ownerCredit.count());
   await page.locator('.site-name').click();
   await page.waitForURL(base + '/');
 
