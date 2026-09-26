@@ -7,6 +7,15 @@ const withBundleAnalyzer = bundleAnalyzer({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   devIndicators: false,
+  async redirects() {
+    return [
+      {
+        source: '/work/old-projects/yonex-s-d-campaign',
+        destination: '/',
+        permanent: true,
+      },
+    ]
+  },
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'ziwvaiplle7bdzaz.public.blob.vercel-storage.com' },
