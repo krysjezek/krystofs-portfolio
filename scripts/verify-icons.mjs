@@ -41,7 +41,7 @@ try {
     assert.match(response.headers()["content-type"], /image\/svg\+xml/);
   }
   assert.equal(await page.locator('.header-utility .ui-icon:visible').count(), 2, "Header shows plane and weather symbols");
-  assert.deepEqual(await page.locator('.header-utility .ui-icon:visible').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().width)), [12, 12]);
+  assert.deepEqual(await page.locator('.header-utility .ui-icon:visible').evaluateAll(nodes => nodes.map(n => n.getBoundingClientRect().width)), [12, 15]);
   const email = page.locator('.contact-copy [data-ui-icon="email"]');
   assert.equal(await email.evaluate(node => node.getBoundingClientRect().width), 15);
   assert(await page.locator('.contact-copy .identity-tile img').count() > 0, "Keep inline X identity artwork");

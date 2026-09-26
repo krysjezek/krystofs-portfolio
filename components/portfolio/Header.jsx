@@ -79,7 +79,7 @@ export default function Header({
               className="prague-temperature"
               preview={weatherPreview}
             >
-              <span className="utility-icon"><Icon name={weatherIcon(weather?.symbol)} size="compact" /></span>
+              <span className="utility-icon"><Icon name={weatherIcon(weather?.symbol)} /></span>
               <span className="temperature-value">{temperature === null ? "—" : temperature}°C</span>
             </ContextPreview>
             <time aria-label={time ? `Time in Prague: ${time}` : "Prague time"}>

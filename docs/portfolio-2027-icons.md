@@ -18,12 +18,13 @@ Use only the Line family from the supplied Unicons pack. Do not mix Line with Th
 
 | Context | Token | Size |
 | --- | --- | --- |
-| Tooltip, header utility, copy feedback, external-link suffix | `--icon-compact` | 12×12px |
+| Tooltip, header plane, copy feedback, external-link suffix | `--icon-compact` | 12×12px |
+| Header weather | `--icon-inline` | 15×15px |
 | Icon beside body text | `--icon-inline` | 15×15px |
 | Original library artwork | Native viewBox | 24×24 |
 | Icon-to-label spacing | `--icon-gap` | 5px |
 
-Use one square size for every icon in a context. Center it in the text line box; do not add per-symbol baseline offsets. Tooltips use 11/16 Label typography throughout, with a 3px radius and 4px/10px padding. Their minimum height is 24px. The external-link reveal retains its 17px total slot: 5px gap plus 12px icon.
+Use one square size for every icon in a context, except the owner-requested header optical balance: the denser plane uses 12px and weather symbols use 15px, both centered in transparent 16px slots beside 14px text. Center icons in the text line box; do not add per-symbol baseline offsets. Tooltips use 11/16 Label typography throughout, with a 3px radius and 4px/10px padding. Their minimum height is 24px. The external-link reveal retains its 17px total slot: 5px gap plus 12px icon.
 
 Icons inherit `currentColor`: primary ink beside ordinary text and inside the white tooltip; muted color beside muted text. Hover, press and success must not change their size, baseline or weight. Keep the existing motion and reduced-motion behavior.
 
@@ -49,7 +50,7 @@ Icons inherit `currentColor`: primary ink beside ordinary text and inside the wh
 | Fog / `cloud-wind` | `cloud-wind` | `408:2518` | Weather utility |
 | Unknown / `temperature` | `temperature` | `408:4082` | Loading or unavailable conditions |
 
-Figma also retains a calendar specimen linked to `calendar-alt` (`408:2328`); no booking feature is implied. Header utility icons use transparent 20px alignment slots, without backplates. Their native 12px artwork stays unchanged while weather conditions update.
+Figma also retains a calendar specimen linked to `calendar-alt` (`408:2328`); no booking feature is implied. Header utility icons use transparent 16px alignment slots, without backplates. Source paths and proportions stay unchanged while weather conditions update.
 
 The same action uses the same symbol wherever it appears. An envelope means compose/send email; two sheets mean copy. A check indicates confirmed completion, never a pending or failed request. Keep text-only controls, including Back and Close, text-only unless their design is intentionally revised.
 

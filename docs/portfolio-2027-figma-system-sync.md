@@ -39,8 +39,8 @@ Measured final gallery heights:
 The subsequent owner-requested implementation change is reflected in the linked [Prague utility variants](https://www.figma.com/design/z5qZnFX6vkOKlWrVKzdoFR?node-id=587-1424). The existing desktop component ID `253:918` is preserved; compact is `587:1407`.
 
 - Order: Prague, weather, local time. The two actions use primary ink; the passive clock uses secondary text and a subtle divider.
-- All utility text is 14/20 Roobert, reduced following owner feedback. Icons remain 12px, centered in transparent 20px slots. The owner requested removal of icon backgrounds.
-- Temperature occupies 39px. The clock occupies 54px plus a 6px leading margin on desktop, or 50px on compact screens. The web uses tabular numerals. Visible values never resize adjacent controls.
+- All utility text is 14/20 Roobert, reduced following owner feedback. To balance visual weight, the plane is 12px and weather is 15px; both use transparent 16px slots and a 5px label gap. The owner requested removal of icon backgrounds.
+- Temperature occupies 39px. The clock occupies 54px plus a 6px leading margin on desktop/tablet, or 50px on compact screens. Divider padding is 12px desktop/tablet and 8px mobile, restored following owner feedback. Time remains right aligned. The web uses tabular numerals. Visible values never resize adjacent controls.
 - Weather exposes a linked icon swap property. Eleven added source exports cover plane, day/night weather, precipitation, thunder, fog, and a neutral thermometer fallback. Weather details open on tap/click or keyboard activation and dismiss on Escape/outside interaction.
 - Below 480px, identity and utility use two rows. Figma Mobile Identity `23:237` grows from 70px to 104px; the shared mobile header is now 458.5px high. Work/Fun/About references inherit the 34px increase, with final heights 5185.36 / 5082.44 / 2243.86px. Layout checks derive this delta from the edited Figma component while preserving the historical fixture.
 

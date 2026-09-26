@@ -297,8 +297,8 @@ button {
 .utility-icon {
   display: grid;
   place-items: center;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   flex: none;
 }
 .temperature-value {
