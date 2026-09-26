@@ -53,7 +53,7 @@ Person sources inspected 24 September 2026:
 | Maud Dedecker | [monopo profile](https://monopo.london/team/maud-dedecker/). Corrects the displayed source-content typo “Maud Dedrecked”; lookup preserves the existing record key. |
 | Stella Grotti | [monopo profile](https://monopo.london/team/stella-grotti/). |
 | Luna Gooriah | [monopo profile](https://monopo.london/team/luna-gooriah/). |
-| Josef Talač, David Hájek | Existing Barbour credits; project context only. |
+| Josef Talač, David Hájek | Existing Barbour credits; membership of Kryštof’s creative team confirmed by the owner on 26 September 2026. |
 | Artem Morozov | [Creator profile](https://linktr.ee/tmrzv) and existing VSX credit. |
 
 Weather: [MET Norway Locationforecast](https://api.met.no/weatherapi/locationforecast/2.0/documentation). The nearest valid hourly forecast within 90 minutes supplies temperature; `next_1_hours.summary.symbol_code` supplies the condition. Unknown symbols omit the condition rather than inventing one; stale/malformed forecasts return the existing 503 fallback. Day/night symbols and the provider’s two legacy spelling exceptions are handled. Forecasts are not presented as measured observations.
