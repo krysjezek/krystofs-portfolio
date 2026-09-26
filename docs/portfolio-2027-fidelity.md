@@ -1,5 +1,7 @@
 # Figma fidelity correction — 23 September 2026
 
+For the 26 September implementation-to-Figma shared-system update, see the [design-system sync record](portfolio-2027-figma-system-sync.md). That pass updates shared components and homepage references; it deliberately excludes new case-study screens.
+
 The first rebuild passed functional checks but had visual discrepancies. This pass compared the implementation with the actual Figma node bounds and screenshots, using the frame IDs in the [handoff](portfolio-2027-handoff-audit.md).
 
 ## Corrections
