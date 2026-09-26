@@ -8,7 +8,7 @@ Web Analytics is enabled on the existing Pro project. `components/VercelAnalytic
 
 | Event | Trigger | Properties |
 | --- | --- | --- |
-| `contact_click` | Email, phone, Calendly or WhatsApp link | `method`, `placement` |
+| `contact_click` | Email copy button, or phone, Calendly or WhatsApp link | `method`, `placement` |
 | `work_open` | Case-study link | `path`, `placement` |
 | `service_open` | Service-page link | `path`, `placement` |
 | `cv_open` | CV or print-CV link | `path`, `placement` |

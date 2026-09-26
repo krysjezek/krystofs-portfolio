@@ -124,6 +124,7 @@ function getLinkEvent(anchor) {
 }
 
 function getButtonEvent(button) {
+  if (button.matches('.email-copy')) return { name: 'contact_click', payload: { method: 'email', placement: placement(button) } }
   if (button.matches('.portfolio-navigation [role="tab"]') && button.getAttribute('aria-selected') !== 'true') {
     return {
       name: 'section_nav',

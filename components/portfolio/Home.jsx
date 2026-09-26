@@ -9,10 +9,10 @@ import Card from "./Card";
 import Media from "./Media";
 import Recognition from "./Recognition";
 import { ExternalLink } from "./Links";
-import Icon from "./Icon";
 import ContextPreview from "./ContextPreview";
 import previews from "@/content/context-previews.json";
 import EmojiText from "./EmojiText";
+import EmailCopy from "./EmailCopy";
 
 const tabs = ["work", "fun", "about"];
 
@@ -307,9 +307,7 @@ export default function Home() {
             <p>Based in Prague, working worldwide.</p>
             <p>
               For projects or a chat,{" "}
-              <a href="mailto:krystof@jezek.me" data-hint="Email me">
-                <Icon name="email" /> email me
-              </a>
+              <EmailCopy icon />
               .
             </p>
             <p>

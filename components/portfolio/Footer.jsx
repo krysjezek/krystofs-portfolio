@@ -1,13 +1,12 @@
 import { ExternalLink } from "./Links";
+import EmailCopy from "./EmailCopy";
 
 export default function Footer() {
   return (
     <footer className="site-footer">
       <p>{new Date().getFullYear()}</p>
       <nav aria-label="Contact and social links">
-        <a href="mailto:krystof@jezek.me" data-hint="Email me">
-          Email
-        </a>
+        <EmailCopy>Email</EmailCopy>
         <ExternalLink href="https://x.com/krysjezek">X</ExternalLink>
         <ExternalLink href="https://www.instagram.com/krystof.jezek/">
           Instagram

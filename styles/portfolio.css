@@ -639,7 +639,11 @@ button {
 .contact-copy {
   max-width: 340px;
 }
-.contact-copy a {
+.email-copy {
+  white-space: nowrap;
+}
+.contact-copy a,
+.contact-copy .email-copy {
   color: var(--ink);
   white-space: nowrap;
 }
@@ -892,13 +896,15 @@ button {
   padding: 0 var(--inset);
   color: var(--muted);
 }
-.site-footer a {
+.site-footer a,
+.site-footer .email-copy {
   color: var(--muted);
   min-height: 44px;
   display: inline-flex;
   align-items: center;
 }
-.site-footer a:hover {
+.site-footer a:hover,
+.site-footer .email-copy:hover {
   color: var(--ink);
 }
 .recognition-popover {
@@ -1461,7 +1467,8 @@ button {
     padding-left: 24px;
     gap: 12px;
   }
-  .site-footer nav a {
+  .site-footer nav a,
+  .site-footer nav .email-copy {
     font-size: 12px;
   }
   .case-introduction {
@@ -1610,7 +1617,8 @@ button {
     padding: 0 20px;
     gap: 10px;
   }
-  .site-footer nav a {
+  .site-footer nav a,
+  .site-footer nav .email-copy {
     font-size: 12px;
   }
   .case-introduction {

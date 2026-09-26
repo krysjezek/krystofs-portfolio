@@ -3,7 +3,7 @@ import { chromium } from 'playwright';
 
 const base = process.env.INTERACTION_BASE_URL || 'http://localhost:3000';
 const browser = await chromium.launch();
-const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'reduce' });
+const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'reduce', permissions: ['clipboard-read', 'clipboard-write'] });
 // Exercise the real SDK's event calls without submitting test traffic.
 await context.route(/vercel-scripts\.com|\/_vercel\/insights\/|\/[a-f0-9]+\/(script\.js|view|event|session)(\?|$)/, route => route.abort());
 await context.addInitScript(() => {
@@ -29,9 +29,12 @@ try {
   assert.deepEqual(await latest('ai_referral'), { source: 'chatgpt', landing_path: '/' });
   assert.equal((await events('ai_referral')).length, 1, 'Strict Mode does not duplicate referrals');
 
-  await clickLink('.contact-copy a[href^="mailto:"]');
+  await page.locator('.contact-copy .email-copy').click();
+  await page.waitForFunction(() => document.querySelector('.contact-copy .email-copy').textContent.includes('copied email'));
+  assert.equal(await page.evaluate(() => navigator.clipboard.readText()), 'krystof@jezek.me');
+  assert.equal(await page.locator('.contact-copy .email-copy').getAttribute('data-hint'), 'Copied email');
   assert.deepEqual(await latest('contact_click'), { method: 'email', placement: 'introduction' });
-  await clickLink('.site-footer a[href^="mailto:"]');
+  await page.locator('.site-footer .email-copy').click();
   assert.deepEqual(await latest('contact_click'), { method: 'email', placement: 'footer' });
 
   const external = '.mockups-copy a';

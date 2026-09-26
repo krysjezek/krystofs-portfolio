@@ -47,9 +47,10 @@ try {
     const rect = n.getBoundingClientRect();
     return [rect.width, rect.height, getComputedStyle(n).borderRadius];
   }), [15, 15, '3px']);
-  await hover(page.locator('.contact-copy a[href^="mailto:"]'));
-  assert.equal(await hint.locator('.cursor-hint-label').textContent(), "krystof@jezek.me");
-  assert.equal(await hint.getAttribute("data-icon"), "email");
+  await hover(page.locator('.contact-copy .email-copy'));
+  assert.equal(await hint.locator('.cursor-hint-label').textContent(), "Copy email");
+  assert.equal(await hint.locator('.context-meta').textContent(), "krystof@jezek.me");
+  assert.equal(await hint.getAttribute("data-icon"), "copy");
   const weather = page.locator('.prague-temperature');
   await hover(weather);
   assert.match(await hint.textContent(), /Prague Live weather.*18°C • Partly Cloudy.*Source: MET Norway/s);
