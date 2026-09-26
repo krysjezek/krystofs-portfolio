@@ -326,6 +326,10 @@ export const featuredCreativeWorks = [
   },
 ]
 
+// Only media playable on the specified page belongs here, never poster-only
+// sourceEmbed references. Undated records are retained for editorial completion
+// but are not emitted as VideoObjects. uploadDate means first publication, not
+// the project year, encode/upload time or the date the case study was rebuilt.
 export const videoAssets = [
   {
     name: 'Trezor hardware wallet product animation',
@@ -346,7 +350,6 @@ export const videoAssets = [
     dateCreated: '2026-08',
     uploadDate: '2026-09-25',
     keywords: ['Rounds', 'Outland', '3D environment', 'brand world', 'custom mockups'],
-    transcript: 'No spoken dialogue. A camera moves through a sunlit clubhouse with curved seating, branded merchandise and a view across a golf course.',
   },
   {
     name: 'Shelby custom MacBook mockup',
@@ -357,7 +360,6 @@ export const videoAssets = [
     dateCreated: '2026-04',
     uploadDate: '2026-09-25',
     keywords: ['Shelby', 'Ashfall Studio', 'custom mockups', '3D motion', 'MacBook'],
-    transcript: 'No spoken dialogue. The Shelby website animates on a MacBook framed by warm wood, a perforated wall and directional sunlight.',
   },
   {
     name: 'Gusto UI design showreel',
@@ -398,25 +400,6 @@ export const videoAssets = [
     dateCreated: '2026-05',
     uploadDate: '2026-09-24',
     keywords: ['Fantasy', 'Outpost Studio', '2D motion', '3D motion', 'device mockups'],
-    transcript: 'No spoken dialogue. Website elements and interactions transition between full-screen layouts and custom 3D device mockups presenting the Fantasy redesign.',
-  },
-  {
-    name: 'CGI and 3D environments portfolio reel',
-    page: '/',
-    description: 'Portfolio reel showing CGI environments, 3D motion design, product visualization, and brand campaign visuals by Krystof Jezek.',
-    thumbnailUrl: '/videos/posters/cgi-environments.jpg',
-    contentUrl: '/videos/h264/cgi-environments-fallback.mp4',
-    dateCreated: '2026',
-    keywords: ['CGI environments', '3D motion design', 'brand campaign visuals'],
-  },
-  {
-    name: 'Mixed reality CGI campaign reel',
-    page: '/',
-    description: 'Mixed reality reel showing CGI advertising, FOOH-style visual effects, and social media campaign visuals for brands.',
-    thumbnailUrl: '/videos/posters/mixed-reality.jpg',
-    contentUrl: '/videos/h264/mixed-reality-fallback.mp4',
-    dateCreated: '2026',
-    keywords: ['mixed reality campaign', 'CGI advertising', 'FOOH visuals'],
   },
   {
     name: 'Vizcom dynamic 3D brand world mockup',
@@ -426,7 +409,6 @@ export const videoAssets = [
     contentUrl: '/videos/h264/vizcom-brand-world-fallback.mp4',
     dateCreated: '2026',
     keywords: ['Vizcom', '3D environment design', 'animated brand mockup', 'brand world', 'look development'],
-    transcript: 'No spoken dialogue. The camera moves through a sunlit design studio, travelling from a wide room view into close-ups of Vizcom-branded stationery, tools, a laptop, colour samples, a mug, and merchandise before returning to the full environment.',
   },
   {
     name: 'ValkaAI 3D glass-prism logo animation',
@@ -436,17 +418,6 @@ export const videoAssets = [
     contentUrl: '/videos/h264/valkaai-logo-glass-prism-fallback.mp4',
     dateCreated: '2026',
     keywords: ['ValkaAI', '3D logo animation', 'glass prism animation', 'art direction', 'motion graphics'],
-    transcript: 'No spoken dialogue. A refractive glass prism assembles into the ValkaAI mirrored-butterfly logo while colourful light and AI persona imagery travel through its transparent geometry.',
-  },
-  {
-    name: 'Barbour Icons in Quilting FOOH campaign',
-    page: '/work/barbour',
-    description: 'Barbour Icons in Quilting FOOH campaign video showing CGI/VFX quilted fabric spreading through city scenes with countryside-inspired natural details.',
-    thumbnailUrl: '/videos/posters/barbour_header.jpg',
-    embedUrl: 'https://www.youtube.com/embed/oeVS_Q1VsKU',
-    dateCreated: '2024',
-    keywords: ['FOOH campaign', 'fake out-of-home', 'CGI advertising', 'VFX'],
-    transcript: 'No spoken dialogue. Visual sequence showing Barbour quilted fabric and CGI nature details integrated into real city footage for a fake out-of-home campaign.',
   },
   {
     name: 'Barbour FOOH behind-the-scenes CGI breakdown',
@@ -456,7 +427,6 @@ export const videoAssets = [
     contentUrl: '/videos/other/Barbour---IiQ---Reconstruction-2---BTS---4x5.mp4',
     dateCreated: '2024',
     keywords: ['CGI breakdown', 'VFX breakdown', 'cloth simulation', 'FOOH production'],
-    transcript: 'No spoken dialogue. Visual behind-the-scenes sequence showing reconstruction, simulation, node setup, and CGI production details for the Barbour campaign.',
   },
   {
     name: 'The VSX Sports Bra 3D product visualization',
@@ -467,7 +437,6 @@ export const videoAssets = [
     dateCreated: '2025-04',
     uploadDate: '2026-09-25',
     keywords: ['3D product visualization', 'CGI product animation', 'cloth simulation'],
-    transcript: 'No spoken dialogue. Yarn loops form the knit fabric and woven VSX logo before the sequence moves to the finished sports bra.',
   },
   {
     name: 'The VSX Sports Bra cloth simulation breakdown',
@@ -478,17 +447,6 @@ export const videoAssets = [
     dateCreated: '2025-04',
     uploadDate: '2026-09-25',
     keywords: ['cloth simulation', 'look development', '3D product animation'],
-    transcript: 'No spoken dialogue. A 3D viewport shows the VSX logo forming through a weave simulation.',
-  },
-  {
-    name: 'The Mag Wrap 2025 3D motion design package',
-    page: '/work/the-mag-w-rap-2025',
-    description: 'A selection of 2D and 3D show graphics, looping backgrounds, sponsor visuals and show IDs for The Mag Wrap 2025.',
-    thumbnailUrl: '/videos/posters/w25_injektaz.jpg',
-    embedUrl: 'https://www.youtube.com/embed/-s2ly4Fgu5c',
-    dateCreated: '2025',
-    keywords: ['3D motion design', 'broadcast graphics', 'motion graphics package'],
-    transcript: 'Visual show package combining 2D and 3D motion design for intros, on-air IDs, looping backgrounds, sponsor graphics, explainers, standings, and duel statistics.',
   },
   {
     name: 'The Mag Wrap 2025 looping 3D background',
@@ -498,17 +456,6 @@ export const videoAssets = [
     contentUrl: '/videos/h264/w25_loop_bcg-fallback.mp4',
     dateCreated: '2025',
     keywords: ['3D motion design', 'looping background', 'show graphics'],
-    transcript: 'No spoken dialogue. Looping 3D background visual created for The Mag Wrap 2025 broadcast and YouTube show package.',
-  },
-  {
-    name: 'Chainer 3D product visualization launch film',
-    page: '/work/chainer',
-    description: 'Chainer launch visual showing 3D jewelry product scenes and art direction for a men’s accessories ecommerce brand.',
-    thumbnailUrl: '/videos/posters/chainer_header.jpg',
-    embedUrl: 'https://player.vimeo.com/video/881397523',
-    dateCreated: '2023',
-    keywords: ['3D product visualization', 'CGI product visuals', 'art direction', 'web design'],
-    transcript: 'No spoken dialogue. Visual sequence showing 3D jewelry product scenes, campaign art direction, and ecommerce brand visuals for Chainer.',
   },
   {
     name: '3D Worlds showreel',
@@ -518,17 +465,15 @@ export const videoAssets = [
     contentUrl: '/videos/h264/cgi-environments-fallback.mp4',
     dateCreated: '2026',
     keywords: ['3D worlds', 'art-directed CGI', '3D environments', 'CGI brand campaigns'],
-    transcript: 'No spoken dialogue. Visual reel showing art-directed CGI worlds created around brands, products, identities, and digital experiences.',
   },
   {
-    name: 'Mixed reality and FOOH service reel',
+    name: 'Barbour London FOOH campaign',
     page: '/services/mixed-reality',
-    description: 'Mixed reality service reel showing CGI advertising, FOOH campaign visuals, VFX, and social media content for brand campaigns.',
+    description: 'The London film from Barbour’s Icons in Quilting campaign, combining CGI quilted fabric and nature details with live-action city footage.',
     thumbnailUrl: '/videos/posters/cgi_barbour_london updated.jpg',
     contentUrl: '/videos/h264/cgi_barbour_london updated-fallback.mp4',
-    dateCreated: '2026',
+    dateCreated: '2024',
     keywords: ['mixed reality campaign', 'FOOH campaign', 'CGI advertising', 'social media campaign'],
-    transcript: 'No spoken dialogue. Visual reel showing CGI elements composited into live-action footage for mixed reality and fake out-of-home brand campaign visuals.',
   },
 ]
 
@@ -587,11 +532,9 @@ function videoStructuredData(video) {
     name: video.name,
     description: video.description,
     thumbnailUrl: assetUrl(video.thumbnailUrl),
-    uploadDate: video.uploadDate || `${video.dateCreated}-01-01`,
+    uploadDate: video.uploadDate,
     dateCreated: video.dateCreated,
     keywords: video.keywords,
-    transcript: video.transcript,
-    inLanguage: 'en',
     creator: { '@id': PERSON_ID },
     publisher: { '@id': PERSON_ID },
     mainEntityOfPage: absoluteUrl(video.page),
@@ -651,7 +594,6 @@ export function siteStructuredData() {
 
 export function homepageStructuredData() {
   const works = featuredCreativeWorks.map((work) => creativeWorkStructuredData(work))
-  const videos = videoAssets.filter((video) => video.page === '/').map(videoStructuredData)
 
   return {
     '@context': 'https://schema.org',
@@ -667,14 +609,15 @@ export function homepageStructuredData() {
         })),
       },
       ...works,
-      ...videos,
     ],
   }
 }
 
 export function pageStructuredData(path) {
   const work = featuredCreativeWorks.find((item) => item.path === path)
-  const videos = videoAssets.filter((video) => video.page === path)
+  // Google requires a publication date. Never infer one from dateCreated, and
+  // filter before building hasPart so omitted videos leave no dangling IDs.
+  const videos = videoAssets.filter((video) => video.page === path && video.uploadDate)
   const graph = [
     ...(work ? [creativeWorkStructuredData(work, videos)] : []),
     ...videos.map(videoStructuredData),

@@ -1,8 +1,22 @@
 # Portfolio 2027 performance and SEO audit — 26 September 2026
 
-The rebuild has a lighter application shell and better mobile lab results than the live previous design. Basic technical SEO is sound. Before release, prioritize stale video structured data, mobile LCP, and small-label contrast. Autoplay video transfer has increased substantially despite the smaller JavaScript/CSS payload.
+The rebuild has a lighter application shell and better mobile lab results than the live previous design. Basic technical SEO is sound. The video-schema findings were corrected in the follow-up below; mobile LCP and small-label contrast remain release priorities. Autoplay video transfer has increased substantially despite the smaller JavaScript/CSS payload.
 
-This audit implements the requested positioning metadata; the optimization recommendations below remain follow-up work. Nothing was deployed or pushed.
+This audit implements the requested positioning metadata; performance and visual recommendations remain follow-up work. Nothing was deployed or pushed.
+
+## Video-schema correction — 26 September follow-up
+
+Implemented after the audit at the owner's request:
+
+- Restored the homepage ItemList and its 12 linked CreativeWorks. Removed both obsolete homepage reel records.
+- Removed the Barbour, Mag Wrap and Chainer VideoObjects that claimed embedded players where the rebuilt pages show only stills. Existing playable background videos are unchanged.
+- Corrected the Barbour reconstruction page's MP4 reference to its existing `/videos/other/…mp4` URL, matching the schema record. The page's former `/videos/h264/…mp4` URL returned 404; remote ffprobe confirmed the existing file is H.264, 576 × 720, with no audio. The audit's initial assumption that the page's H.264-folder path was the correct delivery was wrong. Narrowed the mixed-reality service video description to the actual Barbour London film.
+- Removed the invented January 1 fallback. Nine VideoObjects retain their existing explicitly recorded publication dates. Six current media records without dates are withheld from JSON-LD: Vizcom, ValkaAI, Barbour reconstruction, Mag Wrap looping background, 3D Worlds and Barbour London. Restore their markup only after the actual first-publication dates are documented; do not use project year or rebuild date. No new publication dates were inferred in this correction.
+- CreativeWork `hasPart` includes only emitted videos, so no references point at withheld objects. Removed visual summaries mislabeled as transcripts and the unsupported English-language assertion on silent media.
+- Added `node scripts/verify-video-schema.mjs` after the production build. It checks all 15 remaining editorial video records against media used by their pages, verifies rendered publication dates and references, and checks the homepage list against its gallery links.
+- Follow-up validation: build, lint, portfolio and video-schema checks pass; the 28-page SEO crawl reports no issues and checks 26 emitted social/schema media URLs. All 30 video/poster URLs in the 15 editorial records return 200 with the expected media types. Browser verification of the repaired Barbour clip selects the existing MP4 and confirms active playback (`readyState: 4`, no media error).
+
+The performance measurements and original crawl counts below describe the audit before this follow-up. No video files, playback policy or layouts changed; one broken MP4 reference was repaired. Google requires the first-publication date for video markup; omitting incomplete objects avoids inventing that information. [VideoObject requirements](https://developers.google.com/search/docs/appearance/structured-data/video)
 
 ## Changes made
 
@@ -68,7 +82,9 @@ The final automated crawl found no issues in its technical checks:
 - Homepage browser checks at 1440 × 900, 834 × 1112 and 390 × 844 show no horizontal overflow, no broken loaded images after scrolling, and no uncaught JavaScript exceptions. Work/Fun/About switching works; a fine-pointer gallery hover was exercised. Vizcom and 3D Worlds also render correctly in mobile spot checks.
 - Posters request before video; initial mounted videos intersect the viewport. Chrome selected AV1 in these sessions. Reduced-motion and simulated `navigator.connection.saveData` sessions mounted zero videos and made zero video requests. This is not a cross-browser codec certification.
 
-## Remaining findings, ordered for release
+## Findings, ordered for release
+
+The first two findings are resolved by the follow-up above; their original evidence is retained here. Other items remain open.
 
 | Priority | Evidence | Recommended action and acceptance check |
 | --- | --- | --- |
