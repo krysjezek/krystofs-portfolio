@@ -9,6 +9,7 @@
     "lint": "eslint",
     "test:layout": "node scripts/verify-layout.mjs",
     "test:interactions": "node scripts/verify-interactions.mjs",
+    "test:analytics": "node scripts/verify-analytics.mjs",
     "analyze": "ANALYZE=true next build"
   },
   "dependencies": {
