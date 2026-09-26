@@ -5,7 +5,7 @@ const base = process.env.INTERACTION_BASE_URL || 'http://localhost:3000';
 const browser = await chromium.launch();
 const context = await browser.newContext({ viewport: { width: 1440, height: 900 }, reducedMotion: 'reduce' });
 // Exercise the real SDK's event calls without submitting test traffic.
-await context.route(/vercel-scripts\.com|\/_vercel\/insights\//, route => route.abort());
+await context.route(/vercel-scripts\.com|\/_vercel\/insights\/|\/[a-f0-9]+\/(script\.js|view|event|session)(\?|$)/, route => route.abort());
 await context.addInitScript(() => {
   window.analyticsEvents = [];
   window.va = (type, event) => { if (type === 'event') window.analyticsEvents.push(event); };

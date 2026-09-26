@@ -31,3 +31,5 @@ Open the Analytics dashboard's Events panel and select an event to inspect/filte
 ## Verification
 
 Run `npm run test:analytics` against the local dev server. Override `INTERACTION_BASE_URL` to test a different accessible build. The browser suite checks actual event payloads, contact classification, query stripping, tab/keyboard behavior, control opens versus closes, project links, CV actions, referral deduplication, listener cleanup, and the two-property limit. The test does not submit analytics events.
+
+Production was verified on 26 September 2026 at `www.krystofjezek.com`, deployment `dpl_64HvpvBAgZxLD4xS29hUgTeUEvcF` (application commit `92f719b`). Automatic custom-domain promotion is disabled on this project, so the successful production build was explicitly promoted. A normal visitor browser profile received HTTP 200 for both its page-view request and a `section_nav` event. Vercel injects generated first-party collector paths in production; the test blocks both those paths and the standard analytics URLs. Automated browser traffic is excluded by the collector.
