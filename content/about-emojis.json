@@ -1,0 +1,14 @@
+{
+  "✈️": {
+    "src": "/images/apple-airplane-emoji-v1.webp",
+    "label": "airplane",
+    "source": "https://em-content.zobj.net/source/apple/419/airplane_2708-fe0f.png",
+    "reference": "https://emojipedia.org/apple/ios-18.4/airplane"
+  },
+  "🍺": {
+    "src": "/images/apple-beer-mug-emoji-v1.webp",
+    "label": "beer mug",
+    "source": "https://em-content.zobj.net/source/apple/419/beer-mug_1f37a.png",
+    "reference": "https://emojipedia.org/apple/ios-18.4/beer-mug"
+  }
+}

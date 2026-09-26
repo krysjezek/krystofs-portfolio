@@ -65,7 +65,7 @@ All inline identity artwork uses the shared [15px Identity tile](portfolio-2027-
 
 Project, client, agency, collaborator, publication and social logos remain identity artwork. Keep their original colors and proportions, including Motion Mockups, X, case-study credit marks and recognition favicons. Render these with `IdentityIcon` from `Links.jsx`; do not use them as action symbols or recolor them with the UI icon mask.
 
-Keep existing emojis as authored text. Do not replace them with Unicons Line symbols. `content/icons.json` contains shared identity artwork only; `content/interface-icons.json` is the separate interface-icon registry.
+Keep existing emojis as authored Unicode in content. The owner requested identical iOS artwork for About on every platform: `EmojiText` renders its airplane and beer mug using the fixed Apple iOS 18.4 assets in `content/about-emojis.json`, with accessible names and a 1em inline box. Do not replace emojis with Unicons Line symbols. `content/icons.json` contains shared identity artwork only; `content/interface-icons.json` is the separate interface-icon registry.
 
 ## Web implementation
 

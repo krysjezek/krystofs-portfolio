@@ -12,6 +12,7 @@ import { ExternalLink } from "./Links";
 import Icon from "./Icon";
 import ContextPreview from "./ContextPreview";
 import previews from "@/content/context-previews.json";
+import EmojiText from "./EmojiText";
 
 const tabs = ["work", "fun", "about"];
 
@@ -103,7 +104,7 @@ function About() {
           ))}
         </div>
         <div className="biography-personal">
-          <p>{profile.paragraphs[2]}</p>
+          <p><EmojiText text={profile.paragraphs[2]} /></p>
           <Recognition />
         </div>
       </div>

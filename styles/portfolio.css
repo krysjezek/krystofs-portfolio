@@ -827,6 +827,12 @@ button {
 .biography p {
   color: var(--muted);
 }
+.inline-emoji {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+}
 .recognition-trigger {
   display: block;
   font-size: 11px;
