@@ -40,8 +40,10 @@ try {
     assert(response.ok(), icon.src);
     assert.match(response.headers()["content-type"], /image\/svg\+xml/);
   }
-  assert.equal(await page.locator('.header-utility .ui-icon:visible').count(), 2, "Header shows plane and weather symbols");
-  assert.deepEqual(await page.locator('.header-utility .ui-icon:visible').evaluateAll(nodes => nodes.map(n => parseFloat(getComputedStyle(n).width))), [12, 15]);
+  // The masthead dateline is type only: its disclosures are words, not glyphs.
+  // The popover this trigger opens still uses icons; the dateline itself must not.
+  assert.equal(await page.locator('.prague-airspace-trigger .ui-icon, .prague-temperature > .ui-icon, .dateline > .dateline-row > .ui-icon').count(), 0, "Dateline disclosures are words, not glyphs");
+  assert.equal(await page.locator('.prague-airspace-trigger').innerText(), 'PRAGUE', "Prague is the airspace disclosure");
   const email = page.locator('.contact-copy [data-ui-icon="email"]');
   assert.equal(await email.evaluate(node => node.getBoundingClientRect().width), 15);
   assert(await page.locator('.contact-copy .identity-tile img').count() > 0, "Keep inline X identity artwork");

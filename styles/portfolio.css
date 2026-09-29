@@ -39,6 +39,9 @@
   --icon-compact: 12px;
   --icon-inline: 15px;
   --icon-gap: 5px;
+  --utility-pad: 6px;
+  --type-micro: 400 10px/15px var(--font-family);
+  --tracking-micro: 0.02em;
   --identity-size: 15px;
   --identity-radius: 3px;
   --identity-surface: #fff;
@@ -250,76 +253,68 @@ button {
 .site-header.home-header {
   height: 70.5px;
 }
-.site-name,
-.header-utility {
+.site-name {
   font-size: var(--body-regular);
   line-height: var(--body-regular-leading);
   white-space: nowrap;
 }
-.header-utility {
-  font-weight: 400;
-  letter-spacing: -0.005em;
-}
-.prague-clock {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 14px;
-  line-height: 20px;
+/* Masthead dateline: the name and its metadata are one object. On desktop the
+   metadata ranges right over two rows; below 600px it stacks under the name as
+   a single line and drops the date. The header holds 70.5px throughout. */
+.dateline {
+  display: grid;
+  grid-template-columns: max-content;
+  justify-items: end;
+  text-align: right;
+  font: var(--type-micro);
+  letter-spacing: var(--tracking-micro);
+  text-transform: uppercase;
+  font-variant-numeric: tabular-nums;
   color: var(--muted);
+}
+.dateline-row {
+  display: flex;
+  gap: 8px;
+}
+.dateline-row > * {
   white-space: nowrap;
 }
-.prague-clock time,
-.prague-temperature {
-  flex: none;
-}
-.prague-clock time {
-  width: 40px;
-  color: var(--muted);
-  font-variant-numeric: tabular-nums;
-  text-align: right;
-}
+/* Both disclosures are plain text at rest, with the hit area expanded by a
+   pseudo-element so it takes no layout space. Ranged right the two sit on
+   adjacent 15px rows, so each expands away from the other -- otherwise the
+   weather target covers Prague -- giving 35px inside the 70.5px header.
+   Stacked they share one line and both reach 44px. */
 .context-trigger.prague-temperature,
 .prague-airspace-trigger {
-  min-height: 44px;
+  position: relative;
   display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  padding: 0 6px;
-  border-radius: 3px;
-  color: var(--ink);
-  cursor: pointer;
-  transition: background-color 150ms ease-out;
-}
-.utility-icon {
-  display: grid;
-  place-items: center;
-  width: 16px;
-  height: 16px;
-  flex: none;
-}
-.prague-airspace-trigger .ui-icon {
-  transform: rotate(45deg);
-}
-.temperature-value {
-  width: 39px;
-  flex: none;
-  text-align: left;
-  font-variant-numeric: tabular-nums;
-}
-.context-trigger.prague-temperature {
+  gap: 8px;
+  /* Buttons do not inherit text-transform from the dateline on their own. */
+  text-transform: inherit;
   color: var(--muted);
+  cursor: pointer;
+  transition: color 150ms ease-out;
+}
+.context-trigger.prague-temperature::after,
+.prague-airspace-trigger::after {
+  content: "";
+  position: absolute;
+  inset: -20px -5px 0;
+}
+.context-trigger.prague-temperature::after {
+  inset: 0 -5px -20px;
 }
 .context-trigger.prague-temperature:hover,
 .context-trigger.prague-temperature[aria-expanded="true"],
 .prague-airspace-trigger:hover,
 .prague-airspace-trigger[aria-expanded="true"] {
-  background: var(--tag);
+  color: var(--ink);
 }
 .prague-temperature:focus-visible,
 .prague-airspace-trigger:focus-visible {
   outline: 2px solid var(--ink);
-  outline-offset: 2px;
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 .airspace-layer {
   position: fixed;
@@ -2312,13 +2307,28 @@ html[data-history-restoring] .portfolio-shell *::after {
   }
 }
 
-@media (max-width: 479px) {
+/* Below 600px the masthead stacks: name, then one line of metadata. The date is
+   the first field to go -- it is the one a visitor already knows. */
+@media (max-width: 599px) {
   .site-header.home-header {
-    height: 104.5px;
     flex-direction: column;
-    align-items: stretch;
+    align-items: flex-start;
     justify-content: center;
-    gap: 4px;
+    gap: 1px;
   }
-  .prague-clock { justify-content: space-between; }
+  .dateline {
+    display: flex;
+    gap: 8px;
+    text-align: left;
+  }
+  .dateline-row {
+    display: contents;
+  }
+  .dateline-date {
+    display: none;
+  }
+  .context-trigger.prague-temperature::after,
+  .prague-airspace-trigger::after {
+    inset: -14.5px -5px;
+  }
 }

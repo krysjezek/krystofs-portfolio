@@ -4,17 +4,21 @@ import { useEffect, useState } from "react";
 import { HomeLink, RouteLink } from "./Links";
 import ContextPreview from "./ContextPreview";
 import PragueAirspace from "./PragueAirspace";
-import Icon from "./Icon";
-import { weatherIcon } from "@/lib/weather";
+import { briefWeather } from "@/lib/weather";
+
+const inPrague = (options) =>
+  new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Prague", ...options });
 
 export default function Header({
   home = false,
   category = "work",
   backLabel = "Back",
 }) {
-  const [time, setTime] = useState("");
+  const [clock, setClock] = useState({ time: "", date: "" });
   const [weather, setWeather] = useState(undefined);
   const temperature = weather?.temperature ?? null;
+  // The dateline carries a headline term; the disclosure keeps the full phrase.
+  const brief = briefWeather(weather?.symbol);
   const condition = weather?.condition?.replace(/\b\w/g, (letter) => letter.toUpperCase());
   const weatherPreview = {
     informational: true,
@@ -54,14 +58,13 @@ export default function Header({
   }, [home]);
   useEffect(() => {
     if (!home) return;
-    const update = () =>
-      setTime(
-        new Intl.DateTimeFormat("en-GB", {
-          timeZone: "Europe/Prague",
-          hour: "2-digit",
-          minute: "2-digit",
-        }).format(new Date()),
-      );
+    const update = () => {
+      const now = new Date();
+      setClock({
+        time: inPrague({ hour: "2-digit", minute: "2-digit" }).format(now),
+        date: inPrague({ weekday: "short", day: "numeric", month: "short" }).format(now),
+      });
+    };
     update();
     const interval = setInterval(update, 15000);
     return () => clearInterval(interval);
@@ -72,19 +75,22 @@ export default function Header({
         Krystof Jezek
       </RouteLink>
       {home ? (
-        <div className="header-utility">
-          <span className="prague-clock">
+        <div className="dateline">
+          <span className="dateline-row">
             <PragueAirspace />
+            <span className="dateline-date">{clock.date || "—"}</span>
+          </span>
+          <span className="dateline-row">
+            <time aria-label={clock.time ? `Time in Prague: ${clock.time}` : "Prague time"}>
+              {clock.time || "—:—"}
+            </time>
             <ContextPreview
               className="prague-temperature"
               preview={weatherPreview}
             >
-              <span className="utility-icon"><Icon name={weatherIcon(weather?.symbol)} /></span>
               <span className="temperature-value">{temperature === null ? "—" : temperature}°C</span>
+              {brief ? <span className="condition-value">{brief}</span> : null}
             </ContextPreview>
-            <time aria-label={time ? `Time in Prague: ${time}` : "Prague time"}>
-              {time || "—:—"}
-            </time>
           </span>
         </div>
       ) : (

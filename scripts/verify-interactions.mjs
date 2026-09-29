@@ -163,7 +163,7 @@ try {
   assert.equal(await page.locator('.prague-temperature').getAttribute('aria-haspopup'), null);
   assert.equal(await page.locator('.prague-temperature').evaluate(node => node.tagName), 'BUTTON');
   assert.equal(await page.locator('.context-popover:popover-open').count(), 0);
-  assert.equal(await page.locator('.prague-clock').evaluate(n => getComputedStyle(n).fontSize), '14px');
+  assert.equal(await page.locator('.dateline').evaluate(n => getComputedStyle(n).fontSize), '10px');
 
   await tab("About").click();
   await settle();
