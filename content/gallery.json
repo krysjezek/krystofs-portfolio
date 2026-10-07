@@ -15,7 +15,8 @@
         "srcH265": "/videos/h265/vizcom-card-v2-web.mp4",
         "srcAv1": "/videos/av1/vizcom-card-v2.webm",
         "srcMp4": "/videos/h264/vizcom-card-v2-fallback.mp4",
-        "preview": "A 3D studio film, stills and short 2D animations for Vizcom, created with Outland."
+        "preview": "A 3D studio film, stills and short 2D animations for Vizcom, created with Outland.",
+        "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAADQBACdASogABQAPxF2sVAsJ6SisAgBgCIJZwDHMBxptkPHZ7Anc4UP2/F0/0r1IAD+VAYDXLSxKPpCNjVjMHK+q6UBTQZMGL1mk4SLHvqe9GAOz+DLoBwETyNKI87WXrEQoUAg+SZ4AklQ0Ig3MRiQ8mZ4Rz0vfpNjL2TZQ1Nwb92tGerqNBEjR5PEAAAA"
       },
       {
         "id": "shelby",
@@ -32,7 +33,8 @@
         "srcAv1": "/videos/av1/shelby-card-v1.webm",
         "srcMp4": "/videos/h264/shelby-card-v1-fallback.mp4",
         "preview": "Custom 3D device and merchandise mockups for Ashfall Studio’s Shelby case study.",
-        "icon": "/images/shelby-identity-v1.webp"
+        "icon": "/images/shelby-identity-v1.webp",
+        "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAACwBACdASogACAAPxFysFCsJqSisBgMAYAiCWUAAC51oEXJ0vWwN8RZ3nwud8oAAP7nB2hj44YjTTYgLDiXgFOpVHDcVur2eu9AVKIdsCujklILafFTAnhisFQq/BQnIdv9uuG5yRMM7LbrAX5gg6zLJNc5WAAA"
       },
       {
         "id": "victoria-s-secret",
@@ -48,7 +50,8 @@
         "srcH265": "/videos/h265/vsx-knitting-card-v3-web.mp4",
         "srcAv1": "/videos/av1/vsx-knitting-card-v3.webm",
         "srcMp4": "/videos/h264/vsx-knitting-card-v3-fallback.mp4",
-        "preview": "A CGI product film exploring the knit, weave and construction of the VSX Sports Bra."
+        "preview": "A CGI product film exploring the knit, weave and construction of the VSX Sports Bra.",
+        "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQBACdASogABQAPxFysFAsJqSisAgBgCIJZACdMtP20GHSPNwAjx9fKyVgAP7tu8qfjywyIlgESHJHQwHe2P3TWzwO3I7Hk+Bor40SdFi8+U8g10AsYyIv07jMOcbaWVwugJ3WG6A/HCRVrAebK+HZqYLWEomAAAA="
       },
       {
         "id": "barbour",
@@ -64,7 +67,8 @@
         "srcH265": "/videos/h265/portfolio-card-barbour-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-barbour-v1.webm",
         "srcMp4": "/videos/h264/portfolio-card-barbour-v1-fallback.mp4",
-        "preview": "Quilted fabric and countryside details added to city footage for Barbour’s Icons in Quilting campaign."
+        "preview": "Quilted fabric and countryside details added to city footage for Barbour’s Icons in Quilting campaign.",
+        "lqip": "data:image/webp;base64,UklGRo4BAABXRUJQVlA4IIIBAABQCgCdASogAEAAPxF0slIsJqSisBQMAYAiCUAX5/XLYsa6FarhOnMCnp/PeX8ksgd4yW4+/gJBbPGD6Y722xNNjmfLiv6e5kBxImyPB1ias63WJA99XUfHiEzgAP4pxlcS4sE2kx0bmZOLXgXyaJpjLsqUWupzQk1SRAd9Te5YJo0vD7r1nsKcIF/+en+JPAvJeCB2ic13ecIZmKeUYSzqiq//wjXXMYYslwlGVMtJTeJKOb/cGT5GeoVuUfLGIG8Uw4DnSbXglhWmsYcxA7ASiCYFYAZ7GLhLpHRax7WGoGD6L73aZQ4T0Xh0ErksxvJHu2smSCgRqGdyeXgummOu1fSXgnigIQF+lwkRDz66CadvaGcuEwszHxl+y4rmOz76N1Tbc1kTMmMVotA0glbTZ6FvMzywnGSV5o4J/vyAYgXtQ1wjMmWKLJl6bvcrgbKxG5Kly44OBdr6472NnKgZb1i5NEIJT097HtM6DSxFjsKP1YaPQvKpjI5gXvDQKS2AAA=="
       },
       {
         "id": "motion-mockups",
@@ -79,7 +83,8 @@
         "mobileAspect": 1.33333,
         "srcH265": "/videos/h265/motion-mockups-card-v1-web.mp4",
         "srcAv1": "/videos/av1/motion-mockups-card-v1.webm",
-        "srcMp4": "/videos/h264/motion-mockups-card-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/motion-mockups-card-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAADwBQCdASogACgAPxFysFAsJqSisBVdUYAiCWUA0nBdbWXN7l8rcScJ+s2BU5BbdEaRfbgwfucyOAD+9wDPTK3JIdnVEGBBhA5OnkENTqKDF7Q3Hc0/EjS9uNnaVTPGBjq97zmXf2VTzyBCOQDoCeC7BYj/7mYRdqe1XMvYfKh0gxGxp5jfdUOT3+7aB2L5LBJxWg98bau2N3souGTIPr0boreQjltIZz1ApqkdxGyGiAMl+VkceMym6YAAAA=="
       },
       {
         "id": "custom-mockups",
@@ -95,7 +100,8 @@
         "alt": "Art-directed CGI worlds showreel",
         "aspect": 1.77778,
         "tabletAspect": 0.75,
-        "mobileAspect": 0.75
+        "mobileAspect": 0.75,
+        "lqip": "data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAAAQBQCdASogACAAPxF0sVIsJqSisBgIAYAiCWcArw3cAvc157LWfHzRCeKC8hJVIgjAAP7Ct7uY9xkrifW3cAVNcx5PjQJm7cD1hyVehQ0yRUHCTKvsys3kp/3sdvb+hMRx/8bf0RQif1+ubPz4QpsrirN6jfbSMU0OtIr13rxlWmdZs4ov7RNFh5dT4MiJKcfBJ1QGkGdG/rbJmN47PaMRuQLg6aeC/zNTEnvrSq64Wl5Hv5DikbevhJRgmtsD/ypH0LXXjIM0XEJ2R6OqmmQ7xtVo8YnCXDHQAAAA"
       },
       {
         "id": "stnck",
@@ -108,7 +114,8 @@
         "poster": "/images/portfolio-2027-gallery-stnck.webp",
         "aspect": 1,
         "tabletAspect": 1,
-        "mobileAspect": 1
+        "mobileAspect": 1,
+        "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAwBQCdASogACAAPxF2sFAsJ6SisAgBgCIJZwDOOCHfHKJvdH2aCXQqxyWUJIg9D35o4AD+7oQrg4BtQHtvX5NFxEy4kmdXP4/J07k2dp7G/0QRQqm5/XlHEvJV+eNMCsg3ZujJ2cD3RZB6e/tAEcvkFVwksyNlMgKsPqj5Vu9ow1WK4aAdpfGiIq8Zf2AA"
       },
       {
         "id": "outland-rounds",
@@ -125,7 +132,8 @@
         "srcAv1": "/videos/av1/outland-rounds-card-v2.webm",
         "srcMp4": "/videos/h264/outland-rounds-card-v2-fallback.mp4",
         "alt": "Rounds brand world and device mockups, from the clubhouse to a watch and phones",
-        "preview": "A clubhouse, golf course and custom mockups for Outland’s Rounds identity."
+        "preview": "A clubhouse, golf course and custom mockups for Outland’s Rounds identity.",
+        "lqip": "data:image/webp;base64,UklGRt4AAABXRUJQVlA4INIAAACQBQCdASogABgAPxF0s1KsJqSisBgIAYAiCWUAuwAzLuw6SVeYuxuXGbjbIL+yghPi+Sy9gADyg0ogV//diD4NIDTHeOMZ9ySLcjxdt7vFxDf0k9vkD0TvVCMunxWPrUN+FMWF0KRTgkW2K0aeeHRdahMqgorMHYtUD26tMWGoOBIsufkZdNB8G6U+Af4zCcmT/pRdG47hqfkkefQdPvRCSEUBN3V/Q0NN5KCquP7+K/C0HoVzgN4YDhFMA9kfV2+BKBLwDWgLkX0poQwr7lgoYAA="
       },
       {
         "id": "valkaai",
@@ -141,7 +149,8 @@
         "srcH265": "/videos/h265/portfolio-card-valkaai-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-valkaai-v1.webm",
         "srcMp4": "/videos/h264/portfolio-card-valkaai-v1-fallback.mp4",
-        "preview": "A glass prism animation of ValkaAI’s mirrored butterfly logo, created with Less and Better."
+        "preview": "A glass prism animation of ValkaAI’s mirrored butterfly logo, created with Less and Better.",
+        "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABQBQCdASogABQAPwVurVArpqQisAwBcCCJQBlHKABKVvAA4+1dxcQFeR2P7Ph5HgwA8wAA/vTXGqXXx7Xzc/GZpBEEyg91MXR7q1douKfMENPBGjnCiVujU/VpnVdjstfYm/5JvVEyKEywCzu2RyXB+XPh0TroAAA="
       },
       {
         "id": "gusto",
@@ -157,7 +166,8 @@
         "srcAv1": "/videos/av1/outpost-gusto-card-v3.webm",
         "srcMp4": "/videos/h264/outpost-gusto-card-v3-fallback.mp4",
         "preview": "Interface animation and 3D device scenes for Outpost Studio’s Gusto showreel.",
-        "icon": "/images/outpost-gusto-identity-v1.svg"
+        "icon": "/images/outpost-gusto-identity-v1.svg",
+        "lqip": "data:image/webp;base64,UklGRiYBAABXRUJQVlA4IBoBAABwBwCdASogACgAPxF6r1MsJ6OiqqoBgCIJZgCdM2kOqELrjoBVII97jZ2drCcL4IK7lr3/yIe5a+vk51t1qJB0Yl3JgAD+8vBd+IBUEaBma+pN1V5F/SXuCDN6MFbCJVXLgkec/9q7o3spqGs7bi/soeYnmwc+x6V9yMRtYZWgQ7YdfMjmG0Ni1MIgj+V56uFfrqwNu2bqK6IHFmBz4um02G3hhEOQBoOdwGlYzZdiKmEADO1pOv6bSYrroZJ3bEnB8Nkv9vL9y7qqwbDbIggGfa+1ntrc03TN24h4etOIAaKKqk4H0S3FmPH4+tLOcZE/G9K5XiNOAfkFRxehmIuAfNiA5Hc+47i8gFGVK8Umv/kIp8ARMyZAAAA="
       },
       {
         "id": "trezor",
@@ -174,7 +184,8 @@
         "srcAv1": "/videos/av1/trezor-black-v1.webm",
         "srcMp4": "/videos/h264/trezor-black-v1-fallback.mp4",
         "icon": "/images/trezor-identity-v1.webp",
-        "preview": "Hardware wallet animations in three colours for Trezor’s online store, created with Yiskra."
+        "preview": "Hardware wallet animations in three colours for Trezor’s online store, created with Yiskra.",
+        "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABQBQCdASogACAAPv1orlArJiSit/qoAWAfiWkAA+Q/f4cZjsjdcC9EOwEZrh48+L2/ZAAA/vwT7wpNaXTWOER6oPkLtmtJ8OKKXTs/le7Qf8bXiu6ROduJWFDl3D9ipTvk5AXFG2S8dBBKS/1pnvsLO8xulA2tpuAUD8Qi4sZbraT7w2kGE2tV0bL/JAU2D+NcAJgbKeFfAQAA"
       },
       {
         "id": "fantasy",
@@ -190,7 +201,8 @@
         "srcAv1": "/videos/av1/outpost-fantasy-card-v2.webm",
         "srcMp4": "/videos/h264/outpost-fantasy-card-v2-fallback.mp4",
         "preview": "A reel and custom device mockups presenting Outpost Studio’s Fantasy website redesign.",
-        "icon": "/images/outpost-fantasy-identity-fantasy-v1.svg"
+        "icon": "/images/outpost-fantasy-identity-fantasy-v1.svg",
+        "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAAAQBACdASogABIAPxFyr1AsJqQisAgBgCIJaQAAW52y3xxDYzFy1l0kAAD+W5tUcnluSUeiCsUyrpypQ7BYBIvVSpr7V93Ah0NAhSXDp8gyV9vICOF9vAjX6Qy9RofNf+nW2JcwhpyervTp+6pT8JUAAAA="
       }
     ],
     "desktop": [
@@ -250,7 +262,8 @@
         "srcMp4": "/videos/h264/coding-01-fallback.mp4",
         "aspect": 1,
         "tabletAspect": 1,
-        "mobileAspect": 1
+        "mobileAspect": 1,
+        "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAABwAwCdASogACAAPxGCuVWsKKWjKAgBgCIJaWgqABtnlk9RvlAA/utYGHReS9qH+hhMDHSJQIPqkbFFrnA8tNkOnhwOJXeGV2woWy2AAAA="
       },
       {
         "id": "frozen-jewelry",
@@ -264,7 +277,8 @@
         "mobileAspect": 0.75,
         "srcH265": "/videos/h265/portfolio-card-frozen-jewelry-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-frozen-jewelry-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-frozen-jewelry-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/portfolio-card-frozen-jewelry-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAACwBACdASogABQAPxF8slGsKCSisBgIAYAiCWQApawvU3VJ+Lkfn3Tv40ylFimAAP0b0MujlQacj2fljsfVNefzqsMp8pOJeIg6703D5MCahxb8Hc3NT30e0eTp43u2lCKiteW1U1bk3OpWjPepTrXIeslyiUy5Xicq6ujpI9DW4vArl58HWRfcmT359+InHnegXoOAkAA="
       },
       {
         "id": "the-mag-wrap",
@@ -280,7 +294,8 @@
         "srcH265": "/videos/h265/portfolio-card-the-mag-wrap-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-the-mag-wrap-v1.webm",
         "srcMp4": "/videos/h264/portfolio-card-the-mag-wrap-v1-fallback.mp4",
-        "preview": "3D animation, loops and reusable show graphics for The Mag Wrap 2025."
+        "preview": "3D animation, loops and reusable show graphics for The Mag Wrap 2025.",
+        "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABwBQCdASogABIAPxF6s1IsKCSisBgIAYAiCUAVHoZZHw/dpzZNw5PFFjQ+Vhz6oGfiOn7gAP7ldTLo1J2Gdchi6a0Cmes7BQnZS4COf8TZHSa5XA3XEVlQlmKuHU4YGl/055WTK7OT3AWxNHAjiCS6044fHLtxhAb0ax9XK30rO6vcuUw7RGIcQJHlI52CCD1CBLfhuAAAAA=="
       },
       {
         "id": "blender-addon",
@@ -296,7 +311,8 @@
         "srcH265": "/videos/h265/portfolio-card-handheld-loop-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-handheld-loop-v1.webm",
         "srcMp4": "/videos/h264/portfolio-card-handheld-loop-v1-fallback.mp4",
-        "icon": "/images/handheld-loop-tooltip-icon-v1.webp"
+        "icon": "/images/handheld-loop-tooltip-icon-v1.webp",
+        "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAACwBACdASogABIAPxF2slCsJ6SisAgBgCIJaQAAWkTvidAnbjxE84qpjtdqd0oAAP6edpeXW0Utcd0PRz7HBRzZyiJNGY+iYXASs/ljdnEusO1hLk3DAbCV5vk3CSVcOA/JiRtDm6RCAAAA"
       },
       {
         "id": "chainer",
@@ -311,7 +327,8 @@
         "srcH265": "/videos/h265/portfolio-card-chainer-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-chainer-v1.webm",
         "srcMp4": "/videos/h264/portfolio-card-chainer-v1-fallback.mp4",
-        "preview": "Jewellery scenes in 3D, carried into animation, sound and a website."
+        "preview": "Jewellery scenes in 3D, carried into animation, sound and a website.",
+        "lqip": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAABwBQCdASogABQAPwlwqlArpqOisAwBcCEJbAC1GoR7TySDKtwqzYPeXAtnQ56BqUv05ptQAP0RDlMqPzeeb8hV//NgcN6jbA5otHY+MjTSRWVpOkwSy5AeugO2WaVVR1UdOVMb+Bo2xOslIXl4nzCtCtACUM8H7qPVGJcNS+XYnncwRUxBh6zijIJYgvTSFJyY0YkXWivI5LiRNiOpnBXKLDkmhnxu4hB1oR8nLfKO0bpnY//ckpZaCO37rgAA"
       },
       {
         "id": "relivear",
@@ -325,7 +342,8 @@
         "srcMp4": "/videos/h264/coding-02-fallback.mp4",
         "aspect": 1,
         "tabletAspect": 1,
-        "mobileAspect": 1
+        "mobileAspect": 1,
+        "lqip": "data:image/webp;base64,UklGRtIAAABXRUJQVlA4IMYAAAAQBQCdASogACAAPxF4sVIsJyQiqA1RgCIJQBdgAhei0zx7UMzUDi2v7I/dzYS8k4AAAOIgBPD8L+MeJibn1DSAlAT/YUdQyPGsfrE8ZdozEXg8nCoFoPZY5vK00HqcFBaNqw0/CMd6ESjsgIrckjhodyi/tXyWgq1CW1DpUpxOuWSz57oM9vBkV9DzCosd9hm92e0HQ+OHs5FSXQo31lRQte3JpuvMCOca7Vyl/YGd3sO0KOYiCKGiZS4Viu2BGw4UNkkAAAA="
       },
       {
         "id": "renders",
@@ -340,7 +358,8 @@
         "srcH265": "/videos/h265/portfolio-card-renders-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-renders-v1.webm",
         "srcMp4": "/videos/h264/portfolio-card-renders-v1-fallback.mp4",
-        "alt": "Six 3D renders of products, architecture and jewelry, changing every second"
+        "alt": "Six 3D renders of products, architecture and jewelry, changing every second",
+        "lqip": "data:image/webp;base64,UklGRtgAAABXRUJQVlA4IMwAAACwBgCdASogACoAPxF+tlUsJ6SjJWsxgCIJZwDPKGjftvYJQp66IqjSNwKE2OVaLzaguvef/lv/jSrC3XNgAAD++lq0pey3R7ArGSKjGRX2D7GDanLQd3RrGcX/4EpDF2yOfMs1VGk0b8pHAa95fmHDSYq6d4bfYPbGvtoTqRndqrbU6HEjd08K5my7ATGIllEetR8tmFvMNdv8k2RPIuNaQ2kFPkhQMRF8YsjqOqbQSfiZ438E1q1KVovaZ/8jT91fxfFN8XDLTF2EAAA="
       },
       {
         "id": "erem",
@@ -354,7 +373,8 @@
         "mobileAspect": 1.33333,
         "srcH265": "/videos/h265/portfolio-card-erem-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-erem-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-erem-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/portfolio-card-erem-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAAAwBQCdASogACAAPxF+tFOsKCSiqAgBgCIJaQAD4Z1JByP3kDoTIozoTWLxEjDMX+0AAAD++ug5UXchOYLQ+VLRkE3dDrybunt3KuhKUXkPfnxpE8XDJj9VnlFLMWsLWHyseMnHWsbb7Oz4WLsORsOsu8yBlCwLBtZ9NqUZ9em2psdKpB1WYAAA"
       },
       {
         "id": "tweezers-jewelry",
@@ -368,7 +388,8 @@
         "mobileAspect": 1,
         "srcH265": "/videos/h265/portfolio-card-tweezers-jewelry-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-tweezers-jewelry-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-tweezers-jewelry-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/portfolio-card-tweezers-jewelry-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAwBQCdASogACAAPxF6tVOsJyUiqAqpgCIJZwDPodwLfiWbXXZjNwfG4EOw4BXVnNeA4AD++ua8Ko5qVYVDzLHv9q9xjqQ37Xx25C8XVQ5qtr8snhlPiuRbUSulMyCXWTeQtv56xGopX/fOxvanJ1alatpWJgtUMU9UkrdYOEYrItFoKIWD9QRXyjuzVyL7HbyZHPs+1btsDAAA"
       },
       {
         "id": "fwa-logo",
@@ -382,7 +403,8 @@
         "mobileAspect": 1,
         "srcH265": "/videos/h265/portfolio-card-fwa-logo-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-fwa-logo-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-fwa-logo-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/portfolio-card-fwa-logo-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRuYAAABXRUJQVlA4INoAAACwBQCdASogACAAPxF0sVCsJySisAgBgCIJYgDE36wSlBtt6BzyUT+IhCmj0/EbzedpbtRboAAA/uwmKu96MvT9MvI02JaKyDpuGbuiSnjunwgLkPCQaq1rm4x5KbjHn5k3SfiukqPEBeafWb7825SfnkZAR1jE7EwE50Qpw+iJIc0MgamXGGKPZhtg4ejcXX3BFmD3qQl+NPVvB2qOU9FjL3HRSLG99bdo5BwFQ1rs0vhJecGhzVAyKEJPK73PmOCHQzH6EwDhzQsFm/dJMea925hoXLvbdSAAAA=="
       },
       {
         "id": "vojta-zizka",
@@ -397,7 +419,8 @@
         "srcH265": "/videos/h265/vojta-zizka-patreon-v1-web.mp4",
         "srcAv1": "/videos/av1/vojta-zizka-patreon-v1.webm",
         "srcMp4": "/videos/h264/vojta-zizka-patreon-v1-fallback.mp4",
-        "preview": "Tools for generating Patreon supporter credits and market charts for Vojta Zizka’s videos."
+        "preview": "Tools for generating Patreon supporter credits and market charts for Vojta Zizka’s videos.",
+        "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASogABIAPxF4tVOsJyUiqAqpgCIJYwDE2AyITllVzCkutisFEAD+6/6O44Z36TfOFVywGf2NNNZXhdWBdhPk9eoDU1/aO+YKUz7KmkD8Uhqn3TvARxN/POafm9CRJAAA"
       },
       {
         "id": "cgi-karlin",
@@ -411,7 +434,8 @@
         "mobileAspect": 0.75,
         "srcH265": "/videos/h265/portfolio-card-cgi-karlin-v1-web.mp4",
         "srcAv1": "/videos/av1/portfolio-card-cgi-karlin-v1.webm",
-        "srcMp4": "/videos/h264/portfolio-card-cgi-karlin-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/portfolio-card-cgi-karlin-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRoABAABXRUJQVlA4IHQBAACQCACdASogAEAAPxF2sVAsJ6SisAgBgCIJZAC9//9dmoli2ubGsqCTVogFqj1he6q+9ZTaxegGXsHv23MhUMVA9LcgWiy3PZno/rrf8AD+bY0wgVwXOKzU8tjn0VND6x9x5MGO979H9j+Ix+I6d/dDZbbwkxLqNEhbAwiIDXR+wzEoyOuVFxunWUfIEI8/vnAN71IfQAKx6msx/R6N9bP6W8x3lPRbT1YLhyemuajcgsm3kJ+mlLWka9xnkYRtoOPnDYd3bL/V1ILkmSrcOQhLZUmz1Lx1sFDy0zvD9KmGm8QP1G/MhSdpyxHdZzemVc4cNAqrZBh0XjQL4dph0A2pz2sDhsLNTRnH0O0vC0APojcHkZjTJzkytTbZVmekOQcycqKIqfE19DrteRR9gu7PBJDt/Z6lUx22l0CUG2kREcIDZHmarId65lT9aeaSKkJfClce+dfPoAzSbQyGQask7+YUy7L6jYnV/2/0B03q5ZwFAAA="
       }
     ],
     "desktop": [

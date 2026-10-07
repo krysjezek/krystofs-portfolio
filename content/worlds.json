@@ -61,7 +61,8 @@
       "alt": "Aptos Foundation CGI brand world",
       "srcH265": "/videos/h265/ashfall_aptos-2x1-web.mp4",
       "srcAv1": "/videos/av1/ashfall_aptos-2x1.webm",
-      "srcMp4": "/videos/h264/ashfall_aptos-2x1-fallback.mp4"
+      "srcMp4": "/videos/h264/ashfall_aptos-2x1-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAwBACdASogABAAPxFwsFAsJiSisAgBgCIJQBWADSdFPoDbUMRK4kbUZAAA/uNCMDHsW2H/j/Eej/LkUehmwCSvKKL2e99xND+xLgdTvy71w36m6ttQYbm/s2oD25Crw9/o9FPihL/42CcEVsrEYosVPrEfeYbJlGETgwBcUtgos4l4cvDFQRVSnBbNcib0mpN/g/KKUAA="
     },
     {
       "title": "Homio Smart Home",
@@ -71,7 +72,8 @@
       "alt": "Homio Smart Home CGI brand world",
       "srcH265": "/videos/h265/volkov_homio-web2.mp4",
       "srcAv1": "/videos/av1/volkov_homio.webm",
-      "srcMp4": "/videos/h264/volkov_homio-fallback.mp4"
+      "srcMp4": "/videos/h264/volkov_homio-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAAAQBQCdASogACAAPwVur1ArpqSisAwBcCCJZADKAHtwwS2Y4U53LLMX6xmKI1zSv3aAAP77a0DEcl8fypuvDtlR/XbVKqsj8VTf+xFeRBOR23ntNeQ64/rgNwejN8iFKw1RS+uEbOcYl4le0Wl6g8mcLCmjRYnfAnAXYJgyhNXPkHWaL+aU9KehC+jk7lcYELRYN3dUqaUkZ5mL9KVQn7fG/QVn7wl/udwICD97Gu6gAA=="
     },
     {
       "title": "Skyll",
@@ -81,7 +83,8 @@
       "alt": "Skyll CGI brand world",
       "srcH265": "/videos/h265/cn_skyll-1x1-web.mp4",
       "srcAv1": "/videos/av1/cn_skyll-1x1.webm",
-      "srcMp4": "/videos/h264/cn_skyll-1x1-fallback.mp4"
+      "srcMp4": "/videos/h264/cn_skyll-1x1-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAADwBQCdASogACAAPxFyslKsJiSisBgIAYAiCWIAnTKAAaoYHt5ZJ6n+6ymDMdpw923Vd+J+cXjrIAD+72CA6a4ancnZ+W1RscfZnHwO92UBf5fKseOsBCYD/llMPGxvHXmQWh+cope4dcjqaRc/vORtf8wyXWFZ3d+7pXBqQtUQuJn3IV2pLkRT/3quwGW/XZ8PdK4GTO8ByjbyDF+DpJHLqbXsCnOjk/TMgmdS+Nah/Mcac0VDSqpuRFoAAA=="
     },
     {
       "title": "Primland Explore",
@@ -91,7 +94,8 @@
       "alt": "Primland Explore cinematic CGI world",
       "srcH265": "/videos/h265/outpost_explorer-2x1-web.mp4",
       "srcAv1": "/videos/av1/outpost_explorer-2x1.webm",
-      "srcMp4": "/videos/h264/outpost_explorer-2x1-fallback.mp4"
+      "srcMp4": "/videos/h264/outpost_explorer-2x1-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBACdASogABAAPxF0sVCsJqSisAgBgCIJZQC+SCG/OyMV5X96l5EHjQAAzj8SsQGK8s7vZ9Vnu8KncAWhtxatGZeHDhnK+MBTwp4JRu5FTXQP+gl1bFLTVyfFC4TQmpMDgfLAjspUUb32Q3LnYOkPKGA6m1WJAMx3vfOdpBYPKkdl2be99uw05biwRq6lD5U126U/XTkJl9rM3hDcmH8AAAA="
     },
     {
       "title": "Primland Resort",
@@ -101,7 +105,8 @@
       "alt": "Primland Resort architectural CGI world",
       "srcH265": "/videos/h265/outpost_resort-2x1-web.mp4",
       "srcAv1": "/videos/av1/outpost_resort-2x1.webm",
-      "srcMp4": "/videos/h264/outpost_resort-2x1-fallback.mp4"
+      "srcMp4": "/videos/h264/outpost_resort-2x1-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADwAwCdASogABAALtGIxGIkLCwsDADQSxgGFAIbvdzkPa7uFACvrqZAAPz4iPBUxyF6af8PejGekCwixrLcibM7p1cyvwCeq1foukQ46TeaJnbSd6t+NxszrWGva9iEddsRwmyh/X9JMXm9e6TgNAVw46nFN+ARw9EfAfrL866VSPu5IIaKExSYAAA="
     },
     {
       "title": "Jimu",
@@ -111,7 +116,8 @@
       "alt": "Jimu CGI brand world",
       "srcH265": "/videos/h265/volkov_jimu-web2.mp4",
       "srcAv1": "/videos/av1/volkov_jimu.webm",
-      "srcMp4": "/videos/h264/volkov_jimu-fallback.mp4"
+      "srcMp4": "/videos/h264/volkov_jimu-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRswAAABXRUJQVlA4IMAAAACQBQCdASogACAAPwlwq1ArpqOisAwBcCEJZwC/7HOdYk7eIClX9d50RrLemTX/dEBoK8VcAAD+jR59WVFeTJ2hvP2sOR83zO9C7ewvUqpChmI7kjFHLGU1o5IJGgrTkDQIilGomsGI0gpJaL7hHxHmBB6bp269VuzsnbmsEn6kBb5b8SGJCnII7fBd06jSDDJmJrosOZMqV4CPm9gkj5lGEocvu3+RzVh6J4I2Q5l299Cw7pOi9s90PY5mW+mzAAA="
     },
     {
       "title": "Sparta",
@@ -121,7 +127,8 @@
       "alt": "Sparta CGI brand world",
       "srcH265": "/videos/h265/volkov_sparta-web2.mp4",
       "srcAv1": "/videos/av1/volkov_sparta.webm",
-      "srcMp4": "/videos/h264/volkov_sparta-fallback.mp4"
+      "srcMp4": "/videos/h264/volkov_sparta-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADwBACdASogACAAPxF2rVCsJ6QisBgMAYAiCWgAzNBX79wG1tmqFKwHfD+8Z0s3umAA/vkK+14ZkBvSCmSGhPEI8AQXTB95MmGioU1Lyka2/Tl3/QHFP/auffAEJPvw9WwCOcxZ+EeovGT/cWTRkfHwz6/9hAI9ebAdimrq4F0seFwAAAA="
     },
     {
       "title": "Heidelberg CCUS",
@@ -131,7 +138,8 @@
       "alt": "Heidelberg CCUS industrial CGI world",
       "srcH265": "/videos/h265/ashfall_ccus%20updated-web2.mp4",
       "srcAv1": "/videos/av1/ashfall_ccus%20updated.webm",
-      "srcMp4": "/videos/h264/ashfall_ccus%20updated-fallback.mp4"
+      "srcMp4": "/videos/h264/ashfall_ccus%20updated-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABwBACdASogABAAPxFyslCsJqSisAgBgCIJZQABIZJM+KiOHf+UYV2pvcbnYAD+4AvgDvmTnMJhqc+zTT2CerfOukTbsH29Mwkg+eh5YluPYiXVwsc/5Dfres4FP+xwi/VVwJVW1jGMs4JD5udLZAK4RzfOevfA5TACFXb6lZZssYqqaZt7PZNRjxrRQqCdAoB0wqvsa3bn1bydVApOwAAA"
     },
     {
       "title": "Ashfall Launch",
@@ -142,7 +150,8 @@
       "srcH265": "/videos/h265/ashfall_promo%20updated-web2.mp4",
       "srcAv1": "/videos/av1/ashfall_promo%20updated.webm",
       "srcMp4": "/videos/h264/ashfall_promo%20updated-fallback.mp4",
-      "preview": "/images/portfolio-2027-world-ashfall-launch.webp"
+      "preview": "/images/portfolio-2027-world-ashfall-launch.webp",
+      "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADQAwCdASogABAAPxFysFAsJqSisAgBgCIJZwABFj7o4ydXxARY8sAA/vpld4OXUyIfEXpv5LMWBvuOKqxM06I6jmYzjkCWpsxKO2GJRu+D9snPw54lFigOHpkFDxenNrlbqhhfA0rCJOfswjC1OiWgAAA="
     },
     {
       "title": "Veha Architects",
@@ -153,7 +162,8 @@
       "srcH265": "/videos/h265/yiskra_veha-web2.mp4",
       "srcAv1": "/videos/av1/yiskra_veha.webm",
       "srcMp4": "/videos/h264/yiskra_veha-fallback.mp4",
-      "preview": "/images/portfolio-2027-world-veha-architects.webp"
+      "preview": "/images/portfolio-2027-world-veha-architects.webp",
+      "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAwBQCdASogADgAPxGAt1WsKCUjKAgBgCIJZwDK8A8wrtw4WSmWjHGLkiWQydWMKB1xgAD+3HMUfr5MGHsBf6Rc6p0Znw4ii3SB5J1K+M1gxHt6Ir1yZ7VXgIH3c9F+PBeD3+yo2UNg7Q8STPZTUSottTFhE7fXfBauH0NnIMTzzOQP9yeBFGA4zhLgBE6ascOVVPiBmskk4CX8ykwtH5wAAAA="
     },
     {
       "title": "Fifthrow",
@@ -164,7 +174,8 @@
       "srcH265": "/videos/h265/ashfall_fifthrow%20updated-web.mp4",
       "srcAv1": "/videos/av1/ashfall_fifthrow%20updated.webm",
       "srcMp4": "/videos/h264/ashfall_fifthrow%20updated-fallback.mp4",
-      "preview": "/images/portfolio-2027-world-fifthrow.webp"
+      "preview": "/images/portfolio-2027-world-fifthrow.webp",
+      "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADQAwCdASogABAAPxFysFAsJqSisAgBgCIJYgCdAGCujXBdf9rbDAAA/siWGW65ZzcIws/ESe/51e7B2qxYbKB9EjkSommgUPENgYi9fsn053HqMMx3ukWJoeYGBd5mtoykXI9hFEpUHewMudnYDVb0WRXAd3iN41JkOzqyfiwbGTKaWUP+zEAA"
     },
     {
       "title": "Hyperframe",
@@ -174,7 +185,8 @@
       "alt": "Hyperframe CGI brand world",
       "srcH265": "/videos/h265/ashfall_hyperframe%20updated-web-2.mp4",
       "srcAv1": "/videos/av1/ashfall_hyperframe%20updated.webm",
-      "srcMp4": "/videos/h264/ashfall_hyperframe%20updated-fallback.mp4"
+      "srcMp4": "/videos/h264/ashfall_hyperframe%20updated-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAABQAwCdASogABAAPxFysVCsJqSisAgBgCIJaQAAetFO3KqDAAD+76JV+2KtvO35fQxuuIOI0qNpeuSZw0WNVEfwyI1pyJZo4AA="
     }
   ]
 }

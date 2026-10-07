@@ -123,7 +123,7 @@ export default function Media({
   return (
     <div
       ref={root}
-      className={`media ${className}${!posterLoaded && inView ? " is-loading" : ""}`}
+      className={`media ${className}`}
       style={{
         "--media-aspect": media.aspect || 1.6,
         aspectRatio: media.aspect || undefined,
@@ -140,6 +140,8 @@ export default function Media({
         fetchPriority={priority ? "high" : "low"}
         onLoad={() => setPosterLoaded(true)}
         onError={() => setPosterLoaded(true)}
+        placeholder={media.lqip ? "blur" : "empty"}
+        blurDataURL={media.lqip}
         unoptimized={(media.poster || media.src)?.endsWith(".svg")}
         style={{
           objectFit: "cover",

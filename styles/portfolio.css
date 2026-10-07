@@ -397,8 +397,7 @@ button {
 .airspace-weather.is-compact dt { margin-bottom: 4px; }
 .airspace-weather dd { overflow-wrap: anywhere; }
 .shimmer { position: relative; overflow: hidden; }
-.shimmer::after,
-.media.is-loading::after {
+.shimmer::after {
   content: ""; position: absolute; inset: 0; pointer-events: none;
   background: linear-gradient(105deg, transparent 20%, rgb(255 255 255 / 65%) 50%, transparent 80%);
   transform: translateX(-100%);
@@ -409,7 +408,6 @@ button {
   vertical-align: -.05em; border-radius: 3px; background: var(--tag);
 }
 .airspace-value { animation: airspace-enter 180ms ease-out both; }
-.media.is-loading::after { animation-delay: 300ms; }
 @keyframes shimmer { to { transform: translateX(100%); } }
 .airspace-route { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 .airspace-selection,
@@ -483,8 +481,7 @@ button {
   .airspace-weather dt { font-size: 10px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .airspace-panel, .airspace-value, .shimmer::after,
-  .media.is-loading::after { animation: none; }
+  .airspace-panel, .airspace-value, .shimmer::after { animation: none; }
   .airspace-map-loading { transition: none; }
 }
 @media print { .airspace-layer { display: none; } }

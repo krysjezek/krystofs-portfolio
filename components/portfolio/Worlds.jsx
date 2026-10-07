@@ -31,6 +31,8 @@ export default function Worlds() {
           <Media
             media={{
               poster: "/videos/posters/cgi-environments.jpg",
+              // Generated: node scripts/generate-lqip.mjs --print /videos/posters/cgi-environments.jpg
+              lqip: "data:image/webp;base64,UklGRugAAABXRUJQVlA4INwAAAAQBQCdASogACAAPxF0sVIsJqSisBgIAYAiCWcArw3cAvc157LWfHzRCeKC8hJVIgjAAP7Ct7uY9xkrifW3cAVNcx5PjQJm7cD1hyVehQ0yRUHCTKvsys3kp/3sdvb+hMRx/8bf0RQif1+ubPz4QpsrirN6jfbSMU0OtIr13rxlWmdZs4ov7RNFh5dT4MiJKcfBJ1QGkGdG/rbJmN47PaMRuQLg6aeC/zNTEnvrSq64Wl5Hv5DikbevhJRgmtsD/ypH0LXXjIM0XEJ2R6OqmmQ7xtVo8YnCXDHQAAAA",
               srcH265: "/videos/h265/cgi-environments-web.mp4",
               srcAv1: "/videos/av1/cgi-environments.webm",
               srcMp4: "/videos/h264/cgi-environments-fallback.mp4",

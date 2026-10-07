@@ -866,7 +866,8 @@
         "title": "Barbour London FOOH CGI campaign",
         "srcH265": "/videos/h265/cgi_barbour_london%20updated-web2.mp4",
         "srcAv1": "/videos/av1/cgi_barbour_london%20updated.webm",
-        "srcMp4": "/videos/h264/cgi_barbour_london%20updated-fallback.mp4"
+        "srcMp4": "/videos/h264/cgi_barbour_london%20updated-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRo4BAABXRUJQVlA4IIIBAACQCQCdASogAEAAPxFys1GsJqSisBQMAYAiCUAYDXXLYjaoldD/UooHcNCyV+3PiMosxnV1QU57boaOx7qx4ue+hVezJlOQoyCwvZApDvVRRyFXKq0AAP4p9OEB8khArAZ5xenE7RzHFPsSOyf+uzvHYoJgVfl8Mip8ctD4PuyirPq810gp4y/v2AqejCB2ic13ecXIvo5H5yXLMut/9nwav2zsDhdQWjr65hjw6aMaPC04nJ8Kr8m5LSx54C2pIypp3XGhWQcakCotlsoRPnBJ8tL6Wrlb6kbpRKifhKbhhob04gDQhdFHbJ3BVql1bGLisYk6IZeh6VySlrpO1LUK94LDnpd5str8A/Uag0c7k9aTJDU77Xi+RrJ1B4W+fPdMQpTIq3riTRaeCk8bpUv05xF/YmKCg0dBxcTwOauI4mZhR7ae037tiUx+cJgi7nUbWQNntGlpjT1cjUPiGcG4b+2pCRpt1B2vohi7wilFYb8q6s/NAAIfu4IE2j+9g5sAAA=="
       },
       {
         "type": "img",
@@ -882,7 +883,8 @@
         "title": "Arctic Landscape mixed reality CGI visual",
         "srcH265": "/videos/h265/cgi_antartcica-web2.mp4",
         "srcAv1": "/videos/av1/cgi_antartcica.webm",
-        "srcMp4": "/videos/h264/cgi_antartcica-fallback.mp4"
+        "srcMp4": "/videos/h264/cgi_antartcica-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAwBACdASogACAAPwVuqlArpqOisAwBcCCJZwDKACm7a2+25AivrzXzrAAA/vAfDMh/GyFez30UlfgYK6vEFyEIRZ6Rqsz8Ft9XCBuNQx3YouGcwtwW2urUKAAAAA=="
       },
       {
         "type": "EmbedVideo",
@@ -891,7 +893,8 @@
         "title": "Bouncy Greens mixed reality CGI visual",
         "srcH265": "/videos/h265/cgi_presto%20updated-web2.mp4",
         "srcAv1": "/videos/av1/cgi_presto%20updated.webm",
-        "srcMp4": "/videos/h264/cgi_presto%20updated-fallback.mp4"
+        "srcMp4": "/videos/h264/cgi_presto%20updated-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRnwBAABXRUJQVlA4IHABAAAwCACdASogAEAAPxF2sVAsJ6SisAgBgCIJZAC9//9dpQkm5ebGspdcDtTwiqEN341SFdKwDTwRZzF8id81CpjQKAezHkF2OaKVAAD+bY0wgVwXOKzU7Zdhuwkrr+80VeGlyf/R/Y/iMfiOnf3Q2W28JMS6jRMWSkwiA10DGkpx6mV9rNwBP2H8FBadaP82RH31zbFYmFt9gR9kTXwe9kXR+23jwOVzwpbUw8kVu82GvnejpUa4SxHR1RizMVp9J78/NJFwgMJ60xfBIqqnOjL8g/QiqsacKPN4WkhWCmaguLsoN/ZQ0aQk5lzzeP/D8qYibtujnCjvGO5BsnROqqTnxRwMBAWCX4LF03MEQ0I8J64OyDbcjB1NOyJa0J8hYAwfHwf3m4WKtDRI9a1OaLuT20j9Tv81BHWgFW9vFMqhA1ue0SDbaNJOJMVww5clhwgC8RRAsPglDEszeZ9r5953+ncCYMZw2a6lMB3c2lAAAA=="
       },
       {
         "type": "EmbedVideo",
@@ -900,7 +903,8 @@
         "title": "Gemstone mixed reality CGI product visual",
         "srcH265": "/videos/h265/cgi_tweezers-web2.mp4",
         "srcAv1": "/videos/av1/cgi_tweezers.webm",
-        "srcMp4": "/videos/h264/cgi_tweezers-fallback.mp4"
+        "srcMp4": "/videos/h264/cgi_tweezers-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAADwBACdASogACAAPxF6tVOsJ6SiqAqpgCIJZQDMWYu6s2uuzM+y9Jctwjx5x56mwoAA/vrmvCqO/3HZ67Eu4w+ZoxxbZP8NuGkvpi36tsKnTvQfsCirgRO88DWxHkXcth9ycCK0WhRdyB8oWQ3FSDfrvbLW5mtZQKHTR6JCXIqsWrDKEkvBTLlcJBhBD3SXnieivWhrSslDyfxAAAA="
       },
       {
         "type": "EmbedVideo",
@@ -909,7 +913,8 @@
         "title": "Barbour Frasers mixed reality campaign",
         "srcH265": "/videos/h265/cgi_frasers%20updated-web2.mp4",
         "srcAv1": "/videos/av1/cgi_frasers%20updated.webm",
-        "srcMp4": "/videos/h264/cgi_frasers%20updated-fallback.mp4"
+        "srcMp4": "/videos/h264/cgi_frasers%20updated-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAACwBACdASogACAAPwFmrVArJSSit/qoAWAgCUAWHeWAHx9lQju2SSTltz5yOKIgAOjnILP4QTzmH6UhHO9UzwWiyFBJeFObk2Ph4MYK14jPEi2EuD43DEYO/tjtRBsNOHbYuj4L11CQMbDv5QjJP0zBjHYANAnIMPnpBMKr7Y5/mLUi7s4no2y0sYH0grlp6hdFUM6S9rw3fSdZX4igpPwAAAA="
       },
       {
         "type": "img",
@@ -925,7 +930,8 @@
         "title": "Revitalizing Serum mixed reality CGI campaign",
         "srcH265": "/videos/h265/cgi_spojka%20updated-web2.mp4",
         "srcAv1": "/videos/av1/cgi_spojka%20updated.webm",
-        "srcMp4": "/videos/h264/cgi_spojka%20updated-fallback.mp4"
+        "srcMp4": "/videos/h264/cgi_spojka%20updated-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRgwBAABXRUJQVlA4IAABAACQBgCdASogAEAAPxF0r1AsJyQmsAgBgCIJZwDQ0AolgNdJaSB8RnakOOUajFTDU66Q6Mj4b0mpAiKST5hYAPyk68CVgho5s02BLWg0gCJg4Q1abCHPvGQuk+2SwSbJt72UOC7TlgkHq8FjbK1jl5ELrK0Ab1zCZpRmchBy07z6/S0egum6KcSsXPP3W27ABmDUeCYoWAtje4LlokVtu3LjdVs7cv5bAz/BbyTr5sSKkdiVYYyOXtZ6ADOWysuHo1kl2jjD2Dblbjf+8YVoDkVCpBJEftQNhpZ6dDHoDVtQ+PC8+yJoFNXQ8cZriIla4rhnfM38zDGQjxIkTMgAwAAA"
       },
       {
         "type": "EmbedVideo",
@@ -934,7 +940,8 @@
         "title": "Barbour New York FOOH CGI campaign",
         "srcH265": "/videos/h265/cgi_barbour_ny%20updated-web2.mp4",
         "srcAv1": "/videos/av1/cgi_barbour_ny%20updated.webm",
-        "srcMp4": "/videos/h264/cgi_barbour_ny%20updated-fallback.mp4"
+        "srcMp4": "/videos/h264/cgi_barbour_ny%20updated-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRiQBAABXRUJQVlA4IBgBAACwBwCdASogAEAAPwFor1ArJaSisBv9+WAgCWcAzYm4hJSOE7NM/nKj9WvUsuWdVcc5J0iYg41ao393RCTEzwjurAM21+HgAP74Uc+wZY5WA+vPbHMh7iwV1Wov/4SyDNLZoxF9tUVTJdE0zlfv6KIdnLeBLnJ8hyef1TjQDYagWkKMgujDh/lh1Vq5BdH/NM1tc0eyBdLnk4szp+n7UR1wapqei4B0M8FRozVUM66W9qlC41FXoI3dIbjRnsBExkoMVo12X2H/LaNnzd4rEEZeCjv1ZHFFO7XRWbeQSCZv8B7EnacaTJLv7ooxhaqG9E/e05pp6BkDL4Xc00CuSIr7taVv3crSBZ2MqoYB7wpJzSCwZMrRAAAA"
       },
       {
         "type": "img",
@@ -950,7 +957,8 @@
         "title": "Onitsuka Tiger mixed reality CGI campaign",
         "srcH265": "/videos/h265/cgi_onitsuka-web2.mp4",
         "srcAv1": "/videos/av1/cgi_onitsuka.webm",
-        "srcMp4": "/videos/h264/cgi_onitsuka-fallback.mp4"
+        "srcMp4": "/videos/h264/cgi_onitsuka-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAABQBACdASogACAAPxF4slAsJ6SisAgBgCIJYgDI1CHfwI0Zz1xIQQdD9zgQAP7oskaPWDyf7s7RaXk1tc8Lh84kqxqxpgoshZsibBvGdnAOUREztLtTAOacNJSQchOAAAA="
       },
       {
         "type": "img",
@@ -966,7 +974,8 @@
         "title": "Barbour Seoul FOOH CGI campaign",
         "srcH265": "/videos/h265/cgi_barbour_seoul%20updated-web2.mp4",
         "srcAv1": "/videos/av1/cgi_barbour_seoul%20updated.webm",
-        "srcMp4": "/videos/h264/cgi_barbour_seoul%20updated-fallback.mp4"
+        "srcMp4": "/videos/h264/cgi_barbour_seoul%20updated-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRoYBAABXRUJQVlA4IHoBAACQCACdASogAEAAPxF6r1GsKCQisBgIAYAiCUAWjIHHEsNDlwQCQ0GAn+v9e2QS2tVfKZig7WLPwocvwY72h0wQX3ZeQoQjJy/g2PMlAAD5W2d9OQEH98SD0zDWq/65p44bI9eqMP3uu874oG/BmYgvFnleCOTF95EYDn8Nfb3aNbR4DZNQZUKvP7eJPW8xhQo5iY4e03FUrKy7DuKsk/pC81XnVpkpCYZWnIjiCqV87NczJ6pMe2xjKDvlPxxhbR3I9JT106Z6nUP9X31cRGgXgKfkKmYUDwtrcTqKGVdQadM53Kirqn14eMAUH4Gu047UjW/cFrc0y0e1vjkL0Ywb36DAimd0gGkUTSFXkTHA5Tut8oo3m+iWJEYPu//U24SCjfctP77hWi+Sm+71URR61keQcNv+25CIaCMCZksUbSDRvwUL87ft5bHQhL3yWsMiPWGWU/v12AL+7nyIpduQjdwn3rca/VJi6fLMZUq+0SN9C+V80s9wAAA="
       },
       {
         "type": "img",
@@ -982,7 +991,8 @@
         "title": "YoGrillz mixed reality CGI product visual",
         "srcH265": "/videos/h265/cgi_yogrillz%20updated-web2.mp4",
         "srcAv1": "/videos/av1/cgi_yogrillz%20updated.webm",
-        "srcMp4": "/videos/h264/cgi_yogrillz%20updated-fallback.mp4"
+        "srcMp4": "/videos/h264/cgi_yogrillz%20updated-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4IOIAAABwBwCdASogAEAAPw1wrlAsJqQis/mYAYAhiWUAxcg9DF9gpYfRf2OPZUL6JG2tmNhWppM99SFSYaQsHUtbpbF7z07K+AD9zrSe4TvctIKBTHJTqxLWebiMUTXC2b5wf5plcsum2uiuLqTYtjo4GQNyMJO403ieLTjDpVEVXlVq3DN08bXiRkIoJZzVFuvr0ewUscgFvntLG7HrTmuKXYOKER3moU7+Cqr6f6McCYyrF41JjGkEe+QaaMXUA4WZy1BOgYk/Xktm5WvJRhS5LlDwkTiNt/izs9XtuVfHggI0e8AA"
       },
       {
         "type": "EmbedVideo",
@@ -991,7 +1001,8 @@
         "title": "Barbour Shanghai FOOH CGI campaign",
         "srcH265": "/videos/h265/cgi_barbour_shanghai%20updated-web2.mp4",
         "srcAv1": "/videos/av1/cgi_barbour_shanghai%20updated.webm",
-        "srcMp4": "/videos/h264/cgi_barbour_shanghai%20updated-fallback.mp4"
+        "srcMp4": "/videos/h264/cgi_barbour_shanghai%20updated-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAADQBwCdASogAEAAPwl4r1ArqCQirBquYXAhCWUAwGRPE9LyfMZITdB+Zxxh5ndyZSKAt82SNE1alPIR6ByJdeN/9bA1K+NOAAD8xfbU/UbQuNvj9oo6k4N0xfF7fJqMrtjqxyA3nHGGU04gj3E6dHFQO95fsaUkq3/Ur1O6v49bT/fXf3+Gkw59pUxkAGK6Z7b/nUGA7lOvWM11kT9lST/svJMIgH7XmDNkI5z4Qk9Wa2LYZRggDBEID48Dr40HyHwbL16orZzMaaXLIsJUapp3wXK5Cu1+AAA="
       },
       {
         "type": "img",
@@ -1007,7 +1018,8 @@
         "title": "Chainer mixed reality CGI launch video",
         "srcH265": "/videos/h265/cgi_chainer%20updated-web2.mp4",
         "srcAv1": "/videos/av1/cgi_chainer%20updated.webm",
-        "srcMp4": "/videos/h264/cgi_chainer%20updated-fallback.mp4"
+        "srcMp4": "/videos/h264/cgi_chainer%20updated-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwAwCdASogABAAPxF2sVAsJ6SisAgBgCIJaQAAW/E1xmn7grc5QAD+r21cp7WQMI9TaCerSXXxxqYEF48wOqnURXji/e937yliABLP9Emvr74l1H1ENz+CXOvL6VfKOqFAAA=="
       },
       {
         "type": "img",
@@ -1023,7 +1035,8 @@
         "title": "Yonex mixed reality CGI campaign",
         "srcH265": "/videos/h265/cgi_yonex-web-2.mp4",
         "srcAv1": "/videos/av1/cgi_yonex.webm",
-        "srcMp4": "/videos/h264/cgi_yonex-fallback.mp4"
+        "srcMp4": "/videos/h264/cgi_yonex-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAABwBQCdASogACAAPxF4sVIsJySisBgIAYAiCWIAtshpVpkXfr3gvghzhiSqYJN9Kvum88QIAP70IPMrYUEYUwryYTplvYnfCSMfvi7sRxk8Pz12xZd9JIRbmKmbx++6wiPJ2T3ZWqbUs6mNMhqX3ZCFhVSZjRYDVEChqZHthqLqUzBrwsnrnfZGTlcdOUhVA4kqhafFla10CE8qy7E+Tdb8+Tq+hIl8rDM1uGSAzIRTdNJIKgA="
       },
       {
         "type": "img",
@@ -1855,7 +1868,8 @@
         "src": "/images/lucrative.webp",
         "alt": "Dorian Drop II title inside white arches above a planted courtyard",
         "width": 1620,
-        "height": 2025
+        "height": 2025,
+        "lqip": "data:image/webp;base64,UklGRloBAABXRUJQVlA4IE4BAAAwCACdASogACgAPxGAt1OsKKWiqqgBgCIJbACxH5H97cwokvgjWUkQHFtits3uVzXF0ST4MUmFhSqDgVsBGyGr83O0YEVq1SlzQAD+6pbi4oRXb2dY17TneJX5uFQsnsEc2nq7sHBnOHtJUT0AOEOXx5r7Dt89z/nUB4XgmZcCPaT0fdNGblqscC4aSGcpnuDc63NT7wP7bU5xpXmFsTH/Re8n0rnbj37vVVKA6/AHNTVE11nCrPm9rJSKKE9F6V2u7kJwQ+OpNZgdkvUhk8iGdFOuuSjR/ycY17I8DgvDhW4Nnw7ye20tnDecjozdYW/SXZBW1yNY/Y9JOi6KTBCB2VClo37zS2oZTYVKJUIjFtKcA6BYP6h7G0B2LMj4NoopqUztXF8GHndGA1fMccyzIBs0HFMG8PUEsdenC+IoqG4khYmu+1RB53AlgAAA"
       },
       {
         "type": "BackgroundVideo",

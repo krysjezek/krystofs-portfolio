@@ -48,71 +48,46 @@ try {
   });
   console.log("PASS: poster-first requests, high-priority LCP, deferred edge videos, scroll playback, hidden-tab pause and tall frames");
 
-  // Media placeholders shimmer only while an unloaded poster is in the viewport.
+  // Every rendered poster carries an inline blurred placeholder, so artwork is
+  // recognisable before the full-size poster arrives rather than being a blank box.
   for (const reducedMotion of ["no-preference", "reduce"]) {
-    const shimmerContext = await browser.newContext({
+    const blurContext = await browser.newContext({
       viewport: { width: 412, height: 823 }, reducedMotion,
     });
-    const shimmerPage = await shimmerContext.newPage();
+    const blurPage = await blurContext.newPage();
     let releaseAll;
     const allPosters = new Promise(resolve => { releaseAll = resolve; });
-    await shimmerPage.route(/\/_next\/image\?/, async route => {
+    await blurPage.route(/\/_next\/image\?/, async route => {
       await allPosters;
       await route.continue();
     });
     try {
-      await shimmerPage.goto(base, { waitUntil: "domcontentloaded" });
-      await shimmerPage.locator(".media.is-loading").first().waitFor();
-      const placeholder = shimmerPage.locator(".media.is-loading").first();
-      assert.equal(
-        await placeholder.evaluate(element => getComputedStyle(element, "::after").animationName),
-        reducedMotion === "reduce" ? "none" : "shimmer",
-        "reduced motion holds the placeholder still",
-      );
-      if (reducedMotion === "no-preference") {
-        // A grace period keeps cached posters from flashing a sweep they never need.
-        assert.equal(
-          await placeholder.evaluate(element => getComputedStyle(element, "::after").animationDelay),
-          "0.3s",
-        );
-      }
-      // Offscreen artwork must not animate: a long gallery never sweeps every card at once.
-      const state = await shimmerPage.evaluate(() =>
-        [...document.querySelectorAll(".media")].map(media => {
-          const box = media.getBoundingClientRect();
-          return {
-            loading: media.classList.contains("is-loading"),
-            onscreen: box.width > 0 && box.bottom > 0 && box.top < innerHeight,
-          };
-        }));
-      assert(state.some(item => item.onscreen), "expected artwork in the viewport");
-      assert(state.some(item => !item.onscreen), "expected artwork below the fold");
-      for (const item of state)
-        assert.equal(item.loading, item.onscreen, "shimmer is limited to in-viewport artwork");
+      await blurPage.goto(base, { waitUntil: "domcontentloaded" });
+      await blurPage.locator(".media img").first().waitFor({ state: "attached" });
+      const state = await blurPage.evaluate(() =>
+        [...document.querySelectorAll(".media img")].map(img => ({
+          alt: img.alt || "(untitled)",
+          blurred: /url\(["']?data:image\//.test(img.style.backgroundImage || ""),
+        })));
+      assert(state.length >= 20, `expected the gallery, saw ${state.length} posters`);
+      assert.deepEqual(state.filter(item => !item.blurred), [],
+        "every rendered poster must carry an inline placeholder");
+      // The blur replaces the shimmer on media; the primitive stays for the airspace panel.
+      assert.equal(await blurPage.locator(".media.is-loading").count(), 0);
       releaseAll();
-      await shimmerPage.waitForFunction(() => !document.querySelector(".media.is-loading"));
-      console.log(`PASS: shimmer placeholder, ${reducedMotion}`);
+      // The placeholder is handed off once the real poster paints.
+      await blurPage.waitForFunction(() => {
+        const img = document.querySelector("#project-outland-rounds img");
+        return img && img.complete && img.naturalWidth > 0
+          && !/url\(["']?data:image\//.test(img.style.backgroundImage || "");
+      });
+      console.log(`PASS: inline blur placeholder, ${reducedMotion} (${state.length} posters)`);
     } finally {
       releaseAll();
-      await shimmerContext.close();
+      await blurContext.close();
     }
   }
 
-  // A poster that never arrives stops its own shimmer instead of sweeping forever.
-  const brokenContext = await browser.newContext({ viewport: { width: 412, height: 823 } });
-  const brokenPage = await brokenContext.newPage();
-  await brokenPage.route(/\/_next\/image\?/, route => route.fulfill({ status: 404, body: "" }));
-  try {
-    await brokenPage.goto(base, { waitUntil: "domcontentloaded" });
-    await brokenPage.waitForFunction(() => {
-      const media = document.querySelector(".media");
-      return media && !media.classList.contains("is-loading");
-    });
-    assert.equal(await brokenPage.locator(".media.is-loading").count(), 0);
-    console.log("PASS: a failed poster ends its shimmer");
-  } finally {
-    await brokenContext.close();
-  }
 } finally {
   releasePoster();
   await context.close();

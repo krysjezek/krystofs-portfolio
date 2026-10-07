@@ -55,7 +55,8 @@
       "title": "Vizcom dynamic 3D brand world mockup",
       "srcH265": "/videos/h265/vizcom-brand-world-web.mp4",
       "srcAv1": "/videos/av1/vizcom-brand-world.webm",
-      "srcMp4": "/videos/h264/vizcom-brand-world-fallback.mp4"
+      "srcMp4": "/videos/h264/vizcom-brand-world-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAADwBACdASogABQAPxF6slIsKCSisBgIAYAiCWcAxzAueAl45nm3iIf/8rAe81cFWPgA/oz83pIVa5voxBE/iwfHjGyKIXJ8B0l+0cHxDTgwMZn9+wJhafsipaVAeZC74go+/HGAZ87nFRWZV/pwtcU3SPF2RiO475XKdLIZLrQ3LQnPoCiYwnhSvx1nn2L4AAA="
     },
     "caption": "Brand-world animation · 32 seconds",
     "approach": [
@@ -91,22 +92,26 @@
       {
         "poster": "/images/vizcom-brand-world-overhead.webp",
         "alt": "Overhead view of the Vizcom studio desk",
-        "aspect": 1.7777777777777777
+        "aspect": 1.7777777777777777,
+        "lqip": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4IOIAAACwBQCdASogABIAPxFwr1AsJiQisAgBgCIJZAC7BvAn341Lk8wtVjBMVlQGqR3O1dcRPFWeb4AA+OKPrT1ydTkh8eglvm9xuJWTArFjB/lNkcCP+QDj1IsUmS5uys7OJeSRWDjjlVPtYQEElHQBQZi3WUPOCRNeMjoXGQsCfyRLqUNXsVWkiQdshQCxieQ+BMuxSsRxRqLgOhoSIjBHf7JA+XA3VxhTfUNbhDQxmFoQ2gACOO+nOVpM+aATq9QKNPToSrcqdnCyaeeUpeV/WBFtrMLVF5cjOVBWmt/C1gUGAAAA"
       },
       {
         "poster": "/images/vizcom-brand-world-laptop.webp",
         "alt": "Vizcom-branded laptop and colour studies",
-        "aspect": 1.7777777777777777
+        "aspect": 1.7777777777777777,
+        "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAADwBQCdASogABIAPxF2slIsJySisBgIAYAiCUAWHgEAPDZ6vIiw75D3VzmlMxszHWYWkZ41eqRHQAD+pEwgZSEIXaJiDVKg1beD90gQWnCDGimSuPGpDqQ9R2LxSabmUvJgAv8JAPBaXjemp4pi/lVAw3h5I99tYsyIGWQtwIeW4oF+o1phbXJN+AnMBcPqk+IlHkX8yqR5Kxx9lF+NEEwxB1meQGQIC40lA2gw7cAAAA=="
       },
       {
         "poster": "/images/vizcom-brand-world-mug.webp",
         "alt": "Vizcom mug and desk accessories",
-        "aspect": 0.8888888888888888
+        "aspect": 0.8888888888888888,
+        "lqip": "data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAAAQBgCdASogABIAPxFysFAsJqSisAgBgCIJagC1GvUf6dud18QzjTDJMke1Rf/pep5AUCE5wxrlwwAA/Xdi87upXK7+PZPB7qxPI51Ro6jZj0HTsQtKJM06CAskVbcgutpPLgeGXKJGMZEsfsK8msCIsN3U6l0C1XF5ZI0YXPwY8Yb75bdfvtIcSQOk5LsoGO4G1spuFg0ZQoco0Rue9NDULohvD07ceENB+aZhUiQVnI4DqIDegmFWEN6E83HzUlHdlCFeqLjHl27LAf8pR2AsO7LAQm41AAA="
       },
       {
         "poster": "/images/vizcom-brand-world-studio.webp",
         "alt": "Wide view of the Vizcom studio",
-        "aspect": 1.7777777777777777
+        "aspect": 1.7777777777777777,
+        "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABwBQCdASogABIAPxF8sVGsKCSisBgIAYAiCWUAuwAufzRU9waaGB5r22WXazbfeT1FZWGAAP7nkcoZziNbDqe41ZG7fpJcK4Sdn1BcrReJSiJXhE87/Tx7bDpI13Lx6Z9vYIx/4EVDI7FyF4gg7dEkSZwWA2ekev3TTYPPQ8gW+aEG7SNSgTNagffzRQ6wqtGbi9do+MAAAA=="
       },
       {
         "poster": "/videos/posters/vizcom-chair-reveal-v1.jpg",
@@ -114,7 +119,8 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/vizcom-chair-reveal-v1-web.mp4",
         "srcAv1": "/videos/av1/vizcom-chair-reveal-v1.webm",
-        "srcMp4": "/videos/h264/vizcom-chair-reveal-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/vizcom-chair-reveal-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADQBQCdASogACoAPxFws1AsJiUisBqqqYAiCWkAzJQ6fWbtV9sYJTwicVO/NJ7wYr+A+RXpPXIAAP7zaYm4nWTHW87kERUzeCnAw6YhFfT/+shiiK/Wn0ndauXUZcCJwkzLuy0eH/Gtq6ehxZWnZmqjeA04GWVD8Ca7ZnbJ3E9xEzgPSO2y3IAA"
       },
       {
         "poster": "/videos/posters/vizcom-app-icon-01-v1.jpg",
@@ -122,7 +128,8 @@
         "aspect": 1.7777777777777777,
         "srcH265": "/videos/h265/vizcom-app-icon-01-v1-web.mp4",
         "srcAv1": "/videos/av1/vizcom-app-icon-01-v1.webm",
-        "srcMp4": "/videos/h264/vizcom-app-icon-01-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/vizcom-app-icon-01-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAABwBACdASogABIAPxFyr1AsJqQisAgBgCIJagCzgCHZV4Z8/Fx2Ga4k6ivlAAD+uNuzIP8VMpLmkCHx47Stu7KK50upIrroIPpM6t3ik/jb2krf0sFfsW825fDl3ShK+Z8HtD+i8d7HqDSKBbely6Z1tfNZqPNletBW92PzqG/jhUyDrjV7z1Vu+IEUAA=="
       },
       {
         "poster": "/videos/posters/vizcom-motion-patches-v1.jpg",
@@ -130,7 +137,8 @@
         "aspect": 1,
         "srcH265": "/videos/h265/vizcom-motion-patches-v1-web.mp4",
         "srcAv1": "/videos/av1/vizcom-motion-patches-v1.webm",
-        "srcMp4": "/videos/h264/vizcom-motion-patches-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/vizcom-motion-patches-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRj4BAABXRUJQVlA4IDIBAACwBQCdASogACAABABoJaTOBHhUA6ATwD/Aaq0DLB0n0o39K+QDic/qvgC3r8ib9Z5UzJ2kNwAA/tCoe6iHTxyvXeVSbMh6nUWP/uoh0ds+idFStAZsHNrEtHjimmuRAb7C5jK+mTMBo2WQjzyf+3usFAh5XTzugFvzaa18udVLyJmkTV/CSVxpUniRokkVDtKQ2kgGlxo55gzlXRZz7lI4OqpJNAmq7PBi4o8fds2UsHm9Hlgh/HzNCBBv1akgm3Yo/Wd3JFZct/G4N2hlYKxVMAmwbyfcTTyOMsY0o2kuVh8FfmRwCYJ7kzTuKJUPRt/+O3YKEmzllDHuI4m6G+lt9htBo1c/bW/soq7TiobQjGwvp+pPw8D/ryF/UnT4a+r1r601PxF5cZY+OMBo45QgAAA="
       }
     ],
     "rows": [
@@ -226,7 +234,8 @@
       "title": "ValkaAI 3D glass-prism logo animation",
       "srcH265": "/videos/h265/valkaai-logo-glass-prism-web.mp4",
       "srcAv1": "/videos/av1/valkaai-logo-glass-prism.webm",
-      "srcMp4": "/videos/h264/valkaai-logo-glass-prism-fallback.mp4"
+      "srcMp4": "/videos/h264/valkaai-logo-glass-prism-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAABQBACdASogABIAPw12rlAsJ6QisBgMAYAhiWcAAI91m0bDJvTGrNw20qkAAP7xwwnXOU7NRCptFFxkYEymvCPISDSXVxBGyOBmBKBtsyCwwXpefuU0YbyEgAA="
     },
     "caption": "ValkaAI · Glass prism logo animation",
     "approach": [
@@ -312,7 +321,8 @@
       "alt": "The Mag Wrap judges displayed above red team labels in a dark 3D arena",
       "aspect": 1.6,
       "sourceEmbed": "https://www.youtube.com/embed/-s2ly4Fgu5c",
-      "deliveryStatus": "source-master-needed"
+      "deliveryStatus": "source-master-needed",
+      "lqip": "data:image/webp;base64,UklGRpgAAABXRUJQVlA4IIwAAACQBACdASogABIAPxFysFAsJqSisAgBgCIJZQDN/YwwykHDj1y1JnyXcZY9THAA/uwk02Ei+5YENqDuZiNBsgAdExf0fm+RMKplRKL2mgAjTp29Dse0QeGNfimglYgiDYLL85zk7slcyAcvp1YHS/0BgTGo/GA4RNzyy9swv8kbn3EK0DV2Bd8xhvHIAA=="
     },
     "caption": "The Mag Wrap 2025 · Motion package",
     "approach": [
@@ -354,7 +364,8 @@
         "title": "The Mag Wrap 2025 show ident",
         "srcH265": "/videos/h265/w25_injektaz-web.mp4",
         "srcAv1": "/videos/av1/w25_injektaz.webm",
-        "srcMp4": "/videos/h264/w25_injektaz-fallback.mp4"
+        "srcMp4": "/videos/h264/w25_injektaz-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAAAwBQCdASogABIAPxF2slAsJ6SisAgBgCIJQBBcoPqPaJQ88lX59pTqaTOBluW/lwqcQAD+3DhvC7xTCBl7EQzBzI9M5AUjD0dkXfew+rZ2IrKhLEXc6VUhT9YOpWoQ2aZw+an52OMNPgInA1taL8xvWxD4GBhF1AsK3rkxGj/tx7sfRETji6cbSBUrXEcqP4jnqDergAA="
       },
       {
         "poster": "/videos/posters/w25_loop_bcg.jpg",
@@ -365,7 +376,8 @@
         "title": "The Mag Wrap 2025 looping 3D background",
         "srcH265": "/videos/h265/w25_loop_bcg-web.mp4",
         "srcAv1": "/videos/av1/w25_loop_bcg.webm",
-        "srcMp4": "/videos/h264/w25_loop_bcg-fallback.mp4"
+        "srcMp4": "/videos/h264/w25_loop_bcg-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQBACdASogABIAPxFysFAsJqSisAgBgCIJZwAAW+0QrIl3yneTrvpABWNg3fSpIAD+6/PeaYgVBNwOslywfEmvygVGjHL7pFiZjl5LoAA="
       },
       {
         "poster": "/videos/posters/w25_ledka.jpg",
@@ -376,7 +388,8 @@
         "title": "The Mag Wrap 2025 LED show graphics",
         "srcH265": "/videos/h265/w25_ledka-web.mp4",
         "srcAv1": "/videos/av1/w25_ledka.webm",
-        "srcMp4": "/videos/h264/w25_ledka-fallback.mp4"
+        "srcMp4": "/videos/h264/w25_ledka-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASogAAoAPxFOv1osIqgkmAGAIglAE6AC9RuicUvcAPP6AAD+7JfJbza3rFYCmCQOBIVAWNbuRer0amm41+Qng7KlSSSNs29RiQpF7Hx7kAA="
       },
       {
         "poster": "/videos/posters/w25_rytmus.jpg",
@@ -387,7 +400,8 @@
         "title": "The Mag Wrap 2025 broadcast motion graphics",
         "srcH265": "/videos/h265/w25_rytmus-web.mp4",
         "srcAv1": "/videos/av1/w25_rytmus.webm",
-        "srcMp4": "/videos/h264/w25_rytmus-fallback.mp4"
+        "srcMp4": "/videos/h264/w25_rytmus-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAABwBACdASogABAAPxFysFAsJqSisAgBgCIJbACdMoAJNmfxc4Sco3HpryVMMAD9rIZoBgGK+pvc9ovIPPnlbuHrZewHNZzJIwsb9UirWQTwKqJATheAP0k7yrP28UA+RRh977o6Y8EBLsd7jLM5ei9aGMg0ixoaQ9W4P1YVf/mfHXpFxSClRSwB+6bbgpMxU75KWbG2Ywq2zEfya6leJc+gRdDIVQlU7XGRXsefSj0ujRRRKAA="
       },
       {
         "poster": "/videos/posters/w25_aneta_greenscreen.jpg",
@@ -398,7 +412,8 @@
         "title": "The Mag Wrap 2025 greenscreen show graphic",
         "srcH265": "/videos/h265/w25_aneta_greenscreen-web.mp4",
         "srcAv1": "/videos/av1/w25_aneta_greenscreen.webm",
-        "srcMp4": "/videos/h264/w25_aneta_greenscreen-fallback.mp4"
+        "srcMp4": "/videos/h264/w25_aneta_greenscreen-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABQBQCdASogABIAPxF0rVCsJqQisBgMAYAiCWIAygA0xUNxeQ7wp01ATTXvKap2jcL6mkAA/uo1VLYdc9a8zoXimu94dmBenho0ySJ41yx1A7EAYI/0J4GWBUSMfgnbK2d4TKn0bPjg5zf9DgS1BMVYHWb4A+b67HsUB2iwckMHe6sQebOeG3vLPYr+SOu8s/c+SzdY7R0iHPhfiD3zAAAA"
       },
       {
         "poster": "/videos/posters/w25_nametag.jpg",
@@ -408,7 +423,8 @@
         "posterAlt": "Dark 3D arena used behind The Mag Wrap name graphics",
         "title": "The Mag Wrap 2025 name tag motion template",
         "srcH265": "/videos/h265/w25_nametag-web.mp4",
-        "srcMp4": "/videos/h264/w25_nametag-fallback.mp4"
+        "srcMp4": "/videos/h264/w25_nametag-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAABQAwCdASogABIAPxFyr1AsJqQisAgBgCIJZwAAW+0AykDKAAD+8MS/GrbHfl+FYU7DCosbMit5O82zaPCCMgAA"
       },
       {
         "poster": "/videos/posters/w25_postupujici.jpg",
@@ -419,14 +435,16 @@
         "title": "The Mag Wrap 2025 standings motion graphics",
         "srcH265": "/videos/h265/w25_postupujici-web.mp4",
         "srcAv1": "/videos/av1/w25_postupujici.webm",
-        "srcMp4": "/videos/h264/w25_postupujici-fallback.mp4"
+        "srcMp4": "/videos/h264/w25_postupujici-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAABQAwCdASogABIAPxFysFAsJqSisAgBgCIJZwAAW+0AykDKAAD+8MS/GrbHfl+FYU7DCosbMit5O82zaPCCMgAA"
       },
       {
         "poster": "/images/portfolio-2027-the-mag-w-rap-2025-media-09.webp",
         "alt": "Team symbols and player silhouettes in The Mag Wrap standings graphic",
         "aspect": 1.7777777777777777,
         "sourceEmbed": "https://www.youtube.com/embed/poEZ7qcoZXI",
-        "deliveryStatus": "source-master-needed"
+        "deliveryStatus": "source-master-needed",
+        "lqip": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwBACdASogABIAPxFyr1AsJqQisAgBgCIJZQDE2Yuk3nAau+c57ZyM+twrwAD+7o/tOFM0fm9dxyJHKwkfKNAAhrd1EVt6TJzLorp61uAfPIxaA816bq+IqpmFDkhEUdbcHMUw/vfwefwEwAA="
       }
     ],
     "rows": [
@@ -503,7 +521,8 @@
       "alt": "CGI ferns growing along a city pavement in Barbour’s Icons in Quilting campaign",
       "aspect": 1.6,
       "sourceEmbed": "https://www.youtube.com/embed/oeVS_Q1VsKU",
-      "deliveryStatus": "source-master-needed"
+      "deliveryStatus": "source-master-needed",
+      "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAAAQBQCdASogABQAPxF0sVAsJySisAgBgCIJYwDE3AgBRWH2gptw741s6PtozAU+JV2kAP67JmoXDljUc36dVLvoQUxsx8qXNpcYNC/O0W/cdzp94/DDRqzhe85w+kO+DN2Xsl4QTemFq8y+IzkHwQCY/AojpH1iw5TPYuIrXVb6prL/vUzi4730jzuIemTKxYYg6xy5IzbflViSuGjv3CgAAAA="
     },
     "caption": "Barbour · Icons in Quilting campaign",
     "approach": [
@@ -541,21 +560,24 @@
         "alt": "Quilted fabric covering buildings beside a city bridge",
         "aspect": 0.75,
         "sourceEmbed": "https://www.youtube.com/embed/12xJ6Qkvtxw",
-        "deliveryStatus": "source-master-needed"
+        "deliveryStatus": "source-master-needed",
+        "lqip": "data:image/webp;base64,UklGRooAAABXRUJQVlA4IH4AAAAQBQCdASogABIAPxF8s1QsJ6QjKAqpgCIJZQDKADTd0M3AZy8Uf2CLg/Se38IaxnMAAP71bokH+Ni/3uUjz7uI2SKBbQeQkBL1QiBEOghuR0zXdqxutOz6RlWC+wdK60ICNn2FZh87dzJFSlchx3JmQn1HXdB4LvpzDegUAAA="
       },
       {
         "poster": "/images/portfolio-2027-barbour-media-03.webp",
         "alt": "Oversized ferns and quilted surfaces added to a city square",
         "aspect": 0.75,
         "sourceEmbed": "https://www.youtube.com/embed/mzHQ8lmL7BA",
-        "deliveryStatus": "source-master-needed"
+        "deliveryStatus": "source-master-needed",
+        "lqip": "data:image/webp;base64,UklGRnQAAABXRUJQVlA4IGgAAACwBACdASogABIAPxF2sVAsJ6SisAgBgCIJZwAAWrB0l/Wh+wcTUdzhQICAhP8AAP7r9aeGwON/fHzbnDlWyKWSAxItwH1OPwFSgUWIgFgOH5aKBWrDCpJIsjduonY0764c/NSy9CgAAA=="
       },
       {
         "poster": "/images/portfolio-2027-barbour-media-04.webp",
         "alt": "Quilted fabric and ferns surrounding a courtyard entrance",
         "aspect": 0.75,
         "sourceEmbed": "https://www.youtube.com/embed/6U9uTPf64nU",
-        "deliveryStatus": "source-master-needed"
+        "deliveryStatus": "source-master-needed",
+        "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADQBACdASogABIAPxF+s1QsKCQjKAqpgCIJZwDOdBDe0zNCxYS5Oi9onxsbs0yAAAD+6OXZYV+EZ2CveZjUGIeOy6c6BPpkQxm09lVZPxsZeERTlswHaikFayiNEu7+owGLdvgspe9UwJ7SD3cYJ3PLzZBdeEAA"
       },
       {
         "poster": "/videos/posters/Barbour---IiQ---Reconstruction-2---BTS---4x5.jpg",
@@ -565,7 +587,8 @@
         "posterAlt": "Barbour FOOH campaign CGI reconstruction behind-the-scenes",
         "title": "Barbour FOOH campaign CGI reconstruction breakdown",
         "srcMp4": "/videos/other/Barbour---IiQ---Reconstruction-2---BTS---4x5.mp4",
-        "srcWebm": "/videos/other/Barbour---IiQ---Reconstruction-2---BTS---4x5.webm"
+        "srcWebm": "/videos/other/Barbour---IiQ---Reconstruction-2---BTS---4x5.webm",
+        "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABQBQCdASogACgAPxGAtVMsKKUiqrgKAYAiCWlh4ABMcodRAGoHyqckdNi9NRT/jvS6oAAA/uzVOeHKvRpw+BLy/2XYxYWUBCnhh7XaPmpgPKDzKjLd4WvZAg7UIoRumdyWcRwoEpGR9UV40q2/qh3dmBoVaU3bQOzq0+EUbcyFm/njigUXAUg16kB/g/YzqWNGaaxmYQAAAA=="
       },
       {
         "poster": "/videos/posters/Barbour---IiQ---Fern-03--BTS----4x5.jpg",
@@ -575,7 +598,8 @@
         "posterAlt": "Barbour FOOH campaign CGI nature detail behind-the-scenes",
         "title": "Barbour FOOH CGI nature detail breakdown",
         "srcMp4": "/videos/h264/Barbour---IiQ---Fern-03--BTS----4x5.mp4",
-        "srcWebm": "/videos/other/Barbour---IiQ---Fern-03--BTS----4x5.webm"
+        "srcWebm": "/videos/other/Barbour---IiQ---Fern-03--BTS----4x5.webm",
+        "lqip": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAADwAgCdASogACgAPxGGvFcsKSYjpWgBgCIJaQAAKUNt8AD+8GmAAAAA"
       },
       {
         "poster": "/videos/posters/Barbour---IiQ---Instant-Render-2---BTS----4x5.jpg",
@@ -585,7 +609,8 @@
         "posterAlt": "Barbour FOOH campaign instant render VFX breakdown",
         "title": "Barbour FOOH VFX render breakdown",
         "srcMp4": "/videos/h264/Barbour---IiQ---Instant-Render-2---BTS----4x5.mp4",
-        "srcWebm": "/videos/other/Barbour---IiQ---Instant-Render-2---BTS----4x5.webm"
+        "srcWebm": "/videos/other/Barbour---IiQ---Instant-Render-2---BTS----4x5.webm",
+        "lqip": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAABQBQCdASogACgAPwlwrVArpqQisBqtUXAhCWUAAJ00lKkLJXUjJdQqEFk1Rz2iCI4CDbgA/vR4+/W6rTiBa3XEUnAyu2aPKu5D3SfPCntXd81jHoXfhfomFCnzHlcrGPmgSDD+dtuiEIS2XgcUC/N3f9KYyf0Bv9shsq90UQbajzwH2yaXwAAA"
       },
       {
         "poster": "/videos/posters/Barbour---IiQ---Nodes---BTS----4x5.jpg",
@@ -595,7 +620,8 @@
         "posterAlt": "Barbour FOOH campaign Houdini and CGI node setup",
         "title": "Barbour FOOH CGI node setup breakdown",
         "srcMp4": "/videos/h264/Barbour---IiQ---Nodes---BTS----4x5.mp4",
-        "srcWebm": "/videos/other/Barbour---IiQ---Nodes---BTS----4x5.webm"
+        "srcWebm": "/videos/other/Barbour---IiQ---Nodes---BTS----4x5.webm",
+        "lqip": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAwCdASogACgAPxF6tFOsJ6SipWzJgCIJaQAAKlDflmLc2eY4g4AA/uy4T+S5rV1U9u1oliel0XQv0/wAAA=="
       },
       {
         "poster": "/videos/posters/Barbour---IiQ---Bus---BTS----4x5_1.jpg",
@@ -605,7 +631,8 @@
         "posterAlt": "Barbour FOOH campaign bus scene VFX breakdown",
         "title": "Barbour FOOH bus scene CGI breakdown",
         "srcMp4": "/videos/h264/Barbour---IiQ---Bus---BTS----4x5_1.mp4",
-        "srcWebm": "/videos/other/Barbour---IiQ---Bus---BTS----4x5_1.webm"
+        "srcWebm": "/videos/other/Barbour---IiQ---Bus---BTS----4x5_1.webm",
+        "lqip": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADQBACdASogACgAPu1mplAppiOjOrzIATAdiWkAAIHvgPwlgTSQfePqJBxAN+xbwAD+7C/h665KmG9yitP4ZaRVR+QXGdPLoMWCLdDwpklly7dkLZrZ1Vn1ZJFRbwea5hljeGeoHAIP/EhkMkBvrpUXwJ1vqjrPMwAAAA=="
       },
       {
         "poster": "/videos/posters/Barbour---IiQ---Fern-02--BTS----4x5.jpg",
@@ -615,7 +642,8 @@
         "posterAlt": "Barbour FOOH campaign fern simulation VFX breakdown",
         "title": "Barbour FOOH nature simulation breakdown",
         "srcMp4": "/videos/h264/Barbour---IiQ---Fern-02--BTS----4x5.mp4",
-        "srcWebm": "/videos/other/Barbour---IiQ---Fern-02--BTS----4x5.webm"
+        "srcWebm": "/videos/other/Barbour---IiQ---Fern-02--BTS----4x5.webm",
+        "lqip": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAADwAgCdASogACgAPxGGvFcsKSYjpWgBgCIJaQAAKUXZiAD+6lqwAAAA"
       }
     ],
     "rows": [
@@ -732,7 +760,8 @@
       "aspect": 1.6,
       "srcH265": "/videos/h265/vsx-knitting-header-v3-web.mp4",
       "srcAv1": "/videos/av1/vsx-knitting-header-v3.webm",
-      "srcMp4": "/videos/h264/vsx-knitting-header-v3-fallback.mp4"
+      "srcMp4": "/videos/h264/vsx-knitting-header-v3-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAwBACdASogABQAPxFysFAsJqSisAgBgCIJZACdMtDEZw0FOpCT561OOSAA/u27yqsx29mst8mSljNvEu76ZLtsJfbvIRoF/kRNCRpXMBVsN5uCoD2y3jtEsiuaTq9CCy3UWGWeWRYqU6Ksy2kEglseLWEotAAA"
     },
     "caption": "VSX Sports Bra · Knit and fabric detail",
     "approach": [
@@ -770,7 +799,8 @@
         "aspect": 1.5384615384615385,
         "srcH265": "/videos/h265/vsx-knitting-product-v2-web.mp4",
         "srcAv1": "/videos/av1/vsx-knitting-product-v2.webm",
-        "srcMp4": "/videos/h264/vsx-knitting-product-v2-fallback.mp4"
+        "srcMp4": "/videos/h264/vsx-knitting-product-v2-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAABwBQCdASogABQAPxF8slQsJ6QjKAqpgCIJagC1GoR4wEEK0nzG4RZI5nIh+ncm/P8zRoIAAP5S1zeyYF7xRr2zeip9qF4/pqL7IAlS/o8vdq8ssgJRiO4XBC0mrotykALob3tuwXTAY/UcGs51/8W4470OOQmw1Dae3cWqpZtEZ6snSkWrYAOSJTKHCU/G0OrET9dqeMAAAA=="
       },
       {
         "poster": "/videos/posters/vsx-knitting-fabric-v2.jpg",
@@ -778,7 +808,8 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/vsx-knitting-fabric-v2-web.mp4",
         "srcAv1": "/videos/av1/vsx-knitting-fabric-v2.webm",
-        "srcMp4": "/videos/h264/vsx-knitting-fabric-v2-fallback.mp4"
+        "srcMp4": "/videos/h264/vsx-knitting-fabric-v2-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAADwBQCdASogACgAPwlwrlArpqQisAqpcCEJQBj9AP8HpJQk14lxCesPmVdNib4NOP/MLNJcvMcFiAD+r5sIPSLl+c2TthOT9KTdJWUhTLQMVnirYgyKWlPQpBCKtJUNlVxPXhkqQ7raIFWNCozw6FwxxgJp8MHZue6LjbXoxEv3MOSCNxSPgbMOyx1PjmOAAAA="
       },
       {
         "poster": "/videos/posters/vsx-knitting-knit-breakdown-v2.jpg",
@@ -786,7 +817,8 @@
         "aspect": 1,
         "srcH265": "/videos/h265/vsx-knitting-knit-breakdown-v2-web.mp4",
         "srcAv1": "/videos/av1/vsx-knitting-knit-breakdown-v2.webm",
-        "srcMp4": "/videos/h264/vsx-knitting-knit-breakdown-v2-fallback.mp4"
+        "srcMp4": "/videos/h264/vsx-knitting-knit-breakdown-v2-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAABQAwCdASogACAAPxF8r1MsJ6OiqA1RgCIJZwDA3Bm5k7EsgAD+791ZyaGQEWACmLkeclAIvD42hpYAOrHpdW8R5DiYqYAA"
       },
       {
         "poster": "/videos/posters/vsx-knitting-weave-breakdown-v2.jpg",
@@ -794,7 +826,8 @@
         "aspect": 1,
         "srcH265": "/videos/h265/vsx-knitting-weave-breakdown-v2-web.mp4",
         "srcAv1": "/videos/av1/vsx-knitting-weave-breakdown-v2.webm",
-        "srcMp4": "/videos/h264/vsx-knitting-weave-breakdown-v2-fallback.mp4"
+        "srcMp4": "/videos/h264/vsx-knitting-weave-breakdown-v2-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAwAwCdASogACAAPxF+slQsKCQjKAqpgCIJaQAAPgBGg0gAAP7wUyEOHIyld+sQ7M8oAAAA"
       }
     ],
     "rows": [
@@ -850,7 +883,8 @@
       "alt": "A silver necklace above a sculpted display stand, blue landscape and orange sun",
       "aspect": 1.6,
       "sourceEmbed": "https://www.youtube.com/embed/vMFwsejYYaU",
-      "deliveryStatus": "source-master-needed"
+      "deliveryStatus": "source-master-needed",
+      "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABQBQCdASogABIAPxF8slGsKCSisBgIAYAiCWoAtRqDGABsuo21BUbR/BZ4Ruo7RQdFOQAA/hTJ77DjROkxOISYaJXptZu1+8vmuzTusr939g0jnrjIIE+Gru+IpMmF4dKa7WGgV7SAtNy4OWRVF2w0Got1ePPbTRNiXzVj57Rhsdrz8E7iJaGvLOQ5tuv/ezPALSruC7fa4UI2coCH9yNJQAA="
     },
     "caption": "Chainer · Jewellery animation",
     "approach": [
@@ -888,27 +922,32 @@
         "alt": "Monochrome terrain and a column in a Chainer scene breakdown",
         "aspect": 1.7777777777777777,
         "sourceEmbed": "https://player.vimeo.com/video/881397523?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479",
-        "deliveryStatus": "source-master-needed"
+        "deliveryStatus": "source-master-needed",
+        "lqip": "data:image/webp;base64,UklGRn4AAABXRUJQVlA4IHIAAADwBACdASogABIAPxFyrFAsJqQisBgMAYAiCWkAACnbUfh3d1DLEeiWjV2OSSGIHlAA/q+bFzlC/Ynrajd+OnmbtcsH3e58zL1lZALGA1SXOmvwdgFfYDk+bvqe4sI93e0w8RJVp7BhnE7rNxvegJZo4AA="
       },
       {
         "poster": "/images/chainer-case-0.webp",
         "alt": "A ring and columns in a grey Chainer lighting and scene breakdown",
-        "aspect": 1.7777777777777777
+        "aspect": 1.7777777777777777,
+        "lqip": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAQBQCdASogABIAPxF8s1GsKCSisBgIAYAiCWkAAIrc8jFNoM1627gwzVu2lC2de3NwAP7D/bHCc6HyCgkwhyyXhvAtRkTMSYxJVRJx9S1vNdEeAdydFXt+8adSr6LhtlBAT/h8coRm+Tzx3EF97IU5okY9uUjgEmp+wtAxVx96IDyJDAAAAA=="
       },
       {
         "poster": "/images/chainer-case-1.webp",
         "alt": "A reflective ring floating between columns above a grassy landscape",
-        "aspect": 1.7777777777777777
+        "aspect": 1.7777777777777777,
+        "lqip": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAADwBACdASogABIAPxF4sVIsJySisBgIAYAiCUAYZoaOHWZK75lK6nthNqstaaGMriYA/t6ugzpKEuJPaIsSoju5PSi/YtRrhS2SGoCjHAFyIr1jwA5QRyHQyETjrnV/PJrVvZlX4ATiOwZSbTk8Te+rsJ+6gl8i9GiRGu0MLXErhWK6zaAqsjl/yxI5Ujic2XG0ARwK053smTTza8AAAA=="
       },
       {
         "poster": "/images/chainer-case-2.webp",
         "alt": "A necklace on a dark display stand against an orange sun and blue landscape",
-        "aspect": 1.7777777777777777
+        "aspect": 1.7777777777777777,
+        "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAAAwBQCdASogABIAPxF2sVAsJ6SisAgBgCIJZgCsMvUsdD93vWt80IHN++3pXBufiMtmgAD+EJlixgRexSr/KDzBSPbR2r/cRRgGSJO6pJAsztfbpArRPFdo+z+5gCsVzuBgnNGDHdJ9pAWm5SX7buumF3k9akohXQ79FLRWjiK1aT/7LRLmVgj5AH5lFVTTZkLHML/7NulTKYHRMd6yiwICTIfA3V2oAAA="
       },
       {
         "poster": "/images/chainer-case-3-2.webp",
         "alt": "Silver rings arranged in a circle above a red landscape",
-        "aspect": 1.7777777777777777
+        "aspect": 1.7777777777777777,
+        "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAAAQBQCdASogABIAPvVgplAqpaOit+gBUB6JZwDIXYv/SjZ8voapxyGZcAkXM1mp/HpAAP7ulIRLMFG5DMr/w1lKROSWTIYdtRVDqaZ9MVZdo6rr2Fc9WMdDuDtarIuFqgInpk7Fk0wg05BT6UX6Ag67p2kFRRcnkTv8MPuAFR7/IkMm/68xvo2il6lhv8Y1MAA="
       },
       {
         "poster": "https://uploads-ssl.webflow.com/5d626c045bf4d84a1c256e90/655a493d6c7b81432a945607_Comp 1 - FB (1)-poster-00001.jpg",
@@ -923,17 +962,20 @@
       {
         "poster": "/images/chainer-case-3.webp",
         "alt": "A silver square-faced ring above a dark textured surface",
-        "aspect": 1
+        "aspect": 1,
+        "lqip": "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAACwBACdASogACAAPxF2s1IsJySisBgIAYAiCWkAAR7rNz11yTd7IZtt5aX9GYQAAP765iKsNT93jFbclzgSIbOr+235rrbsEmXEydXk6DDRai48xbdONBMQCcnrSUGHNaAAAA=="
       },
       {
         "poster": "/images/chainer-case-4.webp",
         "alt": "A reflective ring suspended above green terrain beside bare trees",
-        "aspect": 1
+        "aspect": 1,
+        "lqip": "data:image/webp;base64,UklGRu4AAABXRUJQVlA4IOIAAACwBQCdASogACAAPwVyq1Arp6Oit/VYAXAgiWMAz2mwhdLsIZcgRlK/0pt+t6PN9iHm0RX/24AA/o+240UdA7qTuhu/Nw0ihOddX+fDwKxvsqwswaeaJy3NTAnnb+qdalZLXRvyhKqaBdFEMfT/IfUPLoFsPOTr5hyEqPTDs0PTsWFG4nyKyMZvh7qXBOtnpDqKpmq5DlWebHll3QKRZE6NzM6MehM97h/XqM0ay2ykWVknWeW2ne5kxjbPq0SxgpCbwT/uDmJTJftOzPtNRefCf+HtLE/ys1yYO7GzwTjVkgAA"
       },
       {
         "poster": "/images/chainer-case-5.webp",
         "alt": "A silver band floating above a red landscape and low clouds",
-        "aspect": 1
+        "aspect": 1,
+        "lqip": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAACwBQCdASogACAAPxF0sVAsJySisAgBgCIJaACo9Gmj4nF1ilOkZFNlO7nFDiXptLVq83TiAAAA/tTk6gw6wsU789DJlhhSFuk/QxthqqnnYsVJyxdUuWixz+RMb6LXqDges7KJJc/4m219hCTe8u6pFMJzpUdC2AeUKlFot9SLeummS29p7iWPyLKKUvBOfeKcX8aAJ2rk58VBPpi26U38+acoAA=="
       }
     ],
     "rows": [
@@ -1011,7 +1053,8 @@
       "aspect": 1.7777777777777777,
       "srcH265": "/videos/h265/outpost-fantasy-reel-v1-web.mp4",
       "srcAv1": "/videos/av1/outpost-fantasy-reel-v1.webm",
-      "srcMp4": "/videos/h264/outpost-fantasy-reel-v1-fallback.mp4"
+      "srcMp4": "/videos/h264/outpost-fantasy-reel-v1-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAABwAwCdASogABIAPxF0sVAsJySisAgBgCIJZwAAccHNt6XWRgAA/u/H3x+1tN198+8E6CWapX/9nbcaf8eHYxCgVWvAGizwyPgAAA=="
     },
     "caption": "Website showcase · Reel excerpt",
     "approach": [
@@ -1046,17 +1089,20 @@
       {
         "poster": "/images/outpost-fantasy-desktop-v1.webp",
         "alt": "Custom desktop display mockup showing the Fantasy mark in a light studio setting",
-        "aspect": 1.7777777777777777
+        "aspect": 1.7777777777777777,
+        "lqip": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAABQBQCdASogABQAPxF6sVGsKCSisBgIAYAiCWcAz6AyyXjXdj8HYjBD8NbegvzU8eMsAYAA/sP50GoaZvcmr5hlj67CuP5KbNvcvfu/Af4u53AUdHVVSBkSzY4aWofE0oY024WvtK27h+lLhdsJUYHE1fKatW3ECh9g0m4yl221QAAA"
       },
       {
         "poster": "/images/outpost-fantasy-tablet-v1.webp",
         "alt": "Custom tablet mockup with the Fantasy mark on a dark screen above a stone plinth",
-        "aspect": 1.7777777777777777
+        "aspect": 1.7777777777777777,
+        "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAAAwBQCdASogABQAPxF2slAsJ6SisAgBgCIJaQDO7CHgBRjWLAez5dF2uS+Drt1Az27V4AD+rxBG+sYTGsQ98ISNC/FoP9/Fx7NKk4T6yyenRaiYkOSab8+yrbAKx21m8N+0H4RNN1DhooHhkuCYm5vUTPwr4AAA"
       },
       {
         "poster": "/images/outpost-fantasy-phone-v1.webp",
         "alt": "Custom phone mockup displaying the Fantasy mark on a reflective metal surface",
-        "aspect": 1.7777777777777777
+        "aspect": 1.7777777777777777,
+        "lqip": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAABQBQCdASogABQAPxF8slIsKCSisBgIAYAiCWkAAC54HEVMKa7d27JGo/8nm81zUvQ8jwAA/sPf5Pz29clMik8QHczbE32wBJLmUDN98Y6SaM8ELjOqJs3NHQnFGs4LeX7u+xUqofRUnywBFeFTMtRogV4k2QPMUpSdLEhiUEjMWHwnl0CkDg2oMEZAAAAA"
       }
     ],
     "rows": [
@@ -1128,7 +1174,8 @@
           "aspect": 1.7777777777777777,
           "srcH265": "/videos/h265/vojta-zizka-patreon-v1-web.mp4",
           "srcAv1": "/videos/av1/vojta-zizka-patreon-v1.webm",
-          "srcMp4": "/videos/h264/vojta-zizka-patreon-v1-fallback.mp4"
+          "srcMp4": "/videos/h264/vojta-zizka-patreon-v1-fallback.mp4",
+          "lqip": "data:image/webp;base64,UklGRnAAAABXRUJQVlA4IGQAAAAQBACdASogABIAPxF4tVOsJyUiqAqpgCIJYwDE2AyITllVzCkutisFEAD+6/6O44Z36TfOFVywGf2NNNZXhdWBdhPk9eoDU1/aO+YKUz7KmkD8Uhqn3TvARxN/POafm9CRJAAA"
         },
         "caption": "CSV to animated supporter credits"
       },
@@ -1144,7 +1191,8 @@
           "aspect": 1.7877094972067038,
           "srcH265": "/videos/h265/vojta-zizka-market-charts-v1-web.mp4",
           "srcAv1": "/videos/av1/vojta-zizka-market-charts-v1.webm",
-          "srcMp4": "/videos/h264/vojta-zizka-market-charts-v1-fallback.mp4"
+          "srcMp4": "/videos/h264/vojta-zizka-market-charts-v1-fallback.mp4",
+          "lqip": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAADQBACdASogABIAPxFyr1AsJqQisAgBgCIJQBcVAiYyVkfMWQ91q5aSYXJ1CkyXQADJwn2ho7uqzjNwu9DbcOpNbPLrrm6JoQu2nLPSsTYH3Ib3mTtWVE2Xf7Jc/ajUFcTDRsFncFmMjhYXbqXCeZscFAmvRd3Bpvqr4rdFACX9+cxiUCbYtA+IG5OuUyflEYSL0s2MpTT9XWxg28XLaugEFZB6Oj7OAV8fgAAA"
         },
         "caption": "Automated charts in the finished video"
       }
@@ -1257,7 +1305,8 @@
       "aspect": 1.7777777777777777,
       "srcH265": "/videos/h265/outpost-gusto-reel-v1-web.mp4",
       "srcAv1": "/videos/av1/outpost-gusto-reel-v1.webm",
-      "srcMp4": "/videos/h264/outpost-gusto-reel-v1-fallback.mp4"
+      "srcMp4": "/videos/h264/outpost-gusto-reel-v1-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAACwBACdASogABIAPwFkq1ArJSQit/qoAWAgCWwAsR7aQ0FG3tHYXCKtMx0NFB8AAP5Rpm/96TZivrMJAHP6a/B6WuClZzCXeIfjJkE1UKcDk95bXQfoKMRJgr6yWucu+1CnrRPd+jEEtsxaudhHxGHB0aivVJk0dTZJQoAA"
     },
     "caption": "Gusto · UI design showreel",
     "approach": [
@@ -1296,7 +1345,8 @@
         "aspect": 1.7777777777777777,
         "srcH265": "/videos/h265/outpost-gusto-themes-v2-web.mp4",
         "srcAv1": "/videos/av1/outpost-gusto-themes-v2.webm",
-        "srcMp4": "/videos/h264/outpost-gusto-themes-v2-fallback.mp4"
+        "srcMp4": "/videos/h264/outpost-gusto-themes-v2-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACQAwCdASogABIAPxF2slAsJ6SisAgBgCIJZwDDrCHfjIzSV3QAAP7qZS/FJk9VNiWSuWSg6PbmWZiHqfTw+MeqAAA="
       },
       {
         "poster": "/videos/posters/outpost-gusto-modules-v2.jpg",
@@ -1304,7 +1354,8 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/outpost-gusto-modules-v2-web.mp4",
         "srcAv1": "/videos/av1/outpost-gusto-modules-v2.webm",
-        "srcMp4": "/videos/h264/outpost-gusto-modules-v2-fallback.mp4"
+        "srcMp4": "/videos/h264/outpost-gusto-modules-v2-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAABQAwCdASogACgAPxF+tVUsJ6SjJWsxgCIJYwDKABBbCOP0AAD+7ovN0atHwfc/R9af4NcY1qniHq62QizeqJdX3POKQAAA"
       },
       {
         "poster": "/videos/posters/outpost-gusto-customization-v2.jpg",
@@ -1312,7 +1363,8 @@
         "aspect": 1.7777777777777777,
         "srcH265": "/videos/h265/outpost-gusto-customization-v2-web.mp4",
         "srcAv1": "/videos/av1/outpost-gusto-customization-v2.webm",
-        "srcMp4": "/videos/h264/outpost-gusto-customization-v2-fallback.mp4"
+        "srcMp4": "/videos/h264/outpost-gusto-customization-v2-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRogAAABXRUJQVlA4IHwAAABwBACdASogABIAPxF6tlOsJ6UiqAqpgCIJYgC7MzQ6SBLMrskvOut5r4FuPAD+ufth6f4kYpQU3YELnwbkU0Y2EUcpPw4mm3BUjD2IRpt77Dwgq4drHMjGEsY0NyH95XqU0o/J1rdpWAJTZj3IE1U7302ilajv3r70AAAA"
       },
       {
         "poster": "/videos/posters/outpost-gusto-macbook-v1.jpg",
@@ -1320,7 +1372,8 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/outpost-gusto-macbook-v1-web.mp4",
         "srcAv1": "/videos/av1/outpost-gusto-macbook-v1.webm",
-        "srcMp4": "/videos/h264/outpost-gusto-macbook-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/outpost-gusto-macbook-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRhwBAABXRUJQVlA4IBABAAAwBwCdASogACgAPw1urFAsJiQitVgIAYAhiWIAgpYsIOYp+3tnZJvEQE8MPgtb9NpH3po3JWHPUaoUn+Rm/MukdAAA/SClPn8rk1yQ7dBOQUeMKgKivtvdlFhx++ZvaSzjHumEjQPKG9qH1uiCVz9uzgek9/fjF1PQAs+rTgTa08wcmJFiLSFtxC/g3MLffyzzK/B+8v5EwI1b7pjnOrLgdHurvV1UeU0rcMTkMFB9xt4wVdhCVlG3YqjLCO/FoaSFPSVuf0QJQ0NZGfTmngX1WFxoD+cNFqSyIwredFYgPZ0B3OsDqdoiK+uj6G5BOvP+Tn4XRFLkx/+3fVRD9x4OvxUFJAV09kvcN8uzWxQAAA=="
       },
       {
         "poster": "/videos/posters/outpost-gusto-templates-v2.jpg",
@@ -1328,7 +1381,8 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/outpost-gusto-templates-v2-web.mp4",
         "srcAv1": "/videos/av1/outpost-gusto-templates-v2.webm",
-        "srcMp4": "/videos/h264/outpost-gusto-templates-v2-fallback.mp4"
+        "srcMp4": "/videos/h264/outpost-gusto-templates-v2-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRi4BAABXRUJQVlA4ICIBAACQBgCdASogACgAPxFusFMsJaQisBVaqYAiCWMAzHh7avL8TRI7J6iqC6SVjUXTimF9Csyn2Vgkk117o2mAAPlcLb7+xPOkQOLifKov5taUx6fZPJzJUfC6vbEpYenuWMidSTFUCLkVD0wcmOezKQPo3lkl7zord/WVd+usgIttvQ7VxbzzW1TQgDpDKWR4RD6FjQLO8Ys1VvS8cqLLVOZx5LKjdbM+hsAA5yAuJRUN4djZ2FrlMfpG47noTgn5b78I0osDwstf7xm9YTADjb+mQpRjIL+yJjq9oHfe6WukkfySyswx9ADs0b+qYJxfz2mg/+H2HWpTWfFbIgwChRWfv5LGzc1wbpZNtZZ5aCn4CLPcWeiJ9jn8jc84fP1KoXIAAA=="
       },
       {
         "poster": "/videos/posters/outpost-gusto-devices-v1.jpg",
@@ -1336,7 +1390,8 @@
         "aspect": 1.7777777777777777,
         "srcH265": "/videos/h265/outpost-gusto-devices-v1-web.mp4",
         "srcAv1": "/videos/av1/outpost-gusto-devices-v1.webm",
-        "srcMp4": "/videos/h264/outpost-gusto-devices-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/outpost-gusto-devices-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABwBACdASogABIAPxFwrlAsJiQisAgBgCIJZACxG2uBZfUj/UrdUp3yDqtUgAD8+1kkBBzqpJH4xTvMZUd2YhYaJORAnRFMPoWLHPG/6s+N8bhZp3Di+DBDXqNbb4pI+QLjWoZmkgU2txK3TVqE5u6mnUmlGYHvVeBIF3NgqUtPVq7IGJdFRGAi100TB8qmy/bi/QOXMjg4Z5usOIcYgAAA"
       }
     ],
     "rows": [
@@ -1419,7 +1474,8 @@
       "aspect": 1.6,
       "srcH265": "/videos/h265/shelby-macbook-v1-web.mp4",
       "srcAv1": "/videos/av1/shelby-macbook-v1.webm",
-      "srcMp4": "/videos/h264/shelby-macbook-v1-fallback.mp4"
+      "srcMp4": "/videos/h264/shelby-macbook-v1-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAAAQBQCdASogABIAPxFys1MsJiSisBgIAYAiCUAWcAav/2fgjmGEQY3KLSwwQszB09zOAP7Tpf38dQaWfuvbKJlcqpfd4uDXu78MI3emGJ1MRBxxJCYFg5oogW2fyiQST/E1hXYwy6QM6vsWWw/WBgcXYCJBvmJpuUPkqhR9q0x5Z4HoZQgZFKGZLHgUzBPhyZ+fMMXF2l3596SbwbzqGO8bTYt9GObgAAA="
     },
     "caption": "Shelby · Custom MacBook mockup",
     "approach": [
@@ -1458,7 +1514,8 @@
         "aspect": 1.7777777777777777,
         "srcH265": "/videos/h265/shelby-ipad-v1-web.mp4",
         "srcAv1": "/videos/av1/shelby-ipad-v1.webm",
-        "srcMp4": "/videos/h264/shelby-ipad-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/shelby-ipad-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAAAwBQCdASogABIAPxF0sFAsJySisAgBgCIJYgCdACHnJxTSxqC5NiDOe3OGLtqyx5PJAAD+jxwAuQFGaADdOqcu3vWltS1y8mWL7EdtBqtBLBsR7KJu+GjtOpJrxTb0DqaEzIRLqJxsQ+Y/YvU/ehlSvzdQ3Sr1aGIehpHuLqdLmEV8agVvFOWwWErthKiVL7PwTNJca4nJxoIayS8W+E/eXNs0ss0yucqAAA=="
       },
       {
         "poster": "/videos/posters/shelby-pin-v1.jpg",
@@ -1466,7 +1523,8 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/shelby-pin-v1-web.mp4",
         "srcAv1": "/videos/av1/shelby-pin-v1.webm",
-        "srcMp4": "/videos/h264/shelby-pin-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/shelby-pin-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACwBQCdASogACoAPw1yslAsJqSisBqqqYAhiWMAxNg6fWbnusfaD4DyxOpQHpB/A0ZXP8cKtMAA/u0w27f6i3Kfm5DTPG2HHYMttolsIu7nEGZLPhXL5gQ2bV/VQC2CZKkExrYDjItSolK+mkEvYUKUz0LoUSjZYU+DMHCMl27G8AopmUMRqk/fJ3KwUvNYAAA="
       },
       {
         "poster": "/videos/posters/shelby-badge-v1.jpg",
@@ -1474,12 +1532,14 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/shelby-badge-v1-web.mp4",
         "srcAv1": "/videos/av1/shelby-badge-v1.webm",
-        "srcMp4": "/videos/h264/shelby-badge-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/shelby-badge-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAABwBQCdASogACoAPxF0sVGsJqSisBqoAYAiCWYAsSVAAsRysLOFl+fFGlsepWd/OSAJrVqAAP74TO8v9O1UgLY+qoAMkDEw2o6KTeXg7vdqhoffJ7aFYmU+QOpaoe6X7ExilS7esLb/2u6OgD9T2+jFj05VuIm58DcPNJEOCqI5LFNrvqnSGOqb7QRrJK0xLxZaS5e5DPRaAckrO0xaH2YDyUyna1RFLTld1exO3+vCOgTrFhbtFdoA"
       },
       {
         "src": "/images/shelby-phone-v1.webp",
         "alt": "Shelby website on a phone on a wooden desk beneath a perforated wall",
-        "aspect": 1.7777777777777777
+        "aspect": 1.7777777777777777,
+        "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAADQBACdASogABIAPxF0sFAsJqSisAgBgCIJYwC7ABsBv4IUnY6KZuqJEtL4MN8GwAD5+1AV4VeXLxvrA9tNB8sUixoemok6kS3KyL0oITmPy3VtMOlvS6rSaRbxF2Ps6nn1gQIvb8sm1enyuAjUjtATBiVrsVSbX0Izg0Gl56Cj/unptmZTWgf2oPEli1R/NR2xoZ6dZ74wAAAA"
       },
       {
         "poster": "/videos/posters/shelby-flask-v1.jpg",
@@ -1487,7 +1547,8 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/shelby-flask-v1-web.mp4",
         "srcAv1": "/videos/av1/shelby-flask-v1.webm",
-        "srcMp4": "/videos/h264/shelby-flask-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/shelby-flask-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAAAQBgCdASogACoAPxFwrlIsJaOisBVdUYAiCWMAvzwIHYAE5X+/pz096v1TPUBmoS0Uqxv2LFEh8IAA/ucHn0Cpmrv1mtCdG5degtlvVQFyXeSxD+Mkr215KKod0U9alpspAEwYnWe9C1hOtOMjTkxRuurrD1tL2fUJQIJ9LbQUopaQChk8jIvtkYT/Oyh6EZ+K4LA1X/0uiyAAAAA="
       },
       {
         "poster": "/videos/posters/shelby-merch-v1.jpg",
@@ -1495,7 +1556,8 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/shelby-merch-v1-web.mp4",
         "srcAv1": "/videos/av1/shelby-merch-v1.webm",
-        "srcMp4": "/videos/h264/shelby-merch-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/shelby-merch-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRoQAAABXRUJQVlA4IHgAAABwBQCdASogACoAPwl0rlArpyQitVgIAXAhCWMAuwBFbWX0mNLA+jS1R2b4585JriGkQ9gAAP7osSLetI/XD/hjy13b6vGRr7vFEWHI+UDHlJfsOIwgpDF170MEPueXteCUoCA/i0sXghJbuskf/XluXo0A+VKwAAA="
       }
     ],
     "rows": [
@@ -1584,7 +1646,8 @@
       "aspect": 1.7777777777777777,
       "srcH265": "/videos/h265/outland-rounds-wide-indoor-v1-web.mp4",
       "srcAv1": "/videos/av1/outland-rounds-wide-indoor-v1.webm",
-      "srcMp4": "/videos/h264/outland-rounds-wide-indoor-v1-fallback.mp4"
+      "srcMp4": "/videos/h264/outland-rounds-wide-indoor-v1-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRrAAAABXRUJQVlA4IKQAAAAwBQCdASogABIAPxFysFAsJqSisAgBgCIJZQCuHCPOphW30dqYe4byFdsaW8I+o0elgAD3izB9KpMH3Wdy04qckV3Z2d3j+0ksd+UEFULrC7DJbLZy0PLzHy1XX1sqAkcJ0j1gGhF1Xp+peXn3ebTIVDPE2oCJ9BZ3NADjP/7SAQcPDdal7Z9PG91kWVhC/swsZ2x1A8pWwbtpxEw10vrzgBKAAA=="
     },
     "caption": "Rounds · Clubhouse brand world",
     "approach": [
@@ -1623,7 +1686,8 @@
         "aspect": 1.7777777777777777,
         "srcH265": "/videos/h265/outland-rounds-phone-indoor-v1-web.mp4",
         "srcAv1": "/videos/av1/outland-rounds-phone-indoor-v1.webm",
-        "srcMp4": "/videos/h264/outland-rounds-phone-indoor-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/outland-rounds-phone-indoor-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAABQBQCdASogABIAPxFwrlAsJiQisAgBgCIJYwCw7CPUpiaj/2loicz1AzL/B7Cwj84wy1gA9zoWgDDMpEQHMFtj/8Nqa6T63vPETpv+NFXKc8PjZg8yXyfXckzPhIwvxtM9IXYVZq7Sx2nLywbyT12G1rnTawTcOt8oJlgekyLRT4MedKZMDrmPvVdGSQLuzyBAAA=="
       },
       {
         "poster": "/videos/posters/outland-rounds-poster-v1.jpg",
@@ -1631,7 +1695,8 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/outland-rounds-poster-v1-web.mp4",
         "srcAv1": "/videos/av1/outland-rounds-poster-v1.webm",
-        "srcMp4": "/videos/h264/outland-rounds-poster-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/outland-rounds-poster-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRvwAAABXRUJQVlA4IPAAAAAQBwCdASogACoAPxFytVKsJiUiqrgMAYAiCWIAtRuNOCTx0czptH4GKzV/7eOIchLTnLJA8iN+vSz0EScMLmyMAAD9/dfaU+BcQ1aeVSdqfDU/eCfRJ+b1YsycYs9+K2sKmWhyTT04RXxYOdbvDU2rUI9NfFTgwZWfixuQlB8huZqGbpD27WyYGrVD0eeZqwdUokBrxBZ5sODE3M6ZuOO3YTu0q1AK4/t5FYG1MiZQ4QGDLayI6WoN3rHZUJQBOAYP0ROcyx64pnBabsXXH51exv1Lrbxo89UBbYMNqC/Grg1GnAayFldjEX6WDHCjQAA="
       },
       {
         "poster": "/videos/posters/outland-rounds-keychain-v1.jpg",
@@ -1639,7 +1704,8 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/outland-rounds-keychain-v1-web.mp4",
         "srcAv1": "/videos/av1/outland-rounds-keychain-v1.webm",
-        "srcMp4": "/videos/h264/outland-rounds-keychain-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/outland-rounds-keychain-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADQBACdASogACoAPwForFArJiSiurZoAWAgCWUAzNBdGjcVv45OZJYFYC/IJW4gAAD+4nUJMEyMoLRTYYE+qj81X5TyPBrt+IeLTK2fAWiuZ743j7TdZ60i5Y5Wy9HfiggnDRaA/If2HaHfSXlpjWCRc9GMAAAA"
       },
       {
         "poster": "/videos/posters/outland-rounds-phone-outdoor-v1.jpg",
@@ -1647,7 +1713,8 @@
         "aspect": 1.7777777777777777,
         "srcH265": "/videos/h265/outland-rounds-phone-outdoor-v1-web.mp4",
         "srcAv1": "/videos/av1/outland-rounds-phone-outdoor-v1.webm",
-        "srcMp4": "/videos/h264/outland-rounds-phone-outdoor-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/outland-rounds-phone-outdoor-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAADQBACdASogABIAPxFwr1AsJiQisAgBgCIJZwDKABJUKr7qBT4sWTGfXl0Q7oxSgAD2/ScGfjm+JGWOT19KxOyyRBzjijv57VYnHZszyVUWw8ZeZm9RDARRe3wIBE76PLpSI+tdcs/WXXfEz1nPp8FVW0AAAA=="
       },
       {
         "poster": "/videos/posters/outland-rounds-flask-v1.jpg",
@@ -1655,7 +1722,8 @@
         "aspect": 1,
         "srcH265": "/videos/h265/outland-rounds-flask-v1-web.mp4",
         "srcAv1": "/videos/av1/outland-rounds-flask-v1.webm",
-        "srcMp4": "/videos/h264/outland-rounds-flask-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/outland-rounds-flask-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRoIAAABXRUJQVlA4IHYAAADwBACdASogACAAPxF6t1MsJ6WiqAqpgCIJZwABHus//m2mvaXqJd1EJdT2mo0FU4AA/orBpF6T0nDVuyYAHMOS8ZY+dFEOQ/3FKnmybgaCyiXkg9o8ZggVyoMAs26nYGu9zoejAuzrZKuUt2oojIo1zDSwAAAA"
       },
       {
         "poster": "/videos/posters/outland-rounds-watch-v1.jpg",
@@ -1663,7 +1731,8 @@
         "aspect": 1,
         "srcH265": "/videos/h265/outland-rounds-watch-v1-web.mp4",
         "srcAv1": "/videos/av1/outland-rounds-watch-v1.webm",
-        "srcMp4": "/videos/h264/outland-rounds-watch-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/outland-rounds-watch-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRnYAAABXRUJQVlA4IGoAAABwBACdASogACAAPxF6slIsJ6SiqA1RgCIJZQDO7EXM7ncLaZ/9s0o7jMWcAAD+UTQvfHFQ5XlV2jNaaDf49nIQYBRHiqoiPi7AiNs24Qbbo2bgGOY5PWhiA0jkdaWRsUh+mHy9y43wAAAA"
       },
       {
         "poster": "/videos/posters/outland-rounds-aerial-v1.jpg",
@@ -1671,7 +1740,8 @@
         "aspect": 1.7777777777777777,
         "srcH265": "/videos/h265/outland-rounds-aerial-v1-web.mp4",
         "srcAv1": "/videos/av1/outland-rounds-aerial-v1.webm",
-        "srcMp4": "/videos/h264/outland-rounds-aerial-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/outland-rounds-aerial-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRnwAAABXRUJQVlA4IHAAAAAwBACdASogABIAPxFwslAsJiSisBgMAYAiCWMAAC3PUu6k8AmwfviNmhgA/ht51h57f0HkTFE+5c8TAyn+5u97LYhBEPxonog4hXb2Yz6v60M1cv0/eZ/lQzaaqYlOsJM8XbaPEeizIvrnaKx4vKgA"
       }
     ],
     "rows": [
@@ -1769,7 +1839,8 @@
       "aspect": 1.7777777777777777,
       "srcH265": "/videos/h265/trezor-hero-v1-web.mp4",
       "srcAv1": "/videos/av1/trezor-hero-v1.webm",
-      "srcMp4": "/videos/h264/trezor-hero-v1-fallback.mp4"
+      "srcMp4": "/videos/h264/trezor-hero-v1-fallback.mp4",
+      "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAACQAwCdASogABIAPxF4uFMsJyWiqAqpgCIJaQAALD5vlY+v0agAAP7qksUfTAeb+DRwN+pSP3sRLHIEWmaD2BbA7GGs//eXJ/H4+3tQw4gBN/OLfiqFZosOAAA="
     },
     "caption": "Trezor · Product animation",
     "approach": [
@@ -1807,7 +1878,8 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/trezor-black-v1-web.mp4",
         "srcAv1": "/videos/av1/trezor-black-v1.webm",
-        "srcMp4": "/videos/h264/trezor-black-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/trezor-black-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABQBQCdASogACAAPv1orlArJiSit/qoAWAfiWkAA+Q/f4cZjsjdcC9EOwEZrh48+L2/ZAAA/vwT7wpNaXTWOER6oPkLtmtJ8OKKXTs/le7Qf8bXiu6ROduJWFDl3D9ipTvk5AXFG2S8dBBKS/1pnvsLO8xulA2tpuAUD8Qi4sZbraT7w2kGE2tV0bL/JAU2D+NcAJgbKeFfAQAA"
       },
       {
         "poster": "/videos/posters/trezor-green-v1.jpg",
@@ -1815,7 +1887,8 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/trezor-green-v1-web.mp4",
         "srcAv1": "/videos/av1/trezor-green-v1.webm",
-        "srcMp4": "/videos/h264/trezor-green-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/trezor-green-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACQBQCdASogACAAPxF0tFEsJqUiqA1RgCIJZQDJEYwpLErg8XrvzX9brYpurh4874GMdKFQAAD++6YuTLQmkOjYEip6XvUnVJ9X0nggZUH1DGJez2d7la7YMVNAgxSA98y1aw93Wlpu6hTHpW9AfoLk3wXoMTzzXcFs/8sgw9ri8KDZApb8wr+N4vcDm01qGXF/Wwk3BY98SElbbJte1BxHtlsc+DegAAA="
       },
       {
         "poster": "/videos/posters/trezor-orange-v1.jpg",
@@ -1823,7 +1896,8 @@
         "aspect": 0.75,
         "srcH265": "/videos/h265/trezor-orange-v1-web.mp4",
         "srcAv1": "/videos/av1/trezor-orange-v1.webm",
-        "srcMp4": "/videos/h264/trezor-orange-v1-fallback.mp4"
+        "srcMp4": "/videos/h264/trezor-orange-v1-fallback.mp4",
+        "lqip": "data:image/webp;base64,UklGRsoAAABXRUJQVlA4IL4AAACQBQCdASogACAAPwFkrFArJSQit/qoAWAgCWgAuyCI4LMXxurXVvgY96rRe9pc1WFM8V2fAAD+7Uheq4WUKm9bkNnuf4/Itu0RUWAYtAIZiVerf+Hnr3A1yskekc72AiZ8ow2ZvaJ4z1cQ5PLcKQQ0QyjT7zTlu7tLN1Y4u0JdVIoyQbg/EhWK9797Wn3v9e/EeB0E6UCCTwEXv2kUNtJWMrgy8HYhpAqj7yvGmP6VwnIG9iai6zjhO1SdsQAA"
       }
     ],
     "rows": [
