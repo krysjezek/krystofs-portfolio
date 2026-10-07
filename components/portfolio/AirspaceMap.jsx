@@ -58,7 +58,7 @@ export default function AirspaceMap({ data, now, active, reduced, frozen, previe
       })}
     </div>
     <a className="airspace-attribution" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer" onClick={event => event.stopPropagation()}>© OpenStreetMap</a>
-    <div className={`airspace-map-loading airspace-shimmer${loading ? " is-loading" : ""}`} aria-hidden="true" />
+    <div className={`airspace-map-loading shimmer${loading ? " is-loading" : ""}`} aria-hidden="true" />
     <span className="airspace-map-range">30 KM</span>
     {message && <p className="airspace-map-message" role="status">{message}</p>}
   </div>;

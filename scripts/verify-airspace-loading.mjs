@@ -44,7 +44,7 @@ try {
     assert.equal(await panel.locator(".airspace-weather .airspace-skeleton").count(), width < 600 ? 6 : 3);
     const animation = await panel.locator(".airspace-skeleton").first().evaluate(
       element => getComputedStyle(element, "::after").animationName);
-    assert.equal(animation, reducedMotion === "reduce" ? "none" : "airspace-shimmer");
+    assert.equal(animation, reducedMotion === "reduce" ? "none" : "shimmer");
     assert(await panel.evaluate(element => element.scrollWidth <= element.clientWidth));
     await panel.evaluate(element => Promise.all(element.getAnimations().map(animation => animation.finished)));
     await panel.locator(".airspace-geography").evaluate(image => image.decode());

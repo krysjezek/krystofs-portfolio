@@ -43,6 +43,8 @@ Durations are milliseconds. Physical motion stays within 4–12px. Exits finish 
 
 Start when the initial view is ready to paint; do not wait for all media or show a branded loader. Content is visible without JavaScript. Reserve media dimensions before loading. Animate only content currently in the viewport.
 
+Runtime revision, 7 October 2026: reserved media boxes shimmer while their poster is still loading, reusing the airspace loading treatment. That effect is now the shared `.shimmer` primitive — a 105° white-65% sweep over `--tag`, 1800ms ease-in-out — applied by every `Media` usage: project cards, About photos, case-study stills, Worlds pairs and editorial images. This qualifies the rule above rather than overturning it: the shimmer is a placeholder inside artwork whose dimensions are already reserved, not a branded loader and not a gate on first paint. Three limits keep it from reading as looping decoration. It animates only media intersecting the viewport, so a long gallery never sweeps every card at once (5 of 32 at 1440px, 2 of 32 at 412px). It begins after a 300ms grace period, parked outside its own clip, so a cached poster resolves without ever flashing a sweep. It ends on poster load *or* error, so broken artwork settles into the static grey box instead of shimmering forever. Reduced motion holds it still. Covered by `node scripts/verify-media-loading.mjs`.
+
 | Group | Start | Duration | Initial → final |
 | --- | ---: | ---: | --- |
 | Continuous grid + dividers | 0 | 240 | opacity 0 → 1; no line drawing |

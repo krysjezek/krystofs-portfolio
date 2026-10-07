@@ -123,7 +123,7 @@ export default function Media({
   return (
     <div
       ref={root}
-      className={`media ${className}`}
+      className={`media ${className}${!posterLoaded && inView ? " is-loading" : ""}`}
       style={{
         "--media-aspect": media.aspect || 1.6,
         aspectRatio: media.aspect || undefined,
