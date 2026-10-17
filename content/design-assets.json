@@ -320,14 +320,13 @@
   },
   {
     "id": "about-photo-06",
-    "path": "/images/portfolio-2027-about-photo-06.webp",
-    "figmaNode": "1:319",
+    "path": "/images/portfolio-2027-about-photo-06-v2.webp",
     "width": 960,
     "height": 1706,
-    "sourceWidth": 2268,
-    "sourceHeight": 4032,
-    "bytes": 216096,
-    "sha256": "d844c32dd777608d377baffa0269203e3c2b456ea8672530b4c9a01cf77c99f3"
+    "sourceWidth": 4284,
+    "sourceHeight": 5712,
+    "bytes": 157148,
+    "sha256": "d6ca8d6ab14dd4bcfe78329cc014bfa83c142cf6f37bb2e1b465ac752f8a0ed7"
   },
   {
     "id": "about-photo-07",
